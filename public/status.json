@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-03 05:18:59",
+  "updatedAt": "2026-04-03 05:45:00",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-03 05:16:14"
+          "lastRun": "2026-04-03 05:37:56"
         }
       ],
-      "recentLog": "[2026-04-03 04:55:21] Eddy 실행 완료\n[2026-04-03 05:00:01] Eddy 실행 시작\n[2026-04-03 05:05:21] Eddy 실행 시작\n새 메시지 없음. 변동 없음 보고 완료.\n[2026-04-03 05:05:43] Eddy 실행 완료\n새 메시지 없음 — 완료.\n[2026-04-03 05:13:51] Eddy 실행 완료\n[2026-04-03 05:15:43] Eddy 실행 시작\n변동 없음. 텔레그램 보고 완료.\n[2026-04-03 05:16:14] Eddy 실행 완료"
+      "recentLog": "[2026-04-03 05:26:34] Eddy 실행 완료\n[2026-04-03 05:30:00] Eddy 실행 시작\n[2026-04-03 05:36:34] Eddy 실행 시작\n텔레그램 보고 완료:\n**ELDO 레포**: `https://git.mintech.kr/greta/eldo-web` (GitLab 프라이빗)\n로컬 경로: `eddy/eldo/ELDO/eldo-web`\n[2026-04-03 05:37:14] Eddy 실행 완료\n새 메시지 없음. 텔레그램 보고 완료.\n[2026-04-03 05:37:56] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -38,19 +38,19 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":00 (19~07)",
-          "lastRun": "2026-04-03 05:13:45"
+          "lastRun": "2026-04-03 05:24:31"
         },
         {
           "name": "Dev2",
           "role": "기능 개발",
           "cron": ":30 (19~07)",
-          "lastRun": "2026-04-03 04:38:27"
+          "lastRun": "2026-04-03 05:30:01"
         },
         {
           "name": "Planner",
           "role": "기획/태스크 관리",
           "cron": "2h간격",
-          "lastRun": "2026-04-03 05:15:01"
+          "lastRun": "2026-04-03 05:19:04"
         },
         {
           "name": "QA",
@@ -65,7 +65,7 @@
           "lastRun": "2026-04-03 05:08:46"
         }
       ],
-      "recentLog": "- `middleware.ts` API 라우트에서 `Bearer 헤더 → queryToken → access_token 쿠키` 순 fallback 처리\n- SSE 알림 스트림(`/api/notifications/stream`)과 AI 에이전트(`/api/agent/*`) 전체 차단 해제\n### [MED] captureApiError Sentry 통합\n- `auth/login`, `payments/initiate`, `payments/verify` catch 블록에 `captureApiError()` 추가\n- 운영 환경 핵심 API 오류 자동 수집 실효성 확보\n### [LOW] /client 루트 404 수정\n- `web/src/app/client/page.tsx` 생성 → `/client/dashboard` 리다이렉트\n[2026-04-03 05:13:45] Dev1 완료"
+      "recentLog": "| milestones/route.ts | POST /api/projects/[id]/milestones |\n| submit/route.ts | POST /api/projects/[id]/milestones/[mid]/submit |\n| approve/route.ts | POST /api/projects/[id]/milestones/[mid]/approve |\n| reject/route.ts | POST /api/projects/[id]/milestones/[mid]/reject |\n| webhooks/portone/route.ts | POST /api/webhooks/portone (console.error 대체) |\n| admin/payments/manual/route.ts | POST /api/admin/payments/manual |\n| agent/run/route.ts | POST /api/agent/run |\n빌드 성공 확인 후 push 완료 (commit `8a33064`).\n[2026-04-03 05:24:31] Dev1 완료"
     },
     {
       "name": "LiveOrder",
@@ -84,7 +84,7 @@
           "name": "Planner",
           "role": "기획/태스크 관리",
           "cron": "2h간격",
-          "lastRun": "2026-04-03 03:23:46"
+          "lastRun": "2026-04-03 05:23:15"
         },
         {
           "name": "QA",
@@ -112,13 +112,13 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":20 (19~07)",
-          "lastRun": "2026-04-03 02:14:08"
+          "lastRun": "2026-04-03 05:23:17"
         },
         {
           "name": "Planner",
           "role": "기획/태스크 관리",
           "cron": "2h간격",
-          "lastRun": "2026-04-03 02:02:54"
+          "lastRun": "2026-04-03 05:28:48"
         },
         {
           "name": "QA",
@@ -130,10 +130,10 @@
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": ":25 (19~07)",
-          "lastRun": ""
+          "lastRun": "2026-04-03 05:25:16"
         }
       ],
-      "recentLog": "```bash\n# 1. 새 테이블 적용\nnpx prisma db push\n# 또는 마이그레이션 방식\nnpx prisma migrate deploy\n# 2. 더미 데이터 적재\nnpx prisma db seed\n```\n[2026-04-03 02:14:08] Dev1 완료"
+      "recentLog": "- `include_sections=true` 시 섹션 본문까지 함께 반환\n- corps/emsec 관계 데이터 포함, 페이지네이션 지원\n### `POST /api/newsletter` (`app/api/newsletter/route.ts`)\n- 이메일 형식 유효성 검사\n- 중복 구독 시 200 응답 (P2002 처리)\n- 신규 구독 시 201 응답\n**커밋:** `7059225` → push 완료\n[2026-04-03 05:23:17] Dev1 완료"
     },
     {
       "name": "ReviewBot",
@@ -171,12 +171,13 @@
     }
   ],
   "recentActivity": [
-    "새 메시지 없음 — 완료.",
-    "[2026-04-03 05:13:51] Eddy 실행 완료",
-    "변동 없음. 텔레그램 보고 완료.",
-    "[2026-04-03 05:16:14] Eddy 실행 완료",
-    "[2026-04-03 05:13:45] Dev1 완료",
+    "[2026-04-03 05:37:14] Eddy 실행 완료",
+    "새 메시지 없음. 텔레그램 보고 완료.",
+    "[2026-04-03 05:37:56] Eddy 실행 완료",
+    "빌드 성공 확인 후 push 완료 (commit `8a33064`).",
+    "[2026-04-03 05:24:31] Dev1 완료",
     "[2026-04-03 04:38:27] Dev2 완료",
+    "[done] Phase 10-D 정산 자동화 구현 — PayoutStatus enum, DB 마이그레이션(0006), admin/developer 정산 API + UI, nav 링크",
     "4. `cron/settlements` — 정산 완료 후 셀러에게 알림",
     "[2026-04-03 05:14:04] Dev1 완료",
     "[2026-04-02 14:51:22] Dev1 완료"
