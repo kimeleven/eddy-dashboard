@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-03 05:45:00",
+  "updatedAt": "2026-04-03 06:45:00",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-03 05:37:56"
+          "lastRun": "2026-04-03 06:42:30"
         }
       ],
-      "recentLog": "[2026-04-03 05:26:34] Eddy 실행 완료\n[2026-04-03 05:30:00] Eddy 실행 시작\n[2026-04-03 05:36:34] Eddy 실행 시작\n텔레그램 보고 완료:\n**ELDO 레포**: `https://git.mintech.kr/greta/eldo-web` (GitLab 프라이빗)\n로컬 경로: `eddy/eldo/ELDO/eldo-web`\n[2026-04-03 05:37:14] Eddy 실행 완료\n새 메시지 없음. 텔레그램 보고 완료.\n[2026-04-03 05:37:56] Eddy 실행 완료"
+      "recentLog": "[2026-04-03 06:19:10] Eddy 실행 완료\n[2026-04-03 06:29:10] Eddy 실행 시작\n[2026-04-03 06:30:00] Eddy 실행 시작\n변동 없음. 새 텔레그램 메시지 없음, 보고 완료.\n[2026-04-03 06:32:04] Eddy 실행 완료\n변동 없음. 보고 완료.\n[2026-04-03 06:40:00] Eddy 실행 완료\n[2026-04-03 06:42:04] Eddy 실행 시작\n변동 없음. 완료.\n[2026-04-03 06:42:30] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -38,13 +38,13 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":00 (19~07)",
-          "lastRun": "2026-04-03 05:24:31"
+          "lastRun": "2026-04-03 06:00:01"
         },
         {
           "name": "Dev2",
           "role": "기능 개발",
           "cron": ":30 (19~07)",
-          "lastRun": "2026-04-03 05:30:01"
+          "lastRun": "2026-04-03 06:30:01"
         },
         {
           "name": "Planner",
@@ -62,10 +62,10 @@
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": ":05 (19~07)",
-          "lastRun": "2026-04-03 05:08:46"
+          "lastRun": "2026-04-03 06:08:11"
         }
       ],
-      "recentLog": "| milestones/route.ts | POST /api/projects/[id]/milestones |\n| submit/route.ts | POST /api/projects/[id]/milestones/[mid]/submit |\n| approve/route.ts | POST /api/projects/[id]/milestones/[mid]/approve |\n| reject/route.ts | POST /api/projects/[id]/milestones/[mid]/reject |\n| webhooks/portone/route.ts | POST /api/webhooks/portone (console.error 대체) |\n| admin/payments/manual/route.ts | POST /api/admin/payments/manual |\n| agent/run/route.ts | POST /api/agent/run |\n빌드 성공 확인 후 push 완료 (commit `8a33064`).\n[2026-04-03 05:24:31] Dev1 완료"
+      "recentLog": "| approve/route.ts | POST /api/projects/[id]/milestones/[mid]/approve |\n| reject/route.ts | POST /api/projects/[id]/milestones/[mid]/reject |\n| webhooks/portone/route.ts | POST /api/webhooks/portone (console.error 대체) |\n| admin/payments/manual/route.ts | POST /api/admin/payments/manual |\n| agent/run/route.ts | POST /api/agent/run |\n빌드 성공 확인 후 push 완료 (commit `8a33064`).\n[2026-04-03 05:24:31] Dev1 완료\n[2026-04-03 06:00:01] Dev1 실행\n[done] Phase 10-C PWA 모바일 대응 구현 완료 — manifest.json, sw.js, ServiceWorkerRegistration, layout PWA 메타태그, 모바일 반응형 개선 (commit 3e34adc)"
     },
     {
       "name": "LiveOrder",
@@ -78,7 +78,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":10 (19~07)",
-          "lastRun": "2026-04-03 05:14:04"
+          "lastRun": "2026-04-03 06:10:01"
         },
         {
           "name": "Planner",
@@ -96,10 +96,10 @@
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": ":15 (19~07)",
-          "lastRun": "2026-04-03 05:17:01"
+          "lastRun": "2026-04-03 06:16:43"
         }
       ],
-      "recentLog": "**Task 23: 이메일 알림 구현** (`c16cd41`)\n- `npm i resend` 설치 (v6.10.0)\n- `lib/email.ts` — `sendEmail()` 헬퍼 + `ADMIN_EMAIL` 상수 (환경변수 없으면 자동 skip)\n- `.env.example` — `RESEND_API_KEY`, `ADMIN_EMAIL` 추가\n- 4개 API 연동:\n1. `sellers/register` — 신규 셀러 가입 시 관리자에게 알림\n2. `admin/sellers/[id]` — APPROVED/SUSPENDED 시 셀러에게 알림\n3. `payments/confirm` — 주문 생성 후 셀러에게 신규 주문 알림\n4. `cron/settlements` — 정산 완료 후 셀러에게 알림\n[2026-04-03 05:14:04] Dev1 완료"
+      "recentLog": "- `lib/email.ts` — `sendEmail()` 헬퍼 + `ADMIN_EMAIL` 상수 (환경변수 없으면 자동 skip)\n- `.env.example` — `RESEND_API_KEY`, `ADMIN_EMAIL` 추가\n- 4개 API 연동:\n1. `sellers/register` — 신규 셀러 가입 시 관리자에게 알림\n2. `admin/sellers/[id]` — APPROVED/SUSPENDED 시 셀러에게 알림\n3. `payments/confirm` — 주문 생성 후 셀러에게 신규 주문 알림\n4. `cron/settlements` — 정산 완료 후 셀러에게 알림\n[2026-04-03 05:14:04] Dev1 완료\n[2026-04-03 06:10:01] Dev1 실행\n[done] Task 24 (P3-3): recharts 설치 + 대시보드 7일 매출 LineChart, Task 25 (P3-4): carrier-urls.ts + 배송 추적 링크 — commit fbadce1"
     },
     {
       "name": "ELDO",
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":20 (19~07)",
-          "lastRun": "2026-04-03 05:23:17"
+          "lastRun": "2026-04-03 06:34:35"
         },
         {
           "name": "Planner",
@@ -130,10 +130,10 @@
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": ":25 (19~07)",
-          "lastRun": "2026-04-03 05:25:16"
+          "lastRun": "2026-04-03 06:25:11"
         }
       ],
-      "recentLog": "- `include_sections=true` 시 섹션 본문까지 함께 반환\n- corps/emsec 관계 데이터 포함, 페이지네이션 지원\n### `POST /api/newsletter` (`app/api/newsletter/route.ts`)\n- 이메일 형식 유효성 검사\n- 중복 구독 시 200 응답 (P2002 처리)\n- 신규 구독 시 201 응답\n**커밋:** `7059225` → push 완료\n[2026-04-03 05:23:17] Dev1 완료"
+      "recentLog": "| TASK-103 | `/api/corps` — `country`, `emtecId`(다중) 필터 추가 | ✅ |\n| TASK-104 | `stock-section.tsx` → Yahoo Finance 외부링크 버튼으로 교체 | ✅ |\n| TASK-105 | `/company/[id]` — VCR-C 섹션 추가 (섹션별 클립보드 복사) | ✅ |\n| TASK-106 | 사이드바 — 일본 TSE 거래소 추가 + EMTEC 체크박스 필터 | ✅ |\n| TASK-107 | `GET /api/stock-heatmap` — 섹터별 월간 평균 수익률 집계 | ✅ |\n| TASK-108 | `/sectors` — 주가 히트맵 컴포넌트 (초록/빨강 색상) | ✅ |\n| TASK-109 | `/vcr` 신규 페이지 (VCR-C/S/T 탭, 목록·상세, 프롬프트 복사) + 네비 추가 | ✅ |\n| TASK-110 | 푸터 뉴스레터 구독 폼 (성공/중복/오류 메시지) | ✅ |\n| TASK-101 | DB 시드 실행 | ⚠️ `.env.local`의 `DATABASE_URL` 설정 필요 |\n[2026-04-03 06:34:35] Dev1 완료"
     },
     {
       "name": "ReviewBot",
@@ -171,15 +171,17 @@
     }
   ],
   "recentActivity": [
-    "[2026-04-03 05:37:14] Eddy 실행 완료",
-    "새 메시지 없음. 텔레그램 보고 완료.",
-    "[2026-04-03 05:37:56] Eddy 실행 완료",
+    "변동 없음. 보고 완료.",
+    "[2026-04-03 06:40:00] Eddy 실행 완료",
+    "변동 없음. 완료.",
+    "[2026-04-03 06:42:30] Eddy 실행 완료",
     "빌드 성공 확인 후 push 완료 (commit `8a33064`).",
     "[2026-04-03 05:24:31] Dev1 완료",
-    "[2026-04-03 04:38:27] Dev2 완료",
-    "[done] Phase 10-D 정산 자동화 구현 — PayoutStatus enum, DB 마이그레이션(0006), admin/developer 정산 API + UI, nav 링크",
+    "[done] Phase 10-C PWA 모바일 대응 구현 완료 — manifest.json, sw.js, ServiceWorkerRegistration, layout PWA 메타태그, 모바일 반응형 개선 (commit 3e34adc)",
+    "[2026-04-03 05:45:13] Dev2 완료",
     "4. `cron/settlements` — 정산 완료 후 셀러에게 알림",
     "[2026-04-03 05:14:04] Dev1 완료",
+    "[done] Task 24 (P3-3): recharts 설치 + 대시보드 7일 매출 LineChart, Task 25 (P3-4): carrier-urls.ts + 배송 추적 링크 — commit fbadce1",
     "[2026-04-02 14:51:22] Dev1 완료"
   ]
 }
