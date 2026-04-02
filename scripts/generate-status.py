@@ -98,6 +98,20 @@ data = {
             "recentLog": "\n".join(tail(f"{AGENT}/liveorder-team/dev1.log"))
         },
         {
+            "name": "ELDO",
+            "icon": "📊",
+            "description": "기업 재무분석 플랫폼",
+            "schedule": "19:00~07:00",
+            "status": dg_status,
+            "agents": [
+                {"name": "Dev1", "role": "기능 개발", "cron": ":20 (19~07)", "lastRun": last_run(f"{AGENT}/eldo-team/dev1.log")},
+                {"name": "Planner", "role": "기획/태스크 관리", "cron": "2h간격", "lastRun": last_run(f"{AGENT}/eldo-team/planner.log")},
+                {"name": "QA", "role": "코드 검증", "cron": "3h간격", "lastRun": last_run(f"{AGENT}/eldo-team/qa.log")},
+                {"name": "PM", "role": "텔레그램 보고", "cron": ":25 (19~07)", "lastRun": last_run(f"{AGENT}/eldo-team/pm.log")}
+            ],
+            "recentLog": "\n".join(tail(f"{AGENT}/eldo-team/dev1.log"))
+        },
+        {
             "name": "ReviewBot",
             "icon": "📝",
             "description": "사봤쪄 리뷰 블로그",

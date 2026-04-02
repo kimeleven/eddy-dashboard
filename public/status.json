@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-03 04:45:00",
+  "updatedAt": "2026-04-03 05:18:59",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -7,7 +7,7 @@
       "Gemini 2.5",
       "Imagen 4"
     ],
-    "cronJobs": 15,
+    "cronJobs": 19,
     "telegram": "Eddy Bot (30분마다)"
   },
   "teams": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-03 04:44:59"
+          "lastRun": "2026-04-03 05:16:14"
         }
       ],
-      "recentLog": "[2026-04-03 04:24:07] Eddy 실행 완료\n[2026-04-03 04:30:00] Eddy 실행 시작\n[2026-04-03 04:34:08] Eddy 실행 시작\n변동 없음. 텔레그램 보고 완료.\n[2026-04-03 04:34:34] Eddy 실행 완료\n변동 없음. 보고 완료.\n[2026-04-03 04:38:55] Eddy 실행 완료\n[2026-04-03 04:44:34] Eddy 실행 시작\n새 메시지 없음. 보고 완료.\n[2026-04-03 04:44:59] Eddy 실행 완료"
+      "recentLog": "[2026-04-03 04:55:21] Eddy 실행 완료\n[2026-04-03 05:00:01] Eddy 실행 시작\n[2026-04-03 05:05:21] Eddy 실행 시작\n새 메시지 없음. 변동 없음 보고 완료.\n[2026-04-03 05:05:43] Eddy 실행 완료\n새 메시지 없음 — 완료.\n[2026-04-03 05:13:51] Eddy 실행 완료\n[2026-04-03 05:15:43] Eddy 실행 시작\n변동 없음. 텔레그램 보고 완료.\n[2026-04-03 05:16:14] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -38,7 +38,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":00 (19~07)",
-          "lastRun": "2026-04-03 04:00:01"
+          "lastRun": "2026-04-03 05:13:45"
         },
         {
           "name": "Dev2",
@@ -50,22 +50,22 @@
           "name": "Planner",
           "role": "기획/태스크 관리",
           "cron": "2h간격",
-          "lastRun": "2026-04-03 03:19:49"
+          "lastRun": "2026-04-03 05:15:01"
         },
         {
           "name": "QA",
           "role": "코드 검증",
           "cron": "3h간격",
-          "lastRun": "2026-04-03 01:50:28"
+          "lastRun": "2026-04-03 04:55:01"
         },
         {
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": ":05 (19~07)",
-          "lastRun": "2026-04-03 04:08:12"
+          "lastRun": "2026-04-03 05:08:46"
         }
       ],
-      "recentLog": "- 토큰 생성 시각 = `emailVerifyExpiry - 24h`로 역산\n- 마지막 발송 후 60초 미만이면 `429 Too Many Requests` + 남은 초 수 반환\n**작업 C [MED M-6]** — `EmailVerificationBanner` 조건 확인\n- 현재 코드 `user.emailVerified !== false`는 이미 올바른 동작 (`=== false`일 때만 배너 표시)\n- 카카오 소셜 로그인 사용자 (`emailVerified = null/undefined`) → 배너 미표시 ✓\n- 가독성을 위해 주석 추가로 의도 명시\n[2026-04-03 03:01:50] Dev1 완료\n[2026-04-03 04:00:01] Dev1 실행\n[done] Phase 9-A Sentry 에러 트래킹 통합 + Phase 9-C DB 인덱스 성능 최적화 완료 (commit 72a72b9)"
+      "recentLog": "- `middleware.ts` API 라우트에서 `Bearer 헤더 → queryToken → access_token 쿠키` 순 fallback 처리\n- SSE 알림 스트림(`/api/notifications/stream`)과 AI 에이전트(`/api/agent/*`) 전체 차단 해제\n### [MED] captureApiError Sentry 통합\n- `auth/login`, `payments/initiate`, `payments/verify` catch 블록에 `captureApiError()` 추가\n- 운영 환경 핵심 API 오류 자동 수집 실효성 확보\n### [LOW] /client 루트 404 수정\n- `web/src/app/client/page.tsx` 생성 → `/client/dashboard` 리다이렉트\n[2026-04-03 05:13:45] Dev1 완료"
     },
     {
       "name": "LiveOrder",
@@ -78,7 +78,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":10 (19~07)",
-          "lastRun": "2026-04-03 04:16:39"
+          "lastRun": "2026-04-03 05:14:04"
         },
         {
           "name": "Planner",
@@ -90,16 +90,50 @@
           "name": "QA",
           "role": "코드 검증",
           "cron": "3h간격",
-          "lastRun": "2026-04-03 01:55:05"
+          "lastRun": "2026-04-03 04:55:27"
         },
         {
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": ":15 (19~07)",
-          "lastRun": "2026-04-03 04:18:33"
+          "lastRun": "2026-04-03 05:17:01"
         }
       ],
-      "recentLog": "- **buyer-store**: `FlowProduct`, `FlowSeller`, `FlowAddress` 명시적 인터페이스 정의\n### Task 22 (P3-1): API 페이지네이션\n- **`lib/pagination.ts`**: `parsePagination` + `buildPaginationResponse` 공통 유틸 신규\n- **4개 API**: `seller/orders`, `seller/products`, `seller/codes`, `admin/orders` GET에 `page`/`limit` 파라미터 + `{data, pagination}` 응답 형식\n- **`components/ui/Pagination.tsx`**: Prev/페이지번호/Next UI 컴포넌트 신규\n- **4개 목록 페이지**: `seller/orders`, `seller/products`, `seller/codes`, `admin/orders` Pagination 컴포넌트 연동\nTypeScript 빌드 오류 없음, 커밋+푸시 완료 (`83fdb78`).\n[2026-04-03 04:16:39] Dev1 완료"
+      "recentLog": "**Task 23: 이메일 알림 구현** (`c16cd41`)\n- `npm i resend` 설치 (v6.10.0)\n- `lib/email.ts` — `sendEmail()` 헬퍼 + `ADMIN_EMAIL` 상수 (환경변수 없으면 자동 skip)\n- `.env.example` — `RESEND_API_KEY`, `ADMIN_EMAIL` 추가\n- 4개 API 연동:\n1. `sellers/register` — 신규 셀러 가입 시 관리자에게 알림\n2. `admin/sellers/[id]` — APPROVED/SUSPENDED 시 셀러에게 알림\n3. `payments/confirm` — 주문 생성 후 셀러에게 신규 주문 알림\n4. `cron/settlements` — 정산 완료 후 셀러에게 알림\n[2026-04-03 05:14:04] Dev1 완료"
+    },
+    {
+      "name": "ELDO",
+      "icon": "📊",
+      "description": "기업 재무분석 플랫폼",
+      "schedule": "19:00~07:00",
+      "status": "active",
+      "agents": [
+        {
+          "name": "Dev1",
+          "role": "기능 개발",
+          "cron": ":20 (19~07)",
+          "lastRun": "2026-04-03 02:14:08"
+        },
+        {
+          "name": "Planner",
+          "role": "기획/태스크 관리",
+          "cron": "2h간격",
+          "lastRun": "2026-04-03 02:02:54"
+        },
+        {
+          "name": "QA",
+          "role": "코드 검증",
+          "cron": "3h간격",
+          "lastRun": ""
+        },
+        {
+          "name": "PM",
+          "role": "텔레그램 보고",
+          "cron": ":25 (19~07)",
+          "lastRun": ""
+        }
+      ],
+      "recentLog": "```bash\n# 1. 새 테이블 적용\nnpx prisma db push\n# 또는 마이그레이션 방식\nnpx prisma migrate deploy\n# 2. 더미 데이터 적재\nnpx prisma db seed\n```\n[2026-04-03 02:14:08] Dev1 완료"
     },
     {
       "name": "ReviewBot",
@@ -137,15 +171,14 @@
     }
   ],
   "recentActivity": [
-    "변동 없음. 보고 완료.",
-    "[2026-04-03 04:38:55] Eddy 실행 완료",
-    "새 메시지 없음. 보고 완료.",
-    "[2026-04-03 04:44:59] Eddy 실행 완료",
-    "[2026-04-03 03:01:50] Dev1 완료",
-    "[done] Phase 9-A Sentry 에러 트래킹 통합 + Phase 9-C DB 인덱스 성능 최적화 완료 (commit 72a72b9)",
+    "새 메시지 없음 — 완료.",
+    "[2026-04-03 05:13:51] Eddy 실행 완료",
+    "변동 없음. 텔레그램 보고 완료.",
+    "[2026-04-03 05:16:14] Eddy 실행 완료",
+    "[2026-04-03 05:13:45] Dev1 완료",
     "[2026-04-03 04:38:27] Dev2 완료",
-    "TypeScript 빌드 오류 없음, 커밋+푸시 완료 (`83fdb78`).",
-    "[2026-04-03 04:16:39] Dev1 완료",
+    "4. `cron/settlements` — 정산 완료 후 셀러에게 알림",
+    "[2026-04-03 05:14:04] Dev1 완료",
     "[2026-04-02 14:51:22] Dev1 완료"
   ]
 }
