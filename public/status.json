@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-03 01:45:00",
+  "updatedAt": "2026-04-03 02:45:00",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-03 01:43:13"
+          "lastRun": "2026-04-03 02:40:15"
         }
       ],
-      "recentLog": "[2026-04-03 01:30:00] Eddy 실행 시작\n완료. 새 메시지 없음, 텔레그램 보고 완료.\n[2026-04-03 01:30:28] Eddy 실행 완료\n[2026-04-03 01:32:12] Eddy 실행 시작\n보고 완료.\nELDO 프로젝트 등록하고 팀 구성 확인했습니다. GitLab 링크 주시면 바로 연동합니다.\n[2026-04-03 01:33:13] Eddy 실행 완료\n[2026-04-03 01:41:15] Eddy 실행 시작\n[2026-04-03 01:43:13] Eddy 실행 시작"
+      "recentLog": "[2026-04-03 02:19:24] Eddy 실행 완료\n[2026-04-03 02:29:24] Eddy 실행 시작\n변동 없음. 새 메시지 없음.\n[2026-04-03 02:29:49] Eddy 실행 완료\n[2026-04-03 02:30:00] Eddy 실행 시작\n새 메시지 없음. 변동 없음 보고 완료.\n[2026-04-03 02:30:23] Eddy 실행 완료\n[2026-04-03 02:39:49] Eddy 실행 시작\n이번 시간 새 메시지 없음. 보고 완료.\n[2026-04-03 02:40:15] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -38,13 +38,13 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":00 (19~07)",
-          "lastRun": "2026-04-03 01:03:23"
+          "lastRun": "2026-04-03 02:05:33"
         },
         {
           "name": "Dev2",
           "role": "기능 개발",
           "cron": ":30 (19~07)",
-          "lastRun": "2026-04-03 01:41:55"
+          "lastRun": "2026-04-03 02:32:59"
         },
         {
           "name": "Planner",
@@ -56,16 +56,16 @@
           "name": "QA",
           "role": "코드 검증",
           "cron": "3h간격",
-          "lastRun": "2026-04-02 22:49:54"
+          "lastRun": "2026-04-03 01:50:28"
         },
         {
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": ":05 (19~07)",
-          "lastRun": "2026-04-03 01:08:50"
+          "lastRun": "2026-04-03 02:09:06"
         }
       ],
-      "recentLog": "- `/verify-email?token=...` 페이지 — 성공/실패 UI + Suspense\n- `EmailVerificationBanner.tsx` — 미인증 계정 상단 배너 (재발송 버튼 포함)\n- `client/layout.tsx`, `developer/layout.tsx` — 배너 통합 완료\n**이번 실행에서 추가한 항목:**\n- `README.md`: `MAIL_HOST/PORT/USER/PASS/FROM` 환경변수 5개 추가\n- `plan.md`: Phase 7 완료 상태 업데이트\n- `TASKS.md`: 작업 B 완료 표시 + 완료 목록 업데이트\n- `QA_REPORT.md`: 이메일 인증 완료로 상태 업데이트\n[2026-04-03 01:03:23] Dev1 완료"
+      "recentLog": "| **LOW** | L-1 refresh_token 쿠키 | `refresh/route.ts` 새 refresh_token 쿠키 설정 추가 |\n| **LOW** | L-2 Secure 플래그 | `login/register/refresh` 쿠키에 production 환경 `; Secure` 추가 |\n### 신규 구현\n- **[Phase 7-C]** `web/README.md` 운영 환경 필수 설정 섹션 (SMTP_*, JWT_SECRET 등 표 형식)\n- **[Phase 8-A]** 트랜잭션 이메일 알림\n- `feeProposalEmail()` 템플릿 추가 (mail.ts)\n- `approve/route.ts` → 개발자에게 마일스톤 승인 이메일\n- `fee-proposal/route.ts POST` → APPROVER에게 비용 제안 이메일\n[2026-04-03 02:05:33] Dev1 완료"
     },
     {
       "name": "LiveOrder",
@@ -78,7 +78,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":10 (19~07)",
-          "lastRun": "2026-04-03 01:20:49"
+          "lastRun": "2026-04-03 02:14:32"
         },
         {
           "name": "Planner",
@@ -90,16 +90,16 @@
           "name": "QA",
           "role": "코드 검증",
           "cron": "3h간격",
-          "lastRun": "2026-04-02 22:59:10"
+          "lastRun": "2026-04-03 01:55:05"
         },
         {
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": ":15 (19~07)",
-          "lastRun": "2026-04-03 01:18:54"
+          "lastRun": "2026-04-03 02:16:38"
         }
       ],
-      "recentLog": "| 파일 | 내용 |\n|------|------|\n| `app/api/seller/products/route.ts` | 상품 등록 후 코드 1개 자동 발급 (24시간, 무제한), 응답에 `autoCode` 포함 |\n| `app/seller/products/new/page.tsx` | 등록 성공 화면 — 코드 표시 + 복사 버튼 + 추가 발급 링크 |\n### 버그 수정 ✅\n- `app/api/admin/orders/route.ts` — OrderStatus enum 캐스팅 타입 오류\n- `app/admin/orders/page.tsx` — Select `onValueChange(string | null)` 타입 오류\n[2026-04-03 01:20:49] Dev1 완료"
+      "recentLog": "**B-24 (HIGH) — 환경변수 누락 수정**\n- `PLAN.md` 2.3절 환경변수 체크리스트에 `PORTONE_API_SECRET` 추가 (환불 기능 필수)\n**B-25 (MED) — colSpan 수정**\n- `app/seller/settlements/page.tsx:166`: `colSpan={7}` → `colSpan={8}` (헤더 8열과 일치)\n**B-26 (MED) — soft-deleted 상품 필터**\n- `app/api/seller/products/route.ts`: GET에 `isActive: true` 조건 추가 → 삭제된 상품이 코드 발급 드롭다운에 노출되지 않음\n[2026-04-03 02:14:32] Dev1 완료"
     },
     {
       "name": "ReviewBot",
@@ -137,16 +137,14 @@
     }
   ],
   "recentActivity": [
-    "[2026-04-03 01:33:13] Eddy 실행 완료",
-    "- `plan.md`: Phase 7 완료 상태 업데이트",
-    "- `TASKS.md`: 작업 B 완료 표시 + 완료 목록 업데이트",
-    "- `QA_REPORT.md`: 이메일 인증 완료로 상태 업데이트",
-    "[2026-04-03 01:03:23] Dev1 완료",
-    "[2026-04-02 23:34:03] Dev2 완료",
-    "[done] Phase 8-B 개발자 공개 프로필 구현 완료 — DB 마이그레이션(isPublic), API, 편집페이지, 공개페이지, 사이드바, 관리자목록",
-    "이미 완료된 작업의 백그라운드 태스크 결과입니다. Node.js 경로는 `/usr/local/Cellar/node/25.8.2/bin/node`로 확인되었으나, 구현은 이미 수동 마이그레이션 파일 생성으로 완료했으므로 추가 조치는 불필요합니다.",
-    "[2026-04-03 01:41:55] Dev2 완료",
-    "[2026-04-03 01:20:49] Dev1 완료",
+    "새 메시지 없음. 변동 없음 보고 완료.",
+    "[2026-04-03 02:30:23] Eddy 실행 완료",
+    "이번 시간 새 메시지 없음. 보고 완료.",
+    "[2026-04-03 02:40:15] Eddy 실행 완료",
+    "[2026-04-03 02:05:33] Dev1 완료",
+    "커밋 `c41f056` → `git push origin main` 완료.",
+    "[2026-04-03 02:32:59] Dev2 완료",
+    "[2026-04-03 02:14:32] Dev1 완료",
     "[2026-04-02 14:51:22] Dev1 완료"
   ]
 }
