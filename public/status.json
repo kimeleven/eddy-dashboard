@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-03 03:45:00",
+  "updatedAt": "2026-04-03 04:45:00",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-03 03:42:27"
+          "lastRun": "2026-04-03 04:44:59"
         }
       ],
-      "recentLog": "[2026-04-03 03:21:43] Eddy 실행 완료\n[2026-04-03 03:30:00] Eddy 실행 시작\n새 메시지 없음. 변동 없음 보고 완료.\n[2026-04-03 03:30:27] Eddy 실행 완료\n[2026-04-03 03:31:43] Eddy 실행 시작\n새 메시지 없음. 변동 없음 보고 완료.\n[2026-04-03 03:32:06] Eddy 실행 완료\n[2026-04-03 03:42:06] Eddy 실행 시작\n변동 없음. 새 메시지 없어 보고 완료.\n[2026-04-03 03:42:27] Eddy 실행 완료"
+      "recentLog": "[2026-04-03 04:24:07] Eddy 실행 완료\n[2026-04-03 04:30:00] Eddy 실행 시작\n[2026-04-03 04:34:08] Eddy 실행 시작\n변동 없음. 텔레그램 보고 완료.\n[2026-04-03 04:34:34] Eddy 실행 완료\n변동 없음. 보고 완료.\n[2026-04-03 04:38:55] Eddy 실행 완료\n[2026-04-03 04:44:34] Eddy 실행 시작\n새 메시지 없음. 보고 완료.\n[2026-04-03 04:44:59] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -38,13 +38,13 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":00 (19~07)",
-          "lastRun": "2026-04-03 03:01:50"
+          "lastRun": "2026-04-03 04:00:01"
         },
         {
           "name": "Dev2",
           "role": "기능 개발",
           "cron": ":30 (19~07)",
-          "lastRun": "2026-04-03 03:33:51"
+          "lastRun": "2026-04-03 04:38:27"
         },
         {
           "name": "Planner",
@@ -62,10 +62,10 @@
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": ":05 (19~07)",
-          "lastRun": "2026-04-03 03:08:10"
+          "lastRun": "2026-04-03 04:08:12"
         }
       ],
-      "recentLog": "**작업 B [MED M-4]** — `resend-verification` Rate Limiting\n- `emailVerifyExpiry` 필드를 DB 조회에 포함\n- 토큰 생성 시각 = `emailVerifyExpiry - 24h`로 역산\n- 마지막 발송 후 60초 미만이면 `429 Too Many Requests` + 남은 초 수 반환\n**작업 C [MED M-6]** — `EmailVerificationBanner` 조건 확인\n- 현재 코드 `user.emailVerified !== false`는 이미 올바른 동작 (`=== false`일 때만 배너 표시)\n- 카카오 소셜 로그인 사용자 (`emailVerified = null/undefined`) → 배너 미표시 ✓\n- 가독성을 위해 주석 추가로 의도 명시\n[2026-04-03 03:01:50] Dev1 완료"
+      "recentLog": "- 토큰 생성 시각 = `emailVerifyExpiry - 24h`로 역산\n- 마지막 발송 후 60초 미만이면 `429 Too Many Requests` + 남은 초 수 반환\n**작업 C [MED M-6]** — `EmailVerificationBanner` 조건 확인\n- 현재 코드 `user.emailVerified !== false`는 이미 올바른 동작 (`=== false`일 때만 배너 표시)\n- 카카오 소셜 로그인 사용자 (`emailVerified = null/undefined`) → 배너 미표시 ✓\n- 가독성을 위해 주석 추가로 의도 명시\n[2026-04-03 03:01:50] Dev1 완료\n[2026-04-03 04:00:01] Dev1 실행\n[done] Phase 9-A Sentry 에러 트래킹 통합 + Phase 9-C DB 인덱스 성능 최적화 완료 (commit 72a72b9)"
     },
     {
       "name": "LiveOrder",
@@ -78,7 +78,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":10 (19~07)",
-          "lastRun": "2026-04-03 03:13:32"
+          "lastRun": "2026-04-03 04:16:39"
         },
         {
           "name": "Planner",
@@ -96,10 +96,10 @@
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": ":15 (19~07)",
-          "lastRun": "2026-04-03 03:16:20"
+          "lastRun": "2026-04-03 04:18:33"
         }
       ],
-      "recentLog": "|---|------|------|------|\n| QA-1 | 결제 플로우 | ✅ | `payments/confirm/route.ts` — getPayment() 서버 검증 + amount 대조 + 원자적 트랜잭션 주문 생성 |\n| QA-2 | 운송장 등록 | ✅ | `seller/orders/page.tsx` Dialog + `orders/[id]/tracking` → status=SHIPPING 전환 |\n| QA-3 | 관리자 승인 | ✅ | `seller/dashboard/page.tsx` — APPROVED 시 signOut → login?message=approved → \"승인되었습니다\" 배너 |\n| QA-4 | 정산 크론 | ✅ | `cron/settlements/route.ts` — Bearer 인증 + Settlement 생성 + SETTLED+settlementId FK |\n| QA-5 | 미들웨어 | ✅ | `middleware.ts:43` — `/seller/auth/login` 리다이렉트, 경로 존재 확인 |\n| QA-6 | 이미지 업로드 | ✅ | `products/upload/route.ts` — 5MB 초과 400, Vercel Blob put() |\n**다음 단계:** Task 14 — Vercel 환경변수 확인 + 배포 (`DATABASE_URL`, `NEXTAUTH_SECRET`, `PORTONE_API_KEY`, `PORTONE_STORE_ID`, `PORTONE_API_SECRET`, `BLOB_READ_WRITE_TOKEN`, `CRON_SECRET`, `NEXTAUTH_URL` 8개 변수 설정 필요)\n[2026-04-03 03:13:32] Dev1 완료"
+      "recentLog": "- **buyer-store**: `FlowProduct`, `FlowSeller`, `FlowAddress` 명시적 인터페이스 정의\n### Task 22 (P3-1): API 페이지네이션\n- **`lib/pagination.ts`**: `parsePagination` + `buildPaginationResponse` 공통 유틸 신규\n- **4개 API**: `seller/orders`, `seller/products`, `seller/codes`, `admin/orders` GET에 `page`/`limit` 파라미터 + `{data, pagination}` 응답 형식\n- **`components/ui/Pagination.tsx`**: Prev/페이지번호/Next UI 컴포넌트 신규\n- **4개 목록 페이지**: `seller/orders`, `seller/products`, `seller/codes`, `admin/orders` Pagination 컴포넌트 연동\nTypeScript 빌드 오류 없음, 커밋+푸시 완료 (`83fdb78`).\n[2026-04-03 04:16:39] Dev1 완료"
     },
     {
       "name": "ReviewBot",
@@ -137,13 +137,15 @@
     }
   ],
   "recentActivity": [
-    "새 메시지 없음. 변동 없음 보고 완료.",
-    "[2026-04-03 03:32:06] Eddy 실행 완료",
-    "변동 없음. 새 메시지 없어 보고 완료.",
-    "[2026-04-03 03:42:27] Eddy 실행 완료",
+    "변동 없음. 보고 완료.",
+    "[2026-04-03 04:38:55] Eddy 실행 완료",
+    "새 메시지 없음. 보고 완료.",
+    "[2026-04-03 04:44:59] Eddy 실행 완료",
     "[2026-04-03 03:01:50] Dev1 완료",
-    "[2026-04-03 03:33:51] Dev2 완료",
-    "[2026-04-03 03:13:32] Dev1 완료",
+    "[done] Phase 9-A Sentry 에러 트래킹 통합 + Phase 9-C DB 인덱스 성능 최적화 완료 (commit 72a72b9)",
+    "[2026-04-03 04:38:27] Dev2 완료",
+    "TypeScript 빌드 오류 없음, 커밋+푸시 완료 (`83fdb78`).",
+    "[2026-04-03 04:16:39] Dev1 완료",
     "[2026-04-02 14:51:22] Dev1 완료"
   ]
 }
