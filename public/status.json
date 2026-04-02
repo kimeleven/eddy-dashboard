@@ -1,9 +1,13 @@
 {
-  "updatedAt": "2026-04-03 01:18:33",
+  "updatedAt": "2026-04-03 01:38:53",
   "system": {
     "host": "MacBook (a1111)",
-    "services": ["Claude Max", "Gemini 2.5", "Imagen 4"],
-    "cronJobs": 14,
+    "services": [
+      "Claude Max",
+      "Gemini 2.5",
+      "Imagen 4"
+    ],
+    "cronJobs": 15,
     "telegram": "Eddy Bot (30분마다)"
   },
   "teams": [
@@ -14,18 +18,14 @@
       "schedule": "24h (30분마다)",
       "status": "active",
       "agents": [
-        {"name": "Eddy", "role": "텔레그램 모니터링, PM 총괄", "cron": "0,30 * * * *", "lastRun": "2026-04-03 01:11:50"}
+        {
+          "name": "Eddy",
+          "role": "텔레그램 모니터링, PM 총괄",
+          "cron": "0,30 * * * *",
+          "lastRun": "2026-04-03 01:33:13"
+        }
       ],
-      "recentLog": "[2026-04-03 00:51:02] Eddy 실행 완료
-[2026-04-03 01:00:00] Eddy 실행 시작
-변동 없음. 완료.
-[2026-04-03 01:00:26] Eddy 실행 완료
-[2026-04-03 01:01:02] Eddy 실행 시작
-새 메시지 없음. 보고 완료.
-[2026-04-03 01:01:26] Eddy 실행 완료
-[2026-04-03 01:11:26] Eddy 실행 시작
-새 메시지 없음. 완료 보고 발송했습니다.
-[2026-04-03 01:11:50] Eddy 실행 완료"
+      "recentLog": "변동 없음. 완료.\n[2026-04-03 01:22:12] Eddy 실행 완료\n[2026-04-03 01:30:00] Eddy 실행 시작\n완료. 새 메시지 없음, 텔레그램 보고 완료.\n[2026-04-03 01:30:28] Eddy 실행 완료\n[2026-04-03 01:32:12] Eddy 실행 시작\n보고 완료.\nELDO 프로젝트 등록하고 팀 구성 확인했습니다. GitLab 링크 주시면 바로 연동합니다.\n[2026-04-03 01:33:13] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -34,22 +34,38 @@
       "schedule": "19:00~07:00",
       "status": "active",
       "agents": [
-        {"name": "Dev1", "role": "기능 개발", "cron": ":00 (19~07)", "lastRun": "2026-04-03 01:03:23"},
-        {"name": "Dev2", "role": "기능 개발", "cron": ":30 (19~07)", "lastRun": "2026-04-02 23:34:03"},
-        {"name": "Planner", "role": "기획/태스크 관리", "cron": "2h간격", "lastRun": "2026-04-03 01:15:01"},
-        {"name": "QA", "role": "코드 검증", "cron": "3h간격", "lastRun": "2026-04-02 22:49:54"},
-        {"name": "PM", "role": "텔레그램 보고", "cron": ":05 (19~07)", "lastRun": "2026-04-03 01:08:50"}
+        {
+          "name": "Dev1",
+          "role": "기능 개발",
+          "cron": ":00 (19~07)",
+          "lastRun": "2026-04-03 01:03:23"
+        },
+        {
+          "name": "Dev2",
+          "role": "기능 개발",
+          "cron": ":30 (19~07)",
+          "lastRun": "2026-04-03 01:30:00"
+        },
+        {
+          "name": "Planner",
+          "role": "기획/태스크 관리",
+          "cron": "2h간격",
+          "lastRun": "2026-04-03 01:20:01"
+        },
+        {
+          "name": "QA",
+          "role": "코드 검증",
+          "cron": "3h간격",
+          "lastRun": "2026-04-02 22:49:54"
+        },
+        {
+          "name": "PM",
+          "role": "텔레그램 보고",
+          "cron": ":05 (19~07)",
+          "lastRun": "2026-04-03 01:08:50"
+        }
       ],
-      "recentLog": "- `/verify-email?token=...` 페이지 — 성공/실패 UI + Suspense
-- `EmailVerificationBanner.tsx` — 미인증 계정 상단 배너 (재발송 버튼 포함)
-- `client/layout.tsx`, `developer/layout.tsx` — 배너 통합 완료
-
-**이번 실행에서 추가한 항목:**
-- `README.md`: `MAIL_HOST/PORT/USER/PASS/FROM` 환경변수 5개 추가
-- `plan.md`: Phase 7 완료 상태 업데이트
-- `TASKS.md`: 작업 B 완료 표시 + 완료 목록 업데이트
-- `QA_REPORT.md`: 이메일 인증 완료로 상태 업데이트
-[2026-04-03 01:03:23] Dev1 완료"
+      "recentLog": "- `/verify-email?token=...` 페이지 — 성공/실패 UI + Suspense\n- `EmailVerificationBanner.tsx` — 미인증 계정 상단 배너 (재발송 버튼 포함)\n- `client/layout.tsx`, `developer/layout.tsx` — 배너 통합 완료\n**이번 실행에서 추가한 항목:**\n- `README.md`: `MAIL_HOST/PORT/USER/PASS/FROM` 환경변수 5개 추가\n- `plan.md`: Phase 7 완료 상태 업데이트\n- `TASKS.md`: 작업 B 완료 표시 + 완료 목록 업데이트\n- `QA_REPORT.md`: 이메일 인증 완료로 상태 업데이트\n[2026-04-03 01:03:23] Dev1 완료"
     },
     {
       "name": "LiveOrder",
@@ -58,21 +74,32 @@
       "schedule": "19:00~07:00",
       "status": "active",
       "agents": [
-        {"name": "Dev1", "role": "기능 개발", "cron": ":10 (19~07)", "lastRun": "2026-04-03 01:12:35"},
-        {"name": "Planner", "role": "기획/태스크 관리", "cron": "2h간격", "lastRun": "2026-04-02 23:24:18"},
-        {"name": "QA", "role": "코드 검증", "cron": "3h간격", "lastRun": "2026-04-02 22:59:10"},
-        {"name": "PM", "role": "텔레그램 보고", "cron": ":15 (19~07)", "lastRun": "2026-04-03 01:15:00"}
+        {
+          "name": "Dev1",
+          "role": "기능 개발",
+          "cron": ":10 (19~07)",
+          "lastRun": "2026-04-03 01:20:49"
+        },
+        {
+          "name": "Planner",
+          "role": "기획/태스크 관리",
+          "cron": "2h간격",
+          "lastRun": "2026-04-03 01:23:49"
+        },
+        {
+          "name": "QA",
+          "role": "코드 검증",
+          "cron": "3h간격",
+          "lastRun": "2026-04-02 22:59:10"
+        },
+        {
+          "name": "PM",
+          "role": "텔레그램 보고",
+          "cron": ":15 (19~07)",
+          "lastRun": "2026-04-03 01:18:54"
+        }
       ],
-      "recentLog": "**Task 17 — 셀러 대시보드 최근 주문 실데이터 (B-22)**
-- `app/api/seller/dashboard/route.ts` — `recentOrders` 최근 5건 포함
-- `app/seller/dashboard/page.tsx` — 조건부 테이블 (데이터 있을 때) vs placeholder
-
-**Task 18 — JWT 세션 갱신 UX (B-18)**
-- `app/api/seller/me/route.ts` — 실시간 셀러 상태 조회 엔드포인트
-- `app/seller/dashboard/page.tsx` — \"승인 확인\" 버튼 → 승인 시 자동 로그아웃+재로그인 유도
-- `app/seller/auth/login/page.tsx` — `message=approved` 파라미터로 초록 배너 표시
-[2026-04-03 01:11:49] Dev1 완료
-[2026-04-03 01:12:35] Dev1 실행"
+      "recentLog": "| 파일 | 내용 |\n|------|------|\n| `app/api/seller/products/route.ts` | 상품 등록 후 코드 1개 자동 발급 (24시간, 무제한), 응답에 `autoCode` 포함 |\n| `app/seller/products/new/page.tsx` | 등록 성공 화면 — 코드 표시 + 복사 버튼 + 추가 발급 링크 |\n### 버그 수정 ✅\n- `app/api/admin/orders/route.ts` — OrderStatus enum 캐스팅 타입 오류\n- `app/admin/orders/page.tsx` — Select `onValueChange(string | null)` 타입 오류\n[2026-04-03 01:20:49] Dev1 완료"
     },
     {
       "name": "ReviewBot",
@@ -81,38 +108,45 @@
       "schedule": "하루 1회 (09:30~14:00)",
       "status": "scheduled",
       "agents": [
-        {"name": "Planner", "role": "키워드 전략/SEO", "cron": "09:30", "lastRun": "2026-04-02 14:29:49"},
-        {"name": "Dev1", "role": "파이프라인 실행", "cron": "10:00", "lastRun": "2026-04-02 14:51:22"},
-        {"name": "QA", "role": "리뷰 품질 평가", "cron": "12:00", "lastRun": "2026-04-02 15:03:52"},
-        {"name": "PM", "role": "텔레그램 보고", "cron": "14:00", "lastRun": "2026-04-02 14:27:44"}
+        {
+          "name": "Planner",
+          "role": "키워드 전략/SEO",
+          "cron": "09:30",
+          "lastRun": "2026-04-02 14:29:49"
+        },
+        {
+          "name": "Dev1",
+          "role": "파이프라인 실행",
+          "cron": "10:00",
+          "lastRun": "2026-04-02 14:51:22"
+        },
+        {
+          "name": "QA",
+          "role": "리뷰 품질 평가",
+          "cron": "12:00",
+          "lastRun": "2026-04-02 15:03:52"
+        },
+        {
+          "name": "PM",
+          "role": "텔레그램 보고",
+          "cron": "14:00",
+          "lastRun": "2026-04-02 14:27:44"
+        }
       ],
-      "recentLog": "[done] Phase 10-B: naver-blog.mjs 발행 후 logNo= URL 검증 폴링 추가 (실제 구현 완료)
-완료했습니다.
-
-**Phase 10-B 구현 내용:**
-- `src/utils/naver-blog.mjs` `postArticle()` — 발행 버튼 클릭 후 8초 대기 뒤 `page.url()`을 바로 반환하던 코드를 수정
-- `logNo=` 포함 여부를 확인하며 500ms 간격으로 최대 10회(5초) 폴링
-- 폴링 후에도 `logNo=` 미포함이면 `throw` 대신 `console.warn` — 포스팅 자체는 성공했을 수 있으므로 전체 실패 처리는 과도하다는 설계 의도 반영
-
-**Phase 10-A** (`image-generator.mjs` 상대 경로 + `blog-publisher.mjs` `resolve()`)는 이미 실제 코드에도 구현되어 있음을 확인했습니다.
-[2026-04-02 14:51:22] Dev1 완료"
+      "recentLog": "[done] Phase 10-B: naver-blog.mjs 발행 후 logNo= URL 검증 폴링 추가 (실제 구현 완료)\n완료했습니다.\n**Phase 10-B 구현 내용:**\n- `src/utils/naver-blog.mjs` `postArticle()` — 발행 버튼 클릭 후 8초 대기 뒤 `page.url()`을 바로 반환하던 코드를 수정\n- `logNo=` 포함 여부를 확인하며 500ms 간격으로 최대 10회(5초) 폴링\n- 폴링 후에도 `logNo=` 미포함이면 `throw` 대신 `console.warn` — 포스팅 자체는 성공했을 수 있으므로 전체 실패 처리는 과도하다는 설계 의도 반영\n**Phase 10-A** (`image-generator.mjs` 상대 경로 + `blog-publisher.mjs` `resolve()`)는 이미 실제 코드에도 구현되어 있음을 확인했습니다.\n[2026-04-02 14:51:22] Dev1 완료"
     }
   ],
   "recentActivity": [
-    "[2026-04-02 11:02:31] QA 완료",
-"QA 작업이 완료되었습니다.",
-"전체 QA 리포트는 `reviewbot-team/QA_REPORT.md`에 작성되어 커밋/푸시 완료되었습니다.",
-"[2026-04-02 12:02:13] QA 완료",
-"QA 리뷰 및 리포트 작업이 완료되었습니다.",
-"이전 QA에서 제기한 11개 이슈 전부 수정 완료 확인",
-"리포트는 `reviewbot-team/QA_REPORT.md`에 업데이트되었고 `main` 브랜치에 푸시 완료되었습니다.",
-"[2026-04-02 12:59:31] QA 완료",
-"QA 리뷰 완료되었습니다. 결과 요약:",
-"리포트 저장 및 `main` 브랜치 푸시 완료.",
-"[2026-04-02 14:04:08] QA 완료",
-"QA 리포트 작성 및 푸시가 완료되었습니다.",
-"- `src/` 핵심 파이프라인: **A급** — Phase 10 목표 달성, 실환경 검증 완료",
-"리포트: `reviewbot-team/QA_REPORT.md` | 커밋 `0f89895` → `origin/main` 푸시 완료",
-"[2026-04-02 15:03:52] QA 완료"
+    "보고 완료.",
+    "[2026-04-03 01:33:13] Eddy 실행 완료",
+    "- `plan.md`: Phase 7 완료 상태 업데이트",
+    "- `TASKS.md`: 작업 B 완료 표시 + 완료 목록 업데이트",
+    "- `QA_REPORT.md`: 이메일 인증 완료로 상태 업데이트",
+    "[2026-04-03 01:03:23] Dev1 완료",
+    "커밋: `95921e3` → push 완료",
+    "[2026-04-02 23:34:03] Dev2 완료",
+    "[done] Phase 8-B 개발자 공개 프로필 구현 완료 — DB 마이그레이션(isPublic), API, 편집페이지, 공개페이지, 사이드바, 관리자목록",
+    "[2026-04-03 01:20:49] Dev1 완료",
+    "[2026-04-02 14:51:22] Dev1 완료"
   ]
 }
