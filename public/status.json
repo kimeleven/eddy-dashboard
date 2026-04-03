@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 04:00:53",
+  "updatedAt": "2026-04-04 04:03:39",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "파이프라인 실행",
           "cron": "10:00",
-          "lastRun": "2026-04-04 04:00:01"
+          "lastRun": "2026-04-04 04:03:39"
         },
         {
           "name": "QA",
@@ -167,7 +167,7 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "- 공감 버튼 셀렉터 다중 fallback 지원\n**사용법:**\n```bash\nnode scripts/neighbor-engage.mjs                   # 기본 실행\nnode scripts/neighbor-engage.mjs --keyword \"바람막이\"  # 특정 키워드\nnode scripts/neighbor-engage.mjs --dry-run         # 대상만 확인\n```\n[2026-04-04 03:33:25] Dev1 완료\n[2026-04-04 04:00:01] Dev1 실행"
+      "recentLog": "- `writeNextSeries(topicOverride?)` — 자동/수동 주제 선정 후 `data/reviews/series_{timestamp}_{topic}.json` 저장\n- 직접 실행: `node src/series-writer.mjs \"봄 바람막이 TOP5\"`\n### `pipeline.mjs` 업데이트\n- `--type series` 옵션 추가\n- `stepSeries()` 함수 + 요약 출력 포함\n- 사용: `node pipeline.mjs --type series`\n**사용 시나리오**: 동일 카테고리 리뷰가 2개 이상 쌓이면 자동으로 \"카테고리 추천 TOP5\" 형태의 내부링크 강화 글을 발행해 SEO 네트워크 효과를 냅니다.\n[2026-04-04 04:03:39] Dev1 완료"
     }
   ],
   "recentActivity": [
@@ -177,6 +177,6 @@
     "[2026-04-03 23:32:15] Dev2 완료",
     "- **lookup/page.tsx**: PAID + 7일 이내 조건부 청약철회 버튼 표시, 신청 완료 시 접수 메시지 표시",
     "[2026-04-03 23:13:38] Dev1 완료",
-    "[2026-04-04 03:33:25] Dev1 완료"
+    "[2026-04-04 04:03:39] Dev1 완료"
   ]
 }
