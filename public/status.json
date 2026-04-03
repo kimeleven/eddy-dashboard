@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 05:04:21",
+  "updatedAt": "2026-04-04 05:23:18",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":20 (19~07)",
-          "lastRun": "2026-04-04 04:23:58"
+          "lastRun": "2026-04-04 05:23:18"
         },
         {
           "name": "Planner",
@@ -133,7 +133,7 @@
           "lastRun": "2026-04-04 04:25:12"
         }
       ],
-      "recentLog": "2. **`app/vcr/_components/vcr-client.tsx`** — 탭 ARIA 속성 추가\n- 탭 컨테이너에 `role=\"tablist\"` + `aria-label`\n- 각 탭 버튼에 `role=\"tab\"` + `aria-selected`\n- 스크린리더 사용자의 탭 내비게이션 시맨틱 개선\n**다음 액션 (Sanghun 직접):**\n- Chrome DevTools → Lighthouse → Desktop 모드로 `eldo-one.vercel.app` 5개 페이지 측정\n- 목표: Performance 80+ / Accessibility 90+ / Best Practices 90+ / SEO 90+\n- 결과를 `eldo-team/QA_REPORT.md`에 기록 → 베타 오픈 가능\n[2026-04-04 04:23:58] Dev1 완료"
+      "recentLog": "- `vcr-client.tsx` — 각 탭 버튼에 `id=\"tab-{key}\"`, `aria-controls=\"panel-{key}\"` 추가\n- 탭 패널에 `role=\"tabpanel\"`, `id=\"panel-{tab}\"`, `aria-labelledby=\"tab-{tab}\"` 추가\n- → 스크린리더가 탭-패널 관계를 완전히 인식, Lighthouse Accessibility 추가 향상 기대\n### preconnect 개선 (`af62918`)\n- `layout.tsx` — GA CDN `preconnect`에 `crossOrigin=\"anonymous\"` 추가\n- → CORS 서빙 리소스의 연결 재사용 가능 (TTI 미세 개선)\n**남은 작업:** TASK-307 Lighthouse 실측 (브라우저 필요 — Sanghun 직접)\n[2026-04-04 05:23:18] Dev1 완료"
     },
     {
       "name": "ReviewBot",
