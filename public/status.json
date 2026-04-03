@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 04:25:12",
+  "updatedAt": "2026-04-04 04:30:46",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 04:00:53"
+          "lastRun": "2026-04-04 04:30:46"
         }
       ],
-      "recentLog": "**상황 요약:**\n- 텔레그램 새 메시지 없음\n- ELDO: Phase 6 코드 100% 완료. Lighthouse 실측만 남음 (Sanghun 직접 Chrome에서)\n- ReviewBot: Phase 13 안정화 모드. dry-run 완료, 실 포스팅은 Sanghun 직접 실행 필요\n**Sanghun 액션 대기 중:**\n1. ELDO Lighthouse → eldo-one.vercel.app (Chrome DevTools)\n2. ReviewBot 실 포스팅 → `node pipeline.mjs --auto`\n3. ReviewBot 서치어드바이저 등록\n[2026-04-04 04:00:53] Eddy 실행 완료"
+      "recentLog": "팀 정상 가동 중. 새 텔레그램 메시지 없음.\n**현황 요약:**\n- **ELDO**: 모든 코드 완료 (Phase 6, A11Y 포함). `eldo-one.vercel.app` Lighthouse 실측만 남음 → Sanghun 직접 필요\n- **ReviewBot**: Phase 14-A 시리즈 글 자동화까지 완료. 실 포스팅 실행은 네이버 브라우저 세션 필요 → Sanghun 직접 실행\n**Sanghun 액션 필요:**\n1. Chrome DevTools로 Lighthouse 측정 (`eldo-one.vercel.app`)\n2. `node pipeline.mjs --auto` 실행 (ReviewBot 첫 실제 포스팅)\n[2026-04-04 04:30:46] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "파이프라인 실행",
           "cron": "10:00",
-          "lastRun": "2026-04-04 04:03:39"
+          "lastRun": "2026-04-04 04:30:02"
         },
         {
           "name": "QA",
@@ -167,11 +167,11 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "- `writeNextSeries(topicOverride?)` — 자동/수동 주제 선정 후 `data/reviews/series_{timestamp}_{topic}.json` 저장\n- 직접 실행: `node src/series-writer.mjs \"봄 바람막이 TOP5\"`\n### `pipeline.mjs` 업데이트\n- `--type series` 옵션 추가\n- `stepSeries()` 함수 + 요약 출력 포함\n- 사용: `node pipeline.mjs --type series`\n**사용 시나리오**: 동일 카테고리 리뷰가 2개 이상 쌓이면 자동으로 \"카테고리 추천 TOP5\" 형태의 내부링크 강화 글을 발행해 SEO 네트워크 효과를 냅니다.\n[2026-04-04 04:03:39] Dev1 완료"
+      "recentLog": "- 직접 실행: `node src/series-writer.mjs \"봄 바람막이 TOP5\"`\n### `pipeline.mjs` 업데이트\n- `--type series` 옵션 추가\n- `stepSeries()` 함수 + 요약 출력 포함\n- 사용: `node pipeline.mjs --type series`\n**사용 시나리오**: 동일 카테고리 리뷰가 2개 이상 쌓이면 자동으로 \"카테고리 추천 TOP5\" 형태의 내부링크 강화 글을 발행해 SEO 네트워크 효과를 냅니다.\n[2026-04-04 04:03:39] Dev1 완료\n[2026-04-04 04:30:02] Dev1 실행"
     }
   ],
   "recentActivity": [
-    "[2026-04-04 04:00:53] Eddy 실행 완료",
+    "[2026-04-04 04:30:46] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
     "[2026-04-03 23:32:15] Dev2 완료",
