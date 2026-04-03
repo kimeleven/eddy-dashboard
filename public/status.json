@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 05:23:18",
+  "updatedAt": "2026-04-04 05:25:14",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -118,7 +118,7 @@
           "name": "Planner",
           "role": "기획/태스크 관리",
           "cron": "2h간격",
-          "lastRun": "2026-04-04 03:29:52"
+          "lastRun": "2026-04-04 05:25:00"
         },
         {
           "name": "QA",
@@ -130,7 +130,7 @@
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": ":25 (19~07)",
-          "lastRun": "2026-04-04 04:25:12"
+          "lastRun": "2026-04-04 05:25:14"
         }
       ],
       "recentLog": "- `vcr-client.tsx` — 각 탭 버튼에 `id=\"tab-{key}\"`, `aria-controls=\"panel-{key}\"` 추가\n- 탭 패널에 `role=\"tabpanel\"`, `id=\"panel-{tab}\"`, `aria-labelledby=\"tab-{tab}\"` 추가\n- → 스크린리더가 탭-패널 관계를 완전히 인식, Lighthouse Accessibility 추가 향상 기대\n### preconnect 개선 (`af62918`)\n- `layout.tsx` — GA CDN `preconnect`에 `crossOrigin=\"anonymous\"` 추가\n- → CORS 서빙 리소스의 연결 재사용 가능 (TTI 미세 개선)\n**남은 작업:** TASK-307 Lighthouse 실측 (브라우저 필요 — Sanghun 직접)\n[2026-04-04 05:23:18] Dev1 완료"
