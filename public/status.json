@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 02:31:06",
+  "updatedAt": "2026-04-04 02:35:01",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "파이프라인 실행",
           "cron": "10:00",
-          "lastRun": "2026-04-04 02:30:01"
+          "lastRun": "2026-04-04 02:35:01"
         },
         {
           "name": "QA",
@@ -167,7 +167,7 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "1. **BUG 수정** (`blog-publisher.mjs`): 멀티상품 비교 리뷰 발행 시 `partnerLink`가 `null`로 저장되던 버그 수정. `products[0].coupangUrl` fallback 추가.\n- 실제 영향: 최신 \"트위드자켓 추천\" 포스팅의 `partnerLink: null` 이 원인이었음\n2. **Phase 13-A 신규 구현** (`scripts/search-rank.mjs`): 네이버 블로그 검색 순위 모니터링\n- 발행된 리뷰 포스팅이 대상 키워드 검색 결과 몇 위인지 자동 확인\n- `node scripts/search-rank.mjs` — 전체 확인\n- `node scripts/search-rank.mjs --pages 5` — 상위 50위까지 확인\n- `node scripts/search-rank.mjs --save` — `data/search-ranks.json`에 기록 저장\n[2026-04-04 02:03:42] Dev1 완료\n[2026-04-04 02:30:01] Dev1 실행"
+      "recentLog": "- 총 75개 키워드, priority 21개 (완료 조건 초과 달성)\n### 태스크 13-A: 파이프라인 dry-run 검증 ✅ (부분 완료)\n- `pipeline.mjs --auto --dry-run` 성공 실행\n- 키워드 +48개 수집, 정보글 작성, 품질 평가, 텔레그램 큐 정상 동작\n- `data/ranks/2026-04-03_재킷.json` 존재 확인 (Phase 11-B 정상)\n- `data/rss.xml` 존재 확인 (Phase 12 정상)\n- **주의**: `바람막이 솔직후기` 키워드 리서치 시 상품 없음 (API 미연결 가능성)\n- 실제 포스팅은 Sanghun이 `node pipeline.mjs --auto` 직접 실행 필요 (네이버 브라우저 세션)\n[2026-04-04 02:35:01] Dev1 완료"
     }
   ],
   "recentActivity": [
@@ -179,6 +179,6 @@
     "[2026-04-03 23:32:15] Dev2 완료",
     "- **lookup/page.tsx**: PAID + 7일 이내 조건부 청약철회 버튼 표시, 신청 완료 시 접수 메시지 표시",
     "[2026-04-03 23:13:38] Dev1 완료",
-    "[2026-04-04 02:03:42] Dev1 완료"
+    "[2026-04-04 02:35:01] Dev1 완료"
   ]
 }
