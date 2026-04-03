@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 02:25:12",
+  "updatedAt": "2026-04-04 02:31:06",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 02:02:37"
+          "lastRun": "2026-04-04 02:31:06"
         }
       ],
-      "recentLog": "- QA 발견 WARN-05 → BUG-WARN05 P1 태스크 추가 (`/copyright`, `/privacy-policy` Coming Soon 페이지)\n**ReviewBot:**\n- Phase 12 완성 (RSS 자동화 + 조회수 기반 키워드 피드백 완료)\n- URGENT 완료 처리 → Phase 13 운영 안정화 태스크 4개 정의\n**Sanghun 액션 필요:**\n- ReviewBot 네이버 서치어드바이저 수동 등록 (네이버 로그인 필요)\n- ELDO `eldo-one.vercel.app` 직접 검증 후 베타 오픈 판단\n[2026-04-04 02:02:37] Eddy 실행 완료"
+      "recentLog": "[2026-04-04 02:30:01] Eddy 실행 시작\n[2026-04-04 02:30:46] Eddy 정기 체크 — 새 텔레그램 메시지 없음. ELDO: TASK-306 대기, ReviewBot: Phase 13 진행 중\n정기 체크 완료.\n**요약:**\n- 새 텔레그램 메시지 없음\n- **ELDO**: BUG-WARN05 처리됨. TASK-306(전체 페이지 실동작 검증)만 통과하면 베타 오픈 가능\n- **ReviewBot**: Phase 13-A 완료(검색순위 모니터링 + null 버그 수정). BUG-001 처리 중\n- 텔레그램 보고 전송 완료\n[2026-04-04 02:31:06] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "파이프라인 실행",
           "cron": "10:00",
-          "lastRun": "2026-04-04 02:03:42"
+          "lastRun": "2026-04-04 02:30:01"
         },
         {
           "name": "QA",
@@ -167,11 +167,13 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "1. **BUG 수정** (`blog-publisher.mjs`): 멀티상품 비교 리뷰 발행 시 `partnerLink`가 `null`로 저장되던 버그 수정. `products[0].coupangUrl` fallback 추가.\n- 실제 영향: 최신 \"트위드자켓 추천\" 포스팅의 `partnerLink: null` 이 원인이었음\n2. **Phase 13-A 신규 구현** (`scripts/search-rank.mjs`): 네이버 블로그 검색 순위 모니터링\n- 발행된 리뷰 포스팅이 대상 키워드 검색 결과 몇 위인지 자동 확인\n- `node scripts/search-rank.mjs` — 전체 확인\n- `node scripts/search-rank.mjs --pages 5` — 상위 50위까지 확인\n- `node scripts/search-rank.mjs --save` — `data/search-ranks.json`에 기록 저장\n[2026-04-04 02:03:42] Dev1 완료"
+      "recentLog": "1. **BUG 수정** (`blog-publisher.mjs`): 멀티상품 비교 리뷰 발행 시 `partnerLink`가 `null`로 저장되던 버그 수정. `products[0].coupangUrl` fallback 추가.\n- 실제 영향: 최신 \"트위드자켓 추천\" 포스팅의 `partnerLink: null` 이 원인이었음\n2. **Phase 13-A 신규 구현** (`scripts/search-rank.mjs`): 네이버 블로그 검색 순위 모니터링\n- 발행된 리뷰 포스팅이 대상 키워드 검색 결과 몇 위인지 자동 확인\n- `node scripts/search-rank.mjs` — 전체 확인\n- `node scripts/search-rank.mjs --pages 5` — 상위 50위까지 확인\n- `node scripts/search-rank.mjs --save` — `data/search-ranks.json`에 기록 저장\n[2026-04-04 02:03:42] Dev1 완료\n[2026-04-04 02:30:01] Dev1 실행"
     }
   ],
   "recentActivity": [
-    "[2026-04-04 02:02:37] Eddy 실행 완료",
+    "- **ReviewBot**: Phase 13-A 완료(검색순위 모니터링 + null 버그 수정). BUG-001 처리 중",
+    "- 텔레그램 보고 전송 완료",
+    "[2026-04-04 02:31:06] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
     "[2026-04-03 23:32:15] Dev2 완료",
