@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 06:25:12",
+  "updatedAt": "2026-04-04 06:30:44",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 06:00:53"
+          "lastRun": "2026-04-04 06:30:44"
         }
       ],
-      "recentLog": "[2026-04-04 06:00:00] Eddy 실행 시작\n[2026-04-03 21:00:39] Eddy 실행 완료 (변동 없음)\n텔레그램 보고 완료.\n**정기 체크 결과:**\n- 새 메시지 없음\n- ELDO: Phase 6 완료, 베타 오픈 대기 (Sanghun Lighthouse 실측 필요)\n- ReviewBot: Phase 17-A 완료, 안정화 모드\n- 변동 없음, 팀 정상 가동 중\n[2026-04-04 06:00:53] Eddy 실행 완료"
+      "recentLog": "[2026-04-04 06:30:01] Eddy 실행 시작\n팀 정상 가동 중. 변동 없음.\n**📋 현황 요약**\n- **ELDO**: Phase 6 코드 100% 완료. Lighthouse 실측(TASK-307)만 Sanghun 직접 필요. 베타 오픈 준비 완료.\n- **ReviewBot**: Phase 18-A (검색순위 변화 감지 & Telegram 알림) 구현 완료. 안정화 모드.\n**새 텔레그램 메시지 없음. 텔레그램 보고 완료.**\n[2026-04-04 06:30:44] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "파이프라인 실행",
           "cron": "10:00",
-          "lastRun": "2026-04-04 06:02:59"
+          "lastRun": "2026-04-04 06:30:02"
         },
         {
           "name": "QA",
@@ -167,13 +167,14 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "- `buildTelegramMessage()` — 주요 변화(±5위 이상, 신규진입, 이탈) 강조 포함 알림 메시지\n- `--notify` 옵션 — Telegram 알림 전송\n- `--dry-run` 옵션 — 콘솔 출력만 (저장/알림 미실행)\n- 기본 실행 시 자동 저장 (`--save` 옵션 불필요, 하위 호환 유지)\n**cron 설정** (매일 오전 7시):\n```\n0 7 * * * cd ~/reviewbot && node scripts/search-rank.mjs --notify >> logs/search-rank.log 2>&1\n```\n[2026-04-04 06:02:59] Dev1 완료"
+      "recentLog": "- `--notify` 옵션 — Telegram 알림 전송\n- `--dry-run` 옵션 — 콘솔 출력만 (저장/알림 미실행)\n- 기본 실행 시 자동 저장 (`--save` 옵션 불필요, 하위 호환 유지)\n**cron 설정** (매일 오전 7시):\n```\n0 7 * * * cd ~/reviewbot && node scripts/search-rank.mjs --notify >> logs/search-rank.log 2>&1\n```\n[2026-04-04 06:02:59] Dev1 완료\n[2026-04-04 06:30:02] Dev1 실행"
     }
   ],
   "recentActivity": [
-    "- ELDO: Phase 6 완료, 베타 오픈 대기 (Sanghun Lighthouse 실측 필요)",
-    "- ReviewBot: Phase 17-A 완료, 안정화 모드",
-    "[2026-04-04 06:00:53] Eddy 실행 완료",
+    "- **ELDO**: Phase 6 코드 100% 완료. Lighthouse 실측(TASK-307)만 Sanghun 직접 필요. 베타 오픈 준비 완료.",
+    "- **ReviewBot**: Phase 18-A (검색순위 변화 감지 & Telegram 알림) 구현 완료. 안정화 모드.",
+    "**새 텔레그램 메시지 없음. 텔레그램 보고 완료.**",
+    "[2026-04-04 06:30:44] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
     "[2026-04-03 23:32:15] Dev2 완료",
