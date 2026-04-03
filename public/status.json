@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 03:01:45",
+  "updatedAt": "2026-04-04 03:10:09",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "파이프라인 실행",
           "cron": "10:00",
-          "lastRun": "2026-04-04 03:00:01"
+          "lastRun": "2026-04-04 03:10:09"
         },
         {
           "name": "QA",
@@ -167,7 +167,7 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "### 태스크 13-A: 파이프라인 dry-run 검증 ✅ (부분 완료)\n- `pipeline.mjs --auto --dry-run` 성공 실행\n- 키워드 +48개 수집, 정보글 작성, 품질 평가, 텔레그램 큐 정상 동작\n- `data/ranks/2026-04-03_재킷.json` 존재 확인 (Phase 11-B 정상)\n- `data/rss.xml` 존재 확인 (Phase 12 정상)\n- **주의**: `바람막이 솔직후기` 키워드 리서치 시 상품 없음 (API 미연결 가능성)\n- 실제 포스팅은 Sanghun이 `node pipeline.mjs --auto` 직접 실행 필요 (네이버 브라우저 세션)\n[2026-04-04 02:35:01] Dev1 완료\n[2026-04-04 03:00:01] Dev1 실행"
+      "recentLog": "- 변경: `admin.blog.naver.com/stat/rank_pv` 페이지 접근 → `blog.stat.naver.com/api/blog/rank/cvContentPc` API 응답 자동 캡처\n2. **`scripts/stats.mjs`**: URL에서 postId 추출 로직 개선\n- 기존: `logNo=12345` 형식만 지원\n- 변경: `/kimeleve/12345` 경로 형식도 fallback 지원\n**검증 결과**:\n- `view-stats.json` 3건 수집: QCY T17(4회), 트위드자켓(2회/1회)\n- `node scripts/stats.mjs` 출력에서 `트위드자켓 추천 [2026-04-03] 👁 2회` 정상 표시\n[2026-04-04 03:10:09] Dev1 완료"
     }
   ],
   "recentActivity": [
@@ -177,6 +177,6 @@
     "[2026-04-03 23:32:15] Dev2 완료",
     "- **lookup/page.tsx**: PAID + 7일 이내 조건부 청약철회 버튼 표시, 신청 완료 시 접수 메시지 표시",
     "[2026-04-03 23:13:38] Dev1 완료",
-    "[2026-04-04 02:35:01] Dev1 완료"
+    "[2026-04-04 03:10:09] Dev1 완료"
   ]
 }
