@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 03:29:52",
+  "updatedAt": "2026-04-04 03:31:49",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 03:01:45"
+          "lastRun": "2026-04-04 03:31:49"
         }
       ],
-      "recentLog": "**ReviewBot**\n- Phase 13 진행 중. dry-run ✅, 봄 키워드 75개 완비\n- 실제 포스팅 실행은 Sanghun 네이버 세션 필요\n**Sanghun 액션 필요:**\n- ReviewBot: `node pipeline.mjs --auto` 직접 실행\n- ReviewBot: 서치어드바이저 RSS 등록\n- ELDO: GA4 속성 ID (`NEXT_PUBLIC_GA_ID`) 발급\n- ELDO: Vercel 토큰 발급\n[2026-04-04 03:01:45] Eddy 실행 완료"
+      "recentLog": "- ELDO `.gitignore` (`.vercel` 추가) 커밋 + push\n- ELDO TASKS.md 현황 업데이트\n🔍 **감지:** 새 텔레그램 메시지 없음\n⏳ **Sanghun 액션 필요:**\n1. ELDO Lighthouse 실측 (Chrome → eldo-one.vercel.app → 80점+ → 베타 오픈)\n2. ReviewBot 실제 포스팅 실행 (`node pipeline.mjs --auto`)\n3. ReviewBot 네이버 서치어드바이저 등록\n[2026-04-04 03:31:49] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "파이프라인 실행",
           "cron": "10:00",
-          "lastRun": "2026-04-04 03:10:09"
+          "lastRun": "2026-04-04 03:30:02"
         },
         {
           "name": "QA",
@@ -167,11 +167,11 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "- 변경: `admin.blog.naver.com/stat/rank_pv` 페이지 접근 → `blog.stat.naver.com/api/blog/rank/cvContentPc` API 응답 자동 캡처\n2. **`scripts/stats.mjs`**: URL에서 postId 추출 로직 개선\n- 기존: `logNo=12345` 형식만 지원\n- 변경: `/kimeleve/12345` 경로 형식도 fallback 지원\n**검증 결과**:\n- `view-stats.json` 3건 수집: QCY T17(4회), 트위드자켓(2회/1회)\n- `node scripts/stats.mjs` 출력에서 `트위드자켓 추천 [2026-04-03] 👁 2회` 정상 표시\n[2026-04-04 03:10:09] Dev1 완료"
+      "recentLog": "2. **`scripts/stats.mjs`**: URL에서 postId 추출 로직 개선\n- 기존: `logNo=12345` 형식만 지원\n- 변경: `/kimeleve/12345` 경로 형식도 fallback 지원\n**검증 결과**:\n- `view-stats.json` 3건 수집: QCY T17(4회), 트위드자켓(2회/1회)\n- `node scripts/stats.mjs` 출력에서 `트위드자켓 추천 [2026-04-03] 👁 2회` 정상 표시\n[2026-04-04 03:10:09] Dev1 완료\n[2026-04-04 03:30:02] Dev1 실행"
     }
   ],
   "recentActivity": [
-    "[2026-04-04 03:01:45] Eddy 실행 완료",
+    "[2026-04-04 03:31:49] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
     "[2026-04-03 23:32:15] Dev2 완료",
