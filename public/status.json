@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 04:23:58",
+  "updatedAt": "2026-04-04 04:25:12",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -130,7 +130,7 @@
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": ":25 (19~07)",
-          "lastRun": "2026-04-04 03:25:19"
+          "lastRun": "2026-04-04 04:25:12"
         }
       ],
       "recentLog": "2. **`app/vcr/_components/vcr-client.tsx`** — 탭 ARIA 속성 추가\n- 탭 컨테이너에 `role=\"tablist\"` + `aria-label`\n- 각 탭 버튼에 `role=\"tab\"` + `aria-selected`\n- 스크린리더 사용자의 탭 내비게이션 시맨틱 개선\n**다음 액션 (Sanghun 직접):**\n- Chrome DevTools → Lighthouse → Desktop 모드로 `eldo-one.vercel.app` 5개 페이지 측정\n- 목표: Performance 80+ / Accessibility 90+ / Best Practices 90+ / SEO 90+\n- 결과를 `eldo-team/QA_REPORT.md`에 기록 → 베타 오픈 가능\n[2026-04-04 04:23:58] Dev1 완료"
