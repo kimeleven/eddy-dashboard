@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 06:25:08",
+  "updatedAt": "2026-04-04 06:25:12",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -130,7 +130,7 @@
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": ":25 (19~07)",
-          "lastRun": "2026-04-04 06:25:00"
+          "lastRun": "2026-04-04 06:25:11"
         }
       ],
       "recentLog": "**해결:**\n- `providers.tsx`: Jotai `Provider` + `createStore()` 추가. 서버에서 전달받은 `initialLang`을 `langAtom` 초기값으로 설정\n- `layout.tsx`: 쿠키(`lang`)로 읽은 값을 `Lang` 타입으로 캐스팅 후 `Providers`에 `initialLang` prop으로 전달. `Header`/`Footer`도 `Providers` 내부로 이동하여 단일 Jotai store 공유\n**결과:**\n- 서버 쿠키 `lang` → Jotai store 초기값 → 클라이언트 하이드레이션 시 동일한 값으로 시작 → flash 없음\n- TypeScript 타입 체크 오류 0\n- 커밋: `7f95822`\n[2026-04-04 06:25:08] Dev1 완료"
