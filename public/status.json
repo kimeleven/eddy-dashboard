@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 05:28:17",
+  "updatedAt": "2026-04-04 05:31:02",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 05:00:44"
+          "lastRun": "2026-04-04 05:31:02"
         }
       ],
-      "recentLog": "[2026-04-04 05:00:01] Eddy 실행 시작\n보고 완료.\n**[Eddy 정기 체크]**\n- 새 텔레그램 메시지: 없음\n- **ELDO**: Phase 6 코드 100% 완료. `eldo-one.vercel.app` 배포 중. Lighthouse 브라우저 실측만 남음 (Sanghun 직접 필요).\n- **ReviewBot**: Phase 15-A (weekly-report.mjs) 구현 완료. 안정화 모드 진행 중.\n- DevGate/LiveOrder: 보류 상태 유지.\n[2026-04-04 05:00:44] Eddy 실행 완료"
+      "recentLog": "📋 팀 현황:\n- **ELDO**: Phase 6 코드 100% 완료. `eldo-one.vercel.app` 배포 완료. Lighthouse 실측만 남음 (Sanghun 직접 필요)\n- **ReviewBot**: Phase 16-A 완료 (일일 브리핑 알림 구현). 실 포스팅 실행은 Sanghun 직접 필요\n📝 변동 없음\n⏳ Sanghun 액션 필요:\n- **ELDO**: Chrome DevTools → Lighthouse 실측 → QA_REPORT.md 기록 → 베타 오픈 완료\n- **ReviewBot**: `node pipeline.mjs --auto` 실행 (네이버 브라우저 세션 필요)\n[2026-04-04 05:31:02] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "파이프라인 실행",
           "cron": "10:00",
-          "lastRun": "2026-04-04 05:04:21"
+          "lastRun": "2026-04-04 05:30:01"
         },
         {
           "name": "QA",
@@ -167,13 +167,12 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "| 인기 포스팅 | 조회수 Top 3 |\n| 권장 액션 | 포스팅 필요/승인 필요 등 자동 판단 |\n**사용법:**\n```bash\nnode scripts/daily-notify.mjs              # Telegram 전송\nnode scripts/daily-notify.mjs --dry-run   # 콘솔 미리보기\n# cron: 0 8 * * * cd ~/reviewbot && node scripts/daily-notify.mjs\n```\n[2026-04-04 05:04:21] Dev1 완료"
+      "recentLog": "| 권장 액션 | 포스팅 필요/승인 필요 등 자동 판단 |\n**사용법:**\n```bash\nnode scripts/daily-notify.mjs              # Telegram 전송\nnode scripts/daily-notify.mjs --dry-run   # 콘솔 미리보기\n# cron: 0 8 * * * cd ~/reviewbot && node scripts/daily-notify.mjs\n```\n[2026-04-04 05:04:21] Dev1 완료\n[2026-04-04 05:30:01] Dev1 실행"
     }
   ],
   "recentActivity": [
-    "- **ELDO**: Phase 6 코드 100% 완료. `eldo-one.vercel.app` 배포 중. Lighthouse 브라우저 실측만 남음 (Sanghun 직접 필요).",
-    "- **ReviewBot**: Phase 15-A (weekly-report.mjs) 구현 완료. 안정화 모드 진행 중.",
-    "[2026-04-04 05:00:44] Eddy 실행 완료",
+    "- **ELDO**: Chrome DevTools → Lighthouse 실측 → QA_REPORT.md 기록 → 베타 오픈 완료",
+    "[2026-04-04 05:31:02] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
     "[2026-04-03 23:32:15] Dev2 완료",
