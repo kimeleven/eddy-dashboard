@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 07:31:32",
+  "updatedAt": "2026-04-04 07:33:03",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "파이프라인 실행",
           "cron": "10:00",
-          "lastRun": "2026-04-04 07:30:02"
+          "lastRun": "2026-04-04 07:33:03"
         },
         {
           "name": "QA",
@@ -167,7 +167,7 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "`scripts/auto-follow.mjs` 구현:\n- 대상 키워드(priority → pending 순) Naver Blog 검색 → 타 블로거 ID 수집\n- 블로그 프로필 방문 후 이웃추가 버튼 자동 클릭 + 팝업 확인 처리\n- 이미 이웃인 경우(취소 버튼 탐지)·이미 추가한 blogId 자동 스킵\n- `data/follows.json`에 기록 저장 (누적, 중복 방지)\n- `--dry-run` / `--limit N` / `--keyword` / `--count` 옵션\n- cron 권장: `0 21 * * *` (매일 오후 9시)\n[2026-04-04 07:03:17] Dev1 완료\n[2026-04-04 07:30:02] Dev1 실행"
+      "recentLog": "- 블로그 프로필 방문 후 이웃추가 버튼 자동 클릭 + 팝업 확인 처리\n- 이미 이웃인 경우(취소 버튼 탐지)·이미 추가한 blogId 자동 스킵\n- `data/follows.json`에 기록 저장 (누적, 중복 방지)\n- `--dry-run` / `--limit N` / `--keyword` / `--count` 옵션\n- cron 권장: `0 21 * * *` (매일 오후 9시)\n[2026-04-04 07:03:17] Dev1 완료\n[2026-04-04 07:30:02] Dev1 실행\n[done] Phase 21-A: setup-cron.sh 전체 자동화 크론 통합 (8개 스케줄 등록 — daily-notify/search-rank/monitor-comments/auto-reply/neighbor-engage/auto-follow/weekly-report/pipeline)\n모든 작업이 완료되었습니다. 백그라운드 에이전트가 할 일 목록을 생성했고, 실제 구현과 커밋/푸시도 모두 완료된 상태입니다.\n[2026-04-04 07:33:03] Dev1 완료"
     }
   ],
   "recentActivity": [
@@ -177,6 +177,9 @@
     "[2026-04-03 23:32:15] Dev2 완료",
     "- **lookup/page.tsx**: PAID + 7일 이내 조건부 청약철회 버튼 표시, 신청 완료 시 접수 메시지 표시",
     "[2026-04-03 23:13:38] Dev1 완료",
-    "[2026-04-04 07:03:17] Dev1 완료"
+    "[2026-04-04 07:03:17] Dev1 완료",
+    "[done] Phase 21-A: setup-cron.sh 전체 자동화 크론 통합 (8개 스케줄 등록 — daily-notify/search-rank/monitor-comments/auto-reply/neighbor-engage/auto-follow/weekly-report/pipeline)",
+    "모든 작업이 완료되었습니다. 백그라운드 에이전트가 할 일 목록을 생성했고, 실제 구현과 커밋/푸시도 모두 완료된 상태입니다.",
+    "[2026-04-04 07:33:03] Dev1 완료"
   ]
 }
