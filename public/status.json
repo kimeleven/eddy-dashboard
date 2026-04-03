@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 05:31:02",
+  "updatedAt": "2026-04-04 05:34:09",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "파이프라인 실행",
           "cron": "10:00",
-          "lastRun": "2026-04-04 05:30:01"
+          "lastRun": "2026-04-04 05:34:09"
         },
         {
           "name": "QA",
@@ -167,7 +167,7 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "| 권장 액션 | 포스팅 필요/승인 필요 등 자동 판단 |\n**사용법:**\n```bash\nnode scripts/daily-notify.mjs              # Telegram 전송\nnode scripts/daily-notify.mjs --dry-run   # 콘솔 미리보기\n# cron: 0 8 * * * cd ~/reviewbot && node scripts/daily-notify.mjs\n```\n[2026-04-04 05:04:21] Dev1 완료\n[2026-04-04 05:30:01] Dev1 실행"
+      "recentLog": "|------|------|\n| 목적 | 발행 포스팅에 새 댓글이 달리면 Telegram 즉시 알림 |\n| 댓글 수집 방식 | Playwright로 포스팅 페이지 접근 → 네이버 cbox API 응답 캡처 |\n| 신규 감지 | `data/comments.json`에 `commentNo` 기준 이력 저장, 신규만 필터링 |\n| Telegram | 작성자명 + 내용 미리보기(최대 80자) 5개까지 알림 |\n| 옵션 | `--dry-run` (콘솔만), `--post URL` (특정 포스팅) |\n| 권장 cron | 매 2시간 실행 |\n**신택스 체크 통과 ✅** → `git push origin main` 완료 (커밋: `19022be`)\n[2026-04-04 05:34:09] Dev1 완료"
     }
   ],
   "recentActivity": [
@@ -178,6 +178,7 @@
     "[2026-04-03 23:32:15] Dev2 완료",
     "- **lookup/page.tsx**: PAID + 7일 이내 조건부 청약철회 버튼 표시, 신청 완료 시 접수 메시지 표시",
     "[2026-04-03 23:13:38] Dev1 완료",
-    "[2026-04-04 05:04:21] Dev1 완료"
+    "**신택스 체크 통과 ✅** → `git push origin main` 완료 (커밋: `19022be`)",
+    "[2026-04-04 05:34:09] Dev1 완료"
   ]
 }
