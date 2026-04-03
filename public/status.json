@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 05:45:01",
+  "updatedAt": "2026-04-04 06:00:53",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 05:31:02"
+          "lastRun": "2026-04-04 06:00:53"
         }
       ],
-      "recentLog": "📋 팀 현황:\n- **ELDO**: Phase 6 코드 100% 완료. `eldo-one.vercel.app` 배포 완료. Lighthouse 실측만 남음 (Sanghun 직접 필요)\n- **ReviewBot**: Phase 16-A 완료 (일일 브리핑 알림 구현). 실 포스팅 실행은 Sanghun 직접 필요\n📝 변동 없음\n⏳ Sanghun 액션 필요:\n- **ELDO**: Chrome DevTools → Lighthouse 실측 → QA_REPORT.md 기록 → 베타 오픈 완료\n- **ReviewBot**: `node pipeline.mjs --auto` 실행 (네이버 브라우저 세션 필요)\n[2026-04-04 05:31:02] Eddy 실행 완료"
+      "recentLog": "[2026-04-04 06:00:00] Eddy 실행 시작\n[2026-04-03 21:00:39] Eddy 실행 완료 (변동 없음)\n텔레그램 보고 완료.\n**정기 체크 결과:**\n- 새 메시지 없음\n- ELDO: Phase 6 완료, 베타 오픈 대기 (Sanghun Lighthouse 실측 필요)\n- ReviewBot: Phase 17-A 완료, 안정화 모드\n- 변동 없음, 팀 정상 가동 중\n[2026-04-04 06:00:53] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "파이프라인 실행",
           "cron": "10:00",
-          "lastRun": "2026-04-04 05:34:09"
+          "lastRun": "2026-04-04 06:00:01"
         },
         {
           "name": "QA",
@@ -167,12 +167,13 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "|------|------|\n| 목적 | 발행 포스팅에 새 댓글이 달리면 Telegram 즉시 알림 |\n| 댓글 수집 방식 | Playwright로 포스팅 페이지 접근 → 네이버 cbox API 응답 캡처 |\n| 신규 감지 | `data/comments.json`에 `commentNo` 기준 이력 저장, 신규만 필터링 |\n| Telegram | 작성자명 + 내용 미리보기(최대 80자) 5개까지 알림 |\n| 옵션 | `--dry-run` (콘솔만), `--post URL` (특정 포스팅) |\n| 권장 cron | 매 2시간 실행 |\n**신택스 체크 통과 ✅** → `git push origin main` 완료 (커밋: `19022be`)\n[2026-04-04 05:34:09] Dev1 완료"
+      "recentLog": "| 목적 | 발행 포스팅에 새 댓글이 달리면 Telegram 즉시 알림 |\n| 댓글 수집 방식 | Playwright로 포스팅 페이지 접근 → 네이버 cbox API 응답 캡처 |\n| 신규 감지 | `data/comments.json`에 `commentNo` 기준 이력 저장, 신규만 필터링 |\n| Telegram | 작성자명 + 내용 미리보기(최대 80자) 5개까지 알림 |\n| 옵션 | `--dry-run` (콘솔만), `--post URL` (특정 포스팅) |\n| 권장 cron | 매 2시간 실행 |\n**신택스 체크 통과 ✅** → `git push origin main` 완료 (커밋: `19022be`)\n[2026-04-04 05:34:09] Dev1 완료\n[2026-04-04 06:00:01] Dev1 실행"
     }
   ],
   "recentActivity": [
-    "- **ELDO**: Chrome DevTools → Lighthouse 실측 → QA_REPORT.md 기록 → 베타 오픈 완료",
-    "[2026-04-04 05:31:02] Eddy 실행 완료",
+    "- ELDO: Phase 6 완료, 베타 오픈 대기 (Sanghun Lighthouse 실측 필요)",
+    "- ReviewBot: Phase 17-A 완료, 안정화 모드",
+    "[2026-04-04 06:00:53] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
     "[2026-04-03 23:32:15] Dev2 완료",
