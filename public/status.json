@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 04:57:44",
+  "updatedAt": "2026-04-04 05:00:44",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 04:30:46"
+          "lastRun": "2026-04-04 05:00:44"
         }
       ],
-      "recentLog": "팀 정상 가동 중. 새 텔레그램 메시지 없음.\n**현황 요약:**\n- **ELDO**: 모든 코드 완료 (Phase 6, A11Y 포함). `eldo-one.vercel.app` Lighthouse 실측만 남음 → Sanghun 직접 필요\n- **ReviewBot**: Phase 14-A 시리즈 글 자동화까지 완료. 실 포스팅 실행은 네이버 브라우저 세션 필요 → Sanghun 직접 실행\n**Sanghun 액션 필요:**\n1. Chrome DevTools로 Lighthouse 측정 (`eldo-one.vercel.app`)\n2. `node pipeline.mjs --auto` 실행 (ReviewBot 첫 실제 포스팅)\n[2026-04-04 04:30:46] Eddy 실행 완료"
+      "recentLog": "[2026-04-04 05:00:01] Eddy 실행 시작\n보고 완료.\n**[Eddy 정기 체크]**\n- 새 텔레그램 메시지: 없음\n- **ELDO**: Phase 6 코드 100% 완료. `eldo-one.vercel.app` 배포 중. Lighthouse 브라우저 실측만 남음 (Sanghun 직접 필요).\n- **ReviewBot**: Phase 15-A (weekly-report.mjs) 구현 완료. 안정화 모드 진행 중.\n- DevGate/LiveOrder: 보류 상태 유지.\n[2026-04-04 05:00:44] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "파이프라인 실행",
           "cron": "10:00",
-          "lastRun": "2026-04-04 04:34:43"
+          "lastRun": "2026-04-04 05:00:02"
         },
         {
           "name": "QA",
@@ -167,11 +167,13 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "| AI 전략 추천 | Claude가 집중 카테고리, 콘텐츠 믹스, 신규 키워드 5~8개 추천 |\n| 리포트 저장 | `--save` → `data/weekly-report-YYYY-MM-DD.md` |\n| 키워드 자동 추가 | `--add-keywords` → 추천 키워드 keywords.json에 추가 (중복 방지) |\n| dry-run | `--dry-run` → keywords.json 변경 없이 리포트만 |\n**사용법**:\n```bash\nnode scripts/weekly-report.mjs --save --add-keywords\n```\n[2026-04-04 04:34:43] Dev1 완료"
+      "recentLog": "| 리포트 저장 | `--save` → `data/weekly-report-YYYY-MM-DD.md` |\n| 키워드 자동 추가 | `--add-keywords` → 추천 키워드 keywords.json에 추가 (중복 방지) |\n| dry-run | `--dry-run` → keywords.json 변경 없이 리포트만 |\n**사용법**:\n```bash\nnode scripts/weekly-report.mjs --save --add-keywords\n```\n[2026-04-04 04:34:43] Dev1 완료\n[2026-04-04 05:00:02] Dev1 실행"
     }
   ],
   "recentActivity": [
-    "[2026-04-04 04:30:46] Eddy 실행 완료",
+    "- **ELDO**: Phase 6 코드 100% 완료. `eldo-one.vercel.app` 배포 중. Lighthouse 브라우저 실측만 남음 (Sanghun 직접 필요).",
+    "- **ReviewBot**: Phase 15-A (weekly-report.mjs) 구현 완료. 안정화 모드 진행 중.",
+    "[2026-04-04 05:00:44] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
     "[2026-04-03 23:32:15] Dev2 완료",
