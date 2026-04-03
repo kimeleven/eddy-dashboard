@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 04:30:46",
+  "updatedAt": "2026-04-04 04:34:43",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "파이프라인 실행",
           "cron": "10:00",
-          "lastRun": "2026-04-04 04:30:02"
+          "lastRun": "2026-04-04 04:34:43"
         },
         {
           "name": "QA",
@@ -167,7 +167,7 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "- 직접 실행: `node src/series-writer.mjs \"봄 바람막이 TOP5\"`\n### `pipeline.mjs` 업데이트\n- `--type series` 옵션 추가\n- `stepSeries()` 함수 + 요약 출력 포함\n- 사용: `node pipeline.mjs --type series`\n**사용 시나리오**: 동일 카테고리 리뷰가 2개 이상 쌓이면 자동으로 \"카테고리 추천 TOP5\" 형태의 내부링크 강화 글을 발행해 SEO 네트워크 효과를 냅니다.\n[2026-04-04 04:03:39] Dev1 완료\n[2026-04-04 04:30:02] Dev1 실행"
+      "recentLog": "| AI 전략 추천 | Claude가 집중 카테고리, 콘텐츠 믹스, 신규 키워드 5~8개 추천 |\n| 리포트 저장 | `--save` → `data/weekly-report-YYYY-MM-DD.md` |\n| 키워드 자동 추가 | `--add-keywords` → 추천 키워드 keywords.json에 추가 (중복 방지) |\n| dry-run | `--dry-run` → keywords.json 변경 없이 리포트만 |\n**사용법**:\n```bash\nnode scripts/weekly-report.mjs --save --add-keywords\n```\n[2026-04-04 04:34:43] Dev1 완료"
     }
   ],
   "recentActivity": [
@@ -177,6 +177,6 @@
     "[2026-04-03 23:32:15] Dev2 완료",
     "- **lookup/page.tsx**: PAID + 7일 이내 조건부 청약철회 버튼 표시, 신청 완료 시 접수 메시지 표시",
     "[2026-04-03 23:13:38] Dev1 완료",
-    "[2026-04-04 04:03:39] Dev1 완료"
+    "[2026-04-04 04:34:43] Dev1 완료"
   ]
 }
