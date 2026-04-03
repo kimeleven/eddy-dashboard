@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-03 19:45:00",
+  "updatedAt": "2026-04-03 20:45:00",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-03 19:30:00"
+          "lastRun": "2026-04-03 20:30:25"
         }
       ],
-      "recentLog": "링크 문제 근본 원인 3가지를 모두 수정했습니다:\n1. **`internal-linker.mjs`** — AI 프롬프트에 이전 포스팅 URL을 전달하고 있었음 → URL 제거, 제목만 전달하도록 수정\n2. **`info-writer.mjs`, `daily-writer.mjs`** — URL 제거 로직 자체가 없었음 → 추가\n3. **마크다운 링크 형식** `[텍스트](url)` — 기존 regex로는 못 잡았음 → 텍스트만 남기고 URL 제거\n`naver-blog.mjs`의 최종 안전망도 동일하게 강화해서 3중 필터 구조로 만들었습니다.\n[2026-04-03 19:02:55] Eddy 실행 완료\n[2026-04-03 19:30:00] Eddy 실행 시작"
+      "recentLog": "`naver-blog.mjs`의 최종 안전망도 동일하게 강화해서 3중 필터 구조로 만들었습니다.\n[2026-04-03 19:02:55] Eddy 실행 완료\n[2026-04-03 19:30:00] Eddy 실행 시작\n[2026-04-03 20:00:01] Eddy 실행 시작\n완료. 새 메시지 없어 변동 없음 보고 전송.\n[2026-04-03 20:00:23] Eddy 실행 완료\n[2026-04-03 20:30:01] Eddy 실행 시작\n새 메시지 없음. 변동 없음 보고 완료.\n[2026-04-03 20:30:25] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -38,13 +38,13 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":00 (19~07)",
-          "lastRun": "2026-04-03 19:00:01"
+          "lastRun": "2026-04-03 20:03:40"
         },
         {
           "name": "Dev2",
           "role": "기능 개발",
           "cron": ":30 (19~07)",
-          "lastRun": "2026-04-03 19:42:32"
+          "lastRun": "2026-04-03 20:38:41"
         },
         {
           "name": "Planner",
@@ -56,16 +56,16 @@
           "name": "QA",
           "role": "코드 검증",
           "cron": "3h간격",
-          "lastRun": "2026-04-03 07:51:54"
+          "lastRun": "2026-04-03 19:50:37"
         },
         {
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": ":05 (19~07)",
-          "lastRun": "2026-04-03 19:07:29"
+          "lastRun": "2026-04-03 20:08:35"
         }
       ],
-      "recentLog": "1. **DB 마이그레이션** `0007_add_admin_log` — `admin_logs` 테이블 생성\n2. **`web/src/lib/admin-log.ts`** — `createAdminLog()` 헬퍼 (실패 시 메인 플로우 방해 없음)\n3. **`GET /api/admin/logs`** — 페이지네이션(skip/take) 지원, 최대 100건\n4. **`/admin/logs` UI** — 날짜, 관리자, 액션 배지, 대상 ID, 메타 JSON 테이블\n5. **3개 관리자 라우트 로그 추가**: `ASSIGN_DEVELOPER`, `MANUAL_PAYMENT`, `PAYOUT_PROCESSED`\n6. **어드민 네비게이션**에 \"감사 로그\" 링크 추가\n7. **빌드 성공** 확인\n[2026-04-03 07:16:32] Dev1 완료\n[2026-04-03 19:00:01] Dev1 실행\n[done] Phase 12-A 개발자 평점/리뷰 시스템 구현 완료 — DeveloperReview 모델(마이그레이션 0008), 리뷰 제출/조회 API, ReviewModal 컴포넌트, 클라이언트 프로젝트 평가 버튼, 개발자 공개 프로필 평점 표시, 개발자 프로필 페이지 리뷰 섹션. QA 버그 수정: createAdminLog try/catch, to날짜 처리, skip음수 방지 (commit 78f2306)"
+      "recentLog": "2. **`admin/logs/page.tsx`** (TASKS 항목 3):\n- 액션 타입 드롭다운 필터 UI 추가 (전체 / 개발자 배정 / 수동 결제 / 지급 처리)\n- queryKey에 `actionFilter` 포함, 필터 변경 시 skip 초기화\n3. **`admin/projects/page.tsx`** (QA H-2 + TASKS 항목 2 + QA M-5):\n- 날짜 필터를 로컬 state(`fromDateInput`/`toDateInput`)로 분리 → 검색 버튼 클릭 시에만 queryKey 반영\n- 검색어·날짜 초기화 버튼 통합\n- 수동 결제 UI에 `MILESTONE_FEE_COMPLETION_MAJOR` 타입 추가\n[2026-04-03 20:03:40] Dev1 완료"
     },
     {
       "name": "LiveOrder",
@@ -78,7 +78,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":10 (19~07)",
-          "lastRun": "2026-04-03 19:12:35"
+          "lastRun": "2026-04-03 20:15:39"
         },
         {
           "name": "Planner",
@@ -90,16 +90,16 @@
           "name": "QA",
           "role": "코드 검증",
           "cron": "3h간격",
-          "lastRun": "2026-04-03 07:54:21"
+          "lastRun": "2026-04-03 19:56:34"
         },
         {
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": ":15 (19~07)",
-          "lastRun": "2026-04-03 19:17:26"
+          "lastRun": "2026-04-03 20:19:02"
         }
       ],
-      "recentLog": "### Task 27 — P3-6 구매자 데이터 삭제권 (GDPR)\n- **`app/api/buyer/data-deletion/route.ts`**: POST API — 이름+전화번호로 해당 주문의 개인식별정보(이름, 전화번호, 주소)를 `[삭제됨]`으로 마스킹. 금액/수량 등 정산 데이터는 보존\n- **`app/(buyer)/privacy/request/page.tsx`**: 삭제 요청 폼 — N건 삭제 완료 또는 \"해당 정보 없음\" 결과 표시\n- **`app/(buyer)/privacy/page.tsx`**: 개인정보처리방침 페이지 — 삭제 요청 링크 포함\n### 다음 예정: Task 28 — B-28/B-29 기술 부채 클린업\n- B-28: `admin/orders` API 페이지네이션 표준화\n- B-29: `seller/orders` fetch 에러 처리 개선\n[2026-04-03 19:12:35] Dev1 완료"
+      "recentLog": "**QA HIGH 버그:**\n- `prisma/schema.prisma`: `pgTid` 필드에 `@unique` 추가 + 마이그레이션\n- `payments/confirm`: pgTid 중복 체크 (409 반환)\n- `refund/route.ts`: 부분 환불 시 상태 REFUNDED로 변경하지 않음\n**QA MED 버그:**\n- `cron/settlements`: `status: \"PAID\"` → `status: { in: [\"PAID\", \"SHIPPING\", \"DELIVERED\"] }` (운송장 등록 주문 정산 누락 수정)\n- `terms/privacy/page.tsx`: 개인정보 삭제 요청 링크 추가\n[2026-04-03 20:15:39] Dev1 완료"
     },
     {
       "name": "ELDO",
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":20 (19~07)",
-          "lastRun": "2026-04-03 19:24:08"
+          "lastRun": "2026-04-03 20:23:52"
         },
         {
           "name": "Planner",
@@ -124,16 +124,16 @@
           "name": "QA",
           "role": "코드 검증",
           "cron": "3h간격",
-          "lastRun": "2026-04-03 07:57:47"
+          "lastRun": "2026-04-03 19:57:22"
         },
         {
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": ":25 (19~07)",
-          "lastRun": "2026-04-03 19:25:12"
+          "lastRun": "2026-04-03 20:25:13"
         }
       ],
-      "recentLog": "| **lang-atom.ts** | `vcr.vcrReport`, `vcr.noVcr` 한/영 dict 키 추가 |\n| **VCR API id 파싱** | `where.id = id` (string) → `parseInt(id, 10)` (Int, Prisma 타입 일치) |\n| **Coming Soon 페이지 (WARN-03)** | `/peer`, `/compare`, `/valuation` → 404 대신 준비 중 안내 페이지 |\n| **JSON-LD 구조화 데이터 (TASK-206)** | `/company/[id]` 페이지에 `schema.org/Organization` JSON-LD 추가 |\n## 잔여 사항 (외부 의존성)\n- **TASK-202**: DB 크레덴셜 (`DATABASE_URL`) 필요\n- **TASK-203**: GA4 측정 ID (`NEXT_PUBLIC_GA_ID`) 발급 필요\n- **Phase 6**: 위 두 항목 해결 후 `next build` + Vercel 배포\n[2026-04-03 19:24:08] Dev1 완료"
+      "recentLog": "- `layout.tsx` → `async` 함수로 전환, `cookies()`로 `lang` 쿠키 읽어 `<html lang>` 동적 설정\n- `header.tsx` → 언어 전환 시 `document.cookie = 'lang=...'` 쿠키 동기화\n---\n**잔존 작업 (외부 의존):**\n- TASK-302: DB 크레덴셜 필요 (Neon DATABASE_URL)\n- TASK-304/305/306: Vercel 배포 및 검증 (환경변수 설정 필요)\n- TASK-307: Lighthouse 측정 (배포 후)\n[2026-04-03 20:23:52] Dev1 완료"
     },
     {
       "name": "ReviewBot",
@@ -171,11 +171,14 @@
     }
   ],
   "recentActivity": [
-    "[2026-04-03 19:02:55] Eddy 실행 완료",
-    "[2026-04-03 07:16:32] Dev1 완료",
-    "[done] Phase 12-A 개발자 평점/리뷰 시스템 구현 완료 — DeveloperReview 모델(마이그레이션 0008), 리뷰 제출/조회 API, ReviewModal 컴포넌트, 클라이언트 프로젝트 평가 버튼, 개발자 공개 프로필 평점 표시, 개발자 프로필 페이지 리뷰 섹션. QA 버그 수정: createAdminLog try/catch, to날짜 처리, skip음수 방지 (commit 78f2306)",
-    "[2026-04-03 19:42:32] Dev2 완료",
-    "[2026-04-03 19:12:35] Dev1 완료",
+    "완료. 새 메시지 없어 변동 없음 보고 전송.",
+    "[2026-04-03 20:00:23] Eddy 실행 완료",
+    "새 메시지 없음. 변동 없음 보고 완료.",
+    "[2026-04-03 20:30:25] Eddy 실행 완료",
+    "[2026-04-03 20:03:40] Dev1 완료",
+    "- `client/dashboard/page.tsx` 상단에 3개 요약 카드 추가: 진행중 프로젝트 수 / 완료 마일스톤 수 / 미결제 마일스톤 수",
+    "[2026-04-03 20:38:41] Dev2 완료",
+    "[2026-04-03 20:15:39] Dev1 완료",
     "[2026-04-03 10:02:01] Dev1 완료"
   ]
 }
