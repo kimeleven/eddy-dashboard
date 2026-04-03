@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-03 09:45:00",
+  "updatedAt": "2026-04-03 10:45:01",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-03 09:34:39"
+          "lastRun": "2026-04-03 10:38:38"
         }
       ],
-      "recentLog": "**처리 내용:**\n- Sanghun 메시지 \"팀들 일해야지...\" → ELDO Sprint 1 즉시 착수\n- `prisma/schema.prisma`: Emtec, CorpsEmtec, VcrReport, NewsletterSubscriber 모델 추가 + `tse` 거래소 추가\n- `prisma/seed.ts`: 한/미/일 각 10개 기업, 3년 재무, 12개월 주가, VCR-C/S/T 더미 보고서 완성\n- `package.json`: `db:seed` 스크립트 추가\n- GitHub push 완료\n**다음 단계:** Neon `DATABASE_URL` 전달받으면 `prisma db push && npm run db:seed` 실행하여 실제 DB 적재 후 Sprint 2(프론트 디자인) 진행.\n[2026-04-03 09:34:39] Eddy 실행 완료"
+      "recentLog": "[2026-04-03 10:17:45] Eddy 실행 완료\n[2026-04-03 10:27:45] Eddy 실행 시작\n새 메시지 없음. 보고 완료.\n[2026-04-03 10:28:15] Eddy 실행 완료\n[2026-04-03 10:30:01] Eddy 실행 시작\n새 메시지 없음. 텔레그램 보고 완료.\n[2026-04-03 10:30:35] Eddy 실행 완료\n[2026-04-03 10:38:15] Eddy 실행 시작\n새 메시지 없음. 보고 완료.\n[2026-04-03 10:38:38] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "파이프라인 실행",
           "cron": "10:00",
-          "lastRun": "2026-04-02 14:51:22"
+          "lastRun": "2026-04-03 10:02:01"
         },
         {
           "name": "QA",
@@ -167,18 +167,20 @@
           "lastRun": "2026-04-02 14:27:44"
         }
       ],
-      "recentLog": "[done] Phase 10-B: naver-blog.mjs 발행 후 logNo= URL 검증 폴링 추가 (실제 구현 완료)\n완료했습니다.\n**Phase 10-B 구현 내용:**\n- `src/utils/naver-blog.mjs` `postArticle()` — 발행 버튼 클릭 후 8초 대기 뒤 `page.url()`을 바로 반환하던 코드를 수정\n- `logNo=` 포함 여부를 확인하며 500ms 간격으로 최대 10회(5초) 폴링\n- 폴링 후에도 `logNo=` 미포함이면 `throw` 대신 `console.warn` — 포스팅 자체는 성공했을 수 있으므로 전체 실패 처리는 과도하다는 설계 의도 반영\n**Phase 10-A** (`image-generator.mjs` 상대 경로 + `blog-publisher.mjs` `resolve()`)는 이미 실제 코드에도 구현되어 있음을 확인했습니다.\n[2026-04-02 14:51:22] Dev1 완료"
+      "recentLog": "Phase 11 전체 완료:\n**11-A** — `naver-blog.mjs` 태그 입력 구현: `pubBtn.click()` 후 발행 설정 패널 열린 상태에서 `input#tag-input`에 태그 최대 10개 입력\n**11-B** — `product-researcher.mjs` rank-tracker 통합: `saveRankSnapshot()`으로 매일 TOP100 저장, `selectProduct()`로 신규진입→급상승→TOP10랜덤 알고리즘 적용해 선정 상품을 `sortedProducts` 맨 앞으로 이동\n**11-C** — `naver-blog.mjs` pubBtn null 체크: `if (!pubBtn) throw new Error(...)` 추가로 에러 메시지 명확화\n**11-D** — `review-writer.mjs` SEO 프롬프트 강화: 제목 규칙(키워드 앞배치+클릭유도 단어), 본문 5구조(구매계기/개봉기/사용후기/장단점/총평/마무리), 태그 조합 규칙(공백없이 붙여쓰기, 대형단어 단독 금지)\n[2026-04-03 10:02:01] Dev1 완료"
     }
   ],
   "recentActivity": [
-    "- GitHub push 완료",
-    "[2026-04-03 09:34:39] Eddy 실행 완료",
+    "새 메시지 없음. 텔레그램 보고 완료.",
+    "[2026-04-03 10:30:35] Eddy 실행 완료",
+    "새 메시지 없음. 보고 완료.",
+    "[2026-04-03 10:38:38] Eddy 실행 완료",
     "[2026-04-03 07:16:32] Dev1 완료",
     "빌드 성공 확인 후 push 완료. 다음 작업은 **Phase 12-B** (관리자 대시보드 통계 차트)입니다.",
     "[2026-04-03 07:37:43] Dev2 완료",
     "[2026-04-03 05:14:04] Dev1 완료",
     "[done] Task 24 (P3-3): recharts 설치 + 대시보드 7일 매출 LineChart, Task 25 (P3-4): carrier-urls.ts + 배송 추적 링크 — commit fbadce1",
     "[done] Task 26: 셀러 이메일 인증 (P3-5) — schema 변경, verify/resend API, verify 페이지, 대시보드 배너 (commit: 17fc5ce)",
-    "[2026-04-02 14:51:22] Dev1 완료"
+    "[2026-04-03 10:02:01] Dev1 완료"
   ]
 }
