@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 01:57:42",
+  "updatedAt": "2026-04-04 02:02:37",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 01:30:55"
+          "lastRun": "2026-04-04 02:02:37"
         }
       ],
-      "recentLog": "[2026-04-04 01:30:00] Eddy 실행 시작\n정기 체크 완료.\n**신규 텔레그램 메시지 없음.** 두 팀 모두 정상 가동 중:\n- **ELDO**: TASK-306(전체 페이지 검증) 대기 중. 배포는 eldo-one.vercel.app 완료 상태.\n- **ReviewBot**: Phase 12 완료(서치어드바이저 RSS 자동화). URGENT 태스크(서치어드바이저 등록 + 조회수 피드백) 처리 대기.\n변동사항 없어 태스크 수정 없이 텔레그램 보고 완료.\n[2026-04-04 01:30:55] Eddy 실행 완료"
+      "recentLog": "- QA 발견 WARN-05 → BUG-WARN05 P1 태스크 추가 (`/copyright`, `/privacy-policy` Coming Soon 페이지)\n**ReviewBot:**\n- Phase 12 완성 (RSS 자동화 + 조회수 기반 키워드 피드백 완료)\n- URGENT 완료 처리 → Phase 13 운영 안정화 태스크 4개 정의\n**Sanghun 액션 필요:**\n- ReviewBot 네이버 서치어드바이저 수동 등록 (네이버 로그인 필요)\n- ELDO `eldo-one.vercel.app` 직접 검증 후 베타 오픈 판단\n[2026-04-04 02:02:37] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "파이프라인 실행",
           "cron": "10:00",
-          "lastRun": "2026-04-04 01:33:03"
+          "lastRun": "2026-04-04 02:00:00"
         },
         {
           "name": "QA",
@@ -167,14 +167,11 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "# 플래그\n# --dry-run        실제 파일 수정 없이 분석만\n# --no-promote     카테고리 우선순위 반영 스킵\n```\n### 동작 방식\n- `view-stats.json` 없으면 → 조회수 없음 안내 메시지 출력 후 graceful skip\n- 데이터 있으면 → 전체 카테고리 평균 이상인 카테고리 자동 감지 → `pending` 키워드 `priority`로 승격\n[2026-04-04 01:33:03] Dev1 완료"
+      "recentLog": "# 플래그\n# --dry-run        실제 파일 수정 없이 분석만\n# --no-promote     카테고리 우선순위 반영 스킵\n```\n### 동작 방식\n- `view-stats.json` 없으면 → 조회수 없음 안내 메시지 출력 후 graceful skip\n- 데이터 있으면 → 전체 카테고리 평균 이상인 카테고리 자동 감지 → `pending` 키워드 `priority`로 승격\n[2026-04-04 01:33:03] Dev1 완료\n[2026-04-04 02:00:00] Dev1 실행"
     }
   ],
   "recentActivity": [
-    "- **ELDO**: TASK-306(전체 페이지 검증) 대기 중. 배포는 eldo-one.vercel.app 완료 상태.",
-    "- **ReviewBot**: Phase 12 완료(서치어드바이저 RSS 자동화). URGENT 태스크(서치어드바이저 등록 + 조회수 피드백) 처리 대기.",
-    "변동사항 없어 태스크 수정 없이 텔레그램 보고 완료.",
-    "[2026-04-04 01:30:55] Eddy 실행 완료",
+    "[2026-04-04 02:02:37] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
     "[2026-04-03 23:32:15] Dev2 완료",
