@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 07:25:12",
+  "updatedAt": "2026-04-04 07:31:06",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 07:02:01"
+          "lastRun": "2026-04-04 07:31:06"
         }
       ],
-      "recentLog": "**새 텔레그램 메시지 없음. 텔레그램 보고 완료.**\n[2026-04-04 06:30:44] Eddy 실행 완료\n[2026-04-04 07:00:00] Eddy 실행 시작\n처리 완료:\n- **\"베타는 깃허브\"** → GitHub `kimeleven/eldo`에 `beta` 브랜치 생성 + 푸시 완료\n- **ELDO**: Phase 6 코드 100% 완료, 베타 오픈 대기 (Lighthouse 실측만 남음)\n- **ReviewBot**: Phase 19-A (auto-reply.mjs) 완료, 안정화 모드\n[2026-04-04 07:02:01] Eddy 실행 완료"
+      "recentLog": "- 새 텔레그램 메시지: 없음\n- **ELDO**: Phase 6 코드 100% 완료. BETA-04(SSR flash), BETA-05(일본어 추가)까지 완료. Lighthouse 실측만 Sanghun 직접 필요.\n- **ReviewBot**: Phase 20-A (auto-follow.mjs) 완료. Phase 19(auto-reply), 20(auto-follow) 순차 진행 중.\n**Sanghun 액션 필요 항목:**\n1. ELDO Lighthouse 실측 (Chrome DevTools → eldo-one.vercel.app)\n2. ReviewBot 실포스팅 1건 실행 (네이버 로그인 필요)\n3. Vercel 토큰 발급 (배포용)\n[2026-04-04 07:31:06] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -133,7 +133,7 @@
           "lastRun": "2026-04-04 07:25:12"
         }
       ],
-      "recentLog": "**해결:**\n- `providers.tsx`: Jotai `Provider` + `createStore()` 추가. 서버에서 전달받은 `initialLang`을 `langAtom` 초기값으로 설정\n- `layout.tsx`: 쿠키(`lang`)로 읽은 값을 `Lang` 타입으로 캐스팅 후 `Providers`에 `initialLang` prop으로 전달. `Header`/`Footer`도 `Providers` 내부로 이동하여 단일 Jotai store 공유\n**결과:**\n- 서버 쿠키 `lang` → Jotai store 초기값 → 클라이언트 하이드레이션 시 동일한 값으로 시작 → flash 없음\n- TypeScript 타입 체크 오류 0\n- 커밋: `7f95822`\n[2026-04-04 06:25:08] Dev1 완료\n[2026-04-04 07:20:00] Dev1 실행"
+      "recentLog": "- `providers.tsx`: Jotai `Provider` + `createStore()` 추가. 서버에서 전달받은 `initialLang`을 `langAtom` 초기값으로 설정\n- `layout.tsx`: 쿠키(`lang`)로 읽은 값을 `Lang` 타입으로 캐스팅 후 `Providers`에 `initialLang` prop으로 전달. `Header`/`Footer`도 `Providers` 내부로 이동하여 단일 Jotai store 공유\n**결과:**\n- 서버 쿠키 `lang` → Jotai store 초기값 → 클라이언트 하이드레이션 시 동일한 값으로 시작 → flash 없음\n- TypeScript 타입 체크 오류 0\n- 커밋: `7f95822`\n[2026-04-04 06:25:08] Dev1 완료\n[2026-04-04 07:20:00] Dev1 실행\n[done] BETA-05 완료 — 다국어 일본어(ja) 추가: dictJa 사전(9섹션 전체), Lang 타입 확장, 언어 선택기 UI, htmlLang 분기. 커밋 941894a. TypeScript 에러 0."
     },
     {
       "name": "ReviewBot",
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "파이프라인 실행",
           "cron": "10:00",
-          "lastRun": "2026-04-04 07:03:17"
+          "lastRun": "2026-04-04 07:30:02"
         },
         {
           "name": "QA",
@@ -167,14 +167,11 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "**Phase 20-A 완료.**\n`scripts/auto-follow.mjs` 구현:\n- 대상 키워드(priority → pending 순) Naver Blog 검색 → 타 블로거 ID 수집\n- 블로그 프로필 방문 후 이웃추가 버튼 자동 클릭 + 팝업 확인 처리\n- 이미 이웃인 경우(취소 버튼 탐지)·이미 추가한 blogId 자동 스킵\n- `data/follows.json`에 기록 저장 (누적, 중복 방지)\n- `--dry-run` / `--limit N` / `--keyword` / `--count` 옵션\n- cron 권장: `0 21 * * *` (매일 오후 9시)\n[2026-04-04 07:03:17] Dev1 완료"
+      "recentLog": "`scripts/auto-follow.mjs` 구현:\n- 대상 키워드(priority → pending 순) Naver Blog 검색 → 타 블로거 ID 수집\n- 블로그 프로필 방문 후 이웃추가 버튼 자동 클릭 + 팝업 확인 처리\n- 이미 이웃인 경우(취소 버튼 탐지)·이미 추가한 blogId 자동 스킵\n- `data/follows.json`에 기록 저장 (누적, 중복 방지)\n- `--dry-run` / `--limit N` / `--keyword` / `--count` 옵션\n- cron 권장: `0 21 * * *` (매일 오후 9시)\n[2026-04-04 07:03:17] Dev1 완료\n[2026-04-04 07:30:02] Dev1 실행"
     }
   ],
   "recentActivity": [
-    "- **\"베타는 깃허브\"** → GitHub `kimeleven/eldo`에 `beta` 브랜치 생성 + 푸시 완료",
-    "- **ELDO**: Phase 6 코드 100% 완료, 베타 오픈 대기 (Lighthouse 실측만 남음)",
-    "- **ReviewBot**: Phase 19-A (auto-reply.mjs) 완료, 안정화 모드",
-    "[2026-04-04 07:02:01] Eddy 실행 완료",
+    "[2026-04-04 07:31:06] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
     "[2026-04-03 23:32:15] Dev2 완료",
