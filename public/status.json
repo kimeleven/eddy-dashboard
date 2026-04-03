@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 05:00:44",
+  "updatedAt": "2026-04-04 05:04:21",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "파이프라인 실행",
           "cron": "10:00",
-          "lastRun": "2026-04-04 05:00:02"
+          "lastRun": "2026-04-04 05:04:21"
         },
         {
           "name": "QA",
@@ -167,7 +167,7 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "| 리포트 저장 | `--save` → `data/weekly-report-YYYY-MM-DD.md` |\n| 키워드 자동 추가 | `--add-keywords` → 추천 키워드 keywords.json에 추가 (중복 방지) |\n| dry-run | `--dry-run` → keywords.json 변경 없이 리포트만 |\n**사용법**:\n```bash\nnode scripts/weekly-report.mjs --save --add-keywords\n```\n[2026-04-04 04:34:43] Dev1 완료\n[2026-04-04 05:00:02] Dev1 실행"
+      "recentLog": "| 인기 포스팅 | 조회수 Top 3 |\n| 권장 액션 | 포스팅 필요/승인 필요 등 자동 판단 |\n**사용법:**\n```bash\nnode scripts/daily-notify.mjs              # Telegram 전송\nnode scripts/daily-notify.mjs --dry-run   # 콘솔 미리보기\n# cron: 0 8 * * * cd ~/reviewbot && node scripts/daily-notify.mjs\n```\n[2026-04-04 05:04:21] Dev1 완료"
     }
   ],
   "recentActivity": [
@@ -179,6 +179,6 @@
     "[2026-04-03 23:32:15] Dev2 완료",
     "- **lookup/page.tsx**: PAID + 7일 이내 조건부 청약철회 버튼 표시, 신청 완료 시 접수 메시지 표시",
     "[2026-04-03 23:13:38] Dev1 완료",
-    "[2026-04-04 04:34:43] Dev1 완료"
+    "[2026-04-04 05:04:21] Dev1 완료"
   ]
 }
