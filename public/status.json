@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-03 22:45:01",
+  "updatedAt": "2026-04-03 23:45:01",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-03 22:31:08"
+          "lastRun": "2026-04-03 23:30:24"
         }
       ],
-      "recentLog": "[2026-04-03 21:00:00] Eddy 실행 시작\n새 메시지 없음. 텔레그램 보고 완료.\n[2026-04-03 21:00:23] Eddy 실행 완료\n[2026-04-03 21:30:01] Eddy 실행 시작\n완료. 새 메시지 없음, 텔레그램 보고 완료.\n[2026-04-03 21:30:22] Eddy 실행 완료\n[2026-04-03 22:00:00] Eddy 실행 시작\n[2026-04-03 22:30:01] Eddy 실행 시작\n처리 완료. Sanghun의 \"Liveorder 개발은 여기까지하고 정리\" 지시를 반영했습니다 — tasks.md 정리 및 study.md 업데이트 후 텔레그램 보고 완료.\n[2026-04-03 22:31:08] Eddy 실행 완료"
+      "recentLog": "[2026-04-03 22:00:00] Eddy 실행 시작\n[2026-04-03 22:30:01] Eddy 실행 시작\n처리 완료. Sanghun의 \"Liveorder 개발은 여기까지하고 정리\" 지시를 반영했습니다 — tasks.md 정리 및 study.md 업데이트 후 텔레그램 보고 완료.\n[2026-04-03 22:31:08] Eddy 실행 완료\n[2026-04-03 23:00:01] Eddy 실행 시작\n완료. 새 메시지 없음.\n[2026-04-03 23:00:24] Eddy 실행 완료\n[2026-04-03 23:30:00] Eddy 실행 시작\n변동 없음. 보고 완료.\n[2026-04-03 23:30:24] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -38,34 +38,34 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":00 (19~07)",
-          "lastRun": "2026-04-03 22:02:19"
+          "lastRun": "2026-04-03 23:06:29"
         },
         {
           "name": "Dev2",
           "role": "기능 개발",
           "cron": ":30 (19~07)",
-          "lastRun": "2026-04-03 22:34:01"
+          "lastRun": "2026-04-03 23:32:15"
         },
         {
           "name": "Planner",
           "role": "기획/태스크 관리",
           "cron": "2h간격",
-          "lastRun": "2026-04-03 21:18:23"
+          "lastRun": "2026-04-03 23:19:49"
         },
         {
           "name": "QA",
           "role": "코드 검증",
           "cron": "3h간격",
-          "lastRun": "2026-04-03 19:50:37"
+          "lastRun": "2026-04-03 22:53:46"
         },
         {
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": ":05 (19~07)",
-          "lastRun": "2026-04-03 22:08:47"
+          "lastRun": "2026-04-03 23:11:06"
         }
       ],
-      "recentLog": "- `admin/projects/[id]/assign/route.ts`: 동일하게 처리\n2. **[LOW] DeveloperActivityChart 한글 dataKey 수정**\n- `{ 완료: d.completedMilestones }` → `{ completed: d.completedMilestones }`\n- `dataKey=\"완료\"` → `dataKey=\"completed\"`\n3. **[LOW] nextSeq DB 검증 추가**\n- 기존 `nextSeq = milestone.sequenceNumber + 1` 산술 계산 제거\n- `prisma.milestone.findFirst({ where: { projectId, sequenceNumber: +1 } })` 조회 후 존재하면 sequenceNumber, 없으면 `null` 반환\n[2026-04-03 22:02:19] Dev1 완료"
+      "recentLog": "- `PATCH /api/notifications/read-all` 엔드포인트 신규 생성\n### 추가 QA 버그 수정\n- **M-7**: `GET /api/projects/[id]` milestones에 `activeFeeProposal` 데이터 포함 (MilestoneTimeline 금액 표시 수정)\n- **L-6**: 프로젝트 삭제 cascade 보완 (`developerReview`, `deliverable`, `milestoneFeeProposal`, `developerEarning` 선삭제)\n- **L-7**: 리뷰 생성 후 `DeveloperProfile.rating` 동기화 추가\n- **L-8**: `admin/stats`, `admin/logs`, `review` 라우트에 `captureApiError` 추가\n커밋 `60e679a` — `main` 브랜치에 push 완료.\n[2026-04-03 23:06:29] Dev1 완료"
     },
     {
       "name": "LiveOrder",
@@ -78,28 +78,28 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":10 (19~07)",
-          "lastRun": "2026-04-03 22:11:49"
+          "lastRun": "2026-04-03 23:13:38"
         },
         {
           "name": "Planner",
           "role": "기획/태스크 관리",
           "cron": "2h간격",
-          "lastRun": "2026-04-03 21:23:24"
+          "lastRun": "2026-04-03 23:23:38"
         },
         {
           "name": "QA",
           "role": "코드 검증",
           "cron": "3h간격",
-          "lastRun": "2026-04-03 19:56:34"
+          "lastRun": "2026-04-03 22:54:28"
         },
         {
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": ":15 (19~07)",
-          "lastRun": "2026-04-03 22:17:09"
+          "lastRun": "2026-04-03 23:19:33"
         }
       ],
-      "recentLog": "- 초과 시 429 응답 + 한국어 에러 메시지\n2. **`app/api/seller/orders/route.ts`** — `status` 쿼리 파라미터 지원\n- `GET /api/seller/orders?status=PAID` 형태로 필터 가능\n- 유효하지 않은 status 값은 무시 (전체 반환)\n3. **`app/seller/orders/page.tsx`** — 상태 필터 Select UI 추가\n- 헤더 우측에 전체/결제완료/배송중/배송완료/환불 드롭다운\n- 필터 변경 시 page=1로 초기화하고 재조회\n[2026-04-03 22:11:49] Dev1 완료"
+      "recentLog": "- **CSV export**: `take: 10000` 상한 추가로 대용량 메모리/타임아웃 방지\n## Task 33 — 전자상거래법 대응 (commit 012ec5a)\n- **OrderConfirmation.tsx**: 청약철회 권리 안내 박스 추가 (전자상거래법 제13조) — 7일 이내 신청 가능, 주문조회 경로 안내\n- **POST /api/orders/[id]/withdraw** (신규): 청약철회 신청 API\n- `buyerPhone` 매칭으로 인증\n- PAID 상태 + 결제 후 7일 이내 검증\n- 관리자에게 이메일 알림 발송 (관리자가 수동 환불 처리)\n- **lookup/page.tsx**: PAID + 7일 이내 조건부 청약철회 버튼 표시, 신청 완료 시 접수 메시지 표시\n[2026-04-03 23:13:38] Dev1 완료"
     },
     {
       "name": "ELDO",
@@ -112,28 +112,28 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":20 (19~07)",
-          "lastRun": "2026-04-03 22:26:18"
+          "lastRun": "2026-04-03 23:20:01"
         },
         {
           "name": "Planner",
           "role": "기획/태스크 관리",
           "cron": "2h간격",
-          "lastRun": "2026-04-03 21:27:35"
+          "lastRun": "2026-04-03 23:26:59"
         },
         {
           "name": "QA",
           "role": "코드 검증",
           "cron": "3h간격",
-          "lastRun": "2026-04-03 19:57:22"
+          "lastRun": "2026-04-03 22:58:09"
         },
         {
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": ":25 (19~07)",
-          "lastRun": "2026-04-03 22:25:15"
+          "lastRun": "2026-04-03 23:25:12"
         }
       ],
-      "recentLog": "빌드 오류 0개 확인 후 `main` 브랜치에 푸시 완료.\n---\n**남은 작업 (외부 의존):**\n- `TASK-304`: Vercel 프로젝트 생성 (사용자 직접 실행 필요)\n- `TASK-305`: Neon 프로덕션 DB 시드 (DATABASE_URL 필요)\n- `TASK-302`: 로컬 DB 시드 검증 (DATABASE_URL 필요)\n- `TASK-306/307`: 배포 후 검증 및 Lighthouse (배포 후 진행)\n[2026-04-03 22:26:18] Dev1 완료"
+      "recentLog": "---\n**남은 작업 (외부 의존):**\n- `TASK-304`: Vercel 프로젝트 생성 (사용자 직접 실행 필요)\n- `TASK-305`: Neon 프로덕션 DB 시드 (DATABASE_URL 필요)\n- `TASK-302`: 로컬 DB 시드 검증 (DATABASE_URL 필요)\n- `TASK-306/307`: 배포 후 검증 및 Lighthouse (배포 후 진행)\n[2026-04-03 22:26:18] Dev1 완료\n[2026-04-03 23:20:01] Dev1 실행\n[done] CODE-05 완료 — buildPathLabel 미사용 함수 삭제 (page-header.tsx), next build 오류 0개 확인, push 완료"
     },
     {
       "name": "ReviewBot",
@@ -171,14 +171,16 @@
     }
   ],
   "recentActivity": [
-    "[2026-04-03 21:30:22] Eddy 실행 완료",
-    "처리 완료. Sanghun의 \"Liveorder 개발은 여기까지하고 정리\" 지시를 반영했습니다 — tasks.md 정리 및 study.md 업데이트 후 텔레그램 보고 완료.",
-    "[2026-04-03 22:31:08] Eddy 실행 완료",
-    "[2026-04-03 22:02:19] Dev1 완료",
-    "**커밋**: `cf7847a`, `pnpm build` 성공 확인 후 push 완료.",
-    "[2026-04-03 22:34:01] Dev2 완료",
-    "- 헤더 우측에 전체/결제완료/배송중/배송완료/환불 드롭다운",
-    "[2026-04-03 22:11:49] Dev1 완료",
+    "완료. 새 메시지 없음.",
+    "[2026-04-03 23:00:24] Eddy 실행 완료",
+    "변동 없음. 보고 완료.",
+    "[2026-04-03 23:30:24] Eddy 실행 완료",
+    "커밋 `60e679a` — `main` 브랜치에 push 완료.",
+    "[2026-04-03 23:06:29] Dev1 완료",
+    "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
+    "[2026-04-03 23:32:15] Dev2 완료",
+    "- **lookup/page.tsx**: PAID + 7일 이내 조건부 청약철회 버튼 표시, 신청 완료 시 접수 메시지 표시",
+    "[2026-04-03 23:13:38] Dev1 완료",
     "[2026-04-03 10:02:01] Dev1 완료"
   ]
 }
