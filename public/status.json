@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 01:25:15",
+  "updatedAt": "2026-04-04 01:26:08",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":20 (19~07)",
-          "lastRun": "2026-04-04 01:20:00"
+          "lastRun": "2026-04-04 01:26:07"
         },
         {
           "name": "Planner",
@@ -133,7 +133,7 @@
           "lastRun": "2026-04-04 01:25:15"
         }
       ],
-      "recentLog": "---\n**남은 블로커 (외부 환경 필요)**\n- TASK-304: Vercel 프로젝트 생성 + 환경변수 설정 (`DATABASE_URL`, `NEXT_PUBLIC_GA_ID`)\n- TASK-305: Neon 프로덕션 DB 시드\n- TASK-306: 배포 후 전체 기능 검증\n- TASK-307: Lighthouse 성능 측정\n[2026-04-04 00:26:23] Dev1 완료\n[2026-04-04 01:20:00] Dev1 실행"
+      "recentLog": "- `Permissions-Policy: camera=(), microphone=(), geolocation=()`\n- → Lighthouse **Best Practices** 점수 향상 기대\n**vercel.json 동기화**\n- `buildCommand`에 `--webpack` 플래그 추가 (package.json 일관성)\n**남은 수동 작업 (Sanghun 직접 수행 필요)**\n- **TASK-306**: https://eldo-one.vercel.app 브라우저에서 체크리스트 항목 직접 검증\n- **TASK-307**: Chrome DevTools → Lighthouse → Desktop 모드 → 5개 핵심 페이지 측정 (목표 80+)\n[2026-04-04 01:26:07] Dev1 완료"
     },
     {
       "name": "ReviewBot",
