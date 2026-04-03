@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-03 21:45:00",
+  "updatedAt": "2026-04-03 22:45:01",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-03 21:30:22"
+          "lastRun": "2026-04-03 22:31:08"
         }
       ],
-      "recentLog": "[2026-04-03 20:00:23] Eddy 실행 완료\n[2026-04-03 20:30:01] Eddy 실행 시작\n새 메시지 없음. 변동 없음 보고 완료.\n[2026-04-03 20:30:25] Eddy 실행 완료\n[2026-04-03 21:00:00] Eddy 실행 시작\n새 메시지 없음. 텔레그램 보고 완료.\n[2026-04-03 21:00:23] Eddy 실행 완료\n[2026-04-03 21:30:01] Eddy 실행 시작\n완료. 새 메시지 없음, 텔레그램 보고 완료.\n[2026-04-03 21:30:22] Eddy 실행 완료"
+      "recentLog": "[2026-04-03 21:00:00] Eddy 실행 시작\n새 메시지 없음. 텔레그램 보고 완료.\n[2026-04-03 21:00:23] Eddy 실행 완료\n[2026-04-03 21:30:01] Eddy 실행 시작\n완료. 새 메시지 없음, 텔레그램 보고 완료.\n[2026-04-03 21:30:22] Eddy 실행 완료\n[2026-04-03 22:00:00] Eddy 실행 시작\n[2026-04-03 22:30:01] Eddy 실행 시작\n처리 완료. Sanghun의 \"Liveorder 개발은 여기까지하고 정리\" 지시를 반영했습니다 — tasks.md 정리 및 study.md 업데이트 후 텔레그램 보고 완료.\n[2026-04-03 22:31:08] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -38,13 +38,13 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":00 (19~07)",
-          "lastRun": "2026-04-03 21:06:26"
+          "lastRun": "2026-04-03 22:02:19"
         },
         {
           "name": "Dev2",
           "role": "기능 개발",
           "cron": ":30 (19~07)",
-          "lastRun": "2026-04-03 21:31:55"
+          "lastRun": "2026-04-03 22:34:01"
         },
         {
           "name": "Planner",
@@ -62,10 +62,10 @@
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": ":05 (19~07)",
-          "lastRun": "2026-04-03 21:10:44"
+          "lastRun": "2026-04-03 22:08:47"
         }
       ],
-      "recentLog": "**[HIGH] DeveloperEarning 다중 개발자 지원** (`approve/route.ts` + `payment-completion.ts`)\n- milestone include에 `projectDevelopers` 추가\n- 주 개발자 + 보조 개발자 모두 수익 기록 생성 (중복 방지 포함)\n- `createDeveloperEarning`이 `projectDevelopers`까지 순회\n**[MED] fee-proposal senderId 누락** (`fee-proposal/route.ts`)\n- `conversationMessage.create`에 `senderId: BigInt(user.sub)` 추가 → 익명 메시지 버그 수정\n`pnpm build` 성공, commit `7c7d804`, push 완료.\n[2026-04-03 21:06:26] Dev1 완료"
+      "recentLog": "- `admin/projects/[id]/assign/route.ts`: 동일하게 처리\n2. **[LOW] DeveloperActivityChart 한글 dataKey 수정**\n- `{ 완료: d.completedMilestones }` → `{ completed: d.completedMilestones }`\n- `dataKey=\"완료\"` → `dataKey=\"completed\"`\n3. **[LOW] nextSeq DB 검증 추가**\n- 기존 `nextSeq = milestone.sequenceNumber + 1` 산술 계산 제거\n- `prisma.milestone.findFirst({ where: { projectId, sequenceNumber: +1 } })` 조회 후 존재하면 sequenceNumber, 없으면 `null` 반환\n[2026-04-03 22:02:19] Dev1 완료"
     },
     {
       "name": "LiveOrder",
@@ -78,7 +78,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":10 (19~07)",
-          "lastRun": "2026-04-03 21:12:38"
+          "lastRun": "2026-04-03 22:11:49"
         },
         {
           "name": "Planner",
@@ -96,10 +96,10 @@
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": ":15 (19~07)",
-          "lastRun": "2026-04-03 21:17:49"
+          "lastRun": "2026-04-03 22:17:09"
         }
       ],
-      "recentLog": "Task 30 완료했습니다.\n**변경 사항:**\n1. **`app/seller/orders/page.tsx`** — `isLoading` 초기값 `true`로 변경, fetch 중 Skeleton 5개 행 표시 (Card/Table 대체)\n2. **`app/seller/dashboard/page.tsx`** — `.catch(() => {})` → `dashboardError` state + 에러 배너 UI 추가\n3. **`PLAN.md`** — 환경변수 표에 `NEXT_PUBLIC_PORTONE_STORE_ID`, `NEXT_PUBLIC_PORTONE_CHANNEL_KEY`, `ADMIN_EMAIL` 이미 추가되어 있어 별도 수정 불필요\n커밋: `9ffc548` → `ab7a56e` (master push 완료)\n[2026-04-03 21:12:38] Dev1 완료"
+      "recentLog": "- 초과 시 429 응답 + 한국어 에러 메시지\n2. **`app/api/seller/orders/route.ts`** — `status` 쿼리 파라미터 지원\n- `GET /api/seller/orders?status=PAID` 형태로 필터 가능\n- 유효하지 않은 status 값은 무시 (전체 반환)\n3. **`app/seller/orders/page.tsx`** — 상태 필터 Select UI 추가\n- 헤더 우측에 전체/결제완료/배송중/배송완료/환불 드롭다운\n- 필터 변경 시 page=1로 초기화하고 재조회\n[2026-04-03 22:11:49] Dev1 완료"
     },
     {
       "name": "ELDO",
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":20 (19~07)",
-          "lastRun": "2026-04-03 21:26:18"
+          "lastRun": "2026-04-03 22:26:18"
         },
         {
           "name": "Planner",
@@ -130,10 +130,10 @@
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": ":25 (19~07)",
-          "lastRun": "2026-04-03 21:25:14"
+          "lastRun": "2026-04-03 22:25:15"
         }
       ],
-      "recentLog": "- 기존: 섹터 수(N) × 2쿼리 = 최대 20쿼리\n- 개선: 고정 3쿼리 (emsec 1 + corpsEmsec 1 + stockTrades 1) → 인메모리에서 섹터별 분류\n**빌드:** `next build` 오류 0건 확인 ✅\n남은 작업(외부 크레덴셜 필요):\n- TASK-302: DATABASE_URL 설정 후 DB 시드 실행\n- TASK-304~306: Vercel 배포 및 검증\n- TASK-307: Lighthouse 측정 (배포 후)\n[2026-04-03 21:26:18] Dev1 완료"
+      "recentLog": "빌드 오류 0개 확인 후 `main` 브랜치에 푸시 완료.\n---\n**남은 작업 (외부 의존):**\n- `TASK-304`: Vercel 프로젝트 생성 (사용자 직접 실행 필요)\n- `TASK-305`: Neon 프로덕션 DB 시드 (DATABASE_URL 필요)\n- `TASK-302`: 로컬 DB 시드 검증 (DATABASE_URL 필요)\n- `TASK-306/307`: 배포 후 검증 및 Lighthouse (배포 후 진행)\n[2026-04-03 22:26:18] Dev1 완료"
     },
     {
       "name": "ReviewBot",
@@ -171,15 +171,14 @@
     }
   ],
   "recentActivity": [
-    "새 메시지 없음. 텔레그램 보고 완료.",
-    "[2026-04-03 21:00:23] Eddy 실행 완료",
-    "완료. 새 메시지 없음, 텔레그램 보고 완료.",
     "[2026-04-03 21:30:22] Eddy 실행 완료",
-    "`pnpm build` 성공, commit `7c7d804`, push 완료.",
-    "[2026-04-03 21:06:26] Dev1 완료",
-    "[2026-04-03 21:31:55] Dev2 완료",
-    "커밋: `9ffc548` → `ab7a56e` (master push 완료)",
-    "[2026-04-03 21:12:38] Dev1 완료",
+    "처리 완료. Sanghun의 \"Liveorder 개발은 여기까지하고 정리\" 지시를 반영했습니다 — tasks.md 정리 및 study.md 업데이트 후 텔레그램 보고 완료.",
+    "[2026-04-03 22:31:08] Eddy 실행 완료",
+    "[2026-04-03 22:02:19] Dev1 완료",
+    "**커밋**: `cf7847a`, `pnpm build` 성공 확인 후 push 완료.",
+    "[2026-04-03 22:34:01] Dev2 완료",
+    "- 헤더 우측에 전체/결제완료/배송중/배송완료/환불 드롭다운",
+    "[2026-04-03 22:11:49] Dev1 완료",
     "[2026-04-03 10:02:01] Dev1 완료"
   ]
 }
