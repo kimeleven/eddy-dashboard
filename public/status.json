@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-03 23:45:01",
+  "updatedAt": "2026-04-04 00:30:24",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -7,7 +7,7 @@
       "Gemini 2.5",
       "Imagen 4"
     ],
-    "cronJobs": 19,
+    "cronJobs": 11,
     "telegram": "Eddy Bot (30분마다)"
   },
   "teams": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-03 23:30:24"
+          "lastRun": "2026-04-04 00:30:24"
         }
       ],
-      "recentLog": "[2026-04-03 22:00:00] Eddy 실행 시작\n[2026-04-03 22:30:01] Eddy 실행 시작\n처리 완료. Sanghun의 \"Liveorder 개발은 여기까지하고 정리\" 지시를 반영했습니다 — tasks.md 정리 및 study.md 업데이트 후 텔레그램 보고 완료.\n[2026-04-03 22:31:08] Eddy 실행 완료\n[2026-04-03 23:00:01] Eddy 실행 시작\n완료. 새 메시지 없음.\n[2026-04-03 23:00:24] Eddy 실행 완료\n[2026-04-03 23:30:00] Eddy 실행 시작\n변동 없음. 보고 완료.\n[2026-04-03 23:30:24] Eddy 실행 완료"
+      "recentLog": "이 작업이 `===` 이후 `crontab updated`를 출력했지만 실제로 등록한 내용은 pipeline.mjs 없이 기존 19줄 + 빈 줄만입니다. 즉 이 작업은 pipeline.mjs를 추가하지 못하고 끝났습니다.\n현재 상태는 이미 제가 직접 등록한 상태(`crontab -l | grep pipeline` → 1개)로 정상입니다. 이후 백그라운드 작업이 crontab을 덮어쓸 가능성이 있었으나 현재 확인된 최신 상태에서는 정상 등록되어 있습니다.\n[2026-04-03 23:51:35] Eddy 실행 완료\n[2026-04-04 00:00:00] Eddy 실행 시작\n변동 없음. 완료.\n[2026-04-04 00:00:27] Eddy 실행 완료\n[2026-04-04 00:30:01] Eddy 실행 시작\n새 메시지 없음. 텔레그램 보고 완료.\n[2026-04-04 00:30:24] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -38,7 +38,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":00 (19~07)",
-          "lastRun": "2026-04-03 23:06:29"
+          "lastRun": "2026-04-04 00:06:11"
         },
         {
           "name": "Dev2",
@@ -62,10 +62,10 @@
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": ":05 (19~07)",
-          "lastRun": "2026-04-03 23:11:06"
+          "lastRun": "2026-04-04 00:11:50"
         }
       ],
-      "recentLog": "- `PATCH /api/notifications/read-all` 엔드포인트 신규 생성\n### 추가 QA 버그 수정\n- **M-7**: `GET /api/projects/[id]` milestones에 `activeFeeProposal` 데이터 포함 (MilestoneTimeline 금액 표시 수정)\n- **L-6**: 프로젝트 삭제 cascade 보완 (`developerReview`, `deliverable`, `milestoneFeeProposal`, `developerEarning` 선삭제)\n- **L-7**: 리뷰 생성 후 `DeveloperProfile.rating` 동기화 추가\n- **L-8**: `admin/stats`, `admin/logs`, `review` 라우트에 `captureApiError` 추가\n커밋 `60e679a` — `main` 브랜치에 push 완료.\n[2026-04-03 23:06:29] Dev1 완료"
+      "recentLog": "- **`migrations/0010_add_developer_earning_unique_constraint/migration.sql`**: 수동 마이그레이션 파일 생성 (DB 접근 불가로 수동 생성, 배포 시 자동 적용)\n- **`payment-completion.ts`**: `developerEarning.create` catch 블록에 P2002 처리 추가 (race condition 중복 무시)\n### Phase 18-A ✅ 개발자 기술스택/스킬 시스템\n- 스킬 필드(`skills String[]`), 편집 UI(태그 입력), 공개 프로필 표시는 이미 구현 완료 상태\n- **`/api/developers/[id]/route.ts`**: PATCH 요청 시 스킬 유효성 검사 추가 (최대 20개, 각 50자 제한)\n### 빌드 에러 수정 (기존 코드 버그)\n- **`/api/projects/[id]/route.ts`**: 존재하지 않는 `activeFeeProposal` relation → `feeProposals` relation으로 교체, `proposedAmount` → `amount` 필드명 수정\n[2026-04-04 00:06:11] Dev1 완료"
     },
     {
       "name": "LiveOrder",
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":20 (19~07)",
-          "lastRun": "2026-04-03 23:20:01"
+          "lastRun": "2026-04-04 00:26:23"
         },
         {
           "name": "Planner",
@@ -130,10 +130,10 @@
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": ":25 (19~07)",
-          "lastRun": "2026-04-03 23:25:12"
+          "lastRun": "2026-04-04 00:25:14"
         }
       ],
-      "recentLog": "---\n**남은 작업 (외부 의존):**\n- `TASK-304`: Vercel 프로젝트 생성 (사용자 직접 실행 필요)\n- `TASK-305`: Neon 프로덕션 DB 시드 (DATABASE_URL 필요)\n- `TASK-302`: 로컬 DB 시드 검증 (DATABASE_URL 필요)\n- `TASK-306/307`: 배포 후 검증 및 Lighthouse (배포 후 진행)\n[2026-04-03 22:26:18] Dev1 완료\n[2026-04-03 23:20:01] Dev1 실행\n[done] CODE-05 완료 — buildPathLabel 미사용 함수 삭제 (page-header.tsx), next build 오류 0개 확인, push 완료"
+      "recentLog": "- `tsc --noEmit`: ✅ 0 type errors\n---\n**남은 블로커 (외부 환경 필요)**\n- TASK-304: Vercel 프로젝트 생성 + 환경변수 설정 (`DATABASE_URL`, `NEXT_PUBLIC_GA_ID`)\n- TASK-305: Neon 프로덕션 DB 시드\n- TASK-306: 배포 후 전체 기능 검증\n- TASK-307: Lighthouse 성능 측정\n[2026-04-04 00:26:23] Dev1 완료"
     },
     {
       "name": "ReviewBot",
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "파이프라인 실행",
           "cron": "10:00",
-          "lastRun": "2026-04-03 10:02:01"
+          "lastRun": "2026-04-04 00:30:01"
         },
         {
           "name": "QA",
@@ -167,20 +167,19 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "Phase 11 전체 완료:\n**11-A** — `naver-blog.mjs` 태그 입력 구현: `pubBtn.click()` 후 발행 설정 패널 열린 상태에서 `input#tag-input`에 태그 최대 10개 입력\n**11-B** — `product-researcher.mjs` rank-tracker 통합: `saveRankSnapshot()`으로 매일 TOP100 저장, `selectProduct()`로 신규진입→급상승→TOP10랜덤 알고리즘 적용해 선정 상품을 `sortedProducts` 맨 앞으로 이동\n**11-C** — `naver-blog.mjs` pubBtn null 체크: `if (!pubBtn) throw new Error(...)` 추가로 에러 메시지 명확화\n**11-D** — `review-writer.mjs` SEO 프롬프트 강화: 제목 규칙(키워드 앞배치+클릭유도 단어), 본문 5구조(구매계기/개봉기/사용후기/장단점/총평/마무리), 태그 조합 규칙(공백없이 붙여쓰기, 대형단어 단독 금지)\n[2026-04-03 10:02:01] Dev1 완료"
+      "recentLog": "**확인된 사항**: BUG-001, BUG-002, 12-A는 이전 커밋(`d129d38`)에서 이미 완료되어 있었음.\n**이번 작업 내용**:\n1. **TASKS.md** — BUG-001/002/12-A 체크리스트 모두 `[x]` 완료 표시\n2. **PLAN.md** — 완료된 항목들 취소선 처리, 상태 반영\n3. **scripts/setup-cron.sh** (12-B) — 크론 발행 시각 `10:00,15:00` → `09:00,19:00` 변경\n- 오전 9시: 출근 전 검색 트래픽 피크\n- 오후 7시: 퇴근 후 쇼핑 탐색 피크\n[2026-04-04 00:02:35] Dev1 완료\n[2026-04-04 00:30:01] Dev1 실행"
     }
   ],
   "recentActivity": [
-    "완료. 새 메시지 없음.",
-    "[2026-04-03 23:00:24] Eddy 실행 완료",
-    "변동 없음. 보고 완료.",
-    "[2026-04-03 23:30:24] Eddy 실행 완료",
-    "커밋 `60e679a` — `main` 브랜치에 push 완료.",
-    "[2026-04-03 23:06:29] Dev1 완료",
+    "변동 없음. 완료.",
+    "[2026-04-04 00:00:27] Eddy 실행 완료",
+    "새 메시지 없음. 텔레그램 보고 완료.",
+    "[2026-04-04 00:30:24] Eddy 실행 완료",
+    "[2026-04-04 00:06:11] Dev1 완료",
     "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
     "[2026-04-03 23:32:15] Dev2 완료",
     "- **lookup/page.tsx**: PAID + 7일 이내 조건부 청약철회 버튼 표시, 신청 완료 시 접수 메시지 표시",
     "[2026-04-03 23:13:38] Dev1 완료",
-    "[2026-04-03 10:02:01] Dev1 완료"
+    "[2026-04-04 00:02:35] Dev1 완료"
   ]
 }
