@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 08:03:41",
+  "updatedAt": "2026-04-04 08:31:01",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 08:02:15"
+          "lastRun": "2026-04-04 08:31:01"
         }
       ],
-      "recentLog": "완료. 텔레그램 보고 전송됨.\n---\n**정기 체크 완료:**\n- 새 텔레그램 메시지 없음\n- **ELDO**: Phase 6+7 완료 상태 유지. TASK-307 Lighthouse 측정 대기 (Sanghun 직접 필요)\n- **ReviewBot**: Phase 21 크론 통합 완료. BUG-001이 코드에서 이미 수정(`safeCategory` replace 패턴)되어 있었으나 QA_REPORT에 반영 안 됐던 것 업데이트 완료\n[2026-04-04 08:02:15] Eddy 실행 완료"
+      "recentLog": "[2026-04-04 08:30:01] Eddy 실행 시작\n정상 완료.\n**팀 정상 가동 중. 변동 없음.**\n- 새 텔레그램 메시지: 없음\n- **ELDO**: 베타 오픈 준비 완료. Sanghun이 Lighthouse 실측(TASK-307)만 남음\n- **ReviewBot**: Phase 22-A(시리즈 글 플래너) 완료, Phase 13 안정화 진행 중\n- **Devgate / LiveOrder**: 보류 상태 유지\n[2026-04-04 08:31:01] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "파이프라인 실행",
           "cron": "10:00",
-          "lastRun": "2026-04-04 08:03:41"
+          "lastRun": "2026-04-04 08:30:02"
         },
         {
           "name": "QA",
@@ -167,13 +167,13 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "- `data/keywords.json`: `priority` 상태 + `seriesId`/`seriesType` 메타데이터로 자동 등록 → `pipeline --auto`로 순차 발행\n- `--dry-run` / `--list` / `--count` 옵션 지원\n### 사용법\n```bash\nnode scripts/series-planner.mjs --keyword \"봄 바람막이\" --count 5\nnode scripts/series-planner.mjs --list   # 시리즈 현황 조회\n```\n[2026-04-04 08:03:41] Dev1 완료"
+      "recentLog": "- `--dry-run` / `--list` / `--count` 옵션 지원\n### 사용법\n```bash\nnode scripts/series-planner.mjs --keyword \"봄 바람막이\" --count 5\nnode scripts/series-planner.mjs --list   # 시리즈 현황 조회\n```\n[2026-04-04 08:03:41] Dev1 완료\n[2026-04-04 08:30:02] Dev1 실행"
     }
   ],
   "recentActivity": [
-    "- **ELDO**: Phase 6+7 완료 상태 유지. TASK-307 Lighthouse 측정 대기 (Sanghun 직접 필요)",
-    "- **ReviewBot**: Phase 21 크론 통합 완료. BUG-001이 코드에서 이미 수정(`safeCategory` replace 패턴)되어 있었으나 QA_REPORT에 반영 안 됐던 것 업데이트 완료",
-    "[2026-04-04 08:02:15] Eddy 실행 완료",
+    "- **ELDO**: 베타 오픈 준비 완료. Sanghun이 Lighthouse 실측(TASK-307)만 남음",
+    "- **ReviewBot**: Phase 22-A(시리즈 글 플래너) 완료, Phase 13 안정화 진행 중",
+    "[2026-04-04 08:31:01] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
     "[2026-04-03 23:32:15] Dev2 완료",
