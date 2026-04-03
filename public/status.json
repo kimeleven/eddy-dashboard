@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 06:45:00",
+  "updatedAt": "2026-04-04 07:02:01",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,17 +22,17 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 06:30:44"
+          "lastRun": "2026-04-04 07:02:01"
         }
       ],
-      "recentLog": "[2026-04-04 06:30:01] Eddy 실행 시작\n팀 정상 가동 중. 변동 없음.\n**📋 현황 요약**\n- **ELDO**: Phase 6 코드 100% 완료. Lighthouse 실측(TASK-307)만 Sanghun 직접 필요. 베타 오픈 준비 완료.\n- **ReviewBot**: Phase 18-A (검색순위 변화 감지 & Telegram 알림) 구현 완료. 안정화 모드.\n**새 텔레그램 메시지 없음. 텔레그램 보고 완료.**\n[2026-04-04 06:30:44] Eddy 실행 완료"
+      "recentLog": "**새 텔레그램 메시지 없음. 텔레그램 보고 완료.**\n[2026-04-04 06:30:44] Eddy 실행 완료\n[2026-04-04 07:00:00] Eddy 실행 시작\n처리 완료:\n- **\"베타는 깃허브\"** → GitHub `kimeleven/eldo`에 `beta` 브랜치 생성 + 푸시 완료\n- **ELDO**: Phase 6 코드 100% 완료, 베타 오픈 대기 (Lighthouse 실측만 남음)\n- **ReviewBot**: Phase 19-A (auto-reply.mjs) 완료, 안정화 모드\n[2026-04-04 07:02:01] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
       "icon": "🏗️",
       "description": "외주 개발 플랫폼",
       "schedule": "19:00~07:00",
-      "status": "active",
+      "status": "scheduled",
       "agents": [
         {
           "name": "Dev1",
@@ -72,7 +72,7 @@
       "icon": "🛒",
       "description": "라이브커머스 주문 플랫폼",
       "schedule": "19:00~07:00",
-      "status": "active",
+      "status": "scheduled",
       "agents": [
         {
           "name": "Dev1",
@@ -106,7 +106,7 @@
       "icon": "📊",
       "description": "기업 재무분석 플랫폼",
       "schedule": "19:00~07:00",
-      "status": "active",
+      "status": "scheduled",
       "agents": [
         {
           "name": "Dev1",
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "파이프라인 실행",
           "cron": "10:00",
-          "lastRun": "2026-04-04 06:34:29"
+          "lastRun": "2026-04-04 07:00:01"
         },
         {
           "name": "QA",
@@ -167,14 +167,14 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "**옵션**:\n```bash\nnode scripts/auto-reply.mjs              # 미답변 댓글 자동 답글 (최대 3개)\nnode scripts/auto-reply.mjs --dry-run   # 답글 내용 미리보기만\nnode scripts/auto-reply.mjs --limit 5  # 최대 5개\nnode scripts/auto-reply.mjs --post URL # 특정 포스팅만\n```\n**흐름**: `monitor-comments.mjs`로 댓글 감지 → `auto-reply.mjs`로 자동 답글 → 독자 소통 자동화 완성.\n[2026-04-04 06:34:29] Dev1 완료"
+      "recentLog": "```bash\nnode scripts/auto-reply.mjs              # 미답변 댓글 자동 답글 (최대 3개)\nnode scripts/auto-reply.mjs --dry-run   # 답글 내용 미리보기만\nnode scripts/auto-reply.mjs --limit 5  # 최대 5개\nnode scripts/auto-reply.mjs --post URL # 특정 포스팅만\n```\n**흐름**: `monitor-comments.mjs`로 댓글 감지 → `auto-reply.mjs`로 자동 답글 → 독자 소통 자동화 완성.\n[2026-04-04 06:34:29] Dev1 완료\n[2026-04-04 07:00:01] Dev1 실행"
     }
   ],
   "recentActivity": [
-    "- **ELDO**: Phase 6 코드 100% 완료. Lighthouse 실측(TASK-307)만 Sanghun 직접 필요. 베타 오픈 준비 완료.",
-    "- **ReviewBot**: Phase 18-A (검색순위 변화 감지 & Telegram 알림) 구현 완료. 안정화 모드.",
-    "**새 텔레그램 메시지 없음. 텔레그램 보고 완료.**",
-    "[2026-04-04 06:30:44] Eddy 실행 완료",
+    "- **\"베타는 깃허브\"** → GitHub `kimeleven/eldo`에 `beta` 브랜치 생성 + 푸시 완료",
+    "- **ELDO**: Phase 6 코드 100% 완료, 베타 오픈 대기 (Lighthouse 실측만 남음)",
+    "- **ReviewBot**: Phase 19-A (auto-reply.mjs) 완료, 안정화 모드",
+    "[2026-04-04 07:02:01] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
     "[2026-04-03 23:32:15] Dev2 완료",
