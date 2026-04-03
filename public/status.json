@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 01:30:55",
+  "updatedAt": "2026-04-04 01:33:03",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "파이프라인 실행",
           "cron": "10:00",
-          "lastRun": "2026-04-04 01:30:00"
+          "lastRun": "2026-04-04 01:33:03"
         },
         {
           "name": "QA",
@@ -167,7 +167,7 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "- 미등록 시 수동 등록 안내 메시지 출력\n- `node scripts/submit-searchadvisor.mjs [--headed]`\n4. **`pipeline.mjs`** — `stepRss()` 추가\n- 포스팅 성공 시 RSS 피드 자동 갱신 (stepPost 이후 실행)\n- summary에 RSS 갱신 결과 표시\n5. **`data/rss.xml`** — 초기 RSS 피드 생성 완료 (5개 항목)\n[2026-04-04 01:05:36] Dev1 완료\n[2026-04-04 01:30:00] Dev1 실행"
+      "recentLog": "# 플래그\n# --dry-run        실제 파일 수정 없이 분석만\n# --no-promote     카테고리 우선순위 반영 스킵\n```\n### 동작 방식\n- `view-stats.json` 없으면 → 조회수 없음 안내 메시지 출력 후 graceful skip\n- 데이터 있으면 → 전체 카테고리 평균 이상인 카테고리 자동 감지 → `pending` 키워드 `priority`로 승격\n[2026-04-04 01:33:03] Dev1 완료"
     }
   ],
   "recentActivity": [
@@ -180,7 +180,6 @@
     "[2026-04-03 23:32:15] Dev2 완료",
     "- **lookup/page.tsx**: PAID + 7일 이내 조건부 청약철회 버튼 표시, 신청 완료 시 접수 메시지 표시",
     "[2026-04-03 23:13:38] Dev1 완료",
-    "5. **`data/rss.xml`** — 초기 RSS 피드 생성 완료 (5개 항목)",
-    "[2026-04-04 01:05:36] Dev1 완료"
+    "[2026-04-04 01:33:03] Dev1 완료"
   ]
 }
