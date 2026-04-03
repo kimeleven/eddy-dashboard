@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 03:31:49",
+  "updatedAt": "2026-04-04 03:33:25",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "파이프라인 실행",
           "cron": "10:00",
-          "lastRun": "2026-04-04 03:30:02"
+          "lastRun": "2026-04-04 03:33:25"
         },
         {
           "name": "QA",
@@ -167,7 +167,7 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "2. **`scripts/stats.mjs`**: URL에서 postId 추출 로직 개선\n- 기존: `logNo=12345` 형식만 지원\n- 변경: `/kimeleve/12345` 경로 형식도 fallback 지원\n**검증 결과**:\n- `view-stats.json` 3건 수집: QCY T17(4회), 트위드자켓(2회/1회)\n- `node scripts/stats.mjs` 출력에서 `트위드자켓 추천 [2026-04-03] 👁 2회` 정상 표시\n[2026-04-04 03:10:09] Dev1 완료\n[2026-04-04 03:30:02] Dev1 실행"
+      "recentLog": "- `--dry-run` 옵션으로 실제 클릭 없이 대상만 확인 가능\n- 공감 버튼 셀렉터 다중 fallback 지원\n**사용법:**\n```bash\nnode scripts/neighbor-engage.mjs                   # 기본 실행\nnode scripts/neighbor-engage.mjs --keyword \"바람막이\"  # 특정 키워드\nnode scripts/neighbor-engage.mjs --dry-run         # 대상만 확인\n```\n[2026-04-04 03:33:25] Dev1 완료"
     }
   ],
   "recentActivity": [
@@ -177,6 +177,6 @@
     "[2026-04-03 23:32:15] Dev2 완료",
     "- **lookup/page.tsx**: PAID + 7일 이내 조건부 청약철회 버튼 표시, 신청 완료 시 접수 메시지 표시",
     "[2026-04-03 23:13:38] Dev1 완료",
-    "[2026-04-04 03:10:09] Dev1 완료"
+    "[2026-04-04 03:33:25] Dev1 완료"
   ]
 }
