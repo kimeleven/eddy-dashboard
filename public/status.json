@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 02:45:01",
+  "updatedAt": "2026-04-04 03:01:45",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 02:31:06"
+          "lastRun": "2026-04-04 03:01:45"
         }
       ],
-      "recentLog": "[2026-04-04 02:30:01] Eddy 실행 시작\n[2026-04-04 02:30:46] Eddy 정기 체크 — 새 텔레그램 메시지 없음. ELDO: TASK-306 대기, ReviewBot: Phase 13 진행 중\n정기 체크 완료.\n**요약:**\n- 새 텔레그램 메시지 없음\n- **ELDO**: BUG-WARN05 처리됨. TASK-306(전체 페이지 실동작 검증)만 통과하면 베타 오픈 가능\n- **ReviewBot**: Phase 13-A 완료(검색순위 모니터링 + null 버그 수정). BUG-001 처리 중\n- 텔레그램 보고 전송 완료\n[2026-04-04 02:31:06] Eddy 실행 완료"
+      "recentLog": "**ReviewBot**\n- Phase 13 진행 중. dry-run ✅, 봄 키워드 75개 완비\n- 실제 포스팅 실행은 Sanghun 네이버 세션 필요\n**Sanghun 액션 필요:**\n- ReviewBot: `node pipeline.mjs --auto` 직접 실행\n- ReviewBot: 서치어드바이저 RSS 등록\n- ELDO: GA4 속성 ID (`NEXT_PUBLIC_GA_ID`) 발급\n- ELDO: Vercel 토큰 발급\n[2026-04-04 03:01:45] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "파이프라인 실행",
           "cron": "10:00",
-          "lastRun": "2026-04-04 02:35:01"
+          "lastRun": "2026-04-04 03:00:01"
         },
         {
           "name": "QA",
@@ -167,13 +167,11 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "- 총 75개 키워드, priority 21개 (완료 조건 초과 달성)\n### 태스크 13-A: 파이프라인 dry-run 검증 ✅ (부분 완료)\n- `pipeline.mjs --auto --dry-run` 성공 실행\n- 키워드 +48개 수집, 정보글 작성, 품질 평가, 텔레그램 큐 정상 동작\n- `data/ranks/2026-04-03_재킷.json` 존재 확인 (Phase 11-B 정상)\n- `data/rss.xml` 존재 확인 (Phase 12 정상)\n- **주의**: `바람막이 솔직후기` 키워드 리서치 시 상품 없음 (API 미연결 가능성)\n- 실제 포스팅은 Sanghun이 `node pipeline.mjs --auto` 직접 실행 필요 (네이버 브라우저 세션)\n[2026-04-04 02:35:01] Dev1 완료"
+      "recentLog": "### 태스크 13-A: 파이프라인 dry-run 검증 ✅ (부분 완료)\n- `pipeline.mjs --auto --dry-run` 성공 실행\n- 키워드 +48개 수집, 정보글 작성, 품질 평가, 텔레그램 큐 정상 동작\n- `data/ranks/2026-04-03_재킷.json` 존재 확인 (Phase 11-B 정상)\n- `data/rss.xml` 존재 확인 (Phase 12 정상)\n- **주의**: `바람막이 솔직후기` 키워드 리서치 시 상품 없음 (API 미연결 가능성)\n- 실제 포스팅은 Sanghun이 `node pipeline.mjs --auto` 직접 실행 필요 (네이버 브라우저 세션)\n[2026-04-04 02:35:01] Dev1 완료\n[2026-04-04 03:00:01] Dev1 실행"
     }
   ],
   "recentActivity": [
-    "- **ReviewBot**: Phase 13-A 완료(검색순위 모니터링 + null 버그 수정). BUG-001 처리 중",
-    "- 텔레그램 보고 전송 완료",
-    "[2026-04-04 02:31:06] Eddy 실행 완료",
+    "[2026-04-04 03:01:45] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
     "[2026-04-03 23:32:15] Dev2 완료",
