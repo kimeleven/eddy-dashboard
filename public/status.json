@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 01:28:00",
+  "updatedAt": "2026-04-04 01:30:55",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 01:02:33"
+          "lastRun": "2026-04-04 01:30:55"
         }
       ],
-      "recentLog": "- Phase 6 체크리스트 실제 상태로 업데이트 (302/304/305 ✅)\n**ReviewBot:**\n- Phase 12-C까지 완료 상태 확인\n- 잔여 작업 → 🚨 URGENT 지정\n1. 네이버 서치어드바이저 RSS 피드 등록\n2. 조회수 기반 키워드 피드백 자동화\n두 팀 모두 다음 자율 실행 시 URGENT 작업 최우선 처리됨. 텔레그램 보고 완료.\n[2026-04-04 01:02:33] Eddy 실행 완료"
+      "recentLog": "[2026-04-04 01:30:00] Eddy 실행 시작\n정기 체크 완료.\n**신규 텔레그램 메시지 없음.** 두 팀 모두 정상 가동 중:\n- **ELDO**: TASK-306(전체 페이지 검증) 대기 중. 배포는 eldo-one.vercel.app 완료 상태.\n- **ReviewBot**: Phase 12 완료(서치어드바이저 RSS 자동화). URGENT 태스크(서치어드바이저 등록 + 조회수 피드백) 처리 대기.\n변동사항 없어 태스크 수정 없이 텔레그램 보고 완료.\n[2026-04-04 01:30:55] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "파이프라인 실행",
           "cron": "10:00",
-          "lastRun": "2026-04-04 01:05:36"
+          "lastRun": "2026-04-04 01:30:00"
         },
         {
           "name": "QA",
@@ -167,12 +167,14 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "- searchadvisor.naver.com 접속 → 사이트 등록 → RSS URL 제출\n- 미등록 시 수동 등록 안내 메시지 출력\n- `node scripts/submit-searchadvisor.mjs [--headed]`\n4. **`pipeline.mjs`** — `stepRss()` 추가\n- 포스팅 성공 시 RSS 피드 자동 갱신 (stepPost 이후 실행)\n- summary에 RSS 갱신 결과 표시\n5. **`data/rss.xml`** — 초기 RSS 피드 생성 완료 (5개 항목)\n[2026-04-04 01:05:36] Dev1 완료"
+      "recentLog": "- 미등록 시 수동 등록 안내 메시지 출력\n- `node scripts/submit-searchadvisor.mjs [--headed]`\n4. **`pipeline.mjs`** — `stepRss()` 추가\n- 포스팅 성공 시 RSS 피드 자동 갱신 (stepPost 이후 실행)\n- summary에 RSS 갱신 결과 표시\n5. **`data/rss.xml`** — 초기 RSS 피드 생성 완료 (5개 항목)\n[2026-04-04 01:05:36] Dev1 완료\n[2026-04-04 01:30:00] Dev1 실행"
     }
   ],
   "recentActivity": [
-    "두 팀 모두 다음 자율 실행 시 URGENT 작업 최우선 처리됨. 텔레그램 보고 완료.",
-    "[2026-04-04 01:02:33] Eddy 실행 완료",
+    "- **ELDO**: TASK-306(전체 페이지 검증) 대기 중. 배포는 eldo-one.vercel.app 완료 상태.",
+    "- **ReviewBot**: Phase 12 완료(서치어드바이저 RSS 자동화). URGENT 태스크(서치어드바이저 등록 + 조회수 피드백) 처리 대기.",
+    "변동사항 없어 태스크 수정 없이 텔레그램 보고 완료.",
+    "[2026-04-04 01:30:55] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
     "[2026-04-03 23:32:15] Dev2 완료",
