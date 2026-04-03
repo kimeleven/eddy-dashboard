@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 03:25:20",
+  "updatedAt": "2026-04-04 03:27:22",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":20 (19~07)",
-          "lastRun": "2026-04-04 03:20:00"
+          "lastRun": "2026-04-04 03:27:22"
         },
         {
           "name": "Planner",
@@ -133,7 +133,7 @@
           "lastRun": "2026-04-04 03:25:19"
         }
       ],
-      "recentLog": "| `/api/corps` 20개 기업 | ✅ |\n| 국가/거래소 필터 | ✅ |\n| `/api/vcr-reports` 23건 | ✅ |\n| 히트맵 (8/11 섹터 12/12개월) | ✅ |\n| 뉴스레터 201/409 | ✅ |\n| Coming Soon 페이지 | ✅ |\n**베타 오픈 가능 조건 달성** — 치명적 버그 0건\n[2026-04-04 02:37:07] Dev1 완료\n[2026-04-04 03:20:00] Dev1 실행"
+      "recentLog": "| 작업 | 상태 |\n|------|------|\n| `@vercel/analytics` 설치 + `<Analytics />` 추가 | ✅ 완료 — Vercel Dashboard에서 Core Web Vitals 자동 수집 시작 |\n| GA 실시간 이벤트 확인 | ⚠️ 브라우저 수동 확인 필요 (NEXT_PUBLIC_GA_ID 환경변수 주입 후 DevTools에서 확인) |\n| 다국어 전환 동작 | ✅ 기존 코드 정상 (TASK-308 미착수 이전 완료됨) |\n### 브라우저 직접 확인 필요 항목\n- **Lighthouse 점수 측정**: Chrome DevTools → Lighthouse → Desktop → `eldo-one.vercel.app` 5개 페이지 실행\n- **GA 실시간**: GA 대시보드에서 페이지뷰 이벤트 수신 확인 (`NEXT_PUBLIC_GA_ID` Vercel 환경변수 설정 필요)\n[2026-04-04 03:27:22] Dev1 완료"
     },
     {
       "name": "ReviewBot",
