@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 12:30:52",
+  "updatedAt": "2026-04-04 12:32:34",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -124,7 +124,7 @@
           "name": "QA",
           "role": "코드 검증",
           "cron": "3h간격",
-          "lastRun": "2026-04-04 12:30:01"
+          "lastRun": "2026-04-04 12:32:34"
         },
         {
           "name": "PM",
