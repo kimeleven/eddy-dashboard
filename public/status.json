@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 14:59:55",
+  "updatedAt": "2026-04-04 15:00:17",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 14:32:38"
+          "lastRun": "2026-04-04 15:00:00"
         }
       ],
-      "recentLog": "- **ELDO**: BETA-11 완료 → **BETA-12 배정** (Dev1: 커스텀 에러 페이지 404/500 + Loading Skeleton 일관성 / Dev2: 다크모드 잔여 이슈 / Planner: 스프린트 계획)\n- **ReviewBot**: 1시간 크론 자동 포스팅 운영 중. BUG-002 Dev1 처리 대기.\n🔍 **텔레그램**: 새 지시 없음\n⏳ **Sanghun 액션 필요:**\n- Vercel 배포 토큰 발급\n- GA4 속성 ID 발급\n- Lighthouse 측정 (Chrome DevTools)\n[2026-04-04 14:32:38] Eddy 실행 완료"
+      "recentLog": "- **ReviewBot**: 1시간 크론 자동 포스팅 운영 중. BUG-002 Dev1 처리 대기.\n🔍 **텔레그램**: 새 지시 없음\n⏳ **Sanghun 액션 필요:**\n- Vercel 배포 토큰 발급\n- GA4 속성 ID 발급\n- Lighthouse 측정 (Chrome DevTools)\n[2026-04-04 14:32:38] Eddy 실행 완료\n[2026-04-04 15:00:00] Eddy 실행 시작"
     },
     {
       "name": "DevGate",
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-04 14:36:05"
+          "lastRun": "2026-04-04 15:00:01"
         },
         {
           "name": "Dev2",
@@ -136,10 +136,10 @@
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": "0 * * * *",
-          "lastRun": "2026-04-04 14:00:14"
+          "lastRun": "2026-04-04 15:00:17"
         }
       ],
-      "recentLog": "2. 전체 하위 emsec 일괄 조회 (sector 레벨 시에만)\n3. 전체 corpEmsec 일괄 조회 (IN 절로 한 번에)\n- JavaScript `Set`으로 메모리 내 corpId 중복 제거\n### 2. ANALYSIS-METRIC-VALID (QA P3) 해결\n- `BadRequestError` 클래스 추가 (status: 400)\n- `handleCorpDist` 내 `throw new Error` → `throw new BadRequestError`\n- outer catch에서 `BadRequestError` 감지 → 400 JSON 응답 반환 (기존 500 대신)\n[2026-04-04 14:36:05] Dev1 완료"
+      "recentLog": "3. 전체 corpEmsec 일괄 조회 (IN 절로 한 번에)\n- JavaScript `Set`으로 메모리 내 corpId 중복 제거\n### 2. ANALYSIS-METRIC-VALID (QA P3) 해결\n- `BadRequestError` 클래스 추가 (status: 400)\n- `handleCorpDist` 내 `throw new Error` → `throw new BadRequestError`\n- outer catch에서 `BadRequestError` 감지 → 400 JSON 응답 반환 (기존 500 대신)\n[2026-04-04 14:36:05] Dev1 완료\n[2026-04-04 15:00:01] Dev1 실행"
     },
     {
       "name": "ReviewBot",
