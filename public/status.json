@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 01:00:16",
+  "updatedAt": "2026-04-05 01:01:49",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-05 01:00:00"
+          "lastRun": "2026-04-05 01:01:49"
         }
       ],
-      "recentLog": "| IRI-Safety | Dev1 감사로그/비밀번호 구현 완료. BUG-001/002 Open (포트 3003 변경 필요). |\n**대기 (Sanghun 액션 필요):**\n1. ReviewBot 쿠팡 파트너스 API 키 (COUPANG_ACCESS_KEY/SECRET_KEY)\n2. XBot 최초 로그인: `cd ~/eddy-agent/xbot && node pipeline.mjs --once`\n3. ELDO Vercel 배포 토큰\n텔레그램 발송 완료.\n[2026-04-05 00:57:56] Eddy 실행 완료\n[2026-04-05 01:00:00] Eddy 실행 시작"
+      "recentLog": "**검수 결과:**\n- **ELDO**: Dev1 BETA-25 완료(E2E 19/19), Dev2 BETA-26 완료. SECTORS-JA-LABEL MEDIUM 버그 Dev1 수정 대기.\n- **ReviewBot**: BUG-003 수정 완료. pending-links 5건 파트너스 링크 Sanghun 대기. URGENT 자동포스팅 중단 태스크 미처리.\n- **DevGate**: Phase 19-A 완료, E2E 39/39 통과. 버그수정 전담 모드 정상.\n- **XBot**: 보류 유지 (봇 감지).\n- **IRI-Safety**: 감사로그+비밀번호해시 구현 완료. BUG-001/002 Open.\n**대기**: ReviewBot 파트너스 링크 5건 Sanghun 제공 필요.\n[2026-04-05 01:01:49] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 01:00:00"
+          "lastRun": "2026-04-05 01:00:18"
         },
         {
           "name": "Dev2",
@@ -139,7 +139,7 @@
           "lastRun": "2026-04-05 01:00:16"
         }
       ],
-      "recentLog": "| 항목 | 결과 |\n|------|------|\n| lang-atom.ts 누락 키 | 없음 (5개 키 모두 존재 확인) |\n| tsc --noEmit | 오류 0건 ✅ |\n| NEWSLETTER-HTML-ESCAPE | 이미 `db4dad8`에서 완료 확인 |\n| E2E-SEO-COVERAGE | 이미 `db4dad8`에서 `seo.spec.ts` 추가 확인 |\n| E2E 전체 | **19/19 통과** ✅ |\n| git push | `67e150e` → main ✅ |\n[2026-04-05 00:32:16] Dev1 완료\n[2026-04-05 01:00:00] Dev1 실행"
+      "recentLog": "|------|------|\n| lang-atom.ts 누락 키 | 없음 (5개 키 모두 존재 확인) |\n| tsc --noEmit | 오류 0건 ✅ |\n| NEWSLETTER-HTML-ESCAPE | 이미 `db4dad8`에서 완료 확인 |\n| E2E-SEO-COVERAGE | 이미 `db4dad8`에서 `seo.spec.ts` 추가 확인 |\n| E2E 전체 | **19/19 통과** ✅ |\n| git push | `67e150e` → main ✅ |\n[2026-04-05 00:32:16] Dev1 완료\n[2026-04-05 01:00:00] Dev1 실행\n[2026-04-05 01:00:18] Dev1 스킵 — 이전 실행 중 (PID 18339)"
     },
     {
       "name": "ReviewBot",
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "코드 수정/안정화",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 00:30:37"
+          "lastRun": "2026-04-05 01:00:37"
         },
         {
           "name": "Pipeline",
@@ -179,12 +179,12 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "**처리 내용:**\n- **BUG-003 수정**: `verifyPost()` raw URL 오탐(false positive) 수정\n- 원인: OG카드가 없는 경우 폴백으로 `container.innerText` 전체를 읽어서 OG카드 내 파트너 링크 URL이 raw URL로 오검출됨\n- 수정: DOM 클론에서 `.se-component.se-oglink` 등 OG카드 요소를 제거 후 `innerText` 추출 (`src/utils/naver-blog.mjs`)\n- **데이터 동기화**: 이전 파이프라인 실행 결과 커밋 (products +5건, pending-links +5 링크요청, 숄더백 rank 스냅샷, rss.xml 갱신)\n**대기 중:**\n- `pending-links.json`: 파트너스 링크 5건 Sanghun 회신 대기 (봄 캠핑용품, 봄 원피스 추천/순위, 봄 신발, 봄 가방)\n- 링크 수신 후 파이프라인 자동으로 write → post 단계 진행\n[2026-04-05 00:30:37] Dev1 완료"
+      "recentLog": "- **BUG-003 수정**: `verifyPost()` raw URL 오탐(false positive) 수정\n- 원인: OG카드가 없는 경우 폴백으로 `container.innerText` 전체를 읽어서 OG카드 내 파트너 링크 URL이 raw URL로 오검출됨\n- 수정: DOM 클론에서 `.se-component.se-oglink` 등 OG카드 요소를 제거 후 `innerText` 추출 (`src/utils/naver-blog.mjs`)\n- **데이터 동기화**: 이전 파이프라인 실행 결과 커밋 (products +5건, pending-links +5 링크요청, 숄더백 rank 스냅샷, rss.xml 갱신)\n**대기 중:**\n- `pending-links.json`: 파트너스 링크 5건 Sanghun 회신 대기 (봄 캠핑용품, 봄 원피스 추천/순위, 봄 신발, 봄 가방)\n- 링크 수신 후 파이프라인 자동으로 write → post 단계 진행\n[2026-04-05 00:30:37] Dev1 완료\n[2026-04-05 01:00:37] Dev1 실행"
     }
   ],
   "recentActivity": [
-    "텔레그램 발송 완료.",
-    "[2026-04-05 00:57:56] Eddy 실행 완료",
+    "- **IRI-Safety**: 감사로그+비밀번호해시 구현 완료. BUG-001/002 Open.",
+    "[2026-04-05 01:01:49] Eddy 실행 완료",
     "[done] Phase 19-A 완료 (개발자 검색 API+페이지), 미들웨어 RBAC 추가, E2E 39/39 전체 통과 (2026-04-04)",
     "[2026-04-04 23:50:26] Dev1 완료",
     "[2026-04-04 23:36:06] Dev2 완료",
