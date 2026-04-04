@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 16:28:27",
+  "updatedAt": "2026-04-04 16:32:02",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 16:03:12"
+          "lastRun": "2026-04-04 16:32:02"
         }
       ],
-      "recentLog": "**Eddy PM 순회 결과 (2026-04-04 PM 3차)**\n**새 텔레그램 지시:** 없음\n**팀 현황:**\n- **ELDO**: BETA-13 다국어 완성 + VCR 메뉴 재편 완료. 다음 스프린트 **BETA-14 뉴스 수집 스크립트** Dev1 배정 (RSS 기반, 외부 비용 없음)\n- **ReviewBot**: OG링크 발행 흐름 수정 URGENT Dev1 처리 중. 파이프라인 1시간 자동 포스팅 운영 중 (아직 3회 연속 성공 미도달)\n**처리:** ELDO TASKS.md 업데이트, git push 완료, Telegram 보고 완료.\n[2026-04-04 16:03:12] Eddy 실행 완료"
+      "recentLog": "[Eddy PM 보고] 2026-04-04 PM 4차 순회\n📋 팀 현황:\n- **ELDO**: BETA-14/15 모두 완료. Dev1/Dev2 대기 중. Planner에게 BETA-16 계획 수립 지시 완료.\n- **ReviewBot**: OG링크 삽입 후 발행 흐름 🔴 URGENT 진행 중 (Dev1 디버깅). 파이프라인 1시간 자동 포스팅 운영 중 (1회 성공, 3회 연속 목표).\n✅ 처리: ELDO TASKS.md — Planner 11차 BETA-16 계획 수립 지시 추가\n🔍 감지: 새 텔레그램 지시 없음\n⏳ 대기: ReviewBot OG링크 버그 해결 (Dev1 진행 중)\n[2026-04-04 16:32:02] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-04 16:11:01"
+          "lastRun": "2026-04-04 16:30:00"
         },
         {
           "name": "Dev2",
@@ -139,7 +139,7 @@
           "lastRun": "2026-04-04 16:00:13"
         }
       ],
-      "recentLog": "- `vcr-section.tsx`, `vcr-s-section.tsx` 양쪽에 있던 inline CopyButton → 공유 컴포넌트로 교체\n- 섹션 카드에 `group` 클래스 추가, 복사 텍스트 `[제목]\\n\\n{본문}` 포맷\n3. **VCR-S 섹터 레이블 자동 추출** — 불러온 보고서 데이터에서 파생 (추가 API 호출 없음)\n4. **BETA-14-B/C 확인** — 기업 하이퍼링크(`linkifyCorpNames`)와 QA P3 이슈 모두 기존 코드에서 이미 구현/수정됨 확인 → QA_REPORT 업데이트\n- `tsc --noEmit` 오류 0건 ✅\n- `git push origin main` 완료 (`e999ffa`)\n[2026-04-04 16:11:01] Dev1 완료"
+      "recentLog": "- 섹션 카드에 `group` 클래스 추가, 복사 텍스트 `[제목]\\n\\n{본문}` 포맷\n3. **VCR-S 섹터 레이블 자동 추출** — 불러온 보고서 데이터에서 파생 (추가 API 호출 없음)\n4. **BETA-14-B/C 확인** — 기업 하이퍼링크(`linkifyCorpNames`)와 QA P3 이슈 모두 기존 코드에서 이미 구현/수정됨 확인 → QA_REPORT 업데이트\n- `tsc --noEmit` 오류 0건 ✅\n- `git push origin main` 완료 (`e999ffa`)\n[2026-04-04 16:11:01] Dev1 완료\n[2026-04-04 16:30:00] Dev1 실행"
     },
     {
       "name": "ReviewBot",
@@ -183,8 +183,7 @@
     }
   ],
   "recentActivity": [
-    "**처리:** ELDO TASKS.md 업데이트, git push 완료, Telegram 보고 완료.",
-    "[2026-04-04 16:03:12] Eddy 실행 완료",
+    "[2026-04-04 16:32:02] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
