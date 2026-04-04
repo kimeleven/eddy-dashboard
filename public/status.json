@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 02:22:28",
+  "updatedAt": "2026-04-05 02:33:16",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-05 02:20:52"
+          "lastRun": "2026-04-05 02:33:16"
         }
       ],
-      "recentLog": "**팀 현황 요약:**\n- **ELDO**: BETA-27 완료 (Performance 최적화 + VCR-C 섹션), E2E 19/19\n- **ReviewBot**: BUG-005 수정 완료. pending-links 7건 Sanghun 링크 대기 중. 자동 포스팅 중단 유지.\n- **DevGate**: E2E 49/49. S-1 HIGH (DEVELOPER 역할 /admin 접근 가능) — Dev1 수정 중, 아직 커밋 없음.\n- **XBot**: 보류 유지\n- **IRI-Safety**: QA 42/42. Dev1 도급관리 백엔드 + Dev2 비밀번호 변경 UI 완료.\n**신규 텔레그램 없음.**\n[2026-04-05 02:20:52] Eddy 실행 완료"
+      "recentLog": "완료.\n**31차 순회 처리 내용:**\n- **ELDO**: BETA-27 Dev1(Lighthouse 최적화) + Dev2(VCR-C Skeleton/EMTEC 태그 접기) 완료 확인. tsc 0건, E2E 19/19.\n- **ReviewBot**: BUG-005(중복 링크 요청) 수정 확인. URGENT 쿠팡 직접검색 전환 Dev1 작업 중. 파트너스 링크 7건 Sanghun 회신 대기.\n- **DevGate**: S-1 HIGH 직접 코드 확인 → `middleware.ts`에 RBAC 이미 구현됨(`payload.role !== 'ADMIN'`). TASKS.md 해결 완료 업데이트 후 push.\n- **XBot**: 봇 감지로 보류 유지.\n- **IRI-Safety**: Phase 2 도급/용역 백엔드 완료. BUG-001/002 해결 확인.\n[2026-04-05 02:33:16] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -38,7 +38,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":00 (19~07)",
-          "lastRun": "2026-04-05 02:18:59"
+          "lastRun": "2026-04-05 02:25:42"
         },
         {
           "name": "Dev2",
@@ -65,7 +65,7 @@
           "lastRun": "2026-04-04 00:11:50"
         }
       ],
-      "recentLog": "[2026-04-04 23:15:49] Dev1 실행\n[done] Phase 19-A 완료 (개발자 검색 API+페이지), 미들웨어 RBAC 추가, E2E 39/39 전체 통과 (2026-04-04)\n[2026-04-04 23:50:25] Dev1 스킵 — 이전 실행 중 (PID 2027)\n`sleep` wait command also completed (exit code 0). All background tasks resolved — session fully complete.\n[2026-04-04 23:50:26] Dev1 완료\n[2026-04-05 00:50:25] Dev1 실행\n[done] E2E 테스트 49/49 전체 통과 확인 (2026-04-05) — 이전 3개 FAIL 분석 및 해결 확인\n이미 확인한 최신 E2E 테스트 완료 알림입니다. 결과: **49/49 전체 통과** (exit code 0). 이미 처리 완료됨.\n[2026-04-05 01:18:59] Dev1 완료\n[2026-04-05 02:18:59] Dev1 실행"
+      "recentLog": "[done] Phase 19-A 완료 (개발자 검색 API+페이지), 미들웨어 RBAC 추가, E2E 39/39 전체 통과 (2026-04-04)\n[2026-04-04 23:50:25] Dev1 스킵 — 이전 실행 중 (PID 2027)\n`sleep` wait command also completed (exit code 0). All background tasks resolved — session fully complete.\n[2026-04-04 23:50:26] Dev1 완료\n[2026-04-05 00:50:25] Dev1 실행\n[done] E2E 테스트 49/49 전체 통과 확인 (2026-04-05) — 이전 3개 FAIL 분석 및 해결 확인\n이미 확인한 최신 E2E 테스트 완료 알림입니다. 결과: **49/49 전체 통과** (exit code 0). 이미 처리 완료됨.\n[2026-04-05 01:18:59] Dev1 완료\n[2026-04-05 02:18:59] Dev1 실행\n[2026-04-05 02:25:42] Dev1 완료"
     },
     {
       "name": "LiveOrder",
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 02:05:21"
+          "lastRun": "2026-04-05 02:30:18"
         },
         {
           "name": "Dev2",
@@ -139,7 +139,7 @@
           "lastRun": "2026-04-05 02:00:14"
         }
       ],
-      "recentLog": "**작업 4 — 정적 API Route `revalidate`**:\n- `emsec/tree` → 3600초\n- `emsec/sector-tree` → 3600초\n- `emtec` → 86400초\n- `stats` → 3600초\n**작업 5 — preconnect**: GoogleTagManager preconnect 이미 존재, Geist 폰트는 next/font로 자체 호스팅 → 추가 불필요\n결과: `tsc --noEmit` 오류 0건, E2E 19/19 통과, `git push` 완료 (`07b521f`, `bba22a5`)\n[2026-04-05 02:05:21] Dev1 완료"
+      "recentLog": "- `emsec/sector-tree` → 3600초\n- `emtec` → 86400초\n- `stats` → 3600초\n**작업 5 — preconnect**: GoogleTagManager preconnect 이미 존재, Geist 폰트는 next/font로 자체 호스팅 → 추가 불필요\n결과: `tsc --noEmit` 오류 0건, E2E 19/19 통과, `git push` 완료 (`07b521f`, `bba22a5`)\n[2026-04-05 02:05:21] Dev1 완료\n[2026-04-05 02:30:01] Dev1 실행\n[2026-04-05 02:30:18] Dev1 스킵 — 이전 실행 중 (PID 31969)"
     },
     {
       "name": "ReviewBot",
@@ -183,11 +183,13 @@
     }
   ],
   "recentActivity": [
-    "- **IRI-Safety**: QA 42/42. Dev1 도급관리 백엔드 + Dev2 비밀번호 변경 UI 완료.",
-    "[2026-04-05 02:20:52] Eddy 실행 완료",
+    "- **DevGate**: S-1 HIGH 직접 코드 확인 → `middleware.ts`에 RBAC 이미 구현됨(`payload.role !== 'ADMIN'`). TASKS.md 해결 완료 업데이트 후 push.",
+    "- **IRI-Safety**: Phase 2 도급/용역 백엔드 완료. BUG-001/002 해결 확인.",
+    "[2026-04-05 02:33:16] Eddy 실행 완료",
     "[done] E2E 테스트 49/49 전체 통과 확인 (2026-04-05) — 이전 3개 FAIL 분석 및 해결 확인",
     "이미 확인한 최신 E2E 테스트 완료 알림입니다. 결과: **49/49 전체 통과** (exit code 0). 이미 처리 완료됨.",
     "[2026-04-05 01:18:59] Dev1 완료",
+    "[2026-04-05 02:25:42] Dev1 완료",
     "[done] E2E 테스트 시나리오 2차 확장 (19스텝/49체크포인트) 49/49 전체 통과. STEP 16~19 신규 추가: 발주자 프로젝트 상세, 개발자 배정 프로젝트 상세, 관리자 수동결제 UI, CLIENT RBAC 차단. commit d48a753",
     "백그라운드 태스크는 이전 버전(수정 전)을 실행한 결과입니다 - 48/49 (admin/projects 타이밍 이슈 1건). 이미 수정된 최신 버전은 49/49 전체 통과 확인되었습니다 (커밋 `d48a753`).",
     "[2026-04-05 01:17:07] Dev2 완료",
