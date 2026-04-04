@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 17:00:14",
+  "updatedAt": "2026-04-04 17:02:07",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 17:00:01"
+          "lastRun": "2026-04-04 17:02:07"
         }
       ],
-      "recentLog": "📋 팀 현황:\n- **ELDO**: BETA-14/15 모두 완료. Dev1/Dev2 대기 중. Planner에게 BETA-16 계획 수립 지시 완료.\n- **ReviewBot**: OG링크 삽입 후 발행 흐름 🔴 URGENT 진행 중 (Dev1 디버깅). 파이프라인 1시간 자동 포스팅 운영 중 (1회 성공, 3회 연속 목표).\n✅ 처리: ELDO TASKS.md — Planner 11차 BETA-16 계획 수립 지시 추가\n🔍 감지: 새 텔레그램 지시 없음\n⏳ 대기: ReviewBot OG링크 버그 해결 (Dev1 진행 중)\n[2026-04-04 16:32:02] Eddy 실행 완료\n[2026-04-04 17:00:01] Eddy 실행 시작"
+      "recentLog": "**[Eddy PM 보고] 5차 순회 완료**\n📋 **팀 현황:**\n- **ELDO**: 정상 가동. BETA-15 완료(peer/compare/valuation 다국어 + Decimal 수정). Dev1/Dev2 BETA-16 배정 대기 중, Planner 계획 수립 중.\n- **ReviewBot**: 1시간 자동 포스팅 운영 중. 🔴 OG링크 삽입 후 발행 흐름 수정 URGENT — Dev1 디버깅 진행 중 (미완).\n🔍 **이번 순회 감지:** 새 텔레그램 지시 없음.\n⏳ **대기:** ReviewBot OG링크 발행 수정 완료 확인 필요.\n[2026-04-04 17:02:07] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -183,7 +183,8 @@
     }
   ],
   "recentActivity": [
-    "[2026-04-04 16:32:02] Eddy 실행 완료",
+    "⏳ **대기:** ReviewBot OG링크 발행 수정 완료 확인 필요.",
+    "[2026-04-04 17:02:07] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
