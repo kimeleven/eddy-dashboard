@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 13:12:43",
+  "updatedAt": "2026-04-04 13:33:37",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 13:01:30"
+          "lastRun": "2026-04-04 13:33:37"
         }
       ],
-      "recentLog": "- ELDO GA 속성 ID\n[2026-04-04 12:30:52] Eddy 실행 완료\n[2026-04-04 13:00:00] Eddy 실행 시작\n텔레그램으로 팀별 개별 보고 2건 전송 완료.\n**ELDO:** 이번 턴 완료(BETA-09 모바일/다크모드/접근성) 요약 + 다음 턴 예정(BETA-06) + Lighthouse 실측 요청\n**ReviewBot:** 이번 턴 완료(Phase 23-A 시리즈 통합) 요약 + URGENT 미완료 3개 + 다음 턴 예정 상세\n앞으로 순회 때마다 이 형식으로 팀별 메시지 따로 보내겠습니다.\n[2026-04-04 13:01:30] Eddy 실행 완료"
+      "recentLog": "**신규 텔레그램 지시:** 없음\n**🐛 버그 발견 및 수정 (ReviewBot):**\n- `pipeline.mjs`에서 Step 5-A/B(승인 요청)는 주석 처리됐으나, `blog-publisher.mjs` 내부에서 여전히 `getApprovedPosts()` 체크를 하고 있어 포스팅이 계속 실패하던 문제 발견\n- Eddy PM이 직접 제거 완료 + 포스팅 성공 시 텔레그램 알림 추가 → `9bd6537` 커밋, GitHub 푸시\n**팀 현황:**\n- **ELDO**: Dev2가 A11Y/SEO 10차 완료. 잔여 항목: Lighthouse 실측(Sanghun 직접)만 남음\n- **ReviewBot**: 수정 적용됨. 14:00 크론 실행 시 최초 자동 포스팅 시도 예정. 성공 시 텔레그램으로 알림 발송됨\n[2026-04-04 13:33:37] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":20 (19~07)",
-          "lastRun": "2026-04-04 13:12:43"
+          "lastRun": "2026-04-04 13:30:01"
         },
         {
           "name": "Planner",
@@ -133,7 +133,7 @@
           "lastRun": "2026-04-04 13:00:13"
         }
       ],
-      "recentLog": "- `header.tsx`: 언어 선택기 SelectTrigger `aria-label=\"언어 선택\"` 추가 (데스크탑/모바일)\n- `components/footer.tsx`: 외부 링크 `rel=\"noopener noreferrer\"` 추가 (Best Practices)\n- `company-sidebar.tsx`: 거래소/섹터 Select `aria-label` 추가\n- `sectors/sidebar` 4개 파일: 그래프 유형/거래소/섹터/기준연도/지표 Select `aria-label` 전수 적용\n### 3. BETA-06 실기능 구현\n- **`/valuation`**: 거래소 필터 + P/E, EV/EBITDA, 시가총액, 매출 기준 정렬 가능한 전체 기업 밸류에이션 테이블\n- **`/peer`**: 기업 검색 → 동일 섹터 피어 기업 비교 테이블 (기준 기업 하이라이트)\n- **`/compare`**: 최대 5개 기업 검색 추가 → 주요 재무지표 나란히 비교 (Exchange, Sector, Mkt Cap, Revenue, Assets, P/E, EV/EBITDA, Patterns)\n[2026-04-04 13:12:43] Dev1 완료"
+      "recentLog": "- `components/footer.tsx`: 외부 링크 `rel=\"noopener noreferrer\"` 추가 (Best Practices)\n- `company-sidebar.tsx`: 거래소/섹터 Select `aria-label` 추가\n- `sectors/sidebar` 4개 파일: 그래프 유형/거래소/섹터/기준연도/지표 Select `aria-label` 전수 적용\n### 3. BETA-06 실기능 구현\n- **`/valuation`**: 거래소 필터 + P/E, EV/EBITDA, 시가총액, 매출 기준 정렬 가능한 전체 기업 밸류에이션 테이블\n- **`/peer`**: 기업 검색 → 동일 섹터 피어 기업 비교 테이블 (기준 기업 하이라이트)\n- **`/compare`**: 최대 5개 기업 검색 추가 → 주요 재무지표 나란히 비교 (Exchange, Sector, Mkt Cap, Revenue, Assets, P/E, EV/EBITDA, Patterns)\n[2026-04-04 13:12:43] Dev1 완료\n[2026-04-04 13:30:01] Dev1 실행"
     },
     {
       "name": "ReviewBot",
@@ -171,9 +171,8 @@
     }
   ],
   "recentActivity": [
-    "**ELDO:** 이번 턴 완료(BETA-09 모바일/다크모드/접근성) 요약 + 다음 턴 예정(BETA-06) + Lighthouse 실측 요청",
-    "**ReviewBot:** 이번 턴 완료(Phase 23-A 시리즈 통합) 요약 + URGENT 미완료 3개 + 다음 턴 예정 상세",
-    "[2026-04-04 13:01:30] Eddy 실행 완료",
+    "- **ELDO**: Dev2가 A11Y/SEO 10차 완료. 잔여 항목: Lighthouse 실측(Sanghun 직접)만 남음",
+    "[2026-04-04 13:33:37] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
     "[2026-04-03 23:32:15] Dev2 완료",
