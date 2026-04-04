@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 03:45:01",
+  "updatedAt": "2026-04-05 04:00:02",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-05 03:42:36"
+          "lastRun": "2026-04-05 04:00:02"
         }
       ],
-      "recentLog": "[2026-04-05 03:22:32] Eddy 실행 완료\n[2026-04-05 03:30:01] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:30:02] Eddy 실행 완료\n[2026-04-05 03:32:32] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:32:34] Eddy 실행 완료\n[2026-04-05 03:42:34] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:42:36] Eddy 실행 완료"
+      "recentLog": "[2026-04-05 03:32:34] Eddy 실행 완료\n[2026-04-05 03:42:34] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:42:36] Eddy 실행 완료\n[2026-04-05 03:52:36] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:52:38] Eddy 실행 완료\n[2026-04-05 04:00:00] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 04:00:02] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 03:30:21"
+          "lastRun": "2026-04-05 04:00:02"
         },
         {
           "name": "Dev2",
@@ -124,7 +124,7 @@
           "name": "Planner",
           "role": "기획/태스크 관리",
           "cron": "0 */2 * * *",
-          "lastRun": "2026-04-05 02:11:34"
+          "lastRun": "2026-04-05 04:00:00"
         },
         {
           "name": "QA",
@@ -136,10 +136,10 @@
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": "0 * * * *",
-          "lastRun": "2026-04-05 03:00:02"
+          "lastRun": "2026-04-05 04:00:02"
         }
       ],
-      "recentLog": "[2026-04-05 03:00:02] Dev1 완료\n[2026-04-05 03:00:18] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:00:19] Dev1 완료\n[2026-04-05 03:30:01] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:30:02] Dev1 완료\n[2026-04-05 03:30:19] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:30:21] Dev1 완료"
+      "recentLog": "[2026-04-05 03:00:19] Dev1 완료\n[2026-04-05 03:30:01] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:30:02] Dev1 완료\n[2026-04-05 03:30:19] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:30:21] Dev1 완료\n[2026-04-05 04:00:00] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 04:00:02] Dev1 완료"
     },
     {
       "name": "ReviewBot",
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "코드 수정/안정화",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 03:19:18"
+          "lastRun": "2026-04-05 03:49:20"
         },
         {
           "name": "Pipeline",
@@ -179,12 +179,12 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "현재 `pending-links.json`: 7개 고유 waiting 요청 (봄 캠핑/원피스/신발/가방/아우터/니트/의류)\n[2026-04-05 02:19:13] Dev1 완료\nAlready up to date.\n[2026-04-05 02:49:14] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 02:49:15] Dev1 완료\n[2026-04-05 03:19:15] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:19:18] Dev1 완료"
+      "recentLog": "Already up to date.\n[2026-04-05 02:49:14] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 02:49:15] Dev1 완료\n[2026-04-05 03:19:15] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:19:18] Dev1 완료\n[2026-04-05 03:49:18] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:49:20] Dev1 완료"
     }
   ],
   "recentActivity": [
-    "[2026-04-05 03:32:34] Eddy 실행 완료",
-    "[2026-04-05 03:42:36] Eddy 실행 완료",
+    "[2026-04-05 03:52:38] Eddy 실행 완료",
+    "[2026-04-05 04:00:02] Eddy 실행 완료",
     "[2026-04-05 02:25:42] Dev1 완료",
     "[2026-04-05 03:25:44] Dev1 완료",
     "[2026-04-05 02:43:18] Dev2 완료",
@@ -193,7 +193,7 @@
     "[2026-04-03 23:13:38] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
-    "[2026-04-05 02:49:15] Dev1 완료",
-    "[2026-04-05 03:19:18] Dev1 완료"
+    "[2026-04-05 03:19:18] Dev1 완료",
+    "[2026-04-05 03:49:20] Dev1 완료"
   ]
 }
