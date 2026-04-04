@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 00:34:24",
+  "updatedAt": "2026-04-05 00:43:13",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-05 00:30:57"
+          "lastRun": "2026-04-05 00:40:57"
         }
       ],
-      "recentLog": "| **ELDO** | 🟢 정상 | Dev1 28차(섹터 i18n) / Dev2 26차 완료. QA 11차 대기. |\n| **ReviewBot** | 🟡 처리 중 | URGENT — 쿠팡 직접검색 전환 + 자동 포스팅 중단. Dev1 실행 중. |\n| **DevGate** | 🟢 정상 | Phase 19-A 완료, E2E 39/39 전체 통과. 테스트+버그수정 모드 전환. |\n| **XBot** | 🔴 보류 | 봇 감지 차단. 변동 없음. |\n| **IRI-Safety** | 🟢 정상 | 1차 실행 완료. 비밀번호 인증+감사 로그+사용자 관리 구현. QA 버그 2건 발견 → QA_REPORT 반영. |\n**Sanghun 액션 필요:**\n- ReviewBot: 쿠팡 파트너스 API 키 (`COUPANG_ACCESS_KEY`, `COUPANG_SECRET_KEY`)\n- ELDO: Vercel 토큰, Google Analytics ID\n[2026-04-05 00:30:57] Eddy 실행 완료"
+      "recentLog": "| **ReviewBot** | 🟡 처리 중 | URGENT — 쿠팡 직접검색 전환 + 자동 포스팅 중단. Dev1 실행 중. |\n| **DevGate** | 🟢 정상 | Phase 19-A 완료, E2E 39/39 전체 통과. 테스트+버그수정 모드 전환. |\n| **XBot** | 🔴 보류 | 봇 감지 차단. 변동 없음. |\n| **IRI-Safety** | 🟢 정상 | 1차 실행 완료. 비밀번호 인증+감사 로그+사용자 관리 구현. QA 버그 2건 발견 → QA_REPORT 반영. |\n**Sanghun 액션 필요:**\n- ReviewBot: 쿠팡 파트너스 API 키 (`COUPANG_ACCESS_KEY`, `COUPANG_SECRET_KEY`)\n- ELDO: Vercel 토큰, Google Analytics ID\n[2026-04-05 00:30:57] Eddy 실행 완료\n[2026-04-05 00:40:57] Eddy 실행 시작"
     },
     {
       "name": "DevGate",
@@ -44,7 +44,7 @@
           "name": "Dev2",
           "role": "기능 개발",
           "cron": ":30 (19~07)",
-          "lastRun": "2026-04-04 23:36:06"
+          "lastRun": "2026-04-05 00:34:57"
         },
         {
           "name": "Planner",
