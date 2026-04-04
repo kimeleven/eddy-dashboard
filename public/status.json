@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 12:00:58",
+  "updatedAt": "2026-04-04 12:23:14",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -7,7 +7,7 @@
       "Gemini 2.5",
       "Imagen 4"
     ],
-    "cronJobs": 7,
+    "cronJobs": 8,
     "telegram": "Eddy Bot (30분마다)"
   },
   "teams": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 12:00:58"
+          "lastRun": "2026-04-04 12:23:14"
         }
       ],
-      "recentLog": "신규 텔레그램 지시 없음. 팀 현황:\n**ELDO** — Dev1 활성 작업 중 (DB 전환, UI 재구성, Playwright URGENT 처리 중). 크론 24시간 변경은 Sanghun 직접 필요.\n**ReviewBot** — URGENT 3건 (승인 과정 제거, 링크 이상 수정, 1시간 자동 포스팅) Dev1 처리 대기 중.\n**Sanghun 직접 액션 필요:**\n1. `crontab -e` — ELDO 24시간 30분 주기 변경\n2. ReviewBot `pipeline.mjs` 크론 활성화 (`0 * * * *`)\n[2026-04-04 12:00:58] Eddy 실행 완료"
+      "recentLog": "**ELDO** — Dev1 활성 작업 중 (DB 전환, UI 재구성, Playwright URGENT 처리 중). 크론 24시간 변경은 Sanghun 직접 필요.\n**ReviewBot** — URGENT 3건 (승인 과정 제거, 링크 이상 수정, 1시간 자동 포스팅) Dev1 처리 대기 중.\n**Sanghun 직접 액션 필요:**\n1. `crontab -e` — ELDO 24시간 30분 주기 변경\n2. ReviewBot `pipeline.mjs` 크론 활성화 (`0 * * * *`)\n[2026-04-04 12:00:58] Eddy 실행 완료\n정상. Python 태스크도 returncode 0 (성공)이고 현재 crontab도 올바른 상태 유지 중. 모든 백그라운드 태스크 완료, 크론탭 최종 상태 이상 없음.\n[2026-04-04 12:23:14] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -172,6 +172,8 @@
   ],
   "recentActivity": [
     "[2026-04-04 12:00:58] Eddy 실행 완료",
+    "정상. Python 태스크도 returncode 0 (성공)이고 현재 crontab도 올바른 상태 유지 중. 모든 백그라운드 태스크 완료, 크론탭 최종 상태 이상 없음.",
+    "[2026-04-04 12:23:14] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
     "[2026-04-03 23:32:15] Dev2 완료",
