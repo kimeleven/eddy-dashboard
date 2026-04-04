@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 02:11:35",
+  "updatedAt": "2026-04-05 02:22:28",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-05 02:09:31"
+          "lastRun": "2026-04-05 02:20:52"
         }
       ],
-      "recentLog": "- ELDO: BETA-27 진행 중 (Performance 최적화 완료, VCR-C 섹션 작업 중)\n- ReviewBot: 쿠팡 직접 검색 전환 작업 중, 파트너스 링크 6건 대기\n- DevGate: E2E 49/49 통과. S-1 HIGH RBAC 버그 Dev1에 배정됨\n- IRI-Safety: QA 42/42 PASS, Phase 1 감사로그 완료\n- XBot: 보류 유지\n**Sanghun 액션 필요:**\n- ReviewBot 쿠팡 파트너스 API 키 (`COUPANG_ACCESS_KEY`, `COUPANG_SECRET_KEY`)\n- ELDO Vercel 토큰\n[2026-04-05 02:09:31] Eddy 실행 완료"
+      "recentLog": "**팀 현황 요약:**\n- **ELDO**: BETA-27 완료 (Performance 최적화 + VCR-C 섹션), E2E 19/19\n- **ReviewBot**: BUG-005 수정 완료. pending-links 7건 Sanghun 링크 대기 중. 자동 포스팅 중단 유지.\n- **DevGate**: E2E 49/49. S-1 HIGH (DEVELOPER 역할 /admin 접근 가능) — Dev1 수정 중, 아직 커밋 없음.\n- **XBot**: 보류 유지\n- **IRI-Safety**: QA 42/42. Dev1 도급관리 백엔드 + Dev2 비밀번호 변경 UI 완료.\n**신규 텔레그램 없음.**\n[2026-04-05 02:20:52] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -38,13 +38,13 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":00 (19~07)",
-          "lastRun": "2026-04-05 01:18:59"
+          "lastRun": "2026-04-05 02:18:59"
         },
         {
           "name": "Dev2",
           "role": "기능 개발",
           "cron": ":30 (19~07)",
-          "lastRun": "2026-04-05 01:17:07"
+          "lastRun": "2026-04-05 02:17:08"
         },
         {
           "name": "Planner",
@@ -65,7 +65,7 @@
           "lastRun": "2026-04-04 00:11:50"
         }
       ],
-      "recentLog": "[2026-04-04 23:14:59] Dev1 완료\n[2026-04-04 23:15:49] Dev1 실행\n[done] Phase 19-A 완료 (개발자 검색 API+페이지), 미들웨어 RBAC 추가, E2E 39/39 전체 통과 (2026-04-04)\n[2026-04-04 23:50:25] Dev1 스킵 — 이전 실행 중 (PID 2027)\n`sleep` wait command also completed (exit code 0). All background tasks resolved — session fully complete.\n[2026-04-04 23:50:26] Dev1 완료\n[2026-04-05 00:50:25] Dev1 실행\n[done] E2E 테스트 49/49 전체 통과 확인 (2026-04-05) — 이전 3개 FAIL 분석 및 해결 확인\n이미 확인한 최신 E2E 테스트 완료 알림입니다. 결과: **49/49 전체 통과** (exit code 0). 이미 처리 완료됨.\n[2026-04-05 01:18:59] Dev1 완료"
+      "recentLog": "[2026-04-04 23:15:49] Dev1 실행\n[done] Phase 19-A 완료 (개발자 검색 API+페이지), 미들웨어 RBAC 추가, E2E 39/39 전체 통과 (2026-04-04)\n[2026-04-04 23:50:25] Dev1 스킵 — 이전 실행 중 (PID 2027)\n`sleep` wait command also completed (exit code 0). All background tasks resolved — session fully complete.\n[2026-04-04 23:50:26] Dev1 완료\n[2026-04-05 00:50:25] Dev1 실행\n[done] E2E 테스트 49/49 전체 통과 확인 (2026-04-05) — 이전 3개 FAIL 분석 및 해결 확인\n이미 확인한 최신 E2E 테스트 완료 알림입니다. 결과: **49/49 전체 통과** (exit code 0). 이미 처리 완료됨.\n[2026-04-05 01:18:59] Dev1 완료\n[2026-04-05 02:18:59] Dev1 실행"
     },
     {
       "name": "LiveOrder",
@@ -118,7 +118,7 @@
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "cron": "15,45 * * * *",
-          "lastRun": "2026-04-05 02:10:19"
+          "lastRun": "2026-04-05 02:22:28"
         },
         {
           "name": "Planner",
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "코드 수정/안정화",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 01:42:20"
+          "lastRun": "2026-04-05 02:19:13"
         },
         {
           "name": "Pipeline",
@@ -179,16 +179,15 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "- `data/products.json` — `봄 의류 추천` 항목 수정:\n- `status: \"failed\"` → `\"pending\"` 리셋\n- products 5개의 auto-generated `coupangUrl`/`coupangProductId` 초기화 (수수료 추적 불가한 링크 제거)\n**이유**: 이 항목은 2026-04-04에 파트너스 링크 없이 리뷰 작성 시도했다가 실패(BUG-004 수정 당시 누락). auto-generated coupangUrl이 남아있어서 `stepLinkRequest()`가 \"이미 링크 있음\"으로 판단해 링크 요청을 안 보내는 문제가 있었음. 이제 다음 pipeline 실행 시 Sanghun에게 파트너스 링크 요청 자동 전송됨.\n**현재 pipeline 상태:**\n- `pending` 대기: 7개 (봄 의류 추천 + 봄 가방 + 봄 아우터 + 봄 캠핑/원피스/신발은 이미 링크 요청 전송됨)\n- `pending-links` waiting: 6개 — Sanghun 링크 회신 대기 중\n[2026-04-05 01:42:20] Dev1 완료"
+      "recentLog": "[done] BUG-005: 파트너스 링크 요청 중복 전송 방지 (requestPartnerLinks dedup) + 불량 키워드 봄 캠핑 용품 vs 정리\n완료. 처리 내용:\n**BUG-005 수정** — 파트너스 링크 중복 요청\n- **원인**: `requestPartnerLinks()`에 dedup 로직 없어서 매 파이프라인 실행마다 이미 `waiting` 중인 키워드에 다시 텔레그램 메시지 전송\n- **수정**: `src/telegram-approver.mjs` - 동일 keyword + `status: 'waiting'` 존재 시 스킵 처리\n- **데이터 정리**: `pending-links.json` 중복 6개 제거, `봄 캠핑 용품 vs` 블랙리스트 등록 (VS 전자부품 오검색)\n현재 `pending-links.json`: 7개 고유 waiting 요청 (봄 캠핑/원피스/신발/가방/아우터/니트/의류)\n[2026-04-05 02:19:13] Dev1 완료"
     }
   ],
   "recentActivity": [
-    "[2026-04-05 02:09:31] Eddy 실행 완료",
-    "[2026-04-04 23:50:26] Dev1 완료",
+    "- **IRI-Safety**: QA 42/42. Dev1 도급관리 백엔드 + Dev2 비밀번호 변경 UI 완료.",
+    "[2026-04-05 02:20:52] Eddy 실행 완료",
     "[done] E2E 테스트 49/49 전체 통과 확인 (2026-04-05) — 이전 3개 FAIL 분석 및 해결 확인",
     "이미 확인한 최신 E2E 테스트 완료 알림입니다. 결과: **49/49 전체 통과** (exit code 0). 이미 처리 완료됨.",
     "[2026-04-05 01:18:59] Dev1 완료",
-    "[2026-04-04 23:36:06] Dev2 완료",
     "[done] E2E 테스트 시나리오 2차 확장 (19스텝/49체크포인트) 49/49 전체 통과. STEP 16~19 신규 추가: 발주자 프로젝트 상세, 개발자 배정 프로젝트 상세, 관리자 수동결제 UI, CLIENT RBAC 차단. commit d48a753",
     "백그라운드 태스크는 이전 버전(수정 전)을 실행한 결과입니다 - 48/49 (admin/projects 타이밍 이슈 1건). 이미 수정된 최신 버전은 49/49 전체 통과 확인되었습니다 (커밋 `d48a753`).",
     "[2026-04-05 01:17:07] Dev2 완료",
@@ -196,6 +195,6 @@
     "[2026-04-03 23:13:38] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
-    "[2026-04-05 01:42:20] Dev1 완료"
+    "[2026-04-05 02:19:13] Dev1 완료"
   ]
 }
