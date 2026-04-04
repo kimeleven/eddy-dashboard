@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 03:15:01",
+  "updatedAt": "2026-04-05 03:30:02",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-05 03:12:30"
+          "lastRun": "2026-04-05 03:30:02"
         }
       ],
-      "recentLog": "[2026-04-05 02:52:27] Eddy 실행 완료\n[2026-04-05 03:00:00] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:00:02] Eddy 실행 완료\n[2026-04-05 03:02:28] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:02:29] Eddy 실행 완료\n[2026-04-05 03:12:29] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:12:30] Eddy 실행 완료"
+      "recentLog": "[2026-04-05 03:02:29] Eddy 실행 완료\n[2026-04-05 03:12:29] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:12:30] Eddy 실행 완료\n[2026-04-05 03:22:31] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:22:32] Eddy 실행 완료\n[2026-04-05 03:30:01] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:30:02] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -38,7 +38,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":00 (19~07)",
-          "lastRun": "2026-04-05 02:25:42"
+          "lastRun": "2026-04-05 03:25:44"
         },
         {
           "name": "Dev2",
@@ -65,7 +65,7 @@
           "lastRun": "2026-04-04 00:11:50"
         }
       ],
-      "recentLog": "[done] Phase 19-A 완료 (개발자 검색 API+페이지), 미들웨어 RBAC 추가, E2E 39/39 전체 통과 (2026-04-04)\n[2026-04-04 23:50:25] Dev1 스킵 — 이전 실행 중 (PID 2027)\n`sleep` wait command also completed (exit code 0). All background tasks resolved — session fully complete.\n[2026-04-04 23:50:26] Dev1 완료\n[2026-04-05 00:50:25] Dev1 실행\n[done] E2E 테스트 49/49 전체 통과 확인 (2026-04-05) — 이전 3개 FAIL 분석 및 해결 확인\n이미 확인한 최신 E2E 테스트 완료 알림입니다. 결과: **49/49 전체 통과** (exit code 0). 이미 처리 완료됨.\n[2026-04-05 01:18:59] Dev1 완료\n[2026-04-05 02:18:59] Dev1 실행\n[2026-04-05 02:25:42] Dev1 완료"
+      "recentLog": "[2026-04-04 23:50:26] Dev1 완료\n[2026-04-05 00:50:25] Dev1 실행\n[done] E2E 테스트 49/49 전체 통과 확인 (2026-04-05) — 이전 3개 FAIL 분석 및 해결 확인\n이미 확인한 최신 E2E 테스트 완료 알림입니다. 결과: **49/49 전체 통과** (exit code 0). 이미 처리 완료됨.\n[2026-04-05 01:18:59] Dev1 완료\n[2026-04-05 02:18:59] Dev1 실행\n[2026-04-05 02:25:42] Dev1 완료\n[2026-04-05 03:25:42] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:25:44] Dev1 완료"
     },
     {
       "name": "LiveOrder",
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 03:00:19"
+          "lastRun": "2026-04-05 03:30:01"
         },
         {
           "name": "Dev2",
@@ -130,7 +130,7 @@
           "name": "QA",
           "role": "코드 검증",
           "cron": "30 */3 * * *",
-          "lastRun": "2026-04-05 02:43:15"
+          "lastRun": "2026-04-05 03:30:01"
         },
         {
           "name": "PM",
@@ -139,7 +139,7 @@
           "lastRun": "2026-04-05 03:00:02"
         }
       ],
-      "recentLog": "**커밋:** `6f508db` (i18n), `82853cd` (docs)\n**tsc 오류:** 0건\n[2026-04-05 02:40:23] Dev1 완료\n[2026-04-05 03:00:00] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:00:02] Dev1 완료\n[2026-04-05 03:00:18] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:00:19] Dev1 완료"
+      "recentLog": "**tsc 오류:** 0건\n[2026-04-05 02:40:23] Dev1 완료\n[2026-04-05 03:00:00] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:00:02] Dev1 완료\n[2026-04-05 03:00:18] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:00:19] Dev1 완료\n[2026-04-05 03:30:01] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)"
     },
     {
       "name": "ReviewBot",
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "코드 수정/안정화",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 02:49:15"
+          "lastRun": "2026-04-05 03:19:18"
         },
         {
           "name": "Pipeline",
@@ -179,16 +179,14 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "- **원인**: `requestPartnerLinks()`에 dedup 로직 없어서 매 파이프라인 실행마다 이미 `waiting` 중인 키워드에 다시 텔레그램 메시지 전송\n- **수정**: `src/telegram-approver.mjs` - 동일 keyword + `status: 'waiting'` 존재 시 스킵 처리\n- **데이터 정리**: `pending-links.json` 중복 6개 제거, `봄 캠핑 용품 vs` 블랙리스트 등록 (VS 전자부품 오검색)\n현재 `pending-links.json`: 7개 고유 waiting 요청 (봄 캠핑/원피스/신발/가방/아우터/니트/의류)\n[2026-04-05 02:19:13] Dev1 완료\nAlready up to date.\n[2026-04-05 02:49:14] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 02:49:15] Dev1 완료"
+      "recentLog": "현재 `pending-links.json`: 7개 고유 waiting 요청 (봄 캠핑/원피스/신발/가방/아우터/니트/의류)\n[2026-04-05 02:19:13] Dev1 완료\nAlready up to date.\n[2026-04-05 02:49:14] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 02:49:15] Dev1 완료\n[2026-04-05 03:19:15] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:19:18] Dev1 완료"
     }
   ],
   "recentActivity": [
-    "[2026-04-05 03:02:29] Eddy 실행 완료",
-    "[2026-04-05 03:12:30] Eddy 실행 완료",
-    "[done] E2E 테스트 49/49 전체 통과 확인 (2026-04-05) — 이전 3개 FAIL 분석 및 해결 확인",
-    "이미 확인한 최신 E2E 테스트 완료 알림입니다. 결과: **49/49 전체 통과** (exit code 0). 이미 처리 완료됨.",
-    "[2026-04-05 01:18:59] Dev1 완료",
+    "[2026-04-05 03:22:32] Eddy 실행 완료",
+    "[2026-04-05 03:30:02] Eddy 실행 완료",
     "[2026-04-05 02:25:42] Dev1 완료",
+    "[2026-04-05 03:25:44] Dev1 완료",
     "백그라운드 태스크는 이전 버전(수정 전)을 실행한 결과입니다 - 48/49 (admin/projects 타이밍 이슈 1건). 이미 수정된 최신 버전은 49/49 전체 통과 확인되었습니다 (커밋 `d48a753`).",
     "[2026-04-05 01:17:07] Dev2 완료",
     "[2026-04-05 02:43:18] Dev2 완료",
@@ -196,7 +194,7 @@
     "[2026-04-03 23:13:38] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
-    "[2026-04-05 02:19:13] Dev1 완료",
-    "[2026-04-05 02:49:15] Dev1 완료"
+    "[2026-04-05 02:49:15] Dev1 완료",
+    "[2026-04-05 03:19:18] Dev1 완료"
   ]
 }
