@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 15:20:23",
+  "updatedAt": "2026-04-04 15:32:25",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 15:03:14"
+          "lastRun": "2026-04-04 15:32:24"
         }
       ],
-      "recentLog": "**팀 현황:**\n- **ELDO**: BETA-12 Dev2 완료 ✅, Dev1 (커스텀 에러 페이지 + Loading skeleton) 착수 중\n- **ReviewBot**: 1시간 자동 포스팅 정상 운영 중\n- 오늘 14:00 포스팅 1회 성공: https://blog.naver.com/kimeleve/224240587030\n- 15:00 파이프라인: 하루 1개 한도로 건너뜀 (정상 동작)\n- ⚠️ Playwright 검증 이슈 경고 발생 — 수동 확인 권장\n**처리 완료**: ReviewBot BUG-002 코드 직접 확인 — `blog-publisher.mjs`와 `pipeline.mjs` 모두 이미 올바르게 수정되어 있음. TASKS.md 완료 처리.\n[2026-04-04 15:03:14] Eddy 실행 완료"
+      "recentLog": "- Sanghun 지시: VCR 메뉴가 상단 네비에 있으면 안 됨\n- VCR-C → 기업 상세 페이지 (이미 OK)\n- VCR-S → 섹터 페이지에서 섹터 선택 시 섹터 정보 **밑**으로\n- VCR-T → 주제(미정의) 아래로\n**조치:**\n- ELDO `TASKS.md` 최상단 🚨 URGENT에 추가 (헤더에서 `/vcr` 제거 + VCR-S 섹터 페이지 하단 통합)\n- 다음 Dev1 실행 시 가장 먼저 처리됨\n- VCR-T는 주제 개념이 아직 미정의 → Sanghun 추가 지시 필요함을 알림\n[2026-04-04 15:32:24] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-04 15:05:16"
+          "lastRun": "2026-04-04 15:30:01"
         },
         {
           "name": "Dev2",
@@ -130,7 +130,7 @@
           "name": "QA",
           "role": "코드 검증",
           "cron": "30 */3 * * *",
-          "lastRun": "2026-04-04 12:32:34"
+          "lastRun": "2026-04-04 15:30:01"
         },
         {
           "name": "PM",
@@ -139,7 +139,7 @@
           "lastRun": "2026-04-04 15:00:17"
         }
       ],
-      "recentLog": "- `app/company/[id]/not-found.tsx` — 기업 미존재 안내 (기업 목록/홈 링크)\n- `app/company/[id]/page.tsx` — 404는 `notFound()`, 500은 `throw`로 분리\n**BETA-12-B Loading skeleton 일관성**\n- `app/company/page.tsx` — Suspense fallback → 6행 테이블 skeleton\n- `app/company/_components/data-table-client.tsx` — 초기 로딩 → skeleton 테이블\n- `app/sectors/page.tsx` — 단일 skeleton → 필터+차트 구조 skeleton\n`next build` 오류 0건 확인. 커밋 `5efa452` push 완료.\n[2026-04-04 15:05:16] Dev1 완료"
+      "recentLog": "- `app/company/[id]/page.tsx` — 404는 `notFound()`, 500은 `throw`로 분리\n**BETA-12-B Loading skeleton 일관성**\n- `app/company/page.tsx` — Suspense fallback → 6행 테이블 skeleton\n- `app/company/_components/data-table-client.tsx` — 초기 로딩 → skeleton 테이블\n- `app/sectors/page.tsx` — 단일 skeleton → 필터+차트 구조 skeleton\n`next build` 오류 0건 확인. 커밋 `5efa452` push 완료.\n[2026-04-04 15:05:16] Dev1 완료\n[2026-04-04 15:30:01] Dev1 실행"
     },
     {
       "name": "ReviewBot",
@@ -183,8 +183,7 @@
     }
   ],
   "recentActivity": [
-    "**처리 완료**: ReviewBot BUG-002 코드 직접 확인 — `blog-publisher.mjs`와 `pipeline.mjs` 모두 이미 올바르게 수정되어 있음. TASKS.md 완료 처리.",
-    "[2026-04-04 15:03:14] Eddy 실행 완료",
+    "[2026-04-04 15:32:24] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
     "[2026-04-03 23:32:15] Dev2 완료",
