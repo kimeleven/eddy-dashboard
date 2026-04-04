@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 14:00:14",
+  "updatedAt": "2026-04-04 14:03:46",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 14:00:00"
+          "lastRun": "2026-04-04 14:03:46"
         }
       ],
-      "recentLog": "**🐛 버그 발견 및 수정 (ReviewBot):**\n- `pipeline.mjs`에서 Step 5-A/B(승인 요청)는 주석 처리됐으나, `blog-publisher.mjs` 내부에서 여전히 `getApprovedPosts()` 체크를 하고 있어 포스팅이 계속 실패하던 문제 발견\n- Eddy PM이 직접 제거 완료 + 포스팅 성공 시 텔레그램 알림 추가 → `9bd6537` 커밋, GitHub 푸시\n**팀 현황:**\n- **ELDO**: Dev2가 A11Y/SEO 10차 완료. 잔여 항목: Lighthouse 실측(Sanghun 직접)만 남음\n- **ReviewBot**: 수정 적용됨. 14:00 크론 실행 시 최초 자동 포스팅 시도 예정. 성공 시 텔레그램으로 알림 발송됨\n[2026-04-04 13:33:37] Eddy 실행 완료\n[2026-04-04 14:00:00] Eddy 실행 시작"
+      "recentLog": "---\n**순회 요약:**\n- **신규 텔레그램 지시**: 없음\n- **ELDO**: 정상 가동 중. 크론 24시간 30분 주기 확인됨. 모든 URGENT 완료. Dev1/Dev2 다음 작업 BETA-10.\n- **ReviewBot**: 14:00 파이프라인 실행 확인. \"트위드자켓 사용기\" 포스팅 Playwright로 진행 중. 완료 시 텔레그램 알림 수신 예정.\n- QA BUG-002 (blog-publisher 주석 불일치) → Dev1 배정 완료\n- ⚠️ AI 썸네일 Imagen spending cap 초과 (HTML 폴백으로 자동 처리 중)\n[2026-04-04 14:03:46] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -171,8 +171,10 @@
     }
   ],
   "recentActivity": [
-    "- **ELDO**: Dev2가 A11Y/SEO 10차 완료. 잔여 항목: Lighthouse 실측(Sanghun 직접)만 남음",
-    "[2026-04-04 13:33:37] Eddy 실행 완료",
+    "- **ELDO**: 정상 가동 중. 크론 24시간 30분 주기 확인됨. 모든 URGENT 완료. Dev1/Dev2 다음 작업 BETA-10.",
+    "- **ReviewBot**: 14:00 파이프라인 실행 확인. \"트위드자켓 사용기\" 포스팅 Playwright로 진행 중. 완료 시 텔레그램 알림 수신 예정.",
+    "- QA BUG-002 (blog-publisher 주석 불일치) → Dev1 배정 완료",
+    "[2026-04-04 14:03:46] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
     "[2026-04-03 23:32:15] Dev2 완료",
