@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 02:45:01",
+  "updatedAt": "2026-04-05 03:00:02",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-05 02:42:26"
+          "lastRun": "2026-04-05 03:00:00"
         }
       ],
-      "recentLog": "**32차 순회 결과:**\n- **ELDO**: BETA-28 완료 (기업목록 i18n + VCR Skeleton), BETA-27 진행 중. 정상.\n- **ReviewBot**: BUG-005 완료. pending-links 7건 Sanghun 링크 대기 중.\n- **DevGate**: E2E 49/49 통과. S-1 HIGH 해결 확인.\n- **XBot**: 보류 (변동 없음).\n- **IRI-Safety**: BUG-003 (passwordHash 미설정 → 비밀번호 무력화) 발견 — Dev1 배정 완료.\n⏳ **Sanghun 액션 필요**: ReviewBot pending-links 7건 쿠팡 링크 제공.\n[2026-04-05 02:42:26] Eddy 실행 완료"
+      "recentLog": "- **XBot**: 보류 (변동 없음).\n- **IRI-Safety**: BUG-003 (passwordHash 미설정 → 비밀번호 무력화) 발견 — Dev1 배정 완료.\n⏳ **Sanghun 액션 필요**: ReviewBot pending-links 7건 쿠팡 링크 제공.\n[2026-04-05 02:42:26] Eddy 실행 완료\n[2026-04-05 02:52:26] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 02:52:27] Eddy 실행 완료\n[2026-04-05 03:00:00] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)"
     },
     {
       "name": "DevGate",
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 02:40:23"
+          "lastRun": "2026-04-05 03:00:02"
         },
         {
           "name": "Dev2",
@@ -136,10 +136,10 @@
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": "0 * * * *",
-          "lastRun": "2026-04-05 02:00:14"
+          "lastRun": "2026-04-05 03:00:02"
         }
       ],
-      "recentLog": "- `columns.tsx`: `createColumns(col: ColumnHeaders)` 함수로 리팩터 — 하드코딩 영문 헤더 제거\n- `data-table-client.tsx`: `createColumns(dict.table.columns)` 호출로 언어 전환 시 컬럼 헤더 자동 변경\n2. **page-header.tsx emsec 레이블 버그 수정**\n- 기존: `useEmsecTree()` → `json.data` 오참조 (API는 배열 직접 반환) → 섹터 필터 레이블 항상 공백\n- 수정: `useSWR('/api/emsec/tree', fetcher)` 직접 호출 + `findEmsecNode()` 재귀 탐색으로 정확한 섹터 이름 표시\n**커밋:** `6f508db` (i18n), `82853cd` (docs)\n**tsc 오류:** 0건\n[2026-04-05 02:40:23] Dev1 완료"
+      "recentLog": "2. **page-header.tsx emsec 레이블 버그 수정**\n- 기존: `useEmsecTree()` → `json.data` 오참조 (API는 배열 직접 반환) → 섹터 필터 레이블 항상 공백\n- 수정: `useSWR('/api/emsec/tree', fetcher)` 직접 호출 + `findEmsecNode()` 재귀 탐색으로 정확한 섹터 이름 표시\n**커밋:** `6f508db` (i18n), `82853cd` (docs)\n**tsc 오류:** 0건\n[2026-04-05 02:40:23] Dev1 완료\n[2026-04-05 03:00:00] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:00:02] Dev1 완료"
     },
     {
       "name": "ReviewBot",
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "코드 수정/안정화",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 02:19:13"
+          "lastRun": "2026-04-05 02:49:15"
         },
         {
           "name": "Pipeline",
@@ -179,12 +179,11 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "[done] BUG-005: 파트너스 링크 요청 중복 전송 방지 (requestPartnerLinks dedup) + 불량 키워드 봄 캠핑 용품 vs 정리\n완료. 처리 내용:\n**BUG-005 수정** — 파트너스 링크 중복 요청\n- **원인**: `requestPartnerLinks()`에 dedup 로직 없어서 매 파이프라인 실행마다 이미 `waiting` 중인 키워드에 다시 텔레그램 메시지 전송\n- **수정**: `src/telegram-approver.mjs` - 동일 keyword + `status: 'waiting'` 존재 시 스킵 처리\n- **데이터 정리**: `pending-links.json` 중복 6개 제거, `봄 캠핑 용품 vs` 블랙리스트 등록 (VS 전자부품 오검색)\n현재 `pending-links.json`: 7개 고유 waiting 요청 (봄 캠핑/원피스/신발/가방/아우터/니트/의류)\n[2026-04-05 02:19:13] Dev1 완료"
+      "recentLog": "- **원인**: `requestPartnerLinks()`에 dedup 로직 없어서 매 파이프라인 실행마다 이미 `waiting` 중인 키워드에 다시 텔레그램 메시지 전송\n- **수정**: `src/telegram-approver.mjs` - 동일 keyword + `status: 'waiting'` 존재 시 스킵 처리\n- **데이터 정리**: `pending-links.json` 중복 6개 제거, `봄 캠핑 용품 vs` 블랙리스트 등록 (VS 전자부품 오검색)\n현재 `pending-links.json`: 7개 고유 waiting 요청 (봄 캠핑/원피스/신발/가방/아우터/니트/의류)\n[2026-04-05 02:19:13] Dev1 완료\nAlready up to date.\n[2026-04-05 02:49:14] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 02:49:15] Dev1 완료"
     }
   ],
   "recentActivity": [
-    "- **IRI-Safety**: BUG-003 (passwordHash 미설정 → 비밀번호 무력화) 발견 — Dev1 배정 완료.",
-    "[2026-04-05 02:42:26] Eddy 실행 완료",
+    "[2026-04-05 02:52:27] Eddy 실행 완료",
     "[done] E2E 테스트 49/49 전체 통과 확인 (2026-04-05) — 이전 3개 FAIL 분석 및 해결 확인",
     "이미 확인한 최신 E2E 테스트 완료 알림입니다. 결과: **49/49 전체 통과** (exit code 0). 이미 처리 완료됨.",
     "[2026-04-05 01:18:59] Dev1 완료",
@@ -196,6 +195,7 @@
     "[2026-04-03 23:13:38] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
-    "[2026-04-05 02:19:13] Dev1 완료"
+    "[2026-04-05 02:19:13] Dev1 완료",
+    "[2026-04-05 02:49:15] Dev1 완료"
   ]
 }
