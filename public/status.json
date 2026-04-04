@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 10:45:01",
+  "updatedAt": "2026-04-04 11:01:45",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -7,7 +7,7 @@
       "Gemini 2.5",
       "Imagen 4"
     ],
-    "cronJobs": 6,
+    "cronJobs": 7,
     "telegram": "Eddy Bot (30분마다)"
   },
   "teams": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 10:31:37"
+          "lastRun": "2026-04-04 11:01:45"
         }
       ],
-      "recentLog": "- **수신:** Sanghun \"승인...\" → ReviewBot pipeline 실행 승인으로 처리, TASKS.md 체크\n- **ReviewBot:** 파이프라인 실제 실행 중 — 트렌치코트/점퍼 리뷰 자동 생성 확인 (ranks/reviews 파일 생성됨)\n- **ELDO:** URGENT 2건 (정적데이터 DB전환, UI 재구성/다크모드) 팀 진행 중\n- **state.json** last_update_id → 360082440 저장 및 push 완료\n- **텔레그램 보고** 전송 완료\n**Sanghun 액션 필요:**\n- ELDO Lighthouse 실측 (TASK-307)\n- ReviewBot 서치어드바이저 등록 (네이버 로그인)\n[2026-04-04 10:31:37] Eddy 실행 완료"
+      "recentLog": "> \"리뷰봇은 네이버 포스팅 하고 알려줘... 그리고 나의 승인과정은 빼자... 주기적으로 포스팅하는거로 끝\"\n**ReviewBot TASKS.md에 🚨 URGENT 추가:**\n- `pipeline.mjs` Step 5-A (텔레그램 승인 요청) 제거\n- `pipeline.mjs` Step 5-B (승인 polling) 제거\n- Step 6 포스팅 — 승인 체크 없이 바로 발행\n- 포스팅 완료 후 Sanghun 텔레그램 알림 전송 (`✅ [ReviewBot] 포스팅 완료: {제목}\\n{URL}`)\n다음 ReviewBot 에이전트 실행 시 자동 적용됨. 텔레그램 보고 완료.\n[2026-04-04 11:01:45] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -171,7 +171,9 @@
     }
   ],
   "recentActivity": [
-    "[2026-04-04 10:31:37] Eddy 실행 완료",
+    "- 포스팅 완료 후 Sanghun 텔레그램 알림 전송 (`✅ [ReviewBot] 포스팅 완료: {제목}\\n{URL}`)",
+    "다음 ReviewBot 에이전트 실행 시 자동 적용됨. 텔레그램 보고 완료.",
+    "[2026-04-04 11:01:45] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
     "[2026-04-03 23:32:15] Dev2 완료",
