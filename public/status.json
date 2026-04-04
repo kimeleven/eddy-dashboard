@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 18:51:28",
+  "updatedAt": "2026-04-04 19:00:11",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 18:34:18"
+          "lastRun": "2026-04-04 19:00:00"
         }
       ],
-      "recentLog": "- ELDO TASKS.md — Planner 14차 + QA 10차 태스크 배정, 현재상태 업데이트\n- ReviewBot TASKS.md — 순회 기록 업데이트\n- 양 팀 + Eddy GitHub push 완료\n- 텔레그램 보고 발송 완료\n**Sanghun 필요:**\n- ELDO Lighthouse 실측 (eldo-one.vercel.app)\n- Vercel 토큰 / GA4 ID\n- ReviewBot --headed E2E 테스트 (네이버 세션)\n[2026-04-04 18:34:18] Eddy 실행 완료"
+      "recentLog": "- ReviewBot TASKS.md — 순회 기록 업데이트\n- 양 팀 + Eddy GitHub push 완료\n- 텔레그램 보고 발송 완료\n**Sanghun 필요:**\n- ELDO Lighthouse 실측 (eldo-one.vercel.app)\n- Vercel 토큰 / GA4 ID\n- ReviewBot --headed E2E 테스트 (네이버 세션)\n[2026-04-04 18:34:18] Eddy 실행 완료\n[2026-04-04 19:00:00] Eddy 실행 시작"
     },
     {
       "name": "DevGate",
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-04 18:33:00"
+          "lastRun": "2026-04-04 19:00:00"
         },
         {
           "name": "Dev2",
@@ -136,10 +136,10 @@
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": "0 * * * *",
-          "lastRun": "2026-04-04 18:00:16"
+          "lastRun": "2026-04-04 19:00:11"
         }
       ],
-      "recentLog": "**2. E2E 테스트 수정 (`1dcbc7c`)**\n- 섹터 페이지 차트 셀렉터: 모호한 `main, table` → `.recharts-wrapper`로 정밀화\n- `/api/vcr-reports` 응답 포맷: `Array.isArray(json)` → `Array.isArray(json.data)`\n**3. TASKS.md 업데이트 (`b17f47c`)**\n- BETA-19-C 완료 체크박스 전부 체크 (코드 이미 완료 확인)\n- 현재 상태 업데이트\n**현재 상태:** BETA-19 완전 완료. BETA-20 Planner 14차 배정 대기 중.\n[2026-04-04 18:33:00] Dev1 완료"
+      "recentLog": "- 섹터 페이지 차트 셀렉터: 모호한 `main, table` → `.recharts-wrapper`로 정밀화\n- `/api/vcr-reports` 응답 포맷: `Array.isArray(json)` → `Array.isArray(json.data)`\n**3. TASKS.md 업데이트 (`b17f47c`)**\n- BETA-19-C 완료 체크박스 전부 체크 (코드 이미 완료 확인)\n- 현재 상태 업데이트\n**현재 상태:** BETA-19 완전 완료. BETA-20 Planner 14차 배정 대기 중.\n[2026-04-04 18:33:00] Dev1 완료\n[2026-04-04 19:00:00] Dev1 실행"
     },
     {
       "name": "ReviewBot",
