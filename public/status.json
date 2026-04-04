@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 20:32:20",
+  "updatedAt": "2026-04-04 20:38:19",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-04 20:30:01"
+          "lastRun": "2026-04-04 20:38:18"
         },
         {
           "name": "Dev2",
@@ -139,7 +139,7 @@
           "lastRun": "2026-04-04 20:00:15"
         }
       ],
-      "recentLog": "- `distinct: ['corpId']` 쿼리에 `orderBy: { rank: 'asc' }` 추가 (비결정적 distinct 해소)\n- 지주사 기업들의 다른 섹터 매핑 rank=2로 변경 → 비금융지주(rank=1)가 우선 선택\n### 4. Playwright E2E 6 → 19개 테스트, 19/19 통과\n- news/emtec/VCR-T/stock-heatmap 비금융지주 테스트 추가\n- SEO 테스트 2건 수정 (robots.txt 대소문자, JSON-LD BreadcrumbList 검색 로직)\n**잔여**: URGENT 3단계 — Sectors/Company상세/Peer/Compare/Valuation/VCR/News 페이지 전 메뉴 데이터 검증\n[2026-04-04 20:17:32] Dev1 완료\n[2026-04-04 20:30:01] Dev1 실행"
+      "recentLog": "- **Company**: 각 거래소별 기업 API 정상, VCR 420건 / News 50건 연결\n- **Peer**: 검색 정상 (Samsung 17건 등)\n- **Valuation**: PER/EV 데이터 정상\n- **VCR**: C탭 420 / S탭 53 / T탭 20건\n- **News**: 50건, 페이지네이션 정상\n- **tsc --noEmit**: 오류 0건\n- **Playwright E2E**: 19/19 통과\nQA 이슈(ANALYSIS-CACHE-TTL, NEWSLETTER-HTML-ESCAPE)도 이미 이전 스프린트에서 수정 완료 확인.\n[2026-04-04 20:38:18] Dev1 완료"
     },
     {
       "name": "ReviewBot",
