@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 12:52:56",
+  "updatedAt": "2026-04-04 13:00:13",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 12:30:52"
+          "lastRun": "2026-04-04 13:00:00"
         }
       ],
-      "recentLog": "- **ELDO**: URGENT 3건 진행 중 (정적데이터 DB 전환, UI 재구성/다크모드, Playwright E2E 세팅) — 30분 주기 크론 정상 가동\n- **ReviewBot**: URGENT 3건 진행 중 (승인 제거, 링크+사진 수정, 1시간 자동 포스팅) — 1시간 주기 크론 정상 가동\n🔍 **감지:** 새 텔레그램 지시 없음\n⏳ **Sanghun 직접 필요:**\n- ELDO Lighthouse 실측 (Chrome DevTools → 각 페이지)\n- ELDO Vercel 토큰 발급\n- ELDO GA 속성 ID\n[2026-04-04 12:30:52] Eddy 실행 완료"
+      "recentLog": "- **ReviewBot**: URGENT 3건 진행 중 (승인 제거, 링크+사진 수정, 1시간 자동 포스팅) — 1시간 주기 크론 정상 가동\n🔍 **감지:** 새 텔레그램 지시 없음\n⏳ **Sanghun 직접 필요:**\n- ELDO Lighthouse 실측 (Chrome DevTools → 각 페이지)\n- ELDO Vercel 토큰 발급\n- ELDO GA 속성 ID\n[2026-04-04 12:30:52] Eddy 실행 완료\n[2026-04-04 13:00:00] Eddy 실행 시작"
     },
     {
       "name": "DevGate",
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":20 (19~07)",
-          "lastRun": "2026-04-04 12:40:19"
+          "lastRun": "2026-04-04 13:00:01"
         },
         {
           "name": "Planner",
@@ -130,10 +130,10 @@
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": ":25 (19~07)",
-          "lastRun": "2026-04-04 07:25:12"
+          "lastRun": "2026-04-04 13:00:13"
         }
       ],
-      "recentLog": "- `app/sectors/page.tsx` — 차트 컨테이너 `overflow-x-auto`\n- `app/vcr/_components/vcr-client.tsx` — VCR 탭 바 `overflow-x-auto`\n- `app/company/_components/data-table.tsx` — 테이블 `overflow-x-auto`\n- `app/company/[id]/_components/fin-metric-cards.tsx` — `grid-cols-1 sm:grid-cols-2 lg:grid-cols-3`\n### 4. A11Y/SEO 개선 (`691c56d`)\n- `app/layout.tsx` — viewport metadata export, skip-to-main-content 링크\n- `components/header.tsx` — NavigationMenu `aria-label=\"Main navigation\"`\n- `app/company/_components/company-sidebar.tsx` — 검색 Input/Button aria-label 추가\n[2026-04-04 12:40:19] Dev1 완료"
+      "recentLog": "- `app/vcr/_components/vcr-client.tsx` — VCR 탭 바 `overflow-x-auto`\n- `app/company/_components/data-table.tsx` — 테이블 `overflow-x-auto`\n- `app/company/[id]/_components/fin-metric-cards.tsx` — `grid-cols-1 sm:grid-cols-2 lg:grid-cols-3`\n### 4. A11Y/SEO 개선 (`691c56d`)\n- `app/layout.tsx` — viewport metadata export, skip-to-main-content 링크\n- `components/header.tsx` — NavigationMenu `aria-label=\"Main navigation\"`\n- `app/company/_components/company-sidebar.tsx` — 검색 Input/Button aria-label 추가\n[2026-04-04 12:40:19] Dev1 완료\n[2026-04-04 13:00:01] Dev1 실행"
     },
     {
       "name": "ReviewBot",
