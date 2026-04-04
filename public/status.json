@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 13:01:30",
+  "updatedAt": "2026-04-04 13:12:43",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":20 (19~07)",
-          "lastRun": "2026-04-04 13:00:01"
+          "lastRun": "2026-04-04 13:12:43"
         },
         {
           "name": "Planner",
@@ -133,7 +133,7 @@
           "lastRun": "2026-04-04 13:00:13"
         }
       ],
-      "recentLog": "- `app/vcr/_components/vcr-client.tsx` — VCR 탭 바 `overflow-x-auto`\n- `app/company/_components/data-table.tsx` — 테이블 `overflow-x-auto`\n- `app/company/[id]/_components/fin-metric-cards.tsx` — `grid-cols-1 sm:grid-cols-2 lg:grid-cols-3`\n### 4. A11Y/SEO 개선 (`691c56d`)\n- `app/layout.tsx` — viewport metadata export, skip-to-main-content 링크\n- `components/header.tsx` — NavigationMenu `aria-label=\"Main navigation\"`\n- `app/company/_components/company-sidebar.tsx` — 검색 Input/Button aria-label 추가\n[2026-04-04 12:40:19] Dev1 완료\n[2026-04-04 13:00:01] Dev1 실행"
+      "recentLog": "- `header.tsx`: 언어 선택기 SelectTrigger `aria-label=\"언어 선택\"` 추가 (데스크탑/모바일)\n- `components/footer.tsx`: 외부 링크 `rel=\"noopener noreferrer\"` 추가 (Best Practices)\n- `company-sidebar.tsx`: 거래소/섹터 Select `aria-label` 추가\n- `sectors/sidebar` 4개 파일: 그래프 유형/거래소/섹터/기준연도/지표 Select `aria-label` 전수 적용\n### 3. BETA-06 실기능 구현\n- **`/valuation`**: 거래소 필터 + P/E, EV/EBITDA, 시가총액, 매출 기준 정렬 가능한 전체 기업 밸류에이션 테이블\n- **`/peer`**: 기업 검색 → 동일 섹터 피어 기업 비교 테이블 (기준 기업 하이라이트)\n- **`/compare`**: 최대 5개 기업 검색 추가 → 주요 재무지표 나란히 비교 (Exchange, Sector, Mkt Cap, Revenue, Assets, P/E, EV/EBITDA, Patterns)\n[2026-04-04 13:12:43] Dev1 완료"
     },
     {
       "name": "ReviewBot",
