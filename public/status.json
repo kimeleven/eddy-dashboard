@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 03:00:02",
+  "updatedAt": "2026-04-05 03:15:01",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-05 03:00:02"
+          "lastRun": "2026-04-05 03:12:30"
         }
       ],
-      "recentLog": "- **IRI-Safety**: BUG-003 (passwordHash 미설정 → 비밀번호 무력화) 발견 — Dev1 배정 완료.\n⏳ **Sanghun 액션 필요**: ReviewBot pending-links 7건 쿠팡 링크 제공.\n[2026-04-05 02:42:26] Eddy 실행 완료\n[2026-04-05 02:52:26] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 02:52:27] Eddy 실행 완료\n[2026-04-05 03:00:00] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:00:02] Eddy 실행 완료"
+      "recentLog": "[2026-04-05 02:52:27] Eddy 실행 완료\n[2026-04-05 03:00:00] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:00:02] Eddy 실행 완료\n[2026-04-05 03:02:28] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:02:29] Eddy 실행 완료\n[2026-04-05 03:12:29] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:12:30] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -112,13 +112,13 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 03:00:02"
+          "lastRun": "2026-04-05 03:00:19"
         },
         {
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "cron": "15,45 * * * *",
-          "lastRun": "2026-04-05 02:45:01"
+          "lastRun": "2026-04-05 03:15:01"
         },
         {
           "name": "Planner",
@@ -139,7 +139,7 @@
           "lastRun": "2026-04-05 03:00:02"
         }
       ],
-      "recentLog": "2. **page-header.tsx emsec 레이블 버그 수정**\n- 기존: `useEmsecTree()` → `json.data` 오참조 (API는 배열 직접 반환) → 섹터 필터 레이블 항상 공백\n- 수정: `useSWR('/api/emsec/tree', fetcher)` 직접 호출 + `findEmsecNode()` 재귀 탐색으로 정확한 섹터 이름 표시\n**커밋:** `6f508db` (i18n), `82853cd` (docs)\n**tsc 오류:** 0건\n[2026-04-05 02:40:23] Dev1 완료\n[2026-04-05 03:00:00] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:00:02] Dev1 완료"
+      "recentLog": "**커밋:** `6f508db` (i18n), `82853cd` (docs)\n**tsc 오류:** 0건\n[2026-04-05 02:40:23] Dev1 완료\n[2026-04-05 03:00:00] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:00:02] Dev1 완료\n[2026-04-05 03:00:18] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:00:19] Dev1 완료"
     },
     {
       "name": "ReviewBot",
@@ -183,8 +183,8 @@
     }
   ],
   "recentActivity": [
-    "[2026-04-05 02:52:27] Eddy 실행 완료",
-    "[2026-04-05 03:00:02] Eddy 실행 완료",
+    "[2026-04-05 03:02:29] Eddy 실행 완료",
+    "[2026-04-05 03:12:30] Eddy 실행 완료",
     "[done] E2E 테스트 49/49 전체 통과 확인 (2026-04-05) — 이전 3개 FAIL 분석 및 해결 확인",
     "이미 확인한 최신 E2E 테스트 완료 알림입니다. 결과: **49/49 전체 통과** (exit code 0). 이미 처리 완료됨.",
     "[2026-04-05 01:18:59] Dev1 완료",
