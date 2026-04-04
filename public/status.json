@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 22:45:01",
+  "updatedAt": "2026-04-04 23:00:00",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 22:40:46"
+          "lastRun": "2026-04-04 22:50:46"
         }
       ],
-      "recentLog": "[2026-04-04 22:20:46] Eddy 실행 완료\n[2026-04-04 22:30:00] Eddy 실행 시작\n/Users/a1111/eddy-agent/eddy/run.sh: line 43: timeout: command not found\n[2026-04-04 22:30:00] Eddy 실행 완료\n[2026-04-04 22:30:46] Eddy 실행 시작\n/Users/a1111/eddy-agent/eddy/run.sh: line 43: timeout: command not found\n[2026-04-04 22:30:46] Eddy 실행 완료\n[2026-04-04 22:40:46] Eddy 실행 시작\n/Users/a1111/eddy-agent/eddy/run.sh: line 43: timeout: command not found\n[2026-04-04 22:40:46] Eddy 실행 완료"
+      "recentLog": "[2026-04-04 22:30:46] Eddy 실행 시작\n/Users/a1111/eddy-agent/eddy/run.sh: line 43: timeout: command not found\n[2026-04-04 22:30:46] Eddy 실행 완료\n[2026-04-04 22:40:46] Eddy 실행 시작\n/Users/a1111/eddy-agent/eddy/run.sh: line 43: timeout: command not found\n[2026-04-04 22:40:46] Eddy 실행 완료\n[2026-04-04 22:50:46] Eddy 실행 시작\n/Users/a1111/eddy-agent/eddy/run.sh: line 43: timeout: command not found\n[2026-04-04 22:50:46] Eddy 실행 완료\n[2026-04-04 22:50:46] status.json 업데이트 완료"
     },
     {
       "name": "DevGate",
@@ -136,7 +136,7 @@
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": "0 * * * *",
-          "lastRun": "2026-04-04 21:00:21"
+          "lastRun": "2026-04-04 23:00:00"
         }
       ],
       "recentLog": "| 문제 | stock-heatmap API 5.8s (전체 7,831개 기업 586K 행 조회) |\n| 원인 | `exchange` 파라미터 미구현 — 필터 없이 전체 데이터 로드 |\n| 수정 | `route.ts` — exchange→DB enum 매핑, KR→stock_trades/US→us_stock_trades 분기 |\n| 효과 | KOSPI 필터 시 5.8s→2.6s (55% 개선), 데이터 586K→199K 행 (66% 감소) |\n| E2E | workers=2, retries=1 + timeout 증가로 flakiness 해소 → **19/19 통과** |\n| tsc | 오류 0건 |\n[2026-04-04 22:17:47] Dev1 완료\n[2026-04-04 22:30:00] Dev1 실행\n/Users/a1111/eddy-agent/eldo-team/dev1.sh: line 31: timeout: command not found\n[2026-04-04 22:30:00] Dev1 완료"
@@ -183,8 +183,8 @@
     }
   ],
   "recentActivity": [
-    "[2026-04-04 22:30:46] Eddy 실행 완료",
-    "[2026-04-04 22:40:46] Eddy 실행 완료",
+    "[2026-04-04 22:50:46] Eddy 실행 완료",
+    "[2026-04-04 22:50:46] status.json 업데이트 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
