@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 02:00:14",
+  "updatedAt": "2026-04-05 02:03:13",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-05 02:00:00"
+          "lastRun": "2026-04-05 02:03:12"
         }
       ],
-      "recentLog": "- **DevGate**: E2E 49/49 ✅ Phase 19-A 완료, 버그수정 모드\n- **XBot**: 보류 (봇 감지 차단)\n- **IRI-Safety**: QA 2차 42/42 ✅ BUG 전부 해결, 감사 로그 UI 추가됨\n**Sanghun 액션 필요:**\n- ReviewBot 쿠팡 파트너스 API 키\n- ELDO Vercel 토큰 + GA4 ID\n- XBot 직접 로그인 테스트\n[2026-04-05 01:57:41] Eddy 실행 완료\n[2026-04-05 02:00:00] Eddy 실행 시작"
+      "recentLog": "- DevGate S-1 HIGH 버그 Dev1 배정: `middleware.ts` RBAC 미구현으로 DEVELOPER 역할이 `/admin/*` 접근 가능 → Dev1 즉시 수정 태스크로 TASKS.md 업데이트 + push\n- 텔레그램 보고 완료\n**팀 현황 요약:**\n- ELDO: BETA-26 완료, E2E 19/19 통과. BETA-27 QA 이슈 처리 중\n- ReviewBot: 자동 포스팅 중단, pending-links 7개 대기 (쿠팡 파트너스 링크 필요)\n- DevGate: E2E 49/49 통과, S-1 HIGH 버그 Dev1 배정됨\n- IRI-Safety: QA 2차 42/42 PASS, 정상 가동\n- XBot: 보류 중\n[2026-04-05 02:03:12] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 02:00:00"
+          "lastRun": "2026-04-05 02:00:18"
         },
         {
           "name": "Dev2",
@@ -139,7 +139,7 @@
           "lastRun": "2026-04-05 02:00:14"
         }
       ],
-      "recentLog": "- E2E 전체 19/19 통과 ✅ (이전 17/19 실패는 서버 상태 일시적 문제였음)\n- `/api/vcr-reports` — 데이터 정상 반환 (20건)\n- `/api/stock-heatmap` 비금융지주 — non-zero avgReturn 정상\n**현재 상태:**\n- BETA-26까지 모든 스프린트 완료\n- QA 잔존 이슈 전부 해소\n- 다음 배정(BETA-27) Planner/Eddy 대기 중\n[2026-04-05 01:35:34] Dev1 완료\n[2026-04-05 02:00:00] Dev1 실행"
+      "recentLog": "- `/api/vcr-reports` — 데이터 정상 반환 (20건)\n- `/api/stock-heatmap` 비금융지주 — non-zero avgReturn 정상\n**현재 상태:**\n- BETA-26까지 모든 스프린트 완료\n- QA 잔존 이슈 전부 해소\n- 다음 배정(BETA-27) Planner/Eddy 대기 중\n[2026-04-05 01:35:34] Dev1 완료\n[2026-04-05 02:00:00] Dev1 실행\n[2026-04-05 02:00:18] Dev1 스킵 — 이전 실행 중 (PID 26879)"
     },
     {
       "name": "ReviewBot",
@@ -183,7 +183,7 @@
     }
   ],
   "recentActivity": [
-    "[2026-04-05 01:57:41] Eddy 실행 완료",
+    "[2026-04-05 02:03:12] Eddy 실행 완료",
     "[2026-04-04 23:50:26] Dev1 완료",
     "[done] E2E 테스트 49/49 전체 통과 확인 (2026-04-05) — 이전 3개 FAIL 분석 및 해결 확인",
     "이미 확인한 최신 E2E 테스트 완료 알림입니다. 결과: **49/49 전체 통과** (exit code 0). 이미 처리 완료됨.",
