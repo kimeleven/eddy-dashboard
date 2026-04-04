@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 21:00:21",
+  "updatedAt": "2026-04-04 22:10:46",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 21:00:00"
+          "lastRun": "2026-04-04 22:10:45"
         }
       ],
-      "recentLog": "**12차 순회 결과:**\n- **텔레그램**: 새 메시지 없음\n- **ELDO**: BETA-22 Dev1 3단계 진행 중 (Sectors/Company/Peer 데이터 검증). QA 11차(BETA-20 리뷰) 진행 중. Dev2 24차 완료 대기.\n- **ReviewBot**: 안정화 모드 정상. 하루 2포스팅 크론 가동 중.\n- **XBot**: 초기 구조 완료 (Playwright + Claude API). Sanghun의 `.env` 설정 및 크론 등록 대기.\n- 커밋/푸시: eddy, eldo, reviewbot 전부 완료.\n[2026-04-04 20:32:20] Eddy 실행 완료\n[2026-04-04 21:00:00] Eddy 실행 시작"
+      "recentLog": "- **텔레그램**: 새 메시지 없음\n- **ELDO**: BETA-22 Dev1 3단계 진행 중 (Sectors/Company/Peer 데이터 검증). QA 11차(BETA-20 리뷰) 진행 중. Dev2 24차 완료 대기.\n- **ReviewBot**: 안정화 모드 정상. 하루 2포스팅 크론 가동 중.\n- **XBot**: 초기 구조 완료 (Playwright + Claude API). Sanghun의 `.env` 설정 및 크론 등록 대기.\n- 커밋/푸시: eddy, eldo, reviewbot 전부 완료.\n[2026-04-04 20:32:20] Eddy 실행 완료\n[2026-04-04 21:00:00] Eddy 실행 시작\n[2026-04-04 22:10:45] Eddy 실행 완료\n[2026-04-04 22:10:45] Eddy 실행 완료\n[2026-04-04 22:10:45] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -112,13 +112,13 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-04 21:00:01"
+          "lastRun": "2026-04-04 22:10:45"
         },
         {
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "cron": "15,45 * * * *",
-          "lastRun": "2026-04-04 20:54:06"
+          "lastRun": "2026-04-04 22:10:45"
         },
         {
           "name": "Planner",
@@ -139,7 +139,7 @@
           "lastRun": "2026-04-04 21:00:21"
         }
       ],
-      "recentLog": "- **Peer**: 검색 정상 (Samsung 17건 등)\n- **Valuation**: PER/EV 데이터 정상\n- **VCR**: C탭 420 / S탭 53 / T탭 20건\n- **News**: 50건, 페이지네이션 정상\n- **tsc --noEmit**: 오류 0건\n- **Playwright E2E**: 19/19 통과\nQA 이슈(ANALYSIS-CACHE-TTL, NEWSLETTER-HTML-ESCAPE)도 이미 이전 스프린트에서 수정 완료 확인.\n[2026-04-04 20:38:18] Dev1 완료\n[2026-04-04 21:00:01] Dev1 실행"
+      "recentLog": "- **News**: 50건, 페이지네이션 정상\n- **tsc --noEmit**: 오류 0건\n- **Playwright E2E**: 19/19 통과\nQA 이슈(ANALYSIS-CACHE-TTL, NEWSLETTER-HTML-ESCAPE)도 이미 이전 스프린트에서 수정 완료 확인.\n[2026-04-04 20:38:18] Dev1 완료\n[2026-04-04 21:00:01] Dev1 실행\n[2026-04-04 22:10:45] Dev1 완료\n[2026-04-04 22:10:45] Dev1 완료\n[2026-04-04 22:10:45] Dev1 완료"
     },
     {
       "name": "ReviewBot",
@@ -183,8 +183,8 @@
     }
   ],
   "recentActivity": [
-    "- 커밋/푸시: eddy, eldo, reviewbot 전부 완료.",
-    "[2026-04-04 20:32:20] Eddy 실행 완료",
+    "[2026-04-04 22:10:45] Eddy 실행 완료",
+    "[2026-04-04 22:10:45] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
