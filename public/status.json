@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 09:45:00",
+  "updatedAt": "2026-04-04 10:01:07",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 09:30:54"
+          "lastRun": "2026-04-04 10:01:07"
         }
       ],
-      "recentLog": "- ReviewBot: Phase 23-A 완료, 실제 파이프라인 실행 대기 (Sanghun 직접 실행 필요)\n[2026-04-04 09:00:35] Eddy 실행 완료\n[2026-04-04 09:30:01] Eddy 실행 시작\n텔레그램 보고 완료.\n**현황 요약:**\n- 신규 텔레그램 메시지: 없음\n- **ELDO**: 🚨 URGENT 3개 진행 중 (정적데이터 DB 전환, UI/다크모드 재구성, Playwright E2E)\n- **ReviewBot**: Phase 23 완료. 실 포스팅 실행 + 서치어드바이저는 Sanghun 직접 필요\n[2026-04-04 09:30:54] Eddy 실행 완료"
+      "recentLog": "- ReviewBot: Phase 23-A 완료, 실 포스팅 실행 대기 (Sanghun 직접)\n[2026-04-04 10:30:37] Eddy 실행 완료\n텔레그램 보고 완료.\n**현황:**\n- 신규 메시지 없음\n- **ELDO**: URGENT 3개 (정적데이터→DB 전환, UI/다크모드 재구성, Playwright E2E) Dev1 진행 중. `/api/analysis` DB 전환 완료.\n- **ReviewBot**: Phase 23-A 완료. 실 파이프라인 실행은 Sanghun 직접 필요.\n- Devgate/LiveOrder: 보류 유지.\n[2026-04-04 10:01:07] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -171,8 +171,9 @@
     }
   ],
   "recentActivity": [
-    "- **ReviewBot**: Phase 23 완료. 실 포스팅 실행 + 서치어드바이저는 Sanghun 직접 필요",
-    "[2026-04-04 09:30:54] Eddy 실행 완료",
+    "- **ELDO**: URGENT 3개 (정적데이터→DB 전환, UI/다크모드 재구성, Playwright E2E) Dev1 진행 중. `/api/analysis` DB 전환 완료.",
+    "- **ReviewBot**: Phase 23-A 완료. 실 파이프라인 실행은 Sanghun 직접 필요.",
+    "[2026-04-04 10:01:07] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
     "[2026-04-03 23:32:15] Dev2 완료",
