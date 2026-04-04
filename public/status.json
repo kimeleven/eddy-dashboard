@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 23:00:01",
+  "updatedAt": "2026-04-04 23:15:01",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 23:00:01"
+          "lastRun": "2026-04-04 23:10:46"
         }
       ],
-      "recentLog": "[2026-04-04 22:40:46] Eddy 실행 시작\n/Users/a1111/eddy-agent/eddy/run.sh: line 43: timeout: command not found\n[2026-04-04 22:40:46] Eddy 실행 완료\n[2026-04-04 22:50:46] Eddy 실행 시작\n/Users/a1111/eddy-agent/eddy/run.sh: line 43: timeout: command not found\n[2026-04-04 22:50:46] Eddy 실행 완료\n[2026-04-04 22:50:46] status.json 업데이트 완료\n[2026-04-04 23:00:01] Eddy 실행 시작\n/Users/a1111/eddy-agent/eddy/run.sh: line 43: timeout: command not found\n[2026-04-04 23:00:01] Eddy 실행 완료"
+      "recentLog": "[2026-04-04 22:50:46] status.json 업데이트 완료\n[2026-04-04 23:00:01] Eddy 실행 시작\n/Users/a1111/eddy-agent/eddy/run.sh: line 43: timeout: command not found\n[2026-04-04 23:00:01] Eddy 실행 완료\n[2026-04-04 23:00:46] Eddy 실행 시작\n/Users/a1111/eddy-agent/eddy/run.sh: line 43: timeout: command not found\n[2026-04-04 23:00:46] Eddy 실행 완료\n[2026-04-04 23:10:46] Eddy 실행 시작\n/Users/a1111/eddy-agent/eddy/run.sh: line 43: timeout: command not found\n[2026-04-04 23:10:46] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -38,7 +38,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":00 (19~07)",
-          "lastRun": "2026-04-04 16:23:29"
+          "lastRun": "2026-04-04 23:14:59"
         },
         {
           "name": "Dev2",
@@ -65,7 +65,7 @@
           "lastRun": "2026-04-04 00:11:50"
         }
       ],
-      "recentLog": "### Phase 18-A ✅ 개발자 기술스택/스킬 시스템\n- 스킬 필드(`skills String[]`), 편집 UI(태그 입력), 공개 프로필 표시는 이미 구현 완료 상태\n- **`/api/developers/[id]/route.ts`**: PATCH 요청 시 스킬 유효성 검사 추가 (최대 20개, 각 50자 제한)\n### 빌드 에러 수정 (기존 코드 버그)\n- **`/api/projects/[id]/route.ts`**: 존재하지 않는 `activeFeeProposal` relation → `feeProposals` relation으로 교체, `proposedAmount` → `amount` 필드명 수정\n[2026-04-04 00:06:11] Dev1 완료\n[2026-04-04 16:23:29] Dev1 완료\n[2026-04-04 16:23:29] Dev1 완료"
+      "recentLog": "- **`/api/developers/[id]/route.ts`**: PATCH 요청 시 스킬 유효성 검사 추가 (최대 20개, 각 50자 제한)\n### 빌드 에러 수정 (기존 코드 버그)\n- **`/api/projects/[id]/route.ts`**: 존재하지 않는 `activeFeeProposal` relation → `feeProposals` relation으로 교체, `proposedAmount` → `amount` 필드명 수정\n[2026-04-04 00:06:11] Dev1 완료\n[2026-04-04 16:23:29] Dev1 완료\n[2026-04-04 16:23:29] Dev1 완료\n[2026-04-04 23:14:59] Dev1 실행\n/Users/a1111/eddy-agent/devgate-team/dev1.sh: line 31: timeout: command not found\n[2026-04-04 23:14:59] Dev1 완료"
     },
     {
       "name": "LiveOrder",
@@ -118,7 +118,7 @@
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "cron": "15,45 * * * *",
-          "lastRun": "2026-04-04 22:45:01"
+          "lastRun": "2026-04-04 23:15:00"
         },
         {
           "name": "Planner",
@@ -183,11 +183,11 @@
     }
   ],
   "recentActivity": [
-    "[2026-04-04 22:50:46] status.json 업데이트 완료",
-    "[2026-04-04 23:00:01] Eddy 실행 완료",
-    "[2026-04-04 00:06:11] Dev1 완료",
+    "[2026-04-04 23:00:46] Eddy 실행 완료",
+    "[2026-04-04 23:10:46] Eddy 실행 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
+    "[2026-04-04 23:14:59] Dev1 완료",
     "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
     "[2026-04-03 23:32:15] Dev2 완료",
     "- **lookup/page.tsx**: PAID + 7일 이내 조건부 청약철회 버튼 표시, 신청 완료 시 접수 메시지 표시",
