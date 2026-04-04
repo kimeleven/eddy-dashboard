@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 14:32:39",
+  "updatedAt": "2026-04-04 14:36:05",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":20 (19~07)",
-          "lastRun": "2026-04-04 14:30:01"
+          "lastRun": "2026-04-04 14:36:05"
         },
         {
           "name": "Planner",
@@ -133,7 +133,7 @@
           "lastRun": "2026-04-04 14:00:14"
         }
       ],
-      "recentLog": "- **`prisma/seed.ts`**: 20개 기업 × 3건 = 60건 더미 뉴스 데이터 추가\n### BETA-11 — Performance 개선 (`3dd24ca`)\n- **BETA-11-A/B**: `app/page.tsx` 서버 컴포넌트 전환 + `app/_components/home-content.tsx` 클라이언트 분리\n- **BETA-11-C/D**: `fin-info-section.tsx`에서 `FinMetricsCharts` → `next/dynamic({ ssr: false })` 적용\n- **BETA-11-E**: `app/layout.tsx` Geist/Geist_Mono 폰트 활성화 + `display: 'swap'`\n- **BETA-11-F**: `desc-section.tsx`, `stock-section.tsx` — 불필요한 `'use client'` 제거 (서버 컴포넌트 전환)\n- **분석 route TS 버그 수정**: `handleCorpDist` 내 잘못된 return type (`NextResponse → throw Error`)\n[2026-04-04 14:13:45] Dev1 완료\n[2026-04-04 14:30:01] Dev1 실행"
+      "recentLog": "2. 전체 하위 emsec 일괄 조회 (sector 레벨 시에만)\n3. 전체 corpEmsec 일괄 조회 (IN 절로 한 번에)\n- JavaScript `Set`으로 메모리 내 corpId 중복 제거\n### 2. ANALYSIS-METRIC-VALID (QA P3) 해결\n- `BadRequestError` 클래스 추가 (status: 400)\n- `handleCorpDist` 내 `throw new Error` → `throw new BadRequestError`\n- outer catch에서 `BadRequestError` 감지 → 400 JSON 응답 반환 (기존 500 대신)\n[2026-04-04 14:36:05] Dev1 완료"
     },
     {
       "name": "ReviewBot",
