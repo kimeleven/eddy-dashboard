@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 12:32:34",
+  "updatedAt": "2026-04-04 12:40:19",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -7,7 +7,7 @@
       "Gemini 2.5",
       "Imagen 4"
     ],
-    "cronJobs": 8,
+    "cronJobs": 9,
     "telegram": "Eddy Bot (30분마다)"
   },
   "teams": [
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":20 (19~07)",
-          "lastRun": "2026-04-04 12:30:01"
+          "lastRun": "2026-04-04 12:40:19"
         },
         {
           "name": "Planner",
@@ -133,7 +133,7 @@
           "lastRun": "2026-04-04 07:25:12"
         }
       ],
-      "recentLog": "- `layout.tsx`: 쿠키(`lang`)로 읽은 값을 `Lang` 타입으로 캐스팅 후 `Providers`에 `initialLang` prop으로 전달. `Header`/`Footer`도 `Providers` 내부로 이동하여 단일 Jotai store 공유\n**결과:**\n- 서버 쿠키 `lang` → Jotai store 초기값 → 클라이언트 하이드레이션 시 동일한 값으로 시작 → flash 없음\n- TypeScript 타입 체크 오류 0\n- 커밋: `7f95822`\n[2026-04-04 06:25:08] Dev1 완료\n[2026-04-04 07:20:00] Dev1 실행\n[done] BETA-05 완료 — 다국어 일본어(ja) 추가: dictJa 사전(9섹션 전체), Lang 타입 확장, 언어 선택기 UI, htmlLang 분기. 커밋 941894a. TypeScript 에러 0.\n[2026-04-04 12:30:01] Dev1 실행"
+      "recentLog": "- `app/sectors/page.tsx` — 차트 컨테이너 `overflow-x-auto`\n- `app/vcr/_components/vcr-client.tsx` — VCR 탭 바 `overflow-x-auto`\n- `app/company/_components/data-table.tsx` — 테이블 `overflow-x-auto`\n- `app/company/[id]/_components/fin-metric-cards.tsx` — `grid-cols-1 sm:grid-cols-2 lg:grid-cols-3`\n### 4. A11Y/SEO 개선 (`691c56d`)\n- `app/layout.tsx` — viewport metadata export, skip-to-main-content 링크\n- `components/header.tsx` — NavigationMenu `aria-label=\"Main navigation\"`\n- `app/company/_components/company-sidebar.tsx` — 검색 Input/Button aria-label 추가\n[2026-04-04 12:40:19] Dev1 완료"
     },
     {
       "name": "ReviewBot",
