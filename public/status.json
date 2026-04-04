@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 16:04:54",
+  "updatedAt": "2026-04-04 16:11:01",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-04 16:00:01"
+          "lastRun": "2026-04-04 16:11:01"
         },
         {
           "name": "Dev2",
@@ -139,7 +139,7 @@
           "lastRun": "2026-04-04 16:00:13"
         }
       ],
-      "recentLog": "| `fin-info-section.tsx` | `langAtom` 구독 + `getLabel()` 사용, `.en` 하드코딩 전량 제거, UI 한/영/일 상수화 |\n| `fin-indic-section.tsx` | `locale` prop 제거 → `langAtom` 직접 구독, 모든 ternary → `t.xxx` 상수 참조 |\n| `stock-section.tsx` | `locale?: Locale` prop 추가, 한/영/일 UI 상수 완성 |\n| `desc-section.tsx` | `getLabel()` 사용, `'ja'` → `pathEn` fallback, 섹션 제목 3개 언어 |\n| `company/[id]/page.tsx` | `cookies()`로 `lang` 읽어 `locale: Locale` 파생 → 서버 컴포넌트에 전달 |\n| `TASKS.md` | BETA-13 Dev1 완료 기록 |\n**결과:** `tsc --noEmit` 오류 0건, commit `52d451a`, push 완료\n[2026-04-04 15:40:46] Dev1 완료\n[2026-04-04 16:00:01] Dev1 실행"
+      "recentLog": "- `vcr-section.tsx`, `vcr-s-section.tsx` 양쪽에 있던 inline CopyButton → 공유 컴포넌트로 교체\n- 섹션 카드에 `group` 클래스 추가, 복사 텍스트 `[제목]\\n\\n{본문}` 포맷\n3. **VCR-S 섹터 레이블 자동 추출** — 불러온 보고서 데이터에서 파생 (추가 API 호출 없음)\n4. **BETA-14-B/C 확인** — 기업 하이퍼링크(`linkifyCorpNames`)와 QA P3 이슈 모두 기존 코드에서 이미 구현/수정됨 확인 → QA_REPORT 업데이트\n- `tsc --noEmit` 오류 0건 ✅\n- `git push origin main` 완료 (`e999ffa`)\n[2026-04-04 16:11:01] Dev1 완료"
     },
     {
       "name": "ReviewBot",
