@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 02:40:23",
+  "updatedAt": "2026-04-05 02:43:15",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-05 02:33:16"
+          "lastRun": "2026-04-05 02:42:26"
         }
       ],
-      "recentLog": "완료.\n**31차 순회 처리 내용:**\n- **ELDO**: BETA-27 Dev1(Lighthouse 최적화) + Dev2(VCR-C Skeleton/EMTEC 태그 접기) 완료 확인. tsc 0건, E2E 19/19.\n- **ReviewBot**: BUG-005(중복 링크 요청) 수정 확인. URGENT 쿠팡 직접검색 전환 Dev1 작업 중. 파트너스 링크 7건 Sanghun 회신 대기.\n- **DevGate**: S-1 HIGH 직접 코드 확인 → `middleware.ts`에 RBAC 이미 구현됨(`payload.role !== 'ADMIN'`). TASKS.md 해결 완료 업데이트 후 push.\n- **XBot**: 봇 감지로 보류 유지.\n- **IRI-Safety**: Phase 2 도급/용역 백엔드 완료. BUG-001/002 해결 확인.\n[2026-04-05 02:33:16] Eddy 실행 완료"
+      "recentLog": "**32차 순회 결과:**\n- **ELDO**: BETA-28 완료 (기업목록 i18n + VCR Skeleton), BETA-27 진행 중. 정상.\n- **ReviewBot**: BUG-005 완료. pending-links 7건 Sanghun 링크 대기 중.\n- **DevGate**: E2E 49/49 통과. S-1 HIGH 해결 확인.\n- **XBot**: 보류 (변동 없음).\n- **IRI-Safety**: BUG-003 (passwordHash 미설정 → 비밀번호 무력화) 발견 — Dev1 배정 완료.\n⏳ **Sanghun 액션 필요**: ReviewBot pending-links 7건 쿠팡 링크 제공.\n[2026-04-05 02:42:26] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -56,7 +56,7 @@
           "name": "QA",
           "role": "코드 검증",
           "cron": "3h간격",
-          "lastRun": "2026-04-05 02:34:58"
+          "lastRun": "2026-04-05 02:43:09"
         },
         {
           "name": "PM",
@@ -118,7 +118,7 @@
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "cron": "15,45 * * * *",
-          "lastRun": "2026-04-05 02:40:19"
+          "lastRun": "2026-04-05 02:43:04"
         },
         {
           "name": "Planner",
@@ -130,7 +130,7 @@
           "name": "QA",
           "role": "코드 검증",
           "cron": "30 */3 * * *",
-          "lastRun": "2026-04-05 00:34:24"
+          "lastRun": "2026-04-05 02:43:15"
         },
         {
           "name": "PM",
@@ -183,9 +183,8 @@
     }
   ],
   "recentActivity": [
-    "- **DevGate**: S-1 HIGH 직접 코드 확인 → `middleware.ts`에 RBAC 이미 구현됨(`payload.role !== 'ADMIN'`). TASKS.md 해결 완료 업데이트 후 push.",
-    "- **IRI-Safety**: Phase 2 도급/용역 백엔드 완료. BUG-001/002 해결 확인.",
-    "[2026-04-05 02:33:16] Eddy 실행 완료",
+    "- **IRI-Safety**: BUG-003 (passwordHash 미설정 → 비밀번호 무력화) 발견 — Dev1 배정 완료.",
+    "[2026-04-05 02:42:26] Eddy 실행 완료",
     "[done] E2E 테스트 49/49 전체 통과 확인 (2026-04-05) — 이전 3개 FAIL 분석 및 해결 확인",
     "이미 확인한 최신 E2E 테스트 완료 알림입니다. 결과: **49/49 전체 통과** (exit code 0). 이미 처리 완료됨.",
     "[2026-04-05 01:18:59] Dev1 완료",
