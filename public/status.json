@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 19:04:42",
+  "updatedAt": "2026-04-04 19:31:20",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 19:04:36"
+          "lastRun": "2026-04-04 19:30:00"
         }
       ],
-      "recentLog": "- **Dev1 신규 배정:** `ANALYSIS-CACHE-TTL` MEDIUM 버그 수정 — `/api/analysis` s-maxage=86400 → `private, max-age=60`\n- **QA 11차 배정:** BETA-20 /news 페이지 코드 리뷰\n- Planner 14차 BETA-20 계획 수립 진행 중, Dev1 대기\n**ReviewBot 현황:**\n- Phase 24 안정화 유지, 크론 매시간 실행 중\n- Dev E2E 검증(--headed 모드) 미완료 — 다음 실행 시 처리 예정\n**⏳ Sanghun 액션 대기:** Vercel 토큰, GA4 ID, ReviewBot 서치어드바이저 등록, Lighthouse 측정\n[2026-04-04 19:04:36] Eddy 실행 완료"
+      "recentLog": "- **QA 11차 배정:** BETA-20 /news 페이지 코드 리뷰\n- Planner 14차 BETA-20 계획 수립 진행 중, Dev1 대기\n**ReviewBot 현황:**\n- Phase 24 안정화 유지, 크론 매시간 실행 중\n- Dev E2E 검증(--headed 모드) 미완료 — 다음 실행 시 처리 예정\n**⏳ Sanghun 액션 대기:** Vercel 토큰, GA4 ID, ReviewBot 서치어드바이저 등록, Lighthouse 측정\n[2026-04-04 19:04:36] Eddy 실행 완료\n[2026-04-04 19:30:00] Eddy 실행 시작"
     },
     {
       "name": "DevGate",
@@ -112,13 +112,13 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-04 19:04:42"
+          "lastRun": "2026-04-04 19:30:00"
         },
         {
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "cron": "15,45 * * * *",
-          "lastRun": "2026-04-04 18:51:28"
+          "lastRun": "2026-04-04 19:31:20"
         },
         {
           "name": "Planner",
@@ -139,7 +139,7 @@
           "lastRun": "2026-04-04 19:00:11"
         }
       ],
-      "recentLog": "2. **[NEWSLETTER-HTML-ESCAPE] P3** — 이메일 HTML 본문에 `email` 변수 직접 삽입 → `escapeHtml()` 함수로 `&`, `<`, `>`, `\"` 이스케이프 처리.\n### BETA-20 기능\n3. **`/news` 헤더 네비게이션 추가** — `header.tsx` NAV_KEYS에 `'news'` 추가. Dev2가 만든 `/news` 독립 페이지가 데스크탑/모바일 메뉴에 자동 연결됨.\n4. **SEO E2E Playwright 테스트** — `tests/e2e/seo.spec.ts` 신규 작성:\n- 6개 페이지 OG/Twitter 메타태그 검증\n- `/company/[id]` JSON-LD BreadcrumbList 구조 검증\n- `robots.txt` + `sitemap.xml` 응답 검증\n→ QA 10차 P3 이슈 `E2E-SEO-COVERAGE` 해결\n[2026-04-04 19:04:42] Dev1 완료"
+      "recentLog": "### BETA-20 기능\n3. **`/news` 헤더 네비게이션 추가** — `header.tsx` NAV_KEYS에 `'news'` 추가. Dev2가 만든 `/news` 독립 페이지가 데스크탑/모바일 메뉴에 자동 연결됨.\n4. **SEO E2E Playwright 테스트** — `tests/e2e/seo.spec.ts` 신규 작성:\n- 6개 페이지 OG/Twitter 메타태그 검증\n- `/company/[id]` JSON-LD BreadcrumbList 구조 검증\n- `robots.txt` + `sitemap.xml` 응답 검증\n→ QA 10차 P3 이슈 `E2E-SEO-COVERAGE` 해결\n[2026-04-04 19:04:42] Dev1 완료\n[2026-04-04 19:30:00] Dev1 실행"
     },
     {
       "name": "ReviewBot",
