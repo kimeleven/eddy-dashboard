@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 20:05:49",
+  "updatedAt": "2026-04-04 20:17:32",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -112,13 +112,13 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-04 20:00:01"
+          "lastRun": "2026-04-04 20:17:32"
         },
         {
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "cron": "15,45 * * * *",
-          "lastRun": "2026-04-04 19:51:05"
+          "lastRun": "2026-04-04 20:15:01"
         },
         {
           "name": "Planner",
@@ -139,7 +139,7 @@
           "lastRun": "2026-04-04 20:00:15"
         }
       ],
-      "recentLog": "| `lib/atoms/lang-atom.ts` | `home.stats` 키 추가 (한/영/일: companies/countries/vcr/news) |\n| `app/_components/home-content.tsx` | Stats 섹션 추가 — 히어로와 피처 카드 사이 4개 통계 카드 |\n**동작 방식:**\n- 홈 페이지 로드 시 `/api/stats`를 클라이언트에서 fetch\n- DB에서 `corps.count()`, `vcrReports.count()`, `news.count()` 병렬 조회\n- 데이터 도착 후 stats 섹션 표시 (에러 시 graceful skip — 섹션 미표시)\n- `tsc --noEmit` 오류 0건\n[2026-04-04 19:37:23] Dev1 완료\n[2026-04-04 20:00:01] Dev1 실행"
+      "recentLog": "- 비금융지주(emsec_id=2)에 지주사 57개 기업 매핑 추가\n- `distinct: ['corpId']` 쿼리에 `orderBy: { rank: 'asc' }` 추가 (비결정적 distinct 해소)\n- 지주사 기업들의 다른 섹터 매핑 rank=2로 변경 → 비금융지주(rank=1)가 우선 선택\n### 4. Playwright E2E 6 → 19개 테스트, 19/19 통과\n- news/emtec/VCR-T/stock-heatmap 비금융지주 테스트 추가\n- SEO 테스트 2건 수정 (robots.txt 대소문자, JSON-LD BreadcrumbList 검색 로직)\n**잔여**: URGENT 3단계 — Sectors/Company상세/Peer/Compare/Valuation/VCR/News 페이지 전 메뉴 데이터 검증\n[2026-04-04 20:17:32] Dev1 완료"
     },
     {
       "name": "ReviewBot",
