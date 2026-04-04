@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 00:49:22",
+  "updatedAt": "2026-04-05 01:00:16",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-05 00:46:03"
+          "lastRun": "2026-04-05 01:00:00"
         }
       ],
-      "recentLog": "- **IRI-Safety**: QA 1차 BUG-002 포트 3003 확정, TASKS.md 업데이트 후 push\n- 텔레그램 신규 메시지 없음\n**팀 상태:**\n- ELDO: 정상 가동 (Dev1 29차 / E2E 19/19)\n- ReviewBot: 정상 (BUG-003 수정, 파트너스 링크 대기)\n- DevGate: Phase 19-A 완료, E2E 39/39 통과, 버그수정 모드\n- IRI-Safety: 개발 진행 중 (비밀번호인증/감사로그 완료)\n- XBot: 보류 유지\n[2026-04-05 00:46:03] Eddy 실행 완료"
+      "recentLog": "| IRI-Safety | Dev1 감사로그/비밀번호 구현 완료. BUG-001/002 Open (포트 3003 변경 필요). |\n**대기 (Sanghun 액션 필요):**\n1. ReviewBot 쿠팡 파트너스 API 키 (COUPANG_ACCESS_KEY/SECRET_KEY)\n2. XBot 최초 로그인: `cd ~/eddy-agent/xbot && node pipeline.mjs --once`\n3. ELDO Vercel 배포 토큰\n텔레그램 발송 완료.\n[2026-04-05 00:57:56] Eddy 실행 완료\n[2026-04-05 01:00:00] Eddy 실행 시작"
     },
     {
       "name": "DevGate",
@@ -38,7 +38,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":00 (19~07)",
-          "lastRun": "2026-04-04 23:50:26"
+          "lastRun": "2026-04-05 00:50:25"
         },
         {
           "name": "Dev2",
@@ -65,7 +65,7 @@
           "lastRun": "2026-04-04 00:11:50"
         }
       ],
-      "recentLog": "[2026-04-04 16:23:29] Dev1 완료\n[2026-04-04 16:23:29] Dev1 완료\n[2026-04-04 23:14:59] Dev1 실행\n/Users/a1111/eddy-agent/devgate-team/dev1.sh: line 31: timeout: command not found\n[2026-04-04 23:14:59] Dev1 완료\n[2026-04-04 23:15:49] Dev1 실행\n[done] Phase 19-A 완료 (개발자 검색 API+페이지), 미들웨어 RBAC 추가, E2E 39/39 전체 통과 (2026-04-04)\n[2026-04-04 23:50:25] Dev1 스킵 — 이전 실행 중 (PID 2027)\n`sleep` wait command also completed (exit code 0). All background tasks resolved — session fully complete.\n[2026-04-04 23:50:26] Dev1 완료"
+      "recentLog": "[2026-04-04 16:23:29] Dev1 완료\n[2026-04-04 23:14:59] Dev1 실행\n/Users/a1111/eddy-agent/devgate-team/dev1.sh: line 31: timeout: command not found\n[2026-04-04 23:14:59] Dev1 완료\n[2026-04-04 23:15:49] Dev1 실행\n[done] Phase 19-A 완료 (개발자 검색 API+페이지), 미들웨어 RBAC 추가, E2E 39/39 전체 통과 (2026-04-04)\n[2026-04-04 23:50:25] Dev1 스킵 — 이전 실행 중 (PID 2027)\n`sleep` wait command also completed (exit code 0). All background tasks resolved — session fully complete.\n[2026-04-04 23:50:26] Dev1 완료\n[2026-04-05 00:50:25] Dev1 실행"
     },
     {
       "name": "LiveOrder",
@@ -112,13 +112,13 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 00:32:16"
+          "lastRun": "2026-04-05 01:00:00"
         },
         {
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "cron": "15,45 * * * *",
-          "lastRun": "2026-04-05 00:49:22"
+          "lastRun": "2026-04-05 00:58:01"
         },
         {
           "name": "Planner",
@@ -136,10 +136,10 @@
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": "0 * * * *",
-          "lastRun": "2026-04-05 00:00:41"
+          "lastRun": "2026-04-05 01:00:16"
         }
       ],
-      "recentLog": "| 항목 | 결과 |\n|------|------|\n| lang-atom.ts 누락 키 | 없음 (5개 키 모두 존재 확인) |\n| tsc --noEmit | 오류 0건 ✅ |\n| NEWSLETTER-HTML-ESCAPE | 이미 `db4dad8`에서 완료 확인 |\n| E2E-SEO-COVERAGE | 이미 `db4dad8`에서 `seo.spec.ts` 추가 확인 |\n| E2E 전체 | **19/19 통과** ✅ |\n| git push | `67e150e` → main ✅ |\n[2026-04-05 00:32:16] Dev1 완료"
+      "recentLog": "| 항목 | 결과 |\n|------|------|\n| lang-atom.ts 누락 키 | 없음 (5개 키 모두 존재 확인) |\n| tsc --noEmit | 오류 0건 ✅ |\n| NEWSLETTER-HTML-ESCAPE | 이미 `db4dad8`에서 완료 확인 |\n| E2E-SEO-COVERAGE | 이미 `db4dad8`에서 `seo.spec.ts` 추가 확인 |\n| E2E 전체 | **19/19 통과** ✅ |\n| git push | `67e150e` → main ✅ |\n[2026-04-05 00:32:16] Dev1 완료\n[2026-04-05 01:00:00] Dev1 실행"
     },
     {
       "name": "ReviewBot",
@@ -183,9 +183,8 @@
     }
   ],
   "recentActivity": [
-    "- DevGate: Phase 19-A 완료, E2E 39/39 통과, 버그수정 모드",
-    "- IRI-Safety: 개발 진행 중 (비밀번호인증/감사로그 완료)",
-    "[2026-04-05 00:46:03] Eddy 실행 완료",
+    "텔레그램 발송 완료.",
+    "[2026-04-05 00:57:56] Eddy 실행 완료",
     "[done] Phase 19-A 완료 (개발자 검색 API+페이지), 미들웨어 RBAC 추가, E2E 39/39 전체 통과 (2026-04-04)",
     "[2026-04-04 23:50:26] Dev1 완료",
     "[2026-04-04 23:36:06] Dev2 완료",
