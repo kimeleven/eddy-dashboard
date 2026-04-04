@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 18:27:32",
+  "updatedAt": "2026-04-04 18:33:00",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 18:04:25"
+          "lastRun": "2026-04-04 18:30:00"
         }
       ],
-      "recentLog": "- Lighthouse는 **ELDO** (Next.js 웹앱)에만 해당 → TASK-307 실측은 Sanghun이 Chrome DevTools로 직접 필요\n3. **ELDO TASKS.md 업데이트:**\n- Planner 13차: BETA-19 계획 수립 배정 (뉴스레터 발송/Lighthouse 최적화 우선)\n- QA 9차: BETA-18 코드 리뷰 배정\n4. **Sanghun 직접 필요:**\n- `eldo-one.vercel.app` Chrome DevTools Lighthouse 실측 (Performance 80+ 목표)\n- Vercel 토큰, GA4 ID\n[2026-04-04 18:04:25] Eddy 실행 완료"
+      "recentLog": "3. **ELDO TASKS.md 업데이트:**\n- Planner 13차: BETA-19 계획 수립 배정 (뉴스레터 발송/Lighthouse 최적화 우선)\n- QA 9차: BETA-18 코드 리뷰 배정\n4. **Sanghun 직접 필요:**\n- `eldo-one.vercel.app` Chrome DevTools Lighthouse 실측 (Performance 80+ 목표)\n- Vercel 토큰, GA4 ID\n[2026-04-04 18:04:25] Eddy 실행 완료\n[2026-04-04 18:30:00] Eddy 실행 시작"
     },
     {
       "name": "DevGate",
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-04 18:14:09"
+          "lastRun": "2026-04-04 18:33:00"
         },
         {
           "name": "Dev2",
@@ -130,7 +130,7 @@
           "name": "QA",
           "role": "코드 검증",
           "cron": "30 */3 * * *",
-          "lastRun": "2026-04-04 15:33:00"
+          "lastRun": "2026-04-04 18:30:00"
         },
         {
           "name": "PM",
@@ -139,7 +139,7 @@
           "lastRun": "2026-04-04 18:00:16"
         }
       ],
-      "recentLog": "**BETA-19-A** — `layout.tsx`: `alternateLocale: ['en_US', 'ja_JP']` + `twitter.site` 추가\n**BETA-19-B** — sectors/peer/compare/valuation 4개 페이지 `openGraph` + `twitter` 메타데이터 추가\n**BETA-19-C** — `company/[id]`: Twitter card + `json-ld.tsx` BreadcrumbList JSON-LD (Home → Companies → 기업명 3단계)\n**BETA-19-D** — Resend 뉴스레터 이메일: `RESEND_API_KEY` 있으면 구독 확인 메일 발송, 없으면 graceful skip. `.env.example` 업데이트\n> **⚠️ Sanghun 필요:** Resend 계정 → API key → Vercel/`.env.local`에 `RESEND_API_KEY` 설정해야 이메일 발송 활성화됩니다.\n[2026-04-04 18:14:09] Dev1 완료"
+      "recentLog": "**2. E2E 테스트 수정 (`1dcbc7c`)**\n- 섹터 페이지 차트 셀렉터: 모호한 `main, table` → `.recharts-wrapper`로 정밀화\n- `/api/vcr-reports` 응답 포맷: `Array.isArray(json)` → `Array.isArray(json.data)`\n**3. TASKS.md 업데이트 (`b17f47c`)**\n- BETA-19-C 완료 체크박스 전부 체크 (코드 이미 완료 확인)\n- 현재 상태 업데이트\n**현재 상태:** BETA-19 완전 완료. BETA-20 Planner 14차 배정 대기 중.\n[2026-04-04 18:33:00] Dev1 완료"
     },
     {
       "name": "ReviewBot",
