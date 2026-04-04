@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 02:03:13",
+  "updatedAt": "2026-04-05 02:05:21",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 02:00:18"
+          "lastRun": "2026-04-05 02:05:21"
         },
         {
           "name": "Dev2",
@@ -139,7 +139,7 @@
           "lastRun": "2026-04-05 02:00:14"
         }
       ],
-      "recentLog": "- `/api/vcr-reports` — 데이터 정상 반환 (20건)\n- `/api/stock-heatmap` 비금융지주 — non-zero avgReturn 정상\n**현재 상태:**\n- BETA-26까지 모든 스프린트 완료\n- QA 잔존 이슈 전부 해소\n- 다음 배정(BETA-27) Planner/Eddy 대기 중\n[2026-04-05 01:35:34] Dev1 완료\n[2026-04-05 02:00:00] Dev1 실행\n[2026-04-05 02:00:18] Dev1 스킵 — 이전 실행 중 (PID 26879)"
+      "recentLog": "**작업 4 — 정적 API Route `revalidate`**:\n- `emsec/tree` → 3600초\n- `emsec/sector-tree` → 3600초\n- `emtec` → 86400초\n- `stats` → 3600초\n**작업 5 — preconnect**: GoogleTagManager preconnect 이미 존재, Geist 폰트는 next/font로 자체 호스팅 → 추가 불필요\n결과: `tsc --noEmit` 오류 0건, E2E 19/19 통과, `git push` 완료 (`07b521f`, `bba22a5`)\n[2026-04-05 02:05:21] Dev1 완료"
     },
     {
       "name": "ReviewBot",
