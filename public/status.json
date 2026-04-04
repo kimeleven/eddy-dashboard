@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 19:33:02",
+  "updatedAt": "2026-04-04 19:37:23",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-04 19:30:00"
+          "lastRun": "2026-04-04 19:37:23"
         },
         {
           "name": "Dev2",
@@ -139,7 +139,7 @@
           "lastRun": "2026-04-04 19:00:11"
         }
       ],
-      "recentLog": "### BETA-20 기능\n3. **`/news` 헤더 네비게이션 추가** — `header.tsx` NAV_KEYS에 `'news'` 추가. Dev2가 만든 `/news` 독립 페이지가 데스크탑/모바일 메뉴에 자동 연결됨.\n4. **SEO E2E Playwright 테스트** — `tests/e2e/seo.spec.ts` 신규 작성:\n- 6개 페이지 OG/Twitter 메타태그 검증\n- `/company/[id]` JSON-LD BreadcrumbList 구조 검증\n- `robots.txt` + `sitemap.xml` 응답 검증\n→ QA 10차 P3 이슈 `E2E-SEO-COVERAGE` 해결\n[2026-04-04 19:04:42] Dev1 완료\n[2026-04-04 19:30:00] Dev1 실행"
+      "recentLog": "| `app/api/stats/route.ts` | 신규 — 기업수/VCR보고서수/뉴스수 DB 집계 API (`s-maxage=300`) |\n| `lib/atoms/lang-atom.ts` | `home.stats` 키 추가 (한/영/일: companies/countries/vcr/news) |\n| `app/_components/home-content.tsx` | Stats 섹션 추가 — 히어로와 피처 카드 사이 4개 통계 카드 |\n**동작 방식:**\n- 홈 페이지 로드 시 `/api/stats`를 클라이언트에서 fetch\n- DB에서 `corps.count()`, `vcrReports.count()`, `news.count()` 병렬 조회\n- 데이터 도착 후 stats 섹션 표시 (에러 시 graceful skip — 섹션 미표시)\n- `tsc --noEmit` 오류 0건\n[2026-04-04 19:37:23] Dev1 완료"
     },
     {
       "name": "ReviewBot",
