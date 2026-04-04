@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 01:43:14",
+  "updatedAt": "2026-04-05 01:45:01",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-05 01:34:27"
+          "lastRun": "2026-04-05 01:44:27"
         }
       ],
-      "recentLog": "- **ELDO**: BETA-26 완료 (일본어 레이블/TOC/타입 수정). E2E 19/19 통과. 정상 운영.\n- **ReviewBot**: BUG-004 완료 (파트너스 링크 없는 리뷰 작성 방지). pending-links 6건 대기 중.\n- **DevGate**: Phase 19-A 완료 (개발자 검색 API+RBAC). E2E 49/49 통과. 이후 테스트+버그수정만.\n- **IRI-Safety**: BUG-001/002 완료. QA 2차 42/42 PASS. 정상 운영.\n- **XBot**: 보류 중 (봇 감지 차단 미해소)\n**대기**: ReviewBot pending-links 6건 — Sanghun 쿠팡 링크 회신 필요.\n신규 텔레그램 없음. 텔레그램 보고 완료.\n[2026-04-05 01:34:27] Eddy 실행 완료"
+      "recentLog": "- **ReviewBot**: BUG-004 완료 (파트너스 링크 없는 리뷰 작성 방지). pending-links 6건 대기 중.\n- **DevGate**: Phase 19-A 완료 (개발자 검색 API+RBAC). E2E 49/49 통과. 이후 테스트+버그수정만.\n- **IRI-Safety**: BUG-001/002 완료. QA 2차 42/42 PASS. 정상 운영.\n- **XBot**: 보류 중 (봇 감지 차단 미해소)\n**대기**: ReviewBot pending-links 6건 — Sanghun 쿠팡 링크 회신 필요.\n신규 텔레그램 없음. 텔레그램 보고 완료.\n[2026-04-05 01:34:27] Eddy 실행 완료\n[2026-04-05 01:44:27] Eddy 실행 시작"
     },
     {
       "name": "DevGate",
