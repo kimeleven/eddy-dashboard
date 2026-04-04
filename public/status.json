@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 01:06:51",
+  "updatedAt": "2026-04-05 01:19:32",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-05 01:01:49"
+          "lastRun": "2026-04-05 01:10:23"
         }
       ],
-      "recentLog": "**검수 결과:**\n- **ELDO**: Dev1 BETA-25 완료(E2E 19/19), Dev2 BETA-26 완료. SECTORS-JA-LABEL MEDIUM 버그 Dev1 수정 대기.\n- **ReviewBot**: BUG-003 수정 완료. pending-links 5건 파트너스 링크 Sanghun 대기. URGENT 자동포스팅 중단 태스크 미처리.\n- **DevGate**: Phase 19-A 완료, E2E 39/39 통과. 버그수정 전담 모드 정상.\n- **XBot**: 보류 유지 (봇 감지).\n- **IRI-Safety**: 감사로그+비밀번호해시 구현 완료. BUG-001/002 Open.\n**대기**: ReviewBot 파트너스 링크 5건 Sanghun 제공 필요.\n[2026-04-05 01:01:49] Eddy 실행 완료"
+      "recentLog": "**팀 현황**:\n- **ELDO**: BETA-26 완료 (SECTORS-JA-LABEL / TOC-JA-MISSING / SIDEBAR-ANY-TYPE 수정). E2E 17/19 통과. BETA-27 Planner 배정 예정.\n- **ReviewBot**: BUG-004 완료 (파트너스 링크 대기 중 리뷰 작성 방지). 자동 포스팅 중단 상태. URGENT 쿠팡 직접 검색 미완 (API 키 대기).\n- **DevGate**: Phase 19-A 완료, E2E 39/39, Dev1 버그수정 모드 정상.\n- **IRI-Safety**: bcrypt 비밀번호 인증 + AuditLog 구현 완료. BUG-002 포트 충돌(3002→3003) Open.\n- **XBot**: 보류.\n**대기 (Sanghun 액션 필요)**: ReviewBot 쿠팡 파트너스 API 키 (`COUPANG_ACCESS_KEY` / `COUPANG_SECRET_KEY`)\n[2026-04-05 01:10:23] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -38,13 +38,13 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":00 (19~07)",
-          "lastRun": "2026-04-05 00:50:25"
+          "lastRun": "2026-04-05 01:18:59"
         },
         {
           "name": "Dev2",
           "role": "기능 개발",
           "cron": ":30 (19~07)",
-          "lastRun": "2026-04-05 00:34:57"
+          "lastRun": "2026-04-05 01:17:07"
         },
         {
           "name": "Planner",
@@ -65,7 +65,7 @@
           "lastRun": "2026-04-04 00:11:50"
         }
       ],
-      "recentLog": "[2026-04-04 16:23:29] Dev1 완료\n[2026-04-04 23:14:59] Dev1 실행\n/Users/a1111/eddy-agent/devgate-team/dev1.sh: line 31: timeout: command not found\n[2026-04-04 23:14:59] Dev1 완료\n[2026-04-04 23:15:49] Dev1 실행\n[done] Phase 19-A 완료 (개발자 검색 API+페이지), 미들웨어 RBAC 추가, E2E 39/39 전체 통과 (2026-04-04)\n[2026-04-04 23:50:25] Dev1 스킵 — 이전 실행 중 (PID 2027)\n`sleep` wait command also completed (exit code 0). All background tasks resolved — session fully complete.\n[2026-04-04 23:50:26] Dev1 완료\n[2026-04-05 00:50:25] Dev1 실행"
+      "recentLog": "[2026-04-04 23:14:59] Dev1 완료\n[2026-04-04 23:15:49] Dev1 실행\n[done] Phase 19-A 완료 (개발자 검색 API+페이지), 미들웨어 RBAC 추가, E2E 39/39 전체 통과 (2026-04-04)\n[2026-04-04 23:50:25] Dev1 스킵 — 이전 실행 중 (PID 2027)\n`sleep` wait command also completed (exit code 0). All background tasks resolved — session fully complete.\n[2026-04-04 23:50:26] Dev1 완료\n[2026-04-05 00:50:25] Dev1 실행\n[done] E2E 테스트 49/49 전체 통과 확인 (2026-04-05) — 이전 3개 FAIL 분석 및 해결 확인\n이미 확인한 최신 E2E 테스트 완료 알림입니다. 결과: **49/49 전체 통과** (exit code 0). 이미 처리 완료됨.\n[2026-04-05 01:18:59] Dev1 완료"
     },
     {
       "name": "LiveOrder",
@@ -118,7 +118,7 @@
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "cron": "15,45 * * * *",
-          "lastRun": "2026-04-05 00:58:01"
+          "lastRun": "2026-04-05 01:19:32"
         },
         {
           "name": "Planner",
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "코드 수정/안정화",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 01:06:47"
+          "lastRun": "2026-04-05 01:06:56"
         },
         {
           "name": "Pipeline",
@@ -179,21 +179,24 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "- 수정: DOM 클론에서 `.se-component.se-oglink` 등 OG카드 요소를 제거 후 `innerText` 추출 (`src/utils/naver-blog.mjs`)\n- **데이터 동기화**: 이전 파이프라인 실행 결과 커밋 (products +5건, pending-links +5 링크요청, 숄더백 rank 스냅샷, rss.xml 갱신)\n**대기 중:**\n- `pending-links.json`: 파트너스 링크 5건 Sanghun 회신 대기 (봄 캠핑용품, 봄 원피스 추천/순위, 봄 신발, 봄 가방)\n- 링크 수신 후 파이프라인 자동으로 write → post 단계 진행\n[2026-04-05 00:30:37] Dev1 완료\n[2026-04-05 01:00:37] Dev1 실행\n[2026-04-05 01:06:47] Dev1 완료\n[done] BUG-004: 파트너스 링크 대기 중 리뷰 작성 방지 — writeNext()에 pending-links 체크 추가, applyPartnerLinks()에 기존 리뷰 삭제+리셋 추가. 링크 없는 봄 시즌 리뷰 4건 삭제, products.json 6개 항목 pending 리셋. 커밋 1e491c8."
+      "recentLog": "**영향**: 봄 시즌 리뷰 4건(봄 캠핑, 봄 원피스 추천/순위, 봄 신발)이 파트너스 링크 없이 작성됨 → 포스팅 시 수수료 불가\n**수정**:\n- `src/review-writer.mjs`: `writeNext()` 진입 시 `pending-links.json`에 해당 키워드의 'waiting' 요청이 있으면 스킵 (상태 변경 없음)\n- `src/telegram-approver.mjs`: `applyPartnerLinks()` 실행 후 기존 링크 없는 리뷰 파일 자동 삭제 + products.json 상태 'pending' 리셋하여 재작성 대기\n- `data/products.json`: 링크 대기 6개 항목 리셋 (done/failed → pending)\n- `data/reviews/`: 링크 없는 봄 시즌 리뷰 4건 삭제\n**현재 대기**: `pending-links.json` 6건 (봄 캠핑, 봄 원피스 추천/순위, 봄 신발, 봄 가방, 봄 아우터) — Sanghun 링크 회신 후 자동으로 write → image → post 진행\n[2026-04-05 01:06:56] Dev1 완료"
     }
   ],
   "recentActivity": [
-    "- **IRI-Safety**: 감사로그+비밀번호해시 구현 완료. BUG-001/002 Open.",
-    "[2026-04-05 01:01:49] Eddy 실행 완료",
-    "[done] Phase 19-A 완료 (개발자 검색 API+페이지), 미들웨어 RBAC 추가, E2E 39/39 전체 통과 (2026-04-04)",
+    "- **IRI-Safety**: bcrypt 비밀번호 인증 + AuditLog 구현 완료. BUG-002 포트 충돌(3002→3003) Open.",
+    "[2026-04-05 01:10:23] Eddy 실행 완료",
     "[2026-04-04 23:50:26] Dev1 완료",
+    "[done] E2E 테스트 49/49 전체 통과 확인 (2026-04-05) — 이전 3개 FAIL 분석 및 해결 확인",
+    "이미 확인한 최신 E2E 테스트 완료 알림입니다. 결과: **49/49 전체 통과** (exit code 0). 이미 처리 완료됨.",
+    "[2026-04-05 01:18:59] Dev1 완료",
     "[2026-04-04 23:36:06] Dev2 완료",
+    "[done] E2E 테스트 시나리오 2차 확장 (19스텝/49체크포인트) 49/49 전체 통과. STEP 16~19 신규 추가: 발주자 프로젝트 상세, 개발자 배정 프로젝트 상세, 관리자 수동결제 UI, CLIENT RBAC 차단. commit d48a753",
+    "백그라운드 태스크는 이전 버전(수정 전)을 실행한 결과입니다 - 48/49 (admin/projects 타이밍 이슈 1건). 이미 수정된 최신 버전은 49/49 전체 통과 확인되었습니다 (커밋 `d48a753`).",
+    "[2026-04-05 01:17:07] Dev2 완료",
     "- **lookup/page.tsx**: PAID + 7일 이내 조건부 청약철회 버튼 표시, 신청 완료 시 접수 메시지 표시",
     "[2026-04-03 23:13:38] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
-    "[2026-04-05 00:30:37] Dev1 완료",
-    "[2026-04-05 01:06:47] Dev1 완료",
-    "[done] BUG-004: 파트너스 링크 대기 중 리뷰 작성 방지 — writeNext()에 pending-links 체크 추가, applyPartnerLinks()에 기존 리뷰 삭제+리셋 추가. 링크 없는 봄 시즌 리뷰 4건 삭제, products.json 6개 항목 pending 리셋. 커밋 1e491c8."
+    "[2026-04-05 01:06:56] Dev1 완료"
   ]
 }
