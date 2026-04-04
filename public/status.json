@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 18:14:09",
+  "updatedAt": "2026-04-04 18:27:32",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -118,7 +118,7 @@
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "cron": "15,45 * * * *",
-          "lastRun": "2026-04-04 17:45:01"
+          "lastRun": "2026-04-04 18:27:32"
         },
         {
           "name": "Planner",
