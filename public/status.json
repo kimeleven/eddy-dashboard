@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 23:49:02",
+  "updatedAt": "2026-04-05 00:00:41",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 23:42:58"
+          "lastRun": "2026-04-05 00:00:00"
         }
       ],
-      "recentLog": "- ReviewBot `TASKS.md` 최상단에 🚨 URGENT 추가 — `product-researcher.mjs` 네이버 쇼핑 API → 쿠팡 직접 검색으로 전환 지시\n- `state.json` 갱신 (last_update_id: 360082453)\n- 커밋/푸시 완료\n- 텔레그램 보고 발송 완료\n**대기 중 (Sanghun 필요):**\n- 쿠팡 파트너스 API 키 (access/secret key) 발급 후 공유\n- XBot 최초 로그인 테스트 직접 실행\n[2026-04-04 23:34:46] Eddy 실행 완료\n[2026-04-04 23:42:58] Eddy 실행 시작"
+      "recentLog": "보고 완료.\n**16차 순회 요약:**\n- 신규 텔레그램 메시지: 없음\n- **ELDO**: Dev1 27차(검색바 버그+i18n 전수) / Dev2 26차 완료. QA 11차 BETA-20 코드리뷰 진행 중. URGENT 전부 해소.\n- **ReviewBot**: URGENT 쿠팡 직접검색 전환 태스크 배정 완료 (Dev1 다음 실행 시 처리). 쿠팡 파트너스 API 키 발급 필요.\n- **XBot**: 세팅 완료. 최초 테스트는 Sanghun 직접 필요.\n[2026-04-04 23:51:16] Eddy 실행 완료\n[2026-04-05 00:00:00] Eddy 실행 시작"
     },
     {
       "name": "DevGate",
@@ -38,7 +38,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":00 (19~07)",
-          "lastRun": "2026-04-04 23:15:49"
+          "lastRun": "2026-04-04 23:50:26"
         },
         {
           "name": "Dev2",
@@ -65,7 +65,7 @@
           "lastRun": "2026-04-04 00:11:50"
         }
       ],
-      "recentLog": "### 빌드 에러 수정 (기존 코드 버그)\n- **`/api/projects/[id]/route.ts`**: 존재하지 않는 `activeFeeProposal` relation → `feeProposals` relation으로 교체, `proposedAmount` → `amount` 필드명 수정\n[2026-04-04 00:06:11] Dev1 완료\n[2026-04-04 16:23:29] Dev1 완료\n[2026-04-04 16:23:29] Dev1 완료\n[2026-04-04 23:14:59] Dev1 실행\n/Users/a1111/eddy-agent/devgate-team/dev1.sh: line 31: timeout: command not found\n[2026-04-04 23:14:59] Dev1 완료\n[2026-04-04 23:15:49] Dev1 실행"
+      "recentLog": "[2026-04-04 16:23:29] Dev1 완료\n[2026-04-04 16:23:29] Dev1 완료\n[2026-04-04 23:14:59] Dev1 실행\n/Users/a1111/eddy-agent/devgate-team/dev1.sh: line 31: timeout: command not found\n[2026-04-04 23:14:59] Dev1 완료\n[2026-04-04 23:15:49] Dev1 실행\n[done] Phase 19-A 완료 (개발자 검색 API+페이지), 미들웨어 RBAC 추가, E2E 39/39 전체 통과 (2026-04-04)\n[2026-04-04 23:50:25] Dev1 스킵 — 이전 실행 중 (PID 2027)\n`sleep` wait command also completed (exit code 0). All background tasks resolved — session fully complete.\n[2026-04-04 23:50:26] Dev1 완료"
     },
     {
       "name": "LiveOrder",
@@ -112,19 +112,19 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-04 23:42:34"
+          "lastRun": "2026-04-05 00:00:17"
         },
         {
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "cron": "15,45 * * * *",
-          "lastRun": "2026-04-04 23:15:00"
+          "lastRun": "2026-04-04 23:49:02"
         },
         {
           "name": "Planner",
           "role": "기획/태스크 관리",
           "cron": "0 */2 * * *",
-          "lastRun": "2026-04-04 20:03:58"
+          "lastRun": "2026-04-05 00:00:00"
         },
         {
           "name": "QA",
@@ -136,10 +136,10 @@
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": "0 * * * *",
-          "lastRun": "2026-04-04 23:00:00"
+          "lastRun": "2026-04-05 00:00:41"
         }
       ],
-      "recentLog": "**처리 내용:**\n1. **검색바 corpName 타입 불일치 버그 수정** — API가 `corpName`을 반환하는데 `CorpResult` 타입이 `corpNameLocal`/`corpNameEn`을 기대해 회사명이 공백으로 표시되던 버그 수정. `corpNameListed || corpName` 우선순위로 정상 표시.\n2. **A11Y i18n 전수 완성** — 검색바, 헤더, 섹터 페이지, 기업 상세 페이지에 남아있던 하드코딩 한국어/영어 aria-label 및 UI 문자열 → 한/영/일 다국어 처리 완료.\n**커밋:** `6598328`, `cc70af0`, `0f446fe`, `bafee30`\n**tsc:** 오류 0건\n**상태:** QA 11차 결과 대기 중\n[2026-04-04 23:42:34] Dev1 완료"
+      "recentLog": "3. **grows-stackbar-chart**: `'비율'`/`'기업수'` 하드코딩 → `ratioAxisLabel`/`title` prop으로 수신\n4. **sectors/page**: `GRAPH_ITEMS`의 `titleKo` 활용하여 차트 타입 타이틀 한국어 표시\n5. **sectors/sidebar 전체**: `langAtom` + `gl()` 헬퍼 적용 — 그래프 유형, 거래소, 섹터, 변화분포 셀렉트 모두 한국어 지원\n6. **lang-atom**: `sectors` 딕셔너리에 `ratioAxisLabel`·`corpCountTitle`·`allSectors` 누락 키 한/영/일 추가 (tsc 오류 해소)\n**tsc 0건** ✅\n[2026-04-05 00:00:17] Dev1 완료"
     },
     {
       "name": "ReviewBot",
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "코드 수정/안정화",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-04 08:37:19"
+          "lastRun": "2026-04-04 23:54:01"
         },
         {
           "name": "Pipeline",
@@ -179,21 +179,21 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "```bash\nnode scripts/series-planner.mjs --keyword \"봄 바람막이\" --count 5\nnode scripts/series-planner.mjs --list   # 시리즈 현황 조회\n```\n[2026-04-04 08:03:41] Dev1 완료\n[2026-04-04 08:30:02] Dev1 실행\n[done] Phase 23-A: 시리즈 planner-pipeline 완전 통합 — product-researcher seriesType 전파, review-writer overview 라우팅, blog-publisher series.json 상태 업데이트\n모든 작업이 완료되었습니다.\n[2026-04-04 08:37:19] Dev1 완료"
+      "recentLog": "- `blog-publisher.mjs`: 12시간 간격 → 하루 2포스팅(`todayCount < 2`)\n- `pipeline.mjs`: 포스팅 한도 로그 \"2개\"로 업데이트\n- `naver-blog.mjs`: OG카드 raw URL 삭제 → DOM 조작 → 키보드 조작 방식으로 전환 (E2E 검증됨)\n- `image-generator.mjs`: `imageUrl` 없으면 네이버 쇼핑 API로 상품 이미지 자동 검색\n- 신규 리뷰 데이터 커밋: 봄 원피스 추천/순위, 봄 신발 추천 (이미지 생성 완료)\n**현재 대기 사항**:\n- `pending-links.json` — 파트너스 링크 요청 3건 대기 중 (Sanghun이 링크 생성 후 회신 필요)\n- 링크 수신 후 pipeline이 자동으로 `link-poll → write → post` 단계 진행\n[2026-04-04 23:54:01] Dev1 완료"
     }
   ],
   "recentActivity": [
-    "[2026-04-04 23:34:46] Eddy 실행 완료",
-    "[2026-04-04 16:23:29] Dev1 완료",
-    "[2026-04-04 23:14:59] Dev1 완료",
+    "- **ELDO**: Dev1 27차(검색바 버그+i18n 전수) / Dev2 26차 완료. QA 11차 BETA-20 코드리뷰 진행 중. URGENT 전부 해소.",
+    "- **ReviewBot**: URGENT 쿠팡 직접검색 전환 태스크 배정 완료 (Dev1 다음 실행 시 처리). 쿠팡 파트너스 API 키 발급 필요.",
+    "- **XBot**: 세팅 완료. 최초 테스트는 Sanghun 직접 필요.",
+    "[2026-04-04 23:51:16] Eddy 실행 완료",
+    "[done] Phase 19-A 완료 (개발자 검색 API+페이지), 미들웨어 RBAC 추가, E2E 39/39 전체 통과 (2026-04-04)",
+    "[2026-04-04 23:50:26] Dev1 완료",
     "[2026-04-04 23:36:06] Dev2 완료",
     "- **lookup/page.tsx**: PAID + 7일 이내 조건부 청약철회 버튼 표시, 신청 완료 시 접수 메시지 표시",
     "[2026-04-03 23:13:38] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
-    "[2026-04-04 08:03:41] Dev1 완료",
-    "[done] Phase 23-A: 시리즈 planner-pipeline 완전 통합 — product-researcher seriesType 전파, review-writer overview 라우팅, blog-publisher series.json 상태 업데이트",
-    "모든 작업이 완료되었습니다.",
-    "[2026-04-04 08:37:19] Dev1 완료"
+    "[2026-04-04 23:54:01] Dev1 완료"
   ]
 }
