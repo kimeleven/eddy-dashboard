@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 20:03:58",
+  "updatedAt": "2026-04-04 20:05:49",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 20:00:00"
+          "lastRun": "2026-04-04 20:05:49"
         }
       ],
-      "recentLog": "**ReviewBot 현황:**\n- 파이프라인 실행 중 확인 — \"봄 캠핑 용품 vs\" 리뷰 이미지/JSON 생성됨\n- `pending-links.json` 생성 — 쿠팡 파트너스 링크 대기 상태 (Sanghun 직접 제공 필요)\n**⏳ Sanghun 액션 대기:**\n- ELDO Vercel 토큰 / GA4 ID\n- ReviewBot 파트너스 링크 (봄 캠핑 용품 vs)\n- ReviewBot `--headed` E2E 테스트\n[2026-04-04 19:33:02] Eddy 실행 완료\n[2026-04-04 20:00:00] Eddy 실행 시작"
+      "recentLog": "```\nX_USERNAME=...\nX_PASSWORD=...\nX_EMAIL=...\nANTHROPIC_API_KEY=...\n```\n2. `cd ~/eddy-agent/xbot && npm install && npm run install-browsers`\n3. 첫 실행 테스트: `node pipeline.mjs --once`\n4. 크론 등록: `0 * * * * cd ~/eddy-agent/xbot && node pipeline.mjs`\n[2026-04-04 20:05:49] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -183,7 +183,7 @@
     }
   ],
   "recentActivity": [
-    "[2026-04-04 19:33:02] Eddy 실행 완료",
+    "[2026-04-04 20:05:49] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
