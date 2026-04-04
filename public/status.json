@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 17:45:00",
+  "updatedAt": "2026-04-04 18:00:16",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 17:32:23"
+          "lastRun": "2026-04-04 18:00:00"
         }
       ],
-      "recentLog": "---\n**6차 순회 요약:**\n- 새 텔레그램 지시: 없음\n- **ELDO**: BETA-16(Dev1)/BETA-17(Dev2) 완료 확인. Planner→BETA-18 계획 수립 지시(Lighthouse 성능 80+ 개선 우선), QA→8차 리뷰(BETA-16/17) 지시\n- **ReviewBot**: OG링크 URGENT 진행 중. 파이프라인이 \"환절기 건강식품\" 리뷰 2건 자동 생성 중 — 파이프라인 정상 작동 신호\n- **대기**: ReviewBot OG링크 발행 버그 해결 미완, Lighthouse 재측정(Sanghun 직접 필요)\n[2026-04-04 17:32:23] Eddy 실행 완료"
+      "recentLog": "---\n**6차 순회 요약:**\n- 새 텔레그램 지시: 없음\n- **ELDO**: BETA-16(Dev1)/BETA-17(Dev2) 완료 확인. Planner→BETA-18 계획 수립 지시(Lighthouse 성능 80+ 개선 우선), QA→8차 리뷰(BETA-16/17) 지시\n- **ReviewBot**: OG링크 URGENT 진행 중. 파이프라인이 \"환절기 건강식품\" 리뷰 2건 자동 생성 중 — 파이프라인 정상 작동 신호\n- **대기**: ReviewBot OG링크 발행 버그 해결 미완, Lighthouse 재측정(Sanghun 직접 필요)\n[2026-04-04 17:32:23] Eddy 실행 완료\n[2026-04-04 18:00:00] Eddy 실행 시작"
     },
     {
       "name": "DevGate",
@@ -112,19 +112,19 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-04 17:39:59"
+          "lastRun": "2026-04-04 18:00:00"
         },
         {
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "cron": "15,45 * * * *",
-          "lastRun": "2026-04-04 17:20:57"
+          "lastRun": "2026-04-04 17:45:01"
         },
         {
           "name": "Planner",
           "role": "기획/태스크 관리",
           "cron": "0 */2 * * *",
-          "lastRun": "2026-04-04 16:04:54"
+          "lastRun": "2026-04-04 18:00:00"
         },
         {
           "name": "QA",
@@ -136,10 +136,10 @@
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": "0 * * * *",
-          "lastRun": "2026-04-04 17:00:14"
+          "lastRun": "2026-04-04 18:00:16"
         }
       ],
-      "recentLog": "| 파일 | 변경 내용 |\n|------|---------|\n| `lib/atoms/lang-atom.ts` | `sectors` 섹션 10개 키 추가 (한/영/일) + `peer.noSector` |\n| `app/sectors/_components/stock-heatmap.tsx` | `dictAtom` 연동 — 하드코딩 한국어 8개 교체 (로딩/빈상태/제목/범례/섹터헤더/캡션) |\n| `app/sectors/page.tsx` | `'섹터 분석'` fallback + `'분석 데이터를 불러올 수 없습니다.'` → dict 키 교체 |\n| `app/company/[id]/_components/vcr-section.tsx` | `ko-KR` 하드코딩 → `langAtom` 기반 동적 locale (ko-KR/ja-JP/en-US) |\n| `app/peer/_components/peer-client.tsx` | `'섹터 없음'` → `dict.peer.noSector` |\n**결과:** tsc 오류 0건 (내 변경 파일 기준), 한/영/일 언어 전환 시 섹터 분석 페이지 전체 UI 완전 대응.\n[2026-04-04 17:39:59] Dev1 완료"
+      "recentLog": "|------|---------|\n| `lib/atoms/lang-atom.ts` | `sectors` 섹션 10개 키 추가 (한/영/일) + `peer.noSector` |\n| `app/sectors/_components/stock-heatmap.tsx` | `dictAtom` 연동 — 하드코딩 한국어 8개 교체 (로딩/빈상태/제목/범례/섹터헤더/캡션) |\n| `app/sectors/page.tsx` | `'섹터 분석'` fallback + `'분석 데이터를 불러올 수 없습니다.'` → dict 키 교체 |\n| `app/company/[id]/_components/vcr-section.tsx` | `ko-KR` 하드코딩 → `langAtom` 기반 동적 locale (ko-KR/ja-JP/en-US) |\n| `app/peer/_components/peer-client.tsx` | `'섹터 없음'` → `dict.peer.noSector` |\n**결과:** tsc 오류 0건 (내 변경 파일 기준), 한/영/일 언어 전환 시 섹터 분석 페이지 전체 UI 완전 대응.\n[2026-04-04 17:39:59] Dev1 완료\n[2026-04-04 18:00:00] Dev1 실행"
     },
     {
       "name": "ReviewBot",
