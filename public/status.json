@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 02:33:16",
+  "updatedAt": "2026-04-05 02:40:23",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -56,7 +56,7 @@
           "name": "QA",
           "role": "코드 검증",
           "cron": "3h간격",
-          "lastRun": "2026-04-03 22:53:46"
+          "lastRun": "2026-04-05 02:34:58"
         },
         {
           "name": "PM",
@@ -112,13 +112,13 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 02:30:18"
+          "lastRun": "2026-04-05 02:40:23"
         },
         {
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "cron": "15,45 * * * *",
-          "lastRun": "2026-04-05 02:22:28"
+          "lastRun": "2026-04-05 02:40:19"
         },
         {
           "name": "Planner",
@@ -139,7 +139,7 @@
           "lastRun": "2026-04-05 02:00:14"
         }
       ],
-      "recentLog": "- `emsec/sector-tree` → 3600초\n- `emtec` → 86400초\n- `stats` → 3600초\n**작업 5 — preconnect**: GoogleTagManager preconnect 이미 존재, Geist 폰트는 next/font로 자체 호스팅 → 추가 불필요\n결과: `tsc --noEmit` 오류 0건, E2E 19/19 통과, `git push` 완료 (`07b521f`, `bba22a5`)\n[2026-04-05 02:05:21] Dev1 완료\n[2026-04-05 02:30:01] Dev1 실행\n[2026-04-05 02:30:18] Dev1 스킵 — 이전 실행 중 (PID 31969)"
+      "recentLog": "- `columns.tsx`: `createColumns(col: ColumnHeaders)` 함수로 리팩터 — 하드코딩 영문 헤더 제거\n- `data-table-client.tsx`: `createColumns(dict.table.columns)` 호출로 언어 전환 시 컬럼 헤더 자동 변경\n2. **page-header.tsx emsec 레이블 버그 수정**\n- 기존: `useEmsecTree()` → `json.data` 오참조 (API는 배열 직접 반환) → 섹터 필터 레이블 항상 공백\n- 수정: `useSWR('/api/emsec/tree', fetcher)` 직접 호출 + `findEmsecNode()` 재귀 탐색으로 정확한 섹터 이름 표시\n**커밋:** `6f508db` (i18n), `82853cd` (docs)\n**tsc 오류:** 0건\n[2026-04-05 02:40:23] Dev1 완료"
     },
     {
       "name": "ReviewBot",
