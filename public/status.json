@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 22:30:00",
+  "updatedAt": "2026-04-04 22:45:01",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 22:30:00"
+          "lastRun": "2026-04-04 22:40:46"
         }
       ],
-      "recentLog": "[2026-04-04 22:10:45] Eddy 실행 완료\n[2026-04-04 22:10:45] Eddy 실행 완료\n별도 `sk-ant-api` 키 없음 확인. 현재 XBot `.env`에 OAuth 토큰으로 설정된 상태 유지. 실제 댓글/인용 생성 기능은 Sanghun이 별도 API 키 발급 시 교체 필요.\n[2026-04-04 22:13:00] Eddy 실행 완료\n[2026-04-04 22:20:46] Eddy 실행 시작\n/Users/a1111/eddy-agent/eddy/run.sh: line 43: timeout: command not found\n[2026-04-04 22:20:46] Eddy 실행 완료\n[2026-04-04 22:30:00] Eddy 실행 시작\n/Users/a1111/eddy-agent/eddy/run.sh: line 43: timeout: command not found\n[2026-04-04 22:30:00] Eddy 실행 완료"
+      "recentLog": "[2026-04-04 22:20:46] Eddy 실행 완료\n[2026-04-04 22:30:00] Eddy 실행 시작\n/Users/a1111/eddy-agent/eddy/run.sh: line 43: timeout: command not found\n[2026-04-04 22:30:00] Eddy 실행 완료\n[2026-04-04 22:30:46] Eddy 실행 시작\n/Users/a1111/eddy-agent/eddy/run.sh: line 43: timeout: command not found\n[2026-04-04 22:30:46] Eddy 실행 완료\n[2026-04-04 22:40:46] Eddy 실행 시작\n/Users/a1111/eddy-agent/eddy/run.sh: line 43: timeout: command not found\n[2026-04-04 22:40:46] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -118,7 +118,7 @@
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "cron": "15,45 * * * *",
-          "lastRun": "2026-04-04 22:22:59"
+          "lastRun": "2026-04-04 22:45:01"
         },
         {
           "name": "Planner",
@@ -183,8 +183,8 @@
     }
   ],
   "recentActivity": [
-    "[2026-04-04 22:20:46] Eddy 실행 완료",
-    "[2026-04-04 22:30:00] Eddy 실행 완료",
+    "[2026-04-04 22:30:46] Eddy 실행 완료",
+    "[2026-04-04 22:40:46] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
