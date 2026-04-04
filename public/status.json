@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 01:45:01",
+  "updatedAt": "2026-04-05 01:48:34",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-05 01:44:27"
+          "lastRun": "2026-04-05 01:46:29"
         }
       ],
-      "recentLog": "- **ReviewBot**: BUG-004 완료 (파트너스 링크 없는 리뷰 작성 방지). pending-links 6건 대기 중.\n- **DevGate**: Phase 19-A 완료 (개발자 검색 API+RBAC). E2E 49/49 통과. 이후 테스트+버그수정만.\n- **IRI-Safety**: BUG-001/002 완료. QA 2차 42/42 PASS. 정상 운영.\n- **XBot**: 보류 중 (봇 감지 차단 미해소)\n**대기**: ReviewBot pending-links 6건 — Sanghun 쿠팡 링크 회신 필요.\n신규 텔레그램 없음. 텔레그램 보고 완료.\n[2026-04-05 01:34:27] Eddy 실행 완료\n[2026-04-05 01:44:27] Eddy 실행 시작"
+      "recentLog": "|---|---|\n| ELDO | BETA-26 완료 (E2E 19/19). TASKS.md 재생성, BETA-27 QA 이슈 Dev1 배정 |\n| ReviewBot | BUG-004 완료. 자동 포스팅 중단 중 (링크 6건 대기) |\n| DevGate | E2E 49/49 전체 통과, 정상 |\n| XBot | 보류 (봇 감지 차단) |\n| IRI-Safety | QA 42/42 PASS, 감사 로그 UI 완성 |\n**처리:** ELDO TASKS.md 재생성 (eldo-team에 파일 없어서 신규 작성)\n**대기:** ReviewBot pending-links 6건 — Sanghun 쿠팡 파트너스 링크 회신 필요\n[2026-04-05 01:46:29] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -118,13 +118,13 @@
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "cron": "15,45 * * * *",
-          "lastRun": "2026-04-05 01:35:41"
+          "lastRun": "2026-04-05 01:48:33"
         },
         {
           "name": "Planner",
           "role": "기획/태스크 관리",
           "cron": "0 */2 * * *",
-          "lastRun": "2026-04-05 01:43:13"
+          "lastRun": "2026-04-05 01:47:12"
         },
         {
           "name": "QA",
@@ -183,8 +183,7 @@
     }
   ],
   "recentActivity": [
-    "신규 텔레그램 없음. 텔레그램 보고 완료.",
-    "[2026-04-05 01:34:27] Eddy 실행 완료",
+    "[2026-04-05 01:46:29] Eddy 실행 완료",
     "[2026-04-04 23:50:26] Dev1 완료",
     "[done] E2E 테스트 49/49 전체 통과 확인 (2026-04-05) — 이전 3개 FAIL 분석 및 해결 확인",
     "이미 확인한 최신 E2E 테스트 완료 알림입니다. 결과: **49/49 전체 통과** (exit code 0). 이미 처리 완료됨.",
