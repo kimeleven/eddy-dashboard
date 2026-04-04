@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 01:35:34",
+  "updatedAt": "2026-04-05 01:43:14",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -118,13 +118,13 @@
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "cron": "15,45 * * * *",
-          "lastRun": "2026-04-05 01:28:01"
+          "lastRun": "2026-04-05 01:35:41"
         },
         {
           "name": "Planner",
           "role": "기획/태스크 관리",
           "cron": "0 */2 * * *",
-          "lastRun": "2026-04-05 00:04:50"
+          "lastRun": "2026-04-05 01:43:13"
         },
         {
           "name": "QA",
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "코드 수정/안정화",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 01:06:56"
+          "lastRun": "2026-04-05 01:42:20"
         },
         {
           "name": "Pipeline",
@@ -179,7 +179,7 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "**영향**: 봄 시즌 리뷰 4건(봄 캠핑, 봄 원피스 추천/순위, 봄 신발)이 파트너스 링크 없이 작성됨 → 포스팅 시 수수료 불가\n**수정**:\n- `src/review-writer.mjs`: `writeNext()` 진입 시 `pending-links.json`에 해당 키워드의 'waiting' 요청이 있으면 스킵 (상태 변경 없음)\n- `src/telegram-approver.mjs`: `applyPartnerLinks()` 실행 후 기존 링크 없는 리뷰 파일 자동 삭제 + products.json 상태 'pending' 리셋하여 재작성 대기\n- `data/products.json`: 링크 대기 6개 항목 리셋 (done/failed → pending)\n- `data/reviews/`: 링크 없는 봄 시즌 리뷰 4건 삭제\n**현재 대기**: `pending-links.json` 6건 (봄 캠핑, 봄 원피스 추천/순위, 봄 신발, 봄 가방, 봄 아우터) — Sanghun 링크 회신 후 자동으로 write → image → post 진행\n[2026-04-05 01:06:56] Dev1 완료"
+      "recentLog": "- `data/products.json` — `봄 의류 추천` 항목 수정:\n- `status: \"failed\"` → `\"pending\"` 리셋\n- products 5개의 auto-generated `coupangUrl`/`coupangProductId` 초기화 (수수료 추적 불가한 링크 제거)\n**이유**: 이 항목은 2026-04-04에 파트너스 링크 없이 리뷰 작성 시도했다가 실패(BUG-004 수정 당시 누락). auto-generated coupangUrl이 남아있어서 `stepLinkRequest()`가 \"이미 링크 있음\"으로 판단해 링크 요청을 안 보내는 문제가 있었음. 이제 다음 pipeline 실행 시 Sanghun에게 파트너스 링크 요청 자동 전송됨.\n**현재 pipeline 상태:**\n- `pending` 대기: 7개 (봄 의류 추천 + 봄 가방 + 봄 아우터 + 봄 캠핑/원피스/신발은 이미 링크 요청 전송됨)\n- `pending-links` waiting: 6개 — Sanghun 링크 회신 대기 중\n[2026-04-05 01:42:20] Dev1 완료"
     }
   ],
   "recentActivity": [
@@ -197,6 +197,6 @@
     "[2026-04-03 23:13:38] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
-    "[2026-04-05 01:06:56] Dev1 완료"
+    "[2026-04-05 01:42:20] Dev1 완료"
   ]
 }
