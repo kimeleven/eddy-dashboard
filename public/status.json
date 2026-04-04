@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 12:23:14",
+  "updatedAt": "2026-04-04 12:30:52",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 12:23:14"
+          "lastRun": "2026-04-04 12:30:52"
         }
       ],
-      "recentLog": "**ELDO** — Dev1 활성 작업 중 (DB 전환, UI 재구성, Playwright URGENT 처리 중). 크론 24시간 변경은 Sanghun 직접 필요.\n**ReviewBot** — URGENT 3건 (승인 과정 제거, 링크 이상 수정, 1시간 자동 포스팅) Dev1 처리 대기 중.\n**Sanghun 직접 액션 필요:**\n1. `crontab -e` — ELDO 24시간 30분 주기 변경\n2. ReviewBot `pipeline.mjs` 크론 활성화 (`0 * * * *`)\n[2026-04-04 12:00:58] Eddy 실행 완료\n정상. Python 태스크도 returncode 0 (성공)이고 현재 crontab도 올바른 상태 유지 중. 모든 백그라운드 태스크 완료, 크론탭 최종 상태 이상 없음.\n[2026-04-04 12:23:14] Eddy 실행 완료"
+      "recentLog": "- **ELDO**: URGENT 3건 진행 중 (정적데이터 DB 전환, UI 재구성/다크모드, Playwright E2E 세팅) — 30분 주기 크론 정상 가동\n- **ReviewBot**: URGENT 3건 진행 중 (승인 제거, 링크+사진 수정, 1시간 자동 포스팅) — 1시간 주기 크론 정상 가동\n🔍 **감지:** 새 텔레그램 지시 없음\n⏳ **Sanghun 직접 필요:**\n- ELDO Lighthouse 실측 (Chrome DevTools → 각 페이지)\n- ELDO Vercel 토큰 발급\n- ELDO GA 속성 ID\n[2026-04-04 12:30:52] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":20 (19~07)",
-          "lastRun": "2026-04-04 07:20:00"
+          "lastRun": "2026-04-04 12:30:01"
         },
         {
           "name": "Planner",
@@ -124,7 +124,7 @@
           "name": "QA",
           "role": "코드 검증",
           "cron": "3h간격",
-          "lastRun": "2026-04-04 07:56:57"
+          "lastRun": "2026-04-04 12:30:01"
         },
         {
           "name": "PM",
@@ -133,7 +133,7 @@
           "lastRun": "2026-04-04 07:25:12"
         }
       ],
-      "recentLog": "- `providers.tsx`: Jotai `Provider` + `createStore()` 추가. 서버에서 전달받은 `initialLang`을 `langAtom` 초기값으로 설정\n- `layout.tsx`: 쿠키(`lang`)로 읽은 값을 `Lang` 타입으로 캐스팅 후 `Providers`에 `initialLang` prop으로 전달. `Header`/`Footer`도 `Providers` 내부로 이동하여 단일 Jotai store 공유\n**결과:**\n- 서버 쿠키 `lang` → Jotai store 초기값 → 클라이언트 하이드레이션 시 동일한 값으로 시작 → flash 없음\n- TypeScript 타입 체크 오류 0\n- 커밋: `7f95822`\n[2026-04-04 06:25:08] Dev1 완료\n[2026-04-04 07:20:00] Dev1 실행\n[done] BETA-05 완료 — 다국어 일본어(ja) 추가: dictJa 사전(9섹션 전체), Lang 타입 확장, 언어 선택기 UI, htmlLang 분기. 커밋 941894a. TypeScript 에러 0."
+      "recentLog": "- `layout.tsx`: 쿠키(`lang`)로 읽은 값을 `Lang` 타입으로 캐스팅 후 `Providers`에 `initialLang` prop으로 전달. `Header`/`Footer`도 `Providers` 내부로 이동하여 단일 Jotai store 공유\n**결과:**\n- 서버 쿠키 `lang` → Jotai store 초기값 → 클라이언트 하이드레이션 시 동일한 값으로 시작 → flash 없음\n- TypeScript 타입 체크 오류 0\n- 커밋: `7f95822`\n[2026-04-04 06:25:08] Dev1 완료\n[2026-04-04 07:20:00] Dev1 실행\n[done] BETA-05 완료 — 다국어 일본어(ja) 추가: dictJa 사전(9섹션 전체), Lang 타입 확장, 언어 선택기 UI, htmlLang 분기. 커밋 941894a. TypeScript 에러 0.\n[2026-04-04 12:30:01] Dev1 실행"
     },
     {
       "name": "ReviewBot",
@@ -171,9 +171,7 @@
     }
   ],
   "recentActivity": [
-    "[2026-04-04 12:00:58] Eddy 실행 완료",
-    "정상. Python 태스크도 returncode 0 (성공)이고 현재 crontab도 올바른 상태 유지 중. 모든 백그라운드 태스크 완료, 크론탭 최종 상태 이상 없음.",
-    "[2026-04-04 12:23:14] Eddy 실행 완료",
+    "[2026-04-04 12:30:52] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
     "[2026-04-03 23:32:15] Dev2 완료",
