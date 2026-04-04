@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 01:48:34",
+  "updatedAt": "2026-04-05 02:00:14",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-05 01:46:29"
+          "lastRun": "2026-04-05 02:00:00"
         }
       ],
-      "recentLog": "|---|---|\n| ELDO | BETA-26 완료 (E2E 19/19). TASKS.md 재생성, BETA-27 QA 이슈 Dev1 배정 |\n| ReviewBot | BUG-004 완료. 자동 포스팅 중단 중 (링크 6건 대기) |\n| DevGate | E2E 49/49 전체 통과, 정상 |\n| XBot | 보류 (봇 감지 차단) |\n| IRI-Safety | QA 42/42 PASS, 감사 로그 UI 완성 |\n**처리:** ELDO TASKS.md 재생성 (eldo-team에 파일 없어서 신규 작성)\n**대기:** ReviewBot pending-links 6건 — Sanghun 쿠팡 파트너스 링크 회신 필요\n[2026-04-05 01:46:29] Eddy 실행 완료"
+      "recentLog": "- **DevGate**: E2E 49/49 ✅ Phase 19-A 완료, 버그수정 모드\n- **XBot**: 보류 (봇 감지 차단)\n- **IRI-Safety**: QA 2차 42/42 ✅ BUG 전부 해결, 감사 로그 UI 추가됨\n**Sanghun 액션 필요:**\n- ReviewBot 쿠팡 파트너스 API 키\n- ELDO Vercel 토큰 + GA4 ID\n- XBot 직접 로그인 테스트\n[2026-04-05 01:57:41] Eddy 실행 완료\n[2026-04-05 02:00:00] Eddy 실행 시작"
     },
     {
       "name": "DevGate",
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 01:35:34"
+          "lastRun": "2026-04-05 02:00:00"
         },
         {
           "name": "Dev2",
@@ -124,7 +124,7 @@
           "name": "Planner",
           "role": "기획/태스크 관리",
           "cron": "0 */2 * * *",
-          "lastRun": "2026-04-05 01:47:12"
+          "lastRun": "2026-04-05 02:00:00"
         },
         {
           "name": "QA",
@@ -136,10 +136,10 @@
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": "0 * * * *",
-          "lastRun": "2026-04-05 01:00:16"
+          "lastRun": "2026-04-05 02:00:14"
         }
       ],
-      "recentLog": "- `tsc --noEmit`: 오류 0건 ✅\n- E2E 전체 19/19 통과 ✅ (이전 17/19 실패는 서버 상태 일시적 문제였음)\n- `/api/vcr-reports` — 데이터 정상 반환 (20건)\n- `/api/stock-heatmap` 비금융지주 — non-zero avgReturn 정상\n**현재 상태:**\n- BETA-26까지 모든 스프린트 완료\n- QA 잔존 이슈 전부 해소\n- 다음 배정(BETA-27) Planner/Eddy 대기 중\n[2026-04-05 01:35:34] Dev1 완료"
+      "recentLog": "- E2E 전체 19/19 통과 ✅ (이전 17/19 실패는 서버 상태 일시적 문제였음)\n- `/api/vcr-reports` — 데이터 정상 반환 (20건)\n- `/api/stock-heatmap` 비금융지주 — non-zero avgReturn 정상\n**현재 상태:**\n- BETA-26까지 모든 스프린트 완료\n- QA 잔존 이슈 전부 해소\n- 다음 배정(BETA-27) Planner/Eddy 대기 중\n[2026-04-05 01:35:34] Dev1 완료\n[2026-04-05 02:00:00] Dev1 실행"
     },
     {
       "name": "ReviewBot",
@@ -183,7 +183,7 @@
     }
   ],
   "recentActivity": [
-    "[2026-04-05 01:46:29] Eddy 실행 완료",
+    "[2026-04-05 01:57:41] Eddy 실행 완료",
     "[2026-04-04 23:50:26] Dev1 완료",
     "[done] E2E 테스트 49/49 전체 통과 확인 (2026-04-05) — 이전 3개 FAIL 분석 및 해결 확인",
     "이미 확인한 최신 E2E 테스트 완료 알림입니다. 결과: **49/49 전체 통과** (exit code 0). 이미 처리 완료됨.",
