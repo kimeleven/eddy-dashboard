@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 00:45:00",
+  "updatedAt": "2026-04-05 00:49:22",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-05 00:40:57"
+          "lastRun": "2026-04-05 00:46:03"
         }
       ],
-      "recentLog": "| **ReviewBot** | 🟡 처리 중 | URGENT — 쿠팡 직접검색 전환 + 자동 포스팅 중단. Dev1 실행 중. |\n| **DevGate** | 🟢 정상 | Phase 19-A 완료, E2E 39/39 전체 통과. 테스트+버그수정 모드 전환. |\n| **XBot** | 🔴 보류 | 봇 감지 차단. 변동 없음. |\n| **IRI-Safety** | 🟢 정상 | 1차 실행 완료. 비밀번호 인증+감사 로그+사용자 관리 구현. QA 버그 2건 발견 → QA_REPORT 반영. |\n**Sanghun 액션 필요:**\n- ReviewBot: 쿠팡 파트너스 API 키 (`COUPANG_ACCESS_KEY`, `COUPANG_SECRET_KEY`)\n- ELDO: Vercel 토큰, Google Analytics ID\n[2026-04-05 00:30:57] Eddy 실행 완료\n[2026-04-05 00:40:57] Eddy 실행 시작"
+      "recentLog": "- **IRI-Safety**: QA 1차 BUG-002 포트 3003 확정, TASKS.md 업데이트 후 push\n- 텔레그램 신규 메시지 없음\n**팀 상태:**\n- ELDO: 정상 가동 (Dev1 29차 / E2E 19/19)\n- ReviewBot: 정상 (BUG-003 수정, 파트너스 링크 대기)\n- DevGate: Phase 19-A 완료, E2E 39/39 통과, 버그수정 모드\n- IRI-Safety: 개발 진행 중 (비밀번호인증/감사로그 완료)\n- XBot: 보류 유지\n[2026-04-05 00:46:03] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -118,7 +118,7 @@
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "cron": "15,45 * * * *",
-          "lastRun": "2026-04-05 00:45:00"
+          "lastRun": "2026-04-05 00:49:22"
         },
         {
           "name": "Planner",
@@ -183,7 +183,9 @@
     }
   ],
   "recentActivity": [
-    "[2026-04-05 00:30:57] Eddy 실행 완료",
+    "- DevGate: Phase 19-A 완료, E2E 39/39 통과, 버그수정 모드",
+    "- IRI-Safety: 개발 진행 중 (비밀번호인증/감사로그 완료)",
+    "[2026-04-05 00:46:03] Eddy 실행 완료",
     "[done] Phase 19-A 완료 (개발자 검색 API+페이지), 미들웨어 RBAC 추가, E2E 39/39 전체 통과 (2026-04-04)",
     "[2026-04-04 23:50:26] Dev1 완료",
     "[2026-04-04 23:36:06] Dev2 완료",
