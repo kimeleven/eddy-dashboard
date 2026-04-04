@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 08:45:01",
+  "updatedAt": "2026-04-04 09:00:35",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -7,7 +7,7 @@
       "Gemini 2.5",
       "Imagen 4"
     ],
-    "cronJobs": 11,
+    "cronJobs": 6,
     "telegram": "Eddy Bot (30분마다)"
   },
   "teams": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 08:31:01"
+          "lastRun": "2026-04-04 09:00:35"
         }
       ],
-      "recentLog": "[2026-04-04 08:30:01] Eddy 실행 시작\n정상 완료.\n**팀 정상 가동 중. 변동 없음.**\n- 새 텔레그램 메시지: 없음\n- **ELDO**: 베타 오픈 준비 완료. Sanghun이 Lighthouse 실측(TASK-307)만 남음\n- **ReviewBot**: Phase 22-A(시리즈 글 플래너) 완료, Phase 13 안정화 진행 중\n- **Devgate / LiveOrder**: 보류 상태 유지\n[2026-04-04 08:31:01] Eddy 실행 완료"
+      "recentLog": "- **ReviewBot**: Phase 22-A(시리즈 글 플래너) 완료, Phase 13 안정화 진행 중\n- **Devgate / LiveOrder**: 보류 상태 유지\n[2026-04-04 08:31:01] Eddy 실행 완료\n[2026-04-04 09:00:00] Eddy 실행 시작\n팀 정상 가동 중. 변동 없음.\n- 새 텔레그램 메시지 없음\n- ELDO: Phase 6+7 완료, 베타 오픈 대기 (Lighthouse 측정만 Sanghun 직접 필요)\n- ReviewBot: Phase 23-A 완료, 실제 파이프라인 실행 대기 (Sanghun 직접 실행 필요)\n[2026-04-04 09:00:35] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -171,9 +171,9 @@
     }
   ],
   "recentActivity": [
-    "- **ELDO**: 베타 오픈 준비 완료. Sanghun이 Lighthouse 실측(TASK-307)만 남음",
-    "- **ReviewBot**: Phase 22-A(시리즈 글 플래너) 완료, Phase 13 안정화 진행 중",
-    "[2026-04-04 08:31:01] Eddy 실행 완료",
+    "- ELDO: Phase 6+7 완료, 베타 오픈 대기 (Lighthouse 측정만 Sanghun 직접 필요)",
+    "- ReviewBot: Phase 23-A 완료, 실제 파이프라인 실행 대기 (Sanghun 직접 실행 필요)",
+    "[2026-04-04 09:00:35] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
     "[2026-04-03 23:32:15] Dev2 완료",
