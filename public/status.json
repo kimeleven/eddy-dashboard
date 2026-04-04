@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 23:42:34",
+  "updatedAt": "2026-04-04 23:49:02",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 23:34:46"
+          "lastRun": "2026-04-04 23:42:58"
         }
       ],
-      "recentLog": "- 텔레그램 신규 메시지 1건 수신: \"쿠팡에서 상품을 검색해서 줘야지... 네이버 상품을 쿠팡에서 검색해?\"\n- ReviewBot `TASKS.md` 최상단에 🚨 URGENT 추가 — `product-researcher.mjs` 네이버 쇼핑 API → 쿠팡 직접 검색으로 전환 지시\n- `state.json` 갱신 (last_update_id: 360082453)\n- 커밋/푸시 완료\n- 텔레그램 보고 발송 완료\n**대기 중 (Sanghun 필요):**\n- 쿠팡 파트너스 API 키 (access/secret key) 발급 후 공유\n- XBot 최초 로그인 테스트 직접 실행\n[2026-04-04 23:34:46] Eddy 실행 완료"
+      "recentLog": "- ReviewBot `TASKS.md` 최상단에 🚨 URGENT 추가 — `product-researcher.mjs` 네이버 쇼핑 API → 쿠팡 직접 검색으로 전환 지시\n- `state.json` 갱신 (last_update_id: 360082453)\n- 커밋/푸시 완료\n- 텔레그램 보고 발송 완료\n**대기 중 (Sanghun 필요):**\n- 쿠팡 파트너스 API 키 (access/secret key) 발급 후 공유\n- XBot 최초 로그인 테스트 직접 실행\n[2026-04-04 23:34:46] Eddy 실행 완료\n[2026-04-04 23:42:58] Eddy 실행 시작"
     },
     {
       "name": "DevGate",
