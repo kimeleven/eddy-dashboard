@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 14:20:44",
+  "updatedAt": "2026-04-04 14:32:39",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 14:03:46"
+          "lastRun": "2026-04-04 14:32:38"
         }
       ],
-      "recentLog": "---\n**순회 요약:**\n- **신규 텔레그램 지시**: 없음\n- **ELDO**: 정상 가동 중. 크론 24시간 30분 주기 확인됨. 모든 URGENT 완료. Dev1/Dev2 다음 작업 BETA-10.\n- **ReviewBot**: 14:00 파이프라인 실행 확인. \"트위드자켓 사용기\" 포스팅 Playwright로 진행 중. 완료 시 텔레그램 알림 수신 예정.\n- QA BUG-002 (blog-publisher 주석 불일치) → Dev1 배정 완료\n- ⚠️ AI 썸네일 Imagen spending cap 초과 (HTML 폴백으로 자동 처리 중)\n[2026-04-04 14:03:46] Eddy 실행 완료"
+      "recentLog": "- **ELDO**: BETA-11 완료 → **BETA-12 배정** (Dev1: 커스텀 에러 페이지 404/500 + Loading Skeleton 일관성 / Dev2: 다크모드 잔여 이슈 / Planner: 스프린트 계획)\n- **ReviewBot**: 1시간 크론 자동 포스팅 운영 중. BUG-002 Dev1 처리 대기.\n🔍 **텔레그램**: 새 지시 없음\n⏳ **Sanghun 액션 필요:**\n- Vercel 배포 토큰 발급\n- GA4 속성 ID 발급\n- Lighthouse 측정 (Chrome DevTools)\n[2026-04-04 14:32:38] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":20 (19~07)",
-          "lastRun": "2026-04-04 14:13:45"
+          "lastRun": "2026-04-04 14:30:01"
         },
         {
           "name": "Planner",
@@ -133,7 +133,7 @@
           "lastRun": "2026-04-04 14:00:14"
         }
       ],
-      "recentLog": "- **`lib/atoms/lang-atom.ts`**: `news` 다국어 문자열 (ko/en/ja) 추가\n- **`prisma/seed.ts`**: 20개 기업 × 3건 = 60건 더미 뉴스 데이터 추가\n### BETA-11 — Performance 개선 (`3dd24ca`)\n- **BETA-11-A/B**: `app/page.tsx` 서버 컴포넌트 전환 + `app/_components/home-content.tsx` 클라이언트 분리\n- **BETA-11-C/D**: `fin-info-section.tsx`에서 `FinMetricsCharts` → `next/dynamic({ ssr: false })` 적용\n- **BETA-11-E**: `app/layout.tsx` Geist/Geist_Mono 폰트 활성화 + `display: 'swap'`\n- **BETA-11-F**: `desc-section.tsx`, `stock-section.tsx` — 불필요한 `'use client'` 제거 (서버 컴포넌트 전환)\n- **분석 route TS 버그 수정**: `handleCorpDist` 내 잘못된 return type (`NextResponse → throw Error`)\n[2026-04-04 14:13:45] Dev1 완료"
+      "recentLog": "- **`prisma/seed.ts`**: 20개 기업 × 3건 = 60건 더미 뉴스 데이터 추가\n### BETA-11 — Performance 개선 (`3dd24ca`)\n- **BETA-11-A/B**: `app/page.tsx` 서버 컴포넌트 전환 + `app/_components/home-content.tsx` 클라이언트 분리\n- **BETA-11-C/D**: `fin-info-section.tsx`에서 `FinMetricsCharts` → `next/dynamic({ ssr: false })` 적용\n- **BETA-11-E**: `app/layout.tsx` Geist/Geist_Mono 폰트 활성화 + `display: 'swap'`\n- **BETA-11-F**: `desc-section.tsx`, `stock-section.tsx` — 불필요한 `'use client'` 제거 (서버 컴포넌트 전환)\n- **분석 route TS 버그 수정**: `handleCorpDist` 내 잘못된 return type (`NextResponse → throw Error`)\n[2026-04-04 14:13:45] Dev1 완료\n[2026-04-04 14:30:01] Dev1 실행"
     },
     {
       "name": "ReviewBot",
@@ -171,10 +171,7 @@
     }
   ],
   "recentActivity": [
-    "- **ELDO**: 정상 가동 중. 크론 24시간 30분 주기 확인됨. 모든 URGENT 완료. Dev1/Dev2 다음 작업 BETA-10.",
-    "- **ReviewBot**: 14:00 파이프라인 실행 확인. \"트위드자켓 사용기\" 포스팅 Playwright로 진행 중. 완료 시 텔레그램 알림 수신 예정.",
-    "- QA BUG-002 (blog-publisher 주석 불일치) → Dev1 배정 완료",
-    "[2026-04-04 14:03:46] Eddy 실행 완료",
+    "[2026-04-04 14:32:38] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
     "[2026-04-03 23:32:15] Dev2 완료",
