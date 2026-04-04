@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-05 03:00:00"
+          "lastRun": "2026-04-05 03:00:02"
         }
       ],
-      "recentLog": "- **XBot**: 보류 (변동 없음).\n- **IRI-Safety**: BUG-003 (passwordHash 미설정 → 비밀번호 무력화) 발견 — Dev1 배정 완료.\n⏳ **Sanghun 액션 필요**: ReviewBot pending-links 7건 쿠팡 링크 제공.\n[2026-04-05 02:42:26] Eddy 실행 완료\n[2026-04-05 02:52:26] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 02:52:27] Eddy 실행 완료\n[2026-04-05 03:00:00] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)"
+      "recentLog": "- **IRI-Safety**: BUG-003 (passwordHash 미설정 → 비밀번호 무력화) 발견 — Dev1 배정 완료.\n⏳ **Sanghun 액션 필요**: ReviewBot pending-links 7건 쿠팡 링크 제공.\n[2026-04-05 02:42:26] Eddy 실행 완료\n[2026-04-05 02:52:26] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 02:52:27] Eddy 실행 완료\n[2026-04-05 03:00:00] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:00:02] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -184,6 +184,7 @@
   ],
   "recentActivity": [
     "[2026-04-05 02:52:27] Eddy 실행 완료",
+    "[2026-04-05 03:00:02] Eddy 실행 완료",
     "[done] E2E 테스트 49/49 전체 통과 확인 (2026-04-05) — 이전 3개 FAIL 분석 및 해결 확인",
     "이미 확인한 최신 E2E 테스트 완료 알림입니다. 결과: **49/49 전체 통과** (exit code 0). 이미 처리 완료됨.",
     "[2026-04-05 01:18:59] Dev1 완료",
