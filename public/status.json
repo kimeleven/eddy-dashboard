@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 18:00:16",
+  "updatedAt": "2026-04-04 18:04:25",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 18:00:00"
+          "lastRun": "2026-04-04 18:04:25"
         }
       ],
-      "recentLog": "---\n**6차 순회 요약:**\n- 새 텔레그램 지시: 없음\n- **ELDO**: BETA-16(Dev1)/BETA-17(Dev2) 완료 확인. Planner→BETA-18 계획 수립 지시(Lighthouse 성능 80+ 개선 우선), QA→8차 리뷰(BETA-16/17) 지시\n- **ReviewBot**: OG링크 URGENT 진행 중. 파이프라인이 \"환절기 건강식품\" 리뷰 2건 자동 생성 중 — 파이프라인 정상 작동 신호\n- **대기**: ReviewBot OG링크 발행 버그 해결 미완, Lighthouse 재측정(Sanghun 직접 필요)\n[2026-04-04 17:32:23] Eddy 실행 완료\n[2026-04-04 18:00:00] Eddy 실행 시작"
+      "recentLog": "- Lighthouse는 **ELDO** (Next.js 웹앱)에만 해당 → TASK-307 실측은 Sanghun이 Chrome DevTools로 직접 필요\n3. **ELDO TASKS.md 업데이트:**\n- Planner 13차: BETA-19 계획 수립 배정 (뉴스레터 발송/Lighthouse 최적화 우선)\n- QA 9차: BETA-18 코드 리뷰 배정\n4. **Sanghun 직접 필요:**\n- `eldo-one.vercel.app` Chrome DevTools Lighthouse 실측 (Performance 80+ 목표)\n- Vercel 토큰, GA4 ID\n[2026-04-04 18:04:25] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -183,8 +183,7 @@
     }
   ],
   "recentActivity": [
-    "- **ELDO**: BETA-16(Dev1)/BETA-17(Dev2) 완료 확인. Planner→BETA-18 계획 수립 지시(Lighthouse 성능 80+ 개선 우선), QA→8차 리뷰(BETA-16/17) 지시",
-    "[2026-04-04 17:32:23] Eddy 실행 완료",
+    "[2026-04-04 18:04:25] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
