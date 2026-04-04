@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 01:01:49",
+  "updatedAt": "2026-04-05 01:06:51",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 01:00:18"
+          "lastRun": "2026-04-05 01:06:51"
         },
         {
           "name": "Dev2",
@@ -139,7 +139,7 @@
           "lastRun": "2026-04-05 01:00:16"
         }
       ],
-      "recentLog": "|------|------|\n| lang-atom.ts 누락 키 | 없음 (5개 키 모두 존재 확인) |\n| tsc --noEmit | 오류 0건 ✅ |\n| NEWSLETTER-HTML-ESCAPE | 이미 `db4dad8`에서 완료 확인 |\n| E2E-SEO-COVERAGE | 이미 `db4dad8`에서 `seo.spec.ts` 추가 확인 |\n| E2E 전체 | **19/19 통과** ✅ |\n| git push | `67e150e` → main ✅ |\n[2026-04-05 00:32:16] Dev1 완료\n[2026-04-05 01:00:00] Dev1 실행\n[2026-04-05 01:00:18] Dev1 스킵 — 이전 실행 중 (PID 18339)"
+      "recentLog": "**BETA-26 Dev1 완료** — SECTORS-JA-LABEL 수정.\n**변경 내용 (`317fce6`):**\n- `constants.ts` — `Item`/`GraphType` 타입에 `labelJa`/`titleJa` 필드 추가, GRAPH_ITEMS/CORP_DIST_ITEMS/CHANGE_DIST_ITEMS/RATIO_GRAPH_ITEMS/BASIS_ITEMS 전 항목 일본어 레이블 작성\n- `sidebar.tsx`, `ratio-graph.tsx` — `gl()` 헬퍼 `ja` 분기 추가 (`labelJa ?? labelEn` 폴백)\n- `corp-dist.tsx`, `change-dist.tsx` — 인라인 렌더링 `ja` 분기 추가\n- `sector-tree/route.ts` + `use-emsec-tree.ts` — `labelJa` 필드 추가 (DB 일본어 데이터 없음 → `labelEn` 폴백)\n**결과:** tsc 오류 0건, E2E 17/19 통과 (2개 실패는 기존 DB 데이터 이슈 — `vcr-reports`/`stock-heatmap`, 이번 변경과 무관)\n[2026-04-05 01:06:51] Dev1 완료"
     },
     {
       "name": "ReviewBot",
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "코드 수정/안정화",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 01:00:37"
+          "lastRun": "2026-04-05 01:06:47"
         },
         {
           "name": "Pipeline",
@@ -179,7 +179,7 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "- **BUG-003 수정**: `verifyPost()` raw URL 오탐(false positive) 수정\n- 원인: OG카드가 없는 경우 폴백으로 `container.innerText` 전체를 읽어서 OG카드 내 파트너 링크 URL이 raw URL로 오검출됨\n- 수정: DOM 클론에서 `.se-component.se-oglink` 등 OG카드 요소를 제거 후 `innerText` 추출 (`src/utils/naver-blog.mjs`)\n- **데이터 동기화**: 이전 파이프라인 실행 결과 커밋 (products +5건, pending-links +5 링크요청, 숄더백 rank 스냅샷, rss.xml 갱신)\n**대기 중:**\n- `pending-links.json`: 파트너스 링크 5건 Sanghun 회신 대기 (봄 캠핑용품, 봄 원피스 추천/순위, 봄 신발, 봄 가방)\n- 링크 수신 후 파이프라인 자동으로 write → post 단계 진행\n[2026-04-05 00:30:37] Dev1 완료\n[2026-04-05 01:00:37] Dev1 실행"
+      "recentLog": "- 수정: DOM 클론에서 `.se-component.se-oglink` 등 OG카드 요소를 제거 후 `innerText` 추출 (`src/utils/naver-blog.mjs`)\n- **데이터 동기화**: 이전 파이프라인 실행 결과 커밋 (products +5건, pending-links +5 링크요청, 숄더백 rank 스냅샷, rss.xml 갱신)\n**대기 중:**\n- `pending-links.json`: 파트너스 링크 5건 Sanghun 회신 대기 (봄 캠핑용품, 봄 원피스 추천/순위, 봄 신발, 봄 가방)\n- 링크 수신 후 파이프라인 자동으로 write → post 단계 진행\n[2026-04-05 00:30:37] Dev1 완료\n[2026-04-05 01:00:37] Dev1 실행\n[2026-04-05 01:06:47] Dev1 완료\n[done] BUG-004: 파트너스 링크 대기 중 리뷰 작성 방지 — writeNext()에 pending-links 체크 추가, applyPartnerLinks()에 기존 리뷰 삭제+리셋 추가. 링크 없는 봄 시즌 리뷰 4건 삭제, products.json 6개 항목 pending 리셋. 커밋 1e491c8."
     }
   ],
   "recentActivity": [
@@ -192,6 +192,8 @@
     "[2026-04-03 23:13:38] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
-    "[2026-04-05 00:30:37] Dev1 완료"
+    "[2026-04-05 00:30:37] Dev1 완료",
+    "[2026-04-05 01:06:47] Dev1 완료",
+    "[done] BUG-004: 파트너스 링크 대기 중 리뷰 작성 방지 — writeNext()에 pending-links 체크 추가, applyPartnerLinks()에 기존 리뷰 삭제+리셋 추가. 링크 없는 봄 시즌 리뷰 4건 삭제, products.json 6개 항목 pending 리셋. 커밋 1e491c8."
   ]
 }
