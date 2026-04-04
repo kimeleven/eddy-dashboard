@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 14:04:24",
+  "updatedAt": "2026-04-04 14:13:45",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":20 (19~07)",
-          "lastRun": "2026-04-04 14:00:01"
+          "lastRun": "2026-04-04 14:13:45"
         },
         {
           "name": "Planner",
@@ -133,7 +133,7 @@
           "lastRun": "2026-04-04 14:00:14"
         }
       ],
-      "recentLog": "### 3. BETA-06 실기능 구현\n- **`/valuation`**: 거래소 필터 + P/E, EV/EBITDA, 시가총액, 매출 기준 정렬 가능한 전체 기업 밸류에이션 테이블\n- **`/peer`**: 기업 검색 → 동일 섹터 피어 기업 비교 테이블 (기준 기업 하이라이트)\n- **`/compare`**: 최대 5개 기업 검색 추가 → 주요 재무지표 나란히 비교 (Exchange, Sector, Mkt Cap, Revenue, Assets, P/E, EV/EBITDA, Patterns)\n[2026-04-04 13:12:43] Dev1 완료\n[2026-04-04 13:30:01] Dev1 실행\n[done] BETA-08 global search bar + ANALYSIS-METRIC-VALID fix\n[done] BETA-08 헤더 글로벌 검색창(autocomplete) 구현 + ANALYSIS-METRIC-VALID 400 가드 추가 + TASKS.md 업데이트\n[2026-04-04 14:00:01] Dev1 실행"
+      "recentLog": "- **`lib/atoms/lang-atom.ts`**: `news` 다국어 문자열 (ko/en/ja) 추가\n- **`prisma/seed.ts`**: 20개 기업 × 3건 = 60건 더미 뉴스 데이터 추가\n### BETA-11 — Performance 개선 (`3dd24ca`)\n- **BETA-11-A/B**: `app/page.tsx` 서버 컴포넌트 전환 + `app/_components/home-content.tsx` 클라이언트 분리\n- **BETA-11-C/D**: `fin-info-section.tsx`에서 `FinMetricsCharts` → `next/dynamic({ ssr: false })` 적용\n- **BETA-11-E**: `app/layout.tsx` Geist/Geist_Mono 폰트 활성화 + `display: 'swap'`\n- **BETA-11-F**: `desc-section.tsx`, `stock-section.tsx` — 불필요한 `'use client'` 제거 (서버 컴포넌트 전환)\n- **분석 route TS 버그 수정**: `handleCorpDist` 내 잘못된 return type (`NextResponse → throw Error`)\n[2026-04-04 14:13:45] Dev1 완료"
     },
     {
       "name": "ReviewBot",
