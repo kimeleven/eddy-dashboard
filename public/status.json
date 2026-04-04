@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 23:15:01",
+  "updatedAt": "2026-04-04 23:34:46",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 23:10:46"
+          "lastRun": "2026-04-04 23:34:46"
         }
       ],
-      "recentLog": "[2026-04-04 22:50:46] status.json 업데이트 완료\n[2026-04-04 23:00:01] Eddy 실행 시작\n/Users/a1111/eddy-agent/eddy/run.sh: line 43: timeout: command not found\n[2026-04-04 23:00:01] Eddy 실행 완료\n[2026-04-04 23:00:46] Eddy 실행 시작\n/Users/a1111/eddy-agent/eddy/run.sh: line 43: timeout: command not found\n[2026-04-04 23:00:46] Eddy 실행 완료\n[2026-04-04 23:10:46] Eddy 실행 시작\n/Users/a1111/eddy-agent/eddy/run.sh: line 43: timeout: command not found\n[2026-04-04 23:10:46] Eddy 실행 완료"
+      "recentLog": "- 텔레그램 신규 메시지 1건 수신: \"쿠팡에서 상품을 검색해서 줘야지... 네이버 상품을 쿠팡에서 검색해?\"\n- ReviewBot `TASKS.md` 최상단에 🚨 URGENT 추가 — `product-researcher.mjs` 네이버 쇼핑 API → 쿠팡 직접 검색으로 전환 지시\n- `state.json` 갱신 (last_update_id: 360082453)\n- 커밋/푸시 완료\n- 텔레그램 보고 발송 완료\n**대기 중 (Sanghun 필요):**\n- 쿠팡 파트너스 API 키 (access/secret key) 발급 후 공유\n- XBot 최초 로그인 테스트 직접 실행\n[2026-04-04 23:34:46] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -38,13 +38,13 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":00 (19~07)",
-          "lastRun": "2026-04-04 23:14:59"
+          "lastRun": "2026-04-04 23:15:49"
         },
         {
           "name": "Dev2",
           "role": "기능 개발",
           "cron": ":30 (19~07)",
-          "lastRun": "2026-04-03 23:32:15"
+          "lastRun": "2026-04-04 23:15:49"
         },
         {
           "name": "Planner",
@@ -65,7 +65,7 @@
           "lastRun": "2026-04-04 00:11:50"
         }
       ],
-      "recentLog": "- **`/api/developers/[id]/route.ts`**: PATCH 요청 시 스킬 유효성 검사 추가 (최대 20개, 각 50자 제한)\n### 빌드 에러 수정 (기존 코드 버그)\n- **`/api/projects/[id]/route.ts`**: 존재하지 않는 `activeFeeProposal` relation → `feeProposals` relation으로 교체, `proposedAmount` → `amount` 필드명 수정\n[2026-04-04 00:06:11] Dev1 완료\n[2026-04-04 16:23:29] Dev1 완료\n[2026-04-04 16:23:29] Dev1 완료\n[2026-04-04 23:14:59] Dev1 실행\n/Users/a1111/eddy-agent/devgate-team/dev1.sh: line 31: timeout: command not found\n[2026-04-04 23:14:59] Dev1 완료"
+      "recentLog": "### 빌드 에러 수정 (기존 코드 버그)\n- **`/api/projects/[id]/route.ts`**: 존재하지 않는 `activeFeeProposal` relation → `feeProposals` relation으로 교체, `proposedAmount` → `amount` 필드명 수정\n[2026-04-04 00:06:11] Dev1 완료\n[2026-04-04 16:23:29] Dev1 완료\n[2026-04-04 16:23:29] Dev1 완료\n[2026-04-04 23:14:59] Dev1 실행\n/Users/a1111/eddy-agent/devgate-team/dev1.sh: line 31: timeout: command not found\n[2026-04-04 23:14:59] Dev1 완료\n[2026-04-04 23:15:49] Dev1 실행"
     },
     {
       "name": "LiveOrder",
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-04 23:00:01"
+          "lastRun": "2026-04-04 23:30:01"
         },
         {
           "name": "Dev2",
@@ -139,7 +139,7 @@
           "lastRun": "2026-04-04 23:00:00"
         }
       ],
-      "recentLog": "| 효과 | KOSPI 필터 시 5.8s→2.6s (55% 개선), 데이터 586K→199K 행 (66% 감소) |\n| E2E | workers=2, retries=1 + timeout 증가로 flakiness 해소 → **19/19 통과** |\n| tsc | 오류 0건 |\n[2026-04-04 22:17:47] Dev1 완료\n[2026-04-04 22:30:00] Dev1 실행\n/Users/a1111/eddy-agent/eldo-team/dev1.sh: line 31: timeout: command not found\n[2026-04-04 22:30:00] Dev1 완료\n[2026-04-04 23:00:01] Dev1 실행\n/Users/a1111/eddy-agent/eldo-team/dev1.sh: line 31: timeout: command not found\n[2026-04-04 23:00:01] Dev1 완료"
+      "recentLog": "| E2E | workers=2, retries=1 + timeout 증가로 flakiness 해소 → **19/19 통과** |\n| tsc | 오류 0건 |\n[2026-04-04 22:17:47] Dev1 완료\n[2026-04-04 22:30:00] Dev1 실행\n/Users/a1111/eddy-agent/eldo-team/dev1.sh: line 31: timeout: command not found\n[2026-04-04 22:30:00] Dev1 완료\n[2026-04-04 23:00:01] Dev1 실행\n/Users/a1111/eddy-agent/eldo-team/dev1.sh: line 31: timeout: command not found\n[2026-04-04 23:00:01] Dev1 완료\n[2026-04-04 23:30:01] Dev1 실행"
     },
     {
       "name": "ReviewBot",
@@ -183,13 +183,11 @@
     }
   ],
   "recentActivity": [
-    "[2026-04-04 23:00:46] Eddy 실행 완료",
-    "[2026-04-04 23:10:46] Eddy 실행 완료",
-    "[2026-04-04 16:23:29] Dev1 완료",
+    "[2026-04-04 23:34:46] Eddy 실행 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
     "[2026-04-04 23:14:59] Dev1 완료",
-    "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
     "[2026-04-03 23:32:15] Dev2 완료",
+    "[2026-04-04 23:15:04] Dev2 완료",
     "- **lookup/page.tsx**: PAID + 7일 이내 조건부 청약철회 버튼 표시, 신청 완료 시 접수 메시지 표시",
     "[2026-04-03 23:13:38] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
