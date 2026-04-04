@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 16:11:01",
+  "updatedAt": "2026-04-04 16:28:27",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -38,7 +38,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":00 (19~07)",
-          "lastRun": "2026-04-04 00:06:11"
+          "lastRun": "2026-04-04 16:23:29"
         },
         {
           "name": "Dev2",
@@ -65,7 +65,7 @@
           "lastRun": "2026-04-04 00:11:50"
         }
       ],
-      "recentLog": "- **`migrations/0010_add_developer_earning_unique_constraint/migration.sql`**: 수동 마이그레이션 파일 생성 (DB 접근 불가로 수동 생성, 배포 시 자동 적용)\n- **`payment-completion.ts`**: `developerEarning.create` catch 블록에 P2002 처리 추가 (race condition 중복 무시)\n### Phase 18-A ✅ 개발자 기술스택/스킬 시스템\n- 스킬 필드(`skills String[]`), 편집 UI(태그 입력), 공개 프로필 표시는 이미 구현 완료 상태\n- **`/api/developers/[id]/route.ts`**: PATCH 요청 시 스킬 유효성 검사 추가 (최대 20개, 각 50자 제한)\n### 빌드 에러 수정 (기존 코드 버그)\n- **`/api/projects/[id]/route.ts`**: 존재하지 않는 `activeFeeProposal` relation → `feeProposals` relation으로 교체, `proposedAmount` → `amount` 필드명 수정\n[2026-04-04 00:06:11] Dev1 완료"
+      "recentLog": "### Phase 18-A ✅ 개발자 기술스택/스킬 시스템\n- 스킬 필드(`skills String[]`), 편집 UI(태그 입력), 공개 프로필 표시는 이미 구현 완료 상태\n- **`/api/developers/[id]/route.ts`**: PATCH 요청 시 스킬 유효성 검사 추가 (최대 20개, 각 50자 제한)\n### 빌드 에러 수정 (기존 코드 버그)\n- **`/api/projects/[id]/route.ts`**: 존재하지 않는 `activeFeeProposal` relation → `feeProposals` relation으로 교체, `proposedAmount` → `amount` 필드명 수정\n[2026-04-04 00:06:11] Dev1 완료\n[2026-04-04 16:23:29] Dev1 완료\n[2026-04-04 16:23:29] Dev1 완료"
     },
     {
       "name": "LiveOrder",
@@ -78,7 +78,7 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":10 (19~07)",
-          "lastRun": "2026-04-03 23:13:38"
+          "lastRun": "2026-04-04 16:23:29"
         },
         {
           "name": "Planner",
@@ -99,7 +99,7 @@
           "lastRun": "2026-04-03 23:19:33"
         }
       ],
-      "recentLog": "- **CSV export**: `take: 10000` 상한 추가로 대용량 메모리/타임아웃 방지\n## Task 33 — 전자상거래법 대응 (commit 012ec5a)\n- **OrderConfirmation.tsx**: 청약철회 권리 안내 박스 추가 (전자상거래법 제13조) — 7일 이내 신청 가능, 주문조회 경로 안내\n- **POST /api/orders/[id]/withdraw** (신규): 청약철회 신청 API\n- `buyerPhone` 매칭으로 인증\n- PAID 상태 + 결제 후 7일 이내 검증\n- 관리자에게 이메일 알림 발송 (관리자가 수동 환불 처리)\n- **lookup/page.tsx**: PAID + 7일 이내 조건부 청약철회 버튼 표시, 신청 완료 시 접수 메시지 표시\n[2026-04-03 23:13:38] Dev1 완료"
+      "recentLog": "## Task 33 — 전자상거래법 대응 (commit 012ec5a)\n- **OrderConfirmation.tsx**: 청약철회 권리 안내 박스 추가 (전자상거래법 제13조) — 7일 이내 신청 가능, 주문조회 경로 안내\n- **POST /api/orders/[id]/withdraw** (신규): 청약철회 신청 API\n- `buyerPhone` 매칭으로 인증\n- PAID 상태 + 결제 후 7일 이내 검증\n- 관리자에게 이메일 알림 발송 (관리자가 수동 환불 처리)\n- **lookup/page.tsx**: PAID + 7일 이내 조건부 청약철회 버튼 표시, 신청 완료 시 접수 메시지 표시\n[2026-04-03 23:13:38] Dev1 완료\n[2026-04-04 16:23:29] Dev1 완료\n[2026-04-04 16:23:29] Dev1 완료"
     },
     {
       "name": "ELDO",
@@ -118,7 +118,7 @@
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "cron": "15,45 * * * *",
-          "lastRun": "2026-04-04 15:49:45"
+          "lastRun": "2026-04-04 16:28:27"
         },
         {
           "name": "Planner",
@@ -183,14 +183,17 @@
     }
   ],
   "recentActivity": [
-    "- **ELDO**: BETA-13 다국어 완성 + VCR 메뉴 재편 완료. 다음 스프린트 **BETA-14 뉴스 수집 스크립트** Dev1 배정 (RSS 기반, 외부 비용 없음)",
     "**처리:** ELDO TASKS.md 업데이트, git push 완료, Telegram 보고 완료.",
     "[2026-04-04 16:03:12] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
+    "[2026-04-04 16:23:29] Dev1 완료",
+    "[2026-04-04 16:23:29] Dev1 완료",
     "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
     "[2026-04-03 23:32:15] Dev2 완료",
     "- **lookup/page.tsx**: PAID + 7일 이내 조건부 청약철회 버튼 표시, 신청 완료 시 접수 메시지 표시",
     "[2026-04-03 23:13:38] Dev1 완료",
+    "[2026-04-04 16:23:29] Dev1 완료",
+    "[2026-04-04 16:23:29] Dev1 완료",
     "[2026-04-04 08:03:41] Dev1 완료",
     "[done] Phase 23-A: 시리즈 planner-pipeline 완전 통합 — product-researcher seriesType 전파, review-writer overview 라우팅, blog-publisher series.json 상태 업데이트",
     "모든 작업이 완료되었습니다.",
