@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 13:49:20",
+  "updatedAt": "2026-04-04 14:00:14",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 13:33:37"
+          "lastRun": "2026-04-04 14:00:00"
         }
       ],
-      "recentLog": "**신규 텔레그램 지시:** 없음\n**🐛 버그 발견 및 수정 (ReviewBot):**\n- `pipeline.mjs`에서 Step 5-A/B(승인 요청)는 주석 처리됐으나, `blog-publisher.mjs` 내부에서 여전히 `getApprovedPosts()` 체크를 하고 있어 포스팅이 계속 실패하던 문제 발견\n- Eddy PM이 직접 제거 완료 + 포스팅 성공 시 텔레그램 알림 추가 → `9bd6537` 커밋, GitHub 푸시\n**팀 현황:**\n- **ELDO**: Dev2가 A11Y/SEO 10차 완료. 잔여 항목: Lighthouse 실측(Sanghun 직접)만 남음\n- **ReviewBot**: 수정 적용됨. 14:00 크론 실행 시 최초 자동 포스팅 시도 예정. 성공 시 텔레그램으로 알림 발송됨\n[2026-04-04 13:33:37] Eddy 실행 완료"
+      "recentLog": "**🐛 버그 발견 및 수정 (ReviewBot):**\n- `pipeline.mjs`에서 Step 5-A/B(승인 요청)는 주석 처리됐으나, `blog-publisher.mjs` 내부에서 여전히 `getApprovedPosts()` 체크를 하고 있어 포스팅이 계속 실패하던 문제 발견\n- Eddy PM이 직접 제거 완료 + 포스팅 성공 시 텔레그램 알림 추가 → `9bd6537` 커밋, GitHub 푸시\n**팀 현황:**\n- **ELDO**: Dev2가 A11Y/SEO 10차 완료. 잔여 항목: Lighthouse 실측(Sanghun 직접)만 남음\n- **ReviewBot**: 수정 적용됨. 14:00 크론 실행 시 최초 자동 포스팅 시도 예정. 성공 시 텔레그램으로 알림 발송됨\n[2026-04-04 13:33:37] Eddy 실행 완료\n[2026-04-04 14:00:00] Eddy 실행 시작"
     },
     {
       "name": "DevGate",
@@ -112,13 +112,13 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":20 (19~07)",
-          "lastRun": "2026-04-04 13:30:01"
+          "lastRun": "2026-04-04 14:00:01"
         },
         {
           "name": "Planner",
           "role": "기획/태스크 관리",
           "cron": "2h간격",
-          "lastRun": "2026-04-04 07:31:32"
+          "lastRun": "2026-04-04 14:00:01"
         },
         {
           "name": "QA",
@@ -130,10 +130,10 @@
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": ":25 (19~07)",
-          "lastRun": "2026-04-04 13:00:13"
+          "lastRun": "2026-04-04 14:00:14"
         }
       ],
-      "recentLog": "- `sectors/sidebar` 4개 파일: 그래프 유형/거래소/섹터/기준연도/지표 Select `aria-label` 전수 적용\n### 3. BETA-06 실기능 구현\n- **`/valuation`**: 거래소 필터 + P/E, EV/EBITDA, 시가총액, 매출 기준 정렬 가능한 전체 기업 밸류에이션 테이블\n- **`/peer`**: 기업 검색 → 동일 섹터 피어 기업 비교 테이블 (기준 기업 하이라이트)\n- **`/compare`**: 최대 5개 기업 검색 추가 → 주요 재무지표 나란히 비교 (Exchange, Sector, Mkt Cap, Revenue, Assets, P/E, EV/EBITDA, Patterns)\n[2026-04-04 13:12:43] Dev1 완료\n[2026-04-04 13:30:01] Dev1 실행\n[done] BETA-08 global search bar + ANALYSIS-METRIC-VALID fix\n[done] BETA-08 헤더 글로벌 검색창(autocomplete) 구현 + ANALYSIS-METRIC-VALID 400 가드 추가 + TASKS.md 업데이트"
+      "recentLog": "### 3. BETA-06 실기능 구현\n- **`/valuation`**: 거래소 필터 + P/E, EV/EBITDA, 시가총액, 매출 기준 정렬 가능한 전체 기업 밸류에이션 테이블\n- **`/peer`**: 기업 검색 → 동일 섹터 피어 기업 비교 테이블 (기준 기업 하이라이트)\n- **`/compare`**: 최대 5개 기업 검색 추가 → 주요 재무지표 나란히 비교 (Exchange, Sector, Mkt Cap, Revenue, Assets, P/E, EV/EBITDA, Patterns)\n[2026-04-04 13:12:43] Dev1 완료\n[2026-04-04 13:30:01] Dev1 실행\n[done] BETA-08 global search bar + ANALYSIS-METRIC-VALID fix\n[done] BETA-08 헤더 글로벌 검색창(autocomplete) 구현 + ANALYSIS-METRIC-VALID 400 가드 추가 + TASKS.md 업데이트\n[2026-04-04 14:00:01] Dev1 실행"
     },
     {
       "name": "ReviewBot",
