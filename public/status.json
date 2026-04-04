@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 03:30:01"
+          "lastRun": "2026-04-05 03:30:02"
         },
         {
           "name": "Dev2",
@@ -139,7 +139,7 @@
           "lastRun": "2026-04-05 03:00:02"
         }
       ],
-      "recentLog": "**tsc 오류:** 0건\n[2026-04-05 02:40:23] Dev1 완료\n[2026-04-05 03:00:00] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:00:02] Dev1 완료\n[2026-04-05 03:00:18] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:00:19] Dev1 완료\n[2026-04-05 03:30:01] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)"
+      "recentLog": "[2026-04-05 02:40:23] Dev1 완료\n[2026-04-05 03:00:00] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:00:02] Dev1 완료\n[2026-04-05 03:00:18] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:00:19] Dev1 완료\n[2026-04-05 03:30:01] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:30:02] Dev1 완료"
     },
     {
       "name": "ReviewBot",
