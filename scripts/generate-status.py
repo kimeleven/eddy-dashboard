@@ -25,8 +25,11 @@ def get_hour():
     return datetime.now().hour
 
 hour = get_hour()
-dg_status = "active" if hour >= 19 or hour < 7 else "scheduled"
-lo_status = dg_status
+# DevGate/LiveOrder는 보류 중 (2026-04-04~)
+dg_status = "paused"
+lo_status = "paused"
+# ELDO는 24시간 운영
+eldo_status = "active"
 
 cron_count = 0
 try:
@@ -101,13 +104,14 @@ data = {
             "name": "ELDO",
             "icon": "📊",
             "description": "기업 재무분석 플랫폼",
-            "schedule": "19:00~07:00",
-            "status": dg_status,
+            "schedule": "24h (30분마다)",
+            "status": eldo_status,
             "agents": [
-                {"name": "Dev1", "role": "기능 개발", "cron": ":20 (19~07)", "lastRun": last_run(f"{AGENT}/eldo-team/dev1.log")},
-                {"name": "Planner", "role": "기획/태스크 관리", "cron": "2h간격", "lastRun": last_run(f"{AGENT}/eldo-team/planner.log")},
-                {"name": "QA", "role": "코드 검증", "cron": "3h간격", "lastRun": last_run(f"{AGENT}/eldo-team/qa.log")},
-                {"name": "PM", "role": "텔레그램 보고", "cron": ":25 (19~07)", "lastRun": last_run(f"{AGENT}/eldo-team/pm.log")}
+                {"name": "Dev1", "role": "백엔드/API/DB", "cron": "*/30 * * * *", "lastRun": last_run(f"{AGENT}/eldo-team/dev1.log")},
+                {"name": "Dev2", "role": "UI/UX/다크모드", "cron": "15,45 * * * *", "lastRun": last_run(f"{AGENT}/eldo-team/dev2.log")},
+                {"name": "Planner", "role": "기획/태스크 관리", "cron": "0 */2 * * *", "lastRun": last_run(f"{AGENT}/eldo-team/planner.log")},
+                {"name": "QA", "role": "코드 검증", "cron": "30 */3 * * *", "lastRun": last_run(f"{AGENT}/eldo-team/qa.log")},
+                {"name": "PM", "role": "텔레그램 보고", "cron": "0 * * * *", "lastRun": last_run(f"{AGENT}/eldo-team/pm.log")}
             ],
             "recentLog": "\n".join(tail(f"{AGENT}/eldo-team/dev1.log"))
         },
@@ -115,13 +119,14 @@ data = {
             "name": "ReviewBot",
             "icon": "📝",
             "description": "사봤쪄 리뷰 블로그",
-            "schedule": "하루 1회 (09:30~14:00)",
-            "status": "scheduled",
+            "schedule": "Dev1 30분마다 + Pipeline 매시",
+            "status": "active",
             "agents": [
-                {"name": "Planner", "role": "키워드 전략/SEO", "cron": "09:30", "lastRun": last_run(f"{AGENT}/reviewbot-team/planner.log")},
-                {"name": "Dev1", "role": "파이프라인 실행", "cron": "10:00", "lastRun": last_run(f"{AGENT}/reviewbot-team/dev1.log")},
-                {"name": "QA", "role": "리뷰 품질 평가", "cron": "12:00", "lastRun": last_run(f"{AGENT}/reviewbot-team/qa.log")},
-                {"name": "PM", "role": "텔레그램 보고", "cron": "14:00", "lastRun": last_run(f"{AGENT}/reviewbot-team/pm.log")}
+                {"name": "Dev1", "role": "코드 수정/안정화", "cron": "*/30 * * * *", "lastRun": last_run(f"{AGENT}/reviewbot-team/dev1.log")},
+                {"name": "Pipeline", "role": "자동 포스팅", "cron": "0 * * * *", "lastRun": last_run(f"{AGENT}/reviewbot/data/logs/pipeline.log")},
+                {"name": "Planner", "role": "키워드 전략/SEO", "cron": "보류", "lastRun": last_run(f"{AGENT}/reviewbot-team/planner.log")},
+                {"name": "QA", "role": "리뷰 품질 평가", "cron": "보류", "lastRun": last_run(f"{AGENT}/reviewbot-team/qa.log")},
+                {"name": "PM", "role": "텔레그램 보고", "cron": "보류", "lastRun": last_run(f"{AGENT}/reviewbot-team/pm.log")}
             ],
             "recentLog": "\n".join(tail(f"{AGENT}/reviewbot-team/dev1.log"))
         }
