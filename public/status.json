@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 08:43:23",
+  "updatedAt": "2026-04-05 08:45:01",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-05 08:33:25"
+          "lastRun": "2026-04-05 08:43:27"
         }
       ],
-      "recentLog": "[2026-04-05 08:13:22] Eddy 실행 완료\n[2026-04-05 08:23:22] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 08:23:24] Eddy 실행 완료\n[2026-04-05 08:30:00] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 08:30:02] Eddy 실행 완료\n[2026-04-05 08:33:24] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 08:33:25] Eddy 실행 완료"
+      "recentLog": "[2026-04-05 08:23:24] Eddy 실행 완료\n[2026-04-05 08:30:00] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 08:30:02] Eddy 실행 완료\n[2026-04-05 08:33:24] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 08:33:25] Eddy 실행 완료\n[2026-04-05 08:43:25] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 08:43:27] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -44,7 +44,7 @@
           "name": "Dev2",
           "role": "기능 개발",
           "cron": ":30 (19~07)",
-          "lastRun": "2026-04-05 07:43:26"
+          "lastRun": "2026-04-05 08:43:28"
         },
         {
           "name": "Planner",
@@ -118,7 +118,7 @@
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "cron": "15,45 * * * *",
-          "lastRun": "2026-04-05 08:43:23"
+          "lastRun": "2026-04-05 08:43:24"
         },
         {
           "name": "Planner",
@@ -183,12 +183,12 @@
     }
   ],
   "recentActivity": [
-    "[2026-04-05 08:30:02] Eddy 실행 완료",
     "[2026-04-05 08:33:25] Eddy 실행 완료",
+    "[2026-04-05 08:43:27] Eddy 실행 완료",
     "[2026-04-05 07:25:50] Dev1 완료",
     "[2026-04-05 08:25:52] Dev1 완료",
-    "[2026-04-05 06:43:24] Dev2 완료",
     "[2026-04-05 07:43:26] Dev2 완료",
+    "[2026-04-05 08:43:28] Dev2 완료",
     "- **lookup/page.tsx**: PAID + 7일 이내 조건부 청약철회 버튼 표시, 신청 완료 시 접수 메시지 표시",
     "[2026-04-03 23:13:38] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
