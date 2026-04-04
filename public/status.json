@@ -136,7 +136,7 @@
           "name": "PM",
           "role": "텔레그램 보고",
           "cron": "0 * * * *",
-          "lastRun": "2026-04-05 06:00:00"
+          "lastRun": "2026-04-05 06:00:02"
         }
       ],
       "recentLog": "[2026-04-05 05:00:26] Dev1 완료\n[2026-04-05 05:30:00] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 05:30:02] Dev1 완료\n[2026-04-05 05:30:26] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 05:30:27] Dev1 완료\n[2026-04-05 06:00:00] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 06:00:02] Dev1 완료"
