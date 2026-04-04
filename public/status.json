@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 03:30:02",
+  "updatedAt": "2026-04-05 03:43:17",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-05 03:30:02"
+          "lastRun": "2026-04-05 03:42:36"
         }
       ],
-      "recentLog": "[2026-04-05 03:02:29] Eddy 실행 완료\n[2026-04-05 03:12:29] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:12:30] Eddy 실행 완료\n[2026-04-05 03:22:31] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:22:32] Eddy 실행 완료\n[2026-04-05 03:30:01] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:30:02] Eddy 실행 완료"
+      "recentLog": "[2026-04-05 03:22:32] Eddy 실행 완료\n[2026-04-05 03:30:01] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:30:02] Eddy 실행 완료\n[2026-04-05 03:32:32] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:32:34] Eddy 실행 완료\n[2026-04-05 03:42:34] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:42:36] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -112,13 +112,13 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 03:30:02"
+          "lastRun": "2026-04-05 03:30:21"
         },
         {
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "cron": "15,45 * * * *",
-          "lastRun": "2026-04-05 03:15:01"
+          "lastRun": "2026-04-05 03:43:07"
         },
         {
           "name": "Planner",
@@ -139,7 +139,7 @@
           "lastRun": "2026-04-05 03:00:02"
         }
       ],
-      "recentLog": "[2026-04-05 02:40:23] Dev1 완료\n[2026-04-05 03:00:00] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:00:02] Dev1 완료\n[2026-04-05 03:00:18] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:00:19] Dev1 완료\n[2026-04-05 03:30:01] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:30:02] Dev1 완료"
+      "recentLog": "[2026-04-05 03:00:02] Dev1 완료\n[2026-04-05 03:00:18] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:00:19] Dev1 완료\n[2026-04-05 03:30:01] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:30:02] Dev1 완료\n[2026-04-05 03:30:19] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 03:30:21] Dev1 완료"
     },
     {
       "name": "ReviewBot",
@@ -183,8 +183,8 @@
     }
   ],
   "recentActivity": [
-    "[2026-04-05 03:22:32] Eddy 실행 완료",
-    "[2026-04-05 03:30:02] Eddy 실행 완료",
+    "[2026-04-05 03:32:34] Eddy 실행 완료",
+    "[2026-04-05 03:42:36] Eddy 실행 완료",
     "[2026-04-05 02:25:42] Dev1 완료",
     "[2026-04-05 03:25:44] Dev1 완료",
     "백그라운드 태스크는 이전 버전(수정 전)을 실행한 결과입니다 - 48/49 (admin/projects 타이밍 이슈 1건). 이미 수정된 최신 버전은 49/49 전체 통과 확인되었습니다 (커밋 `d48a753`).",
