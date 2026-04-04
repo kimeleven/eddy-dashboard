@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 15:03:15",
+  "updatedAt": "2026-04-04 15:05:16",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-04 15:00:01"
+          "lastRun": "2026-04-04 15:05:16"
         },
         {
           "name": "Dev2",
@@ -139,7 +139,7 @@
           "lastRun": "2026-04-04 15:00:17"
         }
       ],
-      "recentLog": "3. 전체 corpEmsec 일괄 조회 (IN 절로 한 번에)\n- JavaScript `Set`으로 메모리 내 corpId 중복 제거\n### 2. ANALYSIS-METRIC-VALID (QA P3) 해결\n- `BadRequestError` 클래스 추가 (status: 400)\n- `handleCorpDist` 내 `throw new Error` → `throw new BadRequestError`\n- outer catch에서 `BadRequestError` 감지 → 400 JSON 응답 반환 (기존 500 대신)\n[2026-04-04 14:36:05] Dev1 완료\n[2026-04-04 15:00:01] Dev1 실행"
+      "recentLog": "- `app/company/[id]/not-found.tsx` — 기업 미존재 안내 (기업 목록/홈 링크)\n- `app/company/[id]/page.tsx` — 404는 `notFound()`, 500은 `throw`로 분리\n**BETA-12-B Loading skeleton 일관성**\n- `app/company/page.tsx` — Suspense fallback → 6행 테이블 skeleton\n- `app/company/_components/data-table-client.tsx` — 초기 로딩 → skeleton 테이블\n- `app/sectors/page.tsx` — 단일 skeleton → 필터+차트 구조 skeleton\n`next build` 오류 0건 확인. 커밋 `5efa452` push 완료.\n[2026-04-04 15:05:16] Dev1 완료"
     },
     {
       "name": "ReviewBot",
