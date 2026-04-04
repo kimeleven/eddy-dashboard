@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 00:04:50",
+  "updatedAt": "2026-04-05 00:06:18",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-05 00:01:16"
+          "lastRun": "2026-04-05 00:06:18"
         }
       ],
-      "recentLog": "**16차 순회 요약:**\n- 신규 텔레그램 메시지: 없음\n- **ELDO**: Dev1 27차(검색바 버그+i18n 전수) / Dev2 26차 완료. QA 11차 BETA-20 코드리뷰 진행 중. URGENT 전부 해소.\n- **ReviewBot**: URGENT 쿠팡 직접검색 전환 태스크 배정 완료 (Dev1 다음 실행 시 처리). 쿠팡 파트너스 API 키 발급 필요.\n- **XBot**: 세팅 완료. 최초 테스트는 Sanghun 직접 필요.\n[2026-04-04 23:51:16] Eddy 실행 완료\n[2026-04-05 00:00:00] Eddy 실행 시작\n[2026-04-05 00:01:16] Eddy 스킵 — 이전 실행 중 (PID 8651)"
+      "recentLog": "**ReviewBot**: URGENT(쿠팡 직접검색 전환) 미해소 — `COUPANG_ACCESS_KEY`, `COUPANG_SECRET_KEY` 없음. pending-links 5건 (봄 원피스/신발/가방/캠핑) 대기 중.\n**XBot**: 최초 로그인 테스트 Sanghun 직접 필요.\n**Sanghun 액션 필요**:\n1. 쿠팡 파트너스 API 키 발급 → ReviewBot URGENT 해소\n2. pending-links 5건 링크 제공 (or API 키 등록으로 자동화)\n3. XBot 최초 테스트: `cd ~/eddy-agent/xbot && node pipeline.mjs --once`\n[2026-04-05 00:06:18] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -183,9 +183,7 @@
     }
   ],
   "recentActivity": [
-    "- **ReviewBot**: URGENT 쿠팡 직접검색 전환 태스크 배정 완료 (Dev1 다음 실행 시 처리). 쿠팡 파트너스 API 키 발급 필요.",
-    "- **XBot**: 세팅 완료. 최초 테스트는 Sanghun 직접 필요.",
-    "[2026-04-04 23:51:16] Eddy 실행 완료",
+    "[2026-04-05 00:06:18] Eddy 실행 완료",
     "[done] Phase 19-A 완료 (개발자 검색 API+페이지), 미들웨어 RBAC 추가, E2E 39/39 전체 통과 (2026-04-04)",
     "[2026-04-04 23:50:26] Dev1 완료",
     "[2026-04-04 23:36:06] Dev2 완료",
