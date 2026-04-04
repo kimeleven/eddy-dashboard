@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 20:17:32",
+  "updatedAt": "2026-04-04 20:32:20",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 20:05:49"
+          "lastRun": "2026-04-04 20:32:20"
         }
       ],
-      "recentLog": "```\nX_USERNAME=...\nX_PASSWORD=...\nX_EMAIL=...\nANTHROPIC_API_KEY=...\n```\n2. `cd ~/eddy-agent/xbot && npm install && npm run install-browsers`\n3. 첫 실행 테스트: `node pipeline.mjs --once`\n4. 크론 등록: `0 * * * * cd ~/eddy-agent/xbot && node pipeline.mjs`\n[2026-04-04 20:05:49] Eddy 실행 완료"
+      "recentLog": "완료.\n**12차 순회 결과:**\n- **텔레그램**: 새 메시지 없음\n- **ELDO**: BETA-22 Dev1 3단계 진행 중 (Sectors/Company/Peer 데이터 검증). QA 11차(BETA-20 리뷰) 진행 중. Dev2 24차 완료 대기.\n- **ReviewBot**: 안정화 모드 정상. 하루 2포스팅 크론 가동 중.\n- **XBot**: 초기 구조 완료 (Playwright + Claude API). Sanghun의 `.env` 설정 및 크론 등록 대기.\n- 커밋/푸시: eddy, eldo, reviewbot 전부 완료.\n[2026-04-04 20:32:20] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -112,7 +112,7 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-04 20:17:32"
+          "lastRun": "2026-04-04 20:30:01"
         },
         {
           "name": "Dev2",
@@ -139,7 +139,7 @@
           "lastRun": "2026-04-04 20:00:15"
         }
       ],
-      "recentLog": "- 비금융지주(emsec_id=2)에 지주사 57개 기업 매핑 추가\n- `distinct: ['corpId']` 쿼리에 `orderBy: { rank: 'asc' }` 추가 (비결정적 distinct 해소)\n- 지주사 기업들의 다른 섹터 매핑 rank=2로 변경 → 비금융지주(rank=1)가 우선 선택\n### 4. Playwright E2E 6 → 19개 테스트, 19/19 통과\n- news/emtec/VCR-T/stock-heatmap 비금융지주 테스트 추가\n- SEO 테스트 2건 수정 (robots.txt 대소문자, JSON-LD BreadcrumbList 검색 로직)\n**잔여**: URGENT 3단계 — Sectors/Company상세/Peer/Compare/Valuation/VCR/News 페이지 전 메뉴 데이터 검증\n[2026-04-04 20:17:32] Dev1 완료"
+      "recentLog": "- `distinct: ['corpId']` 쿼리에 `orderBy: { rank: 'asc' }` 추가 (비결정적 distinct 해소)\n- 지주사 기업들의 다른 섹터 매핑 rank=2로 변경 → 비금융지주(rank=1)가 우선 선택\n### 4. Playwright E2E 6 → 19개 테스트, 19/19 통과\n- news/emtec/VCR-T/stock-heatmap 비금융지주 테스트 추가\n- SEO 테스트 2건 수정 (robots.txt 대소문자, JSON-LD BreadcrumbList 검색 로직)\n**잔여**: URGENT 3단계 — Sectors/Company상세/Peer/Compare/Valuation/VCR/News 페이지 전 메뉴 데이터 검증\n[2026-04-04 20:17:32] Dev1 완료\n[2026-04-04 20:30:01] Dev1 실행"
     },
     {
       "name": "ReviewBot",
@@ -183,7 +183,8 @@
     }
   ],
   "recentActivity": [
-    "[2026-04-04 20:05:49] Eddy 실행 완료",
+    "- 커밋/푸시: eddy, eldo, reviewbot 전부 완료.",
+    "[2026-04-04 20:32:20] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
