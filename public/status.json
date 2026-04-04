@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 02:05:21",
+  "updatedAt": "2026-04-05 02:11:35",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-05 02:03:12"
+          "lastRun": "2026-04-05 02:09:31"
         }
       ],
-      "recentLog": "- DevGate S-1 HIGH 버그 Dev1 배정: `middleware.ts` RBAC 미구현으로 DEVELOPER 역할이 `/admin/*` 접근 가능 → Dev1 즉시 수정 태스크로 TASKS.md 업데이트 + push\n- 텔레그램 보고 완료\n**팀 현황 요약:**\n- ELDO: BETA-26 완료, E2E 19/19 통과. BETA-27 QA 이슈 처리 중\n- ReviewBot: 자동 포스팅 중단, pending-links 7개 대기 (쿠팡 파트너스 링크 필요)\n- DevGate: E2E 49/49 통과, S-1 HIGH 버그 Dev1 배정됨\n- IRI-Safety: QA 2차 42/42 PASS, 정상 가동\n- XBot: 보류 중\n[2026-04-05 02:03:12] Eddy 실행 완료"
+      "recentLog": "- ELDO: BETA-27 진행 중 (Performance 최적화 완료, VCR-C 섹션 작업 중)\n- ReviewBot: 쿠팡 직접 검색 전환 작업 중, 파트너스 링크 6건 대기\n- DevGate: E2E 49/49 통과. S-1 HIGH RBAC 버그 Dev1에 배정됨\n- IRI-Safety: QA 42/42 PASS, Phase 1 감사로그 완료\n- XBot: 보류 유지\n**Sanghun 액션 필요:**\n- ReviewBot 쿠팡 파트너스 API 키 (`COUPANG_ACCESS_KEY`, `COUPANG_SECRET_KEY`)\n- ELDO Vercel 토큰\n[2026-04-05 02:09:31] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -118,13 +118,13 @@
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "cron": "15,45 * * * *",
-          "lastRun": "2026-04-05 01:48:33"
+          "lastRun": "2026-04-05 02:10:19"
         },
         {
           "name": "Planner",
           "role": "기획/태스크 관리",
           "cron": "0 */2 * * *",
-          "lastRun": "2026-04-05 02:00:00"
+          "lastRun": "2026-04-05 02:11:34"
         },
         {
           "name": "QA",
@@ -183,7 +183,7 @@
     }
   ],
   "recentActivity": [
-    "[2026-04-05 02:03:12] Eddy 실행 완료",
+    "[2026-04-05 02:09:31] Eddy 실행 완료",
     "[2026-04-04 23:50:26] Dev1 완료",
     "[done] E2E 테스트 49/49 전체 통과 확인 (2026-04-05) — 이전 3개 FAIL 분석 및 해결 확인",
     "이미 확인한 최신 E2E 테스트 완료 알림입니다. 결과: **49/49 전체 통과** (exit code 0). 이미 처리 완료됨.",
