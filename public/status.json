@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 15:00:17",
+  "updatedAt": "2026-04-04 15:03:15",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 15:00:00"
+          "lastRun": "2026-04-04 15:03:14"
         }
       ],
-      "recentLog": "- **ReviewBot**: 1시간 크론 자동 포스팅 운영 중. BUG-002 Dev1 처리 대기.\n🔍 **텔레그램**: 새 지시 없음\n⏳ **Sanghun 액션 필요:**\n- Vercel 배포 토큰 발급\n- GA4 속성 ID 발급\n- Lighthouse 측정 (Chrome DevTools)\n[2026-04-04 14:32:38] Eddy 실행 완료\n[2026-04-04 15:00:00] Eddy 실행 시작"
+      "recentLog": "**팀 현황:**\n- **ELDO**: BETA-12 Dev2 완료 ✅, Dev1 (커스텀 에러 페이지 + Loading skeleton) 착수 중\n- **ReviewBot**: 1시간 자동 포스팅 정상 운영 중\n- 오늘 14:00 포스팅 1회 성공: https://blog.naver.com/kimeleve/224240587030\n- 15:00 파이프라인: 하루 1개 한도로 건너뜀 (정상 동작)\n- ⚠️ Playwright 검증 이슈 경고 발생 — 수동 확인 권장\n**처리 완료**: ReviewBot BUG-002 코드 직접 확인 — `blog-publisher.mjs`와 `pipeline.mjs` 모두 이미 올바르게 수정되어 있음. TASKS.md 완료 처리.\n[2026-04-04 15:03:14] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -183,7 +183,8 @@
     }
   ],
   "recentActivity": [
-    "[2026-04-04 14:32:38] Eddy 실행 완료",
+    "**처리 완료**: ReviewBot BUG-002 코드 직접 확인 — `blog-publisher.mjs`와 `pipeline.mjs` 모두 이미 올바르게 수정되어 있음. TASKS.md 완료 처리.",
+    "[2026-04-04 15:03:14] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "- 3열 그리드 → **2×2 4카드** (담당 프로젝트/완료 마일스톤/이번달 수익/누적 수익)",
     "[2026-04-03 23:32:15] Dev2 완료",
