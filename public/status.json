@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-04 23:00:00",
+  "updatedAt": "2026-04-04 23:00:01",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-04 22:50:46"
+          "lastRun": "2026-04-04 23:00:01"
         }
       ],
-      "recentLog": "[2026-04-04 22:30:46] Eddy 실행 시작\n/Users/a1111/eddy-agent/eddy/run.sh: line 43: timeout: command not found\n[2026-04-04 22:30:46] Eddy 실행 완료\n[2026-04-04 22:40:46] Eddy 실행 시작\n/Users/a1111/eddy-agent/eddy/run.sh: line 43: timeout: command not found\n[2026-04-04 22:40:46] Eddy 실행 완료\n[2026-04-04 22:50:46] Eddy 실행 시작\n/Users/a1111/eddy-agent/eddy/run.sh: line 43: timeout: command not found\n[2026-04-04 22:50:46] Eddy 실행 완료\n[2026-04-04 22:50:46] status.json 업데이트 완료"
+      "recentLog": "[2026-04-04 22:40:46] Eddy 실행 시작\n/Users/a1111/eddy-agent/eddy/run.sh: line 43: timeout: command not found\n[2026-04-04 22:40:46] Eddy 실행 완료\n[2026-04-04 22:50:46] Eddy 실행 시작\n/Users/a1111/eddy-agent/eddy/run.sh: line 43: timeout: command not found\n[2026-04-04 22:50:46] Eddy 실행 완료\n[2026-04-04 22:50:46] status.json 업데이트 완료\n[2026-04-04 23:00:01] Eddy 실행 시작\n/Users/a1111/eddy-agent/eddy/run.sh: line 43: timeout: command not found\n[2026-04-04 23:00:01] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -183,8 +183,8 @@
     }
   ],
   "recentActivity": [
-    "[2026-04-04 22:50:46] Eddy 실행 완료",
     "[2026-04-04 22:50:46] status.json 업데이트 완료",
+    "[2026-04-04 23:00:01] Eddy 실행 완료",
     "[2026-04-04 00:06:11] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
