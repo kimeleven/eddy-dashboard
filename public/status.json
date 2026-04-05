@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 13:09:38",
+  "updatedAt": "2026-04-05 15:43:22",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-05 13:09:20"
+          "lastRun": "2026-04-05 15:34:44"
         }
       ],
-      "recentLog": "[2026-04-05 12:44:04] Eddy 실행 시작\nCredit balance is too low\n[2026-04-05 12:44:06] Eddy 실행 완료\n[2026-04-05 12:54:06] Eddy 실행 시작\nCredit balance is too low\n[2026-04-05 12:54:08] Eddy 실행 완료\n[2026-04-05 13:04:08] Eddy 실행 시작\nCredit balance is too low\n[2026-04-05 13:04:10] Eddy 실행 완료\n[2026-04-05 13:09:20] Eddy 실행 시작"
+      "recentLog": "- **ELDO**: Dev1 BETA-29 완료(sub_industry 3단계, VCR 딥링크), Dev2 UI/UX 전 페이지 Bloomberg 스타일 적용 완료. QA 13차 신규 버그 2건(일본어 섹터 레이블, 중복 API 라우트) → Dev1 태스크 배정됨. 크레딧 부족으로 에이전트 현재 대기 상태.\n- **ReviewBot**: 안정화 모드. --manual 플래그 적용, 직접 텔레그램 전송 차단 완료. pending-links 14건 링크 대기.\n- **DevGate**: 개발 중단 지시 완료. E2E 49/49 통과 상태. launchd 에이전트 비활성화 확인.\n- **IRI-Safety**: 개발 중단 지시 완료. BUG-003(비밀번호 인증) DB 수정 완료. launchd 비활성화 확인.\n**대기 (Sanghun 액션 필요):**\n- Vercel 토큰 → ELDO 배포\n- GA4 속성 ID → ELDO Analytics\n- 쿠팡 파트너스 API 키 또는 상품 링크 → ReviewBot 포스팅 재개\n[2026-04-05 15:34:44] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -38,13 +38,13 @@
           "name": "Dev1",
           "role": "기능 개발",
           "cron": ":00 (19~07)",
-          "lastRun": "2026-04-05 12:15:12"
+          "lastRun": "2026-04-05 14:20:40"
         },
         {
           "name": "Dev2",
           "role": "기능 개발",
           "cron": ":30 (19~07)",
-          "lastRun": "2026-04-05 12:15:12"
+          "lastRun": "2026-04-05 14:21:00"
         },
         {
           "name": "Planner",
@@ -56,7 +56,7 @@
           "name": "QA",
           "role": "코드 검증",
           "cron": "3h간격",
-          "lastRun": "2026-04-05 12:15:12"
+          "lastRun": "2026-04-05 13:33:40"
         },
         {
           "name": "PM",
@@ -65,7 +65,7 @@
           "lastRun": "2026-04-04 00:11:50"
         }
       ],
-      "recentLog": "[2026-04-05 07:25:50] Dev1 완료\n[2026-04-05 08:25:51] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 08:25:52] Dev1 완료\n[2026-04-05 09:25:52] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 09:25:54] Dev1 완료\n[2026-04-05 12:15:09] Dev1 실행\nCredit balance is too low\n[2026-04-05 12:15:12] Dev1 완료"
+      "recentLog": "[2026-04-05 09:25:52] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 09:25:54] Dev1 완료\n[2026-04-05 12:15:09] Dev1 실행\nCredit balance is too low\n[2026-04-05 12:15:12] Dev1 완료\n[2026-04-05 13:09:38] Dev1 실행\n[done] E2E 49/49 통과 확인, UI 메뉴 정리 커밋, useAuthHydration race condition 수정 (AbortController 추가), QA 보고서 업데이트 - 2026-04-05\n이미 이 결과도 확인했습니다 — `useAuthHydration` 수정 후 49/49 PASS. 이미 커밋/푸시 완료된 결과입니다.\n[2026-04-05 14:20:40] Dev1 완료"
     },
     {
       "name": "LiveOrder",
@@ -112,25 +112,25 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 13:09:38"
+          "lastRun": "2026-04-05 13:18:16"
         },
         {
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "cron": "15,45 * * * *",
-          "lastRun": "2026-04-05 13:09:38"
+          "lastRun": "2026-04-05 13:21:58"
         },
         {
           "name": "Planner",
           "role": "기획/태스크 관리",
           "cron": "0 */2 * * *",
-          "lastRun": "2026-04-05 13:09:38"
+          "lastRun": "2026-04-05 13:16:04"
         },
         {
           "name": "QA",
           "role": "코드 검증",
           "cron": "30 */3 * * *",
-          "lastRun": "2026-04-05 13:09:38"
+          "lastRun": "2026-04-05 13:15:17"
         },
         {
           "name": "PM",
@@ -139,7 +139,7 @@
           "lastRun": "2026-04-05 09:00:02"
         }
       ],
-      "recentLog": "You've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 09:30:40] Dev1 완료\n[2026-04-05 10:00:40] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 10:00:42] Dev1 완료\nerror: could not lock config file .git/config: File exists\n[2026-04-05 12:15:09] Dev1 실행\nCredit balance is too low\n[2026-04-05 12:15:12] Dev1 완료\n[2026-04-05 13:09:38] Dev1 실행"
+      "recentLog": "- `vcr/page.tsx`: `Suspense` 래퍼 추가\n2. **EMSEC sub_industry 3단계** (`07a19e7`)\n- `lib/analysis/types.ts`: `Level`에 `'subIndustry'` 추가\n- `app/api/analysis/route.ts`: `getSectorGroups` sub_industry leaf 레벨 처리 + 레이블\n- `sidebar.tsx`: sectors 사이드바에 3단계 `SelectItem` 렌더링 + `si:` prefix → `level:'subIndustry'` 핸들러\n**tsc 0건 | push 완료 (`07a19e7` → `931ea77`)**\n[2026-04-05 13:18:16] Dev1 완료\n[2026-04-05 13:18:16] status.json 업데이트 완료"
     },
     {
       "name": "ReviewBot",
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "코드 수정/안정화",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 12:15:12"
+          "lastRun": "2026-04-05 13:11:36"
         },
         {
           "name": "Pipeline",
@@ -179,20 +179,23 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "[2026-04-05 08:49:36] Dev1 완료\n[2026-04-05 09:19:36] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 09:19:38] Dev1 완료\n[2026-04-05 09:49:38] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 09:49:40] Dev1 완료\n[2026-04-05 12:15:10] Dev1 실행\nCredit balance is too low\n[2026-04-05 12:15:12] Dev1 완료"
+      "recentLog": "- `pipeline.mjs`: `--manual` 플래그 미포함 시 자동 종료 (Sanghun 2026-04-05 지시) — 커밋\n- 데이터 동기화: keywords.json (done 업데이트), pending-links.json (14건 신규), products.json, ranks/ (4건 신규)\n- TASKS.md 업데이트: 순회 #4 현황 기록\n- 커밋 & 푸시: `418eb99`\n**현재 상태**\n- 모든 Bug (002~005) ✅ 완료\n- pending-links 14개 Sanghun 파트너스 링크 수신 대기 중\n- 파이프라인 안정화 모드 — `--manual` 플래그로만 실행 가능\n[2026-04-05 13:11:36] Dev1 완료"
     }
   ],
   "recentActivity": [
-    "[2026-04-05 12:54:08] Eddy 실행 완료",
-    "[2026-04-05 13:04:10] Eddy 실행 완료",
-    "[2026-04-05 09:25:54] Dev1 완료",
+    "[2026-04-05 15:34:44] Eddy 실행 완료",
     "[2026-04-05 12:15:12] Dev1 완료",
+    "[done] E2E 49/49 통과 확인, UI 메뉴 정리 커밋, useAuthHydration race condition 수정 (AbortController 추가), QA 보고서 업데이트 - 2026-04-05",
+    "이미 이 결과도 확인했습니다 — `useAuthHydration` 수정 후 49/49 PASS. 이미 커밋/푸시 완료된 결과입니다.",
+    "[2026-04-05 14:20:40] Dev1 완료",
     "[2026-04-05 12:15:12] Dev2 완료",
+    "[done] E2E 테스트 플레이키 수정 (3개 STEP 타이밍 이슈) — 49/49 통과 재확인 (2026-04-05)",
+    "[2026-04-05 14:21:00] Dev2 완료",
     "- **lookup/page.tsx**: PAID + 7일 이내 조건부 청약철회 버튼 표시, 신청 완료 시 접수 메시지 표시",
     "[2026-04-03 23:13:38] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
-    "[2026-04-05 09:49:40] Dev1 완료",
-    "[2026-04-05 12:15:12] Dev1 완료"
+    "- 모든 Bug (002~005) ✅ 완료",
+    "[2026-04-05 13:11:36] Dev1 완료"
   ]
 }
