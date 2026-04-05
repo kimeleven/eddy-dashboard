@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 17:43:23",
+  "updatedAt": "2026-04-05 19:43:25",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-05 17:33:25"
+          "lastRun": "2026-04-05 19:38:17"
         }
       ],
-      "recentLog": "완료.\n**검수 결과:**\n- **ELDO**: Dev1 35차 BUG-QA13-01/02 + WARN-QA14-01 수정 완료. QA 14차에서 BUG-QA14-01(sub_industry 일본어 레이블) 신규 발견 → Dev1 다음 실행 처리 예정.\n- **ReviewBot**: 안정화. 모든 BUG 해결 완료. pending-links 14개 쿠팡 파트너스 링크 Sanghun 대기 중.\n- **DevGate**: 개발 중단 유지. E2E 49/49 PASS 동결.\n- **IRI-Safety**: 개발 중단 유지. BUG-003 수정 완료 동결.\n- **새 텔레그램 메시지**: 없음.\n[2026-04-05 17:33:25] Eddy 실행 완료"
+      "recentLog": "- GitHub: `kimeleven/eldo` (kimeleven 계정)\n- GitLab: `git.mintech.kr/greta/eldo-web` (Eddy SSH)\n- DB: 로컬 `a1111@localhost/eldo` (Neon 미사용)\n**팀 현황:**\n- ELDO: Dev1 Lighthouse 최적화 진행 중 (최근 커밋 `46d34b7`, `8049ab2`)\n- ReviewBot: 자동 포스팅 중단 상태, 쿠팡 직접검색 구조 변경 대기\n- DevGate: 개발 중단 지시됨 (E2E 49/49 PASS 상태로 중단)\n- IRI-Safety: 개발 중단 지시됨 (BUG-003 수정 완료 상태로 중단)\n[2026-04-05 19:38:17] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -112,25 +112,25 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 15:55:52"
+          "lastRun": "2026-04-05 18:01:08"
         },
         {
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "cron": "15,45 * * * *",
-          "lastRun": "2026-04-05 15:56:17"
+          "lastRun": "2026-04-05 17:57:54"
         },
         {
           "name": "Planner",
           "role": "기획/태스크 관리",
           "cron": "0 */2 * * *",
-          "lastRun": "2026-04-05 15:52:05"
+          "lastRun": "2026-04-05 17:54:32"
         },
         {
           "name": "QA",
           "role": "코드 검증",
           "cron": "30 */3 * * *",
-          "lastRun": "2026-04-05 15:53:51"
+          "lastRun": "2026-04-05 17:56:04"
         },
         {
           "name": "PM",
@@ -139,7 +139,7 @@
           "lastRun": "2026-04-05 09:00:02"
         }
       ],
-      "recentLog": "[done] BETA-30 BUG-QA13-01/02 수정 완료 — labelJa 추가 + sector-tree 통합\n완료. 처리 내역:\n**BETA-30 (Dev1 35차)** — QA 13차 버그 수정\n- **BUG-QA13-01 (P2) 해소**: `/api/emsec/tree` 응답에 `labelJa` 추가 (DB 일본어 없어 `labelEn` 폴백). `page-header.tsx`, `company-sidebar.tsx` 모두 `ja` 언어 분기 처리 추가 — 일본어 선택 시 섹터 레이블이 영어로 표시되던 UX 불일치 수정\n- **BUG-QA13-02 (P3) 해소**: `hooks/use-emsec-tree.ts`가 `/api/emsec/sector-tree` 대신 `/api/emsec/tree`를 호출하도록 변경 — 중복 API 라우트 의존성 제거\n커밋: `2539a80`, `b5d2ae7`\n[2026-04-05 15:55:52] Dev1 완료"
+      "recentLog": "[2026-04-05 17:55:54] Dev1 실행\n[done] BUG-QA14-01 fix: analysis/route.ts SectorGroup + lib/analysis/types.ts BaseRow에 labelJa 추가. 빌드 성공. 커밋 46d34b7\n**BETA-31 완료 (Dev1 36차)**\n**처리 내용:**\n- `BUG-QA14-01` 수정 — `analysis/route.ts`의 `SectorGroup` 타입에 `labelJa` 필드 추가 + 5개 `rows.push` 블록에 `labelJa: g.labelJa` 추가\n- `lib/analysis/types.ts`의 `BaseRow`에 `labelJa: string` 추가 → `CorpDistRow`, `RatioChartRow`, `ChangeDistRow` 모두 반영\n- 빌드 성공 (`✓ Compiled successfully`)\n- 커밋: `46d34b7`\n[2026-04-05 18:01:08] Dev1 완료"
     },
     {
       "name": "ReviewBot",
@@ -152,7 +152,7 @@
           "name": "Dev1",
           "role": "코드 수정/안정화",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 15:46:20"
+          "lastRun": "2026-04-05 17:47:40"
         },
         {
           "name": "Pipeline",
@@ -179,11 +179,11 @@
           "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "Already up to date.\n[2026-04-05 15:45:20] Dev1 실행\n[done] 2026-04-05 Dev1 순회 — 할당 태스크 없음. 모든 BUG(001~005) 해결 완료, Phase 25 안정화 모드. 파트너스 링크 14개 Sanghun 수신 대기 중. 추가 작업 없음.\n**Dev1 순회 결과:**\n- **QA 버그**: 전체 해결 완료 (BUG-001~005 모두 ✅)\n- **TASKS.md**: 미완료 태스크 없음 (모든 체크박스 ✅)\n- **현재 상태**: Phase 25 안정화 모드 — `--manual` 플래그 적용, 파트너스 링크 14개 Sanghun 수신 대기 중\n- **추가 작업**: 없음 (토큰 절약 모드 준수)\n[2026-04-05 15:46:20] Dev1 완료"
+      "recentLog": "Already up to date.\n[2026-04-05 17:46:22] Dev1 실행\n[done] link-request 스텝 영구 비활성화 (URGENT 0 준수)\n완료.\n**처리 내용**: `pipeline.mjs`의 `link-request` 스텝이 여전히 활성화되어 있어 URGENT 0 위반 상태였음. 주석 처리하여 영구 비활성화 완료.\n- `telegram-request` 스텝: 이미 비활성화됨 ✅\n- `link-request` 스텝: 이번에 비활성화 ✅ (커밋: `5ad50ed`)\n[2026-04-05 17:47:40] Dev1 완료"
     }
   ],
   "recentActivity": [
-    "[2026-04-05 17:33:25] Eddy 실행 완료",
+    "[2026-04-05 19:38:17] Eddy 실행 완료",
     "[2026-04-05 12:15:12] Dev1 완료",
     "[done] E2E 49/49 통과 확인, UI 메뉴 정리 커밋, useAuthHydration race condition 수정 (AbortController 추가), QA 보고서 업데이트 - 2026-04-05",
     "이미 이 결과도 확인했습니다 — `useAuthHydration` 수정 후 49/49 PASS. 이미 커밋/푸시 완료된 결과입니다.",
@@ -195,8 +195,8 @@
     "[2026-04-03 23:13:38] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
     "[2026-04-04 16:23:29] Dev1 완료",
-    "- **QA 버그**: 전체 해결 완료 (BUG-001~005 모두 ✅)",
-    "- **TASKS.md**: 미완료 태스크 없음 (모든 체크박스 ✅)",
-    "[2026-04-05 15:46:20] Dev1 완료"
+    "**처리 내용**: `pipeline.mjs`의 `link-request` 스텝이 여전히 활성화되어 있어 URGENT 0 위반 상태였음. 주석 처리하여 영구 비활성화 완료.",
+    "- `link-request` 스텝: 이번에 비활성화 ✅ (커밋: `5ad50ed`)",
+    "[2026-04-05 17:47:40] Dev1 완료"
   ]
 }
