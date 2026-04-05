@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-04-06 07:58:02",
+  "updatedAt": "2026-04-06 08:18:37",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
-    "launchdAgents": 9,
+    "launchdAgents": 11,
     "operatingHours": "월~금 19:00~07:00, 토일 24시간",
     "model": "Sonnet (전체)",
     "telegram": "Eddy PM만 보고"
@@ -20,10 +20,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "24h 30분",
-          "lastRun": "2026-04-06 07:56:18"
+          "lastRun": "2026-04-06 08:18:35"
         }
       ],
-      "recentLog": "| DevGate | ⏸️ 중단 유지 — E2E 53/53 PASS 상태 | `c0449cf` (04-05 22:38) |\n| IRI-Safety | ⏸️ 중단 유지 — 버그 전부 해결 상태 | `53b6a8b` (04-05) |\n**새 텔레그램 메시지:** 없음\n**Sanghun 액션 필요:**\n- ELDO Vercel 배포 → Vercel 토큰\n- ELDO GA4 → `NEXT_PUBLIC_GA_ID`\n- ReviewBot 포스팅 → 쿠팡 파트너스 링크 직접 제공\n[2026-04-06 07:56:18] Eddy 실행 완료"
+      "recentLog": "📋 팀 현황:\n- **ELDO**: BETA-37 완료 — VCR 검색 기능 + 빌드 0오류 + E2E 3/3 통과 (06:17). Vercel 토큰/GA4 ID 대기 중.\n- **ReviewBot**: 안정화 모드 — 순회 #6, pending-links 14개 대기. 직접 메시지 차단 확인.\n- **DevGate**: 개발 중단 유지 — launchd 비활성화, E2E 53/53 통과 상태.\n- **IRI-Safety**: 개발 중단 유지 — launchd 비활성화, Phase2 도급/협력업체 완료 상태.\n- **XBot**: 보류 중.\n새 텔레그램 메시지 없음. 변동 없음.\n[2026-04-06 08:18:34] Eddy 실행 완료\n[2026-04-06 08:18:35] status.json 업데이트 완료"
     },
     {
       "name": "ELDO",
@@ -120,6 +120,28 @@
         }
       ],
       "recentLog": "[2026-04-05 13:12:11] Dev1 완료\n[2026-04-05 21:57:56] Dev1 실행\nTASKS.md에 **개발 완전 중단** 지시가 있습니다 (Sanghun 직접 지시, 2026-04-05).\n- Open 버그: 없음 (QA_REPORT.md 확인)\n- 미완료 Dev1 태스크: 없음 (BUG-001, 002, 003 모두 완료)\n- 개발 중단 지시 유효 — 재개 지시 전까지 대기\n추가 작업 없음.\n[2026-04-05 21:58:09] Dev1 완료"
+    },
+    {
+      "name": "BizTool",
+      "icon": "💼",
+      "description": "회계/HR 통합 관리 (프로덕션 운영 중)",
+      "schedule": "launchd 2시간 (push 금지 — Sanghun 승인 필요)",
+      "status": "active",
+      "agents": [
+        {
+          "name": "Planner",
+          "role": "TODO 발굴/API 조사",
+          "schedule": "2시간",
+          "lastRun": "2026-04-06 08:18:10"
+        },
+        {
+          "name": "Dev1",
+          "role": "승인된 TODO 개발",
+          "schedule": "2시간",
+          "lastRun": ""
+        }
+      ],
+      "recentLog": "[2026-04-06 08:18:10] 운영 시간 외 — 스킵 (월~금 07:00~19:00)"
     },
     {
       "name": "ReviewBot",

@@ -107,6 +107,18 @@ data = {
             "recentLog": "\n".join(tail(f"{AGENT}/iri-safety-team/dev1.log"))
         },
         {
+            "name": "BizTool",
+            "icon": "💼",
+            "description": "회계/HR 통합 관리 (프로덕션 운영 중)",
+            "schedule": "launchd 2시간 (push 금지 — Sanghun 승인 필요)",
+            "status": "active",
+            "agents": [
+                {"name": "Planner", "role": "TODO 발굴/API 조사", "schedule": "2시간", "lastRun": last_run(f"{AGENT}/biztool-team/planner.log")},
+                {"name": "Dev1", "role": "승인된 TODO 개발", "schedule": "2시간", "lastRun": last_run(f"{AGENT}/biztool-team/dev1.log")}
+            ],
+            "recentLog": "\n".join(tail(f"{AGENT}/biztool-team/planner.log"))
+        },
+        {
             "name": "ReviewBot",
             "icon": "📝",
             "description": "사봤쪄 리뷰 블로그 (자동 포스팅 중단)",
