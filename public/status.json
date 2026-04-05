@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-04-05 22:22:26",
+  "updatedAt": "2026-04-05 23:57:57",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
-    "launchdAgents": 16,
+    "launchdAgents": 9,
     "operatingHours": "월~금 19:00~07:00, 토일 24시간",
     "model": "Sonnet (전체)",
     "telegram": "Eddy PM만 보고"
@@ -20,10 +20,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "24h 30분",
-          "lastRun": "2026-04-05 22:21:39"
+          "lastRun": "2026-04-05 23:57:26"
         }
       ],
-      "recentLog": "[2026-04-05 22:20:36] Eddy 실행 시작\n보고 완료.\n**요약:**\n- **신규 텔레그램 메시지**: 없음\n- **ELDO**: BETA-32/QA17차 통과, BETA-33(VCR-C 프롬프트 버튼) 진행 중\n- **ReviewBot**: 텔레그램 직접 전송 차단 정상, pending-links 14개 대기\n- **DevGate/IRI-Safety**: 중단 지시 반영, 에이전트 비활성화 완료\n- **XBot**: 보류 유지\n[2026-04-05 22:21:39] Eddy 실행 완료"
+      "recentLog": "**전체 팀 현황 (직접 확인)**\n- **ELDO**: BETA-32 완료 + QA 17차 통과. BETA-33(VCR-C 프롬프트 버튼) Dev1 착수 예정. 30분 주기 정상 가동 중.\n- **ReviewBot**: 안정화 모드. pending-links 14개 대기. Sanghun 파트너스 링크 필요.\n- **DevGate**: 개발 중단 — launchctl에서 완전 unloaded 확인.\n- **IRI-Safety**: 개발 중단 — TASKS.md에는 \"완료\"로 기록됐으나 실제로 로드 상태였음. **이번에 실제 unload 완료** (dev1/dev2/planner/qa 4개).\n**처리**: IRI-Safety 에이전트 실제 비활성화 / 텔레그램 보고 / 커밋+푸시\n[2026-04-05 23:57:26] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
@@ -70,7 +70,7 @@
           "name": "Dev1",
           "role": "개발 + 버그 수정",
           "schedule": "24시간",
-          "lastRun": "2026-04-05 21:57:54"
+          "lastRun": "2026-04-05 22:38:22"
         },
         {
           "name": "Dev2",
@@ -85,7 +85,7 @@
           "lastRun": "2026-04-05 22:18:12"
         }
       ],
-      "recentLog": "You've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 09:25:54] Dev1 완료\n[2026-04-05 12:15:09] Dev1 실행\nCredit balance is too low\n[2026-04-05 12:15:12] Dev1 완료\n[2026-04-05 13:09:38] Dev1 실행\n[done] E2E 49/49 통과 확인, UI 메뉴 정리 커밋, useAuthHydration race condition 수정 (AbortController 추가), QA 보고서 업데이트 - 2026-04-05\n이미 이 결과도 확인했습니다 — `useAuthHydration` 수정 후 49/49 PASS. 이미 커밋/푸시 완료된 결과입니다.\n[2026-04-05 14:20:40] Dev1 완료\n[2026-04-05 21:57:54] Dev1 실행"
+      "recentLog": "Credit balance is too low\n[2026-04-05 12:15:12] Dev1 완료\n[2026-04-05 13:09:38] Dev1 실행\n[done] E2E 49/49 통과 확인, UI 메뉴 정리 커밋, useAuthHydration race condition 수정 (AbortController 추가), QA 보고서 업데이트 - 2026-04-05\n이미 이 결과도 확인했습니다 — `useAuthHydration` 수정 후 49/49 PASS. 이미 커밋/푸시 완료된 결과입니다.\n[2026-04-05 14:20:40] Dev1 완료\n[2026-04-05 21:57:54] Dev1 실행\n[done] E2E 53/53 통과: developer/projects 페이지 생성 + 테스트 타이밍 수정 (2026-04-05)\n이미 완료된 작업입니다. 해당 태스크가 최종 E2E 53/53 전체 통과 확인 결과였고, 이후 커밋/푸시까지 모두 완료했습니다.\n[2026-04-05 22:38:22] Dev1 완료"
     },
     {
       "name": "IRI-Safety",
@@ -168,14 +168,14 @@
     "status": "active"
   },
   "recentActivity": [
-    "[2026-04-05 22:21:39] Eddy 실행 완료",
     "- PLAN.md: BETA-32 ✅ 완료로 이동, QA 17차 대기로 업데이트",
     "- 미해결 이슈 없음 — 모든 버그 완료",
     "[2026-04-05 22:00:21] Dev1 완료",
     "[2026-04-05 21:59:04] Dev2 (UI) 완료",
-    "[done] E2E 49/49 통과 확인, UI 메뉴 정리 커밋, useAuthHydration race condition 수정 (AbortController 추가), QA 보고서 업데이트 - 2026-04-05",
-    "이미 이 결과도 확인했습니다 — `useAuthHydration` 수정 후 49/49 PASS. 이미 커밋/푸시 완료된 결과입니다.",
     "[2026-04-05 14:20:40] Dev1 완료",
+    "[done] E2E 53/53 통과: developer/projects 페이지 생성 + 테스트 타이밍 수정 (2026-04-05)",
+    "이미 완료된 작업입니다. 해당 태스크가 최종 E2E 53/53 전체 통과 확인 결과였고, 이후 커밋/푸시까지 모두 완료했습니다.",
+    "[2026-04-05 22:38:22] Dev1 완료",
     "총 49 → **53 체크포인트** (21 스텝). 커밋 `e52ab9a` push 완료.",
     "[2026-04-05 21:59:38] Dev2 완료",
     "- 미완료 Dev1 태스크: 없음 (BUG-001, 002, 003 모두 완료)",
