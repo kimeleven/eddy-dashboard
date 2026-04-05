@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-05 09:00:03",
+  "updatedAt": "2026-04-05 09:15:02",
   "system": {
     "host": "MacBook (a1111)",
     "services": [
@@ -22,10 +22,10 @@
           "name": "Eddy",
           "role": "텔레그램 모니터링, PM 총괄",
           "cron": "0,30 * * * *",
-          "lastRun": "2026-04-05 09:00:02"
+          "lastRun": "2026-04-05 09:13:32"
         }
       ],
-      "recentLog": "[2026-04-05 08:33:25] Eddy 실행 완료\n[2026-04-05 08:43:25] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 08:43:27] Eddy 실행 완료\n[2026-04-05 08:53:27] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 08:53:29] Eddy 실행 완료\n[2026-04-05 09:00:01] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 09:00:02] Eddy 실행 완료"
+      "recentLog": "[2026-04-05 08:53:29] Eddy 실행 완료\n[2026-04-05 09:00:01] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 09:00:02] Eddy 실행 완료\n[2026-04-05 09:03:29] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 09:03:30] Eddy 실행 완료\n[2026-04-05 09:13:31] Eddy 실행 시작\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 09:13:32] Eddy 실행 완료"
     },
     {
       "name": "DevGate",
@@ -112,13 +112,13 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 09:00:02"
+          "lastRun": "2026-04-05 09:00:38"
         },
         {
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "cron": "15,45 * * * *",
-          "lastRun": "2026-04-05 08:45:03"
+          "lastRun": "2026-04-05 09:15:02"
         },
         {
           "name": "Planner",
@@ -139,7 +139,7 @@
           "lastRun": "2026-04-05 09:00:02"
         }
       ],
-      "recentLog": "[2026-04-05 08:00:35] Dev1 완료\n[2026-04-05 08:30:00] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 08:30:02] Dev1 완료\n[2026-04-05 08:30:35] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 08:30:37] Dev1 완료\n[2026-04-05 09:00:00] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 09:00:02] Dev1 완료"
+      "recentLog": "[2026-04-05 08:30:02] Dev1 완료\n[2026-04-05 08:30:35] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 08:30:37] Dev1 완료\n[2026-04-05 09:00:00] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 09:00:02] Dev1 완료\n[2026-04-05 09:00:37] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 09:00:38] Dev1 완료"
     },
     {
       "name": "ReviewBot",
@@ -183,8 +183,8 @@
     }
   ],
   "recentActivity": [
-    "[2026-04-05 08:53:29] Eddy 실행 완료",
-    "[2026-04-05 09:00:02] Eddy 실행 완료",
+    "[2026-04-05 09:03:30] Eddy 실행 완료",
+    "[2026-04-05 09:13:32] Eddy 실행 완료",
     "[2026-04-05 07:25:50] Dev1 완료",
     "[2026-04-05 08:25:52] Dev1 완료",
     "[2026-04-05 07:43:26] Dev2 완료",
