@@ -1,202 +1,187 @@
 {
-  "updatedAt": "2026-04-05 21:57:54",
+  "updatedAt": "2026-04-05 22:05:02",
   "system": {
     "host": "MacBook (a1111)",
-    "services": [
-      "Claude Max",
-      "Gemini 2.5",
-      "Imagen 4"
-    ],
-    "cronJobs": 0,
-    "telegram": "Eddy Bot (30분마다)"
+    "scheduler": "launchd",
+    "launchdAgents": 16,
+    "operatingHours": "월~금 19:00~07:00, 토일 24시간",
+    "model": "Sonnet (전체)",
+    "telegram": "Eddy PM만 보고"
   },
   "teams": [
     {
       "name": "Eddy",
       "icon": "🧠",
-      "description": "Personal AI Agent",
-      "schedule": "24h (30분마다)",
+      "description": "유일한 PM — 전체 팀 관리 + Sanghun 보고",
+      "schedule": "launchd 30분",
       "status": "active",
       "agents": [
         {
-          "name": "Eddy",
-          "role": "텔레그램 모니터링, PM 총괄",
-          "cron": "0,30 * * * *",
-          "lastRun": "2026-04-05 21:57:54"
+          "name": "Eddy PM",
+          "role": "텔레그램 모니터링, 전체 팀 검수/보고",
+          "schedule": "30분",
+          "lastRun": "2026-04-05 21:59:19"
         }
       ],
-      "recentLog": "전체 팀 검수 완료. 텔레그램 보고 완료.\n**요약:**\n- 신규 텔레그램 지시 없음\n- **ELDO**: BETA-32 Lighthouse 최적화 완료, QA 17차 대기\n- **ReviewBot**: 안정화 모드, 파트너스 링크 14건 대기\n- **DevGate/IRI-Safety**: 개발 중단 상태 유지\n- **XBot**: 보류 유지\n[2026-04-05 21:56:38] Eddy 실행 완료\n[2026-04-05 21:57:54] Eddy 실행 시작"
-    },
-    {
-      "name": "DevGate",
-      "icon": "🏗️",
-      "description": "외주 개발 플랫폼",
-      "schedule": "19:00~07:00",
-      "status": "paused",
-      "agents": [
-        {
-          "name": "Dev1",
-          "role": "기능 개발",
-          "cron": ":00 (19~07)",
-          "lastRun": "2026-04-05 14:20:40"
-        },
-        {
-          "name": "Dev2",
-          "role": "기능 개발",
-          "cron": ":30 (19~07)",
-          "lastRun": "2026-04-05 14:21:00"
-        },
-        {
-          "name": "Planner",
-          "role": "기획/태스크 관리",
-          "cron": "2h간격",
-          "lastRun": "2026-04-03 23:19:49"
-        },
-        {
-          "name": "QA",
-          "role": "코드 검증",
-          "cron": "3h간격",
-          "lastRun": "2026-04-05 21:57:54"
-        },
-        {
-          "name": "PM",
-          "role": "텔레그램 보고",
-          "cron": ":05 (19~07)",
-          "lastRun": "2026-04-04 00:11:50"
-        }
-      ],
-      "recentLog": "[2026-04-05 09:25:52] Dev1 실행\nYou've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 09:25:54] Dev1 완료\n[2026-04-05 12:15:09] Dev1 실행\nCredit balance is too low\n[2026-04-05 12:15:12] Dev1 완료\n[2026-04-05 13:09:38] Dev1 실행\n[done] E2E 49/49 통과 확인, UI 메뉴 정리 커밋, useAuthHydration race condition 수정 (AbortController 추가), QA 보고서 업데이트 - 2026-04-05\n이미 이 결과도 확인했습니다 — `useAuthHydration` 수정 후 49/49 PASS. 이미 커밋/푸시 완료된 결과입니다.\n[2026-04-05 14:20:40] Dev1 완료"
-    },
-    {
-      "name": "LiveOrder",
-      "icon": "🛒",
-      "description": "라이브커머스 주문 플랫폼",
-      "schedule": "19:00~07:00",
-      "status": "paused",
-      "agents": [
-        {
-          "name": "Dev1",
-          "role": "기능 개발",
-          "cron": ":10 (19~07)",
-          "lastRun": "2026-04-04 16:23:29"
-        },
-        {
-          "name": "Planner",
-          "role": "기획/태스크 관리",
-          "cron": "2h간격",
-          "lastRun": "2026-04-03 23:23:38"
-        },
-        {
-          "name": "QA",
-          "role": "코드 검증",
-          "cron": "3h간격",
-          "lastRun": "2026-04-03 22:54:28"
-        },
-        {
-          "name": "PM",
-          "role": "텔레그램 보고",
-          "cron": ":15 (19~07)",
-          "lastRun": "2026-04-03 23:19:33"
-        }
-      ],
-      "recentLog": "## Task 33 — 전자상거래법 대응 (commit 012ec5a)\n- **OrderConfirmation.tsx**: 청약철회 권리 안내 박스 추가 (전자상거래법 제13조) — 7일 이내 신청 가능, 주문조회 경로 안내\n- **POST /api/orders/[id]/withdraw** (신규): 청약철회 신청 API\n- `buyerPhone` 매칭으로 인증\n- PAID 상태 + 결제 후 7일 이내 검증\n- 관리자에게 이메일 알림 발송 (관리자가 수동 환불 처리)\n- **lookup/page.tsx**: PAID + 7일 이내 조건부 청약철회 버튼 표시, 신청 완료 시 접수 메시지 표시\n[2026-04-03 23:13:38] Dev1 완료\n[2026-04-04 16:23:29] Dev1 완료\n[2026-04-04 16:23:29] Dev1 완료"
+      "recentLog": "[2026-04-05 21:57:54] Eddy 실행 시작\n텔레그램 보고 완료.\n**팀 현황 요약:**\n- **ELDO**: BETA-32 Lighthouse 최적화 완료, QA 17차 진행 중. 미해결 이슈 없음.\n- **ReviewBot**: 안정화 모드. 자동 포스팅 중단 유지. pending 링크 14개 Sanghun 제공 대기.\n- **DevGate**: 개발 중단 유지. E2E 49/49 PASS. Apr 8 크레딧 리셋 대기.\n- **IRI-Safety**: 개발 중단 유지. 버그 3건 모두 해결됨.\n- **신규 텔레그램 메시지**: 없음\n[2026-04-05 21:59:19] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
       "icon": "📊",
       "description": "기업 재무분석 플랫폼",
-      "schedule": "24h (30분마다)",
+      "schedule": "launchd 2시간",
       "status": "active",
       "agents": [
         {
           "name": "Dev1",
           "role": "백엔드/API/DB",
-          "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 20:05:09"
+          "schedule": "2시간",
+          "lastRun": "2026-04-05 22:00:21"
         },
         {
           "name": "Dev2",
           "role": "UI/UX/다크모드",
-          "cron": "15,45 * * * *",
-          "lastRun": "2026-04-05 20:02:34"
+          "schedule": "2시간",
+          "lastRun": "2026-04-05 21:59:04"
         },
         {
           "name": "Planner",
           "role": "기획/태스크 관리",
-          "cron": "0 */2 * * *",
-          "lastRun": "2026-04-05 19:58:43"
+          "schedule": "2시간",
+          "lastRun": "2026-04-05 22:00:30"
         },
         {
           "name": "QA",
-          "role": "코드 검증",
-          "cron": "30 */3 * * *",
-          "lastRun": "2026-04-05 19:59:22"
-        },
-        {
-          "name": "PM",
-          "role": "텔레그램 보고",
-          "cron": "0 * * * *",
-          "lastRun": "2026-04-05 09:00:02"
+          "role": "E2E 테스트/코드 검증",
+          "schedule": "2시간",
+          "lastRun": "2026-04-05 21:59:45"
         }
       ],
-      "recentLog": "| `app/vcr/page.tsx` — VcrClient dynamic import (ssr:false) | ✅ 신규 적용 |\n| `sectors/page.tsx` — Recharts 5개 차트 dynamic import | ✅ 이미 완료 확인 |\n| `<img>` → `next/image` | ✅ `<img>` 태그 없음 확인 |\n| API revalidate (emsec/emtec/stats/corps) | ✅ BETA-27에서 이미 완료 |\n| preconnect 힌트 | ✅ GTM preconnect 이미 존재 |\n| WARN-QA16-01: `sector-tree` 데드 라우트 삭제 | ✅ 해결 |\n| `tsc --noEmit` | ✅ 오류 0건 |\n커밋: `4f23cce` → push 완료. QA 17차로 넘깁니다.\n[2026-04-05 20:05:09] Dev1 완료"
+      "recentLog": "[done] Dev1 39차 — BETA-32 완료 확인. PLAN.md/TASKS.md/QA_REPORT.md 동기화. WARN-QA16-01 해결(4f23cce) 반영. 미해결 이슈 없음. QA 17차 대기.\n**Dev1 39차 완료**\n- BETA-32 (`4f23cce`) 이미 완료된 상태 확인\n- QA 17차(`be9f9ec`)도 이미 실행돼 WARN-QA16-01 해결 표시\n- PLAN.md: BETA-32 ✅ 완료로 이동, QA 17차 대기로 업데이트\n- TASKS.md: 39차로 업데이트, QA 17차 대기 반영\n- 미해결 이슈 없음 — 모든 버그 완료\n- 다음: QA 17차 결과 또는 Planner의 BETA-33 배정 대기\n[2026-04-05 22:00:21] Dev1 완료"
     },
     {
-      "name": "ReviewBot",
-      "icon": "📝",
-      "description": "사봤쪄 리뷰 블로그",
-      "schedule": "Dev1 30분마다 + Pipeline 매시",
+      "name": "DevGate",
+      "icon": "🏗️",
+      "description": "외주 개발 플랫폼 (기업 신뢰 기반)",
+      "schedule": "launchd 24시간",
       "status": "active",
       "agents": [
         {
           "name": "Dev1",
-          "role": "코드 수정/안정화",
-          "cron": "*/30 * * * *",
-          "lastRun": "2026-04-05 21:51:55"
+          "role": "개발 + 버그 수정",
+          "schedule": "24시간",
+          "lastRun": "2026-04-05 21:57:54"
+        },
+        {
+          "name": "Dev2",
+          "role": "E2E 테스트 확장",
+          "schedule": "24시간",
+          "lastRun": "2026-04-05 21:59:38"
+        },
+        {
+          "name": "QA",
+          "role": "E2E 테스트 검증",
+          "schedule": "24시간",
+          "lastRun": "2026-04-05 21:57:54"
+        }
+      ],
+      "recentLog": "You've hit your limit · resets Apr 8 at 1pm (Asia/Seoul)\n[2026-04-05 09:25:54] Dev1 완료\n[2026-04-05 12:15:09] Dev1 실행\nCredit balance is too low\n[2026-04-05 12:15:12] Dev1 완료\n[2026-04-05 13:09:38] Dev1 실행\n[done] E2E 49/49 통과 확인, UI 메뉴 정리 커밋, useAuthHydration race condition 수정 (AbortController 추가), QA 보고서 업데이트 - 2026-04-05\n이미 이 결과도 확인했습니다 — `useAuthHydration` 수정 후 49/49 PASS. 이미 커밋/푸시 완료된 결과입니다.\n[2026-04-05 14:20:40] Dev1 완료\n[2026-04-05 21:57:54] Dev1 실행"
+    },
+    {
+      "name": "IRI-Safety",
+      "icon": "⛑️",
+      "description": "산업안전 컴플라이언스 SaaS",
+      "schedule": "launchd 24시간",
+      "status": "active",
+      "agents": [
+        {
+          "name": "Planner",
+          "role": "법안 검토/기능 기획",
+          "schedule": "24시간",
+          "lastRun": "2026-04-05 22:00:37"
+        },
+        {
+          "name": "Dev1",
+          "role": "백엔드 개발",
+          "schedule": "24시간",
+          "lastRun": "2026-04-05 21:58:09"
+        },
+        {
+          "name": "Dev2",
+          "role": "프론트엔드 개발",
+          "schedule": "24시간",
+          "lastRun": "2026-04-05 21:58:15"
+        },
+        {
+          "name": "QA",
+          "role": "E2E 테스트",
+          "schedule": "24시간",
+          "lastRun": "2026-04-05 22:04:07"
+        }
+      ],
+      "recentLog": "[2026-04-05 13:12:11] Dev1 완료\n[2026-04-05 21:57:56] Dev1 실행\nTASKS.md에 **개발 완전 중단** 지시가 있습니다 (Sanghun 직접 지시, 2026-04-05).\n- Open 버그: 없음 (QA_REPORT.md 확인)\n- 미완료 Dev1 태스크: 없음 (BUG-001, 002, 003 모두 완료)\n- 개발 중단 지시 유효 — 재개 지시 전까지 대기\n추가 작업 없음.\n[2026-04-05 21:58:09] Dev1 완료"
+    },
+    {
+      "name": "ReviewBot",
+      "icon": "📝",
+      "description": "사봤쪄 리뷰 블로그 (자동 포스팅 중단)",
+      "schedule": "launchd 2시간 (Dev1만)",
+      "status": "active",
+      "agents": [
+        {
+          "name": "Dev1",
+          "role": "쿠팡 검색 전환 개발",
+          "schedule": "2시간",
+          "lastRun": "2026-04-05 22:01:22"
         },
         {
           "name": "Pipeline",
           "role": "자동 포스팅",
-          "cron": "0 * * * *",
+          "schedule": "중단",
           "lastRun": ""
-        },
-        {
-          "name": "Planner",
-          "role": "키워드 전략/SEO",
-          "cron": "보류",
-          "lastRun": "2026-04-03 09:36:24"
-        },
-        {
-          "name": "QA",
-          "role": "리뷰 품질 평가",
-          "cron": "보류",
-          "lastRun": "2026-04-03 12:07:40"
-        },
-        {
-          "name": "PM",
-          "role": "텔레그램 보고",
-          "cron": "보류",
-          "lastRun": "2026-04-03 14:02:51"
         }
       ],
-      "recentLog": "- **현재 모드**: Phase 25 안정화 모드, --manual 플래그 적용\n- **대기 중**: 파트너스 링크 14개 Sanghun 수신 대기\n신규 구현 필요 태스크 없음.\n[2026-04-05 19:50:10] Dev1 완료\nAlready up to date.\n[2026-04-05 21:50:11] Dev1 실행\n[done] 모든 Dev1 태스크 완료 확인. pending-links 14개 파트너스 링크 대기 중. 코드 이상 없음.\n로그 기록 완료. 현재 모든 Dev1 작업이 완료된 상태로, 추가 구현 작업 없음. Sanghun의 파트너스 링크 수신 대기 중.\n[2026-04-05 21:51:55] Dev1 완료"
+      "recentLog": "[2026-04-05 21:51:55] Dev1 완료\nAlready up to date.\n[2026-04-05 21:57:56] Dev1 실행\n[done] PLAN.md ISSUE-QA-4 해결 완료 표기 동기화. 모든 Dev1 태스크 완료 상태. pending-links 14개 Sanghun 링크 수신 대기.\n완료. 현재 상태 요약:\n- **처리**: PLAN.md의 ISSUE-QA-4가 해결됐음에도 ⚠️로 남아있어 ✅로 업데이트\n- **현황**: 모든 Dev1 태스크 완료 상태. 신규 버그 없음.\n- **대기**: `pending-links.json` 14개 항목 — Sanghun이 파트너스 링크 회신 시 `--manual` 플래그로 파이프라인 재개 가능\n[2026-04-05 22:01:22] Dev1 완료"
+    },
+    {
+      "name": "XBot",
+      "icon": "🐦",
+      "description": "X.com 자동화",
+      "schedule": "중단",
+      "status": "paused",
+      "agents": [],
+      "recentLog": "봇 감지 차단으로 중단 (2026-04-05~)"
+    },
+    {
+      "name": "LiveOrder",
+      "icon": "🛒",
+      "description": "라이브커머스 주문 플랫폼",
+      "schedule": "종료",
+      "status": "paused",
+      "agents": [],
+      "recentLog": "개발 종료 (2026-04-03~)"
     }
   ],
+  "weeklyReport": {
+    "schedule": "매주 일요일 23:59",
+    "format": "팀별 개별 PDF → 텔레그램 전송",
+    "status": "active"
+  },
   "recentActivity": [
-    "[2026-04-05 21:56:38] Eddy 실행 완료",
-    "[2026-04-05 12:15:12] Dev1 완료",
+    "[2026-04-05 21:59:19] Eddy 실행 완료",
+    "- PLAN.md: BETA-32 ✅ 완료로 이동, QA 17차 대기로 업데이트",
+    "- 미해결 이슈 없음 — 모든 버그 완료",
+    "[2026-04-05 22:00:21] Dev1 완료",
+    "[2026-04-05 21:59:04] Dev2 (UI) 완료",
     "[done] E2E 49/49 통과 확인, UI 메뉴 정리 커밋, useAuthHydration race condition 수정 (AbortController 추가), QA 보고서 업데이트 - 2026-04-05",
     "이미 이 결과도 확인했습니다 — `useAuthHydration` 수정 후 49/49 PASS. 이미 커밋/푸시 완료된 결과입니다.",
     "[2026-04-05 14:20:40] Dev1 완료",
-    "[2026-04-05 12:15:12] Dev2 완료",
-    "[done] E2E 테스트 플레이키 수정 (3개 STEP 타이밍 이슈) — 49/49 통과 재확인 (2026-04-05)",
-    "[2026-04-05 14:21:00] Dev2 완료",
-    "- **lookup/page.tsx**: PAID + 7일 이내 조건부 청약철회 버튼 표시, 신청 완료 시 접수 메시지 표시",
-    "[2026-04-03 23:13:38] Dev1 완료",
-    "[2026-04-04 16:23:29] Dev1 완료",
-    "[2026-04-04 16:23:29] Dev1 완료",
-    "[done] 모든 Dev1 태스크 완료 확인. pending-links 14개 파트너스 링크 대기 중. 코드 이상 없음.",
-    "로그 기록 완료. 현재 모든 Dev1 작업이 완료된 상태로, 추가 구현 작업 없음. Sanghun의 파트너스 링크 수신 대기 중.",
-    "[2026-04-05 21:51:55] Dev1 완료"
+    "총 49 → **53 체크포인트** (21 스텝). 커밋 `e52ab9a` push 완료.",
+    "[2026-04-05 21:59:38] Dev2 완료",
+    "- 미완료 Dev1 태스크: 없음 (BUG-001, 002, 003 모두 완료)",
+    "[2026-04-05 21:58:09] Dev1 완료",
+    "[2026-04-05 21:58:15] Dev2 완료",
+    "- **현황**: 모든 Dev1 태스크 완료 상태. 신규 버그 없음.",
+    "[2026-04-05 22:01:22] Dev1 완료"
   ]
 }

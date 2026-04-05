@@ -21,20 +21,11 @@ def last_run(path):
             return m.group(1)
     return ""
 
-def get_hour():
-    return datetime.now().hour
-
-hour = get_hour()
-# DevGate/LiveOrder는 보류 중 (2026-04-04~)
-dg_status = "paused"
-lo_status = "paused"
-# ELDO는 24시간 운영
-eldo_status = "active"
-
-cron_count = 0
+# launchd 에이전트 수 (cron 아님)
+launchd_count = 0
 try:
-    r = subprocess.run(["crontab", "-l"], capture_output=True, text=True)
-    cron_count = len([l for l in r.stdout.splitlines() if l.strip() and not l.startswith("#")])
+    r = subprocess.run(["launchctl", "list"], capture_output=True, text=True)
+    launchd_count = len([l for l in r.stdout.splitlines() if "com.eddy." in l])
 except:
     pass
 
@@ -42,12 +33,13 @@ except:
 activity = []
 for logfile in [
     "eddy/eddy.log",
+    "eldo-team/dev1.log", "eldo-team/dev2.log",
     "devgate-team/dev1.log", "devgate-team/dev2.log",
-    "liveorder-team/dev1.log",
+    "iri-safety-team/dev1.log", "iri-safety-team/dev2.log",
     "reviewbot-team/dev1.log",
 ]:
     for line in tail(os.path.join(AGENT, logfile), 5):
-        if any(k in line for k in ["[done]", "완료", "push 완료", "커밋"]):
+        if any(k in line for k in ["[done]", "완료", "push 완료", "커밋", "PASS", "FAIL"]):
             activity.append(line)
 activity = activity[-15:]
 
@@ -55,82 +47,101 @@ data = {
     "updatedAt": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
     "system": {
         "host": "MacBook (a1111)",
-        "services": ["Claude Max", "Gemini 2.5", "Imagen 4"],
-        "cronJobs": cron_count,
-        "telegram": "Eddy Bot (30분마다)"
+        "scheduler": "launchd",
+        "launchdAgents": launchd_count,
+        "operatingHours": "월~금 19:00~07:00, 토일 24시간",
+        "model": "Sonnet (전체)",
+        "telegram": "Eddy PM만 보고"
     },
     "teams": [
         {
             "name": "Eddy",
             "icon": "🧠",
-            "description": "Personal AI Agent",
-            "schedule": "24h (30분마다)",
+            "description": "유일한 PM — 전체 팀 관리 + Sanghun 보고",
+            "schedule": "launchd 30분",
             "status": "active",
             "agents": [
-                {"name": "Eddy", "role": "텔레그램 모니터링, PM 총괄", "cron": "0,30 * * * *", "lastRun": last_run(f"{AGENT}/eddy/eddy.log")}
+                {"name": "Eddy PM", "role": "텔레그램 모니터링, 전체 팀 검수/보고", "schedule": "30분", "lastRun": last_run(f"{AGENT}/eddy/eddy.log")}
             ],
             "recentLog": "\n".join(tail(f"{AGENT}/eddy/eddy.log"))
-        },
-        {
-            "name": "DevGate",
-            "icon": "🏗️",
-            "description": "외주 개발 플랫폼",
-            "schedule": "19:00~07:00",
-            "status": dg_status,
-            "agents": [
-                {"name": "Dev1", "role": "기능 개발", "cron": ":00 (19~07)", "lastRun": last_run(f"{AGENT}/devgate-team/dev1.log")},
-                {"name": "Dev2", "role": "기능 개발", "cron": ":30 (19~07)", "lastRun": last_run(f"{AGENT}/devgate-team/dev2.log")},
-                {"name": "Planner", "role": "기획/태스크 관리", "cron": "2h간격", "lastRun": last_run(f"{AGENT}/devgate-team/planner.log")},
-                {"name": "QA", "role": "코드 검증", "cron": "3h간격", "lastRun": last_run(f"{AGENT}/devgate-team/qa.log")},
-                {"name": "PM", "role": "텔레그램 보고", "cron": ":05 (19~07)", "lastRun": last_run(f"{AGENT}/devgate-team/pm.log")}
-            ],
-            "recentLog": "\n".join(tail(f"{AGENT}/devgate-team/dev1.log"))
-        },
-        {
-            "name": "LiveOrder",
-            "icon": "🛒",
-            "description": "라이브커머스 주문 플랫폼",
-            "schedule": "19:00~07:00",
-            "status": lo_status,
-            "agents": [
-                {"name": "Dev1", "role": "기능 개발", "cron": ":10 (19~07)", "lastRun": last_run(f"{AGENT}/liveorder-team/dev1.log")},
-                {"name": "Planner", "role": "기획/태스크 관리", "cron": "2h간격", "lastRun": last_run(f"{AGENT}/liveorder-team/planner.log")},
-                {"name": "QA", "role": "코드 검증", "cron": "3h간격", "lastRun": last_run(f"{AGENT}/liveorder-team/qa.log")},
-                {"name": "PM", "role": "텔레그램 보고", "cron": ":15 (19~07)", "lastRun": last_run(f"{AGENT}/liveorder-team/pm.log")}
-            ],
-            "recentLog": "\n".join(tail(f"{AGENT}/liveorder-team/dev1.log"))
         },
         {
             "name": "ELDO",
             "icon": "📊",
             "description": "기업 재무분석 플랫폼",
-            "schedule": "24h (30분마다)",
-            "status": eldo_status,
+            "schedule": "launchd 2시간",
+            "status": "active",
             "agents": [
-                {"name": "Dev1", "role": "백엔드/API/DB", "cron": "*/30 * * * *", "lastRun": last_run(f"{AGENT}/eldo-team/dev1.log")},
-                {"name": "Dev2", "role": "UI/UX/다크모드", "cron": "15,45 * * * *", "lastRun": last_run(f"{AGENT}/eldo-team/dev2.log")},
-                {"name": "Planner", "role": "기획/태스크 관리", "cron": "0 */2 * * *", "lastRun": last_run(f"{AGENT}/eldo-team/planner.log")},
-                {"name": "QA", "role": "코드 검증", "cron": "30 */3 * * *", "lastRun": last_run(f"{AGENT}/eldo-team/qa.log")},
-                {"name": "PM", "role": "텔레그램 보고", "cron": "0 * * * *", "lastRun": last_run(f"{AGENT}/eldo-team/pm.log")}
+                {"name": "Dev1", "role": "백엔드/API/DB", "schedule": "2시간", "lastRun": last_run(f"{AGENT}/eldo-team/dev1.log")},
+                {"name": "Dev2", "role": "UI/UX/다크모드", "schedule": "2시간", "lastRun": last_run(f"{AGENT}/eldo-team/dev2.log")},
+                {"name": "Planner", "role": "기획/태스크 관리", "schedule": "2시간", "lastRun": last_run(f"{AGENT}/eldo-team/planner.log")},
+                {"name": "QA", "role": "E2E 테스트/코드 검증", "schedule": "2시간", "lastRun": last_run(f"{AGENT}/eldo-team/qa.log")}
             ],
             "recentLog": "\n".join(tail(f"{AGENT}/eldo-team/dev1.log"))
         },
         {
-            "name": "ReviewBot",
-            "icon": "📝",
-            "description": "사봤쪄 리뷰 블로그",
-            "schedule": "Dev1 30분마다 + Pipeline 매시",
+            "name": "DevGate",
+            "icon": "🏗️",
+            "description": "외주 개발 플랫폼 (기업 신뢰 기반)",
+            "schedule": "launchd 24시간",
             "status": "active",
             "agents": [
-                {"name": "Dev1", "role": "코드 수정/안정화", "cron": "*/30 * * * *", "lastRun": last_run(f"{AGENT}/reviewbot-team/dev1.log")},
-                {"name": "Pipeline", "role": "자동 포스팅", "cron": "0 * * * *", "lastRun": last_run(f"{AGENT}/reviewbot/data/logs/pipeline.log")},
-                {"name": "Planner", "role": "키워드 전략/SEO", "cron": "보류", "lastRun": last_run(f"{AGENT}/reviewbot-team/planner.log")},
-                {"name": "QA", "role": "리뷰 품질 평가", "cron": "보류", "lastRun": last_run(f"{AGENT}/reviewbot-team/qa.log")},
-                {"name": "PM", "role": "텔레그램 보고", "cron": "보류", "lastRun": last_run(f"{AGENT}/reviewbot-team/pm.log")}
+                {"name": "Dev1", "role": "개발 + 버그 수정", "schedule": "24시간", "lastRun": last_run(f"{AGENT}/devgate-team/dev1.log")},
+                {"name": "Dev2", "role": "E2E 테스트 확장", "schedule": "24시간", "lastRun": last_run(f"{AGENT}/devgate-team/dev2.log")},
+                {"name": "QA", "role": "E2E 테스트 검증", "schedule": "24시간", "lastRun": last_run(f"{AGENT}/devgate-team/qa.log")}
+            ],
+            "recentLog": "\n".join(tail(f"{AGENT}/devgate-team/dev1.log"))
+        },
+        {
+            "name": "IRI-Safety",
+            "icon": "⛑️",
+            "description": "산업안전 컴플라이언스 SaaS",
+            "schedule": "launchd 24시간",
+            "status": "active",
+            "agents": [
+                {"name": "Planner", "role": "법안 검토/기능 기획", "schedule": "24시간", "lastRun": last_run(f"{AGENT}/iri-safety-team/planner.log")},
+                {"name": "Dev1", "role": "백엔드 개발", "schedule": "24시간", "lastRun": last_run(f"{AGENT}/iri-safety-team/dev1.log")},
+                {"name": "Dev2", "role": "프론트엔드 개발", "schedule": "24시간", "lastRun": last_run(f"{AGENT}/iri-safety-team/dev2.log")},
+                {"name": "QA", "role": "E2E 테스트", "schedule": "24시간", "lastRun": last_run(f"{AGENT}/iri-safety-team/qa.log")}
+            ],
+            "recentLog": "\n".join(tail(f"{AGENT}/iri-safety-team/dev1.log"))
+        },
+        {
+            "name": "ReviewBot",
+            "icon": "📝",
+            "description": "사봤쪄 리뷰 블로그 (자동 포스팅 중단)",
+            "schedule": "launchd 2시간 (Dev1만)",
+            "status": "active",
+            "agents": [
+                {"name": "Dev1", "role": "쿠팡 검색 전환 개발", "schedule": "2시간", "lastRun": last_run(f"{AGENT}/reviewbot-team/dev1.log")},
+                {"name": "Pipeline", "role": "자동 포스팅", "schedule": "중단", "lastRun": last_run(f"{AGENT}/reviewbot/data/logs/pipeline.log")}
             ],
             "recentLog": "\n".join(tail(f"{AGENT}/reviewbot-team/dev1.log"))
+        },
+        {
+            "name": "XBot",
+            "icon": "🐦",
+            "description": "X.com 자동화",
+            "schedule": "중단",
+            "status": "paused",
+            "agents": [],
+            "recentLog": "봇 감지 차단으로 중단 (2026-04-05~)"
+        },
+        {
+            "name": "LiveOrder",
+            "icon": "🛒",
+            "description": "라이브커머스 주문 플랫폼",
+            "schedule": "종료",
+            "status": "paused",
+            "agents": [],
+            "recentLog": "개발 종료 (2026-04-03~)"
         }
     ],
+    "weeklyReport": {
+        "schedule": "매주 일요일 23:59",
+        "format": "팀별 개별 PDF → 텔레그램 전송",
+        "status": "active"
+    },
     "recentActivity": activity
 }
 
