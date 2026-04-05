@@ -58,10 +58,10 @@ data = {
             "name": "Eddy",
             "icon": "🧠",
             "description": "유일한 PM — 전체 팀 관리 + Sanghun 보고",
-            "schedule": "launchd 30분",
+            "schedule": "24시간 30분 (주중/주말 무관)",
             "status": "active",
             "agents": [
-                {"name": "Eddy PM", "role": "텔레그램 모니터링, 전체 팀 검수/보고", "schedule": "30분", "lastRun": last_run(f"{AGENT}/eddy/eddy.log")}
+                {"name": "Eddy PM", "role": "텔레그램 모니터링, 전체 팀 검수/보고", "schedule": "24h 30분", "lastRun": last_run(f"{AGENT}/eddy/eddy.log")}
             ],
             "recentLog": "\n".join(tail(f"{AGENT}/eddy/eddy.log"))
         },
@@ -96,13 +96,13 @@ data = {
             "name": "IRI-Safety",
             "icon": "⛑️",
             "description": "산업안전 컴플라이언스 SaaS",
-            "schedule": "launchd 24시간",
+            "schedule": "launchd 2시간",
             "status": "active",
             "agents": [
-                {"name": "Planner", "role": "법안 검토/기능 기획", "schedule": "24시간", "lastRun": last_run(f"{AGENT}/iri-safety-team/planner.log")},
-                {"name": "Dev1", "role": "백엔드 개발", "schedule": "24시간", "lastRun": last_run(f"{AGENT}/iri-safety-team/dev1.log")},
-                {"name": "Dev2", "role": "프론트엔드 개발", "schedule": "24시간", "lastRun": last_run(f"{AGENT}/iri-safety-team/dev2.log")},
-                {"name": "QA", "role": "E2E 테스트", "schedule": "24시간", "lastRun": last_run(f"{AGENT}/iri-safety-team/qa.log")}
+                {"name": "Planner", "role": "법안 검토/기능 기획", "schedule": "2시간", "lastRun": last_run(f"{AGENT}/iri-safety-team/planner.log")},
+                {"name": "Dev1", "role": "백엔드 개발", "schedule": "2시간", "lastRun": last_run(f"{AGENT}/iri-safety-team/dev1.log")},
+                {"name": "Dev2", "role": "프론트엔드 개발", "schedule": "2시간", "lastRun": last_run(f"{AGENT}/iri-safety-team/dev2.log")},
+                {"name": "QA", "role": "E2E 테스트", "schedule": "2시간", "lastRun": last_run(f"{AGENT}/iri-safety-team/qa.log")}
             ],
             "recentLog": "\n".join(tail(f"{AGENT}/iri-safety-team/dev1.log"))
         },
