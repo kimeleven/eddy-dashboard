@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-06 01:57:58",
+  "updatedAt": "2026-04-06 03:57:59",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -20,10 +20,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "24h 30분",
-          "lastRun": "2026-04-06 01:50:20"
+          "lastRun": "2026-04-06 03:55:06"
         }
       ],
-      "recentLog": "| IRI-Safety | 중단 유지 | 04-05 |\n**신규 텔레그램 메시지**: 없음\n**신규 버그/이슈**: 없음\n**대기 중 (Sanghun 액션 필요):**\n- ELDO Vercel 토큰\n- ELDO GA4 속성 ID\n- ReviewBot 쿠팡 파트너스 링크 14개\n[2026-04-06 01:50:20] Eddy 실행 완료"
+      "recentLog": "텔레그램 보고 완료.\n**검수 결과 요약:**\n- **ELDO**: BETA-34(빌드 수정) 완료, BETA-35 E2E 스모크 테스트 Dev1 배정 대기 중. WARN-QA19-01(Info) 신규 발견 — 기능 이상 없음.\n- **ReviewBot**: 자동 포스팅 중단 유지, 직접 전송 차단 완료.\n- **DevGate**: 중단 유지. Phase2 도급/협력업체 완료, QA 61/61 PASS.\n- **IRI-Safety**: 중단 유지. QA 61/61 PASS, 미해결 버그 없음.\n- **새 텔레그램 메시지**: 없음.\n[2026-04-06 03:55:06] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
@@ -36,28 +36,28 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "schedule": "2시간",
-          "lastRun": "2026-04-06 00:03:33"
+          "lastRun": "2026-04-06 02:07:33"
         },
         {
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "schedule": "2시간",
-          "lastRun": "2026-04-06 00:00:27"
+          "lastRun": "2026-04-06 02:00:50"
         },
         {
           "name": "Planner",
           "role": "기획/태스크 관리",
           "schedule": "2시간",
-          "lastRun": "2026-04-06 00:03:45"
+          "lastRun": "2026-04-06 02:08:08"
         },
         {
           "name": "QA",
           "role": "E2E 테스트/코드 검증",
           "schedule": "2시간",
-          "lastRun": "2026-04-06 00:02:45"
+          "lastRun": "2026-04-06 02:04:31"
         }
       ],
-      "recentLog": "[2026-04-06 00:00:21] Dev1 실행\n[done] Dev1 40차: QA 17차 완료 상태 동기화 — QA_REPORT.md 17차 결과 추가, TASKS.md/PLAN.md 상태 업데이트 (ed8a3b4)\n**Dev1 40차 완료** (`ed8a3b4`)\n- **QA_REPORT.md**: QA 17차 결과 추가 (WARN-QA17-01 발견 + `f324f54` 수정 완료 기록)\n- **TASKS.md**: 상태 → QA 17차 완료, Dev1 40차로 헤더 업데이트\n- **PLAN.md**: WARN-QA17-01 수정 커밋 기록, 진행중 섹션 정리\n현재 상태: BETA-32 + QA 17차 전체 완료. 다음 스프린트 Sanghun/Planner 지시 대기.\n[2026-04-06 00:03:33] Dev1 완료"
+      "recentLog": "**Dev1 41차 완료**\n현황:\n- BETA-04~32 전체 완료, QA 17차 완료 (미해결 버그 0건)\n- 코드베이스 전반 검토: company 필터링(EMTEC/EMSEC/거래소), API 라우트, VCR 페이지 — 모두 정상\n- 대기 중인 신규 태스크: TASK-307(Lighthouse 실측, Sanghun 직접), VCR-T 구조 정의(Sanghun), BETA-07 실 데이터(Sanghun) 모두 외부 지시 필요\n- 커밋: `9273af3` (TASKS.md 상태 업데이트)\n신규 스프린트는 Planner 또는 Sanghun 지시 대기 중.\n[2026-04-06 02:07:33] Dev1 완료"
     },
     {
       "name": "DevGate",
@@ -132,7 +132,7 @@
           "name": "Dev1",
           "role": "쿠팡 검색 전환 개발",
           "schedule": "2시간",
-          "lastRun": "2026-04-06 00:03:14"
+          "lastRun": "2026-04-06 02:05:01"
         },
         {
           "name": "Pipeline",
@@ -141,7 +141,7 @@
           "lastRun": ""
         }
       ],
-      "recentLog": "[2026-04-06 00:01:23] Dev1 실행\n[done] 2026-04-06 순회: 모든 Dev1 태스크 완료 상태 확인. QA 이슈 전부 해결. pending-links 14개 대기 중. 신규 작업 없음.\n현재 상태 요약:\n- **Dev1 태스크**: 모두 완료 (`- [ ]` 미완료 항목 없음)\n- **QA 버그**: BUG-001, BUG-002, ISSUE-QA-4 모두 해결됨\n- **코드 상태**: `blog-publisher.mjs` / `pipeline.mjs` 하루 2포스팅 정책 올바르게 적용\n- **대기 중**: pending-links 14개 (Sanghun 파트너스 링크 수신 후 `--manual` 실행 필요)\n- **신규 작업 없음** — 안정화 모드 유지\n[2026-04-06 00:03:14] Dev1 완료"
+      "recentLog": "[2026-04-06 00:03:14] Dev1 완료\nAlready up to date.\n[2026-04-06 02:03:15] Dev1 실행\n[done] 태스크 없음 — 모든 Dev1 태스크 완료 상태. pending-links 14개 Sanghun 링크 대기 중. 코드 이상 없음.\n**Dev1 현황 요약:**\n- 모든 구현 태스크 완료 (Phase 11~21 전체)\n- QA 버그 전무 (BUG-001/002, ISSUE-QA-4 해결 완료)\n- 시스템 대기 상태: `--manual` 플래그, pending-links 14건 Sanghun 파트너스 링크 입력 필요\n- 코드 이상 없음, 추가 작업 없음\n[2026-04-06 02:05:01] Dev1 완료"
     },
     {
       "name": "XBot",
@@ -168,11 +168,9 @@
     "status": "active"
   },
   "recentActivity": [
-    "- **PLAN.md**: WARN-QA17-01 수정 커밋 기록, 진행중 섹션 정리",
-    "현재 상태: BETA-32 + QA 17차 전체 완료. 다음 스프린트 Sanghun/Planner 지시 대기.",
-    "[2026-04-06 00:03:33] Dev1 완료",
-    "- 커밋: `f324f54` (push 완료)",
-    "[2026-04-06 00:00:27] Dev2 (UI) 완료",
+    "- 커밋: `9273af3` (TASKS.md 상태 업데이트)",
+    "[2026-04-06 02:07:33] Dev1 완료",
+    "[2026-04-06 02:00:50] Dev2 (UI) 완료",
     "[2026-04-05 14:20:40] Dev1 완료",
     "[done] E2E 53/53 통과: developer/projects 페이지 생성 + 테스트 타이밍 수정 (2026-04-05)",
     "이미 완료된 작업입니다. 해당 태스크가 최종 E2E 53/53 전체 통과 확인 결과였고, 이후 커밋/푸시까지 모두 완료했습니다.",
@@ -182,6 +180,8 @@
     "- 미완료 Dev1 태스크: 없음 (BUG-001, 002, 003 모두 완료)",
     "[2026-04-05 21:58:09] Dev1 완료",
     "[2026-04-05 21:58:15] Dev2 완료",
-    "[2026-04-06 00:03:14] Dev1 완료"
+    "- 모든 구현 태스크 완료 (Phase 11~21 전체)",
+    "- QA 버그 전무 (BUG-001/002, ISSUE-QA-4 해결 완료)",
+    "[2026-04-06 02:05:01] Dev1 완료"
   ]
 }
