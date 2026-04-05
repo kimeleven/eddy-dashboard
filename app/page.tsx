@@ -17,7 +17,7 @@ const styles = {
 };
 
 function Badge({ status }: { status: string }) {
-  const colors: Record<string, string> = { active: '#238636', scheduled: '#9e6a03', idle: '#30363d', running: '#1f6feb' };
+  const colors: Record<string, string> = { active: '#238636', scheduled: '#9e6a03', idle: '#30363d', running: '#1f6feb', paused: '#6e4009' };
   return <span style={styles.badge(colors[status] || '#30363d')}>{status}</span>;
 }
 
@@ -40,8 +40,10 @@ export default function Dashboard() {
           <table style={styles.table}>
             <tbody>
               <tr><td style={styles.td}>Host</td><td style={styles.td}>{data.system?.host}</td></tr>
-              <tr><td style={styles.td}>AI Services</td><td style={styles.td}>{data.system?.services?.join(', ')}</td></tr>
-              <tr><td style={styles.td}>Cron Jobs</td><td style={styles.td}>{data.system?.cronJobs}개</td></tr>
+              <tr><td style={styles.td}>Scheduler</td><td style={styles.td}>{data.system?.scheduler || 'launchd'}</td></tr>
+              <tr><td style={styles.td}>Agents</td><td style={styles.td}>{data.system?.launchdAgents || data.system?.cronJobs}개</td></tr>
+              <tr><td style={styles.td}>운영시간</td><td style={styles.td}>{data.system?.operatingHours}</td></tr>
+              <tr><td style={styles.td}>Model</td><td style={styles.td}>{data.system?.model}</td></tr>
               <tr><td style={styles.td}>Telegram</td><td style={styles.td}>{data.system?.telegram}</td></tr>
             </tbody>
           </table>
@@ -69,13 +71,13 @@ export default function Dashboard() {
           <div key={team.name} style={styles.card}>
             <div style={styles.cardTitle}>{team.icon} {team.name} — {team.description}</div>
             <table style={styles.table}>
-              <thead><tr><th style={styles.th}>Agent</th><th style={styles.th}>Role</th><th style={styles.th}>Cron</th><th style={styles.th}>Last Run</th></tr></thead>
+              <thead><tr><th style={styles.th}>Agent</th><th style={styles.th}>Role</th><th style={styles.th}>Schedule</th><th style={styles.th}>Last Run</th></tr></thead>
               <tbody>
                 {team.agents?.map((agent: any) => (
                   <tr key={agent.name}>
                     <td style={styles.td}><strong>{agent.name}</strong></td>
                     <td style={styles.td}>{agent.role}</td>
-                    <td style={styles.td}><code>{agent.cron}</code></td>
+                    <td style={styles.td}><code>{agent.schedule || agent.cron}</code></td>
                     <td style={styles.td}>{agent.lastRun || '—'}</td>
                   </tr>
                 ))}
