@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-04-06 08:18:37",
+  "updatedAt": "2026-04-06 09:20:55",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
-    "launchdAgents": 11,
+    "launchdAgents": 15,
     "operatingHours": "월~금 19:00~07:00, 토일 24시간",
     "model": "Sonnet (전체)",
     "telegram": "Eddy PM만 보고"
@@ -20,10 +20,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "24h 30분",
-          "lastRun": "2026-04-06 08:18:35"
+          "lastRun": "2026-04-06 09:14:25"
         }
       ],
-      "recentLog": "📋 팀 현황:\n- **ELDO**: BETA-37 완료 — VCR 검색 기능 + 빌드 0오류 + E2E 3/3 통과 (06:17). Vercel 토큰/GA4 ID 대기 중.\n- **ReviewBot**: 안정화 모드 — 순회 #6, pending-links 14개 대기. 직접 메시지 차단 확인.\n- **DevGate**: 개발 중단 유지 — launchd 비활성화, E2E 53/53 통과 상태.\n- **IRI-Safety**: 개발 중단 유지 — launchd 비활성화, Phase2 도급/협력업체 완료 상태.\n- **XBot**: 보류 중.\n새 텔레그램 메시지 없음. 변동 없음.\n[2026-04-06 08:18:34] Eddy 실행 완료\n[2026-04-06 08:18:35] status.json 업데이트 완료"
+      "recentLog": "| ReviewBot | 안정화 모드 — 전 태스크 완료, pending-links 14개 대기 | `fb638e7` |\n| DevGate | 중단 유지 — E2E 53/53 PASS | `c0449cf` |\n| IRI-Safety | 중단 유지 — QA 4차 61 PASS | `53b6a8b` |\n| XBot | 보류 유지 | — |\n**⏳ Sanghun 액션 필요:**\n- Vercel 토큰 → ELDO 즉시 배포 가능\n- GA4 속성 ID → ELDO Analytics 활성화\n- 쿠팡 파트너스 링크 → ReviewBot pending-links 14건 발행 가능\n[2026-04-06 09:14:25] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
