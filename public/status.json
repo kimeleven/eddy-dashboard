@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-06 21:58:13",
+  "updatedAt": "2026-04-06 23:29:54",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -20,10 +20,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "24h 30분",
-          "lastRun": "2026-04-06 21:50:59"
+          "lastRun": "2026-04-06 23:28:20"
         }
       ],
-      "recentLog": "보고 완료. 요약:\n**팀 현황:**\n- **ELDO**: Dev1 BETA-38 완료 (Bloomberg 스타일 통일, 20:22). 뉴스 상세 페이지 수정 예정.\n- **ReviewBot**: ⚠️ 쿠팡 직접 검색 URGENT 태스크 미착수 — Dev1이 상태 점검만 반복. 다음 실행에서 강제됨.\n- **DevGate**: Dev1 견적 승인 플로우+최소 결제금액 완료, Dev2 E2E 58/58 통과. 정상 진행 중.\n- **IRI-Safety**: 법령 검색 기능 + BUG-004 완료. BUG-INFO-001(포트 불일치) 소항목만 남음.\n**처리:** IRI-Safety TASKS.md 완료 항목 업데이트, state.json 갱신, 커밋/푸시\n[2026-04-06 21:50:59] Eddy 실행 완료"
+      "recentLog": "- **ELDO**: BETA-40 완료 (vcr-s + company news Bloomberg 스타일, `3bb510c`). Dev1 BETA-39(뉴스 상세 페이지 구현) 진행 중. 미해결: BUG-QA22-01\n- **ReviewBot**: 안정화 모드 유지. pending-links 14개 대기. 쿠팡 직접 검색 전환 미구현 상태\n- **DevGate**: BUG-NEW-02(추가비용 최소금액 재검증) Dev1이 수정 완료(`31ed121`). Dev2 UI 개선 진행 중\n- **IRI-Safety**: BUG-INFO-001(.env 포트) Eddy 직접 수정 완료. QA 6차 예정\n**처리 완료:**\n- DevGate TASKS.md BUG-NEW-02 → 완료 표시\n- IRI-Safety QA_REPORT BUG-INFO-001 → Resolved로 이동\n[2026-04-06 23:18:19] Eddy 실행 완료\n[2026-04-06 23:28:20] Eddy 실행 시작"
     },
     {
       "name": "ELDO",
@@ -36,28 +36,28 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "schedule": "2시간",
-          "lastRun": "2026-04-06 20:22:02"
+          "lastRun": "2026-04-06 22:25:27"
         },
         {
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "schedule": "2시간",
-          "lastRun": "2026-04-06 20:11:14"
+          "lastRun": "2026-04-06 22:14:55"
         },
         {
           "name": "Planner",
           "role": "기획/태스크 관리",
           "schedule": "2시간",
-          "lastRun": "2026-04-06 20:16:19"
+          "lastRun": "2026-04-06 22:19:09"
         },
         {
           "name": "QA",
           "role": "E2E 테스트/코드 검증",
           "schedule": "2시간",
-          "lastRun": "2026-04-06 20:15:07"
+          "lastRun": "2026-04-06 22:18:11"
         }
       ],
-      "recentLog": "[2026-04-06 20:17:41] Dev1 실행\n[done] BETA-38 — VCR/뉴스 카드 Bloomberg 스타일 통일 (glassmorphism → solid, e5942a3)\n**BETA-38 완료 (Dev1 44차)**\n**작업 내용:**\n- `vcr-client.tsx`: ReportCard · 섹션 카드 · Skeleton — `rounded-lg border-border/50 bg-card/50 shadow-md` → `rounded border-border bg-card hover:bg-accent`\n- `news-client.tsx`: 뉴스 아티클 카드 · Skeleton — 동일 패턴으로 통일\n홈 페이지 Bloomberg 스타일(솔리드 카드, 불투명 배경, 그림자 없음)이 VCR·뉴스 페이지에도 일관 적용됨. tsc 0건, push 완료 (`e5942a3`, `bb6e343`).\n[2026-04-06 20:22:02] Dev1 완료"
+      "recentLog": "[2026-04-06 22:22:03] Dev1 실행\n[done] BETA-40: vcr-s-section + company news 카드 Bloomberg 스타일 통일 (3482d46). TASKS.md Dev1 46차 업데이트 완료.\n**BETA-40 완료 (Dev1 46차)**\n- `vcr-s-section.tsx` — ReportCard + 섹션 카드 + Skeleton: glassmorphism → Bloomberg solid (`rounded border-border bg-card hover:bg-accent`)\n- `company/[id]/news-section.tsx` — 뉴스 카드: 동일 패턴 통일\n- tsc 0건, push `3482d46`\nBloomberg 스타일 마이그레이션 잔존 파일: 없음 (sticky 헤더의 `backdrop-blur-sm`은 의도적 패턴이므로 유지).\n[2026-04-06 22:25:27] Dev1 완료"
     },
     {
       "name": "DevGate",
@@ -70,13 +70,13 @@
           "name": "Dev1",
           "role": "개발 + 버그 수정",
           "schedule": "24시간",
-          "lastRun": "2026-04-06 21:54:08"
+          "lastRun": "2026-04-06 22:57:20"
         },
         {
           "name": "Dev2",
           "role": "E2E 테스트 확장",
           "schedule": "24시간",
-          "lastRun": "2026-04-06 21:45:46"
+          "lastRun": "2026-04-06 22:50:02"
         },
         {
           "name": "QA",
@@ -85,7 +85,7 @@
           "lastRun": "2026-04-06 21:48:00"
         }
       ],
-      "recentLog": "[2026-04-06 21:53:21] Dev1 실행\n[done] paymentTypeLabel MILESTONE_FEE_COMPLETION 누락 수정 (client/projects/[id]/page.tsx + receipt/route.ts)\n완료했습니다.\n**수정 내용:**\n- `web/src/app/client/projects/[id]/page.tsx` — `paymentTypeLabel`에 `MILESTONE_FEE_COMPLETION: '마일스톤 잔금'` 추가\n- `web/src/app/api/payments/[id]/receipt/route.ts` — `PAYMENT_TYPE_LABEL`에 동일 키 추가\n30% 착수 후 70% 잔금 결제 시 레이블이 `undefined`로 표시되던 버그 수정됨. 커밋: `07a7907`\n[2026-04-06 21:54:08] Dev1 완료"
+      "recentLog": "1. **견적 조율 counterAmount 최소금액 검증** (`fee-proposals/[id]/route.ts`)\n- `!body.counterAmount` → `=== undefined || === null` 체크로 변경 (0 입력 시 오통과 방지)\n- 0원이 아닌 경우 10,000원 이상인지 검증 추가\n2. **추가비용 승인 시 최소금액 재검증** (`additional-charges/[cid]/route.ts`)\n- approve 처리 전 DB 저장 금액이 0원이 아니면 10,000원 이상인지 체크\n- 이전에 잘못 저장된 데이터가 결제로 이어지지 않도록 방어\n빌드 성공 확인 후 push 완료 (`31ed121`, `f117d71`).\n[2026-04-06 22:57:20] Dev1 완료"
     },
     {
       "name": "IRI-Safety",
@@ -132,16 +132,16 @@
           "name": "Planner",
           "role": "TODO 발굴/API 조사",
           "schedule": "2시간",
-          "lastRun": "2026-04-06 20:20:06"
+          "lastRun": "2026-04-06 22:21:36"
         },
         {
           "name": "Dev1",
           "role": "승인된 TODO 개발",
           "schedule": "2시간",
-          "lastRun": "2026-04-06 20:22:03"
+          "lastRun": "2026-04-06 22:28:48"
         }
       ],
-      "recentLog": "### TODO 목록 전체 추가 (TODO-003~014)\nTODO.md의 모든 항목을 TASKS.md에 형식에 맞게 추가:\n- HR: 직원 정보, 급여명세서, 고용계약서, 연차 관리\n- 재무: 부가세 신고, 원천세, 재무제표\n- 총무: 지출결의서, 자산관리, 계약만료 알림\n- 공통: 권한 체계 확장 (hr, finance 역할)\n커밋 완료 (push 없음).\n[2026-04-06 20:20:06] Planner 완료"
+      "recentLog": "3. **TODO-001 조사 완료 처리** — 오픈뱅킹/쿠콘/은행별API 등 7개 체크박스 완료로 표시\n4. **커밋 완료** (push 없음)\n**Sanghun 결정 필요 사항 (TODO-001 요약):**\n- 쿠콘 API 계약 진행 여부 (월 20~50만원 예상)\n- 웹케시 B2B 검토 여부 (법인 계좌 특화)\n- CSV 파서 개선 먼저 진행 여부 (비용 없음, 즉시 구현 가능)\n[2026-04-06 22:21:36] Planner 완료"
     },
     {
       "name": "ReviewBot",
@@ -154,7 +154,7 @@
           "name": "Dev1",
           "role": "쿠팡 검색 전환 개발",
           "schedule": "2시간",
-          "lastRun": "2026-04-06 20:10:36"
+          "lastRun": "2026-04-06 22:11:36"
         },
         {
           "name": "Pipeline",
@@ -163,7 +163,7 @@
           "lastRun": ""
         }
       ],
-      "recentLog": "[2026-04-06 20:09:03] Dev1 실행\n[done] 순회 #7 상태 점검 — 전 태스크 완료, 안정화 모드 확인, pending-links 14개 대기 중\n**Dev1 순회 #7 완료.**\n**상태 요약:**\n- QA 버그 전부 해결 (BUG-001, BUG-002, ISSUE-QA-4 모두 ✅)\n- pipeline.mjs `link-request` / `telegram-request` 스텝 영구 비활성화 유지\n- pending-links 14개 (봄 시즌 키워드) — Sanghun 링크 수신 대기 중\n- 추가 구현 태스크 없음. 안정화 모드 유지.\n[2026-04-06 20:10:36] Dev1 완료"
+      "recentLog": "Already up to date.\n[2026-04-06 22:10:38] Dev1 실행\n[done] 순회 #8 상태 점검 — 신택스 정상, pending-links 14개 waiting, 안정화 모드 유지\n**[Dev1 순회 #8 완료]**\n- 신택스 체크: pipeline.mjs, naver-blog.mjs, blog-publisher.mjs 전부 OK\n- pending-links: 14개 전부 `waiting` — Sanghun 파트너스 링크 수신 대기 중\n- keywords: done 23 / failed 3 / pending 232\n- 추가 구현 태스크 없음. 안정화 모드 유지.\n[2026-04-06 22:11:36] Dev1 완료"
     },
     {
       "name": "XBot",
@@ -190,20 +190,20 @@
     "status": "active"
   },
   "recentActivity": [
-    "- **DevGate**: Dev1 견적 승인 플로우+최소 결제금액 완료, Dev2 E2E 58/58 통과. 정상 진행 중.",
-    "- **IRI-Safety**: 법령 검색 기능 + BUG-004 완료. BUG-INFO-001(포트 불일치) 소항목만 남음.",
-    "**처리:** IRI-Safety TASKS.md 완료 항목 업데이트, state.json 갱신, 커밋/푸시",
-    "[2026-04-06 21:50:59] Eddy 실행 완료",
-    "홈 페이지 Bloomberg 스타일(솔리드 카드, 불투명 배경, 그림자 없음)이 VCR·뉴스 페이지에도 일관 적용됨. tsc 0건, push 완료 (`e5942a3`, `bb6e343`).",
-    "[2026-04-06 20:22:02] Dev1 완료",
-    "[done] Dev2 디자인 Step1(globals.css 스크롤바/radius/유틸리티) + Step2(홈페이지 글래스모피즘→Bloomberg 솔리드) 완료. tsc 0건. 커밋: 6e203e2, e01bf5a",
-    "[2026-04-06 20:11:14] Dev2 (UI) 완료",
-    "30% 착수 후 70% 잔금 결제 시 레이블이 `undefined`로 표시되던 버그 수정됨. 커밋: `07a7907`",
-    "[2026-04-06 21:54:08] Dev1 완료",
-    "[2026-04-06 21:45:46] Dev2 완료",
+    "**처리 완료:**",
+    "- DevGate TASKS.md BUG-NEW-02 → 완료 표시",
+    "[2026-04-06 23:18:19] Eddy 실행 완료",
+    "[2026-04-06 22:25:27] Dev1 완료",
+    "`tsc --noEmit` 오류 0건 | commit: `0daa3cb` | push 완료",
+    "[2026-04-06 22:14:55] Dev2 (UI) 완료",
+    "[2026-04-06 22:14:55] status.json 업데이트 완료",
+    "빌드 성공 확인 후 push 완료 (`31ed121`, `f117d71`).",
+    "[2026-04-06 22:57:20] Dev1 완료",
+    "- `pnpm build` 성공, git push 완료",
+    "[2026-04-06 22:50:02] Dev2 완료",
     "- `korean-law-mcp` 패키지 설치 (이번 커밋)",
     "[2026-04-06 21:26:07] Dev1 완료",
     "[2026-04-06 21:24:40] Dev2 완료",
-    "[2026-04-06 20:10:36] Dev1 완료"
+    "[2026-04-06 22:11:36] Dev1 완료"
   ]
 }
