@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-06 09:58:04",
+  "updatedAt": "2026-04-06 11:58:05",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -20,10 +20,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "24h 30분",
-          "lastRun": "2026-04-06 09:57:54"
+          "lastRun": "2026-04-06 11:56:05"
         }
       ],
-      "recentLog": "| 팀 | 상태 | 다음 작업 |\n|----|------|-----------|\n| **ELDO** | BETA-37 완료 (VCR 검색+E2E 3/3) | Dev1: 뉴스 상세 페이지, Dev2: 디자인 개선 → 19:00 재개 |\n| **ReviewBot** | 안정화 모드 | 쿠팡 직접 검색 전환 태스크 배정됨 → 19:00 재개 |\n| **DevGate** | E2E 53/53 통과 완료 | Dev2: 디자인 개선 → 19:00 재개 |\n| **IRI-Safety** | BUG 전체 해결 | 법제처 법령 검색 태스크 배정됨 → 19:00 재개 |\n> 운영시간 제한 (월~금 07:00~19:00 비활성). 오늘 19:00부터 전 팀 에이전트 재가동.\n[2026-04-06 09:57:54] Eddy 실행 완료"
+      "recentLog": "- **ELDO**: Dev1 BETA-37 완료 (VCR 검색+E2E 3/3, 06:17). URGENT — 뉴스 상세 페이지 수정 + Dev2 디자인 개선 대기 중. 크레딧 부족 → Apr8 재개\n- **ReviewBot**: 안정화 모드. pending-links 14개 대기 (Sanghun 링크 필요)\n- **DevGate**: E2E 53/53 완료. URGENT — 견적 승인 플로우 수정 + 최소 결제 1만원 대기. 크레딧 부족 → Apr8 재개\n- **IRI-Safety**: Phase2 61 PASS. URGENT — 법제처 법령 검색 기능 대기. 크레딧 부족 → Apr8 재개\n- **XBot**: 보류 유지\n✅ 처리: 전체 팀 검수, state 업데이트, Telegram 보고\n⚠️ 이슈: 전 팀 크레딧 소진 (Apr 8 1pm 리셋 후 자동 재개)\n⏳ 대기: ELDO Vercel 토큰 / ReviewBot 쿠팡 파트너스 링크 / Telegram 새 메시지 없음\n[2026-04-06 11:56:05] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
@@ -132,16 +132,16 @@
           "name": "Planner",
           "role": "TODO 발굴/API 조사",
           "schedule": "2시간",
-          "lastRun": "2026-04-06 08:18:10"
+          "lastRun": "2026-04-06 10:18:10"
         },
         {
           "name": "Dev1",
           "role": "승인된 TODO 개발",
           "schedule": "2시간",
-          "lastRun": ""
+          "lastRun": "2026-04-06 10:18:10"
         }
       ],
-      "recentLog": "[2026-04-06 08:18:10] 운영 시간 외 — 스킵 (월~금 07:00~19:00)"
+      "recentLog": "[2026-04-06 08:18:10] 운영 시간 외 — 스킵 (월~금 07:00~19:00)\n[2026-04-06 10:18:10] 운영 시간 외 — 스킵 (월~금 07:00~19:00)"
     },
     {
       "name": "ReviewBot",
