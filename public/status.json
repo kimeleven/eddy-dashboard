@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-04-06 09:36:39",
+  "updatedAt": "2026-04-06 09:58:04",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
-    "launchdAgents": 15,
+    "launchdAgents": 18,
     "operatingHours": "월~금 19:00~07:00, 토일 24시간",
     "model": "Sonnet (전체)",
     "telegram": "Eddy PM만 보고"
@@ -20,10 +20,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "24h 30분",
-          "lastRun": "2026-04-06 09:28:08"
+          "lastRun": "2026-04-06 09:57:54"
         }
       ],
-      "recentLog": "- **ReviewBot**: 안정화 모드. 쿠팡 직접 검색 전환 태스크 아직 미착수. pending-links 14건\n- **DevGate**: 중단 유지. 에이전트 비활성화 (E2E 53/53)\n- **IRI-Safety**: 재개. 법제처 법령 검색 URGENT 배정, TASKS.md 헤더 수정 (개발 재개 명시). 다음 실행 ~10시\n- **XBot**: 보류 유지\n**⏳ Sanghun 액션 필요:**\n- ELDO Vercel 토큰 → 즉시 배포\n- ELDO GA4 ID\n- ReviewBot 쿠팡 파트너스 링크 (pending-links 14건)\n[2026-04-06 09:28:08] Eddy 실행 완료"
+      "recentLog": "| 팀 | 상태 | 다음 작업 |\n|----|------|-----------|\n| **ELDO** | BETA-37 완료 (VCR 검색+E2E 3/3) | Dev1: 뉴스 상세 페이지, Dev2: 디자인 개선 → 19:00 재개 |\n| **ReviewBot** | 안정화 모드 | 쿠팡 직접 검색 전환 태스크 배정됨 → 19:00 재개 |\n| **DevGate** | E2E 53/53 통과 완료 | Dev2: 디자인 개선 → 19:00 재개 |\n| **IRI-Safety** | BUG 전체 해결 | 법제처 법령 검색 태스크 배정됨 → 19:00 재개 |\n> 운영시간 제한 (월~금 07:00~19:00 비활성). 오늘 19:00부터 전 팀 에이전트 재가동.\n[2026-04-06 09:57:54] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
