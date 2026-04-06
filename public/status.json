@@ -1,11 +1,12 @@
 {
-  "updatedAt": "2026-04-07 03:29:45",
+  "updatedAt": "2026-04-07 07:13:58",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
     "launchdAgents": 18,
-    "operatingHours": "월~금 19:00~07:00, 토일 24시간",
+    "operatingHours": "Eddy: 24시간 / 팀: 월~금 19:00~07:00, 토일 24시간",
     "model": "Sonnet (전체)",
+    "token": "바둑이토큰",
     "telegram": "Eddy PM만 보고"
   },
   "teams": [
@@ -13,148 +14,148 @@
       "name": "Eddy",
       "icon": "🧠",
       "description": "유일한 PM — 전체 팀 관리 + Sanghun 보고",
-      "schedule": "24시간 30분 (주중/주말 무관)",
+      "schedule": "2시간",
       "status": "active",
       "agents": [
         {
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
-          "schedule": "24h 30분",
-          "lastRun": "2026-04-07 01:33:46"
+          "schedule": "2시간",
+          "lastRun": "2026-04-07 05:43:17"
         }
       ],
-      "recentLog": "- 직접 법제처 API 테스트 → `combizapirequest` OC 키가 무효/미등록 상태 확인\n- BUG-006으로 QA_REPORT.md 등록, TASKS.md에 Dev1 긴급 태스크 배정\n- Sanghun에게 확인 필요: 법제처 정식 OC 키 발급 여부 결정 필요\n**ELDO 개발 항목 목록 (Sanghun: \"계획 중심으로 아이템 정리\")**\n텔레그램으로 전달:\n- 진행 중: BETA-39(뉴스 상세 404), style-04(company Bloomberg)\n- 대기: style-05~07(디자인 개선)\n- Sanghun 액션: Vercel 토큰, GA4 ID, VCR-T 구조 결정\n[2026-04-07 01:33:46] Eddy 실행 완료"
+      "recentLog": "| DevGate | QA에서 HIGH 버그 신규 발견 → BUG-NEW-03 Dev1 태스크 추가 |\n| IRI-Safety | QA 6차 PASS 103/103 달성. 전 버그 완료 |\n**신규 이슈:** DevGate BUG-NEW-03 — PortOn 착수금(INITIAL_DEPOSIT) 결제 완료 시 프로젝트 PENDING→ACTIVE 전환 누락 (HIGH)\n**Sanghun 액션 필요:**\n- IRI-Safety: open.law.go.kr OC 키 발급 후 `.env LAW_API_OC=` 설정\n- ELDO: Vercel 토큰 발급\n- ReviewBot: 쿠팡 파트너스 링크 or API 키\n[2026-04-07 05:43:17] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
       "icon": "📊",
       "description": "기업 재무분석 플랫폼",
-      "schedule": "launchd 2시간",
+      "schedule": "4시간",
       "status": "active",
       "agents": [
         {
           "name": "Dev1",
           "role": "백엔드/API/DB",
-          "schedule": "2시간",
-          "lastRun": "2026-04-06 22:25:27"
+          "schedule": "4시간",
+          "lastRun": "2026-04-07 03:34:25"
         },
         {
           "name": "Dev2",
           "role": "UI/UX/다크모드",
-          "schedule": "2시간",
-          "lastRun": "2026-04-06 22:14:55"
+          "schedule": "4시간",
+          "lastRun": "2026-04-07 03:34:53"
         },
         {
           "name": "Planner",
           "role": "기획/태스크 관리",
-          "schedule": "2시간",
-          "lastRun": "2026-04-06 22:19:09"
+          "schedule": "4시간",
+          "lastRun": "2026-04-07 03:36:19"
         },
         {
           "name": "QA",
           "role": "E2E 테스트/코드 검증",
-          "schedule": "2시간",
-          "lastRun": "2026-04-06 22:18:11"
+          "schedule": "4시간",
+          "lastRun": "2026-04-07 03:36:59"
         }
       ],
-      "recentLog": "[2026-04-06 22:22:03] Dev1 실행\n[done] BETA-40: vcr-s-section + company news 카드 Bloomberg 스타일 통일 (3482d46). TASKS.md Dev1 46차 업데이트 완료.\n**BETA-40 완료 (Dev1 46차)**\n- `vcr-s-section.tsx` — ReportCard + 섹션 카드 + Skeleton: glassmorphism → Bloomberg solid (`rounded border-border bg-card hover:bg-accent`)\n- `company/[id]/news-section.tsx` — 뉴스 카드: 동일 패턴 통일\n- tsc 0건, push `3482d46`\nBloomberg 스타일 마이그레이션 잔존 파일: 없음 (sticky 헤더의 `backdrop-blur-sm`은 의도적 패턴이므로 유지).\n[2026-04-06 22:25:27] Dev1 완료"
+      "recentLog": "[2026-04-07 03:29:46] Dev1 실행\n[done] BETA-41: peer/compare/valuation/fin-info Bloomberg 스타일 통일 (border-border/60 → border-border, rounded-md → rounded), 4파일 수정, tsc 0건, push 완료\n**BETA-41 완료**\n- `peer-client.tsx`, `compare-client.tsx`, `valuation-client.tsx`, `fin-info-section.tsx` — Bloomberg 스타일 통일\n- 변경 패턴: `rounded-md border border-border/60` → `rounded border border-border`, 드롭다운 `shadow-lg` → `shadow-md`\n- tsc 오류 0건 | commit `9cd3073` | push 완료\nBloomberg 스타일 마이그레이션이 주요 페이지 전체에 적용 완료됐습니다.\n[2026-04-07 03:34:25] Dev1 완료"
     },
     {
       "name": "DevGate",
       "icon": "🏗️",
       "description": "외주 개발 플랫폼 (기업 신뢰 기반)",
-      "schedule": "launchd 24시간",
+      "schedule": "4시간",
       "status": "active",
       "agents": [
         {
           "name": "Dev1",
           "role": "개발 + 버그 수정",
-          "schedule": "24시간",
-          "lastRun": "2026-04-06 22:57:20"
+          "schedule": "4시간",
+          "lastRun": "2026-04-07 03:45:05"
         },
         {
           "name": "Dev2",
-          "role": "E2E 테스트 확장",
-          "schedule": "24시간",
-          "lastRun": "2026-04-06 22:50:02"
+          "role": "E2E 테스트 + UI",
+          "schedule": "4시간",
+          "lastRun": "2026-04-07 03:32:10"
         },
         {
           "name": "QA",
           "role": "E2E 테스트 검증",
-          "schedule": "24시간",
-          "lastRun": "2026-04-06 21:48:00"
+          "schedule": "4시간",
+          "lastRun": "2026-04-07 03:39:59"
         }
       ],
-      "recentLog": "1. **견적 조율 counterAmount 최소금액 검증** (`fee-proposals/[id]/route.ts`)\n- `!body.counterAmount` → `=== undefined || === null` 체크로 변경 (0 입력 시 오통과 방지)\n- 0원이 아닌 경우 10,000원 이상인지 검증 추가\n2. **추가비용 승인 시 최소금액 재검증** (`additional-charges/[cid]/route.ts`)\n- approve 처리 전 DB 저장 금액이 0원이 아니면 10,000원 이상인지 체크\n- 이전에 잘못 저장된 데이터가 결제로 이어지지 않도록 방어\n빌드 성공 확인 후 push 완료 (`31ed121`, `f117d71`).\n[2026-04-06 22:57:20] Dev1 완료"
+      "recentLog": "[2026-04-07 03:29:45] Dev1 실행\n[done] 개발자 P2P 페이지(profile/earnings/history) URL 직접 접근 차단 — /developer/dashboard로 리다이렉트 (커밋: 85791a5)\n완료.\n**처리 내용:**\n- `/developer/profile`, `/developer/earnings`, `/developer/history` 페이지를 `/developer/dashboard`로 리다이렉트 처리\n- QA_REPORT.md [MED] 버그 해결: 사이드바 제거 후에도 URL 직접 접근 가능했던 P2P 페이지들 차단\n- `pnpm build` 성공 확인\n- 커밋: `85791a5`, `e489f8f`\n[2026-04-07 03:45:05] Dev1 완료"
     },
     {
       "name": "IRI-Safety",
       "icon": "⛑️",
       "description": "산업안전 컴플라이언스 SaaS",
-      "schedule": "launchd 2시간",
+      "schedule": "4시간",
       "status": "active",
       "agents": [
         {
           "name": "Planner",
           "role": "법안 검토/기능 기획",
-          "schedule": "2시간",
-          "lastRun": "2026-04-06 20:44:59"
+          "schedule": "4시간",
+          "lastRun": "2026-04-07 03:33:35"
         },
         {
           "name": "Dev1",
           "role": "백엔드 개발",
-          "schedule": "2시간",
-          "lastRun": "2026-04-06 21:26:07"
+          "schedule": "4시간",
+          "lastRun": "2026-04-07 03:35:09"
         },
         {
           "name": "Dev2",
           "role": "프론트엔드 개발",
-          "schedule": "2시간",
-          "lastRun": "2026-04-06 21:24:40"
+          "schedule": "4시간",
+          "lastRun": "2026-04-07 03:33:08"
         },
         {
           "name": "QA",
           "role": "E2E 테스트",
-          "schedule": "2시간",
-          "lastRun": "2026-04-06 21:09:30"
+          "schedule": "4시간",
+          "lastRun": "2026-04-07 03:43:35"
         }
       ],
-      "recentLog": "- **BUG-004 수정** (이미 이전 커밋에 포함됨): `contractors/page.tsx`, `[id]/assessment/page.tsx`에 WORKER 역할 redirect 추가\n- **법령 검색 기능** (이미 이전 커밋에 포함됨):\n- `src/app/api/law/search/route.ts` — 법제처 검색 API\n- `src/app/api/law/detail/route.ts` — 조문 상세 API\n- `src/app/[slug]/law-search/page.tsx` — 법령 검색 페이지\n- `src/components/law/LawSearchClient.tsx` — 검색 UI 컴포넌트\n- `Sidebar.tsx` — \"법령 검색\" 메뉴 추가 (CEO/안전관리자)\n- `korean-law-mcp` 패키지 설치 (이번 커밋)\n- 빌드 에러 없음 (`/[slug]/law-search` 정상 빌드 확인)\n[2026-04-06 21:26:07] Dev1 완료"
+      "recentLog": "**요약:**\n- `e2afa3b` (이전 커밋)에서 이미 핵심 구현 완료됨: `LAW_API_OC` 환경변수 + 프리셋 fallback\n- 이번 커밋(`cfbb338`): 클라이언트 UX 개선 — notice 배너, 프리셋 모드에서 조문 대신 \"법제처에서 전문 보기\" 링크 표시\n**Sanghun 액션 필요:**\n- `https://open.law.go.kr` 회원가입 → OC 키 발급\n- `.env`에 `LAW_API_OC=발급받은키` 추가\n- 키 등록 전까지는 산업안전보건법/중대재해처벌법 등 10개 주요 법령 프리셋으로 동작\n[2026-04-07 03:35:09] Dev1 완료"
     },
     {
       "name": "BizTool",
       "icon": "💼",
       "description": "회계/HR 통합 관리 (프로덕션 운영 중)",
-      "schedule": "launchd 2시간 (push 금지 — Sanghun 승인 필요)",
+      "schedule": "4시간 (push 금지)",
       "status": "active",
       "agents": [
         {
           "name": "Planner",
           "role": "TODO 발굴/API 조사",
-          "schedule": "2시간",
-          "lastRun": "2026-04-07 03:29:45"
+          "schedule": "4시간",
+          "lastRun": "2026-04-07 03:35:25"
         },
         {
           "name": "Dev1",
           "role": "승인된 TODO 개발",
-          "schedule": "2시간",
-          "lastRun": "2026-04-07 03:29:45"
+          "schedule": "4시간",
+          "lastRun": "2026-04-07 03:32:15"
         }
       ],
-      "recentLog": "3. **TODO-001 조사 완료 처리** — 오픈뱅킹/쿠콘/은행별API 등 7개 체크박스 완료로 표시\n4. **커밋 완료** (push 없음)\n**Sanghun 결정 필요 사항 (TODO-001 요약):**\n- 쿠콘 API 계약 진행 여부 (월 20~50만원 예상)\n- 웹케시 B2B 검토 여부 (법인 계좌 특화)\n- CSV 파서 개선 먼저 진행 여부 (비용 없음, 즉시 구현 가능)\n[2026-04-06 22:21:36] Planner 완료\n[2026-04-07 03:29:45] Planner 실행"
+      "recentLog": "| 볼타 | 90원 | 없음 | 최저가, 신생서비스 |\n| 바로빌 | 문의필요 | 없음 | 금융+세금계산서 통합 |\n**핵심**: 국세청 직접 API 없음 → ASP 대행사 필수. 팝빌 Node.js SDK가 BizTool Express.js에 가장 빠르게 연동 가능.\n**⏳ Sanghun 결정 필요:**\n1. 팝빌 계약 여부 (건당 200원)\n2. 스마트빌 후불형 여부 (월 50건 이하이면 월 11,000원 고정)\n3. 홈택스 수집 API 사용 여부 (팝빌 기준 월 +30,000원)\n[2026-04-07 03:35:25] Planner 완료"
     },
     {
       "name": "ReviewBot",
       "icon": "📝",
       "description": "사봤쪄 리뷰 블로그 (자동 포스팅 중단)",
-      "schedule": "launchd 2시간 (Dev1만)",
+      "schedule": "4시간 (Dev1만)",
       "status": "active",
       "agents": [
         {
           "name": "Dev1",
           "role": "쿠팡 검색 전환 개발",
-          "schedule": "2시간",
-          "lastRun": "2026-04-06 22:11:36"
+          "schedule": "4시간",
+          "lastRun": "2026-04-07 03:30:40"
         },
         {
           "name": "Pipeline",
@@ -163,7 +164,7 @@
           "lastRun": ""
         }
       ],
-      "recentLog": "Already up to date.\n[2026-04-06 22:10:38] Dev1 실행\n[done] 순회 #8 상태 점검 — 신택스 정상, pending-links 14개 waiting, 안정화 모드 유지\n**[Dev1 순회 #8 완료]**\n- 신택스 체크: pipeline.mjs, naver-blog.mjs, blog-publisher.mjs 전부 OK\n- pending-links: 14개 전부 `waiting` — Sanghun 파트너스 링크 수신 대기 중\n- keywords: done 23 / failed 3 / pending 232\n- 추가 구현 태스크 없음. 안정화 모드 유지.\n[2026-04-06 22:11:36] Dev1 완료"
+      "recentLog": "Already up to date.\n[2026-04-07 03:29:46] Dev1 실행\n[done] 순회 #9 상태 점검 — 전 모듈 신택스 정상, pending-links 14개 대기, 안정화 모드 유지\n순회 #9 완료.\n- 전 모듈 신택스 정상 (pipeline.mjs, naver-blog.mjs, blog-publisher.mjs)\n- pending-links: 14개 전부 waiting (Sanghun 링크 수신 대기 중)\n- keywords: done 23 / failed 3 / pending 232\n- 추가 구현 태스크 없음. 안정화 모드 유지.\n[2026-04-07 03:30:40] Dev1 완료"
     },
     {
       "name": "XBot",
@@ -185,22 +186,25 @@
     }
   ],
   "weeklyReport": {
-    "schedule": "매주 일요일 23:59",
+    "schedule": "매주 월요일 23:59",
     "format": "팀별 개별 PDF → 텔레그램 전송",
     "status": "active"
   },
   "recentActivity": [
-    "[2026-04-07 01:33:46] Eddy 실행 완료",
-    "[2026-04-06 22:25:27] Dev1 완료",
-    "`tsc --noEmit` 오류 0건 | commit: `0daa3cb` | push 완료",
-    "[2026-04-06 22:14:55] Dev2 (UI) 완료",
-    "[2026-04-06 22:14:55] status.json 업데이트 완료",
-    "빌드 성공 확인 후 push 완료 (`31ed121`, `f117d71`).",
-    "[2026-04-06 22:57:20] Dev1 완료",
-    "[2026-04-06 22:50:02] Dev2 완료",
-    "- `korean-law-mcp` 패키지 설치 (이번 커밋)",
-    "[2026-04-06 21:26:07] Dev1 완료",
-    "[2026-04-06 21:24:40] Dev2 완료",
-    "[2026-04-06 22:11:36] Dev1 완료"
+    "Bloomberg 스타일 마이그레이션이 주요 페이지 전체에 적용 완료됐습니다.",
+    "[2026-04-07 03:34:25] Dev1 완료",
+    "**style-05 완료** (`f4ffb3a`):",
+    "**tsc 오류**: 0건 | **git push**: 완료",
+    "[2026-04-07 03:34:53] Dev2 (UI) 완료",
+    "- 커밋: `85791a5`, `e489f8f`",
+    "[2026-04-07 03:45:05] Dev1 완료",
+    "- TypeScript 검사 통과, git push 완료 (커밋: `aa51698`)",
+    "[2026-04-07 03:32:10] Dev2 완료",
+    "[2026-04-07 03:35:09] Dev1 완료",
+    "[2026-04-07 03:33:08] Dev2 완료",
+    "[2026-04-07 03:30:40] Dev1 완료",
+    "[2026-04-07 03:35:25] Planner 완료",
+    "커밋: `12c639b` (push는 Sanghun 승인 후)",
+    "[2026-04-07 03:32:15] Dev1 완료"
   ]
 }

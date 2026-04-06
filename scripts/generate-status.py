@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-import json, os, re, subprocess
+import json, os, re, subprocess, plistlib
 from datetime import datetime
+from pathlib import Path
 
 HOME = os.path.expanduser("~")
 AGENT = os.path.join(HOME, "eddy-agent")
 OUT = os.path.join(AGENT, "eddy-dashboard", "public", "status.json")
+PLIST_DIR = os.path.join(HOME, "Library/LaunchAgents")
 
 def tail(path, n=10):
     try:
@@ -21,7 +23,31 @@ def last_run(path):
             return m.group(1)
     return ""
 
-# launchd 에이전트 수 (cron 아님)
+def get_schedule(plist_name):
+    """launchd plist에서 실제 주기를 읽어옴"""
+    path = os.path.join(PLIST_DIR, plist_name)
+    try:
+        with open(path, 'rb') as f:
+            pl = plistlib.load(f)
+        interval = pl.get('StartInterval')
+        if interval:
+            if interval >= 86400: return f"{interval // 3600}시간"
+            if interval >= 3600: return f"{interval // 3600}시간"
+            return f"{interval // 60}분"
+        cal = pl.get('StartCalendarInterval')
+        if cal:
+            wd = cal.get('Weekday')
+            h = cal.get('Hour', 0)
+            m = cal.get('Minute', 0)
+            days = ['월','화','수','목','금','토','일']
+            if wd is not None:
+                return f"매주 {days[wd]}요일 {h:02d}:{m:02d}"
+            return f"매일 {h:02d}:{m:02d}"
+    except:
+        pass
+    return "알 수 없음"
+
+# launchd 에이전트 수
 launchd_count = 0
 try:
     r = subprocess.run(["launchctl", "list"], capture_output=True, text=True)
@@ -37,6 +63,7 @@ for logfile in [
     "devgate-team/dev1.log", "devgate-team/dev2.log",
     "iri-safety-team/dev1.log", "iri-safety-team/dev2.log",
     "reviewbot-team/dev1.log",
+    "biztool-team/planner.log", "biztool-team/dev1.log",
 ]:
     for line in tail(os.path.join(AGENT, logfile), 5):
         if any(k in line for k in ["[done]", "완료", "push 완료", "커밋", "PASS", "FAIL"]):
@@ -49,8 +76,9 @@ data = {
         "host": "MacBook (a1111)",
         "scheduler": "launchd",
         "launchdAgents": launchd_count,
-        "operatingHours": "월~금 19:00~07:00, 토일 24시간",
+        "operatingHours": "Eddy: 24시간 / 팀: 월~금 19:00~07:00, 토일 24시간",
         "model": "Sonnet (전체)",
+        "token": "바둑이토큰",
         "telegram": "Eddy PM만 보고"
     },
     "teams": [
@@ -58,10 +86,10 @@ data = {
             "name": "Eddy",
             "icon": "🧠",
             "description": "유일한 PM — 전체 팀 관리 + Sanghun 보고",
-            "schedule": "24시간 30분 (주중/주말 무관)",
+            "schedule": get_schedule("com.eddy.agent.plist"),
             "status": "active",
             "agents": [
-                {"name": "Eddy PM", "role": "텔레그램 모니터링, 전체 팀 검수/보고", "schedule": "24h 30분", "lastRun": last_run(f"{AGENT}/eddy/eddy.log")}
+                {"name": "Eddy PM", "role": "텔레그램 모니터링, 전체 팀 검수/보고", "schedule": get_schedule("com.eddy.agent.plist"), "lastRun": last_run(f"{AGENT}/eddy/eddy.log")}
             ],
             "recentLog": "\n".join(tail(f"{AGENT}/eddy/eddy.log"))
         },
@@ -69,13 +97,13 @@ data = {
             "name": "ELDO",
             "icon": "📊",
             "description": "기업 재무분석 플랫폼",
-            "schedule": "launchd 2시간",
+            "schedule": get_schedule("com.eddy.eldo-dev1.plist"),
             "status": "active",
             "agents": [
-                {"name": "Dev1", "role": "백엔드/API/DB", "schedule": "2시간", "lastRun": last_run(f"{AGENT}/eldo-team/dev1.log")},
-                {"name": "Dev2", "role": "UI/UX/다크모드", "schedule": "2시간", "lastRun": last_run(f"{AGENT}/eldo-team/dev2.log")},
-                {"name": "Planner", "role": "기획/태스크 관리", "schedule": "2시간", "lastRun": last_run(f"{AGENT}/eldo-team/planner.log")},
-                {"name": "QA", "role": "E2E 테스트/코드 검증", "schedule": "2시간", "lastRun": last_run(f"{AGENT}/eldo-team/qa.log")}
+                {"name": "Dev1", "role": "백엔드/API/DB", "schedule": get_schedule("com.eddy.eldo-dev1.plist"), "lastRun": last_run(f"{AGENT}/eldo-team/dev1.log")},
+                {"name": "Dev2", "role": "UI/UX/다크모드", "schedule": get_schedule("com.eddy.eldo-dev2.plist"), "lastRun": last_run(f"{AGENT}/eldo-team/dev2.log")},
+                {"name": "Planner", "role": "기획/태스크 관리", "schedule": get_schedule("com.eddy.eldo-planner.plist"), "lastRun": last_run(f"{AGENT}/eldo-team/planner.log")},
+                {"name": "QA", "role": "E2E 테스트/코드 검증", "schedule": get_schedule("com.eddy.eldo-qa.plist"), "lastRun": last_run(f"{AGENT}/eldo-team/qa.log")}
             ],
             "recentLog": "\n".join(tail(f"{AGENT}/eldo-team/dev1.log"))
         },
@@ -83,12 +111,12 @@ data = {
             "name": "DevGate",
             "icon": "🏗️",
             "description": "외주 개발 플랫폼 (기업 신뢰 기반)",
-            "schedule": "launchd 24시간",
+            "schedule": get_schedule("com.eddy.devgate-dev1.plist"),
             "status": "active",
             "agents": [
-                {"name": "Dev1", "role": "개발 + 버그 수정", "schedule": "24시간", "lastRun": last_run(f"{AGENT}/devgate-team/dev1.log")},
-                {"name": "Dev2", "role": "E2E 테스트 확장", "schedule": "24시간", "lastRun": last_run(f"{AGENT}/devgate-team/dev2.log")},
-                {"name": "QA", "role": "E2E 테스트 검증", "schedule": "24시간", "lastRun": last_run(f"{AGENT}/devgate-team/qa.log")}
+                {"name": "Dev1", "role": "개발 + 버그 수정", "schedule": get_schedule("com.eddy.devgate-dev1.plist"), "lastRun": last_run(f"{AGENT}/devgate-team/dev1.log")},
+                {"name": "Dev2", "role": "E2E 테스트 + UI", "schedule": get_schedule("com.eddy.devgate-dev2.plist"), "lastRun": last_run(f"{AGENT}/devgate-team/dev2.log")},
+                {"name": "QA", "role": "E2E 테스트 검증", "schedule": get_schedule("com.eddy.devgate-qa.plist"), "lastRun": last_run(f"{AGENT}/devgate-team/qa.log")}
             ],
             "recentLog": "\n".join(tail(f"{AGENT}/devgate-team/dev1.log"))
         },
@@ -96,13 +124,13 @@ data = {
             "name": "IRI-Safety",
             "icon": "⛑️",
             "description": "산업안전 컴플라이언스 SaaS",
-            "schedule": "launchd 2시간",
+            "schedule": get_schedule("com.eddy.iri-dev1.plist"),
             "status": "active",
             "agents": [
-                {"name": "Planner", "role": "법안 검토/기능 기획", "schedule": "2시간", "lastRun": last_run(f"{AGENT}/iri-safety-team/planner.log")},
-                {"name": "Dev1", "role": "백엔드 개발", "schedule": "2시간", "lastRun": last_run(f"{AGENT}/iri-safety-team/dev1.log")},
-                {"name": "Dev2", "role": "프론트엔드 개발", "schedule": "2시간", "lastRun": last_run(f"{AGENT}/iri-safety-team/dev2.log")},
-                {"name": "QA", "role": "E2E 테스트", "schedule": "2시간", "lastRun": last_run(f"{AGENT}/iri-safety-team/qa.log")}
+                {"name": "Planner", "role": "법안 검토/기능 기획", "schedule": get_schedule("com.eddy.iri-planner.plist"), "lastRun": last_run(f"{AGENT}/iri-safety-team/planner.log")},
+                {"name": "Dev1", "role": "백엔드 개발", "schedule": get_schedule("com.eddy.iri-dev1.plist"), "lastRun": last_run(f"{AGENT}/iri-safety-team/dev1.log")},
+                {"name": "Dev2", "role": "프론트엔드 개발", "schedule": get_schedule("com.eddy.iri-dev2.plist"), "lastRun": last_run(f"{AGENT}/iri-safety-team/dev2.log")},
+                {"name": "QA", "role": "E2E 테스트", "schedule": get_schedule("com.eddy.iri-qa.plist"), "lastRun": last_run(f"{AGENT}/iri-safety-team/qa.log")}
             ],
             "recentLog": "\n".join(tail(f"{AGENT}/iri-safety-team/dev1.log"))
         },
@@ -110,11 +138,11 @@ data = {
             "name": "BizTool",
             "icon": "💼",
             "description": "회계/HR 통합 관리 (프로덕션 운영 중)",
-            "schedule": "launchd 2시간 (push 금지 — Sanghun 승인 필요)",
+            "schedule": get_schedule("com.eddy.biztool-planner.plist") + " (push 금지)",
             "status": "active",
             "agents": [
-                {"name": "Planner", "role": "TODO 발굴/API 조사", "schedule": "2시간", "lastRun": last_run(f"{AGENT}/biztool-team/planner.log")},
-                {"name": "Dev1", "role": "승인된 TODO 개발", "schedule": "2시간", "lastRun": last_run(f"{AGENT}/biztool-team/dev1.log")}
+                {"name": "Planner", "role": "TODO 발굴/API 조사", "schedule": get_schedule("com.eddy.biztool-planner.plist"), "lastRun": last_run(f"{AGENT}/biztool-team/planner.log")},
+                {"name": "Dev1", "role": "승인된 TODO 개발", "schedule": get_schedule("com.eddy.biztool-dev1.plist"), "lastRun": last_run(f"{AGENT}/biztool-team/dev1.log")}
             ],
             "recentLog": "\n".join(tail(f"{AGENT}/biztool-team/planner.log"))
         },
@@ -122,10 +150,10 @@ data = {
             "name": "ReviewBot",
             "icon": "📝",
             "description": "사봤쪄 리뷰 블로그 (자동 포스팅 중단)",
-            "schedule": "launchd 2시간 (Dev1만)",
+            "schedule": get_schedule("com.eddy.reviewbot-dev1.plist") + " (Dev1만)",
             "status": "active",
             "agents": [
-                {"name": "Dev1", "role": "쿠팡 검색 전환 개발", "schedule": "2시간", "lastRun": last_run(f"{AGENT}/reviewbot-team/dev1.log")},
+                {"name": "Dev1", "role": "쿠팡 검색 전환 개발", "schedule": get_schedule("com.eddy.reviewbot-dev1.plist"), "lastRun": last_run(f"{AGENT}/reviewbot-team/dev1.log")},
                 {"name": "Pipeline", "role": "자동 포스팅", "schedule": "중단", "lastRun": last_run(f"{AGENT}/reviewbot/data/logs/pipeline.log")}
             ],
             "recentLog": "\n".join(tail(f"{AGENT}/reviewbot-team/dev1.log"))
@@ -150,7 +178,7 @@ data = {
         }
     ],
     "weeklyReport": {
-        "schedule": "매주 일요일 23:59",
+        "schedule": get_schedule("com.eddy.weekly-report.plist"),
         "format": "팀별 개별 PDF → 텔레그램 전송",
         "status": "active"
     },
