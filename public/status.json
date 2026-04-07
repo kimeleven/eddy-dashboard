@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-08 06:16:47",
+  "updatedAt": "2026-04-08 07:29:57",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-08 06:14:02"
+          "lastRun": "2026-04-08 06:17:14"
         }
       ],
-      "recentLog": "- **ELDO**: BETA-45 sectors E2E 완료, QA 28차 3/3 PASS. BETA-46(company E2E locator 안정화) 진행 중\n- **ReviewBot**: 안정화 모드 #13, pending-links 14건 대기\n- **BizTool**: 금융API/세금계산서 조사 완료, Sanghun 결정 대기\n**대기 (Sanghun 액션 필요):**\n- BizTool 금융 API 결정\n- XBot 직접 로그인 테스트\n- ReviewBot 쿠팡 링크 14건 제공\n[2026-04-08 04:14:02] Eddy 실행 완료\n[2026-04-08 06:14:02] Eddy 실행 시작"
+      "recentLog": "**✅ 직접 처리:**\n- IRI-Safety BUG-008: `prisma generate + db push` 직접 실행 완료 (서버 재시작 시 MSDS 페이지 정상화)\n- ELDO TASKS.md: BETA-44/45 완료 처리, BETA-46 Dev1 배정\n- 대시보드 업데이트 + 푸시\n**⏳ Sanghun 액션 필요:**\n- BizTool: 오픈뱅킹 API 가입 방향 결정\n- ELDO: Vercel 토큰 / GA4 ID\n- IRI: open.law.go.kr OC 키 발급\n[2026-04-08 06:17:14] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
