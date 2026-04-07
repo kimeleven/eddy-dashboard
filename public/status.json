@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-07 22:01:21",
+  "updatedAt": "2026-04-07 23:29:51",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-07 21:58:00"
+          "lastRun": "2026-04-07 22:02:17"
         }
       ],
-      "recentLog": "✅ 처리:\n- IRI TASKS.md: QA 10차 완료 반영, Phase 13 배정 업데이트\n⏳ Sanghun 액션 필요:\n- ELDO Vercel 토큰 / GA4 ID\n- BizTool: 쿠콘 API / 팝빌 세금계산서 계약 여부\n- XBot: 최초 로그인 테스트 (직접 실행)\n- ReviewBot: 쿠팡 링크 14건 제공\n[2026-04-07 21:58:00] Eddy 실행 완료"
+      "recentLog": "✅ **처리:**\n- IRI TASKS.md: QA 10차 완료 반영, Phase 13 배정 업데이트\n- 대시보드 업데이트 + 푸시\n⏳ **Sanghun 액션 필요:**\n- ELDO Vercel 토큰 / GA4 ID\n- BizTool: 쿠콘 API 계약 / 팝빌 세금계산서 계약 여부\n- XBot: 최초 로그인 테스트 (직접 실행)\n- ReviewBot: 쿠팡 파트너스 링크 14건 제공\n[2026-04-07 22:02:17] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
