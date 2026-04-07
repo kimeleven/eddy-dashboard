@@ -23,6 +23,41 @@ def last_run(path):
             return m.group(1)
     return ""
 
+def read_secretary():
+    """secretary.md를 파싱하여 섹션별로 반환"""
+    path = os.path.join(AGENT, "eddy", "secretary.md")
+    try:
+        with open(path) as f:
+            content = f.read()
+        sections = {}
+        current = None
+        for line in content.split('\n'):
+            if line.startswith('## 📌'):
+                current = 'pinned'
+                sections[current] = []
+            elif line.startswith('## 📅'):
+                current = 'schedule'
+                sections[current] = []
+            elif line.startswith('## 📝'):
+                current = 'memo'
+                sections[current] = []
+            elif line.startswith('## ✅'):
+                current = 'done'
+                sections[current] = []
+            elif line.startswith('## ') or line.startswith('# '):
+                current = None
+            elif current and line.strip() and not line.startswith('_') and not line.startswith('---'):
+                sections.setdefault(current, []).append(line.strip())
+        return {
+            "pinned": sections.get('pinned', []),
+            "schedule": sections.get('schedule', []),
+            "memo": sections.get('memo', []),
+            "done": sections.get('done', []),
+            "raw": content
+        }
+    except:
+        return {"pinned": [], "schedule": [], "memo": [], "done": [], "raw": ""}
+
 def get_schedule(plist_name):
     """launchd plist에서 실제 주기를 읽어옴"""
     path = os.path.join(PLIST_DIR, plist_name)
@@ -177,6 +212,7 @@ data = {
             "recentLog": "개발 종료 (2026-04-03~)"
         }
     ],
+    "secretary": read_secretary(),
     "weeklyReport": {
         "schedule": get_schedule("com.eddy.weekly-report.plist"),
         "format": "팀별 개별 PDF → 텔레그램 전송",

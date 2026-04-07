@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-08 07:29:57",
+  "updatedAt": "2026-04-08 07:48:06",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -77,7 +77,7 @@
           "name": "Dev2",
           "role": "E2E 테스트 + UI",
           "schedule": "4시간",
-          "lastRun": "2026-04-08 03:46:57"
+          "lastRun": "2026-04-08 07:46:59"
         },
         {
           "name": "QA",
@@ -155,7 +155,7 @@
           "name": "Dev1",
           "role": "쿠팡 검색 전환 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-08 03:34:31"
+          "lastRun": "2026-04-08 07:35:20"
         },
         {
           "name": "Pipeline",
@@ -164,7 +164,7 @@
           "lastRun": ""
         }
       ],
-      "recentLog": "[2026-04-08 03:33:23] Dev1 실행\n[done] 순회 #13 상태 점검 — 신택스 정상, BUG-002 수정 확인(하루 2포스팅 일치), pending-links 14개 대기\n**순회 #13 완료**\n- 전 모듈 신택스 정상\n- BUG-002 이미 수정됨 — `blog-publisher.mjs` / `pipeline.mjs` 모두 하루 2포스팅으로 일치\n- pending-links 14개 전부 waiting (Sanghun 링크 수신 대기)\n- keywords: done 23 / failed 3 / pending 232\n- 추가 구현 없음. 안정화 모드 유지.\n[2026-04-08 03:34:31] Dev1 완료"
+      "recentLog": "Already up to date.\n[2026-04-08 07:34:32] Dev1 실행\n[done] 순회 #14 상태 점검 — 신택스 정상, pending-links 14개 대기, 안정화 모드 유지\n순회 #14 완료. 안정화 모드 유지 중.\n- 전 모듈 신택스 정상\n- pending-links 14개 waiting (Sanghun 링크 수신 대기)\n- keywords: done 23 / failed 3 / pending 232\n- 추가 구현 태스크 없음\n[2026-04-08 07:35:20] Dev1 완료"
     },
     {
       "name": "XBot",
@@ -185,6 +185,13 @@
       "recentLog": "개발 종료 (2026-04-03~)"
     }
   ],
+  "secretary": {
+    "pinned": [],
+    "schedule": [],
+    "memo": [],
+    "done": [],
+    "raw": "# Eddy 비서 메모\n_Sanghun의 일정, 메모, 기억할 사항 관리_\n_최종 업데이트: 2026-04-08_\n\n---\n\n## 📌 고정 메모\n_(중요하게 기억할 사항)_\n\n---\n\n## 📅 일정\n_(일정 관리)_\n\n---\n\n## 📝 메모\n_(임시 메모, 기록)_\n\n---\n\n## ✅ 완료\n_(처리 완료된 항목)_\n"
+  },
   "weeklyReport": {
     "schedule": "매주 월요일 23:59",
     "format": "팀별 개별 PDF → 텔레그램 전송",
@@ -201,7 +208,7 @@
     "이미 해당 출력 내용(`/usr/local/Cellar/node/25.8.2/bin/node`)을 이전 단계에서 확인했고 작업에 활용했습니다. Phase 14 Dev1 작업은 이미 완료된 상태입니다.",
     "[2026-04-08 03:52:27] Dev1 완료",
     "[2026-04-08 03:54:39] Dev2 완료",
-    "[2026-04-08 03:34:31] Dev1 완료",
+    "[2026-04-08 07:35:20] Dev1 완료",
     "**커밋:** `5334850` (biztool-team TASKS.md 헤더 업데이트)",
     "[2026-04-08 03:48:07] Planner 완료",
     "biztool 소스 코드는 변경 없음 (코드 수정 불필요한 잠재적 위험 사항). TASKS.md 커밋 완료 (`ae9cba5`).",

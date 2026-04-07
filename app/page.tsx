@@ -92,6 +92,33 @@ export default function Dashboard() {
           </div>
         ))}
 
+        {/* Secretary Memo */}
+        {data.secretary && (
+          <div style={{ ...styles.card, ...styles.fullWidth }}>
+            <div style={styles.cardTitle}>📋 Eddy 비서 메모</div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: 12 }}>
+              <div>
+                <div style={{ fontSize: 12, color: '#58a6ff', fontWeight: 600, marginBottom: 6 }}>📌 고정 메모</div>
+                <div style={{ ...styles.logBox, minHeight: 60 }}>
+                  {data.secretary.pinned?.length > 0 ? data.secretary.pinned.join('\n') : '없음'}
+                </div>
+              </div>
+              <div>
+                <div style={{ fontSize: 12, color: '#58a6ff', fontWeight: 600, marginBottom: 6 }}>📅 일정</div>
+                <div style={{ ...styles.logBox, minHeight: 60 }}>
+                  {data.secretary.schedule?.length > 0 ? data.secretary.schedule.join('\n') : '없음'}
+                </div>
+              </div>
+              <div>
+                <div style={{ fontSize: 12, color: '#58a6ff', fontWeight: 600, marginBottom: 6 }}>📝 메모</div>
+                <div style={{ ...styles.logBox, minHeight: 60 }}>
+                  {data.secretary.memo?.length > 0 ? data.secretary.memo.join('\n') : '없음'}
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Activity Log */}
         <div style={{ ...styles.card, ...styles.fullWidth }}>
           <div style={styles.cardTitle}>Recent Activity</div>
