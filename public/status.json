@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-07 07:45:16",
+  "updatedAt": "2026-04-07 11:29:48",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-07 07:43:17"
+          "lastRun": "2026-04-07 09:48:39"
         }
       ],
-      "recentLog": "| IRI-Safety | QA 6차 PASS 103/103 달성. 전 버그 완료 |\n**신규 이슈:** DevGate BUG-NEW-03 — PortOn 착수금(INITIAL_DEPOSIT) 결제 완료 시 프로젝트 PENDING→ACTIVE 전환 누락 (HIGH)\n**Sanghun 액션 필요:**\n- IRI-Safety: open.law.go.kr OC 키 발급 후 `.env LAW_API_OC=` 설정\n- ELDO: Vercel 토큰 발급\n- ReviewBot: 쿠팡 파트너스 링크 or API 키\n[2026-04-07 05:43:17] Eddy 실행 완료\n[2026-04-07 07:43:17] Eddy 실행 시작"
+      "recentLog": "| IRI-Safety | Phase 8(건강진단)/Phase 9(도급·협력업체) 완료. QA 7차 **109/110 PASS** (TC-13 1건 Flaky — 서버 콜드스타트 타이밍 이슈, 코드 버그 아님). 다음: Phase 10 기획. |\n| BizTool | BUG-001~004 전부 수정 완료. TODO-014(재무제표 차트)/018(알림센터)/019(모바일 반응형) 구현 완료. **push 대기** (승인 필요). |\n| DevGate | BUG-NEW-03(INITIAL_DEPOSIT → ACTIVE 미전환) 수정 완료. URGENT 0 토큰 절약 모드 유지. |\n**⏳ Sanghun 액션 필요:**\n1. **BizTool push 승인** — TODO-014/018/019 구현 완료, 확인 후 push 가능\n2. **IRI-Safety 법제처 OC 키** — open.law.go.kr 가입 후 `LAW_API_OC` 발급\n3. **ELDO Vercel 토큰** — vercel.com/account/tokens 발급\n4. **ReviewBot 쿠팡 파트너스 링크** or API 키 등록\n[2026-04-07 09:48:39] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
@@ -71,7 +71,7 @@
           "name": "Dev1",
           "role": "개발 + 버그 수정",
           "schedule": "4시간",
-          "lastRun": "2026-04-07 07:45:05"
+          "lastRun": "2026-04-07 07:48:00"
         },
         {
           "name": "Dev2",
@@ -86,7 +86,7 @@
           "lastRun": "2026-04-07 07:42:47"
         }
       ],
-      "recentLog": "[done] 개발자 P2P 페이지(profile/earnings/history) URL 직접 접근 차단 — /developer/dashboard로 리다이렉트 (커밋: 85791a5)\n완료.\n**처리 내용:**\n- `/developer/profile`, `/developer/earnings`, `/developer/history` 페이지를 `/developer/dashboard`로 리다이렉트 처리\n- QA_REPORT.md [MED] 버그 해결: 사이드바 제거 후에도 URL 직접 접근 가능했던 P2P 페이지들 차단\n- `pnpm build` 성공 확인\n- 커밋: `85791a5`, `e489f8f`\n[2026-04-07 03:45:05] Dev1 완료\n[2026-04-07 07:45:05] Dev1 실행"
+      "recentLog": "- QA_REPORT.md [MED] 버그 해결: 사이드바 제거 후에도 URL 직접 접근 가능했던 P2P 페이지들 차단\n- `pnpm build` 성공 확인\n- 커밋: `85791a5`, `e489f8f`\n[2026-04-07 03:45:05] Dev1 완료\n[2026-04-07 07:45:05] Dev1 실행\n[done] INITIAL_DEPOSIT 결제 완료 시 프로젝트 PENDING→ACTIVE 전환 누락 수정 (payment-completion.ts, commit c4820a6)\n완료.\n**수정 내용**: `web/src/lib/payment-completion.ts` — `INITIAL_DEPOSIT` 결제 완료 처리 블록에 프로젝트 `PENDING → ACTIVE` 상태 전환 로직 추가. 이미 `ACTIVE`인 경우 건너뜀 (커밋 `c4820a6`).\n[2026-04-07 07:48:00] Dev1 완료"
     },
     {
       "name": "IRI-Safety",
@@ -117,7 +117,7 @@
           "name": "QA",
           "role": "E2E 테스트",
           "schedule": "4시간",
-          "lastRun": "2026-04-07 07:43:36"
+          "lastRun": "2026-04-07 07:59:12"
         }
       ],
       "recentLog": "- **Server Actions** (`src/actions/health-exam.ts`):\n- `getHealthExamRecords()` — 목록 조회 (근로자: 본인만, 관리자: 전체)\n- `createHealthExamRecord()` — 건강진단 결과 등록 (다음 검진일·보관기한 자동 계산)\n- `updateHealthExamRecord()` — 수정 (tenantId 격리 필수)\n- `deleteHealthExamRecord()` — soft delete\n- `getHealthExamDashboard()` — 미수검자 수·만료 임박(D-30) KPI 반환\n- 모든 액션에 `writeAuditLog()` 삽입, 멀티테넌트 격리 적용\n다음: Dev2가 `/[slug]/health-exam` 페이지·사이드바 메뉴 구현하면 됨.\n[2026-04-07 07:38:04] Dev1 완료"
@@ -191,11 +191,11 @@
     "status": "active"
   },
   "recentActivity": [
-    "[2026-04-07 07:37:16] Dev1 완료",
-    "3. **QA 25차 보고서** 작성 — BUG-QA22-01 / WARN-QA23-01 / WARN-QA24-01 모두 해결 완료",
     "[2026-04-07 07:38:41] Dev2 (UI) 완료",
-    "- 커밋: `85791a5`, `e489f8f`",
-    "[2026-04-07 03:45:05] Dev1 완료",
+    "[done] INITIAL_DEPOSIT 결제 완료 시 프로젝트 PENDING→ACTIVE 전환 누락 수정 (payment-completion.ts, commit c4820a6)",
+    "완료.",
+    "**수정 내용**: `web/src/lib/payment-completion.ts` — `INITIAL_DEPOSIT` 결제 완료 처리 블록에 프로젝트 `PENDING → ACTIVE` 상태 전환 로직 추가. 이미 `ACTIVE`인 경우 건너뜀 (커밋 `c4820a6`).",
+    "[2026-04-07 07:48:00] Dev1 완료",
     "- `pnpm build` 성공, git push 완료",
     "[2026-04-07 07:35:08] Dev2 완료",
     "[2026-04-07 07:38:04] Dev1 완료",
