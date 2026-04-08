@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-09 03:30:07",
+  "updatedAt": "2026-04-09 07:30:09",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-09 02:34:31"
+          "lastRun": "2026-04-09 06:40:21"
         }
       ],
-      "recentLog": "**Sanghun 액션 필요:**\n- ELDO: Vercel 토큰 + GA4 ID\n- ReviewBot: 쿠팡 파트너스 링크 14개 or API 키\n- IRI-Safety: open.law.go.kr OC 키\n- BizTool: TODO-020 승인\n- DevGate: BUG-NEW-08 설계 의도 확인\n[2026-04-09 00:34:30] Eddy 실행 완료\n[2026-04-09 02:34:30] Eddy 실행 시작\nAPI Error: 500 {\"type\":\"error\",\"error\":{\"type\":\"api_error\",\"message\":\"Internal server error\"},\"request_id\":\"req_011CZrhvyQuKHoVAwRE54dVU\"}\n[2026-04-09 02:34:31] Eddy 실행 완료"
+      "recentLog": "- **ReviewBot**: ⚠️ Dev1이 순회 #13~#17 동안 쿠팡 실제 테스트 0회 — TASKS.md에 재경고 추가함\n- **DevGate**: 정상. E2E 74/74 PASS. BUG-NEW-07 완료\n- **IRI-Safety**: 정상. Phase 18/19 완료, QA 212/212 PASS\n- **BizTool**: BUG-011~013 로컬 수정 완료, BUG-014 신규 발견\n**Sanghun 액션 필요:**\n1. **BizTool push 승인** — BUG-011~014 로컬 수정분 (push 금지 규칙 준수 중)\n2. **BizTool TODO-001** — 오픈뱅킹 API 방향 결정 (쿠콘 vs 금융결제원 오픈뱅킹)\n3. **ReviewBot** — 쿠팡 파트너스 링크 직접 제공 또는 API 키 등록\n[2026-04-09 06:40:21] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
@@ -37,19 +37,19 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 00:03:19"
+          "lastRun": "2026-04-09 04:06:54"
         },
         {
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 00:08:30"
+          "lastRun": "2026-04-09 04:11:13"
         },
         {
           "name": "Planner",
           "role": "기획/태스크 관리",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 00:06:41"
+          "lastRun": "2026-04-09 04:09:08"
         },
         {
           "name": "QA",
@@ -58,7 +58,7 @@
           "lastRun": "2026-04-09 00:05:50"
         }
       ],
-      "recentLog": "백그라운드 탐색 결과 확인 완료. `/usr/local/lib/node_modules/npm/bin/npx`가 존재하며, 이미 `PATH=\"/usr/local/Cellar/node/25.8.2/bin:$PATH\" npx`로 해결한 방식과 일치합니다. 추가 조치 불필요합니다.\n[2026-04-08 20:00:43] Dev1 완료\n[2026-04-09 00:00:43] Dev1 실행\n[done] BETA-47: news.spec.ts 케이스 3 추가 (목록→상세 플로우) 3/3 PASS, 커밋 d6363ac\n**BETA-47 완료.**\n- `news.spec.ts` 케이스 3 (목록→상세 플로우) 추가\n- `--workers=1` 3/3 PASS (7.1s)\n- 커밋: `d6363ac` → push 완료\n[2026-04-09 00:03:19] Dev1 완료"
+      "recentLog": "[2026-04-09 04:03:19] Dev1 실행\n[done] BETA-48: vcr.spec.ts waitForSelector 추가, WARN-QA31-01 해소, 전체 31/31 PASS, 커밋 99b28aa\n**BETA-48 완료.**\n- **원인**: `waitForLoadState('networkidle')` 이후 클라이언트 fetch가 미완료 → tabpanel 내 버튼이 없어 flaky\n- **수정**: 케이스 1/2/3 모두 `page.waitForSelector('[role=\"tabpanel\"] button', {timeout: 30000})` 추가\n- **결과**: vcr.spec.ts 3/3 PASS, 전체 스위트 **31/31 PASS** (35.1s)\n- **커밋**: `99b28aa` → push 완료\n- **WARN-QA31-01**: Resolved\n[2026-04-09 04:06:54] Dev1 완료"
     },
     {
       "name": "DevGate",
@@ -71,13 +71,13 @@
           "name": "Dev1",
           "role": "개발 + 버그 수정",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 01:04:32"
+          "lastRun": "2026-04-09 05:28:05"
         },
         {
           "name": "Dev2",
           "role": "E2E 테스트 + UI",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 00:17:12"
+          "lastRun": "2026-04-09 05:45:30"
         },
         {
           "name": "QA",
@@ -86,7 +86,7 @@
           "lastRun": "2026-04-09 00:21:58"
         }
       ],
-      "recentLog": "**처리 내용:**\n- **[LOW] 0원 추가비용 approve 시 발주자 알림 누락** 수정\n- `additional-charges/[cid]/route.ts` 0원 분기 트랜잭션 내에 발주자(`clientId`) 대상 `ADDITIONAL_CHARGE_APPROVED` 알림 추가\n- 기존: 개발자 알림 + 대화 메시지만 생성 → 발주자는 상태 변경 인지 불가\n- 수정 후: 발주자에게도 \"추가 비용 처리 완료 (무료)\" 알림 발송\n- `pnpm build` 성공 확인\n- 커밋: `ae67a86` → push 완료\n[2026-04-09 01:04:32] Dev1 완료"
+      "recentLog": "- `additional-charges/[cid]/route.ts` 0원 분기 트랜잭션 내에 발주자(`clientId`) 대상 `ADDITIONAL_CHARGE_APPROVED` 알림 추가\n- 기존: 개발자 알림 + 대화 메시지만 생성 → 발주자는 상태 변경 인지 불가\n- 수정 후: 발주자에게도 \"추가 비용 처리 완료 (무료)\" 알림 발송\n- `pnpm build` 성공 확인\n- 커밋: `ae67a86` → push 완료\n[2026-04-09 01:04:32] Dev1 완료\n[2026-04-09 05:04:33] Dev1 실행\n[done] E2E Step 27 추가 (마일스톤/추가비용 API 접근 확인) + GET 핸들러 없는 milestones route 수정 → 74/74 PASS\n이미 해당 결과도 처리 완료했습니다. 두 번째 실행 결과 **74/74 PASS** 확인 후 커밋/푸시까지 완료된 상태입니다.\n[2026-04-09 05:28:05] Dev1 완료"
     },
     {
       "name": "IRI-Safety",
@@ -99,19 +99,19 @@
           "name": "Planner",
           "role": "법안 검토/기능 기획",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 00:36:35"
+          "lastRun": "2026-04-09 04:41:36"
         },
         {
           "name": "Dev1",
           "role": "백엔드 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 00:08:03"
+          "lastRun": "2026-04-09 04:11:31"
         },
         {
           "name": "Dev2",
           "role": "프론트엔드 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 00:12:27"
+          "lastRun": "2026-04-09 04:15:35"
         },
         {
           "name": "QA",
@@ -120,7 +120,7 @@
           "lastRun": "2026-04-08 22:05:42"
         }
       ],
-      "recentLog": "- `getMsdsTrainingRecords(msdsId?)` — 이수 기록 목록 (필터 가능)\n- `getMsdsTrainingRecord(id)` — 단건 조회\n- `createMsdsTrainingRecord(data)` — 등록 + `MsdsRecord.lastTrainingDate` 자동 갱신 + AuditLog\n- `deleteMsdsTrainingRecord(id)` — soft delete + AuditLog\n- `getMsdsTrainingStatus()` — 화학물질×근로자 미이수 현황 매트릭스\n- `getMsdsTrainingDashboard()` — KPI (미이수 건수)\n- DB push + Prisma Client 재생성 완료\n다음 단계는 Dev2가 MSDS 상세 페이지에 교육 이수 탭 UI를 구현해야 합니다.\n[2026-04-09 00:08:03] Dev1 완료"
+      "recentLog": "- **Server Actions** (`src/actions/health-follow-up.ts`)\n- `getHealthFollowUps(examRecordId?)` — 사후조치 이력 조회\n- `createHealthFollowUp(data)` — 등록 (tenantId 격리, audit log)\n- `completeHealthFollowUp(id)` — 조치 완료 확인\n- `updateHealthFollowUp(id, data)` — 수정\n- `deleteHealthFollowUp(id)` — soft delete\n- `getFollowUpDashboard()` — 미이행/완료/전체 KPI\n다음 작업은 Dev2(프론트엔드)가 건강진단 상세 페이지에 사후관리 탭 UI를 구현하면 됩니다.\n[2026-04-09 04:11:31] Dev1 완료"
     },
     {
       "name": "BizTool",
@@ -133,16 +133,16 @@
           "name": "Planner",
           "role": "TODO 발굴/API 조사",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 00:05:49"
+          "lastRun": "2026-04-09 04:07:30"
         },
         {
           "name": "Dev1",
           "role": "승인된 TODO 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 00:29:46"
+          "lastRun": "2026-04-09 04:37:20"
         }
       ],
-      "recentLog": "- **팝빌**: ✅ 건당 200원, Node.js SDK, 안정성 1위\n- **스마트빌**: ✅ 월 50건 이하 시 월 11,000원\n- **볼타**: ✅ 건당 90원 최저가, 신생 서비스\n**Sanghun 결정 필요 사항:**\n- [ ] 쿠콘 API 계약 여부 (TODO-001)\n- [ ] 팝빌/스마트빌/볼타 선택 (TODO-002)\n**커밋**: `67e618e` (push 하지 않음 — Sanghun 승인 대기)\n[2026-04-09 00:05:49] Planner 완료"
+      "recentLog": "- ✅ 쿠콘 API: 월 20~50만원, 200+ 기관 연동 가능 (현실적 최선)\n- ✅ 웹케시 B2B: 법인 특화, 월 3~10만원\n- ✅ CSV 파서 개선: 즉시 구현 가능, 비용 없음 (API 전까지 현실적 대안)\n**Sanghun 결정 대기 중:**\n- 쿠콘 계약 진행 여부 (월 비용 승인)\n- CSV 파서 먼저 개발할지 여부\ngit push는 하지 않았습니다.\n[2026-04-09 04:07:30] Planner 완료"
     },
     {
       "name": "ReviewBot",
@@ -155,7 +155,7 @@
           "name": "Dev1",
           "role": "쿠팡 검색 전환 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-08 23:37:25"
+          "lastRun": "2026-04-09 03:38:18"
         },
         {
           "name": "Pipeline",
@@ -164,7 +164,7 @@
           "lastRun": ""
         }
       ],
-      "recentLog": "Already up to date.\n[2026-04-08 23:36:18] Dev1 실행\n[done] 순회 #16 상태 점검 — 신택스 OK, pending-links 14개 waiting, 안정화 모드 유지\n**순회 #16 완료**\n- 전 모듈 신택스 정상\n- pending-links: 14개 모두 waiting (Sanghun 파트너스 링크 수신 대기)\n- keywords: done 23 / failed 3 / pending 232\n- 추가 구현 태스크 없음 — 안정화 모드 유지\n[2026-04-08 23:37:25] Dev1 완료"
+      "recentLog": "Already up to date.\n[2026-04-09 03:37:27] Dev1 실행\n[done] 순회 #17 상태 점검 — 신택스 정상, pending-links 14개 대기, 안정화 모드 유지\n**순회 #17 완료.**\n- 신택스: 전 모듈 정상\n- pending-links: 14개 waiting (Sanghun 링크 수신 대기 중)\n- keywords: done 23 / failed 3 / pending 232\n- 추가 구현 없음, 안정화 모드 유지\n[2026-04-09 03:38:18] Dev1 완료"
     },
     {
       "name": "XBot",
@@ -198,20 +198,20 @@
     "status": "active"
   },
   "recentActivity": [
-    "**커밋:** `407b6b5` (eldo-team/QA_REPORT.md)",
-    "[2026-04-09 00:08:30] Dev2 (UI) 완료",
-    "- 수정 후: 발주자에게도 \"추가 비용 처리 완료 (무료)\" 알림 발송",
-    "- 커밋: `ae67a86` → push 완료",
+    "커밋: eldo `61a17bc`, eldo-team `7b52e7a`",
+    "[2026-04-09 04:11:13] Dev2 (UI) 완료",
     "[2026-04-09 01:04:32] Dev1 완료",
-    "- **71/71 PASS** — E2E Step 25, 26 추가 완료",
-    "- 커밋 `e226db1` push 완료",
-    "[2026-04-09 00:17:12] Dev2 완료",
-    "- DB push + Prisma Client 재생성 완료",
-    "[2026-04-09 00:08:03] Dev1 완료",
-    "[2026-04-09 00:12:27] Dev2 완료",
-    "[2026-04-08 23:37:25] Dev1 완료",
-    "**커밋**: `67e618e` (push 하지 않음 — Sanghun 승인 대기)",
-    "[2026-04-09 00:05:49] Planner 완료",
-    "[2026-04-09 00:29:46] Dev1 완료"
+    "[done] E2E Step 27 추가 (마일스톤/추가비용 API 접근 확인) + GET 핸들러 없는 milestones route 수정 → 74/74 PASS",
+    "이미 해당 결과도 처리 완료했습니다. 두 번째 실행 결과 **74/74 PASS** 확인 후 커밋/푸시까지 완료된 상태입니다.",
+    "[2026-04-09 05:28:05] Dev1 완료",
+    "`e2e-visual.mjs` headless 모드 **74/74 PASS** 안정적으로 확인됐습니다.",
+    "[2026-04-09 05:45:30] Dev2 완료",
+    "- `getFollowUpDashboard()` — 미이행/완료/전체 KPI",
+    "[2026-04-09 04:11:31] Dev1 완료",
+    "[2026-04-09 04:15:35] Dev2 완료",
+    "[2026-04-09 03:38:18] Dev1 완료",
+    "[2026-04-09 04:07:30] Planner 완료",
+    "TASKS.md 업데이트 및 pm-report.txt 작성 완료. **git push는 Sanghun 승인 후 진행.**",
+    "[2026-04-09 04:37:20] Dev1 완료"
   ]
 }
