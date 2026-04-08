@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-08 11:29:59",
+  "updatedAt": "2026-04-08 15:30:01",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-08 10:19:00"
+          "lastRun": "2026-04-08 14:22:01"
         }
       ],
-      "recentLog": "**팀 현황 요약:**\n- ELDO: BETA-46 locator 안정화 진행 중 (Planner 34차)\n- IRI-Safety: Phase 15 진행, BUG-008 처리 중\n- ReviewBot: 안정화 모드, pending-links 14개 대기\n- BizTool: BUG-011 수정 완료\n- DevGate: QA 버그 4건 수정 완료, 신규 버그 1건 발견\n[2026-04-08 08:18:21] Eddy 실행 완료\n[2026-04-08 10:18:22] Eddy 실행 시작\n그룹 채팅에서 지시 → 그룹으로 답변. 기록 완료.\n[2026-04-08 10:19:00] Eddy 실행 완료"
+      "recentLog": "**✅ 이번 처리:**\n- IRI-Safety `prisma generate + db push` 직접 실행 (BUG-008: MSDS, BUG-010: 안전검사 동시 해소)\n**⏳ Sanghun 액션 필요:**\n- ReviewBot: 쿠팡 파트너스 링크 또는 API 키 (pending 14건 발행 대기)\n- ELDO: Vercel 토큰 + Neon DB URL\n- IRI-Safety: open.law.go.kr OC 키 발급\n- BizTool: BUG-012 push 승인 여부\n[2026-04-08 14:22:01] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
@@ -99,28 +99,28 @@
           "name": "Planner",
           "role": "법안 검토/기능 기획",
           "schedule": "4시간",
-          "lastRun": "2026-04-08 08:18:18"
+          "lastRun": "2026-04-08 12:23:45"
         },
         {
           "name": "Dev1",
           "role": "백엔드 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-08 07:55:24"
+          "lastRun": "2026-04-08 11:59:08"
         },
         {
           "name": "Dev2",
           "role": "프론트엔드 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-08 07:57:38"
+          "lastRun": "2026-04-08 12:00:32"
         },
         {
           "name": "QA",
           "role": "E2E 테스트",
           "schedule": "4시간",
-          "lastRun": "2026-04-08 09:31:40"
+          "lastRun": "2026-04-08 13:42:40"
         }
       ],
-      "recentLog": "- `createSafetyInspection(data)` — 등록 (CEO/SAFETY_MANAGER만, Audit Log)\n- `updateSafetyInspection(id, data)` — 수정\n- `deleteSafetyInspection(id)` — soft delete\n- `getInspectionDashboard()` — KPI (전체/불합격/기간초과/30일이내 예정)\n- 보관기한: 3년 자동 계산 (산안법 §45~46)\n- 멀티테넌트 격리 + 역할 권한 체크 완료\n- 커밋: `a277dfb`\n**Dev2 다음 작업**: `/[slug]/safety-inspection` UI 페이지 구현 (목록/등록폼/KPI 대시보드/불합격 기계 강조 표시)\n[2026-04-08 07:55:24] Dev1 완료"
+      "recentLog": "- `SafetyBudget` — 중처법 §4④ 안전보건 예산\n- `WorkerOpinionRecord` — 중처법 §4⑦ 종사자 의견 청취\n- `EmergencyResponseManual` — 중처법 §4⑧ 대응 매뉴얼\n- Server Actions 3개 파일:\n- `safety-budget.ts` — 예산 등록/집행 업데이트/대시보드\n- `worker-opinion.ts` — 의견청취 회의록/이행 현황\n- `emergency-manual.ts` — 매뉴얼 등록/시행/훈련 기록\nDev2에 Phase 16 UI 작업 전달 가능 상태.\n[2026-04-08 11:59:08] Dev1 완료"
     },
     {
       "name": "BizTool",
@@ -133,16 +133,16 @@
           "name": "Planner",
           "role": "TODO 발굴/API 조사",
           "schedule": "4시간",
-          "lastRun": "2026-04-08 07:55:20"
+          "lastRun": "2026-04-08 11:58:26"
         },
         {
           "name": "Dev1",
           "role": "승인된 TODO 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-08 08:09:59"
+          "lastRun": "2026-04-08 12:15:45"
         }
       ],
-      "recentLog": "- `vat.html`: 1기/2기 기간 선택, 월별 집계, 매출/매입 목록, 엑셀+인쇄 완비.\n- `withholding.html`: 월별/기간/반기 모드, 직원별 공제내역, 엑셀+인쇄 완비.\n**처리 완료:**\n- TASKS.md에서 TODO-008/009 상태를 ✔️완료로 정정.\n- \"기존 구현 완료 기능\" 테이블에 두 페이지 추가.\n- git commit 완료 (push 하지 않음).\n**TODO.md → TASKS.md 누락 항목:** 없음 (전부 반영됨).\n[2026-04-08 07:55:20] Planner 완료"
+      "recentLog": "**현황 파악:**\n- TODO-001 (금융 API 조사): ✅ 조사완료 — Sanghun 결정 대기 (쿠콘 API 계약 여부 등)\n- TODO-002 (세금계산서 API 조사): ✅ 조사완료 — 팝빌/스마트빌/볼타 비교 완료, Sanghun 법적 승인 대기\n- TODO-003~019: 대부분 Sanghun승인대기 상태 (TODO-008/009/014/018/019는 완료)\n**이번 발견:**\n- **TODO-020** 신규 추가: `pages/partners.html` 기능이 `help.html`에 문서화 안 됨. BUG-011 fix(담당자/전화/이메일 추가)도 help.html 미반영. 검색 필터에 담당자 정보 미포함. (우선순위 낮음)\n**TODO.md → TASKS.md 누락 항목:** 없음 (전체 반영 완료)\n[2026-04-08 11:58:26] Planner 완료"
     },
     {
       "name": "ReviewBot",
@@ -198,20 +198,20 @@
     "status": "active"
   },
   "recentActivity": [
+    "- 스타일 마이그레이션(style-01~05): 전체 완료",
+    "- Bloomberg 스타일 통일(BETA-38~41): 전체 완료",
+    "[2026-04-08 07:52:35] Dev2 (UI) 완료",
     "[done] E2E 63/63 PASS — 스크린샷 timeout/animations 수정, 서버 재시작 후 /login 404 해결",
     "Exit code 0 확인 — 테스트 전체 통과 (63/63 PASS). 이미 수동으로 결과 캡처해서 처리 완료했습니다.",
     "[2026-04-08 08:39:46] Dev1 완료",
     "- **커밋**: `48d0a40` → push 완료",
     "[2026-04-08 07:49:02] Dev2 완료",
-    "- 멀티테넌트 격리 + 역할 권한 체크 완료",
-    "- 커밋: `a277dfb`",
-    "[2026-04-08 07:55:24] Dev1 완료",
-    "[2026-04-08 07:57:38] Dev2 완료",
+    "[2026-04-08 11:59:08] Dev1 완료",
+    "[2026-04-08 12:00:32] Dev2 완료",
     "[2026-04-08 07:35:20] Dev1 완료",
-    "- \"기존 구현 완료 기능\" 테이블에 두 페이지 추가.",
-    "- git commit 완료 (push 하지 않음).",
-    "[2026-04-08 07:55:20] Planner 완료",
-    "**커밋**: `1fbac48`",
-    "[2026-04-08 08:09:59] Dev1 완료"
+    "**TODO.md → TASKS.md 누락 항목:** 없음 (전체 반영 완료)",
+    "[2026-04-08 11:58:26] Planner 완료",
+    "- **커밋**: `efcd720`",
+    "[2026-04-08 12:15:45] Dev1 완료"
   ]
 }
