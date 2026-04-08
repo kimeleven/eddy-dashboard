@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-08 07:48:06",
+  "updatedAt": "2026-04-08 11:29:59",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-08 06:17:14"
+          "lastRun": "2026-04-08 10:19:00"
         }
       ],
-      "recentLog": "**✅ 직접 처리:**\n- IRI-Safety BUG-008: `prisma generate + db push` 직접 실행 완료 (서버 재시작 시 MSDS 페이지 정상화)\n- ELDO TASKS.md: BETA-44/45 완료 처리, BETA-46 Dev1 배정\n- 대시보드 업데이트 + 푸시\n**⏳ Sanghun 액션 필요:**\n- BizTool: 오픈뱅킹 API 가입 방향 결정\n- ELDO: Vercel 토큰 / GA4 ID\n- IRI: open.law.go.kr OC 키 발급\n[2026-04-08 06:17:14] Eddy 실행 완료"
+      "recentLog": "**팀 현황 요약:**\n- ELDO: BETA-46 locator 안정화 진행 중 (Planner 34차)\n- IRI-Safety: Phase 15 진행, BUG-008 처리 중\n- ReviewBot: 안정화 모드, pending-links 14개 대기\n- BizTool: BUG-011 수정 완료\n- DevGate: QA 버그 4건 수정 완료, 신규 버그 1건 발견\n[2026-04-08 08:18:21] Eddy 실행 완료\n[2026-04-08 10:18:22] Eddy 실행 시작\n그룹 채팅에서 지시 → 그룹으로 답변. 기록 완료.\n[2026-04-08 10:19:00] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
@@ -37,28 +37,28 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "schedule": "4시간",
-          "lastRun": "2026-04-08 03:49:45"
+          "lastRun": "2026-04-08 07:56:46"
         },
         {
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "schedule": "4시간",
-          "lastRun": "2026-04-08 03:52:12"
+          "lastRun": "2026-04-08 07:52:35"
         },
         {
           "name": "Planner",
           "role": "기획/태스크 관리",
           "schedule": "4시간",
-          "lastRun": "2026-04-08 03:51:34"
+          "lastRun": "2026-04-08 07:58:19"
         },
         {
           "name": "QA",
           "role": "E2E 테스트/코드 검증",
           "schedule": "4시간",
-          "lastRun": "2026-04-08 03:48:24"
+          "lastRun": "2026-04-08 07:54:20"
         }
       ],
-      "recentLog": "[done] BETA-45 — sectors E2E spec 3케이스 생성 (3/3 통과). /api/emsec/tree + stock-heatmap months.avgReturn 구조 반영. 커밋 799305d\n**BETA-45 완료.**\n`tests/e2e/sectors.spec.ts` 생성 — 3/3 통과:\n- 케이스 1: `/sectors` HTTP 200 + 차트/테이블 표시\n- 케이스 2: `/api/emsec/tree` 200 + 섹터 배열 1건 이상 (실제 엔드포인트 반영)\n- 케이스 3: `/api/stock-heatmap` 200 + `months[0].avgReturn` 필드 존재 (실제 응답 구조 반영)\n커밋: `799305d` → push 완료.\n[2026-04-08 03:49:45] Dev1 완료"
+      "recentLog": "[done] BETA-46 — company.spec.ts 케이스 3 locator 안정화 완료 (62293ba). div:has(> div > #fin-info) table 사용, 3/3 PASS\n**BETA-46 완료** (`62293ba`)\n**작업 내용:**\n- `company.spec.ts` 케이스 3의 `page.locator('table').first()` → `page.locator('div:has(> div > #fin-info) table').first()`로 교체\n- `fin-info-section.tsx`의 `<h2 id=\"fin-info\">` 앵커를 기준으로 재무정보 섹션 wrapper div 내 table을 명확히 특정\n- `waitForLoadState('load')` → `'networkidle'`로 변경 (client-side fetch 완료 대기)\n- **E2E 3/3 PASS** (13.9s)\n- WARN-QA27-02 Resolved\n[2026-04-08 07:56:46] Dev1 완료"
     },
     {
       "name": "DevGate",
@@ -71,22 +71,22 @@
           "name": "Dev1",
           "role": "개발 + 버그 수정",
           "schedule": "4시간",
-          "lastRun": "2026-04-08 03:58:35"
+          "lastRun": "2026-04-08 08:39:46"
         },
         {
           "name": "Dev2",
           "role": "E2E 테스트 + UI",
           "schedule": "4시간",
-          "lastRun": "2026-04-08 07:46:59"
+          "lastRun": "2026-04-08 07:49:02"
         },
         {
           "name": "QA",
           "role": "E2E 테스트 검증",
           "schedule": "4시간",
-          "lastRun": "2026-04-08 04:13:12"
+          "lastRun": "2026-04-08 08:19:10"
         }
       ],
-      "recentLog": "**처리 내용 (커밋: `0b2c31e`)**\n이미 로컬에서 작성되어 있던 버그 수정 4건을 커밋/푸시했습니다:\n1. **[MED] `fee-proposals/[id]` GET 소유권 검증** — CLIENT는 본인 프로젝트, DEVELOPER는 배정된 프로젝트만 접근 허용\n2. **[LOW] admin/projects DELETE 감사 로그** — `createAdminLog('DELETE_PROJECT')` 추가\n3. **[LOW] 결제 영수증 HTML XSS** — `escapeHtml()` 함수로 name/email/title 이스케이프 처리\n4. **[LOW] 추가비용 conversationMessage senderId** — POST/PATCH(거절/승인) 모두 `senderId: BigInt(user.sub)` 추가\n[2026-04-08 03:58:35] Dev1 완료"
+      "recentLog": "1. **[MED] `fee-proposals/[id]` GET 소유권 검증** — CLIENT는 본인 프로젝트, DEVELOPER는 배정된 프로젝트만 접근 허용\n2. **[LOW] admin/projects DELETE 감사 로그** — `createAdminLog('DELETE_PROJECT')` 추가\n3. **[LOW] 결제 영수증 HTML XSS** — `escapeHtml()` 함수로 name/email/title 이스케이프 처리\n4. **[LOW] 추가비용 conversationMessage senderId** — POST/PATCH(거절/승인) 모두 `senderId: BigInt(user.sub)` 추가\n[2026-04-08 03:58:35] Dev1 완료\nAlready up to date.\n[2026-04-08 07:58:37] Dev1 실행\n[done] E2E 63/63 PASS — 스크린샷 timeout/animations 수정, 서버 재시작 후 /login 404 해결\nExit code 0 확인 — 테스트 전체 통과 (63/63 PASS). 이미 수동으로 결과 캡처해서 처리 완료했습니다.\n[2026-04-08 08:39:46] Dev1 완료"
     },
     {
       "name": "IRI-Safety",
@@ -99,28 +99,28 @@
           "name": "Planner",
           "role": "법안 검토/기능 기획",
           "schedule": "4시간",
-          "lastRun": "2026-04-08 04:13:00"
+          "lastRun": "2026-04-08 08:18:18"
         },
         {
           "name": "Dev1",
           "role": "백엔드 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-08 03:52:27"
+          "lastRun": "2026-04-08 07:55:24"
         },
         {
           "name": "Dev2",
           "role": "프론트엔드 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-08 03:54:39"
+          "lastRun": "2026-04-08 07:57:38"
         },
         {
           "name": "QA",
           "role": "E2E 테스트",
           "schedule": "4시간",
-          "lastRun": "2026-04-08 05:21:09"
+          "lastRun": "2026-04-08 09:31:40"
         }
       ],
-      "recentLog": "- `addManagementPolicy(data)` — 등록 (CEO/SAFETY_MANAGER)\n- `publishPolicy(id)` — 공표 처리 (CEO만, AuditLog)\n- `deleteManagementPolicy(id)` — 미공표 건 soft delete\n- `getManagementPolicyKPI()` — 대시보드용 KPI\nDev2는 `/[slug]/company-policy` 페이지 + 사이드바 메뉴 구현 가능.\n[2026-04-07 23:47:53] Dev1 완료\n[2026-04-08 03:47:56] Dev1 실행\n이미 해당 출력 내용(`/usr/local/Cellar/node/25.8.2/bin/node`)을 이전 단계에서 확인했고 작업에 활용했습니다. Phase 14 Dev1 작업은 이미 완료된 상태입니다.\n[2026-04-08 03:52:27] Dev1 완료"
+      "recentLog": "- `createSafetyInspection(data)` — 등록 (CEO/SAFETY_MANAGER만, Audit Log)\n- `updateSafetyInspection(id, data)` — 수정\n- `deleteSafetyInspection(id)` — soft delete\n- `getInspectionDashboard()` — KPI (전체/불합격/기간초과/30일이내 예정)\n- 보관기한: 3년 자동 계산 (산안법 §45~46)\n- 멀티테넌트 격리 + 역할 권한 체크 완료\n- 커밋: `a277dfb`\n**Dev2 다음 작업**: `/[slug]/safety-inspection` UI 페이지 구현 (목록/등록폼/KPI 대시보드/불합격 기계 강조 표시)\n[2026-04-08 07:55:24] Dev1 완료"
     },
     {
       "name": "BizTool",
@@ -133,16 +133,16 @@
           "name": "Planner",
           "role": "TODO 발굴/API 조사",
           "schedule": "4시간",
-          "lastRun": "2026-04-08 03:48:07"
+          "lastRun": "2026-04-08 07:55:20"
         },
         {
           "name": "Dev1",
           "role": "승인된 TODO 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-08 04:05:19"
+          "lastRun": "2026-04-08 08:09:59"
         }
       ],
-      "recentLog": "**신규 버그:** 없음\n**기존 미결 이슈:**\n- **BUG-007** (employees.js `resign_date` COALESCE 누락) — Sanghun 승인 대기 중\n- **TODO-001** 금융 API — 쿠콘 계약 진행 여부 Sanghun 결정 필요\n- **TODO-002** 세금계산서 ASP — 팝빌/스마트빌 선택 Sanghun 결정 필요\n**커밋:** `5334850` (biztool-team TASKS.md 헤더 업데이트)\n[2026-04-08 03:48:07] Planner 완료"
+      "recentLog": "- `vat.html`: 1기/2기 기간 선택, 월별 집계, 매출/매입 목록, 엑셀+인쇄 완비.\n- `withholding.html`: 월별/기간/반기 모드, 직원별 공제내역, 엑셀+인쇄 완비.\n**처리 완료:**\n- TASKS.md에서 TODO-008/009 상태를 ✔️완료로 정정.\n- \"기존 구현 완료 기능\" 테이블에 두 페이지 추가.\n- git commit 완료 (push 하지 않음).\n**TODO.md → TASKS.md 누락 항목:** 없음 (전부 반영됨).\n[2026-04-08 07:55:20] Planner 완료"
     },
     {
       "name": "ReviewBot",
@@ -198,20 +198,20 @@
     "status": "active"
   },
   "recentActivity": [
-    "- WARN-QA27-01 (sectors.spec.ts 미커밋) ✅ Resolved",
-    "- 커밋: `c8370b4` → push 완료",
-    "[2026-04-08 03:52:12] Dev2 (UI) 완료",
-    "[2026-04-08 03:58:35] Dev1 완료",
-    "**커밋**: `985c7bc`, `b5e2aef` → push 완료",
-    "[2026-04-08 03:46:57] Dev2 완료",
-    "[2026-04-07 23:47:53] Dev1 완료",
-    "이미 해당 출력 내용(`/usr/local/Cellar/node/25.8.2/bin/node`)을 이전 단계에서 확인했고 작업에 활용했습니다. Phase 14 Dev1 작업은 이미 완료된 상태입니다.",
-    "[2026-04-08 03:52:27] Dev1 완료",
-    "[2026-04-08 03:54:39] Dev2 완료",
+    "[done] E2E 63/63 PASS — 스크린샷 timeout/animations 수정, 서버 재시작 후 /login 404 해결",
+    "Exit code 0 확인 — 테스트 전체 통과 (63/63 PASS). 이미 수동으로 결과 캡처해서 처리 완료했습니다.",
+    "[2026-04-08 08:39:46] Dev1 완료",
+    "- **커밋**: `48d0a40` → push 완료",
+    "[2026-04-08 07:49:02] Dev2 완료",
+    "- 멀티테넌트 격리 + 역할 권한 체크 완료",
+    "- 커밋: `a277dfb`",
+    "[2026-04-08 07:55:24] Dev1 완료",
+    "[2026-04-08 07:57:38] Dev2 완료",
     "[2026-04-08 07:35:20] Dev1 완료",
-    "**커밋:** `5334850` (biztool-team TASKS.md 헤더 업데이트)",
-    "[2026-04-08 03:48:07] Planner 완료",
-    "biztool 소스 코드는 변경 없음 (코드 수정 불필요한 잠재적 위험 사항). TASKS.md 커밋 완료 (`ae9cba5`).",
-    "[2026-04-08 04:05:19] Dev1 완료"
+    "- \"기존 구현 완료 기능\" 테이블에 두 페이지 추가.",
+    "- git commit 완료 (push 하지 않음).",
+    "[2026-04-08 07:55:20] Planner 완료",
+    "**커밋**: `1fbac48`",
+    "[2026-04-08 08:09:59] Dev1 완료"
   ]
 }
