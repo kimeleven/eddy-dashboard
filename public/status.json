@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-09 20:01:02",
+  "updatedAt": "2026-04-09 21:00:49",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-09 20:01:02"
+          "lastRun": "2026-04-09 21:00:49"
         }
       ],
-      "recentLog": "- 새 텔레그램 메시지: 없음\n- IRI-Safety: Phase 23 대기 중 (Dev1/Dev2/Planner 태스크 배정됨)\n- 나머지 팀: 보류 유지\n[2026-04-09 20:00:30] Eddy 실행 완료\n[Eddy] 팀 정상 가동 중. 변동 없음.\n- 새 텔레그램 메시지: 없음\n- IRI-Safety: Phase 23 (안전보건표지 관리) 태스크 배정됨, Dev1/Dev2/Planner 실행 대기\n- 나머지 팀: 보류 유지\n[2026-04-09 20:01:02] Eddy 실행 완료"
+      "recentLog": "**[Eddy PM 순회 — 2026-04-09 21:00]**\n**IRI-Safety:**\n- Phase 23 안전보건표지 관리 완료 (DB `afdb00c` + UI `0c4098b`)\n- QA 18차 진행 중 (TC-81~83 Phase 23 + TC-01~80 회귀 테스트)\n- Planner Agent 기획 보강 작업 중 (TASKS.md 지시 전달 완료)\n**텔레그램:** 새 메시지 없음. 변동 없음.\n[2026-04-09 21:00:49] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
@@ -37,19 +37,19 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 08:08:01"
+          "lastRun": "2026-04-09 20:11:40"
         },
         {
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 08:11:37"
+          "lastRun": "2026-04-09 20:14:13"
         },
         {
           "name": "Planner",
           "role": "기획/태스크 관리",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 08:11:46"
+          "lastRun": "2026-04-09 20:15:25"
         },
         {
           "name": "QA",
@@ -58,7 +58,7 @@
           "lastRun": "2026-04-09 00:05:50"
         }
       ],
-      "recentLog": "- **WARN-QA31-01**: Resolved\n[2026-04-09 04:06:54] Dev1 완료\n[2026-04-09 08:06:54] Dev1 실행\n[done] [no-task] BETA-47/48 완료, QA 33차 31/31 PASS. 신규 Dev1 태스크 없음 — Planner 할당 대기\n현재 Dev1 할당 태스크가 없습니다. 상태 요약:\n- **완료**: BETA-47 (news E2E 케이스 3), BETA-48 (vcr.spec.ts flaky 해소)\n- **E2E 커버리지**: 31/31 PASS (QA 33차)\n- **대기**: Planner가 다음 Dev1 스프린트(BETA-49 후보) 배정 필요\n[2026-04-09 08:08:01] Dev1 완료"
+      "recentLog": "**처리 내용:**\n- 이전 Dev1 태스크 (BETA-47, BETA-48) 모두 완료 상태 확인\n- PLAN.md 업데이트: `news.spec.ts` 케이스 수 2→3 수정, BETA-47/48 완료 기록\n- **BETA-49 신규 구현** — `news-client.tsx` Bloomberg 스타일 통일:\n- 카드: `border-border` → `border-border/60`, `hover:bg-accent` → `hover:bg-accent/20 hover:border-primary/30`\n- 헤더에 총 뉴스 수 ticker 배지 추가 (`{total} stories`)\n- Skeleton Bloomberg 패턴으로 통일\n- readMore 링크 `→` 화살표 + `font-mono` 스타일\n- 커밋 `9c27dba` push 완료\n[2026-04-09 20:11:40] Dev1 완료"
     },
     {
       "name": "DevGate",
@@ -99,19 +99,19 @@
           "name": "Planner",
           "role": "법안 검토/기능 기획",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 16:55:37"
+          "lastRun": "2026-04-09 21:00:25"
         },
         {
           "name": "Dev1",
           "role": "백엔드 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 16:23:59"
+          "lastRun": "2026-04-09 20:26:34"
         },
         {
           "name": "Dev2",
           "role": "프론트엔드 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 16:27:12"
+          "lastRun": "2026-04-09 20:29:42"
         },
         {
           "name": "QA",
@@ -120,7 +120,7 @@
           "lastRun": "2026-04-09 18:31:46"
         }
       ],
-      "recentLog": "- `createMuscleSkeletalSurvey()` — 등록 (정기 조사 시 nextSurveyDate 자동 계산 +3년)\n- `updateMuscleSkeletalSurvey()` — 결과 업데이트\n- `deleteMuscleSkeletalSurvey()` — soft delete\n- `createImprovement()` — 개선 계획 등록\n- `completeImprovement()` — 개선 완료 처리\n- `getMuscleSkeletalDashboard()` — KPI (기한초과 조사, 미완료 개선계획 건수)\n- 모든 액션에 `writeAuditLog()` + 테넌트 격리 적용\nDev2는 이제 `/[slug]/musculoskeletal` UI 구현을 착수할 수 있습니다.\n[2026-04-09 16:23:59] Dev1 완료"
+      "recentLog": "- **`src/actions/safety-signs.ts`** — Server Actions:\n- `getSafetySigns()` — 위치/종류/상태 필터 조회\n- `createSafetySign()` — 표지 등록\n- `updateSignCondition()` — 점검 결과 업데이트 (상태, 점검일, 다음 점검일 자동계산)\n- `updateSafetySign()` — 표지 정보 수정\n- `deleteSafetySign()` — soft delete\n- `getSignDashboard()` — KPI (손상/분실/90일 미점검 건수, 카테고리별 분류)\nDev2가 `/[slug]/safety-signs` UI 구현 후 QA 18차 진행 가능합니다.\n[2026-04-09 20:26:34] Dev1 완료"
     },
     {
       "name": "BizTool",
@@ -133,16 +133,16 @@
           "name": "Planner",
           "role": "TODO 발굴/API 조사",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 16:10:55"
+          "lastRun": "2026-04-09 20:12:24"
         },
         {
           "name": "Dev1",
           "role": "승인된 TODO 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 16:45:35"
+          "lastRun": "2026-04-09 20:48:43"
         }
       ],
-      "recentLog": "- 오픈뱅킹/마이데이터: 금융위원회 허가 필요 → 소규모 불가 ❌\n- **쿠콘 API**: 현실적 최선 (월 20~50만원 예상) ✅\n- **웹케시 B2B**: 법인 계좌 특화 (월 3~10만원) ✅\n- **단기 대안**: 은행별 CSV 파서 확대 (비용 없음) ✅\n- **세금계산서 (TODO-002)**: 팝빌 추천 (건당 200원), 스마트빌 월 50건 이하 경제적\n**대기 중**: TODO-001/002 모두 Sanghun 결정 필요. 쿠콘 계약 여부, ASP 서비스 선택 후 개발 착수 가능.\n**커밋**: `b360b63` (biztool-team/TASKS.md, push 하지 않음)\n[2026-04-09 16:10:55] Planner 완료"
+      "recentLog": "**현황 점검 결과:**\n- TODO.md → TASKS.md 전항목 반영 재확인. 신규 누락 항목 없음.\n- TODO-020 (거래처 검색 필터 + help.html): ✔️완료 (d73ba9f)\n- TODO-001 금융 API 조사: 이미 완료. 쿠콘(B2B 중개), 웹케시, CSV 파서 개선 등 9개 옵션 정리. **Sanghun 결정 대기 중**\n- TODO-002 세금계산서 ASP 조사: 이미 완료. 팝빌/스마트빌/볼타/바로빌 비교 완료. **Sanghun 법적 승인 대기 중**\n**Sanghun 결정 필요:**\n1. **TODO-001**: 쿠콘 API 계약 진행 여부 (월 20~50만원 예상) / CSV 파서 먼저 진행 여부\n2. **TODO-002**: 팝빌 계약 여부 (건당 200원) / 스마트빌 후불형 여부 (월 11,000원)\n[2026-04-09 20:12:24] Planner 완료"
     },
     {
       "name": "ReviewBot",
@@ -198,20 +198,20 @@
     "status": "active"
   },
   "recentActivity": [
-    "[2026-04-09 08:11:37] Dev2 (UI) 완료",
+    "[2026-04-09 20:14:13] Dev2 (UI) 완료",
     "[2026-04-09 01:04:32] Dev1 완료",
     "[done] E2E Step 27 추가 (마일스톤/추가비용 API 접근 확인) + GET 핸들러 없는 milestones route 수정 → 74/74 PASS",
     "이미 해당 결과도 처리 완료했습니다. 두 번째 실행 결과 **74/74 PASS** 확인 후 커밋/푸시까지 완료된 상태입니다.",
     "[2026-04-09 05:28:05] Dev1 완료",
     "`e2e-visual.mjs` headless 모드 **74/74 PASS** 안정적으로 확인됐습니다.",
     "[2026-04-09 05:45:30] Dev2 완료",
-    "- `getMuscleSkeletalDashboard()` — KPI (기한초과 조사, 미완료 개선계획 건수)",
-    "[2026-04-09 16:23:59] Dev1 완료",
-    "[2026-04-09 16:27:12] Dev2 완료",
+    "[2026-04-09 20:26:34] Dev1 완료",
+    "- 커밋: `0c4098b` → push 완료",
+    "[2026-04-09 20:29:42] Dev2 완료",
     "[2026-04-09 19:39:53] Dev1 완료",
-    "**커밋**: `b360b63` (biztool-team/TASKS.md, push 하지 않음)",
-    "[2026-04-09 16:10:55] Planner 완료",
-    "- **BUG-016** (ℹ️잠재적위험): `POST /api/loans/link-bank-tx` 연결 후 해제할 unlink 엔드포인트 없음. 잘못 연결 시 복구 API 부재. TASKS.md에 기록 완료.",
-    "[2026-04-09 16:45:35] Dev1 완료"
+    "[2026-04-09 20:12:24] Planner 완료",
+    "**신규 추가**: BUG-017 — `severance.js`에 PUT 라우트 없어 퇴직금 기록의 지급완료 상태/지급일 업데이트 불가. 기록 삭제 후 재입력해야 하는 상황. Sanghun 승인 후 수정 필요.",
+    "**TASKS.md** 업데이트 완료 (21차).",
+    "[2026-04-09 20:48:43] Dev1 완료"
   ]
 }
