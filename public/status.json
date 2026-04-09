@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-04-10 06:01:11",
+  "updatedAt": "2026-04-10 07:05:51",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
-    "launchdAgents": 19,
+    "launchdAgents": 8,
     "operatingHours": "Eddy: 24시간 / 팀: 월~금 19:00~07:00, 토일 24시간",
     "model": "Sonnet (전체)",
     "token": "바둑이토큰",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-10 06:01:11"
+          "lastRun": "2026-04-10 07:01:58"
         }
       ],
-      "recentLog": "• **IRI-Safety**: Phase 25 작업허가서 Dev1/Dev2 완료 확인 (commits 72eae61, db667d8). QA TC-87~89 검증 대기 중. 전체 회귀 266/266 PASS 유지.\n• **ReviewBot**: 네이버 세션 만료 상태 지속. 하루 1회 10시 크론 유지 중. pending-links.json 없음 (정상).\n**✅ 처리 완료:**\n- Phase 25 TASKS.md Dev1/Dev2 완료 체크 업데이트\n- 텔레그램 새 메시지 없음 확인\n**⏳ 대기:**\n- ReviewBot 네이버 세션 재로그인 (Sanghun 직접 필요)\n[2026-04-10 06:01:11] Eddy 실행 완료"
+      "recentLog": "- 텔레그램 새 메시지 없음 확인\n**⏳ 대기:**\n- ReviewBot 네이버 세션 재로그인 (Sanghun 직접 필요)\n[2026-04-10 06:01:11] Eddy 실행 완료\n[2026-04-10 06:01:11] status.json 업데이트 완료\n[main 529e38f] status: 2026-04-10 06:01\n1 file changed, 27 insertions(+), 27 deletions(-)\n[2026-04-10 07:00:01] Eddy 실행 시작\n[2026-04-10 07:01:58] Eddy 스킵 — 이전 실행 중 (PID 75769)"
     },
     {
       "name": "ELDO",
@@ -71,7 +71,7 @@
           "name": "Dev1",
           "role": "개발 + 버그 수정",
           "schedule": "4시간",
-          "lastRun": "2026-04-10 02:49:55"
+          "lastRun": "2026-04-10 06:49:56"
         },
         {
           "name": "Dev2",
@@ -86,7 +86,7 @@
           "lastRun": "2026-04-09 00:21:58"
         }
       ],
-      "recentLog": "[done] e2e-headless-run.mjs Step 15 수정 — 개발자 검색 페이지(제거됨) → 발주자 프로젝트 상세 접근, 39/39 PASS (bb57980)\n이미 처리된 작업입니다. 최종 결과 **39/39 PASS** 확인 후 커밋(`bb57980`) 및 push까지 완료된 태스크입니다.\n[2026-04-09 21:46:21] Dev1 완료\nAlready up to date.\n[2026-04-10 01:46:24] Dev1 실행\n[done] E2E 82/82 PASS — Step 29 버그 수정 (변수 중복/500 false positive/proposals 404 → dashboard 수정, 알림 로딩 상태 허용)\n이미 처리된 태스크입니다. 세션 내에서 결과를 확인하고 모든 수정을 완료했습니다.\n**최종 완료**: E2E **82/82 PASS** ✅\n[2026-04-10 02:49:55] Dev1 완료"
+      "recentLog": "이미 처리된 작업입니다. 최종 결과 **39/39 PASS** 확인 후 커밋(`bb57980`) 및 push까지 완료된 태스크입니다.\n[2026-04-09 21:46:21] Dev1 완료\nAlready up to date.\n[2026-04-10 01:46:24] Dev1 실행\n[done] E2E 82/82 PASS — Step 29 버그 수정 (변수 중복/500 false positive/proposals 404 → dashboard 수정, 알림 로딩 상태 허용)\n이미 처리된 태스크입니다. 세션 내에서 결과를 확인하고 모든 수정을 완료했습니다.\n**최종 완료**: E2E **82/82 PASS** ✅\n[2026-04-10 02:49:55] Dev1 완료\n[2026-04-10 06:49:56] Dev1 실행"
     },
     {
       "name": "IRI-Safety",
@@ -198,9 +198,9 @@
     "status": "active"
   },
   "recentActivity": [
+    "**QA 36차**: 전체 suite **31/31 PASS** ✅ — 회귀 없음",
     "**[done] BETA-50 style: header active state + sectors sidebar Bloomberg — 31/31 PASS**",
     "[2026-04-10 04:23:13] Dev2 (UI) 완료",
-    "[done] E2E 82/82 PASS — Step 29 버그 수정 (변수 중복/500 false positive/proposals 404 → dashboard 수정, 알림 로딩 상태 허용)",
     "이미 처리된 태스크입니다. 세션 내에서 결과를 확인하고 모든 수정을 완료했습니다.",
     "**최종 완료**: E2E **82/82 PASS** ✅",
     "[2026-04-10 02:49:55] Dev1 완료",
