@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-10 03:30:19",
+  "updatedAt": "2026-04-10 04:02:12",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-10 03:03:26"
+          "lastRun": "2026-04-10 04:02:12"
         }
       ],
-      "recentLog": "**버그 수정:**\n- ReviewBot 크론탭 `--manual` 플래그 누락 발견 → 수정 완료. 오늘 10시 포함 그간 매일 자동 실행이 차단되고 있었음. 내일 10시부터 정상 작동.\n**Sanghun 액션 필요:**\n1. 텔레그램 753번 메시지 — \"여름 쿨링 선풍기\" 쿠팡 파트너스 링크 회신 시 즉시 리뷰 작성+포스팅\n2. 네이버 세션 만료 상태 — 포스팅 직전 `naver-auto-login.mjs` 수동 실행 필요\n[2026-04-10 03:03:26] Eddy 실행 완료\n[2026-04-10 03:03:26] status.json 업데이트 완료\n[main edad85a] status: 2026-04-10 03:03\n1 file changed, 7 insertions(+), 7 deletions(-)"
+      "recentLog": "**📋 팀 현황:**\n- **IRI-Safety**: Phase 24 완료 + QA 20차 266/266 PASS → **Phase 25 (작업허가서 §42) Dev1/Dev2/QA 배정 완료**\n- **ReviewBot**: 크론 10시(`--manual`) 정상 설정 ✅. 목걸이선풍기 포스팅은 **네이버 세션 만료** 차단 중. pending-links 13개 대기.\n**✅ 처리 완료:** IRI-Safety TASKS.md Phase 25 배정 (WorkPermit DB/UI/QA TC-87~89)\n**⏳ Sanghun 액션 필요:**\n- ReviewBot 네이버 재로그인 — Chrome에서 naver.com 로그인 후 세션 저장 (캡차 수동처리). 완료 후 `node post-necktie-fan.mjs` 실행하면 목걸이선풍기 즉시 포스팅됨.\n[2026-04-10 04:02:12] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
