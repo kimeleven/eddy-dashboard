@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-09 10:01:07",
+  "updatedAt": "2026-04-09 10:01:32",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-09 10:00:00"
+          "lastRun": "2026-04-09 10:01:32"
         }
       ],
-      "recentLog": "- state.json 업데이트 + git push\n⏳ **Sanghun 액션 필요:**\n- **ReviewBot**: Dev1이 계속 쿠팡 테스트를 안 하고 있음. 직접 `node pipeline.mjs --manual --step research` 실행 결과 확인이 필요하거나, 이 팀 에이전트를 한번 직접 점검하시는 게 좋을 것 같습니다.\n- **ELDO**: Vercel 토큰 + Neon DB 설정 시 즉시 배포 가능 (대기 중)\n[2026-04-09 09:01:39] Eddy 실행 완료\n[2026-04-09 09:01:40] status.json 업데이트 완료\n[main 9f8e606] status: 2026-04-09 09:01\n1 file changed, 25 insertions(+), 25 deletions(-)\n[2026-04-09 10:00:00] Eddy 실행 시작"
+      "recentLog": "| DevGate | E2E 74/74 PASS. Phase 19-A 완료 → 버그 수정 모드 |\n| XBot | 보류 (봇 감지) |\n| LiveOrder | 재가동 대기 |\n**Sanghun 액션 필요:**\n- BizTool BUG-014 수정 승인 (receivable.html 연체 배지)\n- BizTool TODO-003~017 승인 (금융API, 세금계산서 등)\n- ReviewBot 쿠팡 파트너스 링크 또는 API 키\n- ELDO Vercel 토큰 / GA4 ID\n[2026-04-09 10:01:32] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
