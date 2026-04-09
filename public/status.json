@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-09 19:30:15",
+  "updatedAt": "2026-04-09 20:01:02",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-09 19:01:40"
+          "lastRun": "2026-04-09 20:01:02"
         }
       ],
-      "recentLog": "**⏳ 대기:**\n- Planner Agent 기획 보강 미완료 (Sanghun 지시 2026-04-09)\n- 기타 팀: 보류 유지\n텔레그램 보고 완료.\n[2026-04-09 19:01:40] Eddy 실행 완료\n[2026-04-09 19:01:40] status.json 업데이트 완료\n[main 92bba05] status: 2026-04-09 19:01\n1 file changed, 4 insertions(+), 4 deletions(-)"
+      "recentLog": "- 새 텔레그램 메시지: 없음\n- IRI-Safety: Phase 23 대기 중 (Dev1/Dev2/Planner 태스크 배정됨)\n- 나머지 팀: 보류 유지\n[2026-04-09 20:00:30] Eddy 실행 완료\n[Eddy] 팀 정상 가동 중. 변동 없음.\n- 새 텔레그램 메시지: 없음\n- IRI-Safety: Phase 23 (안전보건표지 관리) 태스크 배정됨, Dev1/Dev2/Planner 실행 대기\n- 나머지 팀: 보류 유지\n[2026-04-09 20:01:02] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
@@ -155,7 +155,7 @@
           "name": "Dev1",
           "role": "쿠팡 검색 전환 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 07:39:06"
+          "lastRun": "2026-04-09 19:39:53"
         },
         {
           "name": "Pipeline",
@@ -164,7 +164,7 @@
           "lastRun": ""
         }
       ],
-      "recentLog": "Already up to date.\n[2026-04-09 07:38:19] Dev1 실행\n[done] 순회 #18 상태 점검 — 신택스 정상, pending-links 14개 waiting, keywords done=23/failed=3/pending=232, 안정화 모드 유지\n순회 #18 완료.\n- 전 모듈 신택스 정상\n- pending-links 14개 전부 waiting (Sanghun 링크 수신 대기)\n- keywords: done 23 / failed 3 / pending 232\n- 안정화 모드 유지\n[2026-04-09 07:39:06] Dev1 완료"
+      "recentLog": "Already up to date.\n[2026-04-09 19:39:08] Dev1 실행\n[done] 순회 #19 상태 점검 — 안정화 모드 유지, pending-links 14개 대기\n순회 #19 완료.\n- 전 모듈 신택스 정상\n- pending-links: 14개 waiting (Sanghun 링크 수신 대기)\n- keywords: done 23 / failed 3 / pending 232\n- 안정화 모드 유지\n[2026-04-09 19:39:53] Dev1 완료"
     },
     {
       "name": "XBot",
@@ -208,7 +208,7 @@
     "- `getMuscleSkeletalDashboard()` — KPI (기한초과 조사, 미완료 개선계획 건수)",
     "[2026-04-09 16:23:59] Dev1 완료",
     "[2026-04-09 16:27:12] Dev2 완료",
-    "[2026-04-09 07:39:06] Dev1 완료",
+    "[2026-04-09 19:39:53] Dev1 완료",
     "**커밋**: `b360b63` (biztool-team/TASKS.md, push 하지 않음)",
     "[2026-04-09 16:10:55] Planner 완료",
     "- **BUG-016** (ℹ️잠재적위험): `POST /api/loans/link-bank-tx` 연결 후 해제할 unlink 엔드포인트 없음. 잘못 연결 시 복구 API 부재. TASKS.md에 기록 완료.",
