@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-09 17:01:34",
+  "updatedAt": "2026-04-09 18:00:53",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-09 17:01:34"
+          "lastRun": "2026-04-09 18:00:53"
         }
       ],
-      "recentLog": "텔레그램 신규 지시 없음. 변동 없음.\n[2026-04-09 16:51:07] Eddy 실행 완료\n[2026-04-09 17:00:00] Eddy 실행 시작\n변동 없음. 현재 상태:\n- **IRI-Safety**: QA 17차 대기 중 (BUG-011/012 수정 완료, Phase 22 완료)\n- **새 텔레그램 지시**: 없음\n- **보류 팀**: ReviewBot, ELDO, DevGate, BizTool, XBot 모두 정상 보류 중\n[2026-04-09 17:01:34] Eddy 실행 완료"
+      "recentLog": "1 file changed, 17 insertions(+), 17 deletions(-)\n[2026-04-09 18:00:00] Eddy 실행 시작\n[Eddy PM 순회 완료]\n- 새 텔레그램 메시지: 없음\n- **IRI-Safety**: Phase 22 완료 (근골격계 유해요인 조사 UI/DB), QA 17차 배정 중. BUG-011/012 수정 완료\n- 나머지 팀 (ReviewBot, ELDO, DevGate, BizTool): 보류 유지\n변동 없음. 정상 가동 중.\n[2026-04-09 18:00:53] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
