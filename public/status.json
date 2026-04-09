@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-09 18:00:53",
+  "updatedAt": "2026-04-09 19:01:40",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-09 18:00:53"
+          "lastRun": "2026-04-09 19:01:40"
         }
       ],
-      "recentLog": "1 file changed, 17 insertions(+), 17 deletions(-)\n[2026-04-09 18:00:00] Eddy 실행 시작\n[Eddy PM 순회 완료]\n- 새 텔레그램 메시지: 없음\n- **IRI-Safety**: Phase 22 완료 (근골격계 유해요인 조사 UI/DB), QA 17차 배정 중. BUG-011/012 수정 완료\n- 나머지 팀 (ReviewBot, ELDO, DevGate, BizTool): 보류 유지\n변동 없음. 정상 가동 중.\n[2026-04-09 18:00:53] Eddy 실행 완료"
+      "recentLog": "- QA 17차 **247/247 PASS** 완료 (TC-01~80, 신규 버그 없음)\n- BUG-011/012 수정 확인 완료\n- Phase 23 안전보건표지 관리 (산안법 §37) Dev1/Dev2/Planner 태스크 배정\n**⏳ 대기:**\n- Planner Agent 기획 보강 미완료 (Sanghun 지시 2026-04-09)\n- 기타 팀: 보류 유지\n텔레그램 보고 완료.\n[2026-04-09 19:01:40] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
@@ -117,7 +117,7 @@
           "name": "QA",
           "role": "E2E 테스트",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 14:19:48"
+          "lastRun": "2026-04-09 18:31:46"
         }
       ],
       "recentLog": "- `createMuscleSkeletalSurvey()` — 등록 (정기 조사 시 nextSurveyDate 자동 계산 +3년)\n- `updateMuscleSkeletalSurvey()` — 결과 업데이트\n- `deleteMuscleSkeletalSurvey()` — soft delete\n- `createImprovement()` — 개선 계획 등록\n- `completeImprovement()` — 개선 완료 처리\n- `getMuscleSkeletalDashboard()` — KPI (기한초과 조사, 미완료 개선계획 건수)\n- 모든 액션에 `writeAuditLog()` + 테넌트 격리 적용\nDev2는 이제 `/[slug]/musculoskeletal` UI 구현을 착수할 수 있습니다.\n[2026-04-09 16:23:59] Dev1 완료"
