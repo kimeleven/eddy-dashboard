@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-09 23:30:17",
+  "updatedAt": "2026-04-10 00:02:05",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-09 23:00:54"
+          "lastRun": "2026-04-10 00:02:05"
         }
       ],
-      "recentLog": "- QA 18차 배정 중 (TC-81~83 신규 + TC-01~80 회귀)\n- Agent 기획 보강: Planner PLAN.md 작업 진행 예정\n나머지 팀 (ReviewBot/ELDO/DevGate/BizTool): 보류 유지\n변동 없음.\n[2026-04-09 23:00:54] Eddy 실행 완료\n[2026-04-09 23:00:54] status.json 업데이트 완료\n[main 19c7c10] status: 2026-04-09 23:00\n1 file changed, 6 insertions(+), 6 deletions(-)"
+      "recentLog": "- QA 18차 결과 TASKS.md 반영\n- 회귀 FAIL 12건 Dev1/Dev2에 배정\n- Dev1: TC-09(사고보고), TC-13(SAPA), TC-37(계정목록), TC-52(경영방침 WORKER)\n- Dev2: TC-22(도급 사이드바), TC-38(SAPA 반기), TC-35(법령검색)\n⏳ **대기:**\n- Planner Agent 기획 보강 미완료 (Sanghun 지시 2026-04-09)\n- Phase 24 (일상 안전점검·TBM) 미착수\n- 법령검색 OC 키 미설정 (open.law.go.kr 발급 후 .env 설정)\n[2026-04-10 00:02:05] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
@@ -155,7 +155,7 @@
           "name": "Dev1",
           "role": "쿠팡 검색 전환 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 22:36:48"
+          "lastRun": "2026-04-09 23:39:54"
         },
         {
           "name": "Pipeline",
@@ -164,7 +164,7 @@
           "lastRun": ""
         }
       ],
-      "recentLog": "- thumbnail.png (HTML 폴백 — AI 월 한도 초과)\n- /tmp/review_clean.json, /tmp/review_thumb.png 등 포스팅 준비 파일 ✅\n**🚨 차단 (Step 4):**\n- 네이버 세션 만료 — 자동 로그인 시 **캡차** 발생 (2회 연속: 순회 #21, #22)\n- 포스팅 스크립트 `post-necktie-fan.mjs` 준비 완료, 로그인만 되면 즉시 실행 가능\n**⏳ Sanghun 액션 필요:**\n1. Chrome에서 naver.com에 kimeleve 계정으로 수동 로그인\n2. `node post-necktie-fan.mjs` 실행"
+      "recentLog": "- /tmp/review_clean.json, /tmp/review_thumb.png 등 포스팅 준비 파일 ✅\n**🚨 차단 (Step 4):**\n- 네이버 세션 만료 — 자동 로그인 시 **캡차** 발생 (2회 연속: 순회 #21, #22)\n- 포스팅 스크립트 `post-necktie-fan.mjs` 준비 완료, 로그인만 되면 즉시 실행 가능\n**⏳ Sanghun 액션 필요:**\n1. Chrome에서 naver.com에 kimeleve 계정으로 수동 로그인\n2. `node post-necktie-fan.mjs` 실행\n[2026-04-09 23:39:54] Dev1 실행"
     },
     {
       "name": "XBot",
@@ -198,6 +198,7 @@
     "status": "active"
   },
   "recentActivity": [
+    "- 전체 suite `--workers=1`: **31/31 PASS**",
     "- TASKS.md 업데이트 완료",
     "[2026-04-09 20:14:13] Dev2 (UI) 완료",
     "[done] e2e-headless-run.mjs Step 15 수정 — 개발자 검색 페이지(제거됨) → 발주자 프로젝트 상세 접근, 39/39 PASS (bb57980)",
@@ -208,7 +209,6 @@
     "[2026-04-09 20:26:34] Dev1 완료",
     "- 커밋: `0c4098b` → push 완료",
     "[2026-04-09 20:29:42] Dev2 완료",
-    "- 포스팅 스크립트 `post-necktie-fan.mjs` 준비 완료, 로그인만 되면 즉시 실행 가능",
     "[2026-04-09 20:12:24] Planner 완료",
     "**신규 추가**: BUG-017 — `severance.js`에 PUT 라우트 없어 퇴직금 기록의 지급완료 상태/지급일 업데이트 불가. 기록 삭제 후 재입력해야 하는 상황. Sanghun 승인 후 수정 필요.",
     "**TASKS.md** 업데이트 완료 (21차).",
