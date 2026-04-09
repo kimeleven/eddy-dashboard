@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-09 16:01:32",
+  "updatedAt": "2026-04-09 17:01:34",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-09 16:01:31"
+          "lastRun": "2026-04-09 17:01:34"
         }
       ],
-      "recentLog": "- BUG-011/012 Eddy 직접 수정 완료 (prisma generate, PPE export 제거)\n- QA 17차: BUG-011/012 재확인 + 235개 회귀 테스트 배정됨\n- Dev1: `MusculoskeletalSurvey` DB+Actions 대기\n- Dev2: Phase 22 UI 대기 (Dev1 완료 후)\n- Planner: Agent 기능 기획 보강 작업 중\n- **기타 팀**: 전원 보류 중 (Sanghun 지시 2026-04-09)\n✅ **처리:** 텔레그램 새 메시지 0건, state.json 업데이트, 커밋 완료\n⏳ **대기:** 없음\n[2026-04-09 16:01:31] Eddy 실행 완료"
+      "recentLog": "텔레그램 신규 지시 없음. 변동 없음.\n[2026-04-09 16:51:07] Eddy 실행 완료\n[2026-04-09 17:00:00] Eddy 실행 시작\n변동 없음. 현재 상태:\n- **IRI-Safety**: QA 17차 대기 중 (BUG-011/012 수정 완료, Phase 22 완료)\n- **새 텔레그램 지시**: 없음\n- **보류 팀**: ReviewBot, ELDO, DevGate, BizTool, XBot 모두 정상 보류 중\n[2026-04-09 17:01:34] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
@@ -99,19 +99,19 @@
           "name": "Planner",
           "role": "법안 검토/기능 기획",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 12:50:11"
+          "lastRun": "2026-04-09 16:55:37"
         },
         {
           "name": "Dev1",
           "role": "백엔드 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 12:16:54"
+          "lastRun": "2026-04-09 16:23:59"
         },
         {
           "name": "Dev2",
           "role": "프론트엔드 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 12:24:07"
+          "lastRun": "2026-04-09 16:27:12"
         },
         {
           "name": "QA",
@@ -120,7 +120,7 @@
           "lastRun": "2026-04-09 14:19:48"
         }
       ],
-      "recentLog": "- `getPpeIssuanceRecords(filters?)` — 근로자별·보호구별 필터\n- `createPpeIssuanceRecord(data)` — 지급 등록 (교체 예정일 자동 계산)\n- `deletePpeIssuanceRecord(id)` — soft delete\n- `getPpeDashboard()` — 만료 임박/만료/미지급 근로자 KPI\n- `calcExpiryDate()` — 법정 교체 주기 (안전모 3년, 방진마스크 6개월 등)\n- 모든 액션에 `writeAuditLog()` 연동\n- `prisma db push` + `prisma generate` 완료\nDev2가 UI(`/[slug]/ppe`) 구현 시 이 Actions를 import해서 사용할 수 있습니다.\n[2026-04-09 12:16:54] Dev1 완료"
+      "recentLog": "- `createMuscleSkeletalSurvey()` — 등록 (정기 조사 시 nextSurveyDate 자동 계산 +3년)\n- `updateMuscleSkeletalSurvey()` — 결과 업데이트\n- `deleteMuscleSkeletalSurvey()` — soft delete\n- `createImprovement()` — 개선 계획 등록\n- `completeImprovement()` — 개선 완료 처리\n- `getMuscleSkeletalDashboard()` — KPI (기한초과 조사, 미완료 개선계획 건수)\n- 모든 액션에 `writeAuditLog()` + 테넌트 격리 적용\nDev2는 이제 `/[slug]/musculoskeletal` UI 구현을 착수할 수 있습니다.\n[2026-04-09 16:23:59] Dev1 완료"
     },
     {
       "name": "BizTool",
@@ -133,16 +133,16 @@
           "name": "Planner",
           "role": "TODO 발굴/API 조사",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 12:09:38"
+          "lastRun": "2026-04-09 16:10:55"
         },
         {
           "name": "Dev1",
           "role": "승인된 TODO 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 12:42:11"
+          "lastRun": "2026-04-09 16:45:35"
         }
       ],
-      "recentLog": "- 쿠콘 API (월 20~50만원 예상) — 가장 현실적\n- 웹케시 B2B — 법인 계좌 특화\n- 은행별 CSV 파서 — 즉시 구현 가능, 무료\n- TODO-002 (세금계산서 ASP): ✅ 완료 — Sanghun 법적 승인 대기\n- 팝빌 (건당 200원), 스마트빌 (월 11,000원), 볼타 (건당 90원)\n**Sanghun 결정 필요 사항 (변동 없음):**\n- 쿠콘 API 계약 or CSV 파서 먼저 진행 여부\n- 팝빌/스마트빌/볼타 중 세금계산서 ASP 선택\n[2026-04-09 12:09:38] Planner 완료"
+      "recentLog": "- 오픈뱅킹/마이데이터: 금융위원회 허가 필요 → 소규모 불가 ❌\n- **쿠콘 API**: 현실적 최선 (월 20~50만원 예상) ✅\n- **웹케시 B2B**: 법인 계좌 특화 (월 3~10만원) ✅\n- **단기 대안**: 은행별 CSV 파서 확대 (비용 없음) ✅\n- **세금계산서 (TODO-002)**: 팝빌 추천 (건당 200원), 스마트빌 월 50건 이하 경제적\n**대기 중**: TODO-001/002 모두 Sanghun 결정 필요. 쿠콘 계약 여부, ASP 서비스 선택 후 개발 착수 가능.\n**커밋**: `b360b63` (biztool-team/TASKS.md, push 하지 않음)\n[2026-04-09 16:10:55] Planner 완료"
     },
     {
       "name": "ReviewBot",
@@ -198,7 +198,6 @@
     "status": "active"
   },
   "recentActivity": [
-    "토큰 절약 모드 규칙에 따라 즉시 exit. Dev1 완료 후 재실행 필요.",
     "[2026-04-09 08:11:37] Dev2 (UI) 완료",
     "[2026-04-09 01:04:32] Dev1 완료",
     "[done] E2E Step 27 추가 (마일스톤/추가비용 API 접근 확인) + GET 핸들러 없는 milestones route 수정 → 74/74 PASS",
@@ -206,12 +205,13 @@
     "[2026-04-09 05:28:05] Dev1 완료",
     "`e2e-visual.mjs` headless 모드 **74/74 PASS** 안정적으로 확인됐습니다.",
     "[2026-04-09 05:45:30] Dev2 완료",
-    "- `prisma db push` + `prisma generate` 완료",
-    "[2026-04-09 12:16:54] Dev1 완료",
-    "[2026-04-09 12:24:07] Dev2 완료",
+    "- `getMuscleSkeletalDashboard()` — KPI (기한초과 조사, 미완료 개선계획 건수)",
+    "[2026-04-09 16:23:59] Dev1 완료",
+    "[2026-04-09 16:27:12] Dev2 완료",
     "[2026-04-09 07:39:06] Dev1 완료",
-    "[2026-04-09 12:09:38] Planner 완료",
-    "- 커밋: `d73ba9f` (push 보류)",
-    "[2026-04-09 12:42:11] Dev1 완료"
+    "**커밋**: `b360b63` (biztool-team/TASKS.md, push 하지 않음)",
+    "[2026-04-09 16:10:55] Planner 완료",
+    "- **BUG-016** (ℹ️잠재적위험): `POST /api/loans/link-bank-tx` 연결 후 해제할 unlink 엔드포인트 없음. 잘못 연결 시 복구 API 부재. TASKS.md에 기록 완료.",
+    "[2026-04-09 16:45:35] Dev1 완료"
   ]
 }
