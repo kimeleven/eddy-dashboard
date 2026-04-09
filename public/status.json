@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-10 02:01:25",
+  "updatedAt": "2026-04-10 03:03:26",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-10 02:01:25"
+          "lastRun": "2026-04-10 03:03:26"
         }
       ],
-      "recentLog": "- 회귀 FAIL 12건 → TC-63 세션 타이밍 수정으로 전부 해소 (258/258 PASS)\n**ReviewBot:**\n- 네이버 세션 만료 지속 — 목걸이선풍기(elzE2M) 리뷰+이미지 준비 완료, 포스팅 대기\n- 클립팬(elCVBf) 리뷰 작성 대기\n- 봄 아이템 11건 쿠팡 링크 waiting 상태\n**⏳ Sanghun 액션 필요:**\n- ReviewBot 네이버 블로그 수동 재로그인 → 완료 후 포스팅 자동 재개\n[2026-04-10 02:01:25] Eddy 실행 완료"
+      "recentLog": "| IRI-Safety | Phase 24 완료 (일상 안전점검·TBM 관리 UI+DB). QA 19차 265/266 PASS. 다음: 폼 제출 기능 + 감사 로그 UI |\n| ReviewBot | \"여름 쿨링 선풍기\" 쿠팡 링크 대기 중 (어제 18시 텔레그램 753번 전송) |\n**버그 수정:**\n- ReviewBot 크론탭 `--manual` 플래그 누락 발견 → 수정 완료. 오늘 10시 포함 그간 매일 자동 실행이 차단되고 있었음. 내일 10시부터 정상 작동.\n**Sanghun 액션 필요:**\n1. 텔레그램 753번 메시지 — \"여름 쿨링 선풍기\" 쿠팡 파트너스 링크 회신 시 즉시 리뷰 작성+포스팅\n2. 네이버 세션 만료 상태 — 포스팅 직전 `naver-auto-login.mjs` 수동 실행 필요\n[2026-04-10 03:03:26] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
@@ -71,7 +71,7 @@
           "name": "Dev1",
           "role": "개발 + 버그 수정",
           "schedule": "4시간",
-          "lastRun": "2026-04-10 01:46:24"
+          "lastRun": "2026-04-10 02:49:55"
         },
         {
           "name": "Dev2",
@@ -86,7 +86,7 @@
           "lastRun": "2026-04-09 00:21:58"
         }
       ],
-      "recentLog": "[done] E2E Step 27 추가 (마일스톤/추가비용 API 접근 확인) + GET 핸들러 없는 milestones route 수정 → 74/74 PASS\n이미 해당 결과도 처리 완료했습니다. 두 번째 실행 결과 **74/74 PASS** 확인 후 커밋/푸시까지 완료된 상태입니다.\n[2026-04-09 05:28:05] Dev1 완료\nAlready up to date.\n[2026-04-09 21:28:05] Dev1 실행\n[done] e2e-headless-run.mjs Step 15 수정 — 개발자 검색 페이지(제거됨) → 발주자 프로젝트 상세 접근, 39/39 PASS (bb57980)\n이미 처리된 작업입니다. 최종 결과 **39/39 PASS** 확인 후 커밋(`bb57980`) 및 push까지 완료된 태스크입니다.\n[2026-04-09 21:46:21] Dev1 완료\nAlready up to date.\n[2026-04-10 01:46:24] Dev1 실행"
+      "recentLog": "[done] e2e-headless-run.mjs Step 15 수정 — 개발자 검색 페이지(제거됨) → 발주자 프로젝트 상세 접근, 39/39 PASS (bb57980)\n이미 처리된 작업입니다. 최종 결과 **39/39 PASS** 확인 후 커밋(`bb57980`) 및 push까지 완료된 태스크입니다.\n[2026-04-09 21:46:21] Dev1 완료\nAlready up to date.\n[2026-04-10 01:46:24] Dev1 실행\n[done] E2E 82/82 PASS — Step 29 버그 수정 (변수 중복/500 false positive/proposals 404 → dashboard 수정, 알림 로딩 상태 허용)\n이미 처리된 태스크입니다. 세션 내에서 결과를 확인하고 모든 수정을 완료했습니다.\n**최종 완료**: E2E **82/82 PASS** ✅\n[2026-04-10 02:49:55] Dev1 완료"
     },
     {
       "name": "IRI-Safety",
@@ -117,7 +117,7 @@
           "name": "QA",
           "role": "E2E 테스트",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 23:02:30"
+          "lastRun": "2026-04-10 03:02:33"
         }
       ],
       "recentLog": "- `updateSignCondition()` — 점검 결과 업데이트 (상태, 점검일, 다음 점검일 자동계산)\n- `updateSafetySign()` — 표지 정보 수정\n- `deleteSafetySign()` — soft delete\n- `getSignDashboard()` — KPI (손상/분실/90일 미점검 건수, 카테고리별 분류)\nDev2가 `/[slug]/safety-signs` UI 구현 후 QA 18차 진행 가능합니다.\n[2026-04-09 20:26:34] Dev1 완료\n[2026-04-10 00:26:36] Dev1 실행\n이미 앞에서 확인한 결과입니다 (255 PASS / 3 FAIL, TC-83). 추가 처리 필요 없습니다.\n[2026-04-10 01:09:05] Dev1 완료"
@@ -198,7 +198,7 @@
     "status": "active"
   },
   "recentActivity": [
-    "[2026-04-09 21:46:21] Dev1 완료",
+    "[2026-04-10 02:49:55] Dev1 완료",
     "- `git push origin main` 완료 (커밋: `268d74f`)",
     "- TASKS.md 업데이트 완료",
     "체크리스트 **E항목 (승인자 플로우)** 커버 완료.",
