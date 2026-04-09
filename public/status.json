@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-10 07:30:21",
+  "updatedAt": "2026-04-10 08:02:18",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-10 07:06:09"
+          "lastRun": "2026-04-10 08:02:18"
         }
       ],
-      "recentLog": "3. **대시보드** — 갱신 & GitHub push 완료.\n**📋 현재 상태:**\n- 리뷰봇 코드: 4/7 버전 (쿠팡 직접 검색) 그대로 실행 중\n- bot-state: `waiting_link` — \"여름 쿨링 선풍기\" 링크 대기 중\n- \"어제 나랑 수정한\" 내용이 구체적으로 어떤 부분인지 알려주시면 추가 확인하겠습니다\n[2026-04-10 07:06:09] Eddy 실행 완료\n[2026-04-10 07:06:09] status.json 업데이트 완료\n[main d689ce4] status: 2026-04-10 07:06\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-10 08:00:00] Eddy 실행 시작\n처리 완료:\n- **목걸이선풍기(elzE2M)** — ReviewBot pending-links에서 삭제\n- **IRI-Safety Phase 25** — QA 21차 278/278 PASS, TASKS.md 완료 반영\n- **텔레그램 보고** 완료\n대기 중: ReviewBot 봄 아이템 링크 제공 + 네이버 세션 재로그인 필요 (클립팬 포스팅).\n[2026-04-10 08:02:18] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
