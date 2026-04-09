@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-09 22:25:09",
+  "updatedAt": "2026-04-09 22:34:39",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -117,7 +117,7 @@
           "name": "QA",
           "role": "E2E 테스트",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 18:31:46"
+          "lastRun": "2026-04-09 22:31:45"
         }
       ],
       "recentLog": "- **`src/actions/safety-signs.ts`** — Server Actions:\n- `getSafetySigns()` — 위치/종류/상태 필터 조회\n- `createSafetySign()` — 표지 등록\n- `updateSignCondition()` — 점검 결과 업데이트 (상태, 점검일, 다음 점검일 자동계산)\n- `updateSafetySign()` — 표지 정보 수정\n- `deleteSafetySign()` — soft delete\n- `getSignDashboard()` — KPI (손상/분실/90일 미점검 건수, 카테고리별 분류)\nDev2가 `/[slug]/safety-signs` UI 구현 후 QA 18차 진행 가능합니다.\n[2026-04-09 20:26:34] Dev1 완료"
@@ -155,7 +155,7 @@
           "name": "Dev1",
           "role": "쿠팡 검색 전환 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 22:25:09"
+          "lastRun": "2026-04-09 22:28:01"
         },
         {
           "name": "Pipeline",
@@ -164,7 +164,7 @@
           "lastRun": ""
         }
       ],
-      "recentLog": "[2026-04-09 22:24:42] Dev1 스킵 — 이전 실행 중 (PID 14911)\n[done] 순회 #20 — 넥선풍기 리뷰 imagePaths 업데이트\n완료. 처리 내용:\n- **신규 리뷰 발견**: `review_1775900000000_넥선풍기_추천` (status: approved)\n- 이미지 3개 이미 생성됨: `product_main.png`, `product_1.png`, `banner.jpg`\n- `imagePaths: []` → 3개 경로로 업데이트 완료\n- **버그 없음**: QA_REPORT 기존 버그 모두 수정 완료 상태 유지\n- **대기 중**: pending-links 14개 — Sanghun 링크 수신 후 포스팅 가능\n[2026-04-09 22:25:09] Dev1 완료"
+      "recentLog": "**Sanghun 액션 필요**:\n```bash\ncd ~/eddy-agent/reviewbot\nnode blog-setup.mjs          # 브라우저 열림 → 네이버 수동 로그인\nnode pipeline.mjs --step post --manual   # 포스팅 재실행\n```\npm-report.txt, TASKS.md에 블로커 기록 완료. 커밋 & 푸시 완료.\n/Users/a1111/eddy-agent/reviewbot-team/dev1.sh: line 116: unexpected EOF while looking for matching `''\n/Users/a1111/eddy-agent/reviewbot-team/dev1.sh: line 118: syntax error: unexpected end of file"
     },
     {
       "name": "XBot",
@@ -198,6 +198,8 @@
     "status": "active"
   },
   "recentActivity": [
+    "- TASKS.md 업데이트 완료",
+    "[2026-04-09 20:14:13] Dev2 (UI) 완료",
     "[done] e2e-headless-run.mjs Step 15 수정 — 개발자 검색 페이지(제거됨) → 발주자 프로젝트 상세 접근, 39/39 PASS (bb57980)",
     "이미 처리된 작업입니다. 최종 결과 **39/39 PASS** 확인 후 커밋(`bb57980`) 및 push까지 완료된 태스크입니다.",
     "[2026-04-09 21:46:21] Dev1 완료",
@@ -206,9 +208,7 @@
     "[2026-04-09 20:26:34] Dev1 완료",
     "- 커밋: `0c4098b` → push 완료",
     "[2026-04-09 20:29:42] Dev2 완료",
-    "- `imagePaths: []` → 3개 경로로 업데이트 완료",
-    "- **버그 없음**: QA_REPORT 기존 버그 모두 수정 완료 상태 유지",
-    "[2026-04-09 22:25:09] Dev1 완료",
+    "pm-report.txt, TASKS.md에 블로커 기록 완료. 커밋 & 푸시 완료.",
     "[2026-04-09 20:12:24] Planner 완료",
     "**신규 추가**: BUG-017 — `severance.js`에 PUT 라우트 없어 퇴직금 기록의 지급완료 상태/지급일 업데이트 불가. 기록 삭제 후 재입력해야 하는 상황. Sanghun 승인 후 수정 필요.",
     "**TASKS.md** 업데이트 완료 (21차).",
