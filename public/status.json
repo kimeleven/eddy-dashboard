@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-09 22:00:55",
+  "updatedAt": "2026-04-09 22:25:09",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -24,7 +24,7 @@
           "lastRun": "2026-04-09 22:00:55"
         }
       ],
-      "recentLog": "[main cea8000] status: 2026-04-09 21:00\n1 file changed, 22 insertions(+), 22 deletions(-)\n[2026-04-09 22:00:01] Eddy 실행 시작\n변동 없음.\n**현황:**\n- **IRI-Safety**: Phase 23 안전보건표지 완료 (Dev1 `afdb00c` + Dev2 `0c4098b`), QA 18차 대기 중\n- **QA 17차**: 247/247 PASS, 오픈 버그 없음\n- **Planner**: Agent 기획 보강 진행 중\n[2026-04-09 22:00:55] Eddy 실행 완료"
+      "recentLog": "변동 없음.\n**현황:**\n- **IRI-Safety**: Phase 23 안전보건표지 완료 (Dev1 `afdb00c` + Dev2 `0c4098b`), QA 18차 대기 중\n- **QA 17차**: 247/247 PASS, 오픈 버그 없음\n- **Planner**: Agent 기획 보강 진행 중\n[2026-04-09 22:00:55] Eddy 실행 완료\n[2026-04-09 22:00:55] status.json 업데이트 완료\n[main 949de64] status: 2026-04-09 22:00\n1 file changed, 12 insertions(+), 12 deletions(-)"
     },
     {
       "name": "ELDO",
@@ -155,7 +155,7 @@
           "name": "Dev1",
           "role": "쿠팡 검색 전환 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 19:39:53"
+          "lastRun": "2026-04-09 22:25:09"
         },
         {
           "name": "Pipeline",
@@ -164,7 +164,7 @@
           "lastRun": ""
         }
       ],
-      "recentLog": "Already up to date.\n[2026-04-09 19:39:08] Dev1 실행\n[done] 순회 #19 상태 점검 — 안정화 모드 유지, pending-links 14개 대기\n순회 #19 완료.\n- 전 모듈 신택스 정상\n- pending-links: 14개 waiting (Sanghun 링크 수신 대기)\n- keywords: done 23 / failed 3 / pending 232\n- 안정화 모드 유지\n[2026-04-09 19:39:53] Dev1 완료"
+      "recentLog": "[2026-04-09 22:24:42] Dev1 스킵 — 이전 실행 중 (PID 14911)\n[done] 순회 #20 — 넥선풍기 리뷰 imagePaths 업데이트\n완료. 처리 내용:\n- **신규 리뷰 발견**: `review_1775900000000_넥선풍기_추천` (status: approved)\n- 이미지 3개 이미 생성됨: `product_main.png`, `product_1.png`, `banner.jpg`\n- `imagePaths: []` → 3개 경로로 업데이트 완료\n- **버그 없음**: QA_REPORT 기존 버그 모두 수정 완료 상태 유지\n- **대기 중**: pending-links 14개 — Sanghun 링크 수신 후 포스팅 가능\n[2026-04-09 22:25:09] Dev1 완료"
     },
     {
       "name": "XBot",
@@ -198,8 +198,6 @@
     "status": "active"
   },
   "recentActivity": [
-    "- TASKS.md 업데이트 완료",
-    "[2026-04-09 20:14:13] Dev2 (UI) 완료",
     "[done] e2e-headless-run.mjs Step 15 수정 — 개발자 검색 페이지(제거됨) → 발주자 프로젝트 상세 접근, 39/39 PASS (bb57980)",
     "이미 처리된 작업입니다. 최종 결과 **39/39 PASS** 확인 후 커밋(`bb57980`) 및 push까지 완료된 태스크입니다.",
     "[2026-04-09 21:46:21] Dev1 완료",
@@ -208,7 +206,9 @@
     "[2026-04-09 20:26:34] Dev1 완료",
     "- 커밋: `0c4098b` → push 완료",
     "[2026-04-09 20:29:42] Dev2 완료",
-    "[2026-04-09 19:39:53] Dev1 완료",
+    "- `imagePaths: []` → 3개 경로로 업데이트 완료",
+    "- **버그 없음**: QA_REPORT 기존 버그 모두 수정 완료 상태 유지",
+    "[2026-04-09 22:25:09] Dev1 완료",
     "[2026-04-09 20:12:24] Planner 완료",
     "**신규 추가**: BUG-017 — `severance.js`에 PUT 라우트 없어 퇴직금 기록의 지급완료 상태/지급일 업데이트 불가. 기록 삭제 후 재입력해야 하는 상황. Sanghun 승인 후 수정 필요.",
     "**TASKS.md** 업데이트 완료 (21차).",
