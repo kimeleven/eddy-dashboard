@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-09 13:02:37",
+  "updatedAt": "2026-04-09 14:00:44",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-09 13:02:36"
+          "lastRun": "2026-04-09 14:00:44"
         }
       ],
-      "recentLog": "- 오픈 버그 0건\n**이번 처리:**\n- Phase 22 (근골격계 유해요인 조사, 산안법 §156~157) Dev1+Dev2 착수 지시\n- QA 16차 (Phase 17~21 통합 테스트) 배정\n**대기 중:**\n- Agent 기획 보강 — Planner 미반영 (URGENT 유지)\n- Phase 22~24 순차 착수 예정\n[2026-04-09 13:02:36] Eddy 실행 완료"
+      "recentLog": "**보류 팀:** ReviewBot / ELDO / DevGate / BizTool / XBot — 변동 없음\n**대기 중 (Sanghun 액션 필요):**\n- 법령 검색 OC 키: [open.law.go.kr](https://open.law.go.kr) 회원가입 후 `.env LAW_API_OC=키` 설정\n- ReviewBot 쿠팡 파트너스 API 키 또는 pending-links.json 5건 링크 제공\n- ELDO Vercel 토큰 + Neon PostgreSQL 설정\n변동 없음. Phase 22 커밋 오면 다음 순회에서 확인하겠습니다.\n[2026-04-09 14:00:44] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
