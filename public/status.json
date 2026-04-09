@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-09 23:00:54",
+  "updatedAt": "2026-04-09 23:30:17",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -24,7 +24,7 @@
           "lastRun": "2026-04-09 23:00:54"
         }
       ],
-      "recentLog": "**IRI-Safety 현황:**\n- Phase 23 안전보건표지(산안법 §37) 완료 (afdb00c + 0c4098b)\n- QA 18차 배정 중 (TC-81~83 신규 + TC-01~80 회귀)\n- Agent 기획 보강: Planner PLAN.md 작업 진행 예정\n나머지 팀 (ReviewBot/ELDO/DevGate/BizTool): 보류 유지\n변동 없음.\n[2026-04-09 23:00:54] Eddy 실행 완료"
+      "recentLog": "- QA 18차 배정 중 (TC-81~83 신규 + TC-01~80 회귀)\n- Agent 기획 보강: Planner PLAN.md 작업 진행 예정\n나머지 팀 (ReviewBot/ELDO/DevGate/BizTool): 보류 유지\n변동 없음.\n[2026-04-09 23:00:54] Eddy 실행 완료\n[2026-04-09 23:00:54] status.json 업데이트 완료\n[main 19c7c10] status: 2026-04-09 23:00\n1 file changed, 6 insertions(+), 6 deletions(-)"
     },
     {
       "name": "ELDO",
@@ -117,7 +117,7 @@
           "name": "QA",
           "role": "E2E 테스트",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 22:31:45"
+          "lastRun": "2026-04-09 23:02:30"
         }
       ],
       "recentLog": "- **`src/actions/safety-signs.ts`** — Server Actions:\n- `getSafetySigns()` — 위치/종류/상태 필터 조회\n- `createSafetySign()` — 표지 등록\n- `updateSignCondition()` — 점검 결과 업데이트 (상태, 점검일, 다음 점검일 자동계산)\n- `updateSafetySign()` — 표지 정보 수정\n- `deleteSafetySign()` — soft delete\n- `getSignDashboard()` — KPI (손상/분실/90일 미점검 건수, 카테고리별 분류)\nDev2가 `/[slug]/safety-signs` UI 구현 후 QA 18차 진행 가능합니다.\n[2026-04-09 20:26:34] Dev1 완료"
