@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-09 11:30:11",
+  "updatedAt": "2026-04-09 12:01:06",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-09 11:01:28"
+          "lastRun": "2026-04-09 12:01:06"
         }
       ],
-      "recentLog": "**안전에이전트 기획건 현황:**\n- 2026-04-09 오전에 IRI-Safety Planner에게 URGENT 태스크로 배정됨\n- Agent 기능 기획 (공유 문서 참고 → PLAN.md에 반영 + Phase별 개발계획 수립)\n- **현재 미착수 상태** — Planner가 아직 pm-report.txt 보고 없음, PLAN.md에 Agent 섹션 없음\n- 다음 IRI-Safety 팀 순회(2시간마다 실행) 때 처리될 예정\n[2026-04-09 11:01:28] Eddy 실행 완료\n[2026-04-09 11:01:28] status.json 업데이트 완료\n[main 1d7e3e7] status: 2026-04-09 11:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "- Phase 18: MSDS 근로자별 교육 이수 UI (`afbd07d`)\n- Phase 19: 건강진단 사후관리 DB+UI (`586abc7`, `b98df6c`)\n- Phase 20: 산업안전보건위원회 DB+UI (`1794e61`, `b98df6c`)\n- Phase 21 보호구 지급·관리 다음 착수 예정\n⚠️ **미완료**: Planner가 URGENT 지시(Agent 기능 기획 보강, Google Docs 기반)를 PLAN.md에 아직 반영 안 함. pm-report.txt 보고도 없음.\n**보류 팀들(ReviewBot/ELDO/DevGate/BizTool)**: 보류 유지\n**새 텔레그램 메시지**: 없음\n[2026-04-09 12:01:06] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
