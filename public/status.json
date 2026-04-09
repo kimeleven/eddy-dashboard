@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-09 15:30:13",
+  "updatedAt": "2026-04-09 16:01:32",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-09 15:01:40"
+          "lastRun": "2026-04-09 16:01:31"
         }
       ],
-      "recentLog": "**대기:**\n- Phase 22 (근골격계 유해요인 조사) — Dev1/Dev2 배정됨, QA 17차 PASS 후 진행\n[2026-04-09 14:49:58] Eddy 실행 완료\n[2026-04-09 15:00:00] Eddy 실행 시작\n팀 정상 가동 중. 텔레그램 신규 지시 없음. QA 17차 및 Phase 22 팀 에이전트 크론 대기 중입니다.\n[2026-04-09 15:01:40] Eddy 실행 완료\n[2026-04-09 15:01:40] status.json 업데이트 완료\n[main 00f5d06] status: 2026-04-09 15:01\n1 file changed, 4 insertions(+), 4 deletions(-)"
+      "recentLog": "- BUG-011/012 Eddy 직접 수정 완료 (prisma generate, PPE export 제거)\n- QA 17차: BUG-011/012 재확인 + 235개 회귀 테스트 배정됨\n- Dev1: `MusculoskeletalSurvey` DB+Actions 대기\n- Dev2: Phase 22 UI 대기 (Dev1 완료 후)\n- Planner: Agent 기능 기획 보강 작업 중\n- **기타 팀**: 전원 보류 중 (Sanghun 지시 2026-04-09)\n✅ **처리:** 텔레그램 새 메시지 0건, state.json 업데이트, 커밋 완료\n⏳ **대기:** 없음\n[2026-04-09 16:01:31] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
