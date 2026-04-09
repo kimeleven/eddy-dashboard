@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-04-10 00:02:05",
+  "updatedAt": "2026-04-10 01:02:16",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
-    "launchdAgents": 21,
+    "launchdAgents": 19,
     "operatingHours": "Eddy: 24시간 / 팀: 월~금 19:00~07:00, 토일 24시간",
     "model": "Sonnet (전체)",
     "token": "바둑이토큰",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-10 00:02:05"
+          "lastRun": "2026-04-10 01:02:16"
         }
       ],
-      "recentLog": "- QA 18차 결과 TASKS.md 반영\n- 회귀 FAIL 12건 Dev1/Dev2에 배정\n- Dev1: TC-09(사고보고), TC-13(SAPA), TC-37(계정목록), TC-52(경영방침 WORKER)\n- Dev2: TC-22(도급 사이드바), TC-38(SAPA 반기), TC-35(법령검색)\n⏳ **대기:**\n- Planner Agent 기획 보강 미완료 (Sanghun 지시 2026-04-09)\n- Phase 24 (일상 안전점검·TBM) 미착수\n- 법령검색 OC 키 미설정 (open.law.go.kr 발급 후 .env 설정)\n[2026-04-10 00:02:05] Eddy 실행 완료"
+      "recentLog": "**[Eddy PM 보고]**\n**팀 현황:**\n- **IRI-Safety**: QA 18차 244/256 PASS. 회귀 FAIL 12건(TC-09 사고보고, TC-13 SAPA 상세, TC-22 도급 사이드바, TC-35 법령검색, TC-37 계정목록, TC-38 SAPA 반기, TC-52 경영방침 WORKER 등) Dev1/Dev2 수정 진행 중. Planner는 Agent 기획 보강 중.\n- **ReviewBot**: 하루 1회 크론 정상 등록(`0 10 * * *`). 오늘 오전 10시 자동 실행 예정.\n**⚠️ 액션 필요:**\n네이버 세션 만료로 클립팬(elCVBf)·목걸이선풍기(elzE2M) 2건이 포스팅 대기 중입니다. 수동 재로그인 필요합니다.\n[2026-04-10 01:02:16] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
@@ -37,19 +37,19 @@
           "name": "Dev1",
           "role": "백엔드/API/DB",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 20:11:40"
+          "lastRun": "2026-04-10 00:13:01"
         },
         {
           "name": "Dev2",
           "role": "UI/UX/다크모드",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 20:14:13"
+          "lastRun": "2026-04-10 00:17:51"
         },
         {
           "name": "Planner",
           "role": "기획/태스크 관리",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 20:15:25"
+          "lastRun": "2026-04-10 00:17:58"
         },
         {
           "name": "QA",
@@ -58,7 +58,7 @@
           "lastRun": "2026-04-09 00:05:50"
         }
       ],
-      "recentLog": "**처리 내용:**\n- 이전 Dev1 태스크 (BETA-47, BETA-48) 모두 완료 상태 확인\n- PLAN.md 업데이트: `news.spec.ts` 케이스 수 2→3 수정, BETA-47/48 완료 기록\n- **BETA-49 신규 구현** — `news-client.tsx` Bloomberg 스타일 통일:\n- 카드: `border-border` → `border-border/60`, `hover:bg-accent` → `hover:bg-accent/20 hover:border-primary/30`\n- 헤더에 총 뉴스 수 ticker 배지 추가 (`{total} stories`)\n- Skeleton Bloomberg 패턴으로 통일\n- readMore 링크 `→` 화살표 + `font-mono` 스타일\n- 커밋 `9c27dba` push 완료\n[2026-04-09 20:11:40] Dev1 완료"
+      "recentLog": "[2026-04-10 00:11:41] Dev1 실행\n[done] BETA-49 완료 기록 — TASKS.md/PLAN.md 업데이트. 다음 태스크 미배정 (Planner 대기)\n**처리 완료:**\n- BETA-49 (`9c27dba`): news 페이지 Bloomberg 스타일 통일 — 이미 완료된 작업임을 확인\n- QA 33차 (`61a17bc`): 31/31 PASS — E2E 전체 스위트 정상\n- TASKS.md / PLAN.md: BETA-49 완료 처리 및 \"다음 태스크 대기\" 상태로 업데이트 (`e8c3ac3`)\n**현재 Dev1 상태:** 다음 태스크 미배정. 후보는 style-07(헤더/사이드바 Bloomberg 마무리) 또는 Planner의 신규 배정 대기 중입니다.\n[2026-04-10 00:13:01] Dev1 완료"
     },
     {
       "name": "DevGate",
@@ -99,19 +99,19 @@
           "name": "Planner",
           "role": "법안 검토/기능 기획",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 21:00:25"
+          "lastRun": "2026-04-10 01:00:28"
         },
         {
           "name": "Dev1",
           "role": "백엔드 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 20:26:34"
+          "lastRun": "2026-04-10 00:26:36"
         },
         {
           "name": "Dev2",
           "role": "프론트엔드 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 20:29:42"
+          "lastRun": "2026-04-10 00:29:43"
         },
         {
           "name": "QA",
@@ -120,7 +120,7 @@
           "lastRun": "2026-04-09 23:02:30"
         }
       ],
-      "recentLog": "- **`src/actions/safety-signs.ts`** — Server Actions:\n- `getSafetySigns()` — 위치/종류/상태 필터 조회\n- `createSafetySign()` — 표지 등록\n- `updateSignCondition()` — 점검 결과 업데이트 (상태, 점검일, 다음 점검일 자동계산)\n- `updateSafetySign()` — 표지 정보 수정\n- `deleteSafetySign()` — soft delete\n- `getSignDashboard()` — KPI (손상/분실/90일 미점검 건수, 카테고리별 분류)\nDev2가 `/[slug]/safety-signs` UI 구현 후 QA 18차 진행 가능합니다.\n[2026-04-09 20:26:34] Dev1 완료"
+      "recentLog": "- `getSafetySigns()` — 위치/종류/상태 필터 조회\n- `createSafetySign()` — 표지 등록\n- `updateSignCondition()` — 점검 결과 업데이트 (상태, 점검일, 다음 점검일 자동계산)\n- `updateSafetySign()` — 표지 정보 수정\n- `deleteSafetySign()` — soft delete\n- `getSignDashboard()` — KPI (손상/분실/90일 미점검 건수, 카테고리별 분류)\nDev2가 `/[slug]/safety-signs` UI 구현 후 QA 18차 진행 가능합니다.\n[2026-04-09 20:26:34] Dev1 완료\n[2026-04-10 00:26:36] Dev1 실행"
     },
     {
       "name": "BizTool",
@@ -133,16 +133,16 @@
           "name": "Planner",
           "role": "TODO 발굴/API 조사",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 20:12:24"
+          "lastRun": "2026-04-10 00:14:33"
         },
         {
           "name": "Dev1",
           "role": "승인된 TODO 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-09 20:48:43"
+          "lastRun": "2026-04-10 00:51:23"
         }
       ],
-      "recentLog": "**현황 점검 결과:**\n- TODO.md → TASKS.md 전항목 반영 재확인. 신규 누락 항목 없음.\n- TODO-020 (거래처 검색 필터 + help.html): ✔️완료 (d73ba9f)\n- TODO-001 금융 API 조사: 이미 완료. 쿠콘(B2B 중개), 웹케시, CSV 파서 개선 등 9개 옵션 정리. **Sanghun 결정 대기 중**\n- TODO-002 세금계산서 ASP 조사: 이미 완료. 팝빌/스마트빌/볼타/바로빌 비교 완료. **Sanghun 법적 승인 대기 중**\n**Sanghun 결정 필요:**\n1. **TODO-001**: 쿠콘 API 계약 진행 여부 (월 20~50만원 예상) / CSV 파서 먼저 진행 여부\n2. **TODO-002**: 팝빌 계약 여부 (건당 200원) / 스마트빌 후불형 여부 (월 11,000원)\n[2026-04-09 20:12:24] Planner 완료"
+      "recentLog": "- **공공데이터포털**: 거시 금융 통계 전용 → 개별 트랜잭션 없음 ❌\n- **핀다**: B2B API 미제공, 금융상품 비교 플랫폼 ❌\n4. **커밋 완료** (a4de0d7) — push 없음\n**Sanghun 결정 대기 중인 사항:**\n- TODO-001: 쿠콘 API 계약 여부 (월 20~50만원), CSV 파서 먼저 개선할지 여부\n- TODO-002: 팝빌/스마트빌 세금계산서 ASP 계약 여부\n- BUG-016: loans unlink 엔드포인트 추가 승인\n- BUG-017: severance PUT 엔드포인트 추가 승인\n[2026-04-10 00:14:33] Planner 완료"
     },
     {
       "name": "ReviewBot",
@@ -198,9 +198,10 @@
     "status": "active"
   },
   "recentActivity": [
-    "- 전체 suite `--workers=1`: **31/31 PASS**",
-    "- TASKS.md 업데이트 완료",
-    "[2026-04-09 20:14:13] Dev2 (UI) 완료",
+    "[2026-04-10 00:13:01] Dev1 완료",
+    "- **커밋**: `a9ef7c1`",
+    "- **QA 35차**: 31/31 PASS (51.5s)",
+    "[2026-04-10 00:17:51] Dev2 (UI) 완료",
     "[done] e2e-headless-run.mjs Step 15 수정 — 개발자 검색 페이지(제거됨) → 발주자 프로젝트 상세 접근, 39/39 PASS (bb57980)",
     "이미 처리된 작업입니다. 최종 결과 **39/39 PASS** 확인 후 커밋(`bb57980`) 및 push까지 완료된 태스크입니다.",
     "[2026-04-09 21:46:21] Dev1 완료",
@@ -209,9 +210,8 @@
     "[2026-04-09 20:26:34] Dev1 완료",
     "- 커밋: `0c4098b` → push 완료",
     "[2026-04-09 20:29:42] Dev2 완료",
-    "[2026-04-09 20:12:24] Planner 완료",
-    "**신규 추가**: BUG-017 — `severance.js`에 PUT 라우트 없어 퇴직금 기록의 지급완료 상태/지급일 업데이트 불가. 기록 삭제 후 재입력해야 하는 상황. Sanghun 승인 후 수정 필요.",
-    "**TASKS.md** 업데이트 완료 (21차).",
-    "[2026-04-09 20:48:43] Dev1 완료"
+    "[2026-04-10 00:14:33] Planner 완료",
+    "- BUG-013, BUG-012, BUG-015 수정 완료 코드 검증됨",
+    "[2026-04-10 00:51:23] Dev1 완료"
   ]
 }
