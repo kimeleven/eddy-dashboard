@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-11 00:03:37",
+  "updatedAt": "2026-04-11 01:03:14",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-11 00:03:37"
+          "lastRun": "2026-04-11 01:03:14"
         }
       ],
-      "recentLog": "[2026-04-11 00:00:00] Eddy 실행 시작\n[Eddy PM 보고] 완료.\n**처리 내용:**\n- 헬리녹스 emeFyh 링크 — 이전 커밋에서 누락됨 확인 → `pending-links.json` 보정 및 푸시 완료\n- IRI-Safety: daily limit 도달, Apr 12 오후 9시 리셋 대기 중 (Phase 27 Dev2 + Planner TC-90~92 대기)\n- ReviewBot: 오전 10시 크론 정상 예정. approved 링크 4건 대기 중\n텔레그램 보고 전송 완료.\n[2026-04-11 00:03:37] Eddy 실행 완료"
+      "recentLog": "- ⚠️ **버그 수정**: helinox emeFyh 링크가 pending-links.json에만 있고 pipeline.mjs step2는 인식 불가 상태였음 → `bot-state.json`을 `waiting_link → link_received`로 직접 수정, partnerLink 주입 완료\n- 오늘 10am 크론 실행 시 step3(블로그 본문+이미지 텔레그램 전송) 자동 처리됨\n**✅ 처리 완료:**\n- ReviewBot bot-state.json 수정 + 푸시 (c90c9e3)\n**⏳ 대기:**\n- IRI-Safety Apr 12 리셋 후 자동 재개\n- 10am 결과 확인 후 클립팬(elCVBf) 다음 처리 예정\n[2026-04-11 01:03:14] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
