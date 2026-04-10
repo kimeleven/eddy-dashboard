@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-11 04:02:01",
+  "updatedAt": "2026-04-11 05:03:06",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-11 04:02:00"
+          "lastRun": "2026-04-11 05:03:05"
         }
       ],
-      "recentLog": "[Eddy PM 보고] 2026-04-11 04:01\n**팀 현황:**\n- **IRI-Safety**: Phase 27·28 Dev1+Dev2 모두 완료 ✅. Planner TC-96~101 시나리오 작성 대기 중 (TASKS.md 🚨 URGENT 등록됨).\n- **ReviewBot**: bot-state=`link_received` (헬리녹스 emeFyh). 오전 10시 크론이 step3 포스팅 자동 실행 예정. 봄 아이템 11건은 쿠팡 링크 미수신으로 pending 유지.\n**기타:**\n- 텔레그램 신규 메시지 없음\n- pipeline.log 끝에 `node: command not found` 흔적 있으나 현재 크론은 full path 사용 중 — 영향 없음\n[2026-04-11 04:02:00] Eddy 실행 완료"
+      "recentLog": "1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-11 05:00:00] Eddy 실행 시작\n처리 완료.\n**현황 요약:**\n- 신규 텔레그램 메시지 없음\n- **IRI-Safety**: Phase 27·28 완료. Planner가 TC-99~101 시나리오 작성 대기 중\n- **ReviewBot**: 헬리녹스 `link_received` 상태 → 오전 10시 크론 포스팅 실행 예정\n- 텔레그램 보고 완료 (msg_id: 810)\n[2026-04-11 05:03:05] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
