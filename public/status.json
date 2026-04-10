@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-11 02:05:00",
+  "updatedAt": "2026-04-11 03:02:36",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-11 02:05:00"
+          "lastRun": "2026-04-11 03:02:36"
         }
       ],
-      "recentLog": "- 오늘 10am 크론 실행 시 헬리녹스 포스팅이 증발할 뻔했음\n- `step1`에 `link_received` 스킵 조건 추가 → push 완료 (68247f4)\n**팀 현황**:\n- **IRI-Safety**: daily limit, Apr 12 오후 9시 리셋 후 Phase 27 Dev2 + Phase 26 Planner 재개\n- **ReviewBot**: 헬리녹스 10am 포스팅 정상 예정\n[2026-04-11 01:24:59] Eddy 실행 완료\n[2026-04-11 02:00:00] Eddy 실행 시작\n이미 확인한 결과입니다 (`/usr/local/Cellar/node/25.8.2/bin/node`). 크론 수정도 완료됐습니다.\n[2026-04-11 02:05:00] Eddy 실행 완료"
+      "recentLog": "[Eddy AM 순회 03:00]\n**텔레그램 신규 메시지:** 없음\n**팀 현황:**\n- **IRI-Safety:** Phase 26·27·28 Dev1+Dev2 모두 완료. Planner TC-90~101 시나리오 6개 Phase 누적 대기 중 — QA 진행 불가 상태.\n- **ReviewBot:** 크론 정상 (오전 10시). bot-state `link_received` — 헬리녹스 체어원 re (132,050원) 오전 10시 step3 포스팅 예정.\n**이상 없음.** 텔레그램 보고 완료.\n[2026-04-11 03:02:36] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
