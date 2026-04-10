@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-10 21:00:03",
+  "updatedAt": "2026-04-10 22:00:03",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-10 21:00:02"
+          "lastRun": "2026-04-10 22:00:03"
         }
       ],
-      "recentLog": "[2026-04-10 19:19:37] Eddy 실행 완료\n[2026-04-10 20:00:00] Eddy 실행 시작\nYou've hit your limit · resets Apr 12 at 9pm (Asia/Seoul)\n[2026-04-10 20:00:02] Eddy 실행 완료\n[2026-04-10 20:00:02] status.json 업데이트 완료\n[main 16ed26f] status: 2026-04-10 20:00\n1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-10 21:00:01] Eddy 실행 시작\nYou've hit your limit · resets Apr 12 at 9pm (Asia/Seoul)\n[2026-04-10 21:00:02] Eddy 실행 완료"
+      "recentLog": "[2026-04-10 21:00:02] Eddy 실행 완료\n[2026-04-10 21:00:03] status.json 업데이트 완료\n[main c73283a] status: 2026-04-10 21:00\n1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-10 21:19:37] Eddy 실행 시작\nYou've hit your limit · resets Apr 12 at 9pm (Asia/Seoul)\n[2026-04-10 21:19:38] Eddy 실행 완료\n[2026-04-10 22:00:00] Eddy 실행 시작\nYou've hit your limit · resets Apr 12 at 9pm (Asia/Seoul)\n[2026-04-10 22:00:03] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
@@ -99,19 +99,19 @@
           "name": "Planner",
           "role": "법안 검토/기능 기획",
           "schedule": "4시간",
-          "lastRun": "2026-04-10 17:27:51"
+          "lastRun": "2026-04-10 21:28:02"
         },
         {
           "name": "Dev1",
           "role": "백엔드 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-10 17:23:59"
+          "lastRun": "2026-04-10 21:24:14"
         },
         {
           "name": "Dev2",
           "role": "프론트엔드 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-10 17:40:09"
+          "lastRun": "2026-04-10 21:40:11"
         },
         {
           "name": "QA",
@@ -120,7 +120,7 @@
           "lastRun": "2026-04-10 07:14:49"
         }
       ],
-      "recentLog": "- `getSupervisorTrainingRecords()` — 이수 기록 조회\n- `createSupervisorTrainingRecord()` — 이수 기록 등록 (3년 보관 자동 계산)\n- `deleteSupervisorTrainingRecord()` — soft delete\n- `getSupervisorTrainingStatus()` — 연간 16시간 이수 현황 집계\n- `getSupervisorTrainingDashboard()` — 미충족 관리감독자 수 KPI\n- commit `3f25dc1` push 완료\n[2026-04-10 13:18:56] Dev1 완료\n[2026-04-10 17:18:58] Dev1 실행\n마찬가지로 불필요합니다. Phase 27 구현이 이미 완료되어 push된 상태입니다.\n[2026-04-10 17:23:59] Dev1 완료"
+      "recentLog": "- `getSupervisorTrainingStatus()` — 연간 16시간 이수 현황 집계\n- `getSupervisorTrainingDashboard()` — 미충족 관리감독자 수 KPI\n- commit `3f25dc1` push 완료\n[2026-04-10 13:18:56] Dev1 완료\n[2026-04-10 17:18:58] Dev1 실행\n마찬가지로 불필요합니다. Phase 27 구현이 이미 완료되어 push된 상태입니다.\n[2026-04-10 17:23:59] Dev1 완료\n[2026-04-10 21:24:11] Dev1 실행\nYou've hit your limit · resets Apr 12 at 9pm (Asia/Seoul)\n[2026-04-10 21:24:14] Dev1 완료"
     },
     {
       "name": "BizTool",
@@ -198,17 +198,17 @@
     "status": "active"
   },
   "recentActivity": [
+    "[2026-04-10 04:23:13] Dev2 (UI) 완료",
     "이미 처리된 태스크입니다. 세션 내에서 결과를 확인하고 모든 수정을 완료했습니다.",
     "**최종 완료**: E2E **82/82 PASS** ✅",
     "[2026-04-10 02:49:55] Dev1 완료",
     "체크리스트 **E항목 (승인자 플로우)** 커버 완료.",
     "[2026-04-10 01:52:10] Dev2 완료",
-    "- commit `3f25dc1` push 완료",
-    "[2026-04-10 13:18:56] Dev1 완료",
     "마찬가지로 불필요합니다. Phase 27 구현이 이미 완료되어 push된 상태입니다.",
     "[2026-04-10 17:23:59] Dev1 완료",
-    "[2026-04-10 13:39:54] Dev2 완료",
+    "[2026-04-10 21:24:14] Dev1 완료",
     "[2026-04-10 17:40:09] Dev2 완료",
+    "[2026-04-10 21:40:11] Dev2 완료",
     "**신규 추가 없음** — TODO.md 항목 전부 TASKS.md에 반영 완료",
     "[2026-04-10 04:15:54] Planner 완료",
     "모든 미수정 버그는 이미 TASKS.md에 기록되어 있으며 Sanghun 승인을 기다리고 있습니다. 커밋할 변경사항 없음.",
