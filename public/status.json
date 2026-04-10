@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-10 23:30:28",
+  "updatedAt": "2026-04-11 00:03:37",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-10 23:22:00"
+          "lastRun": "2026-04-11 00:03:37"
         }
       ],
-      "recentLog": "- **ReviewBot**: pending-links에 클립팬·봄신발·봄가방 approved 대기 중. 오늘 10am 크론 정상 실행.\n**✅ 처리 완료:**\n- TASKS.md Phase 번호 재정리 (구 Phase 30 → 28)\n- Phase 27 Dev2 UI 태스크 신규 할당\n**⏳ 대기:**\n- IRI-Safety 팀 Apr 12 9pm 리셋 후 재가동\n- ReviewBot 내일 10am 크론 자동 실행\n[2026-04-10 23:22:00] Eddy 실행 완료"
+      "recentLog": "[2026-04-11 00:00:00] Eddy 실행 시작\n[Eddy PM 보고] 완료.\n**처리 내용:**\n- 헬리녹스 emeFyh 링크 — 이전 커밋에서 누락됨 확인 → `pending-links.json` 보정 및 푸시 완료\n- IRI-Safety: daily limit 도달, Apr 12 오후 9시 리셋 대기 중 (Phase 27 Dev2 + Planner TC-90~92 대기)\n- ReviewBot: 오전 10시 크론 정상 예정. approved 링크 4건 대기 중\n텔레그램 보고 전송 완료.\n[2026-04-11 00:03:37] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
