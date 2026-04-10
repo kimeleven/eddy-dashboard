@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-10 11:30:22",
+  "updatedAt": "2026-04-10 12:03:39",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-10 11:08:45"
+          "lastRun": "2026-04-10 12:03:39"
         }
       ],
-      "recentLog": "- pending-links 12개 — 클립팬(approved) 1건 + 봄 링크 11건(waiting)\n- ⚠️ **크론 오류 발견 및 수정**: `node: command not found` — cron PATH 문제. `/usr/local/bin/node` 풀 경로로 교체 완료. 내일 10:00부터 정상 실행 예상.\n- ⚠️ **네이버 세션 만료** — 클립팬 approved 상태지만 포스팅 불가. Sanghun 수동 재로그인 필요.\n**✅ 처리 완료:**\n- ReviewBot 크론탭 node 경로 수정\n**⏳ Sanghun 액션 필요:**\n- ReviewBot 네이버 재로그인 (`cd ~/eddy-agent/reviewbot && node pipeline.mjs --step 3` 실행 전 브라우저 네이버 로그인)\n[2026-04-10 11:08:45] Eddy 실행 완료"
+      "recentLog": "- **봇 상태: waiting_link** — 여름 쿨링 선풍기 링크 대기 중\n- 클립팬(elCVBf): approved 상태이지만 파이프라인이 여름선풍기 링크를 먼저 기다리고 있어 진행 안 됨\n- 봄 링크 11건: 여전히 waiting\n**Sanghun 액션 필요:**\n1. 여름 쿨링 선풍기 쿠팡 파트너스 링크 제공 또는 취소 결정\n2. 봄 아이템 11건 링크 제공 계획 있으면 알려주세요\n텔레그램 보고 완료.\n[2026-04-10 12:03:39] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
