@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-10 19:00:02",
+  "updatedAt": "2026-04-10 19:30:26",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-10 19:00:02"
+          "lastRun": "2026-04-10 19:19:37"
         }
       ],
-      "recentLog": "[2026-04-10 17:19:35] Eddy 실행 완료\n[2026-04-10 18:00:00] Eddy 실행 시작\nYou've hit your limit · resets Apr 12 at 9pm (Asia/Seoul)\n[2026-04-10 18:00:02] Eddy 실행 완료\n[2026-04-10 18:00:02] status.json 업데이트 완료\n[main 77135ef] status: 2026-04-10 18:00\n1 file changed, 10 insertions(+), 10 deletions(-)\n[2026-04-10 19:00:00] Eddy 실행 시작\nYou've hit your limit · resets Apr 12 at 9pm (Asia/Seoul)\n[2026-04-10 19:00:02] Eddy 실행 완료"
+      "recentLog": "1 file changed, 10 insertions(+), 10 deletions(-)\n[2026-04-10 19:00:00] Eddy 실행 시작\nYou've hit your limit · resets Apr 12 at 9pm (Asia/Seoul)\n[2026-04-10 19:00:02] Eddy 실행 완료\n[2026-04-10 19:00:02] status.json 업데이트 완료\n[main 3c03412] status: 2026-04-10 19:00\n1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-10 19:19:35] Eddy 실행 시작\nYou've hit your limit · resets Apr 12 at 9pm (Asia/Seoul)\n[2026-04-10 19:19:37] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
