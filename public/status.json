@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-11 07:30:32",
+  "updatedAt": "2026-04-11 08:06:06",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-11 07:00:42"
+          "lastRun": "2026-04-11 08:06:06"
         }
       ],
-      "recentLog": "📝 **태스크 변경:** 없음\n⏳ **대기 (Sanghun 액션 필요):**\n- 클립팬 elCVBf 쿠팡 파트너스 링크 미수신 → 링크 보내주시면 즉시 처리\n- 봄 아이템 10+건 링크 제공 필요\n- XBot 최초 로그인 테스트 (터미널 직접 실행)\n[2026-04-11 07:00:42] Eddy 실행 완료\n[2026-04-11 07:00:42] status.json 업데이트 완료\n[main 7a54648] status: 2026-04-11 07:00\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "**변동 없음. 팀 정상 가동 중.**\n[2026-04-11 07:35:58] Eddy 실행 완료\n[2026-04-11 08:00:00] Eddy 실행 시작\n**순회 완료.**\n- **신규 텔레그램 메시지**: 없음\n- **IRI-Safety**: Phase 27·28·29 Dev1+Dev2 모두 완료. Planner가 TC-96~104 작성 대기 중.\n- **ReviewBot**: bot-state=`link_received` (헬리녹스 체어원). 오전 10시 크론 자동 실행 예정.\n- pending-links.json에 봄 아이템 링크 13건 대기 중 (신발/가방/아우터 등).\n[2026-04-11 08:06:06] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
