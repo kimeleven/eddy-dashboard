@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-10 18:00:02",
+  "updatedAt": "2026-04-10 19:00:02",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-10 18:00:02"
+          "lastRun": "2026-04-10 19:00:02"
         }
       ],
-      "recentLog": "[2026-04-10 17:02:33] Eddy 실행 완료\n[2026-04-10 17:02:33] status.json 업데이트 완료\n[main d0c8d41] status: 2026-04-10 17:02\n1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-10 17:11:47] Eddy 실행 시작\n참고만 — `pipeline.log`에 쓰는 스크립트는 크론 하나뿐. 이전 실행 에러 라인들(`timeout not found`, `node not found`)은 오래된 setup-cron.sh 흔적으로 보이며, 현재 크론은 직접 테스트에서 정상 동작 확인됨. 추가 조치 불필요합니다.\n[2026-04-10 17:19:35] Eddy 실행 완료\n[2026-04-10 18:00:00] Eddy 실행 시작\nYou've hit your limit · resets Apr 12 at 9pm (Asia/Seoul)\n[2026-04-10 18:00:02] Eddy 실행 완료"
+      "recentLog": "[2026-04-10 17:19:35] Eddy 실행 완료\n[2026-04-10 18:00:00] Eddy 실행 시작\nYou've hit your limit · resets Apr 12 at 9pm (Asia/Seoul)\n[2026-04-10 18:00:02] Eddy 실행 완료\n[2026-04-10 18:00:02] status.json 업데이트 완료\n[main 77135ef] status: 2026-04-10 18:00\n1 file changed, 10 insertions(+), 10 deletions(-)\n[2026-04-10 19:00:00] Eddy 실행 시작\nYou've hit your limit · resets Apr 12 at 9pm (Asia/Seoul)\n[2026-04-10 19:00:02] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
