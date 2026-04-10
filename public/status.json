@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-10 22:00:03",
+  "updatedAt": "2026-04-10 23:06:05",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-10 22:00:03"
+          "lastRun": "2026-04-10 23:06:05"
         }
       ],
-      "recentLog": "[2026-04-10 21:00:02] Eddy 실행 완료\n[2026-04-10 21:00:03] status.json 업데이트 완료\n[main c73283a] status: 2026-04-10 21:00\n1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-10 21:19:37] Eddy 실행 시작\nYou've hit your limit · resets Apr 12 at 9pm (Asia/Seoul)\n[2026-04-10 21:19:38] Eddy 실행 완료\n[2026-04-10 22:00:00] Eddy 실행 시작\nYou've hit your limit · resets Apr 12 at 9pm (Asia/Seoul)\n[2026-04-10 22:00:03] Eddy 실행 완료"
+      "recentLog": "| 메시지 | 상품 | 링크 | 처리 |\n|--------|------|------|------|\n| 360082511 (18:13) | 뮬 운동화 슬리퍼 | el3R6W | pending-links 봄 신발 추천 → approved |\n| 360082512 (18:15) | 보부상 숄더백 | el3WSI | pending-links 봄 가방 추천 → approved |\n| 360082513 (22:52) | 헬리녹스 체어원 re | emeFyh | bot tgOffset 조정 → 내일 10am 파이프라인 정상 수신 예정 |\n**핵심 수정:** bot-state.json tgOffset을 360082512 → 360082513으로 변경. 이렇게 하지 않으면 내일 10am에 봄 가방 링크(el3WSI)가 캠핑 의자 리뷰에 잘못 적용될 뻔했습니다.\n**IRI-Safety:** Phase 26+30 Dev 완료, Planner TC-90~95 미작성 블로킹 지속 중.\n[2026-04-10 23:06:05] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
