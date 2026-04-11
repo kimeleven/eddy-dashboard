@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-11 21:01:03",
+  "updatedAt": "2026-04-11 22:01:32",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-11 21:01:03"
+          "lastRun": "2026-04-11 22:01:32"
         }
       ],
-      "recentLog": "**AI-Secretary (JENI)**\n- Plan enum BUDDY→CHAT_FRIEND 반영 완료 (da1d419)\n- 4티어 친구 시리즈 가격 플랜 UI 완료 (c5d0e37)\n- 이메일 로그인 + JWT 세션 완료 (d29ede8)\n- Phase 5 영상통화 보류 유지\n**Planner URGENT 미완**:\n- 다크모드 기획\n- JENI 명칭 전체 통일\n[2026-04-11 21:01:03] Eddy 실행 완료"
+      "recentLog": "- Web Speech API 브라우저 호환성 경고 배너 추가\n- JENI 캐릭터 시스템 + Voice STT/TTS 무료화(Web Speech API) 완료\n- Phase 5(비디오통화) 보류 유지\n- URGENT: 다크모드 기획, JENI 이름 전체 통일 — 진행 중\n- **보류 팀(IRI-Safety, ELDO, DevGate, BizTool)**: 변동 없음\n**✅ 처리:** 팀 현황 점검, state.json 업데이트, git push, 텔레그램 보고 완료\n**📝 새 지시 없음.**\n[2026-04-11 22:01:32] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
