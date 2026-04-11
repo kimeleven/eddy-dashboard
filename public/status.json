@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-11 17:01:13",
+  "updatedAt": "2026-04-11 18:01:01",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-11 17:01:13"
+          "lastRun": "2026-04-11 18:01:01"
         }
       ],
-      "recentLog": "[main 0a451d9] status: 2026-04-11 16:01\n1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-11 17:00:00] Eddy 실행 시작\n처리 완료:\n- **Sanghun 지시**: \"AI비서 음성통화 이전까지만 해. 음성통화부터는 나중에하자\"\n- Phase 5(비디오통화) URGENT → **HOLD** 전환 — 착수 중단\n- Phase 1~4(채팅+음성통화)가 현재 AI-Secretary 범위\n- study.md, state.json 업데이트, 텔레그램 보고 완료\n[2026-04-11 17:01:13] Eddy 실행 완료"
+      "recentLog": "[2026-04-11 17:46:17] Eddy 실행 완료\n[2026-04-11 18:00:01] Eddy 실행 시작\n완료했습니다.\n**현황 요약:**\n- 새 텔레그램 메시지: **0건**\n- **IRI-Safety**: Phase 33 Dev1 완료, Dev2 UI 착수 중\n- **AI-Secretary**: Phase 5 보류 확정, Phase 4까지 완료. 환경변수(OPENAI, Stripe, Google) Sanghun 설정 필요\n- **ReviewBot**: 헬리녹스 포스팅 완료, 봄 신발 내일 10시 예정\n[2026-04-11 18:01:01] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
@@ -105,13 +105,13 @@
           "name": "Dev1",
           "role": "백엔드 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-11 13:40:29"
+          "lastRun": "2026-04-11 17:43:32"
         },
         {
           "name": "Dev2",
           "role": "프론트엔드 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-11 14:00:15"
+          "lastRun": "2026-04-11 18:00:17"
         },
         {
           "name": "QA",
@@ -120,7 +120,7 @@
           "lastRun": "2026-04-10 07:14:49"
         }
       ],
-      "recentLog": "- `deleteAccidentRootCause(id)` — soft delete\n- `getPreventionPlans(filters?)` — 재발방지 계획 목록 (incident 정보 include)\n- `createPreventionPlan(data)` — 과제 등록\n- `completePreventionPlan(id, note)` — 이행 완료 처리\n- `deletePreventionPlan(id)` — soft delete\n- `getPreventionDashboard()` — KPI: 전체/완료/미완료/기한초과/이행률\n- `getSimilarIncidents(causeCategory)` — 동일 원인 유사 사고 조회\n모든 액션에 멀티테넌트 격리(tenantId), 역할 체크(CEO/SAFETY_MANAGER), Audit Log 연동 완료.\n[2026-04-11 13:40:29] Dev1 완료"
+      "recentLog": "**구현 내역 (commit: `fa85ad4`)**\n- `RiskAssessmentNotice` 모델 — assessmentId 연결, 공지일, 공지방법, 담당자, 3년 보관\n- `RiskAssessmentAcknowledgment` 모델 — 수신자별 확인 서명 (workerName, workerId?, acknowledgedAt, signatureNote)\n- `NoticeMethod` enum — BULLETIN_BOARD / EMAIL / MEETING / TRAINING / OTHER\n- Server Actions 4개: `getRiskAssessmentNotices`, `createRiskAssessmentNotice`, `updateNoticeAcknowledgment`, `deleteRiskAssessmentNotice`\n- `prisma db push` 완료\n- `pm-report.txt` 업데이트\nDev2 UI 작업 착수 가능합니다.\n[2026-04-11 17:43:32] Dev1 완료"
     },
     {
       "name": "BizTool",
@@ -198,16 +198,16 @@
     "status": "active"
   },
   "recentActivity": [
+    "**QA 36차**: 전체 suite **31/31 PASS** ✅ — 회귀 없음",
+    "**[done] BETA-50 style: header active state + sectors sidebar Bloomberg — 31/31 PASS**",
     "[2026-04-10 04:23:13] Dev2 (UI) 완료",
     "이미 처리된 태스크입니다. 세션 내에서 결과를 확인하고 모든 수정을 완료했습니다.",
     "**최종 완료**: E2E **82/82 PASS** ✅",
     "[2026-04-10 02:49:55] Dev1 완료",
     "체크리스트 **E항목 (승인자 플로우)** 커버 완료.",
     "[2026-04-10 01:52:10] Dev2 완료",
-    "- `getPreventionDashboard()` — KPI: 전체/완료/미완료/기한초과/이행률",
-    "모든 액션에 멀티테넌트 격리(tenantId), 역할 체크(CEO/SAFETY_MANAGER), Audit Log 연동 완료.",
-    "[2026-04-11 13:40:29] Dev1 완료",
-    "| `CompletePreventionPlanButton.tsx` | 이행 완료 처리 + 완료 확인 내용 입력 모달 |",
+    "- `prisma db push` 완료",
+    "[2026-04-11 17:43:32] Dev1 완료",
     "[2026-04-11 14:00:15] Dev2 완료",
     "**신규 추가 없음** — TODO.md 항목 전부 TASKS.md에 반영 완료",
     "[2026-04-10 04:15:54] Planner 완료",
