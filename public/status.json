@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-11 10:07:41",
+  "updatedAt": "2026-04-11 11:03:36",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-11 10:07:40"
+          "lastRun": "2026-04-11 11:03:36"
         }
       ],
-      "recentLog": "1. **ReviewBot 헬리녹스 포스팅 복원** — 오전 10시 크론 실행 시 bot-state가 `캠핑 테이블 waiting_link`로 덮어씌워져 포스팅 실패. Eddy가 즉시 `link_received` 상태로 복원 후 Step3 수동 실행. 본문 2,306자 + 이미지 10장 발행 완료.\n2. **IRI-Safety 현황** — Phase 30 (관리감독자 직무교육) + Phase 31 (직장 내 괴롭힘 §76조의2) Dev1+Dev2 완료 확인. TASKS.md 업데이트 완료. Planner가 TC-96~107 (6개 Phase, 12건) 시나리오 작성을 계속 미루고 있어 QA 체인이 막혀 있는 상태.\n3. **텔레그램** — 신규 메시지 없음.\n**대기 사항:**\n- Planner TC 작성 (Phase 26~31 누적)\n- 봄 아이템 링크 8건 (캠핑 테이블 포함) — Sanghun 링크 제공 시 순차 발행\n[2026-04-11 10:07:40] Eddy 실행 완료"
+      "recentLog": "[main 78fe156] status: 2026-04-11 10:07\n1 file changed, 10 insertions(+), 10 deletions(-)\n[2026-04-11 11:00:01] Eddy 실행 시작\n처리 완료했습니다.\n**처리 내용:**\n- 헬리녹스 → `completed` 처리\n- **내일 10am** → 봄 신발 (뮬 운동화 통굽 슬리퍼, `el3R6W`) 자동 포스팅 설정 완료\n- 이후 순서: 봄 가방 → 클립팬 → 봄 시리즈 계속\n[2026-04-11 11:03:36] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
