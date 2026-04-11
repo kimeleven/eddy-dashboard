@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-04-11 11:30:33",
+  "updatedAt": "2026-04-11 12:01:36",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
-    "launchdAgents": 9,
+    "launchdAgents": 13,
     "operatingHours": "Eddy: 24시간 / 팀: 월~금 19:00~07:00, 토일 24시간",
     "model": "Sonnet (전체)",
     "token": "바둑이토큰",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-11 11:03:36"
+          "lastRun": "2026-04-11 12:01:36"
         }
       ],
-      "recentLog": "처리 완료했습니다.\n**처리 내용:**\n- 헬리녹스 → `completed` 처리\n- **내일 10am** → 봄 신발 (뮬 운동화 통굽 슬리퍼, `el3R6W`) 자동 포스팅 설정 완료\n- 이후 순서: 봄 가방 → 클립팬 → 봄 시리즈 계속\n[2026-04-11 11:03:36] Eddy 실행 완료\n[2026-04-11 11:03:36] status.json 업데이트 완료\n[main 23efa3e] status: 2026-04-11 11:03\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "- **ReviewBot**: 봄 신발 내일 10am 예약 ✅\n✅ 처리:\n- 👍 수신 확인\n- AI-Secretary TASKS.md 업데이트 (Dev1 완료 표시, Dev2·Dev1 Phase 2 병렬 착수 지시)\n- pm-report 초기화\n⏳ 대기:\n- IRI-Safety Planner: TC-102~107 미작성 상태 지속 (3개 Phase 대기 중)\n[2026-04-11 12:01:36] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
