@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-11 22:01:32",
+  "updatedAt": "2026-04-11 23:01:20",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-11 22:01:32"
+          "lastRun": "2026-04-11 23:01:20"
         }
       ],
-      "recentLog": "- Web Speech API 브라우저 호환성 경고 배너 추가\n- JENI 캐릭터 시스템 + Voice STT/TTS 무료화(Web Speech API) 완료\n- Phase 5(비디오통화) 보류 유지\n- URGENT: 다크모드 기획, JENI 이름 전체 통일 — 진행 중\n- **보류 팀(IRI-Safety, ELDO, DevGate, BizTool)**: 변동 없음\n**✅ 처리:** 팀 현황 점검, state.json 업데이트, git push, 텔레그램 보고 완료\n**📝 새 지시 없음.**\n[2026-04-11 22:01:32] Eddy 실행 완료"
+      "recentLog": "[2026-04-11 23:00:00] Eddy 실행 시작\n완료했습니다.\n**팀 현황 요약:**\n- **ReviewBot**: 봄 신발 link_received → 오늘 10am 자동 포스팅 예정. 클립팬 approved 대기 중.\n- **AI-Secretary**: Phase 1~7 완료. BUG-007 수정 완료. Planner URGENT 2건(다크모드 기획, JENI 명칭 통일) 진행 중.\n- **새 텔레그램 메시지**: 없음\n**Sanghun 액션 필요**: AI-Secretary 배포 시 Stripe Price ID 6개 환경변수 발급.\n[2026-04-11 23:01:20] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
