@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-11 15:30:35",
+  "updatedAt": "2026-04-11 16:00:59",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-11 15:02:11"
+          "lastRun": "2026-04-11 16:00:00"
         }
       ],
-      "recentLog": "- Phase 32 완료 확인 (Dev1 525e177 + Dev2 e7ab29a)\n- Phase 33 착수: 위험성평가 공지 기록 (산안법 §36④) Dev1+Dev2 지시\n- ⚠️ Planner TC 누적 미작성: Phase 28~32 TC 5세트 (TC-99~110) 아직 작성 안 됨\n**⏳ Sanghun 액션 필요:**\n- AI-Secretary Stripe 실제 키 (SECRET_KEY, WEBHOOK_SECRET, PRICE_ID) 설정 → 결제 플로우 테스트 가능\n[2026-04-11 15:02:10] Eddy 실행 완료\n[2026-04-11 15:02:11] status.json 업데이트 완료\n[main cf369f8] status: 2026-04-11 15:02\n1 file changed, 4 insertions(+), 4 deletions(-)"
+      "recentLog": "**처리 내용:**\n- AI-Secretary TASKS.md: BUG-005+Phase4 완료 반영, **Phase 5 음성통화** (STT/TTS/WebRTC) Dev1+Dev2 태스크 신규 추가\n- QA에 Phase3+i18n 통합 검증 지시\n- 텔레그램 보고 완료\n**Sanghun 액션 필요:**\n- Stripe 실 키 미입력 (STRIPE_SECRET_KEY, PRICE_IDs) → AI-Secretary 결제 불가\n- Google OAuth 키 미입력 → 실제 로그인 불가\n[2026-04-11 15:44:56] Eddy 실행 완료\n[2026-04-11 16:00:00] Eddy 실행 시작"
     },
     {
       "name": "ELDO",
