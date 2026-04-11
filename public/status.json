@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-04-11 19:30:37",
+  "updatedAt": "2026-04-11 19:49:20",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
-    "launchdAgents": 13,
+    "launchdAgents": 9,
     "operatingHours": "Eddy: 24시간 / 팀: 월~금 19:00~07:00, 토일 24시간",
     "model": "Sonnet (전체)",
     "token": "바둑이토큰",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-11 19:01:26"
+          "lastRun": "2026-04-11 19:46:17"
         }
       ],
-      "recentLog": "**IRI-Safety 에이전트 개발 현황:**\n- Safety Copilot (Claude Agent SDK) — Phase 6으로 기획됨, **완전 미구현**\n- 현재는 Phase 33 (위험성평가 공지 기록) 등 법적 필수 CRUD 기능 개발 중\n- Phase 5까지 마치면 Safety Copilot 착수 가능한 구조\nPhase 6 착수 지시 주시면 즉시 팀에 내려보내겠습니다.\n[2026-04-11 19:01:26] Eddy 실행 완료\n[2026-04-11 19:01:26] status.json 업데이트 완료\n[main 10ba013] status: 2026-04-11 19:01\n1 file changed, 6 insertions(+), 6 deletions(-)"
+      "recentLog": "- Safety Copilot (Claude Agent SDK) — Phase 6으로 기획됨, **완전 미구현**\n- 현재는 Phase 33 (위험성평가 공지 기록) 등 법적 필수 CRUD 기능 개발 중\n- Phase 5까지 마치면 Safety Copilot 착수 가능한 구조\nPhase 6 착수 지시 주시면 즉시 팀에 내려보내겠습니다.\n[2026-04-11 19:01:26] Eddy 실행 완료\n[2026-04-11 19:01:26] status.json 업데이트 완료\n[main 10ba013] status: 2026-04-11 19:01\n1 file changed, 6 insertions(+), 6 deletions(-)\n[2026-04-11 19:46:17] Eddy 실행 시작"
     },
     {
       "name": "ELDO",
