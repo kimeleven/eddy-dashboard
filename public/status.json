@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-11 09:02:51",
+  "updatedAt": "2026-04-11 10:07:41",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-11 09:02:50"
+          "lastRun": "2026-04-11 10:07:40"
         }
       ],
-      "recentLog": "오늘 헬리녹스 포스팅: 오전 8:33에 step3 완료 → HTML+이미지 텔레그램 발송됨 (`lastCompletedAt: 2026-04-10T23:33Z`).\n---\n**질문**: 앞으로 ReviewBot을 어떻게 운영하시겠습니까?\nA) **현재 방식 유지** — HTML+이미지 텔레그램 전송 → Sanghun 직접 붙여넣기\nB) **완전 자동화** — Playwright로 네이버 블로그에 직접 포스팅 (로그인 세션 유지 필요, `naver-post.mjs` 활용)\n[2026-04-11 09:02:50] Eddy 실행 완료"
+      "recentLog": "1. **ReviewBot 헬리녹스 포스팅 복원** — 오전 10시 크론 실행 시 bot-state가 `캠핑 테이블 waiting_link`로 덮어씌워져 포스팅 실패. Eddy가 즉시 `link_received` 상태로 복원 후 Step3 수동 실행. 본문 2,306자 + 이미지 10장 발행 완료.\n2. **IRI-Safety 현황** — Phase 30 (관리감독자 직무교육) + Phase 31 (직장 내 괴롭힘 §76조의2) Dev1+Dev2 완료 확인. TASKS.md 업데이트 완료. Planner가 TC-96~107 (6개 Phase, 12건) 시나리오 작성을 계속 미루고 있어 QA 체인이 막혀 있는 상태.\n3. **텔레그램** — 신규 메시지 없음.\n**대기 사항:**\n- Planner TC 작성 (Phase 26~31 누적)\n- 봄 아이템 링크 8건 (캠핑 테이블 포함) — Sanghun 링크 제공 시 순차 발행\n[2026-04-11 10:07:40] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
@@ -99,19 +99,19 @@
           "name": "Planner",
           "role": "법안 검토/기능 기획",
           "schedule": "4시간",
-          "lastRun": "2026-04-11 05:44:26"
+          "lastRun": "2026-04-11 09:56:42"
         },
         {
           "name": "Dev1",
           "role": "백엔드 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-11 05:31:14"
+          "lastRun": "2026-04-11 09:37:00"
         },
         {
           "name": "Dev2",
           "role": "프론트엔드 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-11 05:50:56"
+          "lastRun": "2026-04-11 09:55:08"
         },
         {
           "name": "QA",
@@ -120,7 +120,7 @@
           "lastRun": "2026-04-10 07:14:49"
         }
       ],
-      "recentLog": "[2026-04-11 05:27:48] Dev1 실행\n**Phase 29 Dev1 완료** (commit `b3f2226`)\n구현 내용:\n- **`HeatColdType` enum**: HEAT(폭염) / COLD(한파)\n- **`TemperatureWorkLog` 모델**: 기온·WBGT·3대 원칙(물·그늘·휴식)·온열질환 발생 기록, 3년 보관, 멀티테넌트 격리\n- **Server Actions** (`temperature-work.ts`): 목록 조회(날짜·유형 필터), 등록, 수정, soft delete, 대시보드 KPI (월간 이행건수·이행률·질환발생현황)\n- **`temperature-thresholds.ts`**: 폭염 주의보(33°C)/경보(35°C), WBGT 작업강도별 휴식 가이드, 무더위 쉬는 시간(14~17시), 감독 시즌 판별 함수\n- `npx prisma db push` 완료 → DB 동기화\n[2026-04-11 05:31:14] Dev1 완료"
+      "recentLog": "| 법 근거 | 근로기준법 §76조의2~3 (5인 이상 전 사업장 필수) |\n| 보관 기간 | 3년 자동 계산 |\n| DB 모델 | `WorkplaceHarassmentReport`, `WorkplaceHarassmentInvestigation`, `WorkplaceHarassmentMeasure` |\n| Enum | `HarassmentReporterType` (SELF/THIRD_PARTY/ANONYMOUS), `HarassmentStatus` (4단계), `HarassmentMeasureType` (6종) |\n| Server Actions | 신고 CRUD, 조사 등록, 조치 등록, 대시보드 KPI |\n| 핵심 로직 | 신고→조사→처리→종결 상태 자동 전이 |\n| 비밀유지 | `confidential: true` 기본값, CEO/SAFETY_MANAGER만 접근 |\nDev2가 `/[slug]/workplace-harassment/` UI를 구현하면 Phase 31 완료됩니다.\n[2026-04-11 09:37:00] Dev1 완료"
     },
     {
       "name": "BizTool",
@@ -206,9 +206,9 @@
     "[2026-04-10 02:49:55] Dev1 완료",
     "체크리스트 **E항목 (승인자 플로우)** 커버 완료.",
     "[2026-04-10 01:52:10] Dev2 완료",
-    "- `npx prisma db push` 완료 → DB 동기화",
-    "[2026-04-11 05:31:14] Dev1 완료",
-    "[2026-04-11 05:50:56] Dev2 완료",
+    "Dev2가 `/[slug]/workplace-harassment/` UI를 구현하면 Phase 31 완료됩니다.",
+    "[2026-04-11 09:37:00] Dev1 완료",
+    "[2026-04-11 09:55:08] Dev2 완료",
     "**신규 추가 없음** — TODO.md 항목 전부 TASKS.md에 반영 완료",
     "[2026-04-10 04:15:54] Planner 완료",
     "모든 미수정 버그는 이미 TASKS.md에 기록되어 있으며 Sanghun 승인을 기다리고 있습니다. 커밋할 변경사항 없음.",
