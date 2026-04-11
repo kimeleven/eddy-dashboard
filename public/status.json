@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-11 13:01:41",
+  "updatedAt": "2026-04-11 14:02:15",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-11 13:01:41"
+          "lastRun": "2026-04-11 14:02:15"
         }
       ],
-      "recentLog": "- **IRI-Safety**: Phase 31 완료 상태, Planner TC-102~107 작성 누락 반복 중\n- **ReviewBot**: 오전 10시 크론 정상 가동\n✅ 처리 완료:\n- AI-Secretary TASKS.md 업데이트 (Phase 2 완료 반영 + Dev2 Phase 2 지시)\n- 대시보드 업데이트 & GitHub push\n⏳ 대기:\n- IRI-Safety Planner TC 누락 — 다음 순회 시 재확인\n[2026-04-11 13:01:41] Eddy 실행 완료"
+      "recentLog": "**IRI-Safety**:\n- ✅ Phase 32 완료 (525e177, e7ab29a) — 산업재해 원인조사·재발방지계획 (산안법 §57)\n- 📝 Planner에 TC-108~110 시나리오 작성 지시 (Phase 31~32 TC 누적 중)\n**ReviewBot**: 정상 가동 (하루 1회 오전 10시)\n**⏳ Sanghun 액션 필요:**\n- AI-Secretary Stripe 연동: [stripe.com](https://stripe.com) 대시보드에서 Monthly/Annual Price ID 생성 + `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET` 입력하면 결제 즉시 동작\n[2026-04-11 14:02:15] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
@@ -99,19 +99,19 @@
           "name": "Planner",
           "role": "법안 검토/기능 기획",
           "schedule": "4시간",
-          "lastRun": "2026-04-11 09:56:42"
+          "lastRun": "2026-04-11 13:56:46"
         },
         {
           "name": "Dev1",
           "role": "백엔드 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-11 09:37:00"
+          "lastRun": "2026-04-11 13:40:29"
         },
         {
           "name": "Dev2",
           "role": "프론트엔드 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-11 09:55:08"
+          "lastRun": "2026-04-11 14:00:15"
         },
         {
           "name": "QA",
@@ -120,7 +120,7 @@
           "lastRun": "2026-04-10 07:14:49"
         }
       ],
-      "recentLog": "| 법 근거 | 근로기준법 §76조의2~3 (5인 이상 전 사업장 필수) |\n| 보관 기간 | 3년 자동 계산 |\n| DB 모델 | `WorkplaceHarassmentReport`, `WorkplaceHarassmentInvestigation`, `WorkplaceHarassmentMeasure` |\n| Enum | `HarassmentReporterType` (SELF/THIRD_PARTY/ANONYMOUS), `HarassmentStatus` (4단계), `HarassmentMeasureType` (6종) |\n| Server Actions | 신고 CRUD, 조사 등록, 조치 등록, 대시보드 KPI |\n| 핵심 로직 | 신고→조사→처리→종결 상태 자동 전이 |\n| 비밀유지 | `confidential: true` 기본값, CEO/SAFETY_MANAGER만 접근 |\nDev2가 `/[slug]/workplace-harassment/` UI를 구현하면 Phase 31 완료됩니다.\n[2026-04-11 09:37:00] Dev1 완료"
+      "recentLog": "- `deleteAccidentRootCause(id)` — soft delete\n- `getPreventionPlans(filters?)` — 재발방지 계획 목록 (incident 정보 include)\n- `createPreventionPlan(data)` — 과제 등록\n- `completePreventionPlan(id, note)` — 이행 완료 처리\n- `deletePreventionPlan(id)` — soft delete\n- `getPreventionDashboard()` — KPI: 전체/완료/미완료/기한초과/이행률\n- `getSimilarIncidents(causeCategory)` — 동일 원인 유사 사고 조회\n모든 액션에 멀티테넌트 격리(tenantId), 역할 체크(CEO/SAFETY_MANAGER), Audit Log 연동 완료.\n[2026-04-11 13:40:29] Dev1 완료"
     },
     {
       "name": "BizTool",
@@ -198,17 +198,17 @@
     "status": "active"
   },
   "recentActivity": [
-    "**QA 36차**: 전체 suite **31/31 PASS** ✅ — 회귀 없음",
-    "**[done] BETA-50 style: header active state + sectors sidebar Bloomberg — 31/31 PASS**",
     "[2026-04-10 04:23:13] Dev2 (UI) 완료",
     "이미 처리된 태스크입니다. 세션 내에서 결과를 확인하고 모든 수정을 완료했습니다.",
     "**최종 완료**: E2E **82/82 PASS** ✅",
     "[2026-04-10 02:49:55] Dev1 완료",
     "체크리스트 **E항목 (승인자 플로우)** 커버 완료.",
     "[2026-04-10 01:52:10] Dev2 완료",
-    "Dev2가 `/[slug]/workplace-harassment/` UI를 구현하면 Phase 31 완료됩니다.",
-    "[2026-04-11 09:37:00] Dev1 완료",
-    "[2026-04-11 09:55:08] Dev2 완료",
+    "- `getPreventionDashboard()` — KPI: 전체/완료/미완료/기한초과/이행률",
+    "모든 액션에 멀티테넌트 격리(tenantId), 역할 체크(CEO/SAFETY_MANAGER), Audit Log 연동 완료.",
+    "[2026-04-11 13:40:29] Dev1 완료",
+    "| `CompletePreventionPlanButton.tsx` | 이행 완료 처리 + 완료 확인 내용 입력 모달 |",
+    "[2026-04-11 14:00:15] Dev2 완료",
     "**신규 추가 없음** — TODO.md 항목 전부 TASKS.md에 반영 완료",
     "[2026-04-10 04:15:54] Planner 완료",
     "모든 미수정 버그는 이미 TASKS.md에 기록되어 있으며 Sanghun 승인을 기다리고 있습니다. 커밋할 변경사항 없음.",
