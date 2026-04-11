@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-12 05:00:20",
+  "updatedAt": "2026-04-12 06:00:02",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-12 05:00:20"
+          "lastRun": "2026-04-12 06:00:02"
         }
       ],
-      "recentLog": "**Sanghun 액션 필요:**\n- AI-Secretary 배포 위해 Stripe Price ID 6개 생성 + `ANTHROPIC_API_KEY` + Google OAuth 키 입력 필요\n- 음성통화 Chrome 실제 QA 테스트 미완료\n[2026-04-12 04:02:06] Eddy 실행 완료\n[2026-04-12 04:02:06] status.json 업데이트 완료\n[main f347eb5] status: 2026-04-12 04:02\n1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-12 05:00:01] Eddy 실행 시작\nFailed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011CZxaUd7VstdP9qD7jVZLy\"}\n[2026-04-12 05:00:20] Eddy 실행 완료"
+      "recentLog": "[2026-04-12 05:00:20] Eddy 실행 완료\n[2026-04-12 05:00:20] status.json 업데이트 완료\n[main 9337519] status: 2026-04-12 05:00\n1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-12 05:55:34] Eddy 실행 시작\nFailed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011CZxeh4ZVWFJSbjjPtsQ39\"}\n[2026-04-12 05:55:36] Eddy 실행 완료\n[2026-04-12 06:00:00] Eddy 실행 시작\nFailed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011CZxf2eqHiZXVuhGrhLTxg\"}\n[2026-04-12 06:00:02] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
