@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-11 11:03:36",
+  "updatedAt": "2026-04-11 11:30:33",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -24,7 +24,7 @@
           "lastRun": "2026-04-11 11:03:36"
         }
       ],
-      "recentLog": "[main 78fe156] status: 2026-04-11 10:07\n1 file changed, 10 insertions(+), 10 deletions(-)\n[2026-04-11 11:00:01] Eddy 실행 시작\n처리 완료했습니다.\n**처리 내용:**\n- 헬리녹스 → `completed` 처리\n- **내일 10am** → 봄 신발 (뮬 운동화 통굽 슬리퍼, `el3R6W`) 자동 포스팅 설정 완료\n- 이후 순서: 봄 가방 → 클립팬 → 봄 시리즈 계속\n[2026-04-11 11:03:36] Eddy 실행 완료"
+      "recentLog": "처리 완료했습니다.\n**처리 내용:**\n- 헬리녹스 → `completed` 처리\n- **내일 10am** → 봄 신발 (뮬 운동화 통굽 슬리퍼, `el3R6W`) 자동 포스팅 설정 완료\n- 이후 순서: 봄 가방 → 클립팬 → 봄 시리즈 계속\n[2026-04-11 11:03:36] Eddy 실행 완료\n[2026-04-11 11:03:36] status.json 업데이트 완료\n[main 23efa3e] status: 2026-04-11 11:03\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
