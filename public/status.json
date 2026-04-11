@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-11 23:30:39",
+  "updatedAt": "2026-04-12 00:01:10",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-11 23:01:20"
+          "lastRun": "2026-04-12 00:01:10"
         }
       ],
-      "recentLog": "**팀 현황 요약:**\n- **ReviewBot**: 봄 신발 link_received → 오늘 10am 자동 포스팅 예정. 클립팬 approved 대기 중.\n- **AI-Secretary**: Phase 1~7 완료. BUG-007 수정 완료. Planner URGENT 2건(다크모드 기획, JENI 명칭 통일) 진행 중.\n- **새 텔레그램 메시지**: 없음\n**Sanghun 액션 필요**: AI-Secretary 배포 시 Stripe Price ID 6개 환경변수 발급.\n[2026-04-11 23:01:20] Eddy 실행 완료\n[2026-04-11 23:01:20] status.json 업데이트 완료\n[main 0ac39f1] status: 2026-04-11 23:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "[2026-04-11 23:52:47] Eddy 실행 완료\n[2026-04-12 00:00:01] Eddy 실행 시작\n**[Eddy PM 보고] 2026-04-12 00:00**\n팀 현황:\n- **ReviewBot**: 정상 가동. 봄 신발 추천 오늘 10am 포스팅 예정 (link_received 상태 확인)\n- **AI-Secretary (JENI)**: Phase 8 안정화 진행 중. Stripe 가격 ID 환경변수 6개 미설정 → 결제 기능 배포 블로킹\n새 텔레그램 지시 없음. 텔레그램 보고 완료.\n[2026-04-12 00:01:10] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
