@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-11 14:02:15",
+  "updatedAt": "2026-04-11 15:02:11",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-11 14:02:15"
+          "lastRun": "2026-04-11 15:02:10"
         }
       ],
-      "recentLog": "**IRI-Safety**:\n- ✅ Phase 32 완료 (525e177, e7ab29a) — 산업재해 원인조사·재발방지계획 (산안법 §57)\n- 📝 Planner에 TC-108~110 시나리오 작성 지시 (Phase 31~32 TC 누적 중)\n**ReviewBot**: 정상 가동 (하루 1회 오전 10시)\n**⏳ Sanghun 액션 필요:**\n- AI-Secretary Stripe 연동: [stripe.com](https://stripe.com) 대시보드에서 Monthly/Annual Price ID 생성 + `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET` 입력하면 결제 즉시 동작\n[2026-04-11 14:02:15] Eddy 실행 완료"
+      "recentLog": "- QA Phase 3 전체 검증 착수 지시\n🏭 **IRI-Safety** (Phase 33 착수):\n- Phase 32 완료 확인 (Dev1 525e177 + Dev2 e7ab29a)\n- Phase 33 착수: 위험성평가 공지 기록 (산안법 §36④) Dev1+Dev2 지시\n- ⚠️ Planner TC 누적 미작성: Phase 28~32 TC 5세트 (TC-99~110) 아직 작성 안 됨\n**⏳ Sanghun 액션 필요:**\n- AI-Secretary Stripe 실제 키 (SECRET_KEY, WEBHOOK_SECRET, PRICE_ID) 설정 → 결제 플로우 테스트 가능\n[2026-04-11 15:02:10] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
@@ -99,7 +99,7 @@
           "name": "Planner",
           "role": "법안 검토/기능 기획",
           "schedule": "4시간",
-          "lastRun": "2026-04-11 13:56:46"
+          "lastRun": "2026-04-11 14:02:16"
         },
         {
           "name": "Dev1",
