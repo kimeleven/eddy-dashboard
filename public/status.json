@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-12 23:01:37",
+  "updatedAt": "2026-04-12 23:30:50",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -24,7 +24,7 @@
           "lastRun": "2026-04-12 23:01:37"
         }
       ],
-      "recentLog": "- 배포 대기 중 — Sanghun 액션 필요:\n1. Stripe Price ID 6개 생성 → 환경변수 입력\n2. `ANTHROPIC_API_KEY` 입력\n3. Google OAuth 키 입력\n- QA: 음성통화 Web Speech API Chrome 실제 테스트 미완료\n**보류팀:** IRI-Safety / ELDO / DevGate / BizTool / XBot / LiveOrder v3 — 이상 없음\n📝 텔레그램 새 지시 없음\n[2026-04-12 23:01:37] Eddy 실행 완료"
+      "recentLog": "3. Google OAuth 키 입력\n- QA: 음성통화 Web Speech API Chrome 실제 테스트 미완료\n**보류팀:** IRI-Safety / ELDO / DevGate / BizTool / XBot / LiveOrder v3 — 이상 없음\n📝 텔레그램 새 지시 없음\n[2026-04-12 23:01:37] Eddy 실행 완료\n[2026-04-12 23:01:37] status.json 업데이트 완료\n[main a0057bb] status: 2026-04-12 23:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
