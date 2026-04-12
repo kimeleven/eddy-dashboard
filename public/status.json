@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-13 05:01:19",
+  "updatedAt": "2026-04-13 06:01:21",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-13 05:01:19"
+          "lastRun": "2026-04-13 06:01:21"
         }
       ],
-      "recentLog": "1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-13 05:00:00] Eddy 실행 시작\n처리 완료했습니다.\n**기록한 내용:**\n- `study.md` — 토큰 변경은 Sanghun 승인 없이 절대 금지 (2026-04-13 직접 지시)\n- `CLAUDE.md` — \"토큰/크리덴셜 관리 원칙\" 섹션 신규 추가\n앞으로 토큰 만료/오류 시 임의 교체 없이 반드시 보고 → 승인 후 처리하겠습니다.\n[2026-04-13 05:01:19] Eddy 실행 완료"
+      "recentLog": "**📋 팀 현황:**\n- **ReviewBot**: 정상. 어제 뮬 운동화 MX12 포스팅 완료. 오전 10시 크론에 클립팬(elCVBf) 포스팅 예정.\n- **AI-Secretary (JENI)**: Phase 11 완료 — BUG-009 OG 이미지 수정(동적 생성으로 교체) 완료. Phase 12 진행 중, Dev1 헬스체크 엔드포인트 구현 완료.\n**⏳ Sanghun 결정 대기:**\n- JENI 배포: Supabase/Neon DB URL + Sentry DSN + Stripe 라이브 키 결정 필요\n새 텔레그램 메시지 없음.\n[2026-04-13 06:01:21] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
