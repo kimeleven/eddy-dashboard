@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-12 22:01:07",
+  "updatedAt": "2026-04-12 23:01:37",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-12 22:01:07"
+          "lastRun": "2026-04-12 23:01:37"
         }
       ],
-      "recentLog": "**팀 현황:**\n- **ReviewBot**: 정상 가동. 오늘 뮬 운동화 포스팅 완료. pending-links 14건 대기 (헬리녹스, 클립팬, 봄 시리즈 12건)\n- **AI-Secretary(JENI)**: Phase 9 완료 (대화 목록 타이틀 자동 생성, BUG-008 해결, 다크모드, JENI 명칭 통일)\n**Sanghun 액션 필요:**\n- AI-Secretary 배포 위해 Stripe Price ID/키, ANTHROPIC_API_KEY, Google OAuth 필요\n신규 텔레그램 메시지 없음. 텔레그램 보고 완료.\n[2026-04-12 22:01:07] Eddy 실행 완료"
+      "recentLog": "- 배포 대기 중 — Sanghun 액션 필요:\n1. Stripe Price ID 6개 생성 → 환경변수 입력\n2. `ANTHROPIC_API_KEY` 입력\n3. Google OAuth 키 입력\n- QA: 음성통화 Web Speech API Chrome 실제 테스트 미완료\n**보류팀:** IRI-Safety / ELDO / DevGate / BizTool / XBot / LiveOrder v3 — 이상 없음\n📝 텔레그램 새 지시 없음\n[2026-04-12 23:01:37] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
