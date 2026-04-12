@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-12 20:34:47",
+  "updatedAt": "2026-04-12 21:01:16",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-12 20:34:47"
+          "lastRun": "2026-04-12 21:01:16"
         }
       ],
-      "recentLog": "1. **ReviewBot — 뮬 운동화 통굽 MX12** HTML + 이미지 10장 방금 텔레그램 전송 완료\n2. **AI비서(JENI) Vercel 배포 완료**\n- URL: `https://ai-secretary-4mqfuutv6-sanghunkims-projects.vercel.app`\n- 도메인 `jeni.asia` 이미 Vercel에 등록되어 있습니다 (네임서버만 Vercel로 변경하면 연결됨)\n**⚠️ 주의 (AI비서):**\n- `ANTHROPIC_API_KEY` Vercel 환경변수 미설정 → 채팅 기능 안 됩니다\n- API 키 알려주시면 즉시 설정합니다\n[2026-04-12 20:34:47] Eddy 실행 완료"
+      "recentLog": "**팀 현황 요약:**\n- **ReviewBot** ✅ — 뮬 운동화 MX12 오늘 10시 자동 발행 완료. 봄 아이템 14건 대기 중 (봄 신발 queued → 내일 발행 예정)\n- **AI-Secretary (JENI)** ✅ — Phase 9 완료 (대화 목록 자동 제목 + 빈 상태 UI + Anthropic SDK 스트리밍). 다크모드/JENI 명칭 통일도 완료\n**새 텔레그램 메시지 없음.**\n**Sanghun 액션 필요:** AI-Secretary Phase 8 배포를 위해 Stripe Price ID 6개 + ANTHROPIC_API_KEY + Google OAuth 키 입력 필요합니다.\n[2026-04-12 21:01:16] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
