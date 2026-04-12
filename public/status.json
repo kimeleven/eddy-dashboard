@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-13 07:30:53",
+  "updatedAt": "2026-04-13 08:01:37",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-13 07:01:35"
+          "lastRun": "2026-04-13 08:01:37"
         }
       ],
-      "recentLog": "- **나머지 팀**: 보류 유지 (IRI-Safety, ELDO, DevGate, BizTool, XBot, LiveOrder)\n✅ **처리**: 새 텔레그램 메시지 없음. state.json 업데이트 완료.\n⏳ **Sanghun 액션 필요**\n- AI-Secretary 배포: Stripe Price ID 6개 + ANTHROPIC_API_KEY + Google OAuth 키 입력\n[2026-04-13 07:01:35] Eddy 실행 완료\n[2026-04-13 07:01:35] status.json 업데이트 완료\n[main 723aa39] status: 2026-04-13 07:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "📋 **팀 현황**\n- **ReviewBot**: 정상 가동 — 어제 뮬 운동화 MX12 포스팅 완료. 오늘 10:00 크론 예정 (클립팬 approved, 봄신발 queued, 봄가방 approved 대기)\n- **AI-Secretary (JENI)**: Phase 12 완료 (health check + GDPR 배너 + Telegram 알림). 다크모드·JENI 명칭 통일 완료.\n- **나머지 팀**: 보류 유지\n✅ **처리**: 새 텔레그램 메시지 없음. state.json 업데이트 완료.\n⏳ **Sanghun 액션 필요**\n- AI-Secretary 배포: Stripe Price ID 6개 + `ANTHROPIC_API_KEY` + Google OAuth 키 입력 필요\n[2026-04-13 08:01:37] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
