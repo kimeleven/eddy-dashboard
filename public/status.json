@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-13 03:30:51",
+  "updatedAt": "2026-04-13 04:03:07",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-13 03:01:13"
+          "lastRun": "2026-04-13 04:03:07"
         }
       ],
-      "recentLog": "2. Phase 10 모바일 앱 착수 승인 여부 (React Native vs Flutter 방향)\n✅ 새 텔레그램 메시지 없음\n[2026-04-13 02:00:40] Eddy 실행 완료\n[2026-04-13 03:00:00] Eddy 실행 시작\n텔레그램 보고 완료. state.json 업데이트 커밋했습니다.\n[2026-04-13 03:01:13] Eddy 실행 완료\n[2026-04-13 03:01:13] status.json 업데이트 완료\n[main f9c9201] status: 2026-04-13 03:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "- 상훈 토큰이 어제부터 만료되어 AI-Secretary 팀 전체(dev1/dev2/planner/qa) 401 오류로 마비 상태였습니다.\n- **바둑이 토큰으로 교체 완료** — `.eddy_env` + 팀 에이전트 스크립트 전체 반영\n**팀 현황:**\n- **ReviewBot**: 정상. 오전 10시 크론 대기 중. 봄 아이템 11건(queued/waiting/approved) 처리 예정.\n- **AI-Secretary**: 토큰 교체로 다음 실행(04:28)부터 정상화 예정. Phase 9(대화 목록 제목 자동 생성) 완료, Phase 10 대기 중.\n**대기 사항 (Sanghun 액션 필요):**\n- Phase 8 배포: Stripe Price ID 6개 + ANTHROPIC_API_KEY + Google OAuth 키 입력\n[2026-04-13 04:03:07] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
