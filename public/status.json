@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-13 01:01:15",
+  "updatedAt": "2026-04-13 03:01:13",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-13 01:01:15"
+          "lastRun": "2026-04-13 03:01:13"
         }
       ],
-      "recentLog": "- 어제 뮬 운동화 MX12 포스팅 완료\n- 오늘 10시 자동 실행 예정\n- pending-links 14개 대기 중\n**AI-Secretary (JENI)** ✅ 활발 진행\n- Phase 9 완료: Anthropic SDK 실시간 스트리밍 + 대화 목록 제목 자동 생성 + BUG-008 해결\n- Phase 10 대기 중\n**⚠️ Sanghun 액션 필요**: AI-Secretary Phase 8 배포 전제조건 — Stripe Price ID 6개 + ANTHROPIC_API_KEY + Google OAuth 키\n[2026-04-13 01:01:15] Eddy 실행 완료"
+      "recentLog": "⏳ **Sanghun 액션 필요:**\n1. AI-Secretary 배포 환경 키 입력 (Stripe Price ID 6개, ANTHROPIC_API_KEY, Google OAuth)\n2. Phase 10 모바일 앱 착수 승인 여부 (React Native vs Flutter 방향)\n✅ 새 텔레그램 메시지 없음\n[2026-04-13 02:00:40] Eddy 실행 완료\n[2026-04-13 03:00:00] Eddy 실행 시작\n텔레그램 보고 완료. state.json 업데이트 커밋했습니다.\n[2026-04-13 03:01:13] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
