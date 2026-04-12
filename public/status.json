@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-12 23:30:50",
+  "updatedAt": "2026-04-13 00:01:42",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-12 23:01:37"
+          "lastRun": "2026-04-13 00:01:42"
         }
       ],
-      "recentLog": "3. Google OAuth 키 입력\n- QA: 음성통화 Web Speech API Chrome 실제 테스트 미완료\n**보류팀:** IRI-Safety / ELDO / DevGate / BizTool / XBot / LiveOrder v3 — 이상 없음\n📝 텔레그램 새 지시 없음\n[2026-04-12 23:01:37] Eddy 실행 완료\n[2026-04-12 23:01:37] status.json 업데이트 완료\n[main a0057bb] status: 2026-04-12 23:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "**팀 현황:**\n- **ReviewBot**: 뮬 운동화 MX12 포스팅 완료. 봄 아이템 waiting 10건 (쿠팡 링크 대기)\n- **AI-Secretary(JENI)**: Phase 9 완전 완료. Phase 10(모바일) 대기\n**Sanghun 액션 필요:**\n1. AI-Secretary 배포 크리덴셜 (Stripe 가격 ID 6개, ANTHROPIC_API_KEY, Google OAuth)\n2. ReviewBot 봄 아이템 쿠팡 파트너 링크 10건\n3. Phase 10 기술 스택 결정 (React Native vs Flutter)\n[2026-04-13 00:01:42] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
