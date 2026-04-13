@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-13 16:01:08",
+  "updatedAt": "2026-04-13 17:01:36",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-13 16:01:08"
+          "lastRun": "2026-04-13 17:01:35"
         }
       ],
-      "recentLog": "📋 팀 현황:\n- **ReviewBot**: ✅ 정상 — 봄 아이템 링크 9건 대기\n- **JENI**: ✅ 정상 — Phase 12 완료, 코드 변경 없음, 배포 크리덴셜 대기\n- **Marketing**: 🔴 중단 — 토큰 401 만료 (10:22부터 전체 실패)\n⏳ Sanghun 액션 필요:\n1. **Marketing 토큰 교체 승인** — 새 OAuth 토큰 주시면 즉시 적용\n2. **JENI Phase 8** — Stripe Price ID 6개 + ANTHROPIC_API_KEY + Google OAuth\n3. **ReviewBot 봄 아이템** — 쿠팡 링크 9건 제공 시 즉시 발행\n[2026-04-13 16:01:08] Eddy 실행 완료"
+      "recentLog": "**🔴 긴급:**\nMarketing 팀 `CLAUDE_CODE_OAUTH_TOKEN` 만료. 에이전트 전원 작동 불가. 텔레그램으로 보고 완료 (msg_id: 966).\nCLAUDE.md 원칙에 따라 Sanghun 승인 후 토큰 교체 예정.\n**⏳ Sanghun 액션 필요:**\n1. Marketing 팀 새 토큰 발급 및 전달\n2. ReviewBot 캠핑 테이블 쿠팡 링크 제공\n3. JENI Phase 8 배포 (Stripe Price ID × 6, Anthropic API Key, Google OAuth)\n[2026-04-13 17:01:35] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
