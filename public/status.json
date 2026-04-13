@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-14 06:01:58",
+  "updatedAt": "2026-04-14 06:06:40",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -24,7 +24,7 @@
           "lastRun": "2026-04-14 06:01:58"
         }
       ],
-      "recentLog": "**팀 현황:**\n- **ReviewBot**: 2026-04-13 10시 실행, 캠핑 테이블 선정 후 링크 대기 중 (Sanghun 응답 필요)\n- **AI-Secretary(JENI)**: 코드 변경 없음, Phase 8 배포 대기 유지\n- **Marketing**: Twitter/Naver Blog 채널+콘텐츠 완비, 테스트 포스팅 승인 대기\n**Sanghun 액션 필요:**\n1. ReviewBot — 캠핑 테이블 쿠팡 파트너스 링크 제공\n2. Marketing — Twitter/Naver 테스트 포스팅 승인 여부\n3. AI-Secretary — Stripe Price ID 6개 + ANTHROPIC_API_KEY + Google OAuth 키\n[2026-04-14 06:01:58] Eddy 실행 완료"
+      "recentLog": "- **Marketing**: Twitter/Naver Blog 채널+콘텐츠 완비, 테스트 포스팅 승인 대기\n**Sanghun 액션 필요:**\n1. ReviewBot — 캠핑 테이블 쿠팡 파트너스 링크 제공\n2. Marketing — Twitter/Naver 테스트 포스팅 승인 여부\n3. AI-Secretary — Stripe Price ID 6개 + ANTHROPIC_API_KEY + Google OAuth 키\n[2026-04-14 06:01:58] Eddy 실행 완료\n[2026-04-14 06:01:58] status.json 업데이트 완료\n[main 5bc02dd] status: 2026-04-14 06:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
