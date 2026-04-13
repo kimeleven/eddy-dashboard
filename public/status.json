@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-14 04:01:30",
+  "updatedAt": "2026-04-14 04:06:39",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -24,7 +24,7 @@
           "lastRun": "2026-04-14 04:01:30"
         }
       ],
-      "recentLog": "- **AI-Secretary (JENI)**: Phase 1~12 완료 유지. Phase 8 배포 대기 — Sanghun 액션 필요 (Stripe Price ID 6개, ANTHROPIC_API_KEY, Google OAuth 키)\n- **Marketing**: Twitter+Naver 채널 연동 완료. 테스트 포스팅 승인 대기 (ISSUE-004). Instagram/YouTube 구현 완료, 자격증명 미설정.\n- **ReviewBot**: 오전 10시 자동 실행 예정. 이상 없음.\n**Sanghun 액션 필요:**\n1. AI-Secretary Phase 8 배포 키 입력 (Stripe Price ID 6개 + ANTHROPIC_API_KEY + Google OAuth)\n2. Marketing 테스트 포스팅 승인 (Twitter/Naver 각 1회)\n**launchd**: 전 서비스 정상 등록. 텔레그램 신규 메시지 없음.\n[2026-04-14 04:01:30] Eddy 실행 완료"
+      "recentLog": "**Sanghun 액션 필요:**\n1. AI-Secretary Phase 8 배포 키 입력 (Stripe Price ID 6개 + ANTHROPIC_API_KEY + Google OAuth)\n2. Marketing 테스트 포스팅 승인 (Twitter/Naver 각 1회)\n**launchd**: 전 서비스 정상 등록. 텔레그램 신규 메시지 없음.\n[2026-04-14 04:01:30] Eddy 실행 완료\n[2026-04-14 04:01:30] status.json 업데이트 완료\n[main d1c0658] status: 2026-04-14 04:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
