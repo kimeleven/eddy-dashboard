@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-13 18:02:01",
+  "updatedAt": "2026-04-13 19:01:47",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-13 18:02:01"
+          "lastRun": "2026-04-13 19:01:47"
         }
       ],
-      "recentLog": "| 팀 | 상태 |\n|----|------|\n| Marketing | ❌ 전면 중단 (토큰 401) |\n| AI-Secretary (JENI) | ✅ 정상 가동, Phase 8 배포 대기 |\n| ReviewBot | 마지막 포스팅 04-12 뮬 운동화 MX12, 오늘 10시 실행 여부 미확인 |\n**대기 중 (Sanghun 액션 필요):**\n1. Marketing 토큰 교체 승인 (어느 토큰으로 할지 지시)\n2. JENI Phase 8: Stripe Price ID 6개 / ANTHROPIC_API_KEY / Google OAuth 키 입력\n[2026-04-13 18:02:01] Eddy 실행 완료"
+      "recentLog": "**📋 팀 현황:**\n- **ReviewBot**: ✅ 정상 — 오늘 10시 실행 완료. 캠핑 테이블 Step1 완료 (텔레그램 msg_id 957/958). Step2 쿠팡 링크 대기 중\n- **JENI**: ✅ 정상 가동 — Phase 8 배포 대기 (Stripe/API키/OAuth)\n- **Marketing**: ❌ 전면 중단 — 토큰 401 오류 오전 10시부터 미가동\n**⏳ Sanghun 액션 필요:**\n1. **Marketing 토큰** — 어느 토큰으로 교체할지 지시 주시면 즉시 적용\n2. **ReviewBot 캠핑 테이블** — 쿠팡 링크 제공 시 자동 발행\n3. **JENI Phase 8** — Stripe Price ID × 6 / ANTHROPIC_API_KEY / Google OAuth\n[2026-04-13 19:01:47] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
