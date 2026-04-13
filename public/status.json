@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-04-14 00:00:03",
+  "updatedAt": "2026-04-14 01:03:34",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
-    "launchdAgents": 12,
+    "launchdAgents": 28,
     "operatingHours": "Eddy: 24시간 / 팀: 월~금 19:00~07:00, 토일 24시간",
     "model": "Sonnet (전체)",
     "token": "바둑이토큰",
@@ -14,47 +14,47 @@
       "name": "Eddy",
       "icon": "🧠",
       "description": "유일한 PM — 전체 팀 관리 + Sanghun 보고",
-      "schedule": "2시간",
+      "schedule": "30분",
       "status": "active",
       "agents": [
         {
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
-          "schedule": "2시간",
-          "lastRun": "2026-04-14 00:00:03"
+          "schedule": "30분",
+          "lastRun": "2026-04-14 01:03:34"
         }
       ],
-      "recentLog": "**✅ 정상 가동 중:**\n- ReviewBot: 마지막 실행 2026-04-12, 내일 10시 봄 신발 발행 예정\n- AI-Secretary: Phase 8 배포 대기 (Stripe Price ID×6, ANTHROPIC_API_KEY, Google OAuth 키 필요)\n[2026-04-13 23:01:19] Eddy 실행 완료\n[2026-04-13 23:01:19] status.json 업데이트 완료\n[main b4c3a4d] status: 2026-04-13 23:01\n1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-14 00:00:00] Eddy 실행 시작\nFailed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011Ca1yCJBhrW7a6pY9Jc1xh\"}\n[2026-04-14 00:00:03] Eddy 실행 완료"
+      "recentLog": "- **Marketing QA_REPORT.md 현행화**: ISSUE-001(채널 파일 미구현), ISSUE-002(브리프 미작성) 해결 반영. ISSUE-004(테스트 포스팅 미실행) 추가\n- **Marketing TASKS.md**: 다음 단계 명시 — `node channels/index.js` 실행하여 Twitter/Naver 테스트 포스팅 1회\n**⏳ Sanghun 액션 필요:**\n1. **ReviewBot** — 봄 아이템 쿠팡 링크 10건+ 제공\n2. **JENI** — Stripe Price ID×6 + `ANTHROPIC_API_KEY` + Google OAuth 키 입력\n3. **Marketing** — 테스트 포스팅 실행 승인 (Twitter/Naver 각 1회 테스트)\n**⚠️ 확인 필요:** CLAUDE.md에 IRI-Safety `launchd 언로드 완료` 기재되어 있으나 실제 plist 파일이 존재하고 로드 상태입니다. 스크립트에 19:00~07:00 시간체크가 있어 낮에는 자동 스킵 중 — 의도적이면 CLAUDE.md 수정하겠습니다.\n[2026-04-14 01:03:34] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
       "icon": "📊",
       "description": "기업 재무분석 플랫폼",
-      "schedule": "4시간",
+      "schedule": "2시간",
       "status": "active",
       "agents": [
         {
           "name": "Dev1",
           "role": "백엔드/API/DB",
-          "schedule": "4시간",
+          "schedule": "2시간",
           "lastRun": "2026-04-10 04:22:25"
         },
         {
           "name": "Dev2",
           "role": "UI/UX/다크모드",
-          "schedule": "4시간",
+          "schedule": "2시간",
           "lastRun": "2026-04-10 04:23:13"
         },
         {
           "name": "Planner",
           "role": "기획/태스크 관리",
-          "schedule": "4시간",
+          "schedule": "2시간",
           "lastRun": "2026-04-10 04:23:39"
         },
         {
           "name": "QA",
           "role": "E2E 테스트/코드 검증",
-          "schedule": "4시간",
+          "schedule": "2시간",
           "lastRun": "2026-04-09 00:05:50"
         }
       ],
@@ -64,25 +64,25 @@
       "name": "DevGate",
       "icon": "🏗️",
       "description": "외주 개발 플랫폼 (기업 신뢰 기반)",
-      "schedule": "4시간",
+      "schedule": "2시간",
       "status": "active",
       "agents": [
         {
           "name": "Dev1",
           "role": "개발 + 버그 수정",
-          "schedule": "4시간",
+          "schedule": "2시간",
           "lastRun": "2026-04-10 06:49:56"
         },
         {
           "name": "Dev2",
           "role": "E2E 테스트 + UI",
-          "schedule": "4시간",
+          "schedule": "2시간",
           "lastRun": "2026-04-10 05:52:09"
         },
         {
           "name": "QA",
           "role": "E2E 테스트 검증",
-          "schedule": "4시간",
+          "schedule": "2시간",
           "lastRun": "2026-04-09 00:21:58"
         }
       ],
@@ -92,31 +92,31 @@
       "name": "IRI-Safety",
       "icon": "⛑️",
       "description": "산업안전 컴플라이언스 SaaS",
-      "schedule": "4시간",
+      "schedule": "2시간",
       "status": "active",
       "agents": [
         {
           "name": "Planner",
           "role": "법안 검토/기능 기획",
-          "schedule": "4시간",
+          "schedule": "2시간",
           "lastRun": "2026-04-11 18:08:53"
         },
         {
           "name": "Dev1",
           "role": "백엔드 개발",
-          "schedule": "4시간",
+          "schedule": "2시간",
           "lastRun": "2026-04-11 17:43:32"
         },
         {
           "name": "Dev2",
           "role": "프론트엔드 개발",
-          "schedule": "4시간",
+          "schedule": "2시간",
           "lastRun": "2026-04-11 18:03:16"
         },
         {
           "name": "QA",
           "role": "E2E 테스트",
-          "schedule": "4시간",
+          "schedule": "2시간",
           "lastRun": "2026-04-10 07:14:49"
         }
       ],
@@ -126,19 +126,19 @@
       "name": "BizTool",
       "icon": "💼",
       "description": "회계/HR 통합 관리 (프로덕션 운영 중)",
-      "schedule": "4시간 (push 금지)",
+      "schedule": "2시간 (push 금지)",
       "status": "active",
       "agents": [
         {
           "name": "Planner",
           "role": "TODO 발굴/API 조사",
-          "schedule": "4시간",
+          "schedule": "2시간",
           "lastRun": "2026-04-10 04:15:54"
         },
         {
           "name": "Dev1",
           "role": "승인된 TODO 개발",
-          "schedule": "4시간",
+          "schedule": "2시간",
           "lastRun": "2026-04-10 04:52:27"
         }
       ],
