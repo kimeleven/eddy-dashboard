@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-14 06:06:40",
+  "updatedAt": "2026-04-14 07:01:21",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-14 06:01:58"
+          "lastRun": "2026-04-14 07:01:21"
         }
       ],
-      "recentLog": "- **Marketing**: Twitter/Naver Blog 채널+콘텐츠 완비, 테스트 포스팅 승인 대기\n**Sanghun 액션 필요:**\n1. ReviewBot — 캠핑 테이블 쿠팡 파트너스 링크 제공\n2. Marketing — Twitter/Naver 테스트 포스팅 승인 여부\n3. AI-Secretary — Stripe Price ID 6개 + ANTHROPIC_API_KEY + Google OAuth 키\n[2026-04-14 06:01:58] Eddy 실행 완료\n[2026-04-14 06:01:58] status.json 업데이트 완료\n[main 5bc02dd] status: 2026-04-14 06:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "- **AI-Secretary (JENI)**: Phase 1~12 완료. Phase 8 배포 대기 — Stripe Price ID 6개, ANTHROPIC_API_KEY, Google OAuth 키 필요.\n- **Marketing**: Phase 1 채널 연동 완료. Twitter/네이버 블로그 발행 준비 완료. 테스트 포스팅 승인 대기 (ISSUE-004).\n**새 텔레그램 메시지:** 없음\n**Sanghun 액션 필요:**\n1. ReviewBot — \"캠핑 테이블\" 쿠팡 링크 전달\n2. JENI — Stripe/API 키 설정 후 배포\n3. Marketing — Twitter/네이버 테스트 포스팅 승인\n[2026-04-14 07:01:21] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
