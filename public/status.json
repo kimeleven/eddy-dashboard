@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-14 08:01:36",
+  "updatedAt": "2026-04-14 08:06:41",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -24,7 +24,7 @@
           "lastRun": "2026-04-14 08:01:36"
         }
       ],
-      "recentLog": "- **AI-Secretary (JENI)**: Phase 12 완료, 배포 대기. Sanghun 액션 필요 — Stripe Price ID 6개, ANTHROPIC_API_KEY, Google OAuth.\n- **Marketing**: Phase 1 채널 코드 완료 (Twitter/Naver Blog). 테스트 포스팅 승인 대기. 커뮤니티 마케팅 전략 URGENT 태스크 팀에 반영됨.\n**launchd**: 낮 시간대 스킵 정책 적용 중 (19:00~07:00만 가동) — 정상.\n**대기 중 (Sanghun 액션 필요):**\n1. Marketing 테스트 포스팅 승인\n2. AI-Secretary 환경변수 입력 (Stripe / Google OAuth / Anthropic API)\n3. ReviewBot 봄 아이템 쿠팡 링크 제공\n[2026-04-14 08:01:36] Eddy 실행 완료"
+      "recentLog": "**launchd**: 낮 시간대 스킵 정책 적용 중 (19:00~07:00만 가동) — 정상.\n**대기 중 (Sanghun 액션 필요):**\n1. Marketing 테스트 포스팅 승인\n2. AI-Secretary 환경변수 입력 (Stripe / Google OAuth / Anthropic API)\n3. ReviewBot 봄 아이템 쿠팡 링크 제공\n[2026-04-14 08:01:36] Eddy 실행 완료\n[2026-04-14 08:01:36] status.json 업데이트 완료\n[main 06b877a] status: 2026-04-14 08:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
