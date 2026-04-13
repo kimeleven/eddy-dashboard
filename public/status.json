@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-13 15:01:02",
+  "updatedAt": "2026-04-13 15:30:55",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -24,7 +24,7 @@
           "lastRun": "2026-04-13 15:01:02"
         }
       ],
-      "recentLog": "- **JENI**: ✅ 정상 가동 — Phase 12 완료, 코드 변경 없음. Phase 8 배포 크리덴셜 대기\n- **Marketing**: 🚨 전면 중단 — 토큰 401 만료 (10:22부터 Planner/Dev/QA 전체 실패)\n✅ 처리 완료: 전 팀 상태 점검, 텔레그램 신규 메시지 없음\n⏳ **Sanghun 액션 필요:**\n1. **🔑 Marketing 토큰 교체 승인** — `sk-ant-oat01-q4Rs...` 만료. 새 토큰 주시면 즉시 적용\n2. **JENI Phase 8** — Stripe Price ID 6개 + ANTHROPIC_API_KEY + Google OAuth\n3. **ReviewBot 봄 아이템** — 쿠팡 링크 9건 제공 시 즉시 발행\n[2026-04-13 15:01:02] Eddy 실행 완료"
+      "recentLog": "✅ 처리 완료: 전 팀 상태 점검, 텔레그램 신규 메시지 없음\n⏳ **Sanghun 액션 필요:**\n1. **🔑 Marketing 토큰 교체 승인** — `sk-ant-oat01-q4Rs...` 만료. 새 토큰 주시면 즉시 적용\n2. **JENI Phase 8** — Stripe Price ID 6개 + ANTHROPIC_API_KEY + Google OAuth\n3. **ReviewBot 봄 아이템** — 쿠팡 링크 9건 제공 시 즉시 발행\n[2026-04-13 15:01:02] Eddy 실행 완료\n[2026-04-13 15:01:02] status.json 업데이트 완료\n[main c1b4370] status: 2026-04-13 15:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
