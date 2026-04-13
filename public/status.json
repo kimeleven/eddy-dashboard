@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-13 22:02:07",
+  "updatedAt": "2026-04-13 23:01:19",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-13 22:02:07"
+          "lastRun": "2026-04-13 23:01:19"
         }
       ],
-      "recentLog": "📋 **팀 현황:**\n- **ReviewBot**: 정상 — 뮬 운동화 MX12 포스팅 완료 (2026-04-12 10am). pending-links 대기 14건 (클립팬/봄 신발/봄 가방 approved·queued, waiting 9건)\n- **AI-Secretary (JENI)**: 정상 가동 중. Phase 1~12 전체 완료, 코드 변경 없음. Phase 8 배포는 Stripe Price ID×6 / ANTHROPIC_API_KEY / Google OAuth 키 입력 대기 중 (Sanghun 액션 필요)\n- **Marketing**: ⚠️ **인증 오류** — 오늘 10:22부터 매 2시간마다 실행 시 `401 Invalid bearer token` 발생. 에이전트 전원 미작동 상태 (Dev/Planner/QA 전부 실패)\n⚠️ **긴급**: Marketing 팀 OAuth 토큰 만료. CLAUDE.md 원칙상 Sanghun 승인 없이 교체 불가. 텔레그램으로 보고 발송 완료 — 새 토큰 받으시면 즉시 반영하겠습니다.\n**launchd**: 전체 등록 정상 (`com.eddy.marketing-*` 포함). 토큰 문제만 해결되면 즉시 재가동됩니다.\n[2026-04-13 22:02:07] Eddy 실행 완료"
+      "recentLog": "|---|---|---|\n| Marketing | `401 Invalid bearer token` | 2026-04-13 10:22~ |\n| AI-Secretary Dev1 | `organization does not have access to Claude` | 22:59~ |\n→ 새 토큰 알려주시면 즉시 적용하겠습니다. (CLAUDE.md 원칙: 승인 없이 임의 교체 금지)\n**✅ 정상 가동 중:**\n- ReviewBot: 마지막 실행 2026-04-12, 내일 10시 봄 신발 발행 예정\n- AI-Secretary: Phase 8 배포 대기 (Stripe Price ID×6, ANTHROPIC_API_KEY, Google OAuth 키 필요)\n[2026-04-13 23:01:19] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
