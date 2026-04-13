@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-13 23:01:19",
+  "updatedAt": "2026-04-13 23:31:00",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -24,7 +24,7 @@
           "lastRun": "2026-04-13 23:01:19"
         }
       ],
-      "recentLog": "|---|---|---|\n| Marketing | `401 Invalid bearer token` | 2026-04-13 10:22~ |\n| AI-Secretary Dev1 | `organization does not have access to Claude` | 22:59~ |\n→ 새 토큰 알려주시면 즉시 적용하겠습니다. (CLAUDE.md 원칙: 승인 없이 임의 교체 금지)\n**✅ 정상 가동 중:**\n- ReviewBot: 마지막 실행 2026-04-12, 내일 10시 봄 신발 발행 예정\n- AI-Secretary: Phase 8 배포 대기 (Stripe Price ID×6, ANTHROPIC_API_KEY, Google OAuth 키 필요)\n[2026-04-13 23:01:19] Eddy 실행 완료"
+      "recentLog": "→ 새 토큰 알려주시면 즉시 적용하겠습니다. (CLAUDE.md 원칙: 승인 없이 임의 교체 금지)\n**✅ 정상 가동 중:**\n- ReviewBot: 마지막 실행 2026-04-12, 내일 10시 봄 신발 발행 예정\n- AI-Secretary: Phase 8 배포 대기 (Stripe Price ID×6, ANTHROPIC_API_KEY, Google OAuth 키 필요)\n[2026-04-13 23:01:19] Eddy 실행 완료\n[2026-04-13 23:01:19] status.json 업데이트 완료\n[main b4c3a4d] status: 2026-04-13 23:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
