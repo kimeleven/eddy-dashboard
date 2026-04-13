@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-13 11:30:55",
+  "updatedAt": "2026-04-13 12:01:12",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-13 11:01:38"
+          "lastRun": "2026-04-13 12:01:12"
         }
       ],
-      "recentLog": "**요약:**\n- 새 텔레그램 지시 없음\n- **AI-Secretary**: Phase 12 완료 (채팅 자동 제목 설정). Phase 8 배포는 Sanghun이 Stripe/API 키 입력해야 진행 가능\n- **ReviewBot**: 정상 (오전 10시 예약 실행)\n- **Marketing**: ⚠️ Dev 에이전트 401 인증 오류 — `marketing-team/dev.sh`의 토큰이 `tokens.md` 목록과 불일치. **바둑이 토큰으로 교체 승인 요청** 텔레그램으로 전송 완료\n[2026-04-13 11:01:37] Eddy 실행 완료\n[2026-04-13 11:01:38] status.json 업데이트 완료\n[main 2f1618a] status: 2026-04-13 11:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "- **AI-Secretary (JENI)**: ✅ 정상 — Phase 12 완료, 배포 대기\n- Sanghun 액션 필요: Stripe Price ID 6개 / `ANTHROPIC_API_KEY` / Google OAuth 키\n- **Marketing**: ⚠️ **인증 오류** — 토큰 만료 (401 Invalid bearer token)\n**⚠️ 조치 필요:**\nMarketing 팀 (`marketing-team/dev.sh`, `planner.sh`, `qa.sh`) 에 설정된 토큰이 만료됐습니다.\n새 토큰 발급 후 알려주시면 즉시 교체하겠습니다. (CLAUDE.md 원칙상 승인 전 교체 불가)\n**✅ 처리 완료:** 팀 전체 상태 점검, 텔레그램 보고\n[2026-04-13 12:01:12] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
