@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-13 19:30:59",
+  "updatedAt": "2026-04-13 20:01:25",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-13 19:01:47"
+          "lastRun": "2026-04-13 20:01:25"
         }
       ],
-      "recentLog": "- **Marketing**: ❌ 전면 중단 — 토큰 401 오류 오전 10시부터 미가동\n**⏳ Sanghun 액션 필요:**\n1. **Marketing 토큰** — 어느 토큰으로 교체할지 지시 주시면 즉시 적용\n2. **ReviewBot 캠핑 테이블** — 쿠팡 링크 제공 시 자동 발행\n3. **JENI Phase 8** — Stripe Price ID × 6 / ANTHROPIC_API_KEY / Google OAuth\n[2026-04-13 19:01:47] Eddy 실행 완료\n[2026-04-13 19:01:47] status.json 업데이트 완료\n[main 8b98358] status: 2026-04-13 19:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "**팀 현황:**\n- **ReviewBot**: 정상 가동. pending-links 14건 대기 중 (봄 신발/가방/아우터/니트/운동화/스니커즈/코디/자켓/원피스 등). 매일 오전 10시 크론 자동 실행 중.\n- **AI-Secretary (JENI)**: Phase 8 배포 대기 상태. 코드 변경 없음으로 Dev들이 현황 재확인만 반복 중 (10회+). Sanghun 액션 3가지 필요:\n1. Stripe Price ID 6개 입력\n2. `ANTHROPIC_API_KEY` 입력\n3. Google OAuth 키 입력\n- **Marketing**: launchd 등록 완료. git repo 미초기화, 채널 구현 태스크 아직 시작 안 됨.\n**launchd 상태:** 모든 에이전트 정상 등록. PID 없음은 정상 (스케줄 대기 상태, exit code 0).\n[2026-04-13 20:01:25] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
