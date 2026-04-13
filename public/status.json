@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-04-13 08:01:37",
+  "updatedAt": "2026-04-13 09:02:29",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
-    "launchdAgents": 9,
+    "launchdAgents": 12,
     "operatingHours": "Eddy: 24시간 / 팀: 월~금 19:00~07:00, 토일 24시간",
     "model": "Sonnet (전체)",
     "token": "바둑이토큰",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-13 08:01:37"
+          "lastRun": "2026-04-13 09:02:29"
         }
       ],
-      "recentLog": "📋 **팀 현황**\n- **ReviewBot**: 정상 가동 — 어제 뮬 운동화 MX12 포스팅 완료. 오늘 10:00 크론 예정 (클립팬 approved, 봄신발 queued, 봄가방 approved 대기)\n- **AI-Secretary (JENI)**: Phase 12 완료 (health check + GDPR 배너 + Telegram 알림). 다크모드·JENI 명칭 통일 완료.\n- **나머지 팀**: 보류 유지\n✅ **처리**: 새 텔레그램 메시지 없음. state.json 업데이트 완료.\n⏳ **Sanghun 액션 필요**\n- AI-Secretary 배포: Stripe Price ID 6개 + `ANTHROPIC_API_KEY` + Google OAuth 키 입력 필요\n[2026-04-13 08:01:37] Eddy 실행 완료"
+      "recentLog": "| IRI-Safety/ELDO/DevGate | 보류 유지 |\n**Sanghun 액션 필요한 것:**\nAI-Secretary 배포를 위해 아래 4가지 입력이 필요합니다:\n1. Supabase 또는 Neon PostgreSQL DB URL\n2. `ANTHROPIC_API_KEY`\n3. Google OAuth Client ID/Secret\n4. Stripe Price ID 6개 (채팅친구/목소리친구/볼수있는친구 × 월간/연간)\n[2026-04-13 09:02:29] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
