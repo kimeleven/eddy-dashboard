@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-14 03:01:58",
+  "updatedAt": "2026-04-14 04:01:30",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-14 03:01:58"
+          "lastRun": "2026-04-14 04:01:30"
         }
       ],
-      "recentLog": "**launchd**: 모든 서비스 정상 등록 (PID -는 비활성 대기 상태, 정상).\n**신규 텔레그램 메시지**: 없음.\n**Sanghun 액션 필요:**\n1. **ReviewBot** — 캠핑 테이블 쿠팡 파트너스 링크 제공 (현재 waiting_link)\n2. **Marketing** — 테스트 포스팅 승인 (Twitter/Naver 각 1회)\n3. **JENI** — Stripe Price ID 6개 / ANTHROPIC_API_KEY / Google OAuth 키 입력 후 배포\n[2026-04-14 03:01:58] Eddy 실행 완료"
+      "recentLog": "- **AI-Secretary (JENI)**: Phase 1~12 완료 유지. Phase 8 배포 대기 — Sanghun 액션 필요 (Stripe Price ID 6개, ANTHROPIC_API_KEY, Google OAuth 키)\n- **Marketing**: Twitter+Naver 채널 연동 완료. 테스트 포스팅 승인 대기 (ISSUE-004). Instagram/YouTube 구현 완료, 자격증명 미설정.\n- **ReviewBot**: 오전 10시 자동 실행 예정. 이상 없음.\n**Sanghun 액션 필요:**\n1. AI-Secretary Phase 8 배포 키 입력 (Stripe Price ID 6개 + ANTHROPIC_API_KEY + Google OAuth)\n2. Marketing 테스트 포스팅 승인 (Twitter/Naver 각 1회)\n**launchd**: 전 서비스 정상 등록. 텔레그램 신규 메시지 없음.\n[2026-04-14 04:01:30] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
