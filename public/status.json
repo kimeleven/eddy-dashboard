@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-14 05:01:21",
+  "updatedAt": "2026-04-14 06:01:58",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-14 05:01:20"
+          "lastRun": "2026-04-14 06:01:58"
         }
       ],
-      "recentLog": "- **ReviewBot**: 정상 가동. 봄 신발(queued) 다음 발행 예정. 클립팬/봄 가방(approved) 링크 대기.\n- **AI-Secretary**: Phase 8 배포 대기. 팀 14차 현황 재확인 반복 중 (코드 변경 없음).\n- **Marketing**: Phase 1 채널 연동 완료. Twitter/Naver 테스트 포스팅 승인 대기.\n**launchd**: 전체 정상 (eddy/ai-secretary/marketing/reviewbot/dashboard 로드됨)\n**Sanghun 액션 필요:**\n1. AI-Secretary Phase 8 — Stripe Price ID 6개 + ANTHROPIC_API_KEY + Google OAuth 입력\n2. Marketing 테스트 포스팅 승인 여부\n[2026-04-14 05:01:20] Eddy 실행 완료"
+      "recentLog": "**팀 현황:**\n- **ReviewBot**: 2026-04-13 10시 실행, 캠핑 테이블 선정 후 링크 대기 중 (Sanghun 응답 필요)\n- **AI-Secretary(JENI)**: 코드 변경 없음, Phase 8 배포 대기 유지\n- **Marketing**: Twitter/Naver Blog 채널+콘텐츠 완비, 테스트 포스팅 승인 대기\n**Sanghun 액션 필요:**\n1. ReviewBot — 캠핑 테이블 쿠팡 파트너스 링크 제공\n2. Marketing — Twitter/Naver 테스트 포스팅 승인 여부\n3. AI-Secretary — Stripe Price ID 6개 + ANTHROPIC_API_KEY + Google OAuth 키\n[2026-04-14 06:01:58] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
