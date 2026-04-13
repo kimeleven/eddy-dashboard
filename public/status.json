@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-14 02:06:37",
+  "updatedAt": "2026-04-14 03:01:58",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-14 02:02:13"
+          "lastRun": "2026-04-14 03:01:58"
         }
       ],
-      "recentLog": "- **launchd 불일치 수정** — 보류팀(iri/eldo/devgate/biztool/liveorder) 에이전트 16개가 여전히 launchd에 로드되어 토큰 낭비 중이었음. 전부 언로드 완료\n- **텔레그램**: 신규 메시지 없음\n**Sanghun 액션 필요:**\n1. **JENI 배포**: Stripe Price ID × 6개, ANTHROPIC_API_KEY, Google OAuth 키\n2. **Marketing 테스트 포스팅 승인**: Twitter/Naver Blog 각 1회 테스트 발행 (채널 구현 완료, 자격증명 준비됨)\n[2026-04-14 02:02:13] Eddy 실행 완료\n[2026-04-14 02:02:13] status.json 업데이트 완료\n[main 51afddd] status: 2026-04-14 02:02\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "**launchd**: 모든 서비스 정상 등록 (PID -는 비활성 대기 상태, 정상).\n**신규 텔레그램 메시지**: 없음.\n**Sanghun 액션 필요:**\n1. **ReviewBot** — 캠핑 테이블 쿠팡 파트너스 링크 제공 (현재 waiting_link)\n2. **Marketing** — 테스트 포스팅 승인 (Twitter/Naver 각 1회)\n3. **JENI** — Stripe Price ID 6개 / ANTHROPIC_API_KEY / Google OAuth 키 입력 후 배포\n[2026-04-14 03:01:58] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
