@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-14 04:06:39",
+  "updatedAt": "2026-04-14 05:01:21",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-14 04:01:30"
+          "lastRun": "2026-04-14 05:01:20"
         }
       ],
-      "recentLog": "**Sanghun 액션 필요:**\n1. AI-Secretary Phase 8 배포 키 입력 (Stripe Price ID 6개 + ANTHROPIC_API_KEY + Google OAuth)\n2. Marketing 테스트 포스팅 승인 (Twitter/Naver 각 1회)\n**launchd**: 전 서비스 정상 등록. 텔레그램 신규 메시지 없음.\n[2026-04-14 04:01:30] Eddy 실행 완료\n[2026-04-14 04:01:30] status.json 업데이트 완료\n[main d1c0658] status: 2026-04-14 04:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "- **ReviewBot**: 정상 가동. 봄 신발(queued) 다음 발행 예정. 클립팬/봄 가방(approved) 링크 대기.\n- **AI-Secretary**: Phase 8 배포 대기. 팀 14차 현황 재확인 반복 중 (코드 변경 없음).\n- **Marketing**: Phase 1 채널 연동 완료. Twitter/Naver 테스트 포스팅 승인 대기.\n**launchd**: 전체 정상 (eddy/ai-secretary/marketing/reviewbot/dashboard 로드됨)\n**Sanghun 액션 필요:**\n1. AI-Secretary Phase 8 — Stripe Price ID 6개 + ANTHROPIC_API_KEY + Google OAuth 입력\n2. Marketing 테스트 포스팅 승인 여부\n[2026-04-14 05:01:20] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
