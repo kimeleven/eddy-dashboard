@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-13 23:31:00",
+  "updatedAt": "2026-04-14 00:00:03",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "2시간",
-          "lastRun": "2026-04-13 23:01:19"
+          "lastRun": "2026-04-14 00:00:03"
         }
       ],
-      "recentLog": "→ 새 토큰 알려주시면 즉시 적용하겠습니다. (CLAUDE.md 원칙: 승인 없이 임의 교체 금지)\n**✅ 정상 가동 중:**\n- ReviewBot: 마지막 실행 2026-04-12, 내일 10시 봄 신발 발행 예정\n- AI-Secretary: Phase 8 배포 대기 (Stripe Price ID×6, ANTHROPIC_API_KEY, Google OAuth 키 필요)\n[2026-04-13 23:01:19] Eddy 실행 완료\n[2026-04-13 23:01:19] status.json 업데이트 완료\n[main b4c3a4d] status: 2026-04-13 23:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "**✅ 정상 가동 중:**\n- ReviewBot: 마지막 실행 2026-04-12, 내일 10시 봄 신발 발행 예정\n- AI-Secretary: Phase 8 배포 대기 (Stripe Price ID×6, ANTHROPIC_API_KEY, Google OAuth 키 필요)\n[2026-04-13 23:01:19] Eddy 실행 완료\n[2026-04-13 23:01:19] status.json 업데이트 완료\n[main b4c3a4d] status: 2026-04-13 23:01\n1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-14 00:00:00] Eddy 실행 시작\nFailed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011Ca1yCJBhrW7a6pY9Jc1xh\"}\n[2026-04-14 00:00:03] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
@@ -193,7 +193,7 @@
     "raw": "# Eddy 비서 메모\n_Sanghun의 일정, 메모, 기억할 사항 관리_\n_최종 업데이트: 2026-04-08_\n\n---\n\n## 📌 고정 메모\n_(중요하게 기억할 사항)_\n\n---\n\n## 📅 일정\n_(일정 관리)_\n\n---\n\n## 📝 메모\n_(임시 메모, 기록)_\n\n---\n\n## ✅ 완료\n_(처리 완료된 항목)_\n"
   },
   "weeklyReport": {
-    "schedule": "매주 월요일 23:59",
+    "schedule": "매주 화요일 09:00",
     "format": "팀별 개별 PDF → 텔레그램 전송",
     "status": "active"
   },
