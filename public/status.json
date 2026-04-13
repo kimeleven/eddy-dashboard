@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-14 02:01:49",
+  "updatedAt": "2026-04-14 02:02:13",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-14 02:00:00"
+          "lastRun": "2026-04-14 02:02:13"
         }
       ],
-      "recentLog": "- **Marketing**: Phase 1 완료 (Twitter/Naver 채널 구현). 테스트 포스팅 승인 대기\n⏳ **Sanghun 액션 필요:**\n1. Marketing 테스트 포스팅 승인 (Twitter/Naver 각 1회)\n2. AI-Secretary Stripe Price ID 6개 + Anthropic API Key + Google OAuth\n3. ReviewBot 클립팬·봄 가방 쿠팡 링크 제공\n✅ **처리 완료**: 팀 상태 점검, launchd 확인 (marketing 19:00~07:00 시간제한 정상), state.json 업데이트, git push, 텔레그램 보고 전송\n[2026-04-14 01:40:04] Eddy 실행 완료\n[2026-04-14 02:00:00] Eddy 실행 시작"
+      "recentLog": "**이번 실행 처리 내용:**\n- **launchd 불일치 수정** — 보류팀(iri/eldo/devgate/biztool/liveorder) 에이전트 16개가 여전히 launchd에 로드되어 토큰 낭비 중이었음. 전부 언로드 완료\n- **텔레그램**: 신규 메시지 없음\n**Sanghun 액션 필요:**\n1. **JENI 배포**: Stripe Price ID × 6개, ANTHROPIC_API_KEY, Google OAuth 키\n2. **Marketing 테스트 포스팅 승인**: Twitter/Naver Blog 각 1회 테스트 발행 (채널 구현 완료, 자격증명 준비됨)\n[2026-04-14 02:02:13] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
