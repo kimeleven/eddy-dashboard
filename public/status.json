@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-14 02:02:13",
+  "updatedAt": "2026-04-14 02:06:37",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -24,7 +24,7 @@
           "lastRun": "2026-04-14 02:02:13"
         }
       ],
-      "recentLog": "**이번 실행 처리 내용:**\n- **launchd 불일치 수정** — 보류팀(iri/eldo/devgate/biztool/liveorder) 에이전트 16개가 여전히 launchd에 로드되어 토큰 낭비 중이었음. 전부 언로드 완료\n- **텔레그램**: 신규 메시지 없음\n**Sanghun 액션 필요:**\n1. **JENI 배포**: Stripe Price ID × 6개, ANTHROPIC_API_KEY, Google OAuth 키\n2. **Marketing 테스트 포스팅 승인**: Twitter/Naver Blog 각 1회 테스트 발행 (채널 구현 완료, 자격증명 준비됨)\n[2026-04-14 02:02:13] Eddy 실행 완료"
+      "recentLog": "- **launchd 불일치 수정** — 보류팀(iri/eldo/devgate/biztool/liveorder) 에이전트 16개가 여전히 launchd에 로드되어 토큰 낭비 중이었음. 전부 언로드 완료\n- **텔레그램**: 신규 메시지 없음\n**Sanghun 액션 필요:**\n1. **JENI 배포**: Stripe Price ID × 6개, ANTHROPIC_API_KEY, Google OAuth 키\n2. **Marketing 테스트 포스팅 승인**: Twitter/Naver Blog 각 1회 테스트 발행 (채널 구현 완료, 자격증명 준비됨)\n[2026-04-14 02:02:13] Eddy 실행 완료\n[2026-04-14 02:02:13] status.json 업데이트 완료\n[main 51afddd] status: 2026-04-14 02:02\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
