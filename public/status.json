@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-15 07:01:43",
+  "updatedAt": "2026-04-15 07:02:13",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-15 07:01:42"
+          "lastRun": "2026-04-15 07:01:43"
         }
       ],
-      "recentLog": "**📋 팀 현황:**\n- **ReviewBot** — 정상 동작 중. 뮬 운동화 MX12 완료(04-12). 이후 매일 10시 실행 중이나 `캠핑 테이블` 쿠팡 링크 미수신으로 waiting_link 상태 지속 (04-13~).\n- **Marketing** — Phase 1 완성. Twitter/Naver 발행 코드 완성 + 자격증명 OK. Instagram/YouTube는 키 미설정으로 skip. 테스트 포스팅만 승인 대기.\n- **보류팀** — 전원 launchd 언로드 상태 유지, 이상 없음.\n**⏳ Sanghun 액션 필요:**\n1. ReviewBot — **캠핑 테이블** 쿠팡 파트너스 링크 제공\n2. Marketing — **테스트 포스팅 실행 승인** (Twitter/Naver 각 1회)\n[2026-04-15 07:01:42] Eddy 실행 완료"
+      "recentLog": "- **Marketing** — Phase 1 완성. Twitter/Naver 발행 코드 완성 + 자격증명 OK. Instagram/YouTube는 키 미설정으로 skip. 테스트 포스팅만 승인 대기.\n- **보류팀** — 전원 launchd 언로드 상태 유지, 이상 없음.\n**⏳ Sanghun 액션 필요:**\n1. ReviewBot — **캠핑 테이블** 쿠팡 파트너스 링크 제공\n2. Marketing — **테스트 포스팅 실행 승인** (Twitter/Naver 각 1회)\n[2026-04-15 07:01:42] Eddy 실행 완료\n[2026-04-15 07:01:43] status.json 업데이트 완료\n[main 7f29693] status: 2026-04-15 07:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
