@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-14 16:01:39",
+  "updatedAt": "2026-04-14 16:06:47",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -24,7 +24,7 @@
           "lastRun": "2026-04-14 16:01:39"
         }
       ],
-      "recentLog": "- **AI-Secretary (JENI)**: Phase 8 대기 — Stripe 6개 Price ID / ANTHROPIC_API_KEY / Google OAuth 키 입력 필요\n- **Marketing**: Twitter(X) + 네이버블로그 발행 준비 완료. 🚨 커뮤니티 마케팅 전략 URGENT → Planner 19:00 이후 처리 예정. 테스트 포스팅 승인 대기 중\n- **보류팀** (IRI-Safety / ELDO / DevGate / BizTool): 유지\n**새 텔레그램 메시지**: 없음\n**Sanghun 액션 필요:**\n1. Marketing 테스트 포스팅 승인 — `node channels/index.js` (Twitter + 네이버 블로그 첫 발행)\n2. JENI Phase 8 크리덴셜 입력 (Stripe 6개 Price ID / ANTHROPIC_API_KEY / Google OAuth)\n[2026-04-14 16:01:39] Eddy 실행 완료"
+      "recentLog": "**새 텔레그램 메시지**: 없음\n**Sanghun 액션 필요:**\n1. Marketing 테스트 포스팅 승인 — `node channels/index.js` (Twitter + 네이버 블로그 첫 발행)\n2. JENI Phase 8 크리덴셜 입력 (Stripe 6개 Price ID / ANTHROPIC_API_KEY / Google OAuth)\n[2026-04-14 16:01:39] Eddy 실행 완료\n[2026-04-14 16:01:39] status.json 업데이트 완료\n[main 5c9f0b0] status: 2026-04-14 16:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
