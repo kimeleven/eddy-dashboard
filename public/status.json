@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-14 10:01:25",
+  "updatedAt": "2026-04-14 10:06:43",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-14 10:01:25"
+          "lastRun": "2026-04-14 10:03:10"
         }
       ],
-      "recentLog": "- **Marketing**: Phase 1 채널 구현 완료. Twitter + 네이버 블로그 발행 준비 완료. QA 4차 전체 이슈 해결. 커뮤니티 마케팅 전략 기획 URGENT 등록됨. 테스트 포스팅 승인 대기 중.\n- **ReviewBot**: 봄 아이템 13개 대기 중. 다음 오전 10시 자동 실행 (봄 신발 queued).\n✅ **처리 완료**: 텔레그램 신규 메시지 없음, 전 팀 현황 점검, 텔레그램 보고 완료\n⏳ **Sanghun 액션 필요**:\n1. **AI-Secretary** — Stripe Price ID 6개 + ANTHROPIC_API_KEY + Google OAuth 키\n2. **Marketing** — 테스트 포스팅 실행 승인 (Twitter/Naver 각 1회)\n[2026-04-14 10:01:25] Eddy 실행 완료"
+      "recentLog": "- **AI-Secretary (JENI)**: 변동 없음. Phase 8 배포 대기 — Stripe Price ID / ANTHROPIC_API_KEY / Google OAuth 입력 필요\n- **Marketing**: Phase 1 채널 구현 완료 (Twitter/Naver). 커뮤니티 마케팅 URGENT 태스크 Planner 기획 중. 테스트 포스팅은 Sanghun 승인 대기.\n**새 텔레그램 지시**: 없음\n**launchd**: 모든 팀 정상 (PID 불일치 없음)\n**Sanghun 액션 필요:**\n1. Marketing 테스트 포스팅 승인 (Twitter/Naver 각 1회)\n2. AI-Secretary 배포 자격증명 (Stripe 6개 Price ID / ANTHROPIC_API_KEY / Google OAuth)\n[2026-04-14 10:03:10] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
