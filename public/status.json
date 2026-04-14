@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-14 18:01:50",
+  "updatedAt": "2026-04-14 18:06:48",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-14 18:01:50"
+          "lastRun": "2026-04-14 18:05:37"
         }
       ],
-      "recentLog": "| 텔레그램 메시지 2건 처리 | ✅ |\n| \"합성 직접\" 의사 확인 | ✅ |\n| \"코피\" 정체 확인 요청 | 답변 대기 중 |\n| Marketing 팀 | Twitter/Naver 준비 완료, 테스트 포스팅 승인 대기 |\n| ReviewBot | 봄 아이템 링크 대기 중 |\n**launchd 상태**: 모든 서비스 등록됨 (exit 0, 스케줄 대기 중) — 이상 없음.\n\"코피\" 답변 주시면 바로 설정 항목 정리해드리겠습니다.\n[2026-04-14 18:01:50] Eddy 실행 완료"
+      "recentLog": "| ReviewBot | 봄 아이템 링크 대기 중 |\n**launchd 상태**: 모든 서비스 등록됨 (exit 0, 스케줄 대기 중) — 이상 없음.\n\"코피\" 답변 주시면 바로 설정 항목 정리해드리겠습니다.\n[2026-04-14 18:01:50] Eddy 실행 완료\n[2026-04-14 18:01:50] status.json 업데이트 완료\n[main a8d81fa] status: 2026-04-14 18:01\n1 file changed, 4 insertions(+), 4 deletions(-)\n[2026-04-14 18:05:37] Eddy 실행 시작"
     },
     {
       "name": "ELDO",
