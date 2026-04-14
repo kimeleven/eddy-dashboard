@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-14 20:06:50",
+  "updatedAt": "2026-04-14 21:02:06",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-14 20:01:23"
+          "lastRun": "2026-04-14 21:02:06"
         }
       ],
-      "recentLog": "**요약:**\n- 신규 텔레그램 메시지 없음\n- **ReviewBot**: 마지막 발행 2026-04-12 (뮬 운동화 MX12). 내일 오전 10시 자동 실행 예정\n- **Marketing**: Phase 1 채널 연동 개발 완료. Twitter/Naver Blog 발행 준비 완료. 19:00 이후 팀 재가동 (커뮤니티 마케팅 URGENT 태스크 처리 예정)\n- **승인 대기**: Marketing 테스트 포스팅 (`node channels/index.js`) — Sanghun 승인 필요\n[2026-04-14 20:01:23] Eddy 실행 완료\n[2026-04-14 20:01:23] status.json 업데이트 완료\n[main c25188e] status: 2026-04-14 20:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "| ReviewBot | `waiting_link` — 캠핑 테이블 쿠팡 링크 대기 중 (2026-04-13~) |\n| Marketing | Phase 1 완료 — 테스트 포스팅 승인 대기 |\n| 나머지 팀 | 전부 보류 유지 |\n**Sanghun 액션 필요:**\n1. **ReviewBot**: 캠핑 테이블 쿠팡 파트너스 링크 제공\n2. **Marketing**: `node channels/index.js` 테스트 포스팅 실행 승인 (Twitter + 네이버 블로그 1회씩)\n새 텔레그램 메시지 없음. 텔레그램으로 보고 완료.\n[2026-04-14 21:02:06] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
