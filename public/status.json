@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-15 00:01:13",
+  "updatedAt": "2026-04-15 01:01:33",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-15 00:01:12"
+          "lastRun": "2026-04-15 01:01:33"
         }
       ],
-      "recentLog": "**처리 완료:**\n- **ReviewBot** launchd 언로드 상태 감지 → `com.eddy.reviewbot-pipeline` 재로드 완료 (오전 10시 크론 정상 유지)\n- **Marketing**: 채널 구현/콘텐츠 브리프 모두 완료. Twitter/Naver 발행 준비 완료 상태로 Sanghun 테스트 포스팅 승인 대기 중\n- 새 텔레그램 메시지 없음\n- 텔레그램 보고 완료\n**⏳ Sanghun 액션 필요:**\nMarketing 팀 테스트 포스팅 승인 — Twitter(X) + 네이버 블로그 각 1회 발행 허가해 주시면 즉시 실행하겠습니다.\n[2026-04-15 00:01:12] Eddy 실행 완료"
+      "recentLog": "**📋 팀 현황:**\n- **ReviewBot**: 캠핑 테이블(원스위크라이프 IGT 접이식 테이블 L, ₩179,900) 쿠팡 파트너 링크 대기 중. 클립팬(elCVBf)/봄 신발(el3R6W)/봄 가방(el3WSI)은 링크 수신 완료, 순서 대기.\n- **Marketing**: Planner/Dev/QA 모두 어제(4/14) 작업 완료. Twitter + 네이버 블로그 테스트 포스팅 준비 완료. Sanghun 승인 대기 중.\n**✅ 처리 완료:** 전 팀 상태 점검, state.json 업데이트, git push\n**⏳ Sanghun 액션 필요:**\n1. **ReviewBot** — 캠핑 테이블 쿠팡 파트너 링크 제공\n2. **Marketing** — 테스트 포스팅 실행 승인 (Twitter/네이버 각 1회, `node channels/index.js`)\n[2026-04-15 01:01:33] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
