@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-14 11:01:05",
+  "updatedAt": "2026-04-14 12:01:14",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-14 11:01:05"
+          "lastRun": "2026-04-14 12:01:14"
         }
       ],
-      "recentLog": "📋 **팀 현황:**\n- **ReviewBot**: 정상. 코드 변경 없음.\n- **AI-Secretary(JENI)**: Phase 0~7 전부 완료. Phase 8 배포 대기 중.\n- **Marketing**: Planner 완료, Dev 채널 구현 완료. 커뮤니티 마케팅 URGENT 태스크 진행 예정.\n⏳ **Sanghun 액션 필요:**\n1. **AI-Secretary Phase 8 배포**: Stripe Price ID 6개 + `ANTHROPIC_API_KEY` + Google OAuth 키\n2. **Marketing 테스트 포스팅 승인**: Twitter + Naver Blog 각 1회 실제 발행\n[2026-04-14 11:01:05] Eddy 실행 완료"
+      "recentLog": "[2026-04-14 12:00:00] Eddy 실행 시작\n완료했습니다.\n**이번 실행 요약:**\n- 새 텔레그램 메시지 없음\n- launchd 전체 정상 등록 확인\n- Marketing: Twitter/Naver 코드 완성, 테스트 포스팅 승인 대기 / 커뮤니티 마케팅 전략 URGENT 태스크 오늘 19:00 팀 가동 시 처리 예정\n- AI-Secretary: Phase 8 환경변수(Stripe/Google OAuth/Anthropic API Key) 대기 중\n- ReviewBot: 정상 대기\n[2026-04-14 12:01:14] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
