@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-04-14 22:02:41",
+  "updatedAt": "2026-04-14 23:03:15",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
-    "launchdAgents": 1,
+    "launchdAgents": 7,
     "operatingHours": "Eddy: 24시간 / 팀: 월~금 19:00~07:00, 토일 24시간",
     "model": "Sonnet (전체)",
     "token": "바둑이토큰",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-14 22:02:41"
+          "lastRun": "2026-04-14 23:03:15"
         }
       ],
-      "recentLog": "| ReviewBot | ✅ 정상 | 오늘 10시 실행. 캠핑 테이블 Step1 → 텔레그램 전송 완료. 링크 대기 중 |\n| Marketing | ✅ 정상 | 오늘 20:34 실행. Phase 1 개발 완료. ISSUE-011 수정 완료. |\n| 보류팀 | ⏸️ 보류 | AI-Secretary/IRI/ELDO/DevGate/BizTool 스케줄 미가동 |\n**새 텔레그램 메시지:** 0건\n**Sanghun 액션 필요:**\n1. **ReviewBot** — 캠핑 테이블 쿠팡 링크 제공 (waiting_link 상태)\n2. **Marketing** — Twitter/Naver 테스트 포스팅 승인 필요 (준비 완료, `node channels/index.js` 실행 대기)\n[2026-04-14 22:02:41] Eddy 실행 완료"
+      "recentLog": "- **ReviewBot**: crontab 정상 (매일 오전 10시). 현재 캠핑 테이블 `waiting_link` 상태 — 쿠팡 링크 대기 중. 봄 아이템 10개도 링크 필요.\n- **Marketing**: 마지막 실행 20:34. Twitter/Naver 발행 코드 완성. ISSUE-011 수정 완료. 테스트 포스팅 승인 대기.\n- **보류팀** (AI-Secretary/IRI/ELDO/DevGate/BizTool): 스케줄 미가동 ✅\n⚠️ **launchd 불일치 발견 & 수정**: `com.eddy.marketing-dev/planner/qa`, `dashboard`, `process-cleanup`, `weekly-report` 6개 서비스가 언로드 상태였음 — 재로드 완료 (22:34 예정 실행이 누락됨)\n⏳ **Sanghun 액션 필요:**\n1. **캠핑 테이블 쿠팡 링크** — ReviewBot 다음 처리 대기\n2. **Marketing 테스트 포스팅 승인** — `node channels/index.js` (Twitter + 네이버 블로그 각 1회 테스트)\n[2026-04-14 23:03:15] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
