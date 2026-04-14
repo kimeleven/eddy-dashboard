@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-04-14 21:02:06",
+  "updatedAt": "2026-04-14 22:02:41",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
-    "launchdAgents": 8,
+    "launchdAgents": 1,
     "operatingHours": "Eddy: 24시간 / 팀: 월~금 19:00~07:00, 토일 24시간",
     "model": "Sonnet (전체)",
     "token": "바둑이토큰",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-14 21:02:06"
+          "lastRun": "2026-04-14 22:02:41"
         }
       ],
-      "recentLog": "| ReviewBot | `waiting_link` — 캠핑 테이블 쿠팡 링크 대기 중 (2026-04-13~) |\n| Marketing | Phase 1 완료 — 테스트 포스팅 승인 대기 |\n| 나머지 팀 | 전부 보류 유지 |\n**Sanghun 액션 필요:**\n1. **ReviewBot**: 캠핑 테이블 쿠팡 파트너스 링크 제공\n2. **Marketing**: `node channels/index.js` 테스트 포스팅 실행 승인 (Twitter + 네이버 블로그 1회씩)\n새 텔레그램 메시지 없음. 텔레그램으로 보고 완료.\n[2026-04-14 21:02:06] Eddy 실행 완료"
+      "recentLog": "| ReviewBot | ✅ 정상 | 오늘 10시 실행. 캠핑 테이블 Step1 → 텔레그램 전송 완료. 링크 대기 중 |\n| Marketing | ✅ 정상 | 오늘 20:34 실행. Phase 1 개발 완료. ISSUE-011 수정 완료. |\n| 보류팀 | ⏸️ 보류 | AI-Secretary/IRI/ELDO/DevGate/BizTool 스케줄 미가동 |\n**새 텔레그램 메시지:** 0건\n**Sanghun 액션 필요:**\n1. **ReviewBot** — 캠핑 테이블 쿠팡 링크 제공 (waiting_link 상태)\n2. **Marketing** — Twitter/Naver 테스트 포스팅 승인 필요 (준비 완료, `node channels/index.js` 실행 대기)\n[2026-04-14 22:02:41] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
