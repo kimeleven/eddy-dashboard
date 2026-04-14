@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-04-15 07:02:13",
+  "updatedAt": "2026-04-15 08:00:54",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
-    "launchdAgents": 8,
+    "launchdAgents": 9,
     "operatingHours": "Eddy: 24시간 / 팀: 월~금 19:00~07:00, 토일 24시간",
     "model": "Sonnet (전체)",
     "token": "바둑이토큰",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-15 07:01:43"
+          "lastRun": "2026-04-15 08:00:53"
         }
       ],
-      "recentLog": "- **Marketing** — Phase 1 완성. Twitter/Naver 발행 코드 완성 + 자격증명 OK. Instagram/YouTube는 키 미설정으로 skip. 테스트 포스팅만 승인 대기.\n- **보류팀** — 전원 launchd 언로드 상태 유지, 이상 없음.\n**⏳ Sanghun 액션 필요:**\n1. ReviewBot — **캠핑 테이블** 쿠팡 파트너스 링크 제공\n2. Marketing — **테스트 포스팅 실행 승인** (Twitter/Naver 각 1회)\n[2026-04-15 07:01:42] Eddy 실행 완료\n[2026-04-15 07:01:43] status.json 업데이트 완료\n[main 7f29693] status: 2026-04-15 07:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "**상황 요약:**\n- **새 텔레그램 메시지**: 없음\n- **Marketing 팀**: Phase 1 완료 상태 유지. ISSUE-004(테스트 포스팅) 1건만 Sanghun 승인 대기\n- Twitter/Naver Blog 발행 준비 완료 (자격증명 설정됨)\n- 8차 QA까지 완료, 코드 이상 없음\n- **ReviewBot**: 정상 가동 (봄 의류/원피스 리뷰 최신 발행 확인)\n- **JENI 웹서버**: 정상 가동 (PID 70062, 포트 3003)\n**대기 중**: Marketing 테스트 포스팅 — Twitter/Naver에 실제 1회 발행 테스트 허용 여부 승인 필요합니다.\n[2026-04-15 08:00:53] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
