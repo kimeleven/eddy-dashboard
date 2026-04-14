@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-15 03:02:10",
+  "updatedAt": "2026-04-15 04:01:12",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-15 03:01:26"
+          "lastRun": "2026-04-15 04:01:12"
         }
       ],
-      "recentLog": "- **ReviewBot**: `waiting_link` 정체 (2026-04-13~) — 캠핑 테이블(원스위크라이프 IGT 접이식 L, 179,900원) 쿠팡 링크 대기 중\n- **Marketing**: Phase 1 전체 완료, 6차 QA 통과. Twitter/네이버 블로그 즉시 발행 가능 상태. 테스트 포스팅 승인만 필요\n**Sanghun 액션 필요:**\n1. 캠핑 테이블 쿠팡 파트너스 링크 제공\n2. Marketing 테스트 포스팅 승인\n[2026-04-15 03:01:26] Eddy 실행 완료\n[2026-04-15 03:01:26] status.json 업데이트 완료\n[main 12c638f] status: 2026-04-15 03:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "[2026-04-15 04:00:00] Eddy 실행 시작\n**보고 완료.**\n**현황 요약:**\n- **Telegram**: 새 메시지 없음\n- **launchd**: CLAUDE.md와 일치 (활성팀 로드, 보류팀 언로드)\n- **ReviewBot**: 정상. 10:00 자동 실행 예정\n- **Marketing Phase 1**: 코드 완성. Twitter/Naver 발행 준비 완료. 7차 QA 이상 없음.\n- 미해결: **ISSUE-004** — 테스트 포스팅 Sanghun 승인 대기 (`node channels/index.js`)\n[2026-04-15 04:01:12] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
