@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-14 18:06:48",
+  "updatedAt": "2026-04-14 19:01:28",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-14 18:05:37"
+          "lastRun": "2026-04-14 19:01:28"
         }
       ],
-      "recentLog": "| ReviewBot | 봄 아이템 링크 대기 중 |\n**launchd 상태**: 모든 서비스 등록됨 (exit 0, 스케줄 대기 중) — 이상 없음.\n\"코피\" 답변 주시면 바로 설정 항목 정리해드리겠습니다.\n[2026-04-14 18:01:50] Eddy 실행 완료\n[2026-04-14 18:01:50] status.json 업데이트 완료\n[main a8d81fa] status: 2026-04-14 18:01\n1 file changed, 4 insertions(+), 4 deletions(-)\n[2026-04-14 18:05:37] Eddy 실행 시작"
+      "recentLog": "• ReviewBot: 정상 (마지막 실행 2026-04-12, 뮬 운동화 포스팅 완료. 봄 아이템 대기 중)\n• Marketing: Phase 1 구현 완료. 4차 QA 완료, 이슈 전부 해결. 커뮤니티 마케팅 전략 태스크 등록됨\n• 보류팀 (IRI/ELDO/DevGate/BizTool/JENI): launchd 없음 확인, 정상 보류 중\n✅ 처리 완료: 텔레그램 신규 메시지 없음, launchd 상태 이상 없음\n⏳ Sanghun 액션 필요:\n1. **Marketing 테스트 포스팅 승인** — `node channels/index.js` 실행 허가 여부\n2. **ReviewBot 봄 아이템 쿠팡 링크** — 봄 신발/가방/아우터 등 10건 이상 직접 제공 필요\n[2026-04-14 19:01:28] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
