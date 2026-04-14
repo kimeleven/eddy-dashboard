@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-14 15:01:21",
+  "updatedAt": "2026-04-14 16:01:39",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-14 15:01:21"
+          "lastRun": "2026-04-14 16:01:39"
         }
       ],
-      "recentLog": "**처리 내용:**\n- **AI-Secretary**: \"현황 재확인/배포 대기\" 빈 커밋 15회+ 반복 중 → TASKS.md에 완전 종료 지시 강화. Phase 8은 크리덴셜 없이 할 작업 없음을 명시.\n- **Marketing**: Phase 1 구현 완료 상태. Twitter/Naver Blog 발행 준비 완료, 테스트 포스팅 승인 대기 중.\n- **ReviewBot**: 이상 없음.\n**Sanghun 액션 필요:**\n1. AI-Secretary Phase 8 진행 — Stripe 6개 Price ID + `ANTHROPIC_API_KEY` + Google OAuth 키\n2. Marketing 테스트 포스팅 승인 — Twitter/Naver 각 1회 실제 발행 테스트 허가\n[2026-04-14 15:01:21] Eddy 실행 완료"
+      "recentLog": "- **AI-Secretary (JENI)**: Phase 8 대기 — Stripe 6개 Price ID / ANTHROPIC_API_KEY / Google OAuth 키 입력 필요\n- **Marketing**: Twitter(X) + 네이버블로그 발행 준비 완료. 🚨 커뮤니티 마케팅 전략 URGENT → Planner 19:00 이후 처리 예정. 테스트 포스팅 승인 대기 중\n- **보류팀** (IRI-Safety / ELDO / DevGate / BizTool): 유지\n**새 텔레그램 메시지**: 없음\n**Sanghun 액션 필요:**\n1. Marketing 테스트 포스팅 승인 — `node channels/index.js` (Twitter + 네이버 블로그 첫 발행)\n2. JENI Phase 8 크리덴셜 입력 (Stripe 6개 Price ID / ANTHROPIC_API_KEY / Google OAuth)\n[2026-04-14 16:01:39] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
