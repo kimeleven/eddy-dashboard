@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-04-14 16:06:47",
+  "updatedAt": "2026-04-14 18:01:50",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
-    "launchdAgents": 12,
+    "launchdAgents": 8,
     "operatingHours": "Eddy: 24시간 / 팀: 월~금 19:00~07:00, 토일 24시간",
     "model": "Sonnet (전체)",
     "token": "바둑이토큰",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-14 16:01:39"
+          "lastRun": "2026-04-14 18:01:50"
         }
       ],
-      "recentLog": "**새 텔레그램 메시지**: 없음\n**Sanghun 액션 필요:**\n1. Marketing 테스트 포스팅 승인 — `node channels/index.js` (Twitter + 네이버 블로그 첫 발행)\n2. JENI Phase 8 크리덴셜 입력 (Stripe 6개 Price ID / ANTHROPIC_API_KEY / Google OAuth)\n[2026-04-14 16:01:39] Eddy 실행 완료\n[2026-04-14 16:01:39] status.json 업데이트 완료\n[main 5c9f0b0] status: 2026-04-14 16:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "| 텔레그램 메시지 2건 처리 | ✅ |\n| \"합성 직접\" 의사 확인 | ✅ |\n| \"코피\" 정체 확인 요청 | 답변 대기 중 |\n| Marketing 팀 | Twitter/Naver 준비 완료, 테스트 포스팅 승인 대기 |\n| ReviewBot | 봄 아이템 링크 대기 중 |\n**launchd 상태**: 모든 서비스 등록됨 (exit 0, 스케줄 대기 중) — 이상 없음.\n\"코피\" 답변 주시면 바로 설정 항목 정리해드리겠습니다.\n[2026-04-14 18:01:50] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
