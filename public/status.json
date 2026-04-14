@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-15 02:01:13",
+  "updatedAt": "2026-04-15 03:01:26",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-15 02:01:13"
+          "lastRun": "2026-04-15 03:01:26"
         }
       ],
-      "recentLog": "[2026-04-15 02:00:00] Eddy 실행 시작\n완료했습니다.\n**현황 요약:**\n- **Telegram**: 새 메시지 없음 (last_update_id: 360082532 유지)\n- **launchd**: 모든 서비스 정상 등록 (com.eddy.agent/marketing-*/reviewbot-pipeline/dashboard 등)\n- **Marketing**: Phase 1 개발 완료, QA 6차까지 통과. Twitter/Naver Blog 테스트 포스팅만 대기 중 — **Sanghun 승인 필요**\n- **ReviewBot**: 오늘 오전 10시 자동 실행 예정 (마지막 활동: 2026-04-12)\n- **보류 팀들**: 이상 없음\n[2026-04-15 02:01:13] Eddy 실행 완료"
+      "recentLog": "**현황 요약:**\n- **텔레그램**: 신규 메시지 없음\n- **ReviewBot**: `waiting_link` 정체 (2026-04-13~) — 캠핑 테이블(원스위크라이프 IGT 접이식 L, 179,900원) 쿠팡 링크 대기 중\n- **Marketing**: Phase 1 전체 완료, 6차 QA 통과. Twitter/네이버 블로그 즉시 발행 가능 상태. 테스트 포스팅 승인만 필요\n**Sanghun 액션 필요:**\n1. 캠핑 테이블 쿠팡 파트너스 링크 제공\n2. Marketing 테스트 포스팅 승인\n[2026-04-15 03:01:26] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
