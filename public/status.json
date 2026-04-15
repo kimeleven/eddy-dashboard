@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-16 06:00:54",
+  "updatedAt": "2026-04-16 07:01:05",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-16 06:00:54"
+          "lastRun": "2026-04-16 07:01:05"
         }
       ],
-      "recentLog": "실행 완료.\n**현황 요약:**\n- 텔레그램: 새 메시지 없음\n- launchd: CLAUDE.md 상태와 일치 (이상 없음)\n- BizTool: XSS 취약점 수정 커밋 1건 (4cf15a9). 명함 제작 기능 완료, push 승인 대기\n- Marketing: 디렉토리/launchd 미생성 (세팅 필요)\n- 보류 팀: 전부 정상 언로드\n- 텔레그램 보고 완료, state.json 커밋/푸시 완료\n[2026-04-16 06:00:54] Eddy 실행 완료"
+      "recentLog": "[2026-04-16 07:00:00] Eddy 실행 시작\n실행 완료.\n- **텔레그램**: 새 메시지 없음\n- **launchd**: 정상 (CLAUDE.md와 일치)\n- **BizTool**: XSS 취약점 수정 커밋 1건 (명함 카드 contactLines). TODO-020 명함 제작 완료, push 승인 대기 상태 유지\n- **기타 팀**: 보류 상태 유지\n- **state.json**: 09:00 업데이트, 커밋/푸시 완료\n- **보고**: 텔레그램 전송 완료\n[2026-04-16 07:01:05] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
