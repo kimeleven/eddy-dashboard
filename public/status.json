@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-16 05:02:29",
+  "updatedAt": "2026-04-16 06:00:54",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-16 05:02:05"
+          "lastRun": "2026-04-16 06:00:54"
         }
       ],
-      "recentLog": "- **BizTool**: 가동 중. 명함 제작 기능(TODO-020) 개발 완료, XSS 취약점 수정 커밋됨. Sanghun push 승인 대기 중.\n- **AI-Secretary 웹서버**: 정상 가동 (PID 78245, 포트 3003)\n- **Marketing**: 디렉토리/launchd 미생성 상태 (세팅 필요)\n- **보류 팀**: ReviewBot, IRI-Safety, ELDO, DevGate, XBot, LiveOrder — launchd 언로드 확인, 정상 보류\n- **대시보드**: 업데이트 + push 완료\n- **state.json**: 06:00 업데이트 + push 완료\n[2026-04-16 05:02:05] Eddy 실행 완료\n[2026-04-16 05:02:05] status.json 업데이트 완료\n[main d4b9028] status: 2026-04-16 05:02\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "실행 완료.\n**현황 요약:**\n- 텔레그램: 새 메시지 없음\n- launchd: CLAUDE.md 상태와 일치 (이상 없음)\n- BizTool: XSS 취약점 수정 커밋 1건 (4cf15a9). 명함 제작 기능 완료, push 승인 대기\n- Marketing: 디렉토리/launchd 미생성 (세팅 필요)\n- 보류 팀: 전부 정상 언로드\n- 텔레그램 보고 완료, state.json 커밋/푸시 완료\n[2026-04-16 06:00:54] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
