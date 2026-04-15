@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-15 22:01:53",
+  "updatedAt": "2026-04-15 23:01:22",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-15 22:01:53"
+          "lastRun": "2026-04-15 23:01:22"
         }
       ],
-      "recentLog": "[2026-04-15 22:00:01] Eddy 실행 시작\n완료.\n**이번 실행 요약:**\n- 새 텔레그램 메시지: 없음\n- launchd 상태: CLAUDE.md와 일치 (정상)\n- **BizTool**: 활발 — 최근 4시간 커밋 11건 (BUG-011~015 수정 완료, TODO-014/018/019/020 구현). 명함 제작 기능(URGENT)은 다음 사이클 착수 예정\n- 보류 팀 (ReviewBot, JENI, IRI-Safety, ELDO, DevGate, XBot, LiveOrder): 정상 보류 상태\n- Marketing: 미세팅 상태 유지\n[2026-04-15 22:01:53] Eddy 실행 완료"
+      "recentLog": "[2026-04-15 22:55:13] Eddy 실행 완료\n[2026-04-15 23:00:00] Eddy 실행 시작\n실행 완료.\n- 신규 텔레그램 지시: 없음\n- BizTool: 재가동 첫 실행에서 버그 5건 수정 + TODO-020 완료. 명함 기능은 다음 실행에서 착수 예정\n- launchd: 전체 정상 (보류팀 언로드 확인)\n- state.json 업데이트 + 커밋/푸시 완료\n- 텔레그램 보고 완료\n[2026-04-15 23:01:22] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
