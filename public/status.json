@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-15 11:01:23",
+  "updatedAt": "2026-04-15 11:02:16",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -24,7 +24,7 @@
           "lastRun": "2026-04-15 11:01:23"
         }
       ],
-      "recentLog": "실행 완료.\n**이번 실행 요약:**\n- 텔레그램 새 지시: 없음\n- launchd 상태: 정상 (보류팀 언로드, JENI 웹서버 가동)\n- Marketing 팀: CLAUDE.md에 Active이나 프로젝트/팀 디렉토리 미생성, launchd 미등록 — Sanghun 추가 지시 대기\n- 대시보드: status.json 갱신 완료\n- state.json 커밋/푸시 완료\n- 텔레그램 보고 전송 완료\n[2026-04-15 11:01:23] Eddy 실행 완료"
+      "recentLog": "- 텔레그램 새 지시: 없음\n- launchd 상태: 정상 (보류팀 언로드, JENI 웹서버 가동)\n- Marketing 팀: CLAUDE.md에 Active이나 프로젝트/팀 디렉토리 미생성, launchd 미등록 — Sanghun 추가 지시 대기\n- 대시보드: status.json 갱신 완료\n- state.json 커밋/푸시 완료\n- 텔레그램 보고 전송 완료\n[2026-04-15 11:01:23] Eddy 실행 완료\n[2026-04-15 11:01:23] status.json 업데이트 완료\n[main a34e9c2] status: 2026-04-15 11:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
