@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-04-16 07:02:30",
+  "updatedAt": "2026-04-16 07:11:51",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
-    "launchdAgents": 7,
+    "launchdAgents": 5,
     "operatingHours": "Eddy: 24시간 / 팀: 월~금 19:00~07:00, 토일 24시간",
     "model": "Sonnet (전체)",
     "token": "바둑이토큰",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-16 07:01:05"
+          "lastRun": "2026-04-16 07:10:41"
         }
       ],
-      "recentLog": "- **텔레그램**: 새 메시지 없음\n- **launchd**: 정상 (CLAUDE.md와 일치)\n- **BizTool**: XSS 취약점 수정 커밋 1건 (명함 카드 contactLines). TODO-020 명함 제작 완료, push 승인 대기 상태 유지\n- **기타 팀**: 보류 상태 유지\n- **state.json**: 09:00 업데이트, 커밋/푸시 완료\n- **보고**: 텔레그램 전송 완료\n[2026-04-16 07:01:05] Eddy 실행 완료\n[2026-04-16 07:01:05] status.json 업데이트 완료\n[main 2a93382] status: 2026-04-16 07:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "- **BizTool**: XSS 취약점 수정 커밋 1건 (명함 카드 contactLines). TODO-020 명함 제작 완료, push 승인 대기 상태 유지\n- **기타 팀**: 보류 상태 유지\n- **state.json**: 09:00 업데이트, 커밋/푸시 완료\n- **보고**: 텔레그램 전송 완료\n[2026-04-16 07:01:05] Eddy 실행 완료\n[2026-04-16 07:01:05] status.json 업데이트 완료\n[main 2a93382] status: 2026-04-16 07:01\n1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-16 07:10:41] Eddy 실행 시작\n[telegram-log] 3개 메시지 저장 완료"
     },
     {
       "name": "ELDO",
