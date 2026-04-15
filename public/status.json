@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-15 19:02:18",
+  "updatedAt": "2026-04-15 19:02:22",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -24,7 +24,7 @@
           "lastRun": "2026-04-15 19:02:18"
         }
       ],
-      "recentLog": "2. **비즈툴 GitLab 동기화** — 로컬 11개 미푸시 커밋 rebase + push 완료 (`5774c99`)\n3. **비즈툴 TASKS.md** — 명함 제작 기능 🚨 URGENT 태스크 최상단 등록\n4. **Eddy tasks.md** — 비즈툴 명함 기능 대기 작업 추가\n5. **텔레그램 보고** — Sanghun에게 처리 결과 + 팀 재가동 여부 확인 요청\n6. **대시보드 업데이트** — generate-status.py 실행 + git push 완료\n**launchd 상태**: 보류 팀 모두 정상 언로드 상태. AI-Secretary 웹서버만 가동 중 (PID 78245). 이상 없음.\n**Sanghun 액션 필요**: 비즈툴 팀 재가동 (launchd 로드) 여부 결정\n[2026-04-15 19:02:18] Eddy 실행 완료"
+      "recentLog": "5. **텔레그램 보고** — Sanghun에게 처리 결과 + 팀 재가동 여부 확인 요청\n6. **대시보드 업데이트** — generate-status.py 실행 + git push 완료\n**launchd 상태**: 보류 팀 모두 정상 언로드 상태. AI-Secretary 웹서버만 가동 중 (PID 78245). 이상 없음.\n**Sanghun 액션 필요**: 비즈툴 팀 재가동 (launchd 로드) 여부 결정\n[2026-04-15 19:02:18] Eddy 실행 완료\n[2026-04-15 19:02:18] status.json 업데이트 완료\n[main 0f21261] status: 2026-04-15 19:02\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
