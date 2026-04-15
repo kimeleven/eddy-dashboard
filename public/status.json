@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-15 19:16:23",
+  "updatedAt": "2026-04-15 20:01:23",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-15 19:13:52"
+          "lastRun": "2026-04-15 20:01:23"
         }
       ],
-      "recentLog": "**launchd 상태**: 보류 팀 모두 정상 언로드 상태. AI-Secretary 웹서버만 가동 중 (PID 78245). 이상 없음.\n**Sanghun 액션 필요**: 비즈툴 팀 재가동 (launchd 로드) 여부 결정\n[2026-04-15 19:02:18] Eddy 실행 완료\n[2026-04-15 19:02:18] status.json 업데이트 완료\n[main 0f21261] status: 2026-04-15 19:02\n1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-15 19:13:52] Eddy 실행 시작\n[telegram-log] 1개 메시지 저장 완료"
+      "recentLog": "[2026-04-15 19:48:08] Eddy 실행 완료\n[2026-04-15 20:00:01] Eddy 실행 시작\n**실행 완료.**\n- 신규 텔레그램 지시: 없음\n- launchd 상태: 정상 (CLAUDE.md 일치)\n- BizTool: 활발 가동 중 (4시간 내 커밋 11건 — 버그 4건 수정 + TODO-020 완료). 명함 제작 기능 다음 실행 시 착수 예정\n- 보류팀: 변동 없음\n- 텔레그램 보고 완료, state.json 커밋/푸시 완료\n[2026-04-15 20:01:23] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
