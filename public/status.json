@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-15 23:02:23",
+  "updatedAt": "2026-04-16 00:00:10",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-15 23:01:22"
+          "lastRun": "2026-04-16 00:00:09"
         }
       ],
-      "recentLog": "- 신규 텔레그램 지시: 없음\n- BizTool: 재가동 첫 실행에서 버그 5건 수정 + TODO-020 완료. 명함 기능은 다음 실행에서 착수 예정\n- launchd: 전체 정상 (보류팀 언로드 확인)\n- state.json 업데이트 + 커밋/푸시 완료\n- 텔레그램 보고 완료\n[2026-04-15 23:01:22] Eddy 실행 완료\n[2026-04-15 23:01:22] status.json 업데이트 완료\n[main 218889f] status: 2026-04-15 23:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "- BizTool 명함 제작 기능 개발 완료 확인 → push 승인 요청 보고 전송\n- launchd 상태: CLAUDE.md와 일치\n- state.json 업데이트 및 커밋/푸시 완료\n[2026-04-15 23:26:21] Eddy 실행 완료\n[2026-04-15 23:56:21] Eddy 실행 시작\nAPI Error: 500 {\"type\":\"error\",\"error\":{\"type\":\"api_error\",\"message\":\"Internal server error\"},\"request_id\":\"req_011Ca5kY9i2rcxuFbKvP7KtN\"}\n[2026-04-15 23:56:45] Eddy 실행 완료\n[2026-04-16 00:00:00] Eddy 실행 시작\nAPI Error: 500 {\"type\":\"error\",\"error\":{\"type\":\"api_error\",\"message\":\"Internal server error\"},\"request_id\":\"req_011Ca5kpNeqthpeF5kkQ6jNR\"}\n[2026-04-16 00:00:09] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
@@ -133,16 +133,16 @@
           "name": "Planner",
           "role": "TODO 발굴/API 조사",
           "schedule": "4시간",
-          "lastRun": "2026-04-10 04:15:54"
+          "lastRun": "2026-04-15 23:18:13"
         },
         {
           "name": "Dev1",
           "role": "승인된 TODO 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-10 04:52:27"
+          "lastRun": "2026-04-15 23:24:08"
         }
       ],
-      "recentLog": "- **TODO-002** (세금계산서 API): ⏳ Sanghun 법적 승인 준비 중\n- **TODO-003~019**: ⏳ Sanghun 승인 대기\n**버그 대기 중:**\n- **BUG-018**: 재무제표 월별 이자비용/비영업수익 누락 — Sanghun 승인 후 수정\n- **BUG-017**: severance.js PUT 미구현 — 승인 대기\n- **BUG-016**: loans unlink 엔드포인트 미구현 — 승인 대기\n**신규 추가 없음** — TODO.md 항목 전부 TASKS.md에 반영 완료\n[2026-04-10 04:15:54] Planner 완료"
+      "recentLog": "2. **[TODO-020] 명함 제작 기능 상세 설계 완료** (Dev1 즉시 착수 가능):\n- DB: `business_card_templates` 테이블, `fields JSONB` (x/y/fontSize/color 등)\n- 서버: CRUD API + 파일 업로드 (`/api/upload/business-card-template`)\n- 프론트: 탭1(템플릿 관리+필드 위치 편집기) + 탭2(직원 선택+미리보기+PDF)\n- PDF: jsPDF A4 10장(2열×5행 90×50mm) 배치\n- employees/companies 테이블 데이터 자동 매핑 설계 포함\n3. **커밋 완료**: `biztool-team` 레포 (push 하지 않음)\n[2026-04-15 23:18:13] Planner 완료"
     },
     {
       "name": "ReviewBot",
@@ -198,6 +198,7 @@
     "status": "active"
   },
   "recentActivity": [
+    "[2026-04-10 04:22:25] Dev1 완료",
     "**QA 36차**: 전체 suite **31/31 PASS** ✅ — 회귀 없음",
     "**[done] BETA-50 style: header active state + sectors sidebar Bloomberg — 31/31 PASS**",
     "[2026-04-10 04:23:13] Dev2 (UI) 완료",
@@ -209,9 +210,8 @@
     "- `prisma db push` 완료",
     "[2026-04-11 17:43:32] Dev1 완료",
     "[2026-04-11 18:03:16] Dev2 완료",
-    "**신규 추가 없음** — TODO.md 항목 전부 TASKS.md에 반영 완료",
-    "[2026-04-10 04:15:54] Planner 완료",
-    "모든 미수정 버그는 이미 TASKS.md에 기록되어 있으며 Sanghun 승인을 기다리고 있습니다. 커밋할 변경사항 없음.",
-    "[2026-04-10 04:52:27] Dev1 완료"
+    "3. **커밋 완료**: `biztool-team` 레포 (push 하지 않음)",
+    "[2026-04-15 23:18:13] Planner 완료",
+    "[2026-04-15 23:24:08] Dev1 완료"
   ]
 }
