@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-15 14:01:04",
+  "updatedAt": "2026-04-15 15:01:17",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-15 14:01:04"
+          "lastRun": "2026-04-15 15:01:17"
         }
       ],
-      "recentLog": "[2026-04-15 14:00:00] Eddy 실행 시작\n실행 완료.\n- 신규 텔레그램 메시지: 없음\n- 모든 팀 정상 (보류 팀 launchd 미등록 확인)\n- AI-Secretary 웹서버 가동 중\n- Marketing 팀: 프로젝트 디렉토리/launchd 미설정 — Sanghun 지시 대기\n- state.json 업데이트 및 커밋/푸시 완료\n- 텔레그램 보고 전송 완료\n[2026-04-15 14:01:04] Eddy 실행 완료"
+      "recentLog": "[2026-04-15 14:36:38] Eddy 실행 완료\n[2026-04-15 15:00:00] Eddy 실행 시작\n실행 완료.\n**요약:**\n- 새 텔레그램 메시지: 없음\n- launchd 상태: 정상 (보류팀 모두 언로드, JENI 웹서버 가동 중)\n- Marketing 팀: 디렉토리/launchd 미생성 — Sanghun에게 보고 완료\n- state.json 업데이트 + 커밋/푸시 완료\n[2026-04-15 15:01:17] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
