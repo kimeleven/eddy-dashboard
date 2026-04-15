@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-16 03:02:28",
+  "updatedAt": "2026-04-16 04:01:19",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-16 03:02:08"
+          "lastRun": "2026-04-16 04:01:19"
         }
       ],
-      "recentLog": "- **Marketing**: 디렉토리/launchd 미생성 — 세팅 필요\n- **보류팀**: 전부 정상 언로드 상태\n- **JENI 웹서버**: 정상 가동 (PID 78245)\n- **텔레그램**: 새 메시지 없음\n- 텔레그램 보고 전송 완료, state.json 커밋/푸시 완료\n[2026-04-16 03:00:59] Eddy 실행 완료\n[2026-04-16 03:00:59] status.json 업데이트 완료\n[main 823fe18] status: 2026-04-16 03:00\n1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-16 03:02:08] Eddy 실행 시작"
+      "recentLog": "launchd 상태 확인 결과 CLAUDE.md와 일치합니다.\n**현황 요약:**\n- 새 텔레그램 메시지 없음\n- **BizTool**: 활발히 가동 중. 최근 12시간 내 커밋 10건 — 명함 제작 기능 완료(XSS 취약점 수정 포함), 메뉴 위치 변경(문서작성→인사관리), 거래처 검색 필터 확장, 재무제표/대출 관련 버그 4건 수정. Sanghun push 승인 대기 중.\n- **보류팀**: ReviewBot, AI-Secretary(팀), IRI-Safety, ELDO, DevGate, XBot, LiveOrder — 모두 launchd 언로드 상태 정상\n- **JENI 웹서버**: PID 78245, 정상 가동 중\n변동 없어 텔레그램 보고는 생략합니다.\n[2026-04-16 04:01:19] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
@@ -133,16 +133,16 @@
           "name": "Planner",
           "role": "TODO 발굴/API 조사",
           "schedule": "4시간",
-          "lastRun": "2026-04-15 23:18:13"
+          "lastRun": "2026-04-16 03:19:47"
         },
         {
           "name": "Dev1",
           "role": "승인된 TODO 개발",
           "schedule": "4시간",
-          "lastRun": "2026-04-15 23:24:08"
+          "lastRun": "2026-04-16 03:27:14"
         }
       ],
-      "recentLog": "2. **[TODO-020] 명함 제작 기능 상세 설계 완료** (Dev1 즉시 착수 가능):\n- DB: `business_card_templates` 테이블, `fields JSONB` (x/y/fontSize/color 등)\n- 서버: CRUD API + 파일 업로드 (`/api/upload/business-card-template`)\n- 프론트: 탭1(템플릿 관리+필드 위치 편집기) + 탭2(직원 선택+미리보기+PDF)\n- PDF: jsPDF A4 10장(2열×5행 90×50mm) 배치\n- employees/companies 테이블 데이터 자동 매핑 설계 포함\n3. **커밋 완료**: `biztool-team` 레포 (push 하지 않음)\n[2026-04-15 23:18:13] Planner 완료"
+      "recentLog": "- TODO-001 금융 공공데이터 API: 2026-04-16 재검토 기록 추가\n- 오픈뱅킹/마이데이터는 금융업 등록 필요로 불가 결론 유지\n- **쿠콘 API** (월 20~50만원) + **웹케시** (법인 특화) 가 현실적 최선\n- **단기 대안**: 은행별 CSV 파서 개선 (비용 없음, 즉시 가능)\n- TASKS.md 커밋 완료 (push 없음)\n**Sanghun 결정 대기 중:**\n- 쿠콘 API 계약 진행 여부\n- CSV 파서 개선 먼저 할지 여부\n[2026-04-16 03:19:47] Planner 완료"
     },
     {
       "name": "ReviewBot",
@@ -198,6 +198,7 @@
     "status": "active"
   },
   "recentActivity": [
+    "- **커밋**: `8471a62` → push 완료",
     "[2026-04-10 04:22:25] Dev1 완료",
     "**QA 36차**: 전체 suite **31/31 PASS** ✅ — 회귀 없음",
     "**[done] BETA-50 style: header active state + sectors sidebar Bloomberg — 31/31 PASS**",
@@ -210,8 +211,7 @@
     "- `prisma db push` 완료",
     "[2026-04-11 17:43:32] Dev1 완료",
     "[2026-04-11 18:03:16] Dev2 완료",
-    "3. **커밋 완료**: `biztool-team` 레포 (push 하지 않음)",
-    "[2026-04-15 23:18:13] Planner 완료",
-    "[2026-04-15 23:24:08] Dev1 완료"
+    "[2026-04-16 03:19:47] Planner 완료",
+    "[2026-04-16 03:27:14] Dev1 완료"
   ]
 }
