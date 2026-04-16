@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-17 02:00:04",
+  "updatedAt": "2026-04-17 03:00:04",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-17 02:00:04"
+          "lastRun": "2026-04-17 03:00:04"
         }
       ],
-      "recentLog": "1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-17 01:09:45] Eddy 실행 시작\nYour organization does not have access to Claude. Please login again or contact your administrator.\n[2026-04-17 01:09:47] Eddy 실행 완료\n[2026-04-17 01:39:47] Eddy 실행 시작\nYour organization does not have access to Claude. Please login again or contact your administrator.\n[2026-04-17 01:39:49] Eddy 실행 완료\n[2026-04-17 02:00:01] Eddy 실행 시작\nYour organization does not have access to Claude. Please login again or contact your administrator.\n[2026-04-17 02:00:04] Eddy 실행 완료"
+      "recentLog": "1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-17 02:09:50] Eddy 실행 시작\nYour organization does not have access to Claude. Please login again or contact your administrator.\n[2026-04-17 02:09:52] Eddy 실행 완료\n[2026-04-17 02:39:52] Eddy 실행 시작\nYour organization does not have access to Claude. Please login again or contact your administrator.\n[2026-04-17 02:39:55] Eddy 실행 완료\n[2026-04-17 03:00:01] Eddy 실행 시작\nYour organization does not have access to Claude. Please login again or contact your administrator.\n[2026-04-17 03:00:04] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
