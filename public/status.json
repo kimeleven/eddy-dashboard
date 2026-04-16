@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-16 09:02:32",
+  "updatedAt": "2026-04-16 10:00:40",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-16 09:01:18"
+          "lastRun": "2026-04-16 10:00:40"
         }
       ],
-      "recentLog": "- **launchd 상태**: CLAUDE.md와 일치, 이상 없음\n- **텔레그램**: 새 메시지 없음\n- **팀 현황**: 전체 보류 유지, JENI 웹서버만 가동 중\n- **state.json**: 12:00 업데이트 완료\n- **보고**: 텔레그램 전송 완료\n- **커밋/푸시**: `a29bc34` 완료\n[2026-04-16 09:01:17] Eddy 실행 완료\n[2026-04-16 09:01:18] status.json 업데이트 완료\n[main fdbfb46] status: 2026-04-16 09:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "- launchd 상태: CLAUDE.md와 일치 (전체 팀 보류, Eddy/대시보드/클린업/주간보고/JENI웹서버만 가동)\n- state.json 업데이트 → 커밋/푸시 완료\n- 텔레그램 보고 완료\n[2026-04-16 09:15:59] Eddy 실행 완료\n[2026-04-16 09:45:59] Eddy 실행 시작\n완료. 신규 지시 없고 모든 팀 보류 중. 정상 순환 완료했습니다.\n[2026-04-16 09:46:43] Eddy 실행 완료\n[2026-04-16 10:00:01] Eddy 실행 시작\n정상 실행 완료. 새 메시지 없고, 모든 팀 보류 상태 유지 중. launchd 상태 CLAUDE.md와 일치합니다. 변동 없음.\n[2026-04-16 10:00:40] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
