@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-16 09:01:18",
+  "updatedAt": "2026-04-16 09:02:32",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-16 09:01:17"
+          "lastRun": "2026-04-16 09:01:18"
         }
       ],
-      "recentLog": "[2026-04-16 09:00:00] Eddy 실행 시작\n실행 완료:\n- **launchd 상태**: CLAUDE.md와 일치, 이상 없음\n- **텔레그램**: 새 메시지 없음\n- **팀 현황**: 전체 보류 유지, JENI 웹서버만 가동 중\n- **state.json**: 12:00 업데이트 완료\n- **보고**: 텔레그램 전송 완료\n- **커밋/푸시**: `a29bc34` 완료\n[2026-04-16 09:01:17] Eddy 실행 완료"
+      "recentLog": "- **launchd 상태**: CLAUDE.md와 일치, 이상 없음\n- **텔레그램**: 새 메시지 없음\n- **팀 현황**: 전체 보류 유지, JENI 웹서버만 가동 중\n- **state.json**: 12:00 업데이트 완료\n- **보고**: 텔레그램 전송 완료\n- **커밋/푸시**: `a29bc34` 완료\n[2026-04-16 09:01:17] Eddy 실행 완료\n[2026-04-16 09:01:18] status.json 업데이트 완료\n[main fdbfb46] status: 2026-04-16 09:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
