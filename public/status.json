@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-04-17 09:02:50",
+  "updatedAt": "2026-04-17 10:00:03",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
-    "launchdAgents": 6,
+    "launchdAgents": 7,
     "operatingHours": "Eddy: 24시간 / 팀: 월~금 19:00~07:00, 토일 24시간",
     "model": "Sonnet (전체)",
     "token": "바둑이토큰",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-17 09:00:04"
+          "lastRun": "2026-04-17 10:00:03"
         }
       ],
-      "recentLog": "[2026-04-17 08:10:24] Eddy 실행 완료\n[2026-04-17 08:40:24] Eddy 실행 시작\nYour organization does not have access to Claude. Please login again or contact your administrator.\n[2026-04-17 08:40:27] Eddy 실행 완료\n[2026-04-17 09:00:01] Eddy 실행 시작\nYour organization does not have access to Claude. Please login again or contact your administrator.\n[2026-04-17 09:00:04] Eddy 실행 완료\n[2026-04-17 09:00:04] status.json 업데이트 완료\n[main 6dc65e4] status: 2026-04-17 09:00\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-17 09:10:27] Eddy 실행 시작\nYour organization does not have access to Claude. Please login again or contact your administrator.\n[2026-04-17 09:10:29] Eddy 실행 완료\n[2026-04-17 09:40:29] Eddy 실행 시작\nYour organization does not have access to Claude. Please login again or contact your administrator.\n[2026-04-17 09:40:32] Eddy 실행 완료\n[2026-04-17 10:00:00] Eddy 실행 시작\nYour organization does not have access to Claude. Please login again or contact your administrator.\n[2026-04-17 10:00:03] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
