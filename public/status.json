@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-18 00:00:03",
+  "updatedAt": "2026-04-18 01:00:04",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-18 00:00:03"
+          "lastRun": "2026-04-18 01:00:03"
         }
       ],
-      "recentLog": "Your organization does not have access to Claude. Please login again or contact your administrator.\n[2026-04-17 23:12:20] Eddy 실행 완료\n[2026-04-17 23:42:20] Eddy 실행 시작\n[telegram-log] 1개 메시지 저장 완료\nYour organization does not have access to Claude. Please login again or contact your administrator.\n[2026-04-17 23:42:23] Eddy 실행 완료\n[2026-04-18 00:00:00] Eddy 실행 시작\n[telegram-log] 1개 메시지 저장 완료\nYour organization does not have access to Claude. Please login again or contact your administrator.\n[2026-04-18 00:00:03] Eddy 실행 완료"
+      "recentLog": "Your organization does not have access to Claude. Please login again or contact your administrator.\n[2026-04-18 00:12:28] Eddy 실행 완료\n[2026-04-18 00:42:28] Eddy 실행 시작\n[telegram-log] 1개 메시지 저장 완료\nYour organization does not have access to Claude. Please login again or contact your administrator.\n[2026-04-18 00:42:30] Eddy 실행 완료\n[2026-04-18 01:00:00] Eddy 실행 시작\n[telegram-log] 1개 메시지 저장 완료\nYour organization does not have access to Claude. Please login again or contact your administrator.\n[2026-04-18 01:00:03] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
