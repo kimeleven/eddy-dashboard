@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-18 14:00:04",
+  "updatedAt": "2026-04-18 15:00:03",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-18 14:00:04"
+          "lastRun": "2026-04-18 15:00:03"
         }
       ],
-      "recentLog": "1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-18 13:17:59] Eddy 실행 시작\nFailed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011CaAbHUFoKzQKyxxUR7MYT\"}\n[2026-04-18 13:18:01] Eddy 실행 완료\n[2026-04-18 13:48:01] Eddy 실행 시작\nFailed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011CaAdaMH4YgmXgQkg4LitP\"}\n[2026-04-18 13:48:04] Eddy 실행 완료\n[2026-04-18 14:00:00] Eddy 실행 시작\nFailed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011CaAeVS5WqQ1aGtT3VX6jy\"}\n[2026-04-18 14:00:04] Eddy 실행 완료"
+      "recentLog": "1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-18 14:18:06] Eddy 실행 시작\nFailed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011CaAfsDA7eyMqkD8yrzqUT\"}\n[2026-04-18 14:18:08] Eddy 실행 완료\n[2026-04-18 14:48:09] Eddy 실행 시작\nFailed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011CaAiA64gb1WsCdVG3D9ns\"}\n[2026-04-18 14:48:11] Eddy 실행 완료\n[2026-04-18 15:00:00] Eddy 실행 시작\nFailed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011CaAj4ZfJoLjAsf1kvgeGd\"}\n[2026-04-18 15:00:03] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
