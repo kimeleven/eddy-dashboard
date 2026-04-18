@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-18 17:03:14",
+  "updatedAt": "2026-04-18 18:00:04",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-18 17:00:03"
+          "lastRun": "2026-04-18 18:00:04"
         }
       ],
-      "recentLog": "[2026-04-18 16:18:19] Eddy 실행 완료\n[2026-04-18 16:48:19] Eddy 실행 시작\nFailed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011CaAsKbBgrSxULqGJaKViR\"}\n[2026-04-18 16:48:21] Eddy 실행 완료\n[2026-04-18 17:00:00] Eddy 실행 시작\nFailed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011CaAtDHgg5Wq68H6mnhbCV\"}\n[2026-04-18 17:00:03] Eddy 실행 완료\n[2026-04-18 17:00:03] status.json 업데이트 완료\n[main 2165568] status: 2026-04-18 17:00\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-18 17:18:22] Eddy 실행 시작\nFailed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011CaAucTy4feQEUGFrtmLaH\"}\n[2026-04-18 17:18:24] Eddy 실행 완료\n[2026-04-18 17:48:24] Eddy 실행 시작\nFailed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011CaAwuLKtXMZfanGCGb91M\"}\n[2026-04-18 17:48:26] Eddy 실행 완료\n[2026-04-18 18:00:01] Eddy 실행 시작\nFailed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011CaAxnibknaC4GR6xeQ5gZ\"}\n[2026-04-18 18:00:04] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
