@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-18 23:03:18",
+  "updatedAt": "2026-04-19 00:03:05",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-18 23:03:04"
+          "lastRun": "2026-04-19 00:03:05"
         }
       ],
-      "recentLog": "[2026-04-18 22:48:50] Eddy 실행 시작\nAPI Error: Unable to connect to API (ConnectionRefused)\n[2026-04-18 22:51:53] Eddy 실행 완료\n[2026-04-18 22:51:53] status.json 업데이트 완료\n[2026-04-18 23:00:00] Eddy 실행 시작\nAPI Error: Unable to connect to API (ConnectionRefused)\n[2026-04-18 23:03:04] Eddy 실행 완료\n[2026-04-18 23:03:04] status.json 업데이트 완료\n[main 7fd4c2a] status: 2026-04-18 23:03\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "[2026-04-18 23:21:53] Eddy 실행 시작\nAPI Error: Unable to connect to API (ConnectionRefused)\n[2026-04-18 23:24:53] Eddy 실행 완료\n[2026-04-18 23:24:53] status.json 업데이트 완료\n[2026-04-18 23:54:53] Eddy 실행 시작\nAPI Error: Unable to connect to API (ConnectionRefused)\n[2026-04-18 23:57:52] Eddy 실행 완료\n[2026-04-19 00:00:00] Eddy 실행 시작\nAPI Error: Unable to connect to API (ConnectionRefused)\n[2026-04-19 00:03:05] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
