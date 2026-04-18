@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-18 09:00:04",
+  "updatedAt": "2026-04-18 09:03:08",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -24,7 +24,7 @@
           "lastRun": "2026-04-18 09:00:04"
         }
       ],
-      "recentLog": "1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-18 08:17:35] Eddy 실행 시작\nFailed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011CaACNgAciXZNYnYhWk1NG\"}\n[2026-04-18 08:17:37] Eddy 실행 완료\n[2026-04-18 08:47:37] Eddy 실행 시작\nFailed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011CaAEfZWyM6d3dSLgwvGQL\"}\n[2026-04-18 08:47:40] Eddy 실행 완료\n[2026-04-18 09:00:01] Eddy 실행 시작\nFailed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011CaAFcNnM19QKW7GtcaZKi\"}\n[2026-04-18 09:00:04] Eddy 실행 완료"
+      "recentLog": "[2026-04-18 08:17:37] Eddy 실행 완료\n[2026-04-18 08:47:37] Eddy 실행 시작\nFailed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011CaAEfZWyM6d3dSLgwvGQL\"}\n[2026-04-18 08:47:40] Eddy 실행 완료\n[2026-04-18 09:00:01] Eddy 실행 시작\nFailed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011CaAFcNnM19QKW7GtcaZKi\"}\n[2026-04-18 09:00:04] Eddy 실행 완료\n[2026-04-18 09:00:04] status.json 업데이트 완료\n[main 9edafd9] status: 2026-04-18 09:00\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
