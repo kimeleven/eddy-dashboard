@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-19 22:19:03",
+  "updatedAt": "2026-04-19 22:52:15",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-19 22:15:56"
+          "lastRun": "2026-04-19 22:49:23"
         }
       ],
-      "recentLog": "- 텔레그램 새 메시지: 없음\n- LiveOrder MVP: MVP-001 완료, 정상 진행 중\n- launchd: 전체 정상\n- state.json 업데이트 + 커밋/푸시 완료\n- 텔레그램 보고 완료\n[2026-04-19 22:01:12] Eddy 실행 완료\n[2026-04-19 22:01:13] status.json 업데이트 완료\n[main 1d8a36d] status: 2026-04-19 22:01\n1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-19 22:15:56] Eddy 실행 시작"
+      "recentLog": "3. **텔레그램 보고 완료** — 스케줄 설정 및 유스케이스 구체화 확인 요청\n4. **대시보드 업데이트 + git push 완료** (eddy, eddy-dashboard)\n5. **LiveOrder MVP** — 최근 4시간 내 1건 커밋 (DB 스키마 MVP 마이그레이션). 정상 가동 중.\n**대기 사항:** Sanghun의 RHWP 팀 스케줄/유스케이스 답변\n[2026-04-19 22:19:23] Eddy 실행 완료\n[2026-04-19 22:49:23] Eddy 실행 시작\n[telegram-log] 1개 메시지 저장 완료"
     },
     {
       "name": "ELDO",
