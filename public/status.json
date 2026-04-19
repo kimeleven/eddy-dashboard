@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-20 03:01:04",
+  "updatedAt": "2026-04-20 03:03:34",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-20 03:01:04"
+          "lastRun": "2026-04-20 03:02:03"
         }
       ],
-      "recentLog": "- 텔레그램 보고 완료\n[2026-04-20 02:32:03] Eddy 실행 완료\n[2026-04-20 03:00:00] Eddy 실행 시작\n새 지시 없음. 텔레그램 보고는 변동 없으므로 스킵합니다.\n`[Eddy] 팀 정상 가동 중. 변동 없음.`\n- LiveOrder MVP: Phase 4 대기 (다음 19:00~07:00 사이클에서 MVP-005 착수 예정)\n- RHWP: Phase 1 대기 (스케줄 미정)\n[2026-04-20 03:01:04] Eddy 실행 완료"
+      "recentLog": "`[Eddy] 팀 정상 가동 중. 변동 없음.`\n- LiveOrder MVP: Phase 4 대기 (다음 19:00~07:00 사이클에서 MVP-005 착수 예정)\n- RHWP: Phase 1 대기 (스케줄 미정)\n[2026-04-20 03:01:04] Eddy 실행 완료\n[2026-04-20 03:01:04] status.json 업데이트 완료\n[main 0a4dd22] status: 2026-04-20 03:01\n1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-20 03:02:03] Eddy 실행 시작"
     },
     {
       "name": "ELDO",
