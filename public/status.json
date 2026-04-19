@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-19 17:02:16",
+  "updatedAt": "2026-04-19 17:03:28",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -24,7 +24,7 @@
           "lastRun": "2026-04-19 17:02:16"
         }
       ],
-      "recentLog": "[2026-04-19 17:00:01] Eddy 실행 시작\n실행 완료.\n**요약:**\n- 새 텔레그램 메시지 없음\n- **YTTrans**: 04-17 하루만 활성 → Paused로 이동\n- **InsaneSearch**: Phase 1~2 전체 완료 → 완료/보류로 이동\n- **LiveOrder MVP**: launchd 활성, 야간 첫 실행 대기 중 (전체 미착수)\n- CLAUDE.md 업데이트, 대시보드 갱신, git push, 텔레그램 보고 완료\n[2026-04-19 17:02:16] Eddy 실행 완료"
+      "recentLog": "**요약:**\n- 새 텔레그램 메시지 없음\n- **YTTrans**: 04-17 하루만 활성 → Paused로 이동\n- **InsaneSearch**: Phase 1~2 전체 완료 → 완료/보류로 이동\n- **LiveOrder MVP**: launchd 활성, 야간 첫 실행 대기 중 (전체 미착수)\n- CLAUDE.md 업데이트, 대시보드 갱신, git push, 텔레그램 보고 완료\n[2026-04-19 17:02:16] Eddy 실행 완료\n[2026-04-19 17:02:16] status.json 업데이트 완료\n[main e478aa9] status: 2026-04-19 17:02\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
