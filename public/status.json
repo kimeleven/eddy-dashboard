@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-19 17:01:45",
+  "updatedAt": "2026-04-19 17:02:16",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-19 17:00:01"
+          "lastRun": "2026-04-19 17:02:16"
         }
       ],
-      "recentLog": "**요약:**\n- 새 텔레그램 메시지: 없음\n- launchd 상태: 정상 (Active 팀 로드됨, Paused 팀 언로드 상태)\n- **InsaneSearch**: 전체 태스크 완료 — 추가 지시 대기\n- **LiveOrder MVP**: 오늘 19:00부터 첫 가동 예정 (전 태스크 미착수)\n- **YTTrans**: 04-17 하루 스케줄 만료 → Sanghun에게 재가동 여부 확인 요청함\n- state.json 업데이트 + 텔레그램 보고 완료\n[2026-04-19 16:34:47] Eddy 실행 완료\n[2026-04-19 17:00:01] Eddy 실행 시작"
+      "recentLog": "[2026-04-19 17:00:01] Eddy 실행 시작\n실행 완료.\n**요약:**\n- 새 텔레그램 메시지 없음\n- **YTTrans**: 04-17 하루만 활성 → Paused로 이동\n- **InsaneSearch**: Phase 1~2 전체 완료 → 완료/보류로 이동\n- **LiveOrder MVP**: launchd 활성, 야간 첫 실행 대기 중 (전체 미착수)\n- CLAUDE.md 업데이트, 대시보드 갱신, git push, 텔레그램 보고 완료\n[2026-04-19 17:02:16] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
