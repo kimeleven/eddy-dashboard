@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-19 16:00:02",
+  "updatedAt": "2026-04-19 17:01:45",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-19 16:00:02"
+          "lastRun": "2026-04-19 17:00:01"
         }
       ],
-      "recentLog": "1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-19 15:07:56] Eddy 실행 시작\nFailed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011CaCdUhDhrFNMnk5QrANeV\"}\n[2026-04-19 15:07:59] Eddy 실행 완료\n[2026-04-19 15:38:01] Eddy 실행 시작\nFailed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011CaCfmZpurthPmGzBiL8cs\"}\n[2026-04-19 15:38:03] Eddy 실행 완료\n[2026-04-19 16:00:00] Eddy 실행 시작\nFailed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011CaChSnswPRcXpPTC3fVb1\"}\n[2026-04-19 16:00:02] Eddy 실행 완료"
+      "recentLog": "**요약:**\n- 새 텔레그램 메시지: 없음\n- launchd 상태: 정상 (Active 팀 로드됨, Paused 팀 언로드 상태)\n- **InsaneSearch**: 전체 태스크 완료 — 추가 지시 대기\n- **LiveOrder MVP**: 오늘 19:00부터 첫 가동 예정 (전 태스크 미착수)\n- **YTTrans**: 04-17 하루 스케줄 만료 → Sanghun에게 재가동 여부 확인 요청함\n- state.json 업데이트 + 텔레그램 보고 완료\n[2026-04-19 16:34:47] Eddy 실행 완료\n[2026-04-19 17:00:01] Eddy 실행 시작"
     },
     {
       "name": "ELDO",
