@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-20 07:03:35",
+  "updatedAt": "2026-04-20 07:46:56",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-20 07:01:28"
+          "lastRun": "2026-04-20 07:45:30"
         }
       ],
-      "recentLog": "**요약:**\n- **텔레그램**: 새 메시지 없음\n- **launchd**: 정상 — 활성 팀(LiveOrder MVP) 등록됨, 보류 팀 모두 언로드 상태, RHWP는 스케줄 미정으로 미등록\n- **LiveOrder MVP**: Phase 4 진행 중 (MVP-001~006 완료, 다음 MVP-007). 최근 4시간 커밋 2건\n- **RHWP Agent**: 팀 구성만 완료, Phase 1 전체 미착수. launchd/스케줄 지시 대기\n- **보고 전송** 완료, state.json 업데이트 및 커밋/푸시 완료\n[2026-04-20 07:01:28] Eddy 실행 완료\n[2026-04-20 07:01:28] status.json 업데이트 완료\n[main c2f9d3c] status: 2026-04-20 07:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "실행 완료:\n- **launchd 상태**: CLAUDE.md와 일치, 이상 없음\n- **텔레그램**: 새 메시지 없음\n- **LiveOrder MVP**: Phase 4 진행 중 (2건 커밋 확인)\n- **RHWP**: 팀 구성 완료, 스케줄 미정\n- **state.json**: 업데이트 + 커밋 + 푸시 완료\n- **텔레그램 보고**: 전송 완료\n[2026-04-20 07:15:30] Eddy 실행 완료\n[2026-04-20 07:45:30] Eddy 실행 시작\n[telegram-log] 1개 메시지 저장 완료"
     },
     {
       "name": "ELDO",
