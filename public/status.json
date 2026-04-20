@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-20 15:03:52",
+  "updatedAt": "2026-04-20 16:01:02",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-20 15:03:52"
+          "lastRun": "2026-04-20 16:01:02"
         }
       ],
-      "recentLog": "✅ **처리 완료:**\n- Sanghun 지시: \"Liveorder는 개발보고서 pdf로 만들어줘\" → LiveOrder 개발보고서 PDF 생성 및 텔레그램 전송 완료\n- 전체 167건 커밋 이력, Phase 1~4 + MVP 재설계 상세 정리\n- 아키텍처, 주문 플로우, 커밋 통계 포함\n📋 **팀 현황:**\n- LiveOrder MVP: 24시간 가동 중, MVP-009까지 완료 (PortOne 제거 + 송금 방식 전환)\n- 기타 팀: 변동 없음\n[2026-04-20 15:03:52] Eddy 실행 완료"
+      "recentLog": "[2026-04-20 15:45:03] Eddy 실행 완료\n[2026-04-20 16:00:00] Eddy 실행 시작\n실행 완료.\n- 새 텔레그램 지시: 없음\n- launchd: CLAUDE.md와 일치, 정상\n- LiveOrder MVP: MVP-010(TypeScript 검증) 대기 중, 나머지 완료\n- RHWP: Phase 1 미착수\n- state.json 업데이트 + 커밋/푸시 + 텔레그램 보고 완료\n[2026-04-20 16:01:02] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
