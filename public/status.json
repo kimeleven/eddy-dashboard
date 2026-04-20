@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-20 19:57:30",
+  "updatedAt": "2026-04-20 20:01:17",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-20 19:56:30"
+          "lastRun": "2026-04-20 20:01:17"
         }
       ],
-      "recentLog": "실행 완료.\n- 새 텔레그램 메시지 없음\n- launchd 상태 정상 (CLAUDE.md 일치)\n- LiveOrder MVP: 전체 완료 (MVP-001~011), 추가 지시 대기\n- RHWP: Phase 1 대기 (스케줄 미설정)\n- state.json 업데이트 + 커밋/푸시 완료\n- 텔레그램 보고 전송 완료\n[2026-04-20 19:26:30] Eddy 실행 완료\n[2026-04-20 19:56:30] Eddy 실행 시작"
+      "recentLog": "실행 완료.\n**요약:**\n- 새 텔레그램 지시: 없음\n- **LiveOrder MVP**: Phase 1~5 전체 완료 (MVP-001~011). 최근 MVP-010, MVP-011 커밋 확인. 자동 배포됨.\n- **RHWP Agent**: Phase 1 미착수, 스케줄 미설정 (지시 대기)\n- **launchd**: 정상 (보류 팀 프로세스 없음)\n- state.json 업데이트 + 커밋/푸시 완료\n- 텔레그램 보고 완료\n[2026-04-20 20:01:17] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
