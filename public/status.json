@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-20 11:03:40",
+  "updatedAt": "2026-04-20 12:01:58",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-20 11:02:35"
+          "lastRun": "2026-04-20 12:00:00"
         }
       ],
-      "recentLog": "- Karpathy LLM Wiki 개념 기반 — 마크다운 파일 + 웹 UI + 검색 + 편집\n- 프로젝트 7개, 팀 구조, 환경 정보, 의사결정 로그 초기 페이지 생성\n- 서버 실행 중: `http://localhost:3456`\n2. **팀 현황**:\n- LiveOrder MVP: 정상 가동, MVP-007/008 커밋 확인 (채팅 플로우 송금 전환, 주문 확인 API)\n- launchd 상태: CLAUDE.md와 일치, 이상 없음\n3. **텔레그램 보고 완료**, state.json/tasks.md 업데이트, git push 완료\n[2026-04-20 11:02:35] Eddy 실행 완료"
+      "recentLog": "**요약:**\n- 새 텔레그램 메시지: 없음\n- **LiveOrder MVP**: Phase 1~4 완료 (MVP-001~008). Phase 5(코드 정리/테스트)만 남음\n- **RHWP Agent**: 팀 구성 완료, Phase 1 미착수 (스케줄 미정)\n- launchd 상태: CLAUDE.md와 일치, 이상 없음\n- state.json 업데이트 → 커밋/푸시 완료\n- 텔레그램 보고 완료\n[2026-04-20 11:34:04] Eddy 실행 완료\n[2026-04-20 12:00:00] Eddy 실행 시작"
     },
     {
       "name": "ELDO",
