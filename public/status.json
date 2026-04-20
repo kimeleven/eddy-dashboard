@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-20 19:01:45",
+  "updatedAt": "2026-04-20 19:01:57",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-20 19:00:00"
+          "lastRun": "2026-04-20 19:01:57"
         }
       ],
-      "recentLog": "- **텔레그램**: 새 메시지 없음\n- **launchd**: 정상 (보류팀 언로드 상태, 활성 서비스 가동 중)\n- **LiveOrder MVP**: 전체 태스크 완료 (MVP-001~011)\n- **RHWP**: v0.7.3 릴리즈 완료, 활발 진행 중\n- **보고**: 텔레그램 전송 완료\n- **state.json**: 23:30 업데이트 + 커밋/푸시 완료\n[2026-04-20 18:55:22] Eddy 실행 완료\n[2026-04-20 18:55:23] status.json 업데이트 완료\n[2026-04-20 19:00:00] Eddy 실행 시작"
+      "recentLog": "**요약:**\n- 새 텔레그램 메시지 없음\n- **LiveOrder MVP**: Phase 1~5 전체 완료 (MVP-001~011). GitHub push → 자동 배포 적용됨\n- **RHWP Agent**: Phase 1 대기 중, 스케줄 미정\n- launchd 상태 정상 (JENI 웹서버 가동 중, 보류 팀 언로드 상태 유지)\n- 대시보드 업데이트 + push 완료\n- state.json 커밋 + push 완료\n- 텔레그램 보고 완료\n[2026-04-20 19:01:57] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
