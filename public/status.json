@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-21 00:00:57",
+  "updatedAt": "2026-04-21 01:01:35",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-21 00:00:57"
+          "lastRun": "2026-04-21 01:01:34"
         }
       ],
-      "recentLog": "[2026-04-20 23:37:59] Eddy 실행 완료\n[2026-04-21 00:00:00] Eddy 실행 시작\n팀 정상 가동 중. 변동 없음.\n**현황 요약:**\n- **LiveOrder MVP**: Phase 1~5 개발 완료. QA 단계 대기 중 (QA-001 구매플로우 E2E, QA-002 셀러설정). 최근 커밋 3건 (shopCode fix, 상품목록 Switch, 이미지 placeholder).\n- **RHWP**: 신규 팀, 아직 미착수.\n- **기타 팀**: 전부 보류 상태, launchd 정상.\n- **텔레그램**: 새 지시 없음.\n[2026-04-21 00:00:57] Eddy 실행 완료"
+      "recentLog": "[2026-04-21 01:00:00] Eddy 실행 시작\n실행 완료.\n- 새 텔레그램 메시지: 없음\n- launchd 상태: CLAUDE.md와 일치, 이상 없음\n- LiveOrder MVP: QA-001 통과 완료, QA-002~004 대기\n- RHWP: Phase 1 미착수, 스케줄 미등록\n- state.json 업데이트 → 커밋/푸시 완료\n- 텔레그램 보고 전송 완료\n[2026-04-21 01:01:34] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
