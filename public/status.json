@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-04-21 11:03:57",
+  "updatedAt": "2026-04-21 12:01:39",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
-    "launchdAgents": 7,
+    "launchdAgents": 6,
     "operatingHours": "Eddy: 24시간 / 팀: 월~금 19:00~07:00, 토일 24시간",
     "model": "Sonnet (전체)",
     "token": "바둑이토큰",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-21 11:01:27"
+          "lastRun": "2026-04-21 12:01:39"
         }
       ],
-      "recentLog": "- **텔레그램**: 새 메시지 없음\n- **launchd**: 정상 (보류팀 언로드 확인)\n- **LiveOrder MVP**: QA 전체 완료, 프로덕션 안정\n- **RHWP**: Phase 1 대기 중 (스케줄 미설정)\n- **state.json**: 15:00 업데이트, 커밋/푸시 완료\n- **보고**: 텔레그램 전송 완료\n[2026-04-21 11:01:27] Eddy 실행 완료\n[2026-04-21 11:01:27] status.json 업데이트 완료\n[main 462f482] status: 2026-04-21 11:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "[2026-04-21 12:00:00] Eddy 실행 시작\n정기 실행 완료.\n- **새 텔레그램 메시지**: 없음\n- **LiveOrder MVP**: 전체 완료 상태, 추가 지시 대기\n- **RHWP**: Phase 1 미착수, 스케줄 미정\n- **launchd**: 정상 (보류팀 언로드 상태 유지)\n- **보고**: 텔레그램 전송 완료\n- **커밋/푸시**: 완료\n[2026-04-21 12:01:39] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
