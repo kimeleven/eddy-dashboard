@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-21 18:01:19",
+  "updatedAt": "2026-04-21 19:04:00",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-21 18:01:19"
+          "lastRun": "2026-04-21 19:00:00"
         }
       ],
-      "recentLog": "[2026-04-21 17:57:01] Eddy 실행 완료\n[2026-04-21 18:00:00] Eddy 실행 시작\n실행 완료.\n- 새 텔레그램 메시지: 없음\n- 팀 상태: 정상 (LiveOrder MVP QA 완료, RHWP Phase 1 대기)\n- launchd: CLAUDE.md와 일치\n- state.json 업데이트 + 커밋/푸시 완료\n- 텔레그램 보고 완료\n[2026-04-21 18:01:19] Eddy 실행 완료"
+      "recentLog": "- **텔레그램**: 새 메시지 없음\n- **launchd**: CLAUDE.md와 일치, 이상 없음\n- **LiveOrder MVP**: Phase 1~5 완료, 안정 상태\n- **RHWP**: Phase 1 배정 완료, 착수 전 (스케줄 미정)\n- **state.json**: 업데이트 및 push 완료\n- **텔레그램 보고**: 발송 완료\n[2026-04-21 18:28:19] Eddy 실행 완료\n[2026-04-21 18:58:17] Eddy 실행 시작\n[2026-04-21 19:00:00] Eddy 스킵 — 이전 실행 중 (PID 28778)"
     },
     {
       "name": "ELDO",
