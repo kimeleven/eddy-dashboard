@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-22 03:03:07",
+  "updatedAt": "2026-04-22 03:04:11",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -24,7 +24,7 @@
           "lastRun": "2026-04-22 03:03:07"
         }
       ],
-      "recentLog": "실행 완료.\n**요약:**\n- 새 텔레그램 메시지 없음\n- launchd 상태 정상 (CLAUDE.md와 일치)\n- **LiveOrder MVP**: 전체 완료 (Phase 1~5 + QA + 버그수정). 대기 중.\n- **ShortsGen**: YTTrans Phase 2 활발 개발 중 (최근 6커밋). Google OAuth 환경변수 설정 대기.\n- **RHWP**: Phase 1 미착수, 스케줄 미설정.\n- 보고 전송 완료, state.json 커밋/푸시 완료.\n[2026-04-22 03:03:07] Eddy 실행 완료"
+      "recentLog": "- 새 텔레그램 메시지 없음\n- launchd 상태 정상 (CLAUDE.md와 일치)\n- **LiveOrder MVP**: 전체 완료 (Phase 1~5 + QA + 버그수정). 대기 중.\n- **ShortsGen**: YTTrans Phase 2 활발 개발 중 (최근 6커밋). Google OAuth 환경변수 설정 대기.\n- **RHWP**: Phase 1 미착수, 스케줄 미설정.\n- 보고 전송 완료, state.json 커밋/푸시 완료.\n[2026-04-22 03:03:07] Eddy 실행 완료\n[2026-04-22 03:03:07] status.json 업데이트 완료\n[main d6cf82a] status: 2026-04-22 03:03\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
