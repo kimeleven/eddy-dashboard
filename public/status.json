@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-22 05:04:13",
+  "updatedAt": "2026-04-22 06:01:41",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-22 05:01:37"
+          "lastRun": "2026-04-22 06:01:41"
         }
       ],
-      "recentLog": "- **새 텔레그램 지시**: 없음\n- **launchd 상태**: CLAUDE.md와 일치, 이상 없음\n- **LiveOrder MVP**: Neon DB 스키마 불일치 수정 커밋 1건. 정상 가동.\n- **ShortsGen**: YTTrans Phase 2 활발 (Google OAuth + YouTube 직접 업데이트 구현). `GOOGLE_CLIENT_ID/SECRET` Vercel 환경변수 설정 대기 중.\n- **RHWP**: Phase 1 대기 중, 스케줄 미정.\n- state.json 업데이트 + 커밋/푸시 + 텔레그램 보고 완료.\n[2026-04-22 05:01:37] Eddy 실행 완료\n[2026-04-22 05:01:37] status.json 업데이트 완료\n[main 797cd11] status: 2026-04-22 05:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "[2026-04-22 06:00:00] Eddy 실행 시작\n실행 완료. 요약:\n- **텔레그램**: 새 메시지 없음\n- **LiveOrder MVP**: Phase 1~5 + QA 전체 완료, 프로덕션 정상\n- **ShortsGen**: Phase 2 YouTube 업데이트 기능 구현 완료 (오늘 커밋 3건). `GOOGLE_CLIENT_ID/SECRET` 환경변수 설정 대기 중\n- **RHWP**: Phase 1 미착수, 스케줄 미설정\n- **launchd**: 정상. insane-search exit 2 (완료/보류 상태 일치)\n- state.json 업데이트 + 커밋/푸시 + 텔레그램 보고 완료\n[2026-04-22 06:01:41] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
