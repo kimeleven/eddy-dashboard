@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-21 23:01:51",
+  "updatedAt": "2026-04-21 23:04:05",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -24,7 +24,7 @@
           "lastRun": "2026-04-21 23:01:51"
         }
       ],
-      "recentLog": "**이번 실행 요약:**\n- **텔레그램**: 새 메시지 없음\n- **LiveOrder MVP**: Phase 1~5 + QA 완료. 안정 상태.\n- **ShortsGen**: 최근 4시간 10개 커밋 — 음악 플레이어 UI, 프로그레스바, 일괄생성+ZIP, Gemini 번역 등 활발 개발 중\n- **RHWP**: Phase 1 미착수, 스케줄 미정\n- **launchd**: 정상 (보류팀 미로드 확인)\n- **대시보드**: 업데이트 + push 완료\n- **보고**: 텔레그램 전송 완료\n[2026-04-21 23:01:51] Eddy 실행 완료"
+      "recentLog": "- **LiveOrder MVP**: Phase 1~5 + QA 완료. 안정 상태.\n- **ShortsGen**: 최근 4시간 10개 커밋 — 음악 플레이어 UI, 프로그레스바, 일괄생성+ZIP, Gemini 번역 등 활발 개발 중\n- **RHWP**: Phase 1 미착수, 스케줄 미정\n- **launchd**: 정상 (보류팀 미로드 확인)\n- **대시보드**: 업데이트 + push 완료\n- **보고**: 텔레그램 전송 완료\n[2026-04-21 23:01:51] Eddy 실행 완료\n[2026-04-21 23:01:51] status.json 업데이트 완료\n[main 8f5be4b] status: 2026-04-21 23:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
