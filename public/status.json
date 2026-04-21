@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-21 21:46:37",
+  "updatedAt": "2026-04-21 22:01:28",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-21 21:44:22"
+          "lastRun": "2026-04-21 22:00:00"
         }
       ],
-      "recentLog": "**요약:**\n- 새 텔레그램 메시지: 없음\n- **LiveOrder MVP**: QA-001~004 전체 PASS, BUG-002 수정 완료. MVP 전 Phase 완료 상태.\n- **RHWP Agent**: Phase 1 미착수, 스케줄 미정. 커밋 없음.\n- **launchd**: 전체 정상\n- state.json 업데이트 + 커밋/푸시 + 텔레그램 보고 완료\n[2026-04-21 21:14:21] Eddy 실행 완료\n[2026-04-21 21:44:22] Eddy 실행 시작\n[telegram-log] 2개 메시지 저장 완료"
+      "recentLog": "**팀 현황:**\n- **ShortsGen**: 최근 9커밋, 음악 플레이어 UI 오버레이 구현 완료, Vercel 배포 정상\n- **LiveOrder MVP**: 변동 없음 (Phase 1 완료 상태)\n- **RHWP**: Phase 1 미착수, 스케줄 미정\n- **launchd**: 정상 (보류 팀 모두 언로드 상태, JENI 웹서버 가동 중)\n**참고:** tokens.md에서 바둑이/철수 토큰 삭제 변경 감지됨 — 토큰 변경은 Sanghun 승인 필요 원칙에 따라 커밋 보류.\n[2026-04-21 21:47:53] Eddy 실행 완료\n[2026-04-21 22:00:00] Eddy 실행 시작"
     },
     {
       "name": "ELDO",
