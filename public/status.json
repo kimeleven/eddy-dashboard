@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-22 07:01:26",
+  "updatedAt": "2026-04-22 07:04:16",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-22 07:01:25"
+          "lastRun": "2026-04-22 07:01:26"
         }
       ],
-      "recentLog": "[2026-04-22 07:00:01] Eddy 실행 시작\n실행 완료.\n- 새 텔레그램 메시지: 없음\n- launchd: 정상 (보류팀 미가동 확인)\n- LiveOrder MVP: 커밋 없음, Phase 1~3 완료 상태\n- ShortsGen: YTTrans Phase 2 통합 활발 (10건 커밋 — 다국어 YouTube localizations, 번역 엔진 교체, 프로그레스바 등)\n- RHWP: 커밋 없음, 스케줄 미정\n- 텔레그램 보고 완료, state.json 커밋/푸시 완료\n[2026-04-22 07:01:25] Eddy 실행 완료"
+      "recentLog": "- 새 텔레그램 메시지: 없음\n- launchd: 정상 (보류팀 미가동 확인)\n- LiveOrder MVP: 커밋 없음, Phase 1~3 완료 상태\n- ShortsGen: YTTrans Phase 2 통합 활발 (10건 커밋 — 다국어 YouTube localizations, 번역 엔진 교체, 프로그레스바 등)\n- RHWP: 커밋 없음, 스케줄 미정\n- 텔레그램 보고 완료, state.json 커밋/푸시 완료\n[2026-04-22 07:01:25] Eddy 실행 완료\n[2026-04-22 07:01:26] status.json 업데이트 완료\n[main 8f94ee0] status: 2026-04-22 07:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
