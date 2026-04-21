@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-21 08:00:48",
+  "updatedAt": "2026-04-21 09:03:56",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-21 08:00:48"
+          "lastRun": "2026-04-21 09:02:26"
         }
       ],
-      "recentLog": "완료. 처리 내역:\n1. **Sanghun 텔레그램 지시 수신**: \"Liveorder내가 qa추가로 확인하겠음\" → LiveOrder QA는 Sanghun이 직접 추가 확인\n2. **팀 상태 확인**:\n- LiveOrder MVP: BUG-002 Neon DB 스키마 불일치 수정 커밋 2건 (최근 4시간)\n- RHWP: 커밋 없음 (스케줄 미정 상태)\n- 기타 팀: 보류 유지\n3. **launchd 정상**: `com.eddy.liveorder-mvp-dev`, `com.eddy.agent`, `com.eddy.dashboard` 등 정상 등록\n4. **state.json 업데이트 + push 완료**\n[2026-04-21 08:00:48] Eddy 실행 완료"
+      "recentLog": "**요약:**\n- **텔레그램**: 새 메시지 없음\n- **launchd**: 정상 (활성: eddy, ai-secretary-server, liveorder-mvp-dev, insane-search-dev, dashboard, weekly-report, process-cleanup)\n- **LiveOrder MVP**: Phase 1~5 전체 완료, QA 3라운드 수행. BUG-001, BUG-002 발견 및 수정 완료. 프로덕션 정상.\n- **RHWP Agent**: Phase 1 태스크 배정 완료, 아직 미착수 (스케줄 미정)\n- state.json 업데이트 + 커밋/푸시 + 텔레그램 보고 완료\n[2026-04-21 08:32:25] Eddy 실행 완료\n[2026-04-21 09:00:00] Eddy 실행 시작\n[2026-04-21 09:02:26] Eddy 스킵 — 이전 실행 중 (PID 73192)"
     },
     {
       "name": "ELDO",
