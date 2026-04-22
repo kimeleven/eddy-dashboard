@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-04-22 12:01:26",
+  "updatedAt": "2026-04-22 13:01:38",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
-    "launchdAgents": 6,
+    "launchdAgents": 7,
     "operatingHours": "Eddy: 24시간 / 팀: 월~금 19:00~07:00, 토일 24시간",
     "model": "Sonnet (전체)",
     "token": "바둑이토큰",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-22 12:01:26"
+          "lastRun": "2026-04-22 13:00:00"
         }
       ],
-      "recentLog": "- 텔레그램 보고 완료: `[Eddy] 팀 정상 가동 중. 변동 없음.`\n[2026-04-22 11:56:18] Eddy 실행 완료\n[2026-04-22 12:00:00] Eddy 실행 시작\n실행 완료.\n- 새 텔레그램 메시지 없음\n- 팀 상태 확인 완료, 전체 정상\n- state.json 업데이트 및 커밋/푸시 완료\n- Sanghun에게 현황 보고 전송 완료\n[2026-04-22 12:01:26] Eddy 실행 완료"
+      "recentLog": "실행 완료.\n**요약:**\n- 새 텔레그램 메시지: 없음\n- **LiveOrder MVP**: 전체 완료 상태. launchd plist 존재하나 미로드 — 태스크 완료되어 큰 문제 아니나 확인 필요\n- **RHWP**: Phase 1 미착수, 스케줄 미정\n- **ShortsGen**: 비밀번호 보호 커밋 1건. YTTrans Phase 2는 Google OAuth 환경변수 대기 중\n- state.json 업데이트 + 커밋/푸시 + 텔레그램 보고 완료\n[2026-04-22 12:59:30] Eddy 실행 완료\n[2026-04-22 13:00:00] Eddy 실행 시작"
     },
     {
       "name": "ELDO",
