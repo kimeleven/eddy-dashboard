@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-23 03:01:15",
+  "updatedAt": "2026-04-23 03:04:46",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -24,7 +24,7 @@
           "lastRun": "2026-04-23 03:01:15"
         }
       ],
-      "recentLog": "[2026-04-23 02:34:56] Eddy 실행 완료\n[2026-04-23 03:00:00] Eddy 실행 시작\n실행 완료.\n- 새 텔레그램 메시지: 없음\n- launchd 상태: CLAUDE.md와 일치, 이상 없음\n- 활성 팀 3개 모두 정상 (LiveOrder MVP 전체 완료, ShortsGen/RHWP 대기 중)\n- state.json 업데이트 + 커밋/푸시 완료\n- 텔레그램 보고 전송 완료\n[2026-04-23 03:01:15] Eddy 실행 완료"
+      "recentLog": "- 새 텔레그램 메시지: 없음\n- launchd 상태: CLAUDE.md와 일치, 이상 없음\n- 활성 팀 3개 모두 정상 (LiveOrder MVP 전체 완료, ShortsGen/RHWP 대기 중)\n- state.json 업데이트 + 커밋/푸시 완료\n- 텔레그램 보고 전송 완료\n[2026-04-23 03:01:15] Eddy 실행 완료\n[2026-04-23 03:01:15] status.json 업데이트 완료\n[main ed0f98c] status: 2026-04-23 03:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
