@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-22 19:01:08",
+  "updatedAt": "2026-04-22 19:04:34",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-22 19:01:07"
+          "lastRun": "2026-04-22 19:01:08"
         }
       ],
-      "recentLog": "실행 완료.\n- **텔레그램 새 지시**: 없음\n- **launchd 상태**: CLAUDE.md와 일치, 이상 없음\n- **LiveOrder MVP**: Phase 1~5 + QA 전체 완료, 프로덕션 가동 중\n- **RHWP**: 대기 (스케줄 미정)\n- **ShortsGen**: 수동 개발 중, Vercel 배포 완료\n- **state.json 업데이트 + git push 완료**\n- **텔레그램 보고 완료**\n[2026-04-22 19:01:07] Eddy 실행 완료"
+      "recentLog": "- **launchd 상태**: CLAUDE.md와 일치, 이상 없음\n- **LiveOrder MVP**: Phase 1~5 + QA 전체 완료, 프로덕션 가동 중\n- **RHWP**: 대기 (스케줄 미정)\n- **ShortsGen**: 수동 개발 중, Vercel 배포 완료\n- **state.json 업데이트 + git push 완료**\n- **텔레그램 보고 완료**\n[2026-04-22 19:01:07] Eddy 실행 완료\n[2026-04-22 19:01:08] status.json 업데이트 완료\n[main e661ddb] status: 2026-04-22 19:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
