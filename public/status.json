@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-23 13:01:56",
+  "updatedAt": "2026-04-23 13:05:01",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-23 13:01:56"
+          "lastRun": "2026-04-23 13:03:34"
         }
       ],
-      "recentLog": "[2026-04-23 13:00:00] Eddy 실행 시작\n실행 완료.\n**이번 실행 요약:**\n- 새 텔레그램 메시지: 없음\n- **LiveOrder MVP launchd 미로드 감지 → 즉시 재로드 완료** (`com.eddy.liveorder-mvp-dev`)\n- 팀 현황: LiveOrder MVP 정상 진행, RHWP/ShortsGen 대기 상태\n- state.json 업데이트 및 커밋/푸시 완료\n- Sanghun에게 텔레그램 보고 완료\n[2026-04-23 13:01:56] Eddy 실행 완료"
+      "recentLog": "01:30 정기 점검 완료.\n- **텔레그램**: 새 메시지 없음\n- **launchd**: CLAUDE.md와 일치, 이상 없음\n- **활성 팀 현황**:\n- **LiveOrder MVP**: 최근 MVP-014 관리자 코드 목록 페이지 완료. 정상 가동.\n- **RHWP**: v0.7.3 릴리즈 완료 상태. 스케줄 미정.\n- **ShortsGen**: 비밀번호 보호 + YTTrans 다국어 기능 완료 상태. 수동 개발 중.\n- **state.json 업데이트 + push 완료**\n[2026-04-23 13:03:34] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
