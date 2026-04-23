@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-23 11:01:12",
+  "updatedAt": "2026-04-23 11:04:58",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -24,7 +24,7 @@
           "lastRun": "2026-04-23 11:01:12"
         }
       ],
-      "recentLog": "- **텔레그램**: 새 메시지 없음\n- **launchd**: 정상 (LiveOrder MVP, Dashboard, Process Cleanup, Weekly Report, JENI 서버, InsaneSearch 유지)\n- **LiveOrder MVP**: Phase 6 MVP-014 (관리자 코드 목록) 완료 상태, QA 전건 PASS\n- **ShortsGen / RHWP**: 최근 커밋 없음 (수동 개발 중 / 스케줄 미정)\n- **state.json**: 업데이트 및 push 완료\n- **텔레그램 보고**: 변동 없음 전송 완료\n[2026-04-23 10:59:25] Eddy 실행 완료\n[2026-04-23 11:00:00] Eddy 실행 시작\n완료. 새 지시 없음, 팀 정상 가동 중. state.json 업데이트 + 커밋/푸시 + 텔레그램 보고 완료.\n[2026-04-23 11:01:12] Eddy 실행 완료"
+      "recentLog": "- **ShortsGen / RHWP**: 최근 커밋 없음 (수동 개발 중 / 스케줄 미정)\n- **state.json**: 업데이트 및 push 완료\n- **텔레그램 보고**: 변동 없음 전송 완료\n[2026-04-23 10:59:25] Eddy 실행 완료\n[2026-04-23 11:00:00] Eddy 실행 시작\n완료. 새 지시 없음, 팀 정상 가동 중. state.json 업데이트 + 커밋/푸시 + 텔레그램 보고 완료.\n[2026-04-23 11:01:12] Eddy 실행 완료\n[2026-04-23 11:01:12] status.json 업데이트 완료\n[main 967c7c7] status: 2026-04-23 11:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
