@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-23 19:01:11",
+  "updatedAt": "2026-04-23 19:05:10",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -24,7 +24,7 @@
           "lastRun": "2026-04-23 19:01:11"
         }
       ],
-      "recentLog": "[2026-04-23 18:49:11] Eddy 실행 완료\n[2026-04-23 19:00:01] Eddy 실행 시작\n실행 완료.\n- **텔레그램**: 새 메시지 없음\n- **launchd**: CLAUDE.md와 일치, 이상 없음\n- **팀 현황**: LiveOrder MVP / RHWP / ShortsGen 모두 최근 4시간 내 커밋 없음\n- **보고**: `[Eddy] 팀 정상 가동 중. 변동 없음.` 전송 완료\n- **state.json**: 10:00 업데이트 + 커밋/푸시 완료\n[2026-04-23 19:01:11] Eddy 실행 완료"
+      "recentLog": "- **텔레그램**: 새 메시지 없음\n- **launchd**: CLAUDE.md와 일치, 이상 없음\n- **팀 현황**: LiveOrder MVP / RHWP / ShortsGen 모두 최근 4시간 내 커밋 없음\n- **보고**: `[Eddy] 팀 정상 가동 중. 변동 없음.` 전송 완료\n- **state.json**: 10:00 업데이트 + 커밋/푸시 완료\n[2026-04-23 19:01:11] Eddy 실행 완료\n[2026-04-23 19:01:11] status.json 업데이트 완료\n[main 8422a7c] status: 2026-04-23 19:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
