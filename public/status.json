@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-24 05:05:25",
+  "updatedAt": "2026-04-24 06:01:54",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-24 05:01:26"
+          "lastRun": "2026-04-24 06:01:54"
         }
       ],
-      "recentLog": "- 새 텔레그램 메시지: 없음\n- launchd 상태: CLAUDE.md와 일치\n- 활성 팀 (LiveOrder MVP / RHWP / ShortsGen): 최근 4시간 커밋 없음, 변동 없음\n- state.json 업데이트 + 커밋/푸시 완료\n- 텔레그램 보고 전송 완료\n[2026-04-24 05:01:26] Eddy 실행 완료\n[2026-04-24 05:01:26] status.json 업데이트 완료\n[main fda3eea] status: 2026-04-24 05:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "[2026-04-24 06:00:00] Eddy 실행 시작\n완료. 현황 요약:\n- **텔레그램**: 새 메시지 없음\n- **launchd**: CLAUDE.md와 일치, 이상 없음\n- **LiveOrder MVP**: 전체 태스크 완료 (MVP-001~015, QA-001~004). 신규 배정 대기\n- **ShortsGen**: YouTube 직접 업데이트 기능 활발 개발 (24시간 내 커밋 10건). Google OAuth 환경변수 Vercel 설정 대기 중\n- **RHWP**: 스케줄 미설정, Phase 1 미착수\n- 텔레그램 보고 전송 완료, state.json 커밋/푸시 완료\n[2026-04-24 06:01:54] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
