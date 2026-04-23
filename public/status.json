@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-24 00:01:37",
+  "updatedAt": "2026-04-24 01:01:28",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-24 00:01:36"
+          "lastRun": "2026-04-24 01:01:28"
         }
       ],
-      "recentLog": "실행 완료.\n**요약:**\n- 새 텔레그램 메시지: 없음\n- **LiveOrder MVP**: MVP-015 shopCode 상품 목록/선택 플로우 커밋 1건\n- **ShortsGen**: YTTrans YouTube 업데이트 기능 활발 개발 (커밋 10건 — 브랜드 채널 선택, localizations, 에러 처리)\n- **RHWP**: Phase 1 미착수 (스케줄 미설정)\n- launchd 상태 정상, 보류팀 프로세스 없음\n- 텔레그램 보고 전송 완료, state.json 업데이트 & push 완료\n[2026-04-24 00:01:36] Eddy 실행 완료"
+      "recentLog": "[2026-04-24 01:00:00] Eddy 실행 시작\n실행 완료.\n- **텔레그램**: 새 메시지 없음\n- **launchd**: CLAUDE.md와 일치, 이상 없음\n- **LiveOrder MVP**: MVP-015 (shopCode 진입 시 상품 목록) 커밋. QA 이슈 없음\n- **ShortsGen**: YTTrans 브랜드 채널 지원 + 버그 수정 9건. Phase 2 OAuth 환경변수 대기 중\n- **RHWP**: 활동 없음\n- state.json 업데이트 + 커밋/푸시 + 텔레그램 보고 완료\n[2026-04-24 01:01:28] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
