@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-23 21:05:13",
+  "updatedAt": "2026-04-23 22:01:33",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-23 21:01:24"
+          "lastRun": "2026-04-23 22:01:33"
         }
       ],
-      "recentLog": "- **텔레그램**: 새 메시지 없음\n- **launchd**: CLAUDE.md와 일치, 이상 없음\n- **LiveOrder MVP**: Phase 1~5 완료, 최근 커밋 없음\n- **ShortsGen**: OAuth 스코프 수정 + Gemini 번역 개선 커밋 3건 (최근 4시간)\n- **RHWP**: 대기 중 (스케줄 미정)\n- state.json 업데이트, git push, 텔레그램 보고 완료\n[2026-04-23 21:01:24] Eddy 실행 완료\n[2026-04-23 21:01:24] status.json 업데이트 완료\n[main eb5b764] status: 2026-04-23 21:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "정기 점검 완료.\n**요약:**\n- **텔레그램**: 새 메시지 없음\n- **launchd**: 정상 (CLAUDE.md와 일치)\n- **LiveOrder MVP**: MVP-014 관리자 코드 목록 페이지 구현 (1건 커밋)\n- **ShortsGen**: YTTrans Phase 2 활발 개발 (12건 커밋) — YouTube 채널 선택 UI, 에러 처리 등. Vercel 환경변수 대기 중\n- **RHWP**: Phase 1 미착수 (스케줄/launchd 미설정)\n- state.json 업데이트 + 커밋/푸시 + 텔레그램 보고 완료\n[2026-04-23 22:01:33] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
