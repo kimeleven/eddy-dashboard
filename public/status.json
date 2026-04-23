@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-04-23 12:01:51",
+  "updatedAt": "2026-04-23 13:01:56",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
-    "launchdAgents": 6,
+    "launchdAgents": 7,
     "operatingHours": "Eddy: 24시간 / 팀: 월~금 19:00~07:00, 토일 24시간",
     "model": "Sonnet (전체)",
     "token": "바둑이토큰",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-23 12:01:51"
+          "lastRun": "2026-04-23 13:01:56"
         }
       ],
-      "recentLog": "완료.\n**요약:**\n- 새 텔레그램 메시지: 없음\n- **LiveOrder MVP**: Phase 6 완료 (MVP-014 관리자 코드 관리 페이지). 전체 태스크 완료 상태, QA 이슈 없음. launchd 미로드 — 새 태스크 배정 시 재로드 예정.\n- **ShortsGen**: 수동 개발 중 (launchd 미설정)\n- **RHWP**: 스케줄 미정\n- **JENI 웹서버**: 정상 가동 (PID 78245)\n- state.json 업데이트 + 커밋/푸시 + 텔레그램 보고 완료\n[2026-04-23 12:01:51] Eddy 실행 완료"
+      "recentLog": "[2026-04-23 13:00:00] Eddy 실행 시작\n실행 완료.\n**이번 실행 요약:**\n- 새 텔레그램 메시지: 없음\n- **LiveOrder MVP launchd 미로드 감지 → 즉시 재로드 완료** (`com.eddy.liveorder-mvp-dev`)\n- 팀 현황: LiveOrder MVP 정상 진행, RHWP/ShortsGen 대기 상태\n- state.json 업데이트 및 커밋/푸시 완료\n- Sanghun에게 텔레그램 보고 완료\n[2026-04-23 13:01:56] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
