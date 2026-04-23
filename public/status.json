@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-23 16:07:41",
+  "updatedAt": "2026-04-23 17:01:13",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-23 16:07:41"
+          "lastRun": "2026-04-23 17:01:13"
         }
       ],
-      "recentLog": "- **ShortsGen**: Google OAuth 크리덴셜(GOOGLE_CLIENT_ID/SECRET) 대기 중\n- **launchd**: 정상 (보류 팀 언로드 상태 유지)\n- state.json 업데이트 + 커밋/푸시 완료, 텔레그램 보고 완료\n[2026-04-23 15:41:31] Eddy 실행 완료\n[2026-04-23 16:00:00] Eddy 실행 시작\n[telegram-log] 1개 메시지 저장 완료\n활성 팀 현황 확인 완료. 변동 없음 — LiveOrder MVP 완료 상태, RHWP 미착수, ShortsGen 환경변수 대기 중. 별도 보고할 사항 없습니다.\n[2026-04-23 16:07:41] Eddy 실행 완료"
+      "recentLog": "실행 완료.\n**요약:**\n- 새 텔레그램 지시: 없음\n- launchd 상태: CLAUDE.md와 일치, 이상 없음\n- **LiveOrder MVP**: MVP-014 (관리자 코드 관리 페이지) 완료 커밋 1건. Phase 6 정상 진행 중.\n- **ShortsGen**: 비밀번호 보호 + YTTrans Phase 2 통합 작업 진행 중 (수동 개발)\n- **RHWP**: 스케줄 미정, 대기\n- state.json 업데이트 + 커밋/푸시 + 텔레그램 보고 완료\n[2026-04-23 17:01:13] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
