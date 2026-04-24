@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-25 03:01:43",
+  "updatedAt": "2026-04-25 03:05:58",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -24,7 +24,7 @@
           "lastRun": "2026-04-25 03:01:43"
         }
       ],
-      "recentLog": "[2026-04-25 03:00:00] Eddy 실행 시작\n실행 완료.\n- **새 텔레그램 메시지**: 없음\n- **launchd 상태**: CLAUDE.md와 일치 (ShopGuide 가동 중, 보류 팀 모두 언로드 상태)\n- **ShopGuide**: Gemini 채팅 에이전트 연동 커밋 1건 (4시간 내)\n- **ShortsGen**: 블로그 프롬프트 개선 + Gemini/Google Translate 폴백 체계 커밋 4건\n- **RHWP**: 활동 없음\n- state.json 업데이트 + 커밋/푸시 + 텔레그램 보고 완료\n[2026-04-25 03:01:43] Eddy 실행 완료"
+      "recentLog": "- **새 텔레그램 메시지**: 없음\n- **launchd 상태**: CLAUDE.md와 일치 (ShopGuide 가동 중, 보류 팀 모두 언로드 상태)\n- **ShopGuide**: Gemini 채팅 에이전트 연동 커밋 1건 (4시간 내)\n- **ShortsGen**: 블로그 프롬프트 개선 + Gemini/Google Translate 폴백 체계 커밋 4건\n- **RHWP**: 활동 없음\n- state.json 업데이트 + 커밋/푸시 + 텔레그램 보고 완료\n[2026-04-25 03:01:43] Eddy 실행 완료\n[2026-04-25 03:01:43] status.json 업데이트 완료\n[main 192dac3] status: 2026-04-25 03:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
