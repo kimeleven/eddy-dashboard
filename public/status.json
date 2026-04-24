@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-24 11:01:53",
+  "updatedAt": "2026-04-24 11:05:34",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-24 11:01:52"
+          "lastRun": "2026-04-24 11:03:55"
         }
       ],
-      "recentLog": "- 텔레그램 새 메시지: 없음\n- launchd 상태: CLAUDE.md와 일치 (정상)\n- 가동 중: eddy, liveorder-mvp-dev, insane-search-dev, dashboard, weekly-report, process-cleanup, ai-secretary-server\n- 보류팀 모두 언로드 상태 (정상)\n- **LiveOrder MVP**: 최근 커밋 MVP-015 (shopCode 진입 상품 목록). Phase 2 진행 중.\n- **RHWP**: 아직 팀 에이전트 미가동 (스케줄 미정). Phase 1 미착수.\n- **ShortsGen**: YTTrans Phase 2 YouTube 직접 업데이트 기능 개발 중. Google OAuth 환경변수 Sanghun 설정 대기.\n- state.json 업데이트 → 커밋/푸시 완료\n- 텔레그램 보고: \"팀 정상 가동 중. 변동 없음.\"\n[2026-04-24 11:01:52] Eddy 실행 완료"
+      "recentLog": "1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-24 11:02:27] Eddy 실행 시작\n실행 완료.\n- 새 텔레그램 지시 없음\n- 모든 Active 팀 정상 가동 중\n- LiveOrder MVP 전체 완료 상태, 추가 태스크 할당 대기\n- RHWP/ShortsGen은 각각 스케줄 미정/환경변수 대기\n- state.json 업데이트 + 커밋/푸시 + 텔레그램 보고 완료\n[2026-04-24 11:03:55] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
