@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-24 21:01:48",
+  "updatedAt": "2026-04-24 21:05:49",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -24,7 +24,7 @@
           "lastRun": "2026-04-24 21:01:48"
         }
       ],
-      "recentLog": "- **텔레그램**: 새 메시지 없음\n- **launchd**: CLAUDE.md와 일치, 이상 없음\n- **Active 팀 3개**: 최근 4시간 커밋 없음 (야간 시간대 정상)\n- RHWP: Phase 1 대기 (스케줄 미설정)\n- ShortsGen: Phase 2 블로킹 — Google OAuth 환경변수 대기\n- ShopGuide: Phase 1 개발 중 — 카카오 REST API 키 대기\n- **보고**: 텔레그램 전송 완료\n- **커밋/푸시**: 완료\n[2026-04-24 21:01:48] Eddy 실행 완료"
+      "recentLog": "- **Active 팀 3개**: 최근 4시간 커밋 없음 (야간 시간대 정상)\n- RHWP: Phase 1 대기 (스케줄 미설정)\n- ShortsGen: Phase 2 블로킹 — Google OAuth 환경변수 대기\n- ShopGuide: Phase 1 개발 중 — 카카오 REST API 키 대기\n- **보고**: 텔레그램 전송 완료\n- **커밋/푸시**: 완료\n[2026-04-24 21:01:48] Eddy 실행 완료\n[2026-04-24 21:01:48] status.json 업데이트 완료\n[main 6f5943e] status: 2026-04-24 21:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
