@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-24 13:05:37",
+  "updatedAt": "2026-04-24 14:01:10",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-24 13:02:40"
+          "lastRun": "2026-04-24 14:01:10"
         }
       ],
-      "recentLog": "- **LiveOrder MVP**: launchd 언로드 상태 발견 → 즉시 재로드 완료. Phase 6까지 완료, QA 전체 PASS.\n- **ShortsGen**: YTTrans Phase 2 활발 개발 중 (24h 내 10건 커밋). Google OAuth 환경변수 Sanghun 설정 대기.\n- **RHWP**: Phase 1 미착수, 스케줄 미정.\n- 대시보드 업데이트 + push 완료\n- state.json 커밋 + push 완료\n- 텔레그램 보고 전송 완료\n[2026-04-24 13:02:40] Eddy 실행 완료\n[2026-04-24 13:02:40] status.json 업데이트 완료\n[main 95b33f0] status: 2026-04-24 13:02\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "[2026-04-24 14:00:00] Eddy 실행 시작\n실행 완료.\n- 새 텔레그램 메시지: 없음\n- launchd 상태: CLAUDE.md와 일치, 이상 없음\n- 활성 팀 (LiveOrder MVP, RHWP, ShortsGen): 최근 4시간 커밋 없음\n- AI-Secretary 웹서버: PID 78245 정상 가동\n- state.json 업데이트 → 커밋/푸시 완료\n- 텔레그램 보고 완료: \"변동 없음\"\n[2026-04-24 14:01:10] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
