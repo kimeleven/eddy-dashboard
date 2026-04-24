@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-24 16:01:46",
+  "updatedAt": "2026-04-24 17:01:30",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-24 16:01:46"
+          "lastRun": "2026-04-24 17:01:30"
         }
       ],
-      "recentLog": "정기 점검 완료.\n**요약:**\n- **LiveOrder MVP**: 전체 완료 (MVP-001~015, QA 전체 PASS). 다음 방향 지시 대기.\n- **ShortsGen**: YTTrans Phase 2 활발 (24h 내 12커밋). Google OAuth 환경변수 설정 대기.\n- **RHWP**: Phase 1 미착수, 스케줄 미정.\n- **새 텔레그램 지시**: 없음\n- **launchd**: 정상 (CLAUDE.md와 일치)\n- 텔레그램 보고 전송 완료, state.json 커밋/푸시 완료.\n[2026-04-24 16:01:46] Eddy 실행 완료"
+      "recentLog": "정기 점검 완료.\n**요약:**\n- **텔레그램**: 새 메시지 없음\n- **launchd**: 정상 (활성 팀 로드됨, 보류 팀 언로드 상태)\n- **LiveOrder MVP**: 전체 태스크 완료, 버그 0건, 추가 태스크 대기\n- **ShortsGen**: YouTube 업데이트 기능 활발 개발 중 (24h 내 커밋 10건), Google OAuth 크리덴셜 설정 대기\n- **RHWP**: Phase 1 미착수, 스케줄 미설정\n- state.json 업데이트 + 커밋/푸시 + 텔레그램 보고 완료\n[2026-04-24 17:01:30] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
