@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-25 01:01:45",
+  "updatedAt": "2026-04-25 01:05:55",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-25 01:01:45"
+          "lastRun": "2026-04-25 01:04:44"
         }
       ],
-      "recentLog": "실행 완료.\n**이번 실행 요약:**\n- 텔레그램 신규 메시지: 없음\n- **ShortsGen**: 블로그작성 기능 v1 완성 (커밋 5건) — YouTube 음악 URL → 블로그 자동 생성, 3단계 번역 폴백(Claude→Gemini→Google Translate) 구현\n- **ShopGuide**: Gemini API 채팅 에이전트 연동 + Neon PostgreSQL 마이그레이션 완료\n- **RHWP**: Phase 1 대기 중 (활동 없음)\n- 보류팀: launchd 전부 정상 해제 상태\n- state.json 업데이트 + 커밋/푸시 + 텔레그램 보고 완료\n[2026-04-25 01:01:45] Eddy 실행 완료"
+      "recentLog": "실행 완료.\n**요약:**\n- 새 텔레그램 메시지: 없음\n- launchd 상태: CLAUDE.md와 일치, 이상 없음\n- **ShortsGen**: 블로그작성 기능 추가 + 번역 폴백 구현 (커밋 5건)\n- **ShopGuide**: Gemini 채팅 에이전트 + Neon PostgreSQL 전환 (커밋 2건)\n- **RHWP**: Phase 1 미착수, 스케줄 미설정\n- Sanghun에게 텔레그램 보고 완료, state.json 커밋/푸시 완료\n[2026-04-25 01:04:44] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
