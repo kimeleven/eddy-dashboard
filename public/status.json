@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-25 07:01:31",
+  "updatedAt": "2026-04-25 07:06:04",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -24,7 +24,7 @@
           "lastRun": "2026-04-25 07:01:31"
         }
       ],
-      "recentLog": "**이번 실행 요약:**\n- 새 텔레그램 메시지: 없음\n- launchd 상태: 정상 (CLAUDE.md와 일치)\n- **ShopGuide**: 가장 활발 — 카카오 로그인 동의항목 완성 + 셀러 대시보드 수정/삭제 기능 커밋 2건\n- **ShortsGen**: 블로그작성 v1 완료, YTTrans Phase 2 대기 중\n- **RHWP**: Phase 1 미착수, 스케줄 미설정\n- 보류 팀: 변동 없음\n- state.json 업데이트 + 커밋/푸시 완료\n- 텔레그램 보고 전송 완료\n[2026-04-25 07:01:31] Eddy 실행 완료"
+      "recentLog": "- **ShopGuide**: 가장 활발 — 카카오 로그인 동의항목 완성 + 셀러 대시보드 수정/삭제 기능 커밋 2건\n- **ShortsGen**: 블로그작성 v1 완료, YTTrans Phase 2 대기 중\n- **RHWP**: Phase 1 미착수, 스케줄 미설정\n- 보류 팀: 변동 없음\n- state.json 업데이트 + 커밋/푸시 완료\n- 텔레그램 보고 전송 완료\n[2026-04-25 07:01:31] Eddy 실행 완료\n[2026-04-25 07:01:31] status.json 업데이트 완료\n[main 4c44ba7] status: 2026-04-25 07:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
