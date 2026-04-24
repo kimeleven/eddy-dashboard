@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-25 02:01:37",
+  "updatedAt": "2026-04-25 03:01:43",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-25 02:01:37"
+          "lastRun": "2026-04-25 03:01:43"
         }
       ],
-      "recentLog": "실행 완료.\n**이번 실행 요약:**\n- 새 텔레그램 메시지: 없음\n- launchd 상태: CLAUDE.md와 일치, 이상 없음\n- **ShortsGen**: 블로그작성 기능 추가 + Gemini/Claude/Google Translate 3단계 폴백 구현 (커밋 5건)\n- **ShopGuide**: Gemini API 채팅 에이전트 연동 + Neon PostgreSQL 마이그레이션 완료 (커밋 2건)\n- **RHWP**: 스케줄 미설정, Phase 1 대기 중\n- state.json 업데이트 + 텔레그램 보고 + git push 완료\n[2026-04-25 02:01:37] Eddy 실행 완료"
+      "recentLog": "[2026-04-25 03:00:00] Eddy 실행 시작\n실행 완료.\n- **새 텔레그램 메시지**: 없음\n- **launchd 상태**: CLAUDE.md와 일치 (ShopGuide 가동 중, 보류 팀 모두 언로드 상태)\n- **ShopGuide**: Gemini 채팅 에이전트 연동 커밋 1건 (4시간 내)\n- **ShortsGen**: 블로그 프롬프트 개선 + Gemini/Google Translate 폴백 체계 커밋 4건\n- **RHWP**: 활동 없음\n- state.json 업데이트 + 커밋/푸시 + 텔레그램 보고 완료\n[2026-04-25 03:01:43] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
