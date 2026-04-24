@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-04-24 19:05:46",
+  "updatedAt": "2026-04-24 20:01:32",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
-    "launchdAgents": 7,
+    "launchdAgents": 6,
     "operatingHours": "Eddy: 24시간 / 팀: 월~금 19:00~07:00, 토일 24시간",
     "model": "Sonnet (전체)",
     "token": "바둑이토큰",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-24 19:01:35"
+          "lastRun": "2026-04-24 20:00:28"
         }
       ],
-      "recentLog": "[2026-04-24 19:00:00] Eddy 실행 시작\n실행 완료.\n- state.json 업데이트 (23:00)\n- 텔레그램 보고 완료 (변동 없음)\n- git push 완료\n[2026-04-24 19:01:34] Eddy 실행 완료\n[2026-04-24 19:01:35] status.json 업데이트 완료\n[main f190ebd] status: 2026-04-24 19:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "- **launchd**: CLAUDE.md와 일치, 이상 없음\n- **LiveOrder MVP**: Phase 2 완료 상태, 최근 4시간 커밋 없음\n- **ShortsGen**: YTTrans Phase 2 Google OAuth 환경변수 대기 중 (Sanghun 설정 필요)\n- **RHWP**: Phase 1 미착수, 스케줄 미설정\n- **state.json**: 23:30 업데이트 → 커밋/푸시 완료\n- **텔레그램 보고**: 전송 완료\n[2026-04-24 19:30:28] Eddy 실행 완료\n[2026-04-24 20:00:00] Eddy 실행 시작\n[telegram-log] 1개 메시지 저장 완료\n[2026-04-24 20:00:28] Eddy 스킵 — 이전 실행 중 (PID 38917)"
     },
     {
       "name": "ELDO",
