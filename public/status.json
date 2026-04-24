@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-25 06:02:30",
+  "updatedAt": "2026-04-25 07:01:31",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-25 06:02:29"
+          "lastRun": "2026-04-25 07:01:31"
         }
       ],
-      "recentLog": "**이번 실행 요약:**\n- 새 텔레그램 지시 없음\n- **ShopGuide**: 최근 4시간 내 커밋 2건 — 카카오 로그인 통합 + 셀러 대시보드 기능 추가 완료\n- **RHWP / ShortsGen**: 커밋 없음, 대기 중\n- **launchd**: 모든 팀 CLAUDE.md 상태와 일치 확인\n- state.json 업데이트 + git push 완료\n- 대시보드 status.json 업데이트 + git push 완료\n- 텔레그램 보고 전송 완료\n[2026-04-25 06:02:29] Eddy 실행 완료"
+      "recentLog": "**이번 실행 요약:**\n- 새 텔레그램 메시지: 없음\n- launchd 상태: 정상 (CLAUDE.md와 일치)\n- **ShopGuide**: 가장 활발 — 카카오 로그인 동의항목 완성 + 셀러 대시보드 수정/삭제 기능 커밋 2건\n- **ShortsGen**: 블로그작성 v1 완료, YTTrans Phase 2 대기 중\n- **RHWP**: Phase 1 미착수, 스케줄 미설정\n- 보류 팀: 변동 없음\n- state.json 업데이트 + 커밋/푸시 완료\n- 텔레그램 보고 전송 완료\n[2026-04-25 07:01:31] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
