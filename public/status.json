@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-24 21:05:49",
+  "updatedAt": "2026-04-24 22:02:35",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-24 21:01:48"
+          "lastRun": "2026-04-24 22:02:35"
         }
       ],
-      "recentLog": "- **Active 팀 3개**: 최근 4시간 커밋 없음 (야간 시간대 정상)\n- RHWP: Phase 1 대기 (스케줄 미설정)\n- ShortsGen: Phase 2 블로킹 — Google OAuth 환경변수 대기\n- ShopGuide: Phase 1 개발 중 — 카카오 REST API 키 대기\n- **보고**: 텔레그램 전송 완료\n- **커밋/푸시**: 완료\n[2026-04-24 21:01:48] Eddy 실행 완료\n[2026-04-24 21:01:48] status.json 업데이트 완료\n[main 6f5943e] status: 2026-04-24 21:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "**처리 내역:**\n- Sanghun 텔레그램 메시지 \"제미나이 키를 사용하자 나중에 유료전환\" 확인\n- ShopGuide TASKS.md에 Google Gemini API 사용 지시 반영\n- state.json 업데이트 (last_update_id: 360082567)\n- git push 완료\n- 텔레그램 보고 전송 완료\n**launchd 상태:** CLAUDE.md와 일치, 이상 없음. 보류 팀 프로세스 없음, 활성 팀(shopguide-dev, dashboard, ai-secretary-server) 정상.\n[2026-04-24 22:02:35] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
