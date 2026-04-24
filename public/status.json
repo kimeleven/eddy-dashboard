@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-25 04:02:01",
+  "updatedAt": "2026-04-25 05:01:40",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-25 04:02:01"
+          "lastRun": "2026-04-25 05:01:40"
         }
       ],
-      "recentLog": "**요약:**\n- 새 텔레그램 메시지: 없음\n- launchd: CLAUDE.md와 일치, 이상 없음\n- **ShopGuide**: 카카오 로그인/Gemini 연동 코드 완료, .env 입력 대기 (Sanghun)\n- **ShortsGen**: 블로그 기능 추가됨, Phase 2 YouTube OAuth 미착수\n- **RHWP**: 6일째 Phase 1 미시작, 스케줄 미설정\n- state.json 업데이트 + 커밋/푸시 완료\n- 텔레그램 보고 완료\n[2026-04-25 04:02:01] Eddy 실행 완료"
+      "recentLog": "- state.json 업데이트 + git push + 텔레그램 보고 완료\n[2026-04-25 04:46:24] Eddy 실행 완료\n[2026-04-25 05:00:00] Eddy 실행 시작\n실행 완료.\n- 텔레그램 새 메시지: 없음\n- launchd 상태: 정상 (CLAUDE.md와 일치)\n- 팀 현황 보고 완료 (ShopGuide 카카오 키 대기, ShortsGen 블로그 기능 개발 진행, RHWP 대기)\n- state.json 업데이트 + 커밋/푸시 완료\n[2026-04-25 05:01:40] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
