@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-25 14:01:34",
+  "updatedAt": "2026-04-25 15:02:19",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-25 14:01:34"
+          "lastRun": "2026-04-25 15:02:19"
         }
       ],
-      "recentLog": "**요약:**\n- 텔레그램 새 메시지: 없음\n- launchd 상태: CLAUDE.md와 일치 (이상 없음)\n- 현재 14:00 KST — 낮 시간대 스킵 구간, 팀 활동 없음\n- ShopGuide: 셀러 대시보드 수정/삭제, Gemini 채팅 연동, 카카오 로그인 통합 완료 (이전 세션)\n- ShortsGen: 블로그작성 v1 완료 (이전 세션)\n- RHWP: Phase 1 대기 중\n- Sanghun에게 보고 전송 완료, state.json 커밋/푸시 완료\n[2026-04-25 14:01:34] Eddy 실행 완료"
+      "recentLog": "실행 완료. 요약:\n- **텔레그램**: 새 메시지 없음\n- **launchd**: CLAUDE.md 팀 상태와 일치 (Active: agent, dashboard, shopguide-dev, insane-search-dev, process-cleanup, weekly-report, ai-secretary-server)\n- **Active 팀 3개 모두 최근 4시간 커밋 없음** (야간 스케줄 대기 중 — 현재 17:46, 19시부터 팀 가동)\n- **ShopGuide**: Gemini 연동, 카카오 로그인, 셀러 대시보드 기능 완료 상태. Vercel 배포/구매자 UI 남음\n- **ShortsGen**: 블로그작성 v1 완료, YTTrans Phase 2 OAuth 작업 중\n- **RHWP**: Phase 1 스케줄 미설정, 아직 착수 전\n- state.json 업데이트, 커밋/푸시 완료, 텔레그램 보고 완료\n[2026-04-25 15:02:19] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
