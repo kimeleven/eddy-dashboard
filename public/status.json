@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-25 21:06:24",
+  "updatedAt": "2026-04-25 22:01:50",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-25 21:03:55"
+          "lastRun": "2026-04-25 22:01:50"
         }
       ],
-      "recentLog": "정기 점검 완료.\n**요약:**\n- 새 텔레그램 메시지: 없음\n- launchd 상태: CLAUDE.md와 일치, 이상 없음\n- **ShopGuide**: Phase 1 핵심 기능 대부분 완료 (채팅 UI, 카카오 로그인, 셀러 대시보드, Gemini, Neon DB). 남은 것: 반응형, Vercel 배포, 셀러 등록\n- **ShortsGen**: 블로그작성 v1 완료, Phase 2 미착수\n- **RHWP**: Phase 1 미착수, 스케줄 미정\n- state.json 업데이트 + 커밋/푸시 + 텔레그램 보고 완료\n[2026-04-25 21:03:55] Eddy 실행 완료"
+      "recentLog": "[2026-04-25 22:00:00] Eddy 실행 시작\n정기 점검 완료.\n- 새 텔레그램 메시지: 없음\n- launchd 상태: CLAUDE.md와 일치\n- ShopGuide: Dev1 프론트엔드 태스크 대부분 완료, Dev2 백엔드 미착수\n- RHWP/ShortsGen: 변동 없음\n- 텔레그램 보고 전송 완료\n- state.json 업데이트 및 push 완료\n[2026-04-25 22:01:50] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
