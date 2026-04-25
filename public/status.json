@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-26 06:01:29",
+  "updatedAt": "2026-04-26 07:01:25",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-26 06:01:29"
+          "lastRun": "2026-04-26 07:01:24"
         }
       ],
-      "recentLog": "[2026-04-26 06:00:00] Eddy 실행 시작\n실행 완료.\n- **launchd**: 정상 (활성 팀/서비스 모두 일치, 보류 팀 미로드 확인)\n- **텔레그램**: 새 메시지 없음\n- **ShopGuide**: 보안 버그 수정 + 쇼핑몰 링크 복사 기능 (커밋 2건)\n- **ShortsGen / BlogDoc / RHWP**: 변동 없음\n- **state.json**: 16:00 업데이트 + push 완료\n- **텔레그램 보고**: 발송 완료\n[2026-04-26 06:01:29] Eddy 실행 완료"
+      "recentLog": "[2026-04-26 07:00:00] Eddy 실행 시작\n실행 완료.\n- **텔레그램 새 메시지**: 없음\n- **ShopGuide**: 보안 버그 수정 + 쇼핑몰 링크 기능 추가 (커밋 2건, QA 대기)\n- **RHWP/ShortsGen/BlogDoc**: 변동 없음\n- **launchd**: 정상 (보류팀 미로드 확인)\n- **보고**: 텔레그램 전송 완료\n- **state.json**: 업데이트 + push 완료\n[2026-04-26 07:01:24] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
