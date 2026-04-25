@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-25 11:06:10",
+  "updatedAt": "2026-04-25 12:01:35",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-25 11:05:37"
+          "lastRun": "2026-04-25 12:01:35"
         }
       ],
-      "recentLog": "1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-25 11:04:32] Eddy 실행 시작\n실행 완료.\n- **텔레그램**: 새 메시지 없음\n- **활성팀 (RHWP, ShortsGen, ShopGuide)**: 최근 4시간 커밋 없음, 태스크 진행 대기 중\n- **launchd**: 정상 (ai-secretary-server, eddy.agent, shopguide-dev, dashboard, insane-search-dev, process-cleanup, weekly-report 로드됨)\n- **state.json** 업데이트 + 커밋/푸시 완료\n- **텔레그램 보고** 전송 완료\n[2026-04-25 11:05:37] Eddy 실행 완료"
+      "recentLog": "실행 완료.\n**요약:**\n- 새 텔레그램 메시지 없음\n- **ShopGuide**: 활발 — 카카오 로그인, Gemini 채팅, 셀러 대시보드 개선 커밋 3건 (12h 내)\n- **ShortsGen**: 활발 — 블로그작성 기능 + 번역 폴백 구현 커밋 5건 (24h 내)\n- **RHWP**: 대기 — 스케줄 미설정, Phase 1 미착수\n- launchd 상태 정상, CLAUDE.md와 일치\n- state.json 업데이트 + 커밋/푸시 + 텔레그램 보고 완료\n[2026-04-25 12:01:35] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
