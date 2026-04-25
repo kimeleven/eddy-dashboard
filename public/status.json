@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-25 23:42:35",
+  "updatedAt": "2026-04-26 00:01:32",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-25 23:38:39"
+          "lastRun": "2026-04-26 00:01:32"
         }
       ],
-      "recentLog": "- 텔레그램 보고 완료\n- state.json 업데이트 (last_update_id: 360082569)\n**launchd 상태:** CLAUDE.md와 일치, 이상 없음\n[2026-04-25 23:10:03] Eddy 실행 완료\n[2026-04-25 23:10:03] status.json 업데이트 완료\n[main e92f534] status: 2026-04-25 23:10\n1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-25 23:38:39] Eddy 실행 시작\n[telegram-log] 1개 메시지 저장 완료"
+      "recentLog": "[2026-04-25 23:43:31] Eddy 실행 완료\n[2026-04-26 00:00:00] Eddy 실행 시작\n실행 완료.\n**요약:**\n- **ShopGuide** — 가장 활발. 커밋 14건 (카카오 로그인, 셀러 등록, 모바일 반응형, 채팅 UI 등). CRITICAL 2건 (셀러 API auth 교체 + Shop 자동 생성) Dev2 다음 실행 대기 중.\n- **BlogDoc** — Phase 1 완료, Vercel 배포 정상.\n- **ShortsGen / RHWP** — 변동 없음.\n- 텔레그램 새 지시 없음. launchd 상태 정상. state.json 업데이트 + 커밋/푸시 완료.\n[2026-04-26 00:01:32] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
