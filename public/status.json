@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-26 04:01:36",
+  "updatedAt": "2026-04-26 05:01:18",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-26 04:01:36"
+          "lastRun": "2026-04-26 05:01:18"
         }
       ],
-      "recentLog": "**요약:**\n- 새 텔레그램 메시지: 없음\n- launchd 상태: CLAUDE.md와 일치, 이상 없음\n- **ShopGuide**: 보안 버그 수정(미인증 상품 노출 차단) + Shop 자동 생성 완료. URGENT 전부 처리됨.\n- **BlogDoc**: 어필리에이트 링크 기반 상품 분석 기능 추가.\n- **RHWP/ShortsGen**: 변동 없음.\n- state.json 업데이트 → 커밋 → push 완료\n- 텔레그램 보고 전송 완료\n[2026-04-26 04:01:36] Eddy 실행 완료"
+      "recentLog": "- launchd 상태: 정상 (CLAUDE.md와 일치)\n- ShopGuide: 보안 수정 2건 커밋 확인 (셀러 API auth 교체 + 상품 데이터 격리)\n- RHWP/ShortsGen/BlogDoc: 최근 4시간 변동 없음\n- state.json 업데이트 + 커밋/푸시 완료\n- 텔레그램 보고 완료\n[2026-04-26 04:31:00] Eddy 실행 완료\n[2026-04-26 05:00:00] Eddy 실행 시작\n[2026-04-26 05:01:00] Eddy 스킵 — 이전 실행 중 (PID 27630)\n실행 완료. 신규 텔레그램 메시지 없음. 팀 상태 정상 — ShopGuide에서 보안 버그 수정 2건 커밋 확인, 나머지 팀 변동 없음. 보고 전송 및 state.json 커밋/푸시 완료.\n[2026-04-26 05:01:18] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
