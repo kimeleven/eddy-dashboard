@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-26 03:06:34",
+  "updatedAt": "2026-04-26 04:01:36",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-26 03:02:00"
+          "lastRun": "2026-04-26 04:01:36"
         }
       ],
-      "recentLog": "- launchd: CLAUDE.md와 일치, 이상 없음\n- **ShopGuide**: 가장 활발 — 셀러 API auth 교체/Shop 자동생성 등 URGENT 전부 완료. QA E2E 대기\n- **BlogDoc**: Phase 1 완료, 어필리에이트 링크 분석 기능 추가\n- **ShortsGen/RHWP**: 대기 상태\n- state.json 업데이트 + 커밋/푸시 완료\n- 텔레그램 보고 전송 완료\n[2026-04-26 03:02:00] Eddy 실행 완료\n[2026-04-26 03:02:00] status.json 업데이트 완료\n[main 42f41fb] status: 2026-04-26 03:02\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "**요약:**\n- 새 텔레그램 메시지: 없음\n- launchd 상태: CLAUDE.md와 일치, 이상 없음\n- **ShopGuide**: 보안 버그 수정(미인증 상품 노출 차단) + Shop 자동 생성 완료. URGENT 전부 처리됨.\n- **BlogDoc**: 어필리에이트 링크 기반 상품 분석 기능 추가.\n- **RHWP/ShortsGen**: 변동 없음.\n- state.json 업데이트 → 커밋 → push 완료\n- 텔레그램 보고 전송 완료\n[2026-04-26 04:01:36] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
