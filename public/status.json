@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-26 01:02:32",
+  "updatedAt": "2026-04-26 01:06:31",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -24,7 +24,7 @@
           "lastRun": "2026-04-26 01:02:32"
         }
       ],
-      "recentLog": "실행 완료.\n**요약:**\n- 새 텔레그램 메시지: 없음\n- launchd 상태: CLAUDE.md와 일치, 이상 없음\n- **ShopGuide**: 가장 활발 (13커밋). 커스텀 JWT auth, 셀러 등록 플로우 완료. 하지만 **CRITICAL 미해결** — seller API 9개 라우트가 여전히 `auth()` 사용 → 상품등록/주문 불가. 팀 다음 실행 시 처리 예정.\n- **BlogDoc**: 어필리에이트 링크 분석 기능 추가. Vercel 정상.\n- **ShortsGen / RHWP**: 변동 없음\n- state.json 업데이트 + 커밋/푸시 + 텔레그램 보고 완료\n[2026-04-26 01:02:32] Eddy 실행 완료"
+      "recentLog": "- 새 텔레그램 메시지: 없음\n- launchd 상태: CLAUDE.md와 일치, 이상 없음\n- **ShopGuide**: 가장 활발 (13커밋). 커스텀 JWT auth, 셀러 등록 플로우 완료. 하지만 **CRITICAL 미해결** — seller API 9개 라우트가 여전히 `auth()` 사용 → 상품등록/주문 불가. 팀 다음 실행 시 처리 예정.\n- **BlogDoc**: 어필리에이트 링크 분석 기능 추가. Vercel 정상.\n- **ShortsGen / RHWP**: 변동 없음\n- state.json 업데이트 + 커밋/푸시 + 텔레그램 보고 완료\n[2026-04-26 01:02:32] Eddy 실행 완료\n[2026-04-26 01:02:32] status.json 업데이트 완료\n[main b515b8a] status: 2026-04-26 01:02\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
