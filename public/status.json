@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-26 05:06:37",
+  "updatedAt": "2026-04-26 06:01:29",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-26 05:01:18"
+          "lastRun": "2026-04-26 06:01:29"
         }
       ],
-      "recentLog": "- state.json 업데이트 + 커밋/푸시 완료\n- 텔레그램 보고 완료\n[2026-04-26 04:31:00] Eddy 실행 완료\n[2026-04-26 05:00:00] Eddy 실행 시작\n[2026-04-26 05:01:00] Eddy 스킵 — 이전 실행 중 (PID 27630)\n실행 완료. 신규 텔레그램 메시지 없음. 팀 상태 정상 — ShopGuide에서 보안 버그 수정 2건 커밋 확인, 나머지 팀 변동 없음. 보고 전송 및 state.json 커밋/푸시 완료.\n[2026-04-26 05:01:18] Eddy 실행 완료\n[2026-04-26 05:01:18] status.json 업데이트 완료\n[main b899d69] status: 2026-04-26 05:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "[2026-04-26 06:00:00] Eddy 실행 시작\n실행 완료.\n- **launchd**: 정상 (활성 팀/서비스 모두 일치, 보류 팀 미로드 확인)\n- **텔레그램**: 새 메시지 없음\n- **ShopGuide**: 보안 버그 수정 + 쇼핑몰 링크 복사 기능 (커밋 2건)\n- **ShortsGen / BlogDoc / RHWP**: 변동 없음\n- **state.json**: 16:00 업데이트 + push 완료\n- **텔레그램 보고**: 발송 완료\n[2026-04-26 06:01:29] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
