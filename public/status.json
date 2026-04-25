@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-25 10:01:33",
+  "updatedAt": "2026-04-25 11:01:18",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-25 10:01:33"
+          "lastRun": "2026-04-25 11:01:18"
         }
       ],
-      "recentLog": "실행 완료.\n**요약:**\n- 새 텔레그램 메시지: 없음\n- **ShopGuide**: 활발 — 커밋 4건 (Neon DB, Gemini, 카카오 로그인, 셀러 대시보드 완료)\n- **ShortsGen**: 활발 — 커밋 5건 (블로그작성 기능, 번역 폴백 체인)\n- **RHWP**: 미착수 — 스케줄/launchd 미설정\n- launchd 상태: CLAUDE.md와 일치, 이상 없음\n- state.json 업데이트 + 텔레그램 보고 + git push 완료\n[2026-04-25 10:01:33] Eddy 실행 완료"
+      "recentLog": "[2026-04-25 10:34:32] Eddy 실행 완료\n[2026-04-25 11:00:00] Eddy 실행 시작\n실행 완료.\n- **텔레그램**: 신규 메시지 없음\n- **launchd**: CLAUDE.md와 일치, 이상 없음\n- **활성 팀**: RHWP/ShortsGen/ShopGuide 모두 최근 커밋 없음, 정상 대기 중\n- **보고**: 텔레그램 전송 완료\n- **커밋/푸시**: state.json 업데이트 완료\n[2026-04-25 11:01:18] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
