@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-25 19:01:54",
+  "updatedAt": "2026-04-25 19:06:21",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -24,7 +24,7 @@
           "lastRun": "2026-04-25 19:01:54"
         }
       ],
-      "recentLog": "[2026-04-25 18:58:15] Eddy 실행 완료\n[2026-04-25 19:00:01] Eddy 실행 시작\n실행 완료.\n- **텔레그램**: 새 메시지 없음\n- **launchd**: CLAUDE.md와 일치, 이상 없음\n- **활성 팀**: RHWP/ShortsGen/ShopGuide 모두 최근 4시간 커밋 없음 (야간 시간대)\n- **보고**: 텔레그램 발송 완료\n- **state.json**: 23:46 업데이트, commit+push 완료\n[2026-04-25 19:01:54] Eddy 실행 완료"
+      "recentLog": "- **텔레그램**: 새 메시지 없음\n- **launchd**: CLAUDE.md와 일치, 이상 없음\n- **활성 팀**: RHWP/ShortsGen/ShopGuide 모두 최근 4시간 커밋 없음 (야간 시간대)\n- **보고**: 텔레그램 발송 완료\n- **state.json**: 23:46 업데이트, commit+push 완료\n[2026-04-25 19:01:54] Eddy 실행 완료\n[2026-04-25 19:01:54] status.json 업데이트 완료\n[main 25ffad7] status: 2026-04-25 19:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
