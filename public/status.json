@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-26 17:19:53",
+  "updatedAt": "2026-04-26 19:06:57",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-26 17:19:52"
+          "lastRun": "2026-04-26 19:00:01"
         }
       ],
-      "recentLog": "✅ 처리 완료:\n- state.json 실행 시간 갱신 및 main 브랜치 push 완료\n- CLAUDE.md launchd 상태 불일치 수정 완료\n- tasks.md에 발생한 문제점 대기 태스크로 추가 완료\n⏳ 대기 (Sanghun 직접 조치 필수):\n- [ ] Telegram 보고 실패 해결 (\"chat not found\" 오류: EDDY_TELEGRAM_BOT_TOKEN/EDDY_TELEGRAM_CHAT_ID 확인)\n- [ ] CLAUDE.md 커밋 실패 해결 (파일이 git 레포 외부 위치: 경로 확인 또는 파일 이동)\n- [ ] launchd 비가동 서비스 복구 (eddy, process-cleanup, dashboard, weekly-report, insane-search-dev, shopguide-dev)\n[2026-04-26 17:19:52] Eddy 실행 완료"
+      "recentLog": "[2026-04-26 18:43:46] 텔레그램 보고 완료\n[2026-04-26 18:43:46] 텔레그램 보고 완료\n[2026-04-26 18:43:46] Eddy 실행 완료\n[2026-04-26 18:43:46] Eddy 실행 완료\n[2026-04-26 19:00:00] Eddy 실행 시작\n[2026-04-26 19:00:00] Eddy 실행 시작\n[2026-04-26 19:00:01] 텔레그램 보고 완료\n[2026-04-26 19:00:01] 텔레그램 보고 완료\n[2026-04-26 19:00:01] Eddy 실행 완료\n[2026-04-26 19:00:01] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
