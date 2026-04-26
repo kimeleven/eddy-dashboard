@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-26 11:00:03",
+  "updatedAt": "2026-04-26 11:06:45",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -24,7 +24,7 @@
           "lastRun": "2026-04-26 11:00:03"
         }
       ],
-      "recentLog": "create mode 100644 .model\n[2026-04-26 10:12:21] Eddy 실행 시작\n[2026-04-26 10:12:29] Eddy 실행 완료\n[2026-04-26 10:42:29] Eddy 실행 시작\nAPI Error: 400 {\"error\":{\"code\":\"InvalidParameter\",\"message\":\"The parameter `max_tokens` specified in the request is not valid: integer above maximum value, expected a value <= 32768, but got 64000 instead. Request id: 0217771677522446362ddeee9049477b0b29b68d55a9ae93a7d83\",\"param\":\"max_tokens\",\"type\":\"BadRequest\"}}\n[2026-04-26 10:42:32] Eddy 실행 완료\n[2026-04-26 11:00:00] Eddy 실행 시작\nAPI Error: 400 {\"error\":{\"code\":\"InvalidParameter\",\"message\":\"The parameter `max_tokens` specified in the request is not valid: integer above maximum value, expected a value <= 32768, but got 64000 instead. Request id: 0217771688025081386b9a8ed856c57501cfa946ce34c987e8469\",\"param\":\"max_tokens\",\"type\":\"BadRequest\"}}\n[2026-04-26 11:00:03] Eddy 실행 완료"
+      "recentLog": "[2026-04-26 10:12:29] Eddy 실행 완료\n[2026-04-26 10:42:29] Eddy 실행 시작\nAPI Error: 400 {\"error\":{\"code\":\"InvalidParameter\",\"message\":\"The parameter `max_tokens` specified in the request is not valid: integer above maximum value, expected a value <= 32768, but got 64000 instead. Request id: 0217771677522446362ddeee9049477b0b29b68d55a9ae93a7d83\",\"param\":\"max_tokens\",\"type\":\"BadRequest\"}}\n[2026-04-26 10:42:32] Eddy 실행 완료\n[2026-04-26 11:00:00] Eddy 실행 시작\nAPI Error: 400 {\"error\":{\"code\":\"InvalidParameter\",\"message\":\"The parameter `max_tokens` specified in the request is not valid: integer above maximum value, expected a value <= 32768, but got 64000 instead. Request id: 0217771688025081386b9a8ed856c57501cfa946ce34c987e8469\",\"param\":\"max_tokens\",\"type\":\"BadRequest\"}}\n[2026-04-26 11:00:03] Eddy 실행 완료\n[2026-04-26 11:00:03] status.json 업데이트 완료\n[main e6d6c50] status: 2026-04-26 11:00\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
