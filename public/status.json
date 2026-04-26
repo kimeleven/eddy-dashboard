@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-26 10:00:18",
+  "updatedAt": "2026-04-26 11:00:03",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-26 10:00:18"
+          "lastRun": "2026-04-26 11:00:03"
         }
       ],
-      "recentLog": "1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-26 09:12:14] Eddy 실행 시작\nAPI Error: 400 {\"error\":{\"code\":\"InvalidParameter\",\"message\":\"The parameter `max_tokens` specified in the request is not valid: integer above maximum value, expected a value <= 32768, but got 64000 instead. Request id: 0217771623381076097278e78ff109d0bf5de77146291ac532c20\",\"param\":\"max_tokens\",\"type\":\"BadRequest\"}}\n[2026-04-26 09:12:18] Eddy 실행 완료\n[2026-04-26 09:42:18] Eddy 실행 시작\nAPI Error: 400 {\"error\":{\"code\":\"InvalidParameter\",\"message\":\"The parameter `max_tokens` specified in the request is not valid: integer above maximum value, expected a value <= 32768, but got 64000 instead. Request id: 02177716414094628c256f90ee836450e608b7d1b1192f3438d6a\",\"param\":\"max_tokens\",\"type\":\"BadRequest\"}}\n[2026-04-26 09:42:21] Eddy 실행 완료\n[2026-04-26 10:00:00] Eddy 실행 시작\nAPI Error: 400 {\"error\":{\"code\":\"InvalidParameter\",\"message\":\"The parameter `max_tokens` specified in the request is not valid: integer above maximum value, expected a value <= 32768, but got 64000 instead. Request id: 021777165218534a0b324f8ecfaf9ce03201b1eca3b66d8fa7b3c\",\"param\":\"max_tokens\",\"type\":\"BadRequest\"}}\n[2026-04-26 10:00:18] Eddy 실행 완료"
+      "recentLog": "create mode 100644 .model\n[2026-04-26 10:12:21] Eddy 실행 시작\n[2026-04-26 10:12:29] Eddy 실행 완료\n[2026-04-26 10:42:29] Eddy 실행 시작\nAPI Error: 400 {\"error\":{\"code\":\"InvalidParameter\",\"message\":\"The parameter `max_tokens` specified in the request is not valid: integer above maximum value, expected a value <= 32768, but got 64000 instead. Request id: 0217771677522446362ddeee9049477b0b29b68d55a9ae93a7d83\",\"param\":\"max_tokens\",\"type\":\"BadRequest\"}}\n[2026-04-26 10:42:32] Eddy 실행 완료\n[2026-04-26 11:00:00] Eddy 실행 시작\nAPI Error: 400 {\"error\":{\"code\":\"InvalidParameter\",\"message\":\"The parameter `max_tokens` specified in the request is not valid: integer above maximum value, expected a value <= 32768, but got 64000 instead. Request id: 0217771688025081386b9a8ed856c57501cfa946ce34c987e8469\",\"param\":\"max_tokens\",\"type\":\"BadRequest\"}}\n[2026-04-26 11:00:03] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
