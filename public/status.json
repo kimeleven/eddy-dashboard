@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-26 09:01:18",
+  "updatedAt": "2026-04-26 09:06:43",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -24,7 +24,7 @@
           "lastRun": "2026-04-26 09:01:18"
         }
       ],
-      "recentLog": "[2026-04-26 08:42:13] Eddy 실행 완료\n[2026-04-26 09:00:00] Eddy 실행 시작\n실행 완료.\n- 텔레그램 신규 메시지: 없음\n- launchd 상태: 정상 (CLAUDE.md와 일치)\n- 활성 팀 변동: ShopGuide만 최근 커밋 (셀러 상품관리 링크 복사 기능)\n- state.json 업데이트 + 커밋/푸시 완료\n- 텔레그램 보고 발송 완료\n[2026-04-26 09:01:18] Eddy 실행 완료"
+      "recentLog": "- 텔레그램 신규 메시지: 없음\n- launchd 상태: 정상 (CLAUDE.md와 일치)\n- 활성 팀 변동: ShopGuide만 최근 커밋 (셀러 상품관리 링크 복사 기능)\n- state.json 업데이트 + 커밋/푸시 완료\n- 텔레그램 보고 발송 완료\n[2026-04-26 09:01:18] Eddy 실행 완료\n[2026-04-26 09:01:18] status.json 업데이트 완료\n[main 8dc0679] status: 2026-04-26 09:01\n1 file changed, 3 insertions(+), 3 deletions(-)"
     },
     {
       "name": "ELDO",
