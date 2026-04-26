@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-26 11:06:45",
+  "updatedAt": "2026-04-26 12:00:14",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-26 11:00:03"
+          "lastRun": "2026-04-26 12:00:14"
         }
       ],
-      "recentLog": "[2026-04-26 10:12:29] Eddy 실행 완료\n[2026-04-26 10:42:29] Eddy 실행 시작\nAPI Error: 400 {\"error\":{\"code\":\"InvalidParameter\",\"message\":\"The parameter `max_tokens` specified in the request is not valid: integer above maximum value, expected a value <= 32768, but got 64000 instead. Request id: 0217771677522446362ddeee9049477b0b29b68d55a9ae93a7d83\",\"param\":\"max_tokens\",\"type\":\"BadRequest\"}}\n[2026-04-26 10:42:32] Eddy 실행 완료\n[2026-04-26 11:00:00] Eddy 실행 시작\nAPI Error: 400 {\"error\":{\"code\":\"InvalidParameter\",\"message\":\"The parameter `max_tokens` specified in the request is not valid: integer above maximum value, expected a value <= 32768, but got 64000 instead. Request id: 0217771688025081386b9a8ed856c57501cfa946ce34c987e8469\",\"param\":\"max_tokens\",\"type\":\"BadRequest\"}}\n[2026-04-26 11:00:03] Eddy 실행 완료\n[2026-04-26 11:00:03] status.json 업데이트 완료\n[main e6d6c50] status: 2026-04-26 11:00\n1 file changed, 3 insertions(+), 3 deletions(-)"
+      "recentLog": "1 file changed, 3 insertions(+), 3 deletions(-)\n[2026-04-26 11:12:32] Eddy 실행 시작\nAPI Error: 400 {\"error\":{\"code\":\"InvalidParameter\",\"message\":\"The parameter `max_tokens` specified in the request is not valid: integer above maximum value, expected a value <= 32768, but got 64000 instead. Request id: 02177716955503075b38901b7d222b45cd0632cd2ab0171dd880d\",\"param\":\"max_tokens\",\"type\":\"BadRequest\"}}\n[2026-04-26 11:12:35] Eddy 실행 완료\n[2026-04-26 11:42:33] Eddy 실행 시작\nAPI Error: 400 {\"error\":{\"code\":\"InvalidParameter\",\"message\":\"The parameter `max_tokens` specified in the request is not valid: integer above maximum value, expected a value <= 32768, but got 64000 instead. Request id: 02177717135794145ed1e5750293ff098e8b34eca79d24af643dd\",\"param\":\"max_tokens\",\"type\":\"BadRequest\"}}\n[2026-04-26 11:42:36] Eddy 실행 완료\n[2026-04-26 12:00:01] Eddy 실행 시작\n[2026-04-26 12:00:14] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
