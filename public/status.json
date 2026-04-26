@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-26 08:01:23",
+  "updatedAt": "2026-04-26 09:01:18",
   "system": {
     "host": "MacBook (a1111)",
     "scheduler": "launchd",
@@ -21,10 +21,10 @@
           "name": "Eddy PM",
           "role": "텔레그램 모니터링, 전체 팀 검수/보고",
           "schedule": "30분",
-          "lastRun": "2026-04-26 08:01:23"
+          "lastRun": "2026-04-26 09:01:18"
         }
       ],
-      "recentLog": "[2026-04-26 08:00:00] Eddy 실행 시작\n실행 완료.\n- 새 텔레그램 메시지: 없음\n- launchd 상태: CLAUDE.md와 일치, 이상 없음\n- ShopGuide: URGENT 전체 완료, 쇼핑몰 링크 복사 기능 신규 커밋 확인\n- BlogDoc/ShortsGen/RHWP: 금일 변동 없음\n- state.json 업데이트 + 커밋/푸시 완료\n- 텔레그램 보고 전송 완료\n[2026-04-26 08:01:23] Eddy 실행 완료"
+      "recentLog": "[2026-04-26 08:42:13] Eddy 실행 완료\n[2026-04-26 09:00:00] Eddy 실행 시작\n실행 완료.\n- 텔레그램 신규 메시지: 없음\n- launchd 상태: 정상 (CLAUDE.md와 일치)\n- 활성 팀 변동: ShopGuide만 최근 커밋 (셀러 상품관리 링크 복사 기능)\n- state.json 업데이트 + 커밋/푸시 완료\n- 텔레그램 보고 발송 완료\n[2026-04-26 09:01:18] Eddy 실행 완료"
     },
     {
       "name": "ELDO",
