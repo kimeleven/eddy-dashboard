@@ -1,0 +1,17 @@
+{
+  "iri-safety": {
+    "status": "\ubd80\ubd84 \uac00\ub3d9",
+    "blockers": [
+      "git \uc800\uc7a5\uc18c \uc5f0\uacb0 \ud544\uc694"
+    ],
+    "completed": [
+      "EDDY_TELEGRAM_BOT_TOKEN \uc124\uc815",
+      "\ud1b5\uc2e0 \uad6c\uc870 \uc900\uc218 \ud655\uc778"
+    ]
+  },
+  "shopguide": {
+    "status": "QA \ub300\uae30"
+  },
+  "communication_rule": "Eddy\uac00 \ud300\u00b7\uc0ac\uc6a9\uc790 \uac04 \uc720\uc77c\ud55c \uc911\uac1c \ucc44\ub110",
+  "timestamp": "2026-04-28T12:45:00+0900"
+}
